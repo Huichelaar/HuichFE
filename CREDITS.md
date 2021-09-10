@@ -430,3 +430,4 @@ Songs used:
 - [Animation C48 hack](https://github.com/FireEmblemUniverse/SkillSystem_FE8/blob/master/EngineHacks/_FE8EssentialFixes.event#L182) by Hextator.
 - [Slayer and Effectiveness Rework](https://feuniverse.us/t/teqs-minor-assembly-shenanigans/1655/6) by Tequila, Vennobennu and Crazycolorz.
 - The puzzle introduced in the prologue is an implementation of [Lights Out](https://en.wikipedia.org/wiki/Lights_Out_(game)) by Tiger Electronics. I also made use of [Simon Tatham's Flip](https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/flip.html) to play around and setup some initial puzzle settings.
+- [Mode7](https://github.com/StanHash/FE-CHAX/tree/master/Wizardry/M7) by StanH.
