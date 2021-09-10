@@ -1,6 +1,6 @@
 # FE8 Romhack
 
-[Fire Emblem Universe topic](TODO)
+[FEUniverse topic](TODO)
 
 ## What is this?
 
