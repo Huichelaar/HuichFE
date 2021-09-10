@@ -162,7 +162,7 @@ With additional credits to:
 - All the documentation in the Unified FE Hacking [dropbox](https://www.dropbox.com/sh/zymc1h221nnxpm9/AAAruCnsQf574gY_Yi7s1KP0a?dl=0). Check out the [DOC INDEX](https://www.dropbox.com/sh/3m004vettv9g3og/AACVcOCwSb6EaaOzFFXe1feKa/Stan/_Notes?dl=0&preview=DOC+INDEX.txt&subfolder_nav_tracking=1). Thanks to Tequila, StanH, Hextator, Crazycolorz5, Teraspark & Zane for all the documentation they've submitted to this.
 - Some more of StanH's documentation on [Github](https://github.com/StanHash/DOC).
 - FEU Documentation.
-  - [AI documentation}(https://feuniverse.us/t/fe7-the-official-ai-documentation-thread/348) and the [FE8 equivalent](https://feuniverse.us/t/fe8-the-official-ai-documentation-thread/483). Thanks to Crazycolorz5, Tequila, Vennobennu/Venno and Arch.
+  - [AI documentation](https://feuniverse.us/t/fe7-the-official-ai-documentation-thread/348) and the [FE8 equivalent](https://feuniverse.us/t/fe8-the-official-ai-documentation-thread/483). Thanks to Crazycolorz5, Tequila, Vennobennu/Venno and Arch.
   - [Primefusion's mapping tutorial](https://feuniverse.us/t/archived-primefusions-mapping-tutorial/7868/1).
   - [Nintenlord's Inserting maps and map changes with Tiled tutorial](https://feuniverse.us/t/inserting-maps-and-map-changes-with-tiled/106).
   - [Zoramine's Mountains guide](https://feuniverse.us/t/zoramines-bucket-of-many-random-things/6123/84).
