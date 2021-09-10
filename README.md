@@ -18,7 +18,7 @@ Use a UPS file patcher, such as [NUPS](https://www.romhacking.net/utilities/606/
 ### Method 2
 1. Get the latest version of [Event Assembler](https://feuniverse.us/t/event-assembler/1749) and put it in the extracted folder. This part could cause issues because it seems the `FILL` command isn't necessarily in the newest version of EA.
 2. Get a clean FE8U ROM, name it "FE8_clean.gba" and put it in the extracted folder.
-3. Run MAKE HACK_full or MAKE HACK_quick, whichever you desire.
+3. Run MAKE HACK_full.
 
 ## Some features
 
