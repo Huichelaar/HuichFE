@@ -6,7 +6,7 @@
 
 This hack, title still pending, can be applied to an FE8U (Fire Emblem Sacred Stones, region: North America) ROM to get a different story and new features, using the same basic engine.
 
-This hack, title still pending, uses FE8's Skill System buildfile as its base. I'm using whatever version was newest on January 12th 2021. https://github.com/FireEmblemUniverse/SkillSystem_FE8
+This hack, title still pending, uses FE8's SkillSystem buildfile as its base. I'm using whatever version was newest on January 12th 2021. https://github.com/FireEmblemUniverse/SkillSystem_FE8
 
 ## Installation
 
