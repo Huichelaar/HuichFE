@@ -1,0 +1,127 @@
+/// - Mode 1
+C03
+C07
+3 p- New_004.png
+3 p- New_005.png
+3 p- New_006.png
+C7E
+3 p- New_000.png
+3 p- New_001.png
+3 p- New_002.png
+3 p- New_003.png
+CC01
+3 p- New_007.png
+3 p- New_008.png
+3 p- New_009.png
+3 p- New_010.png
+C06
+3 p- New_011.png
+C0D
+~~~
+/// - Mode 3
+C03
+C07
+3 p- New_004.png
+3 p- New_005.png
+3 p- New_006.png
+C7E
+3 p- New_000.png
+3 p- New_001.png
+3 p- New_002.png
+3 p- New_003.png
+CC01
+3 p- New_007.png
+3 p- New_008.png
+3 p- New_009.png
+3 p- New_010.png
+C06
+3 p- New_011.png
+C0D
+~~~
+/// - Mode 5
+C03
+C07
+3 p- New_004.png
+3 p- New_005.png
+3 p- New_006.png
+C7E
+3 p- New_000.png
+3 p- New_001.png
+3 p- New_002.png
+3 p- New_003.png
+CC01
+3 p- New_007.png
+3 p- New_008.png
+3 p- New_009.png
+3 p- New_010.png
+C06
+3 p- New_011.png
+C0D
+~~~
+/// - Mode 6
+C03
+C07
+3 p- New_004.png
+3 p- New_005.png
+3 p- New_006.png
+C7E
+3 p- New_000.png
+3 p- New_001.png
+3 p- New_002.png
+3 p- New_003.png
+CC01
+3 p- New_007.png
+3 p- New_008.png
+3 p- New_009.png
+3 p- New_010.png
+C06
+3 p- New_011.png
+C0D
+~~~
+/// - Mode 7
+C02
+C0E
+5 p- New_011.png
+C01
+C0D
+~~~
+/// - Mode 8
+C02
+C0E
+5 p- New_011.png
+C01
+C0D
+~~~
+/// - Mode 9
+1 p- New_011.png
+C01
+~~~
+/// - Mode 10
+1 p- New_011.png
+C01
+~~~
+/// - Mode 11
+1 p- New_011.png
+C01
+~~~
+/// - Mode 12
+C03
+C07
+3 p- New_004.png
+3 p- New_005.png
+3 p- New_006.png
+C7E
+3 p- New_000.png
+3 p- New_001.png
+3 p- New_002.png
+3 p- New_003.png
+CC01
+3 p- New_007.png
+3 p- New_008.png
+3 p- New_009.png
+3 p- New_010.png
+C06
+3 p- New_011.png
+C0D
+~~~
+/// - End of animation

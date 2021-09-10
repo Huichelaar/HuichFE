@@ -1,0 +1,60 @@
+ALIGN 4
+CreditsItemsTiles:
+#incbin "Items.dmp"
+ALIGN 4
+CreditsMaterialsTiles:
+#incbin "Materials.dmp"
+ALIGN 4
+CreditsItemsMaterialsOAM:
+#incbin "ItemsMaterialsOAM.dmp"
+
+ALIGN 4
+CreditsBattleBGBridgeTiles:
+#incbin "BattleBGBridge.dmp"
+ALIGN 4
+CreditsBattleBGForestTiles:
+#incbin "BattleBGForest.dmp"
+ALIGN 4
+CreditsBattleBGPeakTiles:
+#incbin "BattleBGPeak.dmp"
+ALIGN 4
+CreditsBattleBGPlainTiles:
+#incbin "BattleBGPlain.dmp"
+ALIGN 4
+CreditsBattleBGSeaTiles:
+#incbin "BattleBGSea.dmp"
+ALIGN 4
+CreditsBattleBGThroneTiles:
+#incbin "BattleBGThrone.dmp"
+
+ALIGN 4
+CreditsConvoBGCaveTiles:
+#incbin "ConvoBGCave.dmp"
+
+ALIGN 4
+CreditsChIntroTiles:
+#incbin "ChIntro.dmp"
+ALIGN 4
+CreditsChIntroPalette:
+#incbin "ChIntroPal.dmp"
+
+ALIGN 4
+CreditsGameIntroTiles:
+#incbin "GameIntro.dmp"
+ALIGN 4
+CreditsGameIntroPalette:
+#incbin "GameIntroPal.dmp"
+
+ALIGN 4
+CreditsStatScrTiles:
+#incbin "StatScr.dmp"
+ALIGN 4
+CreditsStatScrPalette:
+#incbin "StatScrPal.dmp"
+
+ALIGN 4
+CreditsUIbuttonsTiles:
+#incbin "UIButtons.dmp"
+ALIGN 4
+CreditsUIButtonsOAM:
+#incbin "UIButtonsOAM.dmp"

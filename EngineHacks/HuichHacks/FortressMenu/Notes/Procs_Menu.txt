@@ -1,0 +1,25 @@
+Seems only the geometry in NewMenu_BG0BG1 is used, not the one in the menu definition.
+
+E_Menu +0x2C(w) seems to hold the geometry
++0x63 some bitfield, if 0x80, ends menu next frame.
+
+
+Notes mostly copied from Stan's E_MenuNotes.txt
+
+(Menu) Idle, 0x085B64B8:
+
+0003 0000 0804F165    Manages Key presses and all that
+0002 0000 080049D1    EndGreenTextColorManager
+0000 0000 00000000
+
+
+Menu, 0x085B64D0:
+
+0001 0000 080DA39C    SET_NAME "E_Menu"
+000E 0000 00000000
+0008 0000 0859A548    Block until running
+0002 0000 080049AD    NewGreenTextColorManager
+0002 0000 0804EF71    Draws the Menu
+0002 0000 0804EF39    Calls some routines in definitions
+000D 0000 085B64B8    Jump to Idle, 0x085B64B8
+0000 0000 00000000

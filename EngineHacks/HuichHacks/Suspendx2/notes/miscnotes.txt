@@ -1,0 +1,52 @@
+0x0300 67A0, gpReadSramFast, args:
+r0 = SRAM loc to start reading from
+r1 = loc to store read stuff into (just use stack, Ig)
+r2 = size in bytes, of stuff to read.
+
+0x080A5DA8, seems to check if there's a suspend save
+
+0x080A2EF8, SaveMetadata_Load, returns if save is occupied, args:
+r0 = idk, just set to 0
+r1 = saveID. 0, 1, 2 for the regular saves, 3 & 4 for the suspendsaves.
+
+Procs_SaveDraw, 0x08A206A8, +0x3D is an unused byte, store backup uses in here! Hook in 0x080AAA78 to set this var up. Hook somewhere around 0x080AA86C to also draw backups window & number, use Find6C to get +0x3D, check parent+0x42 te see if we're in resume mode
+
+SaveMenu procbody usage
+
++0x29 byte        A was pressed.
++0x2C byte
++0x2D byte
++0x32 byte        
++0x34 byte        Index of menuoption we're hovering over.
++0x35 byte        Index of picked menuoption?
++0x36 byte        hovering over option 1 or 2 when dialog option is open. Mode2 option branch at 0x80A93A4 and
+                  0xA934C for remove dialoguebox.
++0x37 byte        save0, Chaptertitle display?
++0x38   +loop     save1
++0x39   +loop     save2
++0x3A byte
++0x3B   +loop
++0x3C   +loop
++0x3D byte
++0x3E byte        dialoguebox open?
++0x3F byte        if 0xFF: play sound, call 0xA882C: GOTO 12. Seems to be when there shouldn't be a dialoguebox
+                  when there could have been (like for restart when a suspend exists).
+                  Otherwise call 80A9290: start dialoguebox.
+                  I think 0xFF indicates there is no suspend save.
+                  Seems to hold part of the (second?) suspend save.
++0x40 byte
++0x41   empty?
++0x42 short       Resume, Restart, etc. mode. Used to determine what to do on A press at 0x80A9580
++0x44 short       0xF0 if start restart chapter. 0xF0: makes the suspendscroll rotate and shrink. 0x100: Doesn't.
++0x48 word
++0x58 word        Savedraw proc child
+
+0x080A9564 listens to A button for resuming, hook here for L press. If cmp is equal, add to return address.
+
+pressing A when start restarting a chapter sets savemenuproc to label 12
+
+
+
+
+8A20720 put textID you want to show for left option (option 1).
+80A8932 uses "delete suspended game?" textid.

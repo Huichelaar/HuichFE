@@ -1,0 +1,16 @@
+// There's no images in this directory, because I
+// just grabbed the relevant values from memory during
+// the intro & Dark Mind battle in Kirby & The Amazing Mirror
+
+ALIGN 4
+WhirlpoolTiles:
+#incbin "WhirlpoolTiles.dmp"
+
+ALIGN 4
+WhirlpoolTSA:
+#incbin "WhirlpoolTSA.dmp"
+
+ALIGN 4
+WhirlpoolPalettes:
+#incbin "WhirlpoolPaletteBlue.dmp"
+#incbin "WhirlpoolPaletteOrange.dmp"

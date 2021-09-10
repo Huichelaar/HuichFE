@@ -1,0 +1,24 @@
+ALIGN 4
+ClassBonusGrowthsTableLABEL:
+FILL 256*8
+PUSH
+ORG ClassBonusGrowthsTableLABEL + Supplier*8 ; BYTE (-10) (3) (5) (7) (8) (1) (2) (7) 
+ORG ClassBonusGrowthsTableLABEL + Cavalier*8 ; BYTE (3) (4) (0) (0) (-4) (3) (1) (0) 
+ORG ClassBonusGrowthsTableLABEL + Cavalier_F*8 ; BYTE (3) (4) (0) (0) (-4) (3) (1) (0) 
+ORG ClassBonusGrowthsTableLABEL + Mercenary*8 ; BYTE (5) (5) (0) (5) (0) (5) (0) (0) 
+ORG ClassBonusGrowthsTableLABEL + Mercenary_F*8 ; BYTE (5) (5) (0) (5) (0) (5) (0) (0) 
+ORG ClassBonusGrowthsTableLABEL + Archer*8 ; BYTE (0) (0) (0) (5) (1) (1) (0) (0) 
+ORG ClassBonusGrowthsTableLABEL + Archer_F*8 ; BYTE (0) (0) (0) (5) (1) (1) (0) (0) 
+ORG ClassBonusGrowthsTableLABEL + Mage*8 ; BYTE (0) (-2) (4) (0) (0) (0) (3) (0) 
+ORG ClassBonusGrowthsTableLABEL + Mage_F*8 ; BYTE (0) (-2) (4) (0) (0) (0) (3) (0) 
+ORG ClassBonusGrowthsTableLABEL + Shaman*8 ; BYTE (0) (5) (10) (-5) (-5) (8) (3) (-2) 
+ORG ClassBonusGrowthsTableLABEL + Shaman_F*8 ; BYTE (0) (5) (10) (-5) (-5) (8) (3) (-2) 
+ORG ClassBonusGrowthsTableLABEL + Fighter*8 ; BYTE (5) (10) (-2) (-5) (0) (-2) (0) (0) 
+ORG ClassBonusGrowthsTableLABEL + Monk*8 ; BYTE (-4) (-2) (3) (1) (7) (0) (0) (3) 
+ORG ClassBonusGrowthsTableLABEL + Priest*8 ; BYTE (4) (-1) (4) (0) (-4) (0) (8) (2) 
+ORG ClassBonusGrowthsTableLABEL + Cleric*8 ; BYTE (4) (-1) (4) (0) (-4) (0) (8) (2) 
+ORG ClassBonusGrowthsTableLABEL + Soldier*8 ; BYTE (-4) (0) (0) (0) (2) (7) (2) (-1) 
+ORG ClassBonusGrowthsTableLABEL + Monk_F*8 ; BYTE (-4) (-2) (3) (1) (7) (0) (0) (3) 
+ORG ClassBonusGrowthsTableLABEL + Soldier_F*8 ; BYTE (-4) (0) (0) (0) (2) (7) (2) (-1) 
+ORG ClassBonusGrowthsTableLABEL + Fighter_F*8 ; BYTE (5) (10) (-2) (-5) (0) (-2) (0) (0) 
+POP

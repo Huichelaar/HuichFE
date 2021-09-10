@@ -1,0 +1,74 @@
+#ifndef _FE8_
+    ERROR "You're not assembling to an FE8 ROM!"
+#endif
+
+// Custom samples
+#include "../Samples/YUGIOH/YUGIOHsamples.event"
+#include "../Samples/OSRS/OSRSsamples.event"
+#include "../Samples/Custom1/Custom1samples.event"
+#include "../Samples/Sfx/Sfxsamples.event"
+#include "../Samples/Pokemon/Pokemonsamples.event"
+
+// Custom soundfonts
+#include "../Soundfonts/YUGIOH/soundbank_014/soundbank installer.event"
+#include "../Soundfonts/YUGIOH/soundbank_021/soundbank installer.event"
+#include "../Soundfonts/YUGIOH/soundbank_028/soundbank installer.event"
+#include "../Soundfonts/YUGIOH/soundbank_030/soundbank installer.event"
+#include "../Soundfonts/YUGIOH/soundbank_034/soundbank installer.event"
+#include "../Soundfonts/YUGIOH/soundbank_039/soundbank installer.event"
+#include "../Soundfonts/YUGIOH/soundbank_040/soundbank installer.event"
+#include "../Soundfonts/YUGIOH/soundbank_SC/soundbank installer.event"
+#include "../Soundfonts/RS/OSRS/soundbank installer.event"
+#include "../Soundfonts/Custom/Custom1/soundbank installer.event"
+#include "../Soundfonts/Sfx/soundbank installer.event"
+#include "../Soundfonts/Pokemon/BW/soundbank installer.event"
+
+// Songs
+#include "../Songs/song027.event"
+SongTable(0x1,song027,0)
+#include "../Songs/song410.event"
+SongTable(0x2,song410,0)
+#include "../Songs/SEQ_BGM_DIVING.event"
+SongTable(0x3,SEQ_BGM_DIVING,1)
+#include "../Songs/song500.event"
+SongTable(0x9,song500,1)
+#include "../Songs/Principality.event"
+SongTable(0xA,Principality,1)
+#include "../Songs/DesireBelow.event"
+SongTable(0xB,DesireBelow,1)
+#include "../Songs/cave.event"
+SongTable(0xC,cave,0)
+#include "../Songs/song008.event"
+SongTable(0xD,song008,0)
+#include "../Songs/song023.event"
+SongTable(0x25,song023,1)
+#include "../Songs/song033.event"
+SongTable(0x34,song033,0)
+#include "../Songs/song410NoIntro.event"
+SongTable(0x43,song410NoIntro,0)
+#include "../Songs/ChapterIntro0.event"
+SongTable(IntroSfx0,ChapterIntro0,0)
+#include "../Songs/ChapterIntro1.event"
+SongTable(IntroSfx1,ChapterIntro1,0)
+
+
+// SFX
+//YUGIOH Cursor move sfx.
+#include "../Songs/song054.event"
+SongTable(0x58,song054,3)
+//YUGIOH Place card sfx.
+#include "../Songs/song058.event"
+SongTable(0x59,song058,2)
+//YUGIOH Cancel sfx. Broken, don't use.
+#include "../Songs/song056.event"
+SongTable(0x5D,song056,2)
+//YUGIOH Select sfx.
+#include "../Songs/song055.event"
+SongTable(0x5E,song055,2)
+//YUGIOH Impossible action sfx.
+#include "../Songs/song057.event"
+SongTable(0x5F,song057,2)
+#include "../Songs/KaibaTurn.event"
+SongTable(0xC0,KaibaTurn,7)
+#include "../Songs/Knock.event"
+SongTable(0xC1,Knock,7)

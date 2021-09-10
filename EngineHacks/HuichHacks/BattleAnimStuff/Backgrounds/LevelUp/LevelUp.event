@@ -1,0 +1,99 @@
+// Stuff related to the LevelUp panel during battle anims.
+
+PUSH
+
+  // Don't fade out Palette 4 and 5.
+  // These are part of BG3 now.
+  ORG 0x73F5E
+  BYTE 0x2
+  // Nor fade in.
+  ORG 0x7436A
+  BYTE 0x2
+  
+  // Don't load or draw BG2 plateaus
+  // during level up.
+  ORG 0x73B50
+  SHORT 0x46C0 0x46C0
+  ORG 0x7445C
+  SHORT 0x46C0 0x46C0
+  
+  // Don't move screen blocks during level up.
+  ORG 0x73A7E
+  SHORT 0xE014
+  ORG 0x73C42
+  SHORT 0xE015
+  ORG 0x743DE
+  SHORT 0xE015
+  
+  // Clear BG1 and BG2 map buffers
+  // when lvl up panel disappears.
+  ORG 0x744F8
+  WORD 0x1000400
+  
+  // Repointing the level up proc.
+  ORG 0x739BC
+  POIN Procs_LevelUp
+  
+  // Don't scroll BG1 and 2 when statpane disappears.
+  ORG 0x742D8
+  SHORT 0x46C0 0x46C0
+  
+  /*
+  // Make lvl up bar & arrows transparent.
+  ORG 0x74D74
+  SHORT 0x9F03 0x1838
+  ORG 0x74D7E
+  SHORT 0x2304
+  ORG 0x74D96
+  SHORT 0x021B
+  // Make lvl up +1s transparent.
+  ORG 0x74E84
+  SHORT 0x2504 0x85A0 0x022D 0x2100 0x280F 0xD11E 0x85A1
+  */
+
+POP
+
+
+Procs_LevelUp:
+PROC_LOOP_ROUTINE(0x739E1)
+PROC_LOOP_ROUTINE(0x73A4D)
+PROC_YIELD
+PROC_LOOP_ROUTINE(0x73CE9)
+PROC_CALL_ROUTINE(FadeInStatPanel|1)
+PROC_CALL_ROUTINE(0x73E49)
+PROC_LOOP_ROUTINE(0x73E8D)
+PROC_CALL_ROUTINE(0x8B25)                     // Clears HBlankHandler
+PROC_NEW_CHILD(Procs_FadeInStats)
+PROC_LOOP_ROUTINE(0x73FB5)
+PROC_SLEEP(25)
+  PROC_LOOP_ROUTINE(0x73FE1)
+  PROC_LOOP_ROUTINE(0x74041)
+  PROC_LOOP_ROUTINE(0x740C9)
+  PROC_LOOP_ROUTINE(0x7411D)
+  PROC_LOOP_ROUTINE(0x7419D)
+PROC_LOOP_ROUTINE(0x741CD)
+PROC_LOOP_ROUTINE(0x742BD)
+
+PROC_CALL_ROUTINE(BlendOutBG2|1)
+PROC_SLEEP(1)
+PROC_CALL_ROUTINE(BlendOutBG1|1)
+
+PROC_LOOP_ROUTINE(0x742ED)
+PROC_LOOP_ROUTINE(0x742F9)
+PROC_LOOP_ROUTINE(0x743C1)
+PROC_LOOP_ROUTINE(0x74545)
+PROC_END
+
+
+ALIGN 4
+FadeInStatPanel:
+#include "FadeInStatPanel.lyn.event"
+ALIGN 4
+BlendOutBG2:
+#include "BlendOutBG2.lyn.event"
+ALIGN 4
+BlendOutBG1:
+#include "BlendOutBG1.lyn.event"
+
+
+#include "FadeInStats/FadeInStats.event"

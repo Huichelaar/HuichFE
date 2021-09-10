@@ -1,0 +1,32 @@
+## BackupCommandName
+ Backup[X]
+
+## BackupCommandHelp
+Make a backup save.[NL]
+Return to this save via main menu.[X]
+
+## SuspendQuestion
+[OpenLeft][LoadFace][0x64][0x1][OpenLeft]Do you want to return to main menu?[NL]
+[Yes][X]
+
+## BackupQuestion
+[OpenLeft]Do you want to make a backup save?[NL]
+[Yes][X]
+
+## BackupQuestion2
+[OpenLeft][LoadFace][0x64][0x1][OpenLeft]Do you want to make a backup save?[NL]
+[Yes][X]
+
+## BackupReply
+[OpenLeft]On the main menu, choose Resume Chapter[NL]
+and pick ``Bkup'' to return to this backup.[A][X]
+
+## BackupSaveMenuCommandName
+Bkup[X]
+
+## SuspendSaveMenuCommandName
+Susp[X]
+
+## BackupLoadQuestion
+Load suspended save[N]
+or backup save?[X]

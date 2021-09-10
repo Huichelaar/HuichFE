@@ -1,0 +1,6 @@
+// Copied from gamma.
+EVBIT_MODIFY 0x1
+_0xC220 //sets flag &80 in WMDataStruct???
+//WM_SPAWNLORD 0x0 0x0 VivianCharID 0x1 0x0
+SKIPWN
+ENDA

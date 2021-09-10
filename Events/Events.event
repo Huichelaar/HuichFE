@@ -1,0 +1,28 @@
+// Macros
+#define StartMenu(MenuDefinition) "SPTR 0x2 MenuDefinition; ASMC CallStartMenu|1"
+
+#define SendInventoryToConvoy(Unit) "BYTE 0x40 0xD Unit 0x0; POIN SendAllTransporter|1"
+#define SendInventoryToConvoy(X, Y) "SCOORD 0xB [X, Y]; BYTE 0x4B 0xD 0x0 0x0; POIN SendAllTransporter|1"
+#define SendInventoryToConvoyMemSlot "BYTE 0x41 0xD 0x0 0x0; POIN SendAllTransporter|1"
+#define SendInventoryToConvoyActive "BYTE 0x4F 0xD 0x0 0x0; POIN SendAllTransporter|1"
+
+#define GiveItemSilent(Unit, Item) "BYTE 0x40 0xD Unit Item; POIN SilentGiveItem|1"
+#define GiveItemSilent(Item, X, Y) "SCOORD 0xB [X, Y]; BYTE 0x4B 0xD 0x0 Item; POIN SilentGiveItem|1"
+#define GiveItemSilentMemSlot(Item) "BYTE 0x41 0xD 0x0 Item; POIN SilentGiveItem|1"
+#define GiveItemSilentActive(Item) "BYTE 0x4F 0xD 0x0 Item; POIN SilentGiveItem|1"
+
+#define AddMoneySilent(GoldAmount) "SVAL 0x2 GoldAmount; ASMC SilentGiveGold|1"
+#define SubMoneySilent(GoldAmount) "SVAL 0x2 GoldAmount; BYTE 0x40 0xD 0x1 0x0; SilentGiveGold|1"
+#define SetMoneySilent(GoldAmount) "SVAL 0x2 GoldAmount; BYTE 0x40 0xD 0x2 0x0; SilentGiveGold|1"
+
+#define RemoveRetreatedUnit(UnitID) "SVAL 2 UnitID; CALL 0x9EE3BC;"
+
+#define CheckIfUnitDisappeared(UnitID) "SVAL 2 UnitID; CALL CheckUnitDisappear|1"
+
+// AI
+#include "AI/AI.event"
+
+
+// Chapter & World Map events
+#include "ChEvents/ChEvents.event"
+#include "WMEvents/WMEvents.event"

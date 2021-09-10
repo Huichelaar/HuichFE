@@ -1,0 +1,84 @@
+// Game Intro Cutscene proc.
+
+
+// KeyListener
+PROC_NEW_CHILD(0xAA6CA4)                        // Starts keylistener child proc. Also sets next game action.
+
+
+// Game Intro Cutscene
+// Scene1, peer + veneer
+PROC_CALL_ROUTINE(Init_Scene1|1)
+PROC_CALL_ROUTINE_ARG(Init_DTS|1, 0x0)
+PROC_NEW_CHILD(Procs_Judge)
+PROC_SLEEP(18)
+PROC_CALL_ROUTINE_ARG(PlayBGM|1, 0x1)
+PROC_SLEEP(442)
+
+
+// Scene2, away + obey
+PROC_CALL_ROUTINE(Init_Scene2|1)
+PROC_NEW_CHILD(Procs_Gem1)
+PROC_SLEEP(240)
+PROC_NEW_CHILD(Procs_WhirlpoolScene2)
+PROC_CALL_ROUTINE_ARG(Init_FadeBG|1, 0x401)
+PROC_SLEEP(248)
+
+
+// Scene3, land
+PROC_CALL_ROUTINE(Init_Scene3|1)
+PROC_NEW_CHILD(Procs_WMSlider1)
+PROC_SLEEP(30)
+PROC_END_ALL(Procs_WhirlpoolScene2)
+PROC_SLEEP(180)
+PROC_CALL_ROUTINE(End_Scene3|1)
+PROC_YIELD
+PROC_CALL_ROUTINE_ARG(Init_FadeBG|1, 0x14A)
+PROC_SLEEP(90)
+
+
+// Scene4, hand + deluge + refuge
+PROC_CALL_ROUTINE(Init_Scene4|1)
+PROC_CALL_ROUTINE_ARG(Init_FadeBG|1, 0x210)
+PROC_NEW_CHILD(Procs_Gem2)
+PROC_SLEEP(96)
+PROC_NEW_CHILD(Procs_Moon)
+PROC_SLEEP(160)
+PROC_CALL_ROUTINE_ARG(Init_ScrollBG|1, 0x425)
+PROC_NEW_CHILD(Procs_Clouds)
+PROC_SLEEP(60)
+PROC_CALL_ROUTINE(Scene4_Sinusoid|1)
+PROC_SLEEP(390)
+PROC_END_ALL(Procs_Clouds)
+PROC_CALL_ROUTINE_ARG(Init_FadeBG|1, 0x243)
+PROC_SLEEP(32)
+PROC_END_ALL(Procs_ScrollBG)
+PROC_CALL_ROUTINE(0x8B25)                     // Clears HBlankHandler
+PROC_END_ALL(Procs_Sinusoid)
+PROC_CALL_ROUTINE(ClearSinusoidCNT|1)
+PROC_SLEEP(20)
+
+
+// Scene5, transition
+PROC_CALL_ROUTINE(Init_Scene5|1)
+PROC_NEW_CHILD(Procs_WhirlpoolScene5)
+PROC_CALL_ROUTINE_ARG(Init_FadeBG|1, 0x403)
+PROC_SLEEP(62)
+PROC_CALL_ROUTINE(Scene5_Blend|1)
+PROC_SLEEP(180)
+PROC_CALL_ROUTINE_ARG(Init_FadeBG|1, 0x443)
+PROC_SLEEP(60)
+PROC_END_ALL(Procs_WhirlpoolScene5)
+PROC_SLEEP(25)
+
+
+// Scene6, deception
+PROC_CALL_ROUTINE(Init_Scene6|1)
+PROC_LOOP_ROUTINE(0xCA4DD)                    // Draws monster eyes.
+
+
+// Run on Skip
+PROC_LABEL(0x63)
+PROC_LOOP_ROUTINE(Loop_FadeOut|1)
+PROC_CALL_ROUTINE(0xC63C5)            // Clears all children.
+PROC_CALL_ROUTINE(End_Cutscene|1)
+PROC_END

@@ -1,0 +1,23 @@
+// BootupLogos
+#include "BootupLogos/BootupLogos.event"
+
+// TextSprites
+#include "Text/Text.event"
+
+// Judge
+#include "Judge/Judge.event"
+
+// Gem
+#include "Gem/Gem.event"
+
+// Whirlpool
+#include "Whirlpool/Whirlpool.event"
+
+// Moon
+#include "Moon/Moon.event"
+
+// Clouds
+#include "Clouds/Clouds.event"
+
+// Title
+#include "Title/Title.event"

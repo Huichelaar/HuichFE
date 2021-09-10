@@ -1,0 +1,61 @@
+WOMD
+
+
+THE SETUP
+The world consists of three islands each governed by a different kingdom, A, B & C. At some point in time some mad scientist, X, created 6 Macguffins. X used one of these Macguffins to turn C's people into monsters. One of X' followers, Y, seeing the horror these Macguffins can inflict, betrays and defeats (kills?) X and takes the remaining 5 Macguffins away. Y hides two Macguffins (to avoid any kingdom having access to more than one and getting funny ideas about their hierarchy?), gives one to A, one to B and takes the final one with her to C. Y then resolves to defeat the monsters in C and re-build kingdom C.
+
+
+THE MACGUFFINS
+  THE USE
+  A Macguffin can be used as some zombification (biohazardous?) weapon to transform all people within its blast radius into monsters. The time it takes before someone transforms, differs, but transformation is near-instantaneous once it's started. Most people will immediately enter transformation, but some people may even die (of unrelated causes) before they transform. The blast radius covers an entire island (be that island A, B or C).
+  
+  THE RULES
+  - A Macguffin can not be destroyed initially. They have to be around for some (let's say) centuries before they've degraded enough to be destroyed. By the time our story takes place, they are fragile enough to be left irreparable by slight pressure, however a Macguffin caught in another Macguffin's blast radius will be unaffected.
+  - To use a Macguffin a (let's call it:) Harness is needed. More details on Harnesses further below.
+  - When using a Macguffin, one can target anything, be it an island, the ocean, both, part of one island and another (should they both fit in the blast radius), oneself, etc.
+  - The blast radius can't be increased or decreased.
+  - When a Macguffin is used, it will crumble to dust and cannot be repaired. No new Macguffin can be created, the resources required to create one have run out. Only five remain when our story begins.
+
+
+THE HARNESS
+Required to use a Macguffin. Basically exists so that it's not immediately game over if the bad guy gets a Macguffin. Every country has at least one Harness, but they're supposed to be expensive, so they'll probably not have many more. When the Macguffins were created only one Harness existed, the one X used to attack C. Y destroyed this Harness when she betrayed X.
+
+Extra function of the Harness is that it can detect how many Macguffins still exist. This will allow nations to immediately be aware when a Macguffin is used.
+
+
+THE CURRENT STATE OF AFFAIRS
+Relations between the kingdoms have turned hostile and instead of destroying the now fragile Macguffins they own, they've all built Harnesses, threatening to use their Macguffin should they come under attack. Macguffins function as nuclear deterrents. No country wants to use their Macguffin on one of the other nations, because if they do, the other remaining country will use theirs on them. Thus, balance.
+
+
+WHAT THE PEOPLE KNOW
+Basically everything mentioned up to this point. Except the detail that Macguffins have degraded and can be destroyed now.
+
+
+THE SHAKEUP
+Enter the new party D, geographically located in a corner of island A. D suddenly proclaims they have both of the missing Macguffins and proves they have at least one, by using it on A (targeting such that their location is the only part of island A outside of the blast radius). How did D build one of them expensive Harnesses? Eh, somehow. B, C, D remain. D still has an unused Macguffin. B & C still have their Macguffin. A's Macguffin remains unused and unclaimed. Technically B & C don't know whether D has this second Macguffin, they could be bluffing (they aren't). This shouldn't matter though.
+
+
+THE NEW 'BALANCE'
+D's plan is to claim A's Macguffin so that they'll have two Macguffins, allowing them to take down B & C. D is not afraid of B and/or C using their Macguffin against them, because if only one of them uses their Macguffin, D's gone, and the country with the last ready Macguffin will wipe out the only other country that remains. Prisoner's dilemma. Three ready Macguffins, and one unclaimed one. Balance. However, if B & C either confirm that D doesn't have a ready Macguffin (which they can't), or fail to prevent D from obtaining A's Macguffin, another Macguffin is going to be used.
+
+
+THE PROTAGONIST
+Enter Protagonist. Protagonist has seen the devastation caused by Macguffin and vows to destroy them all. Is joined by like-minded folk.
+
+
+THE EARLY PREMISE
+Protagonist overthrows D, destroys their second Macguffin and their Harness and makes their way to A's Macguffin in order to destroy it, conquering forts held by remnants & monsters on the way.
+
+
+THE MIDPOINT PREMISE
+Once Protagonist destroys A's Macguffin, two Macguffins remain. B & C are also aware of this fact because of their Harnesses. C uses their Macguffin to wipe out B to pre-empt B using theirs against C. Only one Macguffin remains, B's unused and unclaimed one. Protagonist needs to race C to get it.
+
+
+THE LATEGAME PREMISE
+C obtains B's Macguffin, transports it (careful! Fragile!) back to their most closeby Harness, which happens to be at the royal castle (huh, how about that). Protagonist takes a break, paralogues open up. No need to hurry to enemy base as the main goal is for all Macguffins to go. If C fires their Macguffin at protagonist, protagonist wins (albeit they'll likely turn into a monster, protagonist, becoming jaded?, doesn't care. shrug!) Eventually, Protagonist gives chase, but has to conquer C's forts to follow the transport's travel line.
+
+
+ENDGAME
+Protagonist makes it to the castle just to find out the Macguffin has been put in the Harness and had been long ready to fire. C wasn't willing to fire it at the Protagonist hoping they could defeat them by other means and just keep the Macguffin as a deterrent to any future foes they may make (Greedy!) Now that protagonist is at the castle, they can't reliably use it to wipe out the protagonist without getting caught in the blast (also there's still that chance they could defeat Protagonist with what remains of their army (Greedy!))
+
+Predictably, Protagonist defeats C, destroys final Macguffin, world's been saved, huzzah.

@@ -1,0 +1,605 @@
+// Chapter 2
+// Highest label: 20
+// Temporary flags used:
+//    0x5 Spawn east archer reinforcement.
+//    0x7 Vivian & Herbert talk.
+//    0x8 Theresa & Herbert talk.
+//    0x9 Spawn Herbert.
+//    0xA move Simon to forest and change AI to escape.
+//    0xB Change AI of the knight guarding the bridge to aggressive.
+//    0xC AFEV, if set check if Simon is present. If he's not, Game Over.
+//    0xD Theresa died.
+//    0xE Herbert died.
+//    0xF EndingScene. Theresa is alive, Herbert is alive, Herbert joined the party.
+{
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno Tutorial
+POIN Traps1 Traps2
+POIN PrepUnits PrepUnits  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+PrepUnits:
+UNIT
+
+PlayerUnits1L:
+UNIT Leona Mercenary_F Vivian Level(0x1, Ally, 0x0) [14,5] 0 0 1 REDA1 [] NoAI
+UNIT Demi Soldier_F Vivian Level(0x1, Ally, 0x0) [13,4] 0 0 2 REDA2 [] NoAI
+UNIT Vivian Supplier Vivian Level(0x1, Ally, 0x0) [14,4] 0 0 1 REDA3 [] NoAI
+UNIT Simon Shaman Vivian Level(0x8, Ally, 0x0) [14,3] 0 0 1 REDA4 [] AttackInRangeAI
+UNIT
+
+PlayerUnits1M:
+UNIT Milo Monk Vivian Level(0x1, Ally, 0x0) [14,5] 0 0 1 REDA1 [] NoAI
+UNIT Demi Soldier_F Vivian Level(0x1, Ally, 0x0) [13,4] 0 0 2 REDA2 [] NoAI
+UNIT Vivian Supplier Vivian Level(0x1, Ally, 0x0) [14,4] 0 0 1 REDA3 [] NoAI
+UNIT Simon Shaman Vivian Level(0x8, Ally, 0x0) [14,3] 0 0 1 REDA4 [] AttackInRangeAI
+UNIT
+
+REDA1:
+REDA [11,5] 0 0x80 0 0
+REDA2:
+REDA [9,4] 0 0x80 0 0
+REDA [9,5] 0 0x80 0 0
+REDA3:
+REDA [10,4] 0 0x80 0 0
+REDA4:
+REDA [12,3] 0 0x80 0 0
+
+PlayerUnits2L:
+UNIT Leona Mercenary_F Vivian Level(0x1, Ally, 0x0) [10,3] 0 0 1 REDA5 [] NoAI
+UNIT Demi Soldier_F Vivian Level(0x1, Ally, 0x0) [10,3] 0 0 3 REDA6 [] NoAI
+UNIT Vivian Supplier Vivian Level(0x1, Ally, 0x0) [10,3] 0 0 2 REDA7 [] NoAI
+UNIT
+
+PlayerUnits2M:
+UNIT Milo Monk Vivian Level(0x1, Ally, 0x0) [10,3] 0 0 1 REDA5 [] NoAI
+UNIT Demi Soldier_F Vivian Level(0x1, Ally, 0x0) [10,3] 0 0 3 REDA6 [] NoAI
+UNIT Vivian Supplier Vivian Level(0x1, Ally, 0x0) [10,3] 0 0 2 REDA7 [] NoAI
+UNIT
+
+REDA5:
+REDA [10,6] 0 0x80 0 0
+REDA6:
+REDA [10,5] 0 0x80 0 0
+REDA [8,5] 0 0x80 0 0
+REDA [8,6] 0 0x80 0 0
+REDA7:
+REDA [10,4] 0 0x80 0 0
+REDA [9,4] 0 0x80 0 0
+
+TheresaUnit:
+UNIT Theresa Archer_F Vivian Level(0x1, Ally, 0x0) [10,3] 0 0 1 REDA8 [IronBow, Vulnerary] NoAI
+UNIT
+
+REDA8:
+REDA [10,4] 0 0x80 0 0
+
+SimonUnit:
+UNIT Simon Shaman 0 Level(0x8, NPC, 0x0) [10,3] 0 0 5 REDA9 [] AttackInRangeAI
+UNIT
+
+REDA9:
+REDA [10,5] 0 0x80 0 0
+REDA [5,6] 0 0x80 0 0
+REDA [5,14] 0 0x80 0 0
+REDA [12,14] 0 0x80 0 0
+REDA [12,16] 0 0x80 0 0
+
+EnemyUnits1:
+UNIT 0x4E Knight Aiden Level(6, Enemy, 1) [12,19] 0 0 0 0 [SteelLance, Concoction] AttackInRangeAI
+UNIT 0x4E Monk_F Aiden Level(5, Enemy, 1) [13,19] 0 0 3 REDA10 [Shine] AttackInRangeAI
+UNIT
+
+REDA10:
+REDA [13,18] 0 0x80 0 0
+REDA [12,18] 0 0x80 0 0
+REDA [12,17] 0 0x80 0 0
+
+EnemyUnits2:
+UNIT Aiden Myrmidon_F Aiden Level(0x8, Enemy, 0x0) [0,19] DropItem 0 0 0 [Lancereaver, Vulnerary, KillingEdge] [0x03,0x03,0x0,0x20]
+UNIT 0x4E Soldier_F Aiden Level(5, Enemy, 1) [0,19] 0 0 1 REDA17 [IronLance] AttackInRangeAI
+UNIT 0x4F Soldier_F Aiden Level(7, Enemy, 1) [1,19] 0 0 0 0 [SteelLance] AttackInRangeAI
+UNIT 0x4E Soldier Aiden Level(6, Enemy, 1) [0,19] 0 0 2 REDA11 [SteelLance] AttackInRangeAI
+UNIT 0x4E Mercenary_F Aiden Level(4, Enemy, 1) [0,19] 0 0 1 REDA12 [IronSword] AttackInRangeAI
+UNIT 0x4E Shaman Aiden Level(4, Enemy, 1) [4,19] 0 0 2 REDA13 [Flux] AttackInRangeAI
+UNIT 0x4E Mage_F Aiden Level(6, Enemy, 1) [7,19] 0 0 3 REDA14 [Elfire] AttackInRangeAI
+UNIT 0x4E Cavalier_F Aiden Level(7, Enemy, 1) [0,14] 0 0 1 REDA15 [IronSword, IronLance] AttackInRangeAI
+UNIT 0x4E Cavalier Aiden Level(8, Enemy, 1) [3,19] 0 0 2 REDA16 [IronLance, SteelSword] AttackInRangeAI
+UNIT
+
+REDA11:
+REDA [4,19] 0 0x80 0 0
+REDA [4,18] 0 0x80 0 0
+
+REDA12:
+REDA [0,16] 0 0x80 0 0
+
+REDA13:
+REDA [4,15] 0 0x80 0 0
+REDA [6,15] 0 0x80 0 0
+
+REDA14:
+REDA [7,14] 0 0x80 0 0
+REDA [8,14] 0 0x80 0 0
+REDA [8,10] 0 0x80 0 0
+
+REDA15:
+REDA [8,14] 0 0x80 0 0
+
+REDA16:
+REDA [3,12] 0 0x80 0 0
+REDA [5,12] 0 0x80 0 0
+
+REDA17:
+REDA [0,13] 0 0x80 0 0
+
+EnemyUnits3:
+UNIT 0x4E Mercenary Aiden Level(2, Enemy, 1) [2,3] 0 0 2 REDA18 [IronSword] AttackInRangeAI
+UNIT 0x4E Mage Aiden Level(4, Enemy, 1) [2,3] 0 0 2 REDA19 [Fire] AttackInRangeAI
+UNIT 0x4E Mercenary_F Aiden Level(5, Enemy, 1) [2,3] 0 0 2 REDA20 [IronSword] AttackInRangeAI
+UNIT 0x4E Archer_F Aiden Level(6, Enemy, 1) [2,3] 0 0 2 REDA21 [IronBow] AttackInRangeAI
+UNIT
+
+REDA18:
+REDA [7,3] 0 0x80 0 0
+REDA [7,2] 0 0x80 0 0
+
+REDA19:
+REDA [0,3] 0 0x80 0 0
+REDA [0,1] 0 0x80 0 0
+
+REDA20:
+REDA [2,6] 0 0x80 0 0
+REDA [0,6] 0 0x80 0 0
+
+REDA21:
+REDA [5,3] 0 0x80 0 0
+REDA [5,0] 0 0x80 0 0
+
+
+EnemyReinf1:
+UNIT 0x4E Archer Aiden Level(8, Enemy, 1) [14,8] 0 0 1 REDA22 [Longbow, IronBow] AttackInRangeAI
+UNIT
+
+REDA22:
+REDA [13,8] 0 0x80 0 0
+
+
+HerbertUnit:
+UNIT Herbert Cavalier Vivian Level(0x9, NPC, 0x0) [0,0] 0 0 1 REDA23 [SteelSword, IronLance, Vulnerary] AttackInRangeAI
+UNIT
+
+REDA23:
+REDA [1,0] 0 0x80 0 0
+
+
+HerbertUnit2:
+UNIT Herbert Cavalier Vivian Level(0x9, NPC, 0x0) [4,0] 0 0 0 0 [SteelSword, IronLance, Vulnerary] AttackInRangeAI
+UNIT
+
+
+EndCutsceneUnits1:
+UNIT Vivian Supplier Vivian Level(0x1, Ally, 0x0) [11,14] 0 0 0 0 [] NoAI
+UNIT Simon Shaman 0 Level(0x8, NPC, 0x0) [12,14] 0 0 0 0 [] NoAI
+UNIT
+
+
+EndCutsceneUnits2_M:
+UNIT Milo Monk Vivian Level(0x1, Ally, 0x0) [5,10] 0 0 2 REDA26 [] NoAI
+UNIT Demi Soldier_F Vivian Level(0x1, Ally, 0x0) [4,10] 0 0 4 REDA27 [] NoAI
+UNIT Theresa Archer_F Vivian Level(0x1, Ally, 0x0) [10,10] 0 0 4 REDA24 [] NoAI
+UNIT
+
+EndCutsceneUnits2_MH:
+UNIT Milo Monk Vivian Level(0x1, Ally, 0x0) [5,10] 0 0 2 REDA26 [] NoAI
+UNIT Demi Soldier_F Vivian Level(0x1, Ally, 0x0) [4,10] 0 0 4 REDA27 [] NoAI
+UNIT Theresa Archer_F Vivian Level(0x1, Ally, 0x0) [10,10] 0 0 4 REDA24 [] NoAI
+UNIT Herbert Cavalier Vivian Level(0x9, Ally, 0x0) [9,10] 0 0 2 REDA25 [] NoAI
+UNIT
+
+EndCutsceneUnits2_L:
+UNIT Leona Mercenary_F Vivian Level(0x1, Ally, 0x0) [5,10] 0 0 2 REDA26 [] NoAI
+UNIT Demi Soldier_F Vivian Level(0x1, Ally, 0x0) [4,10] 0 0 4 REDA27 [] NoAI
+UNIT Theresa Archer_F Vivian Level(0x1, Ally, 0x0) [10,10] 0 0 4 REDA24 [] NoAI
+UNIT
+
+EndCutsceneUnits2_LH:
+UNIT Leona Mercenary_F Vivian Level(0x1, Ally, 0x0) [5,10] 0 0 2 REDA26 [] NoAI
+UNIT Demi Soldier_F Vivian Level(0x1, Ally, 0x0) [4,10] 0 0 4 REDA27 [] NoAI
+UNIT Theresa Archer_F Vivian Level(0x1, Ally, 0x0) [10,10] 0 0 4 REDA24 [] NoAI
+UNIT Herbert Cavalier Vivian Level(0x9, Ally, 0x0) [9,10] 0 0 2 REDA25 [] NoAI
+UNIT
+
+REDA24:
+REDA [10,11] 0 0x80 0 0
+REDA [9,11] 0 0x80 0 0
+REDA [9,14] 0 0x80 0 0
+REDA [13,14] 0 0x80 0 0
+
+REDA25:
+REDA [9,14] 0 0x80 0 0
+REDA [11,14] 0 0x80 0 0
+
+REDA26:
+REDA [5,15] 0 0x80 0 0
+REDA [10,15] 0 0x80 0 0
+
+REDA27:
+REDA [4,14] 0 0x80 0 0
+REDA [10,14] 0 0x80 0 0
+REDA [10,16] 0 0x80 0 0
+REDA [11,16] 0 0x80 0 0
+
+
+BeginningScene:
+// The gang enters the house.
+MUSC 0x4B
+FADU 16
+CHECK_EVENTID MiloFlag
+BNE 0x0 0x0 0xC
+  LOAD2 0 PlayerUnits1L
+  GOTO 0x1
+LABEL 0x0
+  LOAD2 0 PlayerUnits1M
+LABEL 0x1
+ENUN
+
+CUMO Vivian
+STAL 60
+CURE
+Text(Ch2_0)
+MOVE 0x80 Simon [10,3]
+MOVE 0x80 Vivian [10,3]
+MOVE 0x80 Demi [10,3]
+MOVE 0x80 Leona [10,3]
+MOVE 0x80 Milo [10,3]
+ENUN
+CLEA 0x0
+
+MUSC 0x7FFF
+SetBackground(Inn)
+TEXTSHOW Ch2_1
+TEXTEND
+MUSC 0xD
+TEXTCONT
+TEXTEND
+REMA
+FADI 16
+CLEAN
+
+// Simon tries to flee, but gets surrounded by enemies
+FADU 16
+EVBIT_T 0x9
+LOAD2 0 SimonUnit
+ENUN
+EVBIT_F 0x9
+CAMERA [12,19]
+LOAD1 1 EnemyUnits1
+ENUN
+MOVE 0x80 Simon [12,14]
+ENUN
+MOVE 0x80 Simon [9,14]
+CAMERA [0,19]
+LOAD1 1 EnemyUnits2
+MOVE 0x80 Simon [12,14]
+ENUN
+MOVE 0x80 Simon [12,11]
+ENUN
+MOVE 0x80 Simon [14,11]
+ENUN
+
+CUMO Simon
+STAL 60
+CURE
+Text(Ch2_2)
+
+// Aiden instructs her troops
+CAMERA [0,19]
+CUMO Aiden
+STAL 60
+CURE
+Text(Ch2_3)
+EVBIT_T 0x9
+MOVE 0x80 0x4F [2,19]
+ENUN
+MOVE 0x80 0x4F [2,3]
+ENUN
+EVBIT_F 0x9
+CAMERA [0,0]
+LOAD1 1 EnemyUnits3
+ENUN
+
+
+// Our heroes appear.
+CAMERA [10,3]
+CHECK_EVENTID MiloFlag
+BNE 0x2 0x0 0xC
+  LOAD2 0 PlayerUnits2L
+  GOTO 0x3
+LABEL 0x2
+  LOAD2 0 PlayerUnits2M
+LABEL 0x3
+ENUN
+STAL 10
+LOAD1 1 TheresaUnit
+ENUN
+// Close housegate.
+SOUN 0x2D7
+TILECHANGE 0x1
+CUMO Theresa
+STAL 60
+CURE
+Text(Ch2_4)
+
+// Prepare for battle
+AddMoneySilent(1500)
+CHECK_EVENTID MiloFlag
+BNE 9 0x0 0xC
+  RemoveRetreatedUnit(Leona)
+  GOTO 10
+LABEL 9
+  RemoveRetreatedUnit(Milo)
+LABEL 10
+
+// Simon left the party, take his items and give him new items.
+SendInventoryToConvoy(Simon)
+GiveItemSilent(Simon, Luna)
+GiveItemSilent(Simon, Elixir)
+SVAL 1 0x00030300
+CHAI Simon
+ENUT 0xC
+NoFade
+ENDA
+
+LocationBasedEvents:
+Armory(Ch2Armory,0,10)
+END_MAIN
+
+
+EndingScene:
+ASMC ChapterEndExtra+0x1
+
+CHECK_EXISTS Aiden
+BEQ 11 0x0 0xC
+  CAMERA Aiden
+  CUMO Aiden
+  STAL 60
+  CURE
+  Text(Ch2_11)
+LABEL 11
+FADI 16
+
+// Herbert joins if:
+//  - Theresa didn't die.
+//  - Herbert didn't die.
+//  - Herbert didn't join already.
+CHECK_EVENTID 0xD
+BNE 16 0x0 0xC
+  CHECK_EVENTID 0xE
+  BNE 16 0x0 0xC
+    ENUT 0xF
+    CHECK_EXISTS Herbert
+    BNE 20 0x0 0xC
+      LOAD1 1 HerbertUnit2
+    LABEL 20
+    CHECK_ALLEGIANCE Herbert
+    BEQ 16 0x0 0xC
+      CUSA Herbert
+LABEL 16
+
+CLEE 0
+CLEN 0
+CLEA 0
+LOAD2 0 EndCutsceneUnits1
+ENUN
+CAMERA Vivian
+FADU 16
+CUMO Vivian
+STAL 60
+CURE
+
+// Vivian talks to Simon
+MUSC 0x3
+Text(Plain_3,Ch2_5)
+
+//FADU 16
+MOVE 0x80 Simon [12,19]
+ENUN
+DISA Simon
+MOVE 0x80 Vivian [12,14]
+ENUN
+MOVE 0x80 Vivian [12,16]
+ENUN
+
+// Main gang appears.
+CHECK_EVENTID 0xE
+BEQ 12 0x0 0xC
+  // Herbert died.
+  CHECK_EVENTID MiloFlag
+  BEQ 14 0x0 0xC
+    LOAD2 0 EndCutsceneUnits2_M
+    GOTO 13
+  LABEL 14
+    LOAD2 0 EndCutsceneUnits2_L
+  GOTO 13
+LABEL 12
+  // Herbert didn't die.
+  CHECK_EVENTID MiloFlag
+  BEQ 15 0x0 0xC
+    LOAD2 0 EndCutsceneUnits2_MH
+    GOTO 13
+  LABEL 15
+    LOAD2 0 EndCutsceneUnits2_LH
+LABEL 13
+ENUN
+CUMO Demi
+STAL 60
+CURE
+SetBackground(Plain_3)
+TEXTSHOW Ch2_12
+TEXTEND
+REMA
+FADI 16
+CLEAN
+
+// Herbert and Theresa join or don't.
+CHECK_EVENTID 0xF
+BEQ 17 0x0 0xC
+  FADU 16
+  CUMO Theresa
+  STAL 60
+  CURE
+  SetBackground(Plain_3)
+  TEXTSHOW Ch2_13
+  TEXTEND
+  REMA
+  GOTO 18
+LABEL 17
+// No text if both are dead.
+CHECK_EVENTID 0xD
+SADD 0x2 0x0 0xC
+CHECK_EVENTID 0xE
+BEQ 18 0x2 0xC
+  CHECK_EVENTID 0xD
+  BEQ 19 0x0 0xC
+    // Theresa died.
+    FADU 16
+    CUMO Vivian
+    STAL 60
+    CURE
+    SetBackground(Plain_3)
+    TEXTSHOW Ch2_14
+    TEXTEND
+    REMA
+    FADI 16
+    DISA Herbert
+    GOTO 18
+  LABEL 19
+    // Herbert died.
+    FADU 16
+    CUMO Theresa
+    STAL 60
+    CURE
+    SetBackground(Plain_3)
+    TEXTSHOW Ch2_15
+    TEXTEND
+    REMA
+    FADI 16
+    DISA Theresa
+LABEL 18
+
+MNCH 0x3
+ENDA
+
+TurnBasedEvents:
+TurnEventPlayer(0x5,EastArcherReinf,2)
+TurnEventPlayer(0x9,HerbertSpawns,3)
+TurnEventNPC(0xA,SimonMovesToForest,7)
+TurnEventEnemy(0xB,BridgeKnightMoves,8)
+END_MAIN
+
+  EastArcherReinf:
+  CAMERA [14,8]
+  LOAD1 1 EnemyReinf1
+  ENUN
+  NoFade
+  ENDA
+
+  HerbertSpawns:
+  CAMERA [0,0]
+  LOAD1 1 HerbertUnit
+  ENUN
+  CUMO Herbert
+  STAL 60
+  CURE
+  Text(Ch2_10)
+  NoFade
+  ENDA
+  
+  SimonMovesToForest:
+  SVAL 1 0x00031006
+  CHAI Simon
+  NoFade
+  ENDA
+  
+  // Doesn't do anything if square isn't occupied.
+  BridgeKnightMoves:
+  SVAL 1 0x0
+  CHAI [12,19]
+  NoFade
+  ENDA
+  
+
+CharacterBasedEvents:
+CharacterEvent(0x3,VivianSimonTalk,Vivian,Simon)
+CharacterEvent(0x7,VivianHerbertTalk,Vivian,Herbert)
+CharacterEvent(0x7,VivianHerbertTalk,Herbert,Vivian)
+CharacterEvent(0x8,TheresaHerbertTalk,Theresa,Herbert)
+CharacterEvent(0x8,TheresaHerbertTalk,Herbert,Theresa)
+END_MAIN
+
+  // Executed when Vivian initiates a conversation with Simon.
+  VivianSimonTalk:
+  ASMC 0x83281            // Calls End Event.
+  NoFade
+  ENDA
+
+  VivianHerbertTalk:
+  CHECK_ALLEGIANCE Herbert
+  BEQ 0x4 0x0 0xC
+    Text(Ch2_6)
+    CUSA Herbert
+    GOTO 0x5
+  LABEL 0x4
+    Text(Ch2_7)
+  LABEL 0x5
+  NoFade
+  ENDA
+
+  TheresaHerbertTalk:
+  CHECK_ALLEGIANCE Herbert
+  BEQ 0x6 0x0 0xC
+    Text(Ch2_8)
+    CUSA Herbert
+    GOTO 0x7
+  LABEL 0x6
+    Text(Ch2_9)
+  LABEL 0x7
+  NoFade
+  ENDA
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+//AREA 0xA SimonMovesToForest [7, 11] [14, 19]              // Too strict maybe?
+AFEV 0x0 SimonGone 0xC
+END_MAIN
+
+  SimonGone:
+  CHECK_EXISTS Simon
+  BNE 8 0x0 0xC
+    //SimonEscaped stuff
+    ENUT 0x65
+  LABEL 8
+  NoFade
+  ENDA
+
+Traps1:
+END_MAIN
+
+Traps2:
+END_MAIN
+}
+
+  Ch2Armory:
+  SHLI IronSword IronLance IronAxe IronBow Vulnerary

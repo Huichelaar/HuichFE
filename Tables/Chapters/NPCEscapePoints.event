@@ -1,0 +1,4 @@
+ALIGN 4
+Ch2NPCEscapePoints:
+BYTE 12 19 0x5 0x0
+WORD 0xFF

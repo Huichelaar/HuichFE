@@ -1,0 +1,12 @@
+ALIGN 4
+AffinityMatchupBonusTableLABEL:
+FILL 8*8
+PUSH
+ORG AffinityMatchupBonusTableLABEL + AffFire*8 ; BYTE (0) (2) (1) (0) (0) (0) (0) (1) 
+ORG AffinityMatchupBonusTableLABEL + AffThunder*8 ; BYTE (0) (1) (2) (1) (0) (0) (0) (0) 
+ORG AffinityMatchupBonusTableLABEL + AffWind*8 ; BYTE (0) (0) (1) (2) (1) (0) (0) (0) 
+ORG AffinityMatchupBonusTableLABEL + AffIce*8 ; BYTE (0) (0) (0) (1) (2) (1) (0) (0) 
+ORG AffinityMatchupBonusTableLABEL + AffDark*8 ; BYTE (0) (0) (0) (0) (1) (2) (1) (0) 
+ORG AffinityMatchupBonusTableLABEL + AffLight*8 ; BYTE (0) (0) (0) (0) (0) (1) (2) (1) 
+ORG AffinityMatchupBonusTableLABEL + AffAnima*8 ; BYTE (0) (1) (0) (0) (0) (0) (1) (2) 
+POP

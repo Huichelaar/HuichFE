@@ -1,0 +1,70 @@
+// Menus
+
+ALIGN 4
+WorldMapMenu:
+#include "WorldMapMenu/WorldMapMenu.event"
+  ALIGN 4
+  MenuOptionEffect:
+  #include "WorldMapMenu/MenuOptionEffect.lyn.event"
+  ALIGN 4
+  MenuOptionUsability:
+  #include "WorldMapMenu/ManageFortsUsability.lyn.event"
+  
+ALIGN 4
+FortMenu1:
+#include "FortMenu1/FortMenu1.event"
+  ALIGN 4
+  CommandEffect:
+  #include "FortMenu1/CommandEffect.lyn.event"
+  ALIGN 4
+  HoverGather:
+  #include "FortMenu1/HoverGather.lyn.event"
+  ALIGN 4
+  HoverUpgrade:
+  #include "FortMenu1/HoverUpgrade.lyn.event"
+  ALIGN 4
+  HoverChange:
+  #include "FortMenu1/HoverChange.lyn.event"
+  ALIGN 4
+  FortMenu1Destructor:
+  #include "FortMenu1/FortMenu1Destructor.lyn.event"
+  ALIGN 4
+  FortMenu1CallHelp:
+  #include "FortMenu1/FortMenu1CallHelp.lyn.event"
+  ALIGN 4
+  FortMenu1HelpBoxInit:
+  #include "FortMenu1/FortMenu1HelpBoxInit.lyn.event"
+  
+ALIGN 4
+FortMenu2:
+#include "FortMenu2/FortMenu2.event"
+  ALIGN 4
+  FortMenu2Effect:
+  #include "FortMenu2/FortMenu2Effect.lyn.event"
+    ALIGN 4
+    EffectGather:
+    #include "FortMenu2/EffectGather.lyn.event"
+    ALIGN 4
+    EffectUpgrade:
+    #include "FortMenu2/EffectUpgrade.lyn.event"
+    ALIGN 4
+    SelectChange:
+    #include "FortMenu2/SelectChange.lyn.event"
+    ALIGN 4
+    DeselectChange:
+    #include "FortMenu2/DeselectChange.lyn.event"
+  ALIGN 4
+  FortMenu2DrawHoverThing:
+  #include "FortMenu2/FortMenu2DrawHoverThing.lyn.event"
+  ALIGN 4
+  FortMenu2Destructor:
+  #include "FortMenu2/FortMenu2Destructor.lyn.event"
+  ALIGN 4
+  FortMenu2CallHelp:
+  #include "FortMenu2/FortMenu2CallHelp.lyn.event"
+  ALIGN 4
+  FortMenu2HelpBoxIdle:
+  #include "FortMenu2/FortMenu2HelpBoxIdle.lyn.event"
+  ALIGN 4
+  FortMenu2HelpBoxMove:
+  #include "FortMenu2/FortMenu2HelpBoxMove.lyn.event"

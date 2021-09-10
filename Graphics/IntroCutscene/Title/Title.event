@@ -1,0 +1,30 @@
+// FELogo Tiles
+ALIGN 4
+FELogoTiles:
+#incbin "FELogo.dmp"
+
+// FELogo Palette
+ALIGN 4
+FELogoPalette:
+#incbin "FELogoPalette.dmp"
+
+
+// Subtitle Tiles
+ALIGN 4
+SubtitleTiles:
+#incbin "Subtitle.dmp"
+
+// Subtitle OAM
+ALIGN 4
+SubtitleOAM:
+#incbin "SubtitleOAM.dmp"
+
+// Subtitle TSA
+ALIGN 4
+SubtitleTSA:
+#incbin "SubtitleTSA.dmp"
+
+// Subtitle Palette
+ALIGN 4
+SubtitlePalette:
+#incbin "SubtitlePalette.dmp"

@@ -1,0 +1,35 @@
+PUSH
+ORG 0x206674
+WMRTableLABEL:
+FILL 32*12
+PUSH
+ORG WMRTableLABEL + 0*12 ; WORD (Road0|IsPointer) ; BYTE (0) (1) ; SHORT (0) ; WORD (0) 
+ORG WMRTableLABEL + 1*12 ; WORD (Road1|IsPointer) ; BYTE (1) (2) ; SHORT (0) ; WORD (0) 
+ORG WMRTableLABEL + 2*12 ; WORD (Road2|IsPointer) ; BYTE (2) (3) ; SHORT (0) ; WORD (0) 
+ORG WMRTableLABEL + 3*12 ; WORD (Road3|IsPointer) ; BYTE (1) (4) ; SHORT (0) ; WORD (0) 
+ORG WMRTableLABEL + 4*12 ; WORD (Road4|IsPointer) ; BYTE (4) (5) ; SHORT (0) ; WORD (Road4PD|IsPointer) 
+ORG WMRTableLABEL + 5*12 ; WORD (Road6|IsPointer) ; BYTE (5) (6) ; SHORT (0) ; WORD (Road6PD|IsPointer) 
+ORG WMRTableLABEL + 6*12 ; WORD (Road7|IsPointer) ; BYTE (6) (7) ; SHORT (0) ; WORD (Road7PD|IsPointer) 
+ORG WMRTableLABEL + 7*12 ; WORD (Road8|IsPointer) ; BYTE (7) (8) ; SHORT (0) ; WORD (Road8PD|IsPointer) 
+ORG WMRTableLABEL + 8*12 ; WORD (Road9|IsPointer) ; BYTE (8) (9) ; SHORT (0) ; WORD (Road9PD|IsPointer) 
+ORG WMRTableLABEL + 9*12 ; WORD (Road10|IsPointer) ; BYTE (9) (10) ; SHORT (0) ; WORD (Road10PD|IsPointer) 
+ORG WMRTableLABEL + 10*12 ; WORD (Road11|IsPointer) ; BYTE (10) (11) ; SHORT (0) ; WORD (0) 
+ORG WMRTableLABEL + 11*12 ; WORD (Road12|IsPointer) ; BYTE (11) (12) ; SHORT (0) ; WORD (0) 
+ORG WMRTableLABEL + 12*12 ; WORD (Road13|IsPointer) ; BYTE (8) (12) ; SHORT (0) ; WORD (Road13PD|IsPointer) 
+ORG WMRTableLABEL + 13*12 ; WORD (Road14|IsPointer) ; BYTE (12) (13) ; SHORT (0) ; WORD (Road14PD|IsPointer) 
+ORG WMRTableLABEL + 14*12 ; WORD (Road17|IsPointer) ; BYTE (13) (14) ; SHORT (0) ; WORD (0) 
+ORG WMRTableLABEL + 15*12 ; WORD (Road21|IsPointer) ; BYTE (14) (15) ; SHORT (0) ; WORD (0) 
+ORG WMRTableLABEL + 16*12 ; WORD (Road25|IsPointer) ; BYTE (15) (16) ; SHORT (0) ; WORD (Road25PD|IsPointer) 
+ORG WMRTableLABEL + 17*12 ; WORD (Road26|IsPointer) ; BYTE (16) (17) ; SHORT (0) ; WORD (Road26PD|IsPointer) 
+ORG WMRTableLABEL + 18*12 ; WORD (Road5|IsPointer) ; BYTE (5) (18) ; SHORT (0) ; WORD (Road5PD|IsPointer) 
+ORG WMRTableLABEL + 19*12 ; WORD (Road15|IsPointer) ; BYTE (13) (20) ; SHORT (0) ; WORD (Road15PD|IsPointer) 
+ORG WMRTableLABEL + 20*12 ; WORD (Road16|IsPointer) ; BYTE (12) (20) ; SHORT (0) ; WORD (Road16PD|IsPointer) 
+ORG WMRTableLABEL + 21*12 ; WORD (Road18|IsPointer) ; BYTE (13) (19) ; SHORT (0) ; WORD (0) 
+ORG WMRTableLABEL + 22*12 ; WORD (Road19|IsPointer) ; BYTE (6) (19) ; SHORT (0) ; WORD (0) 
+ORG WMRTableLABEL + 23*12 ; WORD (Road20|IsPointer) ; BYTE (0) (19) ; SHORT (0) ; WORD (0) 
+ORG WMRTableLABEL + 24*12 ; WORD (Road22|IsPointer) ; BYTE (15) (22) ; SHORT (0) ; WORD (Road22PD|IsPointer) 
+ORG WMRTableLABEL + 25*12 ; WORD (Road23|IsPointer) ; BYTE (15) (21) ; SHORT (0) ; WORD (0) 
+ORG WMRTableLABEL + 26*12 ; WORD (Road24|IsPointer) ; BYTE (19) (21) ; SHORT (0) ; WORD (Road24PD|IsPointer) 
+ORG WMRTableLABEL + 27*12 ; WORD (0x70616D47) ; BYTE (82) (111) ; SHORT (29813) ; WORD (0x65) 
+POP
+POP

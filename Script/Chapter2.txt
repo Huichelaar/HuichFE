@@ -1,0 +1,133 @@
+Gang takes shelter with two friends of Vivian. One of these friends is a cavalier doing groceries.
+
+Simon presents catalyst to answer why they're being chased.
+
+Vivian remarks she wasn't informed
+
+Simon says information spread had to be kept to a minimum.
+
+Leona/Milo mentions they were still attacked despite that fact. Mentions they couldn't confirm cause of death of the soldiers in the cave. Remarks that only Vivian and Simon made it out of the people who went in the cave. Accusatorily asks Simon who leaked the intel.
+
+Simon says Arzil can't be allowed to get a second catalyst.
+
+Leona/Milo says that Simon killed their comrades (for that reason!?). Continues to immediately demand Simon hands over the catalyst.
+
+Enemy attacks.
+
+Simon uses the confusion to escape.
+
+Chapter starts, without Simon. Put his items in Convoy.
+
+
+
+
+
+
+
+World map:
+On the run from an attack by mercenaries, Vivian and company make their way to the village of Tryza.
+
+There they aim to take shelter at friends of Vivian's.
+
+Who is the enemy, and why are they targeting people at the excavation site?
+
+Vivian feels like she's being kept in the dark of something very important.
+
+At the same time, the two surviving soldiers question the intentions of those whom they were assigned to protect.
+
+
+Chapter:
+*Knock sfx*
+V
+Theresa, are you there?
+*pause*
+T
+Oh! Vivian, you're back already?
+V
+Actually, something happened. Could we come in?
+T
+Of course, come on in.
+*change scene*
+T
+So what happened?
+D
+Ma'am, pleae stay calm, but we're actually on the run from enemy forces.
+T
+Goodness!
+D
+We don't know who they are, but we do know they mean us harm. We'll be using your house as shelter.
+T
+Oh... uhm.. Y-yes, of course! Stay as long as you need. Ehm... I'll just make some tea. Goodness, gracious.
+V
+I'm sorry to dump all this on you Theresa. I'm not sure how all this happened either.
+T
+No, no. Don't be. It's just... a lot to take in at once. I'll be in the kitchen if you need me.
+D
+Simon, I think it's about time you tell us what you know. Who are these people attacking us?
+S
+They're mercenaries hired by Coramo. They were sent to retrieve this:
+*shows the catalyst*
+V
+Simon, is that topaz... a catalyst?
+T
+Yep, it's one of the two lost catalysts. It was actually buried in the cave we were sent to excavate.
+Arzil sent soldiers to escort us, because they suspected a catalyst was present in Ese Neve. As it turns out, 
+we were right on the money.
+V
+So that's why so many troops came along. Was I the only one who wasn't told this?
+D
+We needed to limit this information from spreading. The fewer people know, the lower the odds this information 
+would leak out.
+M/L
+Yet, this knowledge was leaked, and not just to anybody; It was leaked to a rival nation! This reeks of 
+betrayal.
+*pause*
+One can infer why they're after us, but how come you're aware of who our enemies are? Tell me, Simon, how did my comrades die in that cave?
+S
+M/L, you have to understand...[.6] Arzil can not, under any circumstance, get their hands on this catalyst.
+M/L
+But Coramo can!? You killed my comrades, just to hand the catalyst over to Coramo? What exactly do you think they would do when they obtain the catalyst? Hand it over, right now!
+S
+If I wanted to hand it over to Coramo I would've done so once I exited the cave.
+M/L
+I'm done listening. Hand it over, that's not a request!
+*sound*
+T
+Everyone! There are weird people approaching the house. What do we do? Are these the people you told me about?
+S
+On y va!
+M/L
+Wait, hold up!
+Blast, he's getting away.
+D
+M\L don't go out on your own. I'm coming with you.
+V
+Wait, what about us? Theresa, we should definitely not be staying here.
+T
+Vivian... What do I do? Herbert is still hunting outside. What if he gets hurt?
+V
+R-right... In any case, we can't stay here. Let's try to stick together and find him.
+T
+Yes. I'll grab my bow!
+T
+He'll be fine. He'll be fine.
+They're fortunate he's not hunting them. Ha!
+...
+Gods, if anything were to happen to him...
+V
+Theresa, we need to move!
+T
+Y-yes! Right away!
+
+
+
+
+
+
+
+
+Chapter goal: have Vivian talk to Simon. Side objectives: South-east enemy has droppable item, South-west boss grants exp when killed, North-west spawns Norbert, the cavalier.
+
+When Viv talks to Simon: Simon repeats catalyst can't fall into Arzil's or Coramo's hands. Simon asks Vivian to join him. He has allies south which will protect the catalyst. Vivian is doubtful they'll protect it from two kingdoms, including the one in charge of this land. Simon, still hiding stuff, asks her to trust him. Vivian can't do it, doesn't join him, Simon flees. Realizing Simon still has the catalyst decides to give chase with the main gang. Next chapter she'll remember the catalysts can be destroyed which will give her the actual motive to chase Simon ("Why didn't he just destroy the catalyst?")
+
+Kill boss if they haven't yet been.

@@ -1,0 +1,46 @@
+Proc at 0x75932C
+
+80739E1     Makes "Level Up" text appear.
+8073A4D     Does a lot of stuff to set up statpanel. More details in separate .txt file. Runs once.
+YIELD
+8073CE9     Display_level_up_screen. Prepare statpanel Gfx. Also puts mapanim "Level Up" text in OBJ.
+            Prepares char's face. Clear BG2 mapbuffer. Calls HUGE Determining_level-up_status function. Which
+            seems to prepare BG2's text. Runs once.
+
+8073E19     Sets the scrolling HBlankHandler (8074835). Enable sync BG0, 1, 2, palette. Runs once.
+8073E49     Waits for timer > 50 (which it will be on first call). Resets timer and sets some other vars
+            (0x2Ch, 0x44w 0x48w, 0x4Cw, 0x50w) Copies entire palette buffer to 0x20165C8. Ends loop.
+
+8073E8D     Uses vars for easing function calls. Copies palette buffer buffer to palette buffer, then applies
+            fading to select palettes. Reset timer and break loop after 0x14 iterations. During this loop, panel and face scroll in.
+
+8073FB5     Initializes stat up efx procs for stats that change.
+
+SLEEP 0x14
+
+These procs use 0x2A. If 0x2A is set, flip the title card instead of changing level.
+  8073FE1     Does something if 0x2Ab is set. Either way, runs once.
+  8074041     Also does something if 0x2Ab is set. Either way, runs once.
+  80740C9     As above.
+  807401D     0x2Ab isn't set: Reset timer, Display sparkle anim for lvl (0x74D58), Change text, play sound.
+              0x2Ab is set: Delete some 6C and do some other stuff, Reset timer.
+              Either way, runs once.
+  807419D     ends if 0x2Ab is set. Otherwise, increment timer. If timer is >0x1D wait. Timer should start at 0 
+              though...
+
+80741CD     EndLevelUpGrowthStatusAnimation. Display sparkle anim for each stat up per every 0x14 frames. 8 
+            possible stat ups.
+
+80742BD     Wait for 0x6D frames. Reset timer, Delete some proc. Sets the scrolling HBlankHandler (8074835) 
+            again. Probably used to scroll out the panel and face. End loop.
+80742ED     End loop. Basically YIELD.
+80742F9     Basically 8073E8D but in reverse. Ends after only 0x8 iterations though.
+
+80743C1     Does a lot of stuff. Seems to be setting screen blocks, screen sizes, BGPositions, BGPriorities, AIS 
+            priorities back. Redraws plateaus. Also deletes face.
+
+8074545     Deletes some procs, changes some vars in AISrelated procs (just like 8073A4D). Call 
+            ResumeEfxWeaponIcon. Set 0x29 var, which is read by a different proc. This proc ends
+            Procs_ekrLevelup as a result.
+
+END

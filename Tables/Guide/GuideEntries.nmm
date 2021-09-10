@@ -1,0 +1,52 @@
+#FE8 Guide Entries
+#
+
+1
+FE8 Guide Entries
+0xB19E0C
+56
+12
+NULL
+NULL
+
+Sort1ID
+0
+1
+NEDU
+NULL
+
+Sort2ID
+1
+1
+NEDU
+NULL
+
+EntryTextID
+2
+2
+NEHU
+NULL
+
+DetailsTextID
+4
+2
+NEHU
+NULL
+
+Display Flag
+6
+2
+NEHU
+NULL
+
+Read Flag
+8
+2
+NEHU
+NULL
+
+Padding
+10
+2
+NEDU
+NULL

@@ -1,0 +1,16 @@
+ALIGN 4
+PromotionItemTableLABEL:
+FILL 11*12
+PUSH
+ORG PromotionItemTableLABEL + 0x0*12 ; SHORT (0x64) ; BYTE (0) (0) ; WORD (0x88ADF57) (0x0) 
+ORG PromotionItemTableLABEL + 0x1*12 ; SHORT (0x65) ; BYTE (0) (0) ; WORD (0x88ADF5E) (0x0) 
+ORG PromotionItemTableLABEL + 0x2*12 ; SHORT (0x66) ; BYTE (0) (0) ; WORD (0x88ADF64) (0x0) 
+ORG PromotionItemTableLABEL + 0x3*12 ; SHORT (0x67) ; BYTE (0) (0) ; WORD (0x88ADF67) (0x0) 
+ORG PromotionItemTableLABEL + 0x4*12 ; SHORT (0x68) ; BYTE (0) (0) ; WORD (0x88ADF6B) (0x0) 
+ORG PromotionItemTableLABEL + 0x5*12 ; SHORT (0x88) ; BYTE (0) (0) ; WORD (0x88ADF76) (0x0) 
+ORG PromotionItemTableLABEL + 0x6*12 ; SHORT (0x8A) ; BYTE (0) (0) ; WORD (0x88ADF96) (PromoLordCheck|IsPointer|1) 
+ORG PromotionItemTableLABEL + 0x7*12 ; SHORT (0x97) ; BYTE (0) (0) ; WORD (0x88ADF9E) (0x0) 
+ORG PromotionItemTableLABEL + 0x8*12 ; SHORT (0x98) ; BYTE (0) (0) ; WORD (0x88ADFA4) (PromoLordCheck|IsPointer|1) 
+ORG PromotionItemTableLABEL + 0x9*12 ; SHORT (0x99) ; BYTE (0) (0) ; WORD (0x88ADFA6) (PromoLordCheck|IsPointer|1) 
+ORG PromotionItemTableLABEL + 0xA*12 ; SHORT (0xFFFF) ; BYTE (0) (0) ; WORD (0x0) (0x0) 
+POP

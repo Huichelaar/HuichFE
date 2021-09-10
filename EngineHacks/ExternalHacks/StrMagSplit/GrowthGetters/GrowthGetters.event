@@ -1,0 +1,45 @@
+  ALIGN 4
+	Growth_Getter_Table:
+	POIN Get_Hp_Growth Get_Str_Growth Get_Mag_Growth Get_Skl_Growth Get_Spd_Growth Get_Luk_Growth Get_Def_Growth Get_Res_Growth
+
+	ALIGN 4
+	Get_Hp_Growth:
+	#include "Get_Hp_Growth.lyn.event"
+  
+	ALIGN 4
+	Get_Str_Growth:
+	#include "Get_Str_Growth.lyn.event"
+  
+	ALIGN 4
+	Get_Mag_Growth:
+	#include "Get_Mag_Growth.lyn.event"
+  
+	ALIGN 4
+	Get_Skl_Growth:
+	#include "Get_Skl_Growth.lyn.event"
+  
+	ALIGN 4
+	Get_Spd_Growth:
+	#include "Get_Spd_Growth.lyn.event"
+  
+	ALIGN 4
+	Get_Def_Growth:
+  #include "Get_Def_Growth.lyn.event"
+  
+	ALIGN 4
+	Get_Res_Growth:
+	#include "Get_Res_Growth.lyn.event"
+  
+	ALIGN 4
+	Get_Luk_Growth:
+	#include "Get_Luk_Growth.lyn.event"
+
+	ALIGN 4
+	Extra_Growth_Boosts:
+	#incbin "Extra_Growth_Boosts.dmp"
+    WORD Growth_Options
+    POIN ItemTable
+	POIN SkillTester
+	WORD BlossomID
+	WORD AptitudeID
+	

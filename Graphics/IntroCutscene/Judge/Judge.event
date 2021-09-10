@@ -1,0 +1,29 @@
+// Palette
+ALIGN 4
+JudgePalette:
+#incbin "JudgePalette.dmp"
+
+// Tiles
+ALIGN 4
+Judge0:
+#incbin "Judge0.dmp"
+ALIGN 4
+Judge1:
+#incbin "Judge1.dmp"
+ALIGN 4
+Judge2:
+#incbin "Judge2.dmp"
+ALIGN 4
+Judge3:
+#incbin "Judge3.dmp"
+ALIGN 4
+Judge:
+POIN Judge0 Judge1 Judge2 Judge3
+
+// Slam
+ALIGN 4
+SlamPalette:
+#incbin "SlamPalette.dmp"
+ALIGN 4
+SlamTiles:
+#incbin "SlamTiles.dmp"

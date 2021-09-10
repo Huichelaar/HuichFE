@@ -1,0 +1,18 @@
+// Big handaxe
+
+
+// Graphics
+ALIGN 4
+BigHandaxePalette:
+#incbin "BigHandaxePalette.dmp"
+
+ALIGN 4
+BigHandaxeTiles:
+#incbin "BigHandaxe.dmp"
+
+
+// FrameData
+#include "FrameData/BHAFDMeleeLeft.event"
+#include "FrameData/BHAFDRangedLeft.event"
+#include "FrameData/BHAFDMeleeRight.event"
+#include "FrameData/BHAFDRangedRight.event"

@@ -1,0 +1,12 @@
+Portrait name~author name:              Used by character:
+
+28~SSHX                                 Milo
+Cosimo~GenericPretsel                   Simon
+SoldierMirrored~IS                      -
+Vette~Nickt                             Aiden
+Splice1_1~Huichelaar                    Vivian
+2~Capibarainspace                       Leona
+2~Zmr                                   Turner
+2~DragonLuca                            Demi
+Brava~AmBrosiac                         Theresa
+Faustosilva~AmBrosiac                   Herbert

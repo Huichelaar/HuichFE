@@ -1,0 +1,9 @@
+// Thrown axes spells.
+
+
+// BigHandaxe
+#include "BigHandaxe/BigHandaxe.event"
+  // Spell slot
+  ALIGN 2
+  BHASpellID:
+  SHORT 0x49

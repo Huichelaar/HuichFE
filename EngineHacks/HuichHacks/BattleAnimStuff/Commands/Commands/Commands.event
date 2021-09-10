@@ -1,0 +1,81 @@
+// New commands
+// Like C2E & C2F, but with different palettes.
+#include "SageRune/SageRune.event"
+
+// Summon Skeleton
+#include "Skeleton/SummonSkel.event"
+
+
+PUSH
+
+  // Repoint BattleAIS_ExecCommands
+  ORG 0x58C40
+  POIN Commands1
+  ORG 0x58C26
+  BYTE CommandCount  
+  
+  // Repoint Command85 (sounds)
+  ORG 0x71C28
+  POIN Commands2
+  ORG 0x71C0E
+  BYTE CommandCount-0x19
+
+POP
+
+// These are the vanilla values for commands C0 through C7B
+ALIGN 4
+Commands1:
+POIN Command0 Command1 Command2 Command3 Command4 Command5 Command6
+POIN Command7 Command8 Command9 CommandA CommandB CommandC CommandD
+POIN CommandE CommandF Command10 Command11 Command12 Command13 Command14
+POIN Command15 Command16 Command17 Command18 Command19 Command1A Command1B
+POIN Command1C Command1D Command1E Command1F Command20 Command21 Command22
+POIN Command23 Command24 Command25 Command26 Command27 Command28 Command29
+POIN Command2A Command2B Command2C Command2D Command2E Command2F Command30
+POIN Command31 Command32 Command33 Command34 Command35 Command36 Command37
+POIN Command38 Command39 Command3A Command3B Command3C Command3D Command3E
+POIN Command3F Command40 Command41 Command42 Command43 Command44 Command45
+POIN Command46 Command47 Command48 Command49 Command4A Command4B Command4C
+POIN Command4D Command4E Command4F Command50 Command51 Command52 Command53
+POIN Command54 Command55 Command56 Command57 Command58 Command59 Command5A
+POIN Command5B Command5C Command5D Command5E Command5F Command60 Command61
+POIN Command62 Command63 Command64 Command65 Command66 Command67 Command68
+POIN Command69 Command6A Command6B Command6C Command6D Command6E Command6F
+POIN Command70 Command71 Command72 Command73 Command74 Command75 Command76
+POIN Command77 Command78 Command79 Command7A Command7B
+
+// New commands go here.
+POIN RegularRedRune CriticalRedRune SummonSkel
+
+
+// Sound-related. These start at command C19
+ALIGN 4
+Commands2:
+POIN Command19_Sound Command1A_Sound Command1B_Sound Command1C_Sound
+POIN Command1D_Sound Command1E_Sound Command1F_Sound Command20_Sound
+POIN Command21_Sound Command22_Sound Command23_Sound Command24_Sound
+POIN Command25_Sound Command26_Sound Command27_Sound Command28_Sound
+POIN Command29_Sound Command2A_Sound Command2B_Sound Command2C_Sound
+POIN Command2D_Sound Command2E_Sound Command2F_Sound Command30_Sound
+POIN Command31_Sound Command32_Sound Command33_Sound Command34_Sound
+POIN Command35_Sound Command36_Sound Command37_Sound Command38_Sound
+POIN Command39_Sound Command3A_Sound Command3B_Sound Command3C_Sound
+POIN Command3D_Sound Command3E_Sound Command3F_Sound Command40_Sound
+POIN Command41_Sound Command42_Sound Command43_Sound Command44_Sound
+POIN Command45_Sound Command46_Sound Command47_Sound Command48_Sound
+POIN Command49_Sound Command4A_Sound Command4B_Sound Command4C_Sound
+POIN Command4D_Sound Command4E_Sound Command4F_Sound Command50_Sound
+POIN Command51_Sound Command52_Sound Command53_Sound Command54_Sound
+POIN Command55_Sound Command56_Sound Command57_Sound Command58_Sound
+POIN Command59_Sound Command5A_Sound Command5B_Sound Command5C_Sound
+POIN Command5D_Sound Command5E_Sound Command5F_Sound Command60_Sound
+POIN Command61_Sound Command62_Sound Command63_Sound Command64_Sound
+POIN Command65_Sound Command66_Sound Command67_Sound Command68_Sound
+POIN Command69_Sound Command6A_Sound Command6B_Sound Command6C_Sound
+POIN Command6D_Sound Command6E_Sound Command6F_Sound Command70_Sound
+POIN Command71_Sound Command72_Sound Command73_Sound Command74_Sound
+POIN Command75_Sound Command76_Sound Command77_Sound Command78_Sound
+POIN Command79_Sound Command7A_Sound Command7B_Sound
+
+// New commands' sounds go here.
+POIN Command2E_Sound Command2F_Sound NoSound

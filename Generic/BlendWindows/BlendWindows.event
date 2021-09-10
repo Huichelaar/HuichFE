@@ -1,0 +1,4 @@
+PROC_YIELD
+PROC_CALL_ROUTINE(Init_BlendWindows|1)
+PROC_LOOP_ROUTINE(Loop_BlendWindows|1)
+PROC_END

@@ -1,0 +1,41 @@
+//Event file generated from Sappy .s format.
+        #include "MPlayDef.event"
+
+        #define    song057_grp  soundbank_034
+        #define    song057_pri  0
+        #define    song057_rev  0
+        #define    song057_key  0
+
+        // .rodata
+        // song057
+        ALIGN 4
+
+//****************** Track 0 (Midi-Chn.0) ******************//
+
+song057_0:
+        BYTE   KEYSH   song057_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   13
+        BYTE           VOL     74
+        BYTE           BENDR   60
+        BYTE           N02     As3   v123
+        BYTE   W04
+        BYTE           N11
+        BYTE   W11
+        BYTE   FINE
+
+
+//********************** End of Song ***********************//
+
+        ALIGN 4
+song057:
+        BYTE   1                       // Num Tracks
+        BYTE   0                       // Unknown
+        BYTE   song057_pri             // Priority
+        BYTE   song057_rev             // Reverb
+
+        POIN2   song057_grp            
+
+        POIN2   song057_0
+
+        

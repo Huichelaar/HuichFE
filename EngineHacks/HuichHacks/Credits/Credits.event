@@ -1,0 +1,53 @@
+// Replace Link Arena with Credits.
+#ifndef _FE8_
+    ERROR "You're not assembling to an FE8 ROM!"
+#endif
+
+#include "Extensions/Hack Installation.txt"
+#include "EAstdlib.event"
+
+#ifndef FreeSpace
+	#define FreeSpace 0x1000000
+	ORG FreeSpace
+#endif
+
+{
+  #include "Defs/ProcDefinitions.event"
+  #include "Structs/Structs.event"
+  #include "C/Credits.lyn.event"
+
+  PUSH
+    
+    // ClassReel letters.
+    ORG 0xB2A26       // Sets sprite priority to 2. 
+    SHORT 0x2200 0x3001 0x46C0 // Also increments arg 0. Affine matrix 0 is reserved for battle anims.
+    ORG 0xB2A7A       // Don't change palette.
+    SHORT 0x46C0
+    ORG 0xB2B06       // Don't use affine matrix 0. Reserved for battle anims.
+    SHORT 0x464A 0x0251 0x3A01 0x18C9
+    ORG 0xB2B1C       // Use palette 0.
+    SHORT 0x2200
+    ORG 0xB2B4A       // Don't use affine matrix 0. Reserved for battle anims.
+    SHORT 0x464A 0x0251 0x3A01 0x18C9
+    ORG 0xB2B60       // Use palette 0.
+    SHORT 0x2200
+    ORG 0xB2FAA       // Letter height 0.
+    BYTE 0
+    ORG 0xB2FE8       // Letter height 0.
+    BYTE 0
+    ORG 0xB302A       // Letter height 0.
+    BYTE 0
+    ORG 0xA2EF4A      // No more double rendering, sprites are disappearing.
+    SHORT 0x8100
+    
+    // Always enable Link Arena,
+    // which is now Credits.
+    ORG 0xAB90E
+    SHORT 0x46C0 0x46C0 0x46C0 0x46C0 0x46C0
+
+    // Create our proc instead of link arena proc.
+    ORG 0x5919B4
+    PROC_NEW_CHILD_BLOCKING(CRE_credits_Proc)
+
+  POP
+}

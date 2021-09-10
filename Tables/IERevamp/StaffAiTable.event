@@ -1,0 +1,17 @@
+ALIGN 4
+AI_StaffArrayLABEL:
+FILL 13*8
+PUSH
+ORG AI_StaffArrayLABEL + 0x0*8 ; BYTE (0x1) (0) (0) (0) ; WORD (0x803fbb9) 
+ORG AI_StaffArrayLABEL + 0x1*8 ; BYTE (0x2) (0) (0) (0) ; WORD (0x803fbb9) 
+ORG AI_StaffArrayLABEL + 0x2*8 ; BYTE (0x3) (0) (0) (0) ; WORD (0x803fbb9) 
+ORG AI_StaffArrayLABEL + 0x3*8 ; BYTE (0x4) (0) (0) (0) ; WORD (0x803fd31) 
+ORG AI_StaffArrayLABEL + 0x4*8 ; BYTE (0x5) (0) (0) (0) ; WORD (0x803ff01) 
+ORG AI_StaffArrayLABEL + 0x5*8 ; BYTE (0xa) (0) (0) (0) ; WORD (0x804000d) 
+ORG AI_StaffArrayLABEL + 0x6*8 ; BYTE (0xb) (0) (0) (0) ; WORD (0x803fd31) 
+ORG AI_StaffArrayLABEL + 0x7*8 ; BYTE (0x6) (0) (0) (0) ; WORD (0x8040165) 
+ORG AI_StaffArrayLABEL + 0x8*8 ; BYTE (0x7) (0) (0) (0) ; WORD (0x8040355) 
+ORG AI_StaffArrayLABEL + 0x9*8 ; BYTE (0x8) (0) (0) (0) ; WORD (0x80404e1) 
+ORG AI_StaffArrayLABEL + 0xa*8 ; BYTE (0x9) (0) (0) (0) ; WORD (0x80404e1) 
+ORG AI_StaffArrayLABEL + 0xb*8 ; BYTE (0xf) (0) (0) (0) ; WORD (0x8040665) 
+POP

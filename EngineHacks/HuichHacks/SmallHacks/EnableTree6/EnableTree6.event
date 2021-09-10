@@ -1,0 +1,19 @@
+// The following hacks use Proc Tree 6:
+
+  // BattleAnimCommands. The drawn sprites need to update their relative X & Y after to the main linked AIS updates theirs in proc tree 3. This can be done reliably by putting the DrawSprites proc in a tree that gets executed after proc tree 3.
+
+
+PUSH
+  // Execute tree 6 after 3, before 5.
+    // During Battle Anims.
+    ORG 0x4FF08
+    callHack_r0(ExecuteTree6)
+    // During main game, just to ensure
+    // we're not leaking RAM to non-executed procs.
+    ORG 0x15320
+    callHack_r0(ExecuteTree6)
+POP
+
+ALIGN 4
+ExecuteTree6:
+#include "ExecuteTree6.lyn.event"

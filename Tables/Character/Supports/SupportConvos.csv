@@ -1,0 +1,7 @@
+0x9ED10C,Character 1,Character 2,C Support Convo,B Support Convo,A Support Convo,Padding
+0,Vivian,Leona,VivianLeonaSupportC,VivianLeonaSupportB,VivianLeonaSupportA,0x0
+1,Vivian,Milo,VivianMiloSupportC,VivianMiloSupportB,VivianMiloSupportA,0x0
+2,Leona,Demi,LeonaDemiSupportC,LeonaDemiSupportB,LeonaDemiSupportA,0x0
+3,Milo,Demi,MiloDemiSupportC,MiloDemiSupportB,MiloDemiSupportA,0x0
+4,Theresa,Herbert,TheresaHerbertSupportC,TheresaHerbertSupportB,TheresaHerbertSupportA,0x0
+TERMINATOR,0xFF,0x0,0x0,0x0,0x0,0xFF

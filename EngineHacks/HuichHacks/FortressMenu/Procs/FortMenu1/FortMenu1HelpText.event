@@ -1,0 +1,5 @@
+// Mimics Procs_MenuHelpText, 0x85B6518, but loads the textbox in 0x06010800 instead.
+
+PROC_CALL_ROUTINE(FortMenu1HelpBoxInit+0x1)
+PROC_LOOP_ROUTINE(0x4F4A1)
+PROC_END

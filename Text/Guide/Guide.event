@@ -1,0 +1,207 @@
+## GuideCategoryNew
+New Stuff[X]
+
+## GuideCategoryOld
+Old Stuff[X]
+
+## GuideCategoryMaterials
+Materials[X]
+
+## GuideDetailsPhysDef
+Generally, attacks from[N]
+weapons are physical attacks.[N]
+Each unit's DEF (defense)[N]
+attribute shows how well they[N]
+defend against physical[N]
+attacks. The higher the[N]
+number, the less damage they[N]
+take. Knights and mercenaries[N]
+have good defense.[X]
+
+## GuideDetailsMagRes
+Generally, attacks with[N]
+magic are magical attacks.[N]
+Each unit's RES (resistance)[N]
+attribute shows how well they[N]
+defend against magical[N]
+attacks. The higher the[N]
+number, the less damage they[N]
+take. Mages, monks, clerics,[N]
+priests & shamans have high[N]
+resistance.[X]
+
+## GuideDetailsResHP
+Restore HP to your units by using[N]
+vulneraries, concoctions,[N]
+elixirs, and staves. Vulneraries,[N]
+Concoctions and elixirs heal only[N]
+the user, while staves heal only[N]
+the units on whom they're used.[N]
+Choose your healing items[N]
+carefully in battle.[X]
+
+## GuideDetailsStatus
+There are five abnormal states[N]
+a unit can enter:[N]
+1. Sleep[N]
+(Asleep and unable to move)[N]
+2. Silence[N]
+(Unable to use magic or staves)[N]
+3. Poison[N]
+(Take continual damage)[N]
+4. Berserk[N]
+(Attack enemies and allies alike)[N]
+5. Petrify[N]
+(Turned to stone, cannot move)[N]
+These conditions can continue[N]
+for several turns. They can be[N]
+reversed with a Restore staff.[X]
+
+## GuideDetailsAcqItems
+You can purchase items at[N]
+shops. You can also pick them[N]
+up by visiting villagers and[N]
+opening chests. Enemies[N]
+sometimes drop items when[N]
+they are defeated. Finally,[N]
+you can craft items with[N]
+materials. FIXME elaborate[N]
+once this is ready![X]
+
+## GuideDetailsDur
+Items have a limited number of[N]
+uses. Each time you use an item[N]
+its durability goes down. The[N]
+number next to an item indicates[N]
+how many times it can be used.[N]
+When that number reaches 0, the[N]
+item breaks and disappears.[N]
+Be careful not to let items drop[N]
+to 0 in the heat of battle.[N]
+TODO mention repairing items[N]
+through crafting[X]
+
+## GuideEntrySupply
+Supplies[X]
+
+## GuideDetailsSupply
+Vivian carries supplies. If[N]
+a unit moves to a space[N]
+adjacent to Vivian, they can[N]
+trade items with the supply.[N]
+On the battle preparation[N]
+screen, you can buy items to[N]
+and sell items from the[N]
+supply. No more than 100[N]
+items can be kept in the[N]
+supply.[X]
+
+## GuideEntryRecrAllies
+Recruiting Allies[X]
+
+## GuideDetailsLvUp
+Units gain EXP (experience[N]
+points) by fighting and by using[N]
+staves. They go up a level when[N]
+they earn 100 EXP. As they go[N]
+up in level, characters become[N]
+stronger, more skilled, etc.[N]
+The highest level is level 30.[X]
+
+## GuideEntryRetreat
+You can escape from skirmishes.[N]
+On the command menu, select[N]
+Retreat to withdraw[N]
+from combat.[X]
+
+## GuideEntryObtainMaterials
+Obtaining Materials[X]
+
+## GuideDetailsObtainMaterials
+TODO[X]
+
+## GuideEntryMaterialUses
+Material Uses[X]
+
+## GuideDetailsMaterialUses
+TODO[X]
+
+## GuideEntryForts
+Fortresses[X]
+
+## GuideDetailsForts
+TODO[X]
+
+## GuideEntryBackupsave
+Backup Suspend[X]
+
+## GuideDetailsBackupsave
+Choose Backup on the command[N]
+menu to make a separate[N]
+suspend save during a battle.[N]
+Autosave will not overwrite[N]
+this data. You can return to[N]
+this backup by suspending,[N]
+choosing Resume Chapter and[N]
+picking the Bkup option when[N]
+selecting the save file.[N]
+[N]
+You can only have one backup[N]
+suspend, but you can[N]
+overwrite this one freely.[N]
+However, you can only return[N]
+to your backup saves a limited[N]
+amount of times. The UNDO[N]
+window shown on the main menu[N]
+will display how many more times[N]
+you can return to a backup.[N]
+This value will reset when you[N]
+save outside of battle.[N]
+[N]
+If the explanation is unclear,[N]
+feel free to experiment.[X]
+
+## GuideEntryPuzzle
+Puzzles[X]
+
+## GuideDetailsPuzzle
+There are five more variations[N]
+of the puzzle Vivian solved in[N]
+the prologue. These puzzles are[N]
+hidden in different chapters, so[N]
+make sure to check any[N]
+suspicious tile.[N]
+[N]
+Except for the one in the[N]
+prologue, these are optional.[N]
+However, if you do solve them,[N]
+they will reward you with[N]
+a unique item.[X]
+
+## GuideDetailsRescue
+Unless they're using a rescue[N]
+staff, units can not rescue[N]
+other units anymore.[X]
+
+## GuideEntryDR
+Danger Radius[X]
+
+## GuideDetailsDR
+You can toggle an enemy's[N]
+danger radius by pressing[N]
+SELECT when the cursor is[N]
+hovering over them.[N]
+[N]
+This will display their attack[N]
+range until you toggle it off[N]
+or the player phase ends.[N]
+[N]
+A lot of active danger radii[N]
+can slow down the game, but[N]
+you can always turn them off.[N]
+[N]
+Pressing SELECT when not[N]
+hovering over an enemy unit will[N]
+turn off all danger radii if[N]
+any are active, or turn on all[N]
+danger radii if none are active.[X]

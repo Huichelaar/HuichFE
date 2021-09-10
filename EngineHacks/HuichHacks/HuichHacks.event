@@ -1,0 +1,39 @@
+// Small hacks
+#include "SmallHacks/SmallHacks.event"
+
+// Danger Radius (select button)
+#include "DangerRadius/FogDR.event"
+
+// Fortresses
+#include "Fortresses/Fortresses.event"
+
+// Add "Manage Forts" Menu (accessible from world map menu)
+#include "FortressMenu/FortressMenu.event"
+
+// Lights Out puzzle.
+#include "Puzzle/Puzzle.event"
+
+// Fe7-style StatScreen
+#include "StatScreen/StatScreen.event"
+
+// Stuff related to backup suspend.
+#include "Suspendx2/Suspendx2.event"
+
+// Custom Chapter Intro
+#include "ChapterIntro/ChapterIntro.event"
+
+// Custom Game Intro & Titlescreen
+#include "IntroCutscene/IntroCutscene.event"
+
+// Everything to do with battle animations.
+#include "BattleAnimStuff/BattleAnimStuff.event"
+
+// Custom Credits
+#include "Credits/Credits.event"
+
+// Mosaic Portraits
+#include "MosaicPortraits/MosaicPortraits.event"
+
+// Display different BG3s based on songID.
+// Also, display only BG3 in soundroom when L is pressd.
+#include "SoundRoomBG/SoundRoomBG.event"

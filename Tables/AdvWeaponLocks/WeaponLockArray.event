@@ -1,0 +1,5 @@
+ALIGN 4
+WeaponLockArrayPointerTableLABEL:
+FILL 256*4
+PUSH
+POP

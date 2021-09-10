@@ -1,0 +1,11 @@
+PROC_CALL_ROUTINE(Init_MoonBlend1|1)
+PROC_SLEEP(76)
+PROC_CALL_ROUTINE(Moon_Sinusoid|1)
+PROC_SLEEP(2)
+PROC_CALL_ROUTINE(Init_MoonBlend2|1)
+PROC_SLEEP(61)
+PROC_CALL_ROUTINE(0x8B25)                     // Clears HBlankHandler
+PROC_END_ALL(Procs_Sinusoid)
+PROC_CALL_ROUTINE(ClearSinusoidCNT|1)
+PROC_CALL_ROUTINE(End_Moon|1)
+PROC_END

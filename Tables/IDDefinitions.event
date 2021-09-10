@@ -1,0 +1,302 @@
+// We need some bits in RAM.
+//  1: Don't change DISPCNT when fading.
+//  2: Don't buffer minimugs.
+#define extraRAMBitfield 0x3000007
+
+// Flags
+#define Paralogue1Flag 0x71
+#define Paralogue2Flag 0x72
+#define Paralogue3Flag 0x73
+#define Paralogue4Flag 0x74
+#define Paralogue5Flag 0x75
+#define Act3Flag1 0x76
+#define Act3Flag2 0x77
+#define MiloFlag 0x86
+#define FortressAccessibleFlag 0x87
+
+// Classes
+#define Supplier 0x1
+#define Monk_F 0x80
+#define Soldier_F 0x81
+#define Fighter_F 0x82
+
+// Battle animations
+#define SupplierLanceAnim 0x1
+#define SupplierStaffAnim 0x2
+#define MercenaryMSwordAnim 0x3
+#define MercenaryMUnarmedAnim 0x4
+#define MercenaryFSwordAnim 0x5
+#define MercenaryFUnarmedAnim 0x6
+#define ArcherFBowAnim 0x7
+#define ArcherFUnarmedAnim 0x8
+#define ArcherMBowAnim 0x9
+#define ArcherMUnarmedAnim 0xA
+#define ClericStaffAnim 0xB
+#define ClericUnarmedAnim 0xC
+#define PriestStaffAnim 0xD
+#define PriestUnarmedAnim 0xE
+#define FighterFAxeAnim 0xF
+#define FighterFHandaxeAnim 0x10
+#define MyrmidonMSwordAnim 0x11
+#define MyrmidonMUnarmedAnim 0x12
+#define MyrmidonFSwordAnim 0x13
+#define MyrmidonFUnarmedAnim 0x14
+#define SwordmasterMSwordAnim 0x15
+#define SwordmasterMUnarmedAnim 0x16
+#define SwordmasterFSwordAnim 0x17
+#define SwordmasterFUnarmedAnim 0x18
+#define FighterMAxeAnim 0x19
+#define FighterMHandaxeAnim 0x1A
+#define FighterMUnarmedAnim 0x1B
+#define FighterFUnarmedAnim 0x1C
+#define MonkFMagicAnim 0x1D
+#define MonkMMagicAnim 0x1E
+#define SoldierFLanceAnim 0x1F
+#define SoldierFUnarmedAnim 0x20
+#define SoldierMLanceAnim 0x21
+#define SoldierMUnarmedAnim 0x22
+#define CavalierMSwordAnim 0x23
+#define CavalierMLanceAnim 0x24
+#define CavalierMUnarmedAnim 0x25
+#define CavalierFSwordAnim 0x26
+#define CavalierFLanceAnim 0x27
+#define CavalierFUnarmedAnim 0x28
+#define MageMMagicAnim 0x6B
+#define MageFMagicAnim 0x6C
+#define ShamanMMagicAnim 0x75
+#define ShamanFMagicAnim 0x76
+//TEMP
+#define MarshallHandaxeAnim 0x29
+#define Custom2MagicAnim 0x2A
+
+// Characters
+#define Vivian 0x1
+#define Simon 0x2
+#define Leona 0x3
+#define Milo 0x4
+#define Demi 0x5
+#define Theresa 0x6
+#define Herbert 0x7
+#define Turner 0x47
+#define Aiden 0x4d
+
+// Supports pointers
+#define VivianSupports SupportValuesTableLABEL + (0x0 * 0x18)
+#define LeonaSupports SupportValuesTableLABEL + (0x1 * 0x18)
+#define MiloSupports SupportValuesTableLABEL + (0x2 * 0x18)
+#define DemiSupports SupportValuesTableLABEL + (0x3 * 0x18)
+#define TheresaSupports SupportValuesTableLABEL + (0x4 * 0x18)
+#define HerbertSupports SupportValuesTableLABEL + (0x5 * 0x18)
+
+// Portraits
+#define VivianPortrait 0x2
+#define SimonPortrait 0x3
+#define TurnerPortrait 0x4
+#define LeonaPortrait 0x5
+#define MiloPortrait 0x6
+#define AidenPortrait 0x7
+#define DemiPortrait 0x8
+#define TheresaPortrait 0x9
+#define HerbertPortrait 0xa
+
+// Class Cards
+#define SupplierCC 0xad
+#define MercenaryFCC 0xae
+#define FighterFCC 0xaf
+#define ArcherFCC 0xb0
+#define ArcherMCC 0xb1
+#define SoldierFCC 0xb2
+#define ClericCC 0xb3
+#define MonkFCC 0xb4
+#define MonkMCC 0xb5
+#define ShamanFCC 0xb6
+#define MyrmidonFCC 0xb7
+#define CavalierFCC 0xb8
+#define CavalierMCC 0xb9
+#define MageFCC 0xba
+
+// Items
+#define LegSwordD 0xbc
+#define LegAxeD 0xbd
+#define LegLanceD 0xbe
+#define LegBowD 0xbf
+#define LegDarkD 0xc0
+#define LegAnimaD 0xc1
+#define LegLightD 0xc2
+#define LegStaffD 0xc3
+
+#define LegSwordB 0xc4
+#define LegAxeB 0xc5
+#define LegLanceB 0xc6
+#define LegBowB 0xc7
+#define LegDarkB 0xc8
+#define LegAnimaB 0xc9
+#define LegLightB 0xca
+#define LegStaffB 0xcb
+
+#define LegSwordS 0xcc
+#define LegAxeS 0xcd
+#define LegLanceS 0xce
+#define LegBowS 0xcf
+#define LegDarkS 0xd0
+#define LegAnimaS 0xd1
+#define LegLightS 0xd2
+#define LegStaffS 0xd3
+
+#define SkelGambit 0xd4
+
+#define Concoction 0xd5
+
+// Conversation Backgrounds
+#define ConvoCave 0x36
+
+// World Map Nodes
+#define Disabled 0x0
+#define Enabled 0x1
+
+// Materials
+#define Coal 0x0
+#define Copper 0x1
+#define Lime 0x2
+#define Iron 0x3
+#define Wood 0x4
+#define MagicWood 0x5
+#define Spice 0x6
+#define Gunpowder 0x7
+#define Hemp 0x8
+#define Belladonna 0x9
+#define Laurel 0xA
+#define Topaz 0xB
+#define Ruby 0xC
+#define Emerald 0xD
+#define Diamond 0xE
+#define Milk 0xF
+#define Cabbage 0x10
+#define Grape 0x11
+#define Fish 0x12
+#define Wheat 0x13
+#define Meat 0x14
+#define Feather 0x15
+#define Hide 0x16
+#define Wool 0x17
+#define Oil 0x18
+#define Rune 0x19
+#define Flax 0x1A
+
+// Abilities
+#define NoAbility 0x0
+#define EXPBoost 0x2
+
+#define Prefix 0x0
+#define Suffix 0x1
+#define PercentageSign 0x2A
+
+// Affinities
+#define AffFire 0x1
+#define AffThunder 0x2
+#define AffWind 0x3
+#define AffIce 0x4
+#define AffDark 0x5
+#define AffLight 0x6
+#define AffAnima 0x7
+
+// PLIST
+#define FF5CaveObjectsPLIST 0x1
+#define FF5CavePalettePLIST 0x2
+#define FF5CaveConfigPLIST 0x3
+#define FF5CaveAnimPLIST 0x4
+#define Map0PLIST 0x5
+#define Chapter0EventPLIST 0x6
+#define Map1PLIST 0x7
+#define Chapter1EventPLIST 0x8
+#define Map2PLIST 0x9
+#define Chapter2EventPLIST 0xA
+#define Map3PLIST 0xB
+#define Chapter3EventPLIST 0xC
+#define Map4PLIST 0xD
+#define Chapter4EventPLIST 0xE
+#define Map5PLIST 0xF
+#define Chapter5EventPLIST 0x10
+#define Map6PLIST 0x11
+#define Chapter6EventPLIST 0x12
+#define Map7PLIST 0x13
+#define Chapter7EventPLIST 0x14
+#define Map8PLIST 0x15
+#define Chapter8EventPLIST 0x16
+#define Map9PLIST 0x17
+#define Chapter9EventPLIST 0x18
+#define Map10PLIST 0x19
+#define Chapter10EventPLIST 0x1A
+#define Map11PLIST 0x1B
+#define Chapter11EventPLIST 0x1C
+#define Map12PLIST 0x1D
+#define Chapter12EventPLIST 0x1E
+#define Map13PLIST 0x1F
+#define Chapter13EventPLIST 0x20
+#define Map14PLIST 0x21
+#define Chapter14EventPLIST 0x22
+#define Map15PLIST 0x23
+#define Chapter15EventPLIST 0x24
+#define Map16PLIST 0x25
+#define Chapter16EventPLIST 0x26
+#define Map17PLIST 0x27
+#define Chapter17EventPLIST 0x28
+#define Map18PLIST 0x29
+#define Chapter18EventPLIST 0x2A
+#define Map19PLIST 0x2B
+#define Paralogue1EventPLIST 0x2C
+#define Map20PLIST 0x2D
+#define Paralogue2EventPLIST 0x2E
+#define Map21PLIST 0x2F
+#define Paralogue3EventPLIST 0x30
+#define Map22PLIST 0x31
+#define Paralogue4EventPLIST 0x32
+#define Map23PLIST 0x33
+#define Paralogue5EventPLIST 0x34
+#define FieldsObjectsPLIST 0x35
+#define FieldsAutumnalPalettePLIST 0x36
+#define FieldsAquamarinePalettePLIST 0x37
+#define FieldsGreenPalettePLIST 0x38
+#define FieldsConfigPLIST 0x39
+#define FieldsAnimPLIST 0x3A
+#define Map1ChangesPLIST 0x3B
+#define FieldsPurplePalettePLIST 0x3C
+#define FieldsNightPalettePLIST 0x3D
+#define VillageObjectsPLIST 0x3E
+#define VillageNightPalettePLIST 0x3F
+#define VillageConfigPLIST 0x40
+#define VillageAnimPLIST 0x41
+#define Map2ChangesPLIST 0x42
+
+// Escape points
+#define NoEscapePoints 0x80D84E0
+
+// ChapterBattleBGs
+#define Placeholder 0x0
+#define Bridge1 0x1
+#define Cliff1 0x2
+#define Forest1 0x3
+#define Peak1 0x4
+#define Plain1 0x5
+#define River1 0x6
+#define Roads1 0x7
+#define Sea1 0x8
+#define Village1 0x9
+#define Throne1 0xA
+#define ThroneBlue 0xB
+#define ThroneCyan 0xC
+#define ThroneGreen 0xD
+#define ThroneRed 0xE
+
+// Other
+#define DefaultJavelin 0x8058196
+#define DefaultHandaxe DefaultJavelin
+#define CavalierJavelin 0x8058174
+#define PaladinJavelin 0x805817C
+#define PaladinFJavelin 0x8058180
+#define GeneralJavelin 0x8058194
+#define WyvernRiderJavelin 0x805818C
+#define WyvernLordJavelin 0x8058190
+#define PegasusKnightJavelin 0x8058184
+#define FalcoKnightJavelin 0x8058188
+#define SoldierJavelin 0x8058178

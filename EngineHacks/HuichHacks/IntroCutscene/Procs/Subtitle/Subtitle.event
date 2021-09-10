@@ -1,0 +1,9 @@
+// Draw Subtitle sprites
+PROC_CALL_ROUTINE(Init_Subtitle|1)
+PROC_CALL_ROUTINE_ARG(Init_ScrollBG|1, 0x148)
+PROC_SLEEP(16)
+PROC_END_ALL(Procs_ScrollBG)
+
+PROC_LABEL(0)
+PROC_LOOP_ROUTINE(Loop_Subtitle|1)
+PROC_END

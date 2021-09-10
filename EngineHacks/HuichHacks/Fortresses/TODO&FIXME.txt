@@ -1,0 +1,1 @@
+TODO if we're running out of (save) space, you can reduce material size from 16 to 10 bits.

@@ -1,0 +1,15 @@
+ALIGN 4
+ISNintendoLogosTSA:
+#incbin "IS+NintendoTSAComp.dmp"
+ALIGN 4
+HuichelaarScreenTiles:
+#incbin "HuichelaarScreen.dmp"
+ALIGN 4
+HuichelaarScreenPalette:
+#incbin "HuichelaarScreenPalette.dmp"
+ALIGN 4
+FEUTiles:
+#incbin "FEU.dmp"
+ALIGN 4
+FEUPalette:
+#incbin "FEUPalette.dmp"

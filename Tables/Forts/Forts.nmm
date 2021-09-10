@@ -1,0 +1,136 @@
+# Forts
+#
+
+1
+Forts
+0xC0FFEE
+22
+32
+NULL
+NULL
+
+Material 1
+0
+1
+NEHU
+NULL
+
+Material 2
+1
+1
+NEHU
+NULL
+
+Material 3
+2
+1
+NEHU
+NULL
+
+Material 4
+3
+1
+NEHU
+NULL
+
+Name
+4
+2
+NEHU
+NULL
+
+Gather Helptext
+6
+2
+NEHU
+NULL
+
+Level 2 Material 1
+8
+1
+NEHU
+NULL
+
+Level 2 Count 1
+9
+1
+NEDU
+NULL
+
+Level 2 Material 2
+10
+1
+NEHU
+NULL
+
+Level 2 Count 2
+11
+1
+NEDU
+NULL
+
+Level 3 Material 1
+12
+1
+NEHU
+NULL
+
+Level 3 Count 1
+13
+1
+NEDU
+NULL
+
+Level 3 Material 2
+14
+1
+NEHU
+NULL
+
+Level 3 Count 2
+15
+1
+NEDU
+NULL
+
+Level 4 Material 1
+16
+1
+NEHU
+NULL
+
+Level 4 Count 1
+17
+1
+NEDU
+NULL
+
+Level 4 Material 2
+18
+1
+NEHU
+NULL
+
+Level 4 Count 2
+19
+1
+NEDU
+NULL
+
+ProduceStruct ID
+20
+1
+NEHU
+NULL
+
+Affinity
+21
+1
+NEHU
+NULL
+
+Padding
+22
+10
+NEDU
+NULL

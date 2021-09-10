@@ -1,0 +1,97 @@
+// Battle fields (backgrounds)
+
+ALIGN 4
+BF_Placeholder:
+#incbin "Placeholder.dmp"
+ALIGN 4
+BF_PlaceholderPalette:
+#incbin "PlaceholderPalette.dmp"
+
+ALIGN 4
+BF_Bridge:
+#incbin "Bridge/Bridge.dmp"
+ALIGN 4
+BF_BridgePalette:
+#incbin "Bridge/BridgePalette.dmp"
+
+//ALIGN 4
+//BF_Cave:
+//#incbin "Cave/Cave.dmp"
+//ALIGN 4
+//BF_CavePalette:
+//#incbin "Cave/CavePalette.dmp"
+
+ALIGN 4
+BF_Cliff:
+#incbin "Cliff/Cliff.dmp"
+ALIGN 4
+BF_CliffPalette:
+#incbin "Cliff/CliffPalette.dmp"
+
+ALIGN 4
+BF_Forest:
+#incbin "Forest/Forest.dmp"
+ALIGN 4
+BF_ForestPalette:
+#incbin "Forest/ForestPalette.dmp"
+
+ALIGN 4
+BF_Peak:
+#incbin "Peak/Peak.dmp"
+ALIGN 4
+BF_PeakPalette:
+#incbin "Peak/PeakPalette.dmp"
+
+ALIGN 4
+BF_Plain:
+#incbin "Plain/Plain.dmp"
+ALIGN 4
+BF_PlainPalette:
+#incbin "Plain/PlainPalette.dmp"
+
+ALIGN 4
+BF_River:
+#incbin "River/River.dmp"
+ALIGN 4
+BF_RiverPalette:
+#incbin "River/RiverPalette.dmp"
+
+ALIGN 4
+BF_Road:
+#incbin "Road/Road.dmp"
+ALIGN 4
+BF_RoadPalette:
+#incbin "Road/RoadPalette.dmp"
+
+ALIGN 4
+BF_Sea:
+#incbin "Sea/Sea.dmp"
+ALIGN 4
+BF_SeaPalette:
+#incbin "Sea/SeaPalette.dmp"
+
+ALIGN 4
+BF_Throne:
+#incbin "Throne/Throne.dmp"
+ALIGN 4
+BF_ThronePalette:
+#incbin "Throne/ThronePalette.dmp"
+  ALIGN 4
+  BF_ThronePaletteBlue:
+  #incbin "Throne/ThronePaletteBlue.dmp"
+  ALIGN 4
+  BF_ThronePaletteCyan:
+  #incbin "Throne/ThronePaletteCyan.dmp"
+  ALIGN 4
+  BF_ThronePaletteGreen:
+  #incbin "Throne/ThronePaletteGreen.dmp"
+  ALIGN 4
+  BF_ThronePaletteRed:
+  #incbin "Throne/ThronePaletteRed.dmp"
+
+ALIGN 4
+BF_Village:
+#incbin "Village/Village.dmp"
+ALIGN 4
+BF_VillagePalette:
+#incbin "Village/VillagePalette.dmp"

@@ -1,0 +1,99 @@
+//Event file generated from Sappy .s format.
+        #include "MPlayDef.event"
+
+        #define    ChapterIntro0_grp  MusicVoices
+        #define    ChapterIntro0_pri  0
+        #define    ChapterIntro0_rev  0
+        #define    ChapterIntro0_key  0
+
+        // .rodata
+        // ChapterIntro0
+        ALIGN 4
+
+//****************** Track 0 (Midi-Chn.0) ******************//
+
+ChapterIntro0_0:
+        BYTE   KEYSH   ChapterIntro0_key+0
+// 000   ----------------------------------------
+        BYTE   TEMPO   120/2
+        BYTE           VOICE   81
+        BYTE           VOL     79
+        BYTE           TIE     Cn1   v100
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W24
+        BYTE           VOL     71
+        BYTE   W03
+        BYTE                   62
+        BYTE   W03
+        BYTE                   53
+        BYTE   W03
+        BYTE                   50
+        BYTE   W03
+        BYTE                   47
+        BYTE   W03
+        BYTE                   44
+        BYTE   W03
+        BYTE                   41
+        BYTE   W03
+        BYTE                   38
+        BYTE   W03
+        BYTE                   34
+        BYTE   W03
+        BYTE                   31
+        BYTE   W03
+        BYTE                   28
+        BYTE   W06
+        BYTE                   25
+        BYTE   W03
+        BYTE                   22
+        BYTE   W03
+        BYTE                   19
+        BYTE   W03
+        BYTE                   16
+        BYTE   W03
+        BYTE                   13
+        BYTE   W03
+        BYTE                   9
+        BYTE   W03
+        BYTE                   6
+        BYTE   W03
+        BYTE                   3
+        BYTE   W03
+        BYTE                   0
+        BYTE   W12
+// 002   ----------------------------------------
+        BYTE           EOT
+        BYTE   FINE
+
+//****************** Track 1 (Midi-Chn.1) ******************//
+
+ChapterIntro0_1:
+        BYTE   KEYSH   ChapterIntro0_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   111
+        BYTE           VOL     63
+        BYTE   W54
+        BYTE           N24     Ds4   v100
+        BYTE   W42
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   FINE
+
+
+//********************** End of Song ***********************//
+
+        ALIGN 4
+ChapterIntro0:
+        BYTE   2                       // Num Tracks
+        BYTE   0                       // Unknown
+        BYTE   ChapterIntro0_pri       // Priority
+        BYTE   ChapterIntro0_rev       // Reverb
+
+        POIN2   ChapterIntro0_grp      
+
+        POIN2   ChapterIntro0_0
+        POIN2   ChapterIntro0_1
+
+        

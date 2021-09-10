@@ -1,0 +1,19 @@
+// Supplier javelin
+// Replaces unused Eliwood javelin
+PUSH
+
+  ORG 0x5C780
+  POIN SupplierJavelinPalette
+  
+  ORG 0x5C784
+  POIN SupplierJavelinTiles
+
+POP
+
+ALIGN 4
+SupplierJavelinPalette:
+#incbin "SupplierJavelinPalette.dmp"
+
+ALIGN 4
+SupplierJavelinTiles:
+#incbin "SupplierJavelin.dmp"

@@ -1,0 +1,12 @@
+20100400	//Disallows scene skipping and dialogue skipping, But allows dialogue fast-forwarding(EVBIT_MODIFY 4)
+201A0000	//Start dialog (conversation)(TEXTSTART)
+201BFE08201D0000	//[Conversation text:0x8FE Do you want to quit?]Dialog (conversation) with no background (LOW)(TEXTSHOW+TEXTEND)
+4005070001000000410C00000C000700	//Imm BNE (If Result != [Value:0x1], Then Jump to [Conditional ID:0x0], Else execute following)
+400D00005D5D0B08	//[Assembler function:0x80B5D5D ASMC_ExecuteSuppendSave]is called[argument:0x0](ASMC)
+211BFF08201D0000	//[Conversation Text:0x8FF Next time, choose Re]Dialog (conversation) with background(LOW)(TEXTSHOW2+TEXTEND)
+2413FF7F	//Change BGM to[Song:0x7FFF Mute the BGM] with fade out(MUSCMID)
+21170400	//Fade the screen to black with[Speed:4 frame sec(0,0667 sec)] Normal->Dark (FADI)
+202A0000	//Return to title screen[Value 1:0x0](MNTS)
+20080000	//LABEL[Conditional ID:0x0]
+221B0000	//Conversation end(REMA)
+2802070020010000	//Event end(also serves as a section to no fade)(EVBIT_T+ENDA)

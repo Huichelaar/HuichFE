@@ -1,0 +1,38 @@
+#define GemAction(InitTrajectory, Label, EndLabel) "PROC_CALL_ROUTINE(InitTrajectory|1); PROC_LABEL(Label); PROC_CALL_ROUTINE(Loop_Move|1); PROC_CALL_ROUTINE(Loop_Move|1); PROC_CALL_ROUTINE(Loop_Move|1); PROC_CALL_ROUTINE(Loop_Move|1); PROC_CALL_ROUTINE(Loop_Move|1); PROC_CALL_ROUTINE(Loop_Move|1); PROC_YIELD; PROC_CALL_ROUTINE_ARG(End_Segment|1, Label); PROC_GOTO(Label); EndLabel:"
+
+/*
+PROC_CALL_ROUTINE(InitTrajectory|1)
+PROC_LABEL(Label)
+  PROC_CALL_ROUTINE(Loop_Move|1)
+  PROC_CALL_ROUTINE(Loop_Move|1)
+  PROC_CALL_ROUTINE(Loop_Move|1)
+  PROC_CALL_ROUTINE(Loop_Move|1)
+  PROC_CALL_ROUTINE(Loop_Move|1)
+  PROC_CALL_ROUTINE(Loop_Move|1)
+  PROC_YIELD
+  PROC_CALL_ROUTINE_ARG(End_Segment|1, Label)
+  PROC_GOTO(Label)
+EndLabel:
+*/
+
+Procs_Gem1:
+GemAction(Init_Spiral, 0, SpiralEnd)
+GemAction(Init_Line, 1, LineEnd)
+GemAction(Init_Stationary1, 2, Stationary1End)
+GemAction(Init_OBJWindow, 3, OBJWindowEnd)
+PROC_END
+
+
+Procs_Gem2:
+GemAction(Init_Stationary2, 4, Stationary2End)
+GemAction(Init_Stationary3, 5, Stationary3End)
+PROC_END
+
+
+Procs_Gem3:
+GemAction(Init_Circle, 6, CircleEnd)
+PROC_END
+
+
+EndLabels:
+POIN SpiralEnd LineEnd Stationary1End OBJWindowEnd Stationary2End Stationary3End CircleEnd

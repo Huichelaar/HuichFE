@@ -1,0 +1,9 @@
+// 64x64 tiles
+ALIGN 4
+Gem64x64:
+#incbin "gem64x64.dmp"
+
+// BG TSA
+ALIGN 4
+GemTSA:
+#incbin "GemTSA.dmp"

@@ -1,0 +1,202 @@
+/////////////////////////////////////////////////////////
+//                                                     //
+//               Master Hack Installer                 //
+//                                                     //
+/////////////////////////////////////////////////////////
+
+#include "Extensions/Hack Installation.txt"
+#include "Necessary/PopupRework/Extensions/PopupDefinitions.txt"
+
+// hack configuration file
+#include "Config.event"
+
+#include "Necessary/UnitMenu/_UnitMenuDefs.event"
+
+////////////////////////////////SUPPORTING CHANGES
+
+PUSH
+  //Include essential fixes and autopatches
+  #include "_FE8EssentialFixes.event"
+  
+  // Debug Startup Screen
+  #ifdef __DEBUG__
+    ORG 0x000AD8   // this is somewhere in the startup routine
+      BL(0x01C090) // Call the debug startup menu
+  #endif
+POP
+
+////////////////////////////////FREE SPACE WITHIN BL RANGE
+
+PUSH
+ORG FreeSpaceBLRange //defined in custom definitions
+#define inBLRange
+
+  //Talk and Support don't end your turn
+  #include "QualityOfLife/ContemporaryTalkSupport/ContemporaryTalkSupport.event"
+
+  //negative wt/crit
+  #include "QualityOfLife/NegativeWStatDisplay/NegativeDisplay.event"
+
+  //clears the gamble/lunge/mercy when cancelling out of attack menu
+  Unset_Attack_Flag:
+  #incbin "SkillSystem/Internals/unset_attack_flag.dmp"
+	
+	#include "ExternalHacks/StrMagSplit/BLRange.event"
+
+	
+#undef inBLRange
+POP
+
+////////////////////////////////FREE SPACE OUT OF BL RANGE
+
+  // Huichelaar's hacks
+  #include "HuichHacks/HuichHacks.event"
+
+  // HP Bars (and effective weapon warning)
+  #include "QualityOfLife/HpBars/HpBars.event"
+
+  // Improved Sound Mixer
+  #include "QualityOfLife/ImprovedSoundMixer/SoundMixer.event"
+
+  // Event Writer ASMC
+  #include "QualityOfLife/EventWriter/EventWriter.event"
+
+  // Casual Mode (based on Event ID 0xB0)
+  #include "QualityOfLife/CasualMode/CasualMode.event"
+
+  // Movement Arrow doesn't update on allies
+  #include "QualityOfLife/MovementArrowHack/MovementArrowHack.event"
+  
+  // Extend Item Icon
+  #include "QualityOfLife/ExtendItemIcon/ExtendItemIcon.event"
+  
+  // Advance RNGstate every frame
+  #include "QualityOfLife/RNGRandomizer/RNGRandomizerInstaller.event"
+  
+  // Teq's CHAI for AI1, 2, 3 and 4.
+  #include "ExternalHacks/FE8-New_CHAI/FE8-New_CHAI_EA.event"
+  
+  // Skip difficulty selection and default to "Normal"
+  #include "ExternalHacks/SkipDifficulty/SkipDifficulty.event"
+
+  // Allow Battle BGM to be set per chapter.
+  #include "ExternalHacks/ChapterBattleBGM/ChapterBattleBGM.event"
+
+  // Continue BGM during battle if Battle BGM is the same as Map BGM
+  #include "ExternalHacks/ContinueBattleBGM/ContinueBattleBGM.event"
+  
+  // Text engine rework
+  #include "ExternalHacks/FE8-Text_Engine_Rework/_FE8-Text_Engine_Rework_EA.event"
+  
+  // Negative Stat Boosts
+  #include "Necessary/NegativeStatBoosts/NegativeStatBoosts.event"
+
+  // Trap Rework (Dragon Veins & Heal Tiles)
+  #include "ExternalHacks/TrapRework/TrapRework.event"
+  
+  // Proper Range Getters
+  #include "ExternalHacks/ProperRangeGetters/ProperRangeGetters/ProperRangeGetters.event"
+
+  // Modular Stat Screen
+  #include "Necessary/ModularStatScreen/ModularStatScreen.event"
+  
+  // Strength/Magic Split
+	#include "ExternalHacks/StrMagSplit/_MasterAsmInstaller.event"
+  
+  // Modular EXP
+  #include "ExternalHacks/ModularEXP/ModularEXP.event"
+  
+  // Portrait Selection
+  #include "ExternalHacks/PortraitSelectASM/PortraitSelectionASM.event"
+
+  // Raid
+  #include "ExternalHacks/Raid/Raid.event"
+  
+  // Escape-Arrive
+  #include "ExternalHacks/EscapeArrive/EscapeArrive.event"
+  
+  // Debuffs
+  #include "Necessary/SuspendDebuffs/Debuffs.event"
+
+  // Supply available in prologue
+  #include "QualityOfLife/PrologueSupply.event"
+  
+  // Item Range Fix
+  #include "Necessary/ItemRangeFix/ItemRangeFix.event"
+  
+  // Chapter Names as Text
+  #include "QualityOfLife/TextChNames/TextChNames.event"
+
+  // PC and Generic Music Hack (writes to e80000/e90000)
+  #include "QualityOfLife/PCAndGenericMusic.event"
+
+  #include "QualityOfLife/EventRescue/EventRescue.event"
+  #include "QualityOfLife/EventAddTraps/EventAddTraps.event"
+  #include "QualityOfLife/EventSendToConvoy/EventSendToConvoy.event"
+
+  // Fix gaining wexp from weapons you don't have wexp in (for Shadowgift/Lumina)
+  #include "Necessary/FixWpnRnk.event"
+  
+  // Unit Action Rework (required for movement skills)
+  #include "Necessary/UnitActionRework/UnitActionRework.event"
+
+  // Change Sick Status to Freeze
+  #include "ExternalHacks/Freeze/Freeze.event"
+  #include "ExternalHacks/Freeze/EventFreeze.event"
+  
+  // Reaver Split
+  ALIGN 4
+  #include "ExternalHacks/ReaverSplit/ReaverSplit.event"
+  
+  // Cannot Crit
+  ALIGN 4
+  #include "ExternalHacks/CannotCrit/CannotCrit.event"
+  
+  // AdvWeaponLocks
+  ALIGN 4
+  #include "ExternalHacks/WeaponLockArray/AdvWeaponLocks.event"
+  
+  // Status-Inflicting Weapons
+  ALIGN 4
+  #include "ExternalHacks/StatusWeapons/StatusWeapons.event"
+  
+  // Narrow Fonts by Scraiza
+  ALIGN 4
+  #include "ExternalHacks/NarrowFont/NarrowFontInstaller.event"
+  
+  // Item Effect Revamp by Teraspark
+  #include "Necessary/ItemEffectRevamp/IERevamp_Installer.event"
+  
+  // Durability-Based Items, for Skill Scrolls
+  #include "Necessary/DurabilityBasedItems/DurabilityBasedItems.event"
+  
+  // Unlock working on chests
+  #include "ExternalHacks/UnlockChest/UnlockChest.event"
+  
+  ALIGN 4
+  #include "SkillSystem/SkillSystemInstaller.event"
+
+  ALIGN 4
+  #include "QualityOfLife/DisplayWRankOnLevelUp/DisplayWRankOnLevelUp.event"
+
+  ALIGN 4
+  #include "QualityOfLife/BattleStatsWithAnimsOff/FE8-BattleStats.event"
+
+  ALIGN 4
+  #include "Necessary/StatGetters/_InstallStatGetters.event"
+  
+  // Growth Getters
+  #include "ExternalHacks/StrMagSplit/GrowthGetters/GrowthGetters.event"
+  
+  ALIGN 4
+  #include "Necessary/IconRework/IconRework.event"   // Allows using standard Icon routines to draw skill icons
+  #include "Necessary/PopupRework/PopupRework.event" // Allows to expand on vanilla popups by adding components
+  
+  #include "Necessary/UnitMenu/UnitMenu.event"
+  #include "Necessary/Popups.event"
+  
+  #include "Necessary/CalcLoops/CalcLoops.event"
+
+  // Use new EMS-based expansion, moved to NecessaryHacks
+  MESSAGE "Using EMS Save/Suspend Expansion"
+  #include "Necessary/ExpandedModularSave/ExModularSave.event"

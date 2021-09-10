@@ -1,0 +1,58 @@
+EVBIT_MODIFY 0x1
+
+// Paralogue 2 completed, mark as unavailable
+ENUF Paralogue2Flag
+
+// Do set next chapter in WMAct3DestinationsEvent
+SVAL 0x5 0x0
+CALL WMAct3DestinationsEvent
+
+WM_SPAWNLORD 0x0 0x0 0x1 0x13 0x0
+WM_CENTERCAMONLORD
+WM_FADEOUT 0x0 0x0 0x0
+WM_TEXTDECORATE
+EVBIT_MODIFY 0x0
+
+STAL 20
+WM_MOVECAM 0x0 0xFFFF 0xFFFF 0x50 0x28 0x2D 0x0
+WM_WAITFORCAM
+STAL 20
+WM_DRAWPATH 0x0 0x16 0x0
+WM_WAITFORFX
+
+STAL 40
+WM_MOVECAM 0x0 0xFFFF 0xFFFF 0x30 0x48 0x2D 0x0
+WM_WAITFORCAM
+STAL 20
+WM_DRAWPATH 0x0 0x17 0x0
+WM_WAITFORFX
+
+// 76 == true means either ch17 or ch18 is current chapter
+// Therefore we must've unlocked paralogue 4 already.
+// 74 == false means that paralogue 4 is unavailable.
+// if 76 == true & 74 == false, we've already completed paralogue 4.
+// 76 == false & 74 == true also passes, but shouldn't be reachable.
+CHECK_EVENTID 0x76
+SADD 0xC3
+CHECK_EVENTID 0x74
+SADD 0x3C3
+SVAL 0x4 0x1
+BNE 0x0 0x4 0x3
+  STAL 40
+  WM_MOVECAM 0x0 0xFFFF 0xFFFF 0x70 0x78 0x2D 0x0
+  WM_WAITFORCAM
+  STAL 20
+  WM_DRAWPATH 0x0 0x1A 0x0
+  WM_WAITFORFX
+LABEL 0x0
+
+STAL 40
+WM_MOVECAM 0x0 0xFFFF 0xFFFF 0x50 0x48 0x2D 0x0
+WM_WAITFORCAM
+
+STAL 60
+MUSC 0x4
+WM_MAKELORDVISIBLE 0x0
+EVBIT_MODIFY 0x1
+CALL 0x591F40
+ENDA

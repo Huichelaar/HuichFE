@@ -1,0 +1,22 @@
+// EA Installer based on the FEBuilder patch.
+// Credits to 7743 for the original patch.
+#ifndef _FE8_
+    ERROR "You're not assembling to an FE8 ROM!"
+#endif
+
+#include "Extensions/Hack Installation.txt"
+#include "EAstdlib.event"
+
+#ifndef FreeSpace
+	#define FreeSpace 0x1000000
+	ORG FreeSpace
+#endif
+
+PUSH
+  ORG 0x71A68
+  jumpToHack(ContinueBattleBGM)
+POP
+
+ALIGN 4
+ContinueBattleBGM:
+#incbin "ContinueBattleBGM.dmp"

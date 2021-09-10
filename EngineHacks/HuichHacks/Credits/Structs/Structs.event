@@ -1,0 +1,201 @@
+// Definitions of structs.
+
+// Macros.
+#define CRE_CreditStruct_Entry(title, subtitle, paletteID, tilesetBG, tilesetPalette, camPosX, camPosY, camPosZ, camTheta, camPhi, camUX, camUY, camUZ, camVX, camVY, camVZ, camWX, camWY, camWZ, travelStruct, creditStruct, constructor, destructor) "ALIGN 4; SHORT title subtitle; POIN segmentTitleFontPal+(paletteID<<5) tilesetBG tilesetPalette; WORD (camPosX) (camPosY) (camPosZ) (camTheta) (camPhi) (camUX) (camUY) (camUZ) (camVX) (camVY) (camVZ) (camWX) (camWY) (camWZ); POIN travelStruct creditStruct constructor destructor"
+
+#define CRE_MusicStruct_Entry(songID, playTime) "ALIGN 4; SHORT songID playTime*60"
+
+#define CRE_M7TravelStruct_Entry(x, y, z, bitfield) "ALIGN 4; WORD (x)*0x1000-0x3000 (y) (z)*0x1000+0x800 (bitfield)"
+
+#define CRE_ReelStruct_Entry(textID, spriteType, spriteStruct, authorArray) "ALIGN 4; SHORT textID; BYTE spriteType 0; POIN spriteStruct authorArray" // spriteType: 0 = class, 1 = portrait, 2 = tilemap.
+
+#define CRE_SpriteClassStruct(label, classID1, genericPalID1, charPalID1, animID1, baXPos1, baYPos1, classID2, genericPalID2, charPalID2, animID2, baXPos2, baYPos2) "ALIGN 4; label:; BYTE classID1 classID2 genericPalID1 genericPalID2; SHORT (charPalID1) (charPalID2) animID1-1 animID2-1 baXPos1 baXPos2 baYPos1 baYPos2"
+
+#define CRE_SpriteOtherStruct(label, tiles, OAMData, palette, xPos, yPos) "ALIGN 4; label:; POIN tiles OAMData palette; SHORT xPos yPos"
+#define CRE_SpriteOtherStruct(tiles, OAMData, palette, xPos, yPos) "POIN tiles OAMData palette; SHORT xPos yPos"
+
+
+// CRE_CreditStruct[]
+ALIGN 4
+creditStruct:
+//CRE_CreditStruct_Entry(Graphics, Classes, 1, FieldsBG, FieldsAquamarinePalette, 0x20700, 0x10000, -0x5200, 0x40, 0x80, -0x100, 0, 0, 0, 0, 0x100, 0, 0x100, 0, fieldsTravelStruct, reelStructClass, CRE_classSegConstructor, CRE_classSegDestructor)
+//CRE_CreditStruct_Entry(Graphics, Portraits, 0, FieldsBG, FieldsAquamarinePalette, 0x20800, 0x2100, 0x3EF00, 0xA02, 0x2600, 0x100, 0, 0, 0, 0xFF, -12, 0, 0xC, 0xFF, fieldsTravelStruct, reelStructPortrait, CRE_portraitSegConstructor, CRE_portraitSegDestructor)
+CRE_CreditStruct_Entry(Graphics, Classes, 1, FieldsBG, FieldsAquamarinePalette, 0x2C000, 0x18000, 0x8800, 0xA03, 0x40, 0, 0, 0x100, 0x12, 0xFF, 0, -0xFF, 0x12, 0, fieldsTravelStruct, reelStructClass, CRE_classSegConstructor, CRE_classSegDestructor)
+CRE_CreditStruct_Entry(Graphics, Portraits, 0, FieldsBG, FieldsAquamarinePalette, 0x2C000, 0x1900, 0x8800, 0xA03, 0x40, 0, 0, 0x100, 0x12, 0xFF, 0, -0xFF, 0x12, 0, fieldsTravelStructTemp, reelStructPortrait, CRE_portraitSegConstructor, CRE_portraitSegDestructor)
+CRE_CreditStruct_Entry(Graphics, Tilesets, 2, FieldsBG, FieldsAquamarinePalette, 0x2C000, 0x1900, 0x8800, 0xA03, 0x40, 0, 0, 0x100, 0x12, 0xFF, 0, -0xFF, 0x12, 0, fieldsTravelStructTemp, reelStructTileset, 0, 0)
+CRE_CreditStruct_Entry(Graphics, 0x5D3, 3, FieldsBG, FieldsAquamarinePalette, 0x2C000, 0x1900, 0x8800, 0xA03, 0x40, 0, 0, 0x100, 0x12, 0xFF, 0, -0xFF, 0x12, 0, fieldsTravelStructTemp, reelStructGraphicsOther, 0, 0)
+CRE_CreditStruct_Entry(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)      // Terminator.
+
+
+// CRE_MusicStruct[]
+musicStruct:
+CRE_MusicStruct_Entry(3, 120)
+CRE_MusicStruct_Entry(0, 0)
+
+// CRE_M7TravelStruct[]
+fieldsTravelStruct:
+CRE_M7TravelStruct_Entry(47, 0x1900, 8, 0)
+CRE_M7TravelStruct_Entry(58, 0x1900, 8, 0)
+CRE_M7TravelStruct_Entry(69, 0x1900, 19, 0)
+//CRE_M7TravelStruct_Entry(73, 0x1900, 19, 0)
+CRE_M7TravelStruct_Entry(0, 0, 0, -1)         // Terminator.
+
+fieldsTravelStructTemp:
+CRE_M7TravelStruct_Entry(0, 0, 0, -1)         // Terminator.
+
+
+// CRE_ReelStruct[]
+reelStructClass:
+CRE_ReelStruct_Entry(0x2CB, 0, spriteClassArcher, authArcher)
+CRE_ReelStruct_Entry(0x2C1, 0, spriteClassCavalier, authCavalier)
+CRE_ReelStruct_Entry(0x2DC, 0, spriteClassFighter, authFighter)
+CRE_ReelStruct_Entry(0x2D1, 0, spriteClassMage, authMage)
+CRE_ReelStruct_Entry(0x2C6, 0, spriteClassMercenary, authMercenary)
+CRE_ReelStruct_Entry(0x2E4, 0, spriteClassMonk, authMonk)
+CRE_ReelStruct_Entry(0x2C8, 0, spriteClassMyrmidon, authMyrmidon)
+CRE_ReelStruct_Entry(PriestClericName, 0, spriteClassPriestCleric, authPriestCleric)
+CRE_ReelStruct_Entry(0x2E1, 0, spriteClassShaman, authShaman)
+CRE_ReelStruct_Entry(0x2ED, 0, spriteClassSoldier, authSoldier)
+CRE_ReelStruct_Entry(SupplierName, 0, spriteClassSupplier, authSupplier)
+CRE_ReelStruct_Entry(0, 0, 0, 0)        // Terminator.
+
+reelStructPortrait:
+CRE_ReelStruct_Entry(VivianName, 1, spritePortraitVivian, authVivian)
+CRE_ReelStruct_Entry(SimonName, 1, spritePortraitSimon, authSimon)
+CRE_ReelStruct_Entry(LeonaName, 1, spritePortraitLeona, authLeona)
+CRE_ReelStruct_Entry(MiloName, 1, spritePortraitMilo, authMilo)
+CRE_ReelStruct_Entry(TurnerName, 1, spritePortraitTurner, authTurner)
+CRE_ReelStruct_Entry(AidenName, 1, spritePortraitAiden, authAiden)
+CRE_ReelStruct_Entry(DemiName, 1, spritePortraitDemi, authDemi)
+CRE_ReelStruct_Entry(TheresaName, 1, spritePortraitTheresa, authTheresa)
+CRE_ReelStruct_Entry(HerbertName, 1, spritePortraitHerbert, authHerbert)
+CRE_ReelStruct_Entry(0, 0, 0, 0)        // Terminator.
+
+reelStructTileset:
+CRE_ReelStruct_Entry(RevampedFieldsName, 2, spriteTilesetFields, authFields)
+CRE_ReelStruct_Entry(FF5CaveName, 2, spriteTilesetFF5Cave, authFF5Cave)
+CRE_ReelStruct_Entry(0, 0, 0, 0)        // Terminator.
+
+reelStructGraphicsOther:
+CRE_ReelStruct_Entry(0x576, 2, spriteItems, authItems)
+CRE_ReelStruct_Entry(GuideCategoryMaterials, 2, spriteMaterials, authMaterials)
+CRE_ReelStruct_Entry(CreditsBattleBGs, 2, spriteBattleBGs, authBattleBGs)
+CRE_ReelStruct_Entry(CreditsConvoBGs, 2, spriteConvoBG, authConvoBG)
+CRE_ReelStruct_Entry(CreditsChIntro, 2, spriteChIntro, authChIntro)
+CRE_ReelStruct_Entry(CreditsGameIntro, 2, spriteGameIntro, authGameIntro)
+CRE_ReelStruct_Entry(CreditsStatScr, 2, spriteStatScr, authStatScr)
+CRE_ReelStruct_Entry(CreditsUIbuttons, 2, spriteUIbuttons, authUIbuttons)
+CRE_ReelStruct_Entry(0, 0, 0, 0)        // Terminator.
+
+//reelStruct:
+//CRE_ReelStruct_Entry(Credits, 2, sprite, auth)
+//CRE_ReelStruct_Entry(0, 0, 0, 0)        // Terminator.
+
+
+// CRE_SpriteClassStruct
+CRE_SpriteClassStruct(spriteClassArcher, Archer, 1, -1, ArcherMBowAnim, 200, 60, Archer_F, 0, 0x3, ArcherFBowAnim, 200, 60)
+CRE_SpriteClassStruct(spriteClassCavalier, Cavalier, 0, 0x4, CavalierMSwordAnim, 200, 60, Cavalier_F, 3, -1, CavalierFLanceAnim, 200, 60)
+CRE_SpriteClassStruct(spriteClassFighter, Fighter, 1, -1, FighterMAxeAnim, 200, 60, Fighter_F, 0, -1, FighterFAxeAnim, 200, 60)
+CRE_SpriteClassStruct(spriteClassMage, Mage, 0, -1, MageMMagicAnim, 200, 60, Mage_F, 2, -1, MageFMagicAnim, 200, 60)
+CRE_SpriteClassStruct(spriteClassMercenary, Mercenary, 0, 0x2, MercenaryMSwordAnim, 200, 60, Mercenary_F, 0, -1, MercenaryFSwordAnim, 200, 60)
+CRE_SpriteClassStruct(spriteClassMonk, Monk, 0, -1, MonkMMagicAnim, 200, 60, Monk_F, 1, -1, MonkFMagicAnim, 200, 60)
+CRE_SpriteClassStruct(spriteClassMyrmidon, Myrmidon, 3, -1, MyrmidonMSwordAnim, 200, 60, Myrmidon_F, 0, 0x5, MyrmidonFSwordAnim, 200, 60)
+CRE_SpriteClassStruct(spriteClassPriestCleric, Priest, 0, -1, PriestStaffAnim, 200, 60, Cleric, 0, -1, ClericStaffAnim, 200, 60)
+CRE_SpriteClassStruct(spriteClassShaman, Shaman, 0, 0x0, ShamanMMagicAnim, 200, 60, Shaman_F, 1, -1, ShamanFMagicAnim, 200, 60)
+CRE_SpriteClassStruct(spriteClassSoldier, Soldier, 3, -1, SoldierMLanceAnim, 200, 60, Soldier_F, 0, 0x1, SoldierFLanceAnim, 200, 60)
+CRE_SpriteClassStruct(spriteClassSupplier, Supplier, 0, -1, SupplierLanceAnim, 200, 60, Supplier, 0, -1, SupplierLanceAnim, 200, 60)
+//CRE_SpriteClassStruct(spriteClassMarshall, Monk_F, 0, -1, MarshallAxeAnim, 184, 61, Monk_F, 1, -1, MarshallAxeAnim, 184, 61)
+
+
+// portraitID[]
+ALIGN 4
+spritePortraitVivian: SHORT VivianPortrait 0
+spritePortraitSimon: SHORT SimonPortrait 0
+spritePortraitLeona: SHORT LeonaPortrait 0
+spritePortraitMilo: SHORT MiloPortrait 0
+spritePortraitTurner: SHORT TurnerPortrait 0
+spritePortraitAiden: SHORT AidenPortrait 0
+spritePortraitDemi: SHORT DemiPortrait 0
+spritePortraitTheresa: SHORT TheresaPortrait 0
+spritePortraitHerbert: SHORT HerbertPortrait 0
+
+
+// CRE_SpriteOtherStruct[]
+CRE_SpriteOtherStruct(spriteTilesetFields, FieldsOBJ, OAM80x80_256col, FieldsAquamarinePalette, 160, 0)
+CRE_SpriteOtherStruct(0, 0, FieldsGreenPalette, 160, 0)
+CRE_SpriteOtherStruct(0, 0, FieldsAutumnalPalette, 160, 0)
+CRE_SpriteOtherStruct(0, 0, FieldsPurplePalette, 160, 0)
+CRE_SpriteOtherStruct(0, 0, FieldsNightPalette, 160, 0)
+CRE_SpriteOtherStruct(0, 0, 0, 0, 0)   // Terminator.
+CRE_SpriteOtherStruct(spriteTilesetFF5Cave, FF5CaveOBJ, OAM80x80_256col, FF5CavePalette, 160, 0)
+CRE_SpriteOtherStruct(0, 0, 0, 0, 0)   // Terminator.
+
+CRE_SpriteOtherStruct(spriteItems, CreditsItemsTiles, CreditsItemsMaterialsOAM, 0x85996F4, 160, 0)
+CRE_SpriteOtherStruct(0, CreditsItemsMaterialsOAM+0x38, 0, 160, 0)
+//CRE_SpriteOtherStruct(0, CreditsItemsMaterialsOAM+0x70, 0, 160, 0)
+//CRE_SpriteOtherStruct(0, CreditsItemsMaterialsOAM+0xA8, 0, 160, 0)
+//CRE_SpriteOtherStruct(0, CreditsItemsMaterialsOAM+0xE0, 0, 160, 0)
+//CRE_SpriteOtherStruct(0, CreditsItemsMaterialsOAM+0x118, 0, 160, 0)
+//CRE_SpriteOtherStruct(0, CreditsItemsMaterialsOAM+0x150, 0, 160, 0)
+CRE_SpriteOtherStruct(0, 0, 0, 0, 0)   // Terminator.
+CRE_SpriteOtherStruct(spriteMaterials, CreditsMaterialsTiles, CreditsItemsMaterialsOAM, 0x85996F4, 160, 0)
+CRE_SpriteOtherStruct(0, CreditsItemsMaterialsOAM+0x38, 0, 160, 0)
+CRE_SpriteOtherStruct(0, CreditsItemsMaterialsOAM+0x70, 0, 160, 0)
+CRE_SpriteOtherStruct(0, 0, 0, 0, 0)   // Terminator.
+CRE_SpriteOtherStruct(spriteBattleBGs, CreditsBattleBGBridgeTiles, OAM80x80_256col, BF_BridgePalette-0x20, 160, 0)
+CRE_SpriteOtherStruct(CreditsBattleBGForestTiles, 0, BF_ForestPalette-0x20, 160, 0)
+CRE_SpriteOtherStruct(CreditsBattleBGPeakTiles, 0, BF_PeakPalette-0x20, 160, 0)
+CRE_SpriteOtherStruct(CreditsBattleBGPlainTiles, 0, BF_PlainPalette-0x20, 160, 0)
+CRE_SpriteOtherStruct(CreditsBattleBGSeaTiles, 0, BF_SeaPalette-0x20, 160, 0)
+CRE_SpriteOtherStruct(CreditsBattleBGThroneTiles, 0, BF_ThronePalette-0x20, 160, 0)
+CRE_SpriteOtherStruct(0, 0, 0, 0, 0)   // Terminator.
+CRE_SpriteOtherStruct(spriteConvoBG, CreditsConvoBGCaveTiles, OAM80x80_256col, ConvoCavePal, 160, 0)
+//CRE_SpriteOtherStruct(Credits_ConvoBG, 0, Convo_Pal-0x2, 160, 0)
+CRE_SpriteOtherStruct(0, 0, 0, 0, 0)   // Terminator.
+CRE_SpriteOtherStruct(spriteChIntro, CreditsChIntroTiles, OAM80x80_256col, CreditsChIntroPalette, 160, 0)
+CRE_SpriteOtherStruct(0, 0, 0, 0, 0)   // Terminator.
+CRE_SpriteOtherStruct(spriteGameIntro, CreditsGameIntroTiles, OAM80x80_256col, CreditsGameIntroPalette, 160, 0)
+CRE_SpriteOtherStruct(0, 0, 0, 0, 0)   // Terminator.
+CRE_SpriteOtherStruct(spriteStatScr, CreditsStatScrTiles, OAM80x80_256col, CreditsStatScrPalette, 160, 0)
+CRE_SpriteOtherStruct(0, 0, CreditsStatScrPalette+0x80, 160, 0)
+CRE_SpriteOtherStruct(0, 0, CreditsStatScrPalette+0x100, 160, 0)
+CRE_SpriteOtherStruct(0, 0, 0, 0, 0)   // Terminator.
+CRE_SpriteOtherStruct(spriteUIbuttons, CreditsUIbuttonsTiles, CreditsUIButtonsOAM, ButtonPromptsPalette, 160, 0)
+CRE_SpriteOtherStruct(0, 0, 0, 0, 0)   // Terminator.
+
+// void* []
+ALIGN 4
+authArcher: POIN authIntelligentSystems authDerTheVaporeon authFlasuban 0
+authCavalier: POIN authIntelligentSystems authRobertFPY authPikmin1211 authSALVAGED authMaiser6 0
+authFighter: POIN authIntelligentSystems authJj09 authHyperGammaSpaces authAlusq authBlackMage 0
+authMage: POIN authIntelligentSystems authUnknown 0
+authMercenary: POIN authIntelligentSystems authL95 authAgro authSALVAGED authJeyTheCount 0
+authMonk: POIN authIntelligentSystems authRobertFPY authblademaster authTeraspark authEldritchAbomination 0
+authMyrmidon: POIN authIntelligentSystems authL95 0
+authPriestCleric: POIN authIntelligentSystems authFlasuban authEldritchAbomination 0
+authShaman: POIN authIntelligentSystems authUnknown 0
+authSoldier: POIN authIntelligentSystems authFlasuban authRexacuse authP33rl355 authAlusq authWarPath authMaiser6 authJeyTheCount 0
+authSupplier: POIN authN426 authJonoTheRed authHuichelaar 0
+//authMarshall: POIN authIntelligentSystems authHuichelaar 0
+
+authVivian: POIN authIntelligentSystems authHuichelaar 0
+authSimon: POIN authGenericPretsel 0
+authLeona: POIN authCapibarainspace 0
+authMilo: POIN authSSHX 0
+authTurner: POIN authZmr 0
+authAiden: POIN authNickt 0
+authDemi: POIN authDragonLuca 0
+authTheresa: POIN authAmBrosiac 0
+authHerbert: POIN authAmBrosiac 0
+
+authFields: POIN authIntelligentSystems authZoramineFae authFlasuban authP33rl355 0
+authFF5Cave: POIN authSquareEnix authWAve 0
+
+authItems: POIN authGabrielKnight authIntelligentSystems auth2WB 0
+authMaterials: POIN authHudsonSoft authGaramonde authkb authMojangStudios authWizToad authZarg authBeansy authGabrielKnight authIntelligentSystems authHenrai authKonami authGreigaMaster authAtlus authHeadlock authredblueyellow 0
+authBattleBGs: POIN authIntelligentSystems authPrevious 0
+authConvoBG: POIN authIntelligentSystems 0
+authChIntro: POIN authSquareEnix authRyan914 authKonami authUrathros authGameFreak authDRAGOON 0
+authGameIntro: POIN authFatih authPatriciaSaunders authCapcom authShoda authTSP184 authSquareEnix authHALLaboratory authIntelligentSystems authJackster authPlanetInteractive authRealtimeAssociates authMrC authKonami authSMITHYGCN 0
+authStatScr: POIN authIntelligentSystems 0
+authUIbuttons: POIN authGabrielKnight 0

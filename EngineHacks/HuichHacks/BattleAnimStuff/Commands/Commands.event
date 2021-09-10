@@ -1,0 +1,44 @@
+// Repoints the pointerlists for battle anim commands,
+// allowing for new commands to added.
+#ifndef _FE8_
+    ERROR "You're not assembling to an FE8 ROM!"
+#endif
+
+#include "Extensions/Hack Installation.txt"
+#include "EAstdlib.event"
+
+#ifndef FreeSpace
+	#define FreeSpace 0x1000000
+	ORG FreeSpace
+#endif
+
+{
+  // Variables
+  // Number of commands. Vanilla is 0x7B
+  // Don't go higher than 0xFF.
+  #define CommandCount 0x7E
+
+  // Commands
+  #include "Commands/Commands.event"
+  
+  // For drawing sprites to the screen.
+  #include "DrawSprites/DrawSprites.event"
+  
+  PUSH
+    
+    // Make right weapon use the same palette
+    // as left. This frees up another palette.
+    ORG 0x51AC0
+    SHORT 0xD1DE
+    // Don't load palette in this slot.
+    ORG 0x510C0
+    SHORT 0x46C0 0x46C0
+  
+  POP
+  
+  // Buffers a 256x64 sheet to be moved
+  // to the start of OBJ VRAM.
+  ALIGN 4
+  StoreSpellTilesOBJ2:
+  #include "StoreSpellTilesOBJ2.lyn.event"
+}

@@ -1,0 +1,50 @@
+// Palettes
+ALIGN 4
+TextPalettes:
+#incbin "TextPalettes.dmp"
+
+// OAM
+ALIGN 4
+TextOAM:
+#incbin "TextOAM.dmp"
+
+// Tiles
+ALIGN 4
+TextLine0:
+#incbin "TextLine0.dmp"
+ALIGN 4
+TextLine1:
+#incbin "TextLine1.dmp"
+ALIGN 4
+TextLine2:
+#incbin "TextLine2.dmp"
+ALIGN 4
+TextLine3:
+#incbin "TextLine3.dmp"
+ALIGN 4
+TextLine4:
+#incbin "TextLine4.dmp"
+ALIGN 4
+TextLine5:
+#incbin "TextLine5.dmp"
+ALIGN 4
+TextLine6:
+#incbin "TextLine6.dmp"
+ALIGN 4
+TextLine7:
+#incbin "TextLine7.dmp"
+ALIGN 4
+TextLine8:
+#incbin "TextLine8.dmp"
+ALIGN 4
+TextLine9:
+#incbin "TextLine9.dmp"
+ALIGN 4
+TextLine10:
+#incbin "TextLine10.dmp"
+ALIGN 4
+TextLine11:
+#incbin "TextLine11.dmp"
+ALIGN 4
+TextLine:
+POIN TextLine0 TextLine1 TextLine2 TextLine3 TextLine4 TextLine5 TextLine6 TextLine7 TextLine8 TextLine9 TextLine10 TextLine11

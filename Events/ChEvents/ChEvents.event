@@ -1,0 +1,79 @@
+// Called by paralogues to determine which chapter
+// should be put in savescreen upon completion.
+ALIGN 4
+Act3ReturnChEvent:
+#include "Act3ReturnCh.event"
+
+// Chapter Events
+ALIGN 4
+Chapter0Event:
+#include "Chapter0.event"
+ALIGN 4
+Chapter1Event:
+#include "Chapter1.event"
+ALIGN 4
+Chapter2Event:
+#include "Chapter2.event"
+ALIGN 4
+Chapter3Event:
+#include "Chapter3.event"
+ALIGN 4
+Chapter4Event:
+#include "Chapter4.event"
+ALIGN 4
+Chapter5Event:
+#include "Chapter5.event"
+ALIGN 4
+Chapter6Event:
+#include "Chapter6.event"
+ALIGN 4
+Chapter7Event:
+#include "Chapter7.event"
+ALIGN 4
+Chapter8Event:
+#include "Chapter8.event"
+ALIGN 4
+Chapter9Event:
+#include "Chapter9.event"
+ALIGN 4
+Chapter10Event:
+#include "Chapter10.event"
+ALIGN 4
+Chapter11Event:
+#include "Chapter11.event"
+ALIGN 4
+Chapter12Event:
+#include "Chapter12.event"
+ALIGN 4
+Chapter13Event:
+#include "Chapter13.event"
+ALIGN 4
+Chapter14Event:
+#include "Chapter14.event"
+ALIGN 4
+Chapter15Event:
+#include "Chapter15.event"
+ALIGN 4
+Chapter16Event:
+#include "Chapter16.event"
+ALIGN 4
+Chapter17Event:
+#include "Chapter17.event"
+ALIGN 4
+Chapter18Event:
+#include "Chapter18.event"
+ALIGN 4
+Paralogue1Event:
+#include "Paralogue1.event"
+ALIGN 4
+Paralogue2Event:
+#include "Paralogue2.event"
+ALIGN 4
+Paralogue3Event:
+#include "Paralogue3.event"
+ALIGN 4
+Paralogue4Event:
+#include "Paralogue4.event"
+ALIGN 4
+Paralogue5Event:
+#include "Paralogue5.event"

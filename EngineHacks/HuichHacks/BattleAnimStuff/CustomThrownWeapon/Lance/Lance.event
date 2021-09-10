@@ -1,0 +1,20 @@
+// Thrown lances spells.
+
+ALIGN 4
+SupplierJavelin:
+#include "SupplierJavelin.lyn.event"
+  // Spell slot
+  ALIGN 2
+  SupplierJavSpellID:
+  SHORT 0xC
+
+ALIGN 4
+WyvernKnightJavelin:
+#include "WyvernKnightJavelin.lyn.event"
+ALIGN 4
+WyvernKnightJavelinEffect:
+#include "WyvernKnightJavelinEffect.lyn.event"
+  // Spell slot
+  ALIGN 2
+  WyvernKnightJavSpellID:
+  SHORT 0x48

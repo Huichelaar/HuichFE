@@ -1,0 +1,84 @@
+ALIGN 4
+SupplierSt:
+#incbin "[T1][MISC] Supplier (F) Lance Standing {N426}.dmp"
+ALIGN 4
+SupplierMv:
+#incbin "[T1][MISC] Supplier v2 (F) Lance Moving {N426}.dmp"
+ALIGN 4
+MercenaryFSt:
+#incbin "[T1][SWD] Mercenary (F) Sword Standing {Agro}.dmp"
+ALIGN 4
+MercenaryFMv:
+#incbin "[T1][SWD] Mercenary (F) Sword Moving {Agro}.dmp"
+ALIGN 4
+SoldierFSt:
+#incbin "[T1][LNC] Soldier (F) (Shield) Lance Standing {Rexacuse, Peerless, Alusq, WarPath}.dmp"
+ALIGN 4
+SoldierFMv:
+#incbin "[T1][LNC] Soldier (F) (Shield) Lance Moving {Rexacuse, Peerless, Alusq, WarPath}.dmp"
+ALIGN 4
+SoldierMSt:
+#incbin "[T1][LNC] Soldier (M) (Shield) Lance Standing {Rexacuse, Peerless, Alusq}.dmp"
+ALIGN 4
+SoldierMMv:
+#incbin "[T1][LNC] Soldier (M) (Shield) Lance Moving {Rexacuse, Peerless, Alusq}.dmp"
+ALIGN 4
+FighterFSt:
+#incbin "[T1][AXE] Fighter (F) Axe Standing {Alusq}.dmp"
+ALIGN 4
+FighterFMv:
+#incbin "[T1][AXE] Fighter (F) Axe Moving {Alusq}.dmp"
+ALIGN 4
+FighterMSt:
+#incbin "[T1][AXE] Fighter (M) (Revamped) Axe Standing {Alusq}.dmp"
+ALIGN 4
+FighterMMv:
+#incbin "[T1][AXE] Fighter (M) (Revamped) Axe Moving {Alusq}.dmp"
+ALIGN 4
+ArcherFSt:
+#incbin "[T1][BOW] Archer (F) (Improved) Standing {DerTheVaporeon}.dmp"
+ALIGN 4
+ArcherFMv:
+#incbin "[T1][BOW] Archer (F) (Improved) Moving {DerTheVaporeon}.dmp"
+ALIGN 4
+ArcherMSt:
+#incbin "[T1][BOW] Archer (M) (Improved) Standing {DerTheVaporeon}.dmp"
+ALIGN 4
+ArcherMMv:
+#incbin "[T1][BOW] Archer (M) (Improved) Moving {DerTheVaporeon}.dmp"
+ALIGN 4
+ClericSt:
+#incbin "[T1] Clergy (F) (Cleric Improved) Staff Standing {flasuban}.dmp"
+ALIGN 4
+ClericMv:
+#incbin "[T1] Clergy (F) (Cleric Improved) Staff Moving {flasuban}.dmp"
+ALIGN 4
+PriestSt:
+#incbin "[T1] Clergy (M) (Priest Improved) Staff Standing {flasuban}.dmp"
+ALIGN 4
+PriestMv:
+#incbin "[T1] Clergy (M) (Priest Improved) Staff Moving {flasuban}.dmp"
+ALIGN 4
+MonkFSt:
+#incbin "[T1] Monk (F) Standing {Teraspark}.dmp"
+ALIGN 4
+MonkFMv:
+#incbin "[T1] Monk (F) Moving {Teraspark}.dmp"
+ALIGN 4
+ShamanFSt:
+#incbin "[T1] Shaman (F) Standing {IS}.dmp"
+ALIGN 4
+ShamanFMv:
+#incbin "[T1] Shaman (F) Moving {IS}.dmp"
+ALIGN 4
+CavalierMSt:
+#incbin "Cavalier (M) Lance {SALVAGED}-stand.dmp"
+ALIGN 4
+CavalierMMv:
+#incbin "Cavalier (M) Lance {SALVAGED}-move.dmp"
+ALIGN 4
+CavalierFSt:
+#incbin "Cavalier (F) Lance {SALVAGED, Pikmin}-stand.dmp"
+ALIGN 4
+CavalierFMv:
+#incbin "Cavalier (F) Lance {SALVAGED, Pikmin}-move.dmp"

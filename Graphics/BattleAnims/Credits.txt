@@ -1,0 +1,17 @@
+Animation                 Author
+
+Supplier                  JonoTheRed, Huichelaar
+MercenaryM                SALVAGED
+MercenaryF                SALVAGED, JeyTheCount
+Cleric                    Flasuban, Eldritch Abomination
+Priest                    Flasuban, Eldritch Abomination
+-HatlessMageM              GabrielKnight
+SoldierM                  Alusq
+SoldierF                  Alusq, Maiser6, JeyTheCount
+FighterF                  Black Mage
+ArcherM                   Flasuban, DerTheVaporeon
+ArcherF                   Flasuban, DerTheVaporeon
+CavalierM                 SALVAGED
+CavalierF                 Pikmin1211, Maiser6, SALVAGED
+MonkM                     Eldritch Abomination
+MonkF                     Eldritch Abomination

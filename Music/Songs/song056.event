@@ -1,0 +1,93 @@
+//Event file generated from Sappy .s format.
+        #include "MPlayDef.event"
+
+        #define    song056_grp  soundbank_034
+        #define    song056_pri  0
+        #define    song056_rev  0
+        #define    song056_key  0
+
+        // .rodata
+        // song056
+        ALIGN 4
+
+//****************** Track 0 (Midi-Chn.0) ******************//
+
+song056_0:
+        BYTE   KEYSH   song056_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   24
+        BYTE           BENDR   4
+        BYTE           VOL     46
+        BYTE           N10     Cn5   v090
+        BYTE   W01
+        BYTE           VOL     50
+        BYTE   W01
+        BYTE                   54
+        BYTE   W01
+        BYTE                   58
+        BYTE           BEND    c_v-8
+        BYTE   W01
+        BYTE           VOL     62
+        BYTE           BEND    c_v-16
+        BYTE   W01
+        BYTE                   c_v-24
+        BYTE   W01
+        BYTE           VOL     56
+        BYTE           BEND    c_v-32
+        BYTE   W01
+        BYTE           VOL     51
+        BYTE           BEND    c_v-40
+        BYTE   W01
+        BYTE           VOL     44
+        BYTE           BEND    c_v-48
+        BYTE   W01
+        BYTE           VOL     34
+        BYTE           BEND    c_v-56
+        BYTE   W01
+        BYTE           VOL     46
+        BYTE           BEND    c_v+0
+        BYTE           N10     Cn5   v045
+        BYTE   W01
+        BYTE           VOL     50
+        BYTE   W01
+        BYTE                   54
+        BYTE   W01
+        BYTE                   58
+        BYTE           BEND    c_v-8
+        BYTE   W01
+        BYTE           VOL     62
+        BYTE           BEND    c_v-16
+        BYTE   W01
+        BYTE                   c_v-24
+        BYTE   W01
+        BYTE           VOL     56
+        BYTE           BEND    c_v-32
+        BYTE   W01
+        BYTE           VOL     51
+        BYTE           BEND    c_v-40
+        BYTE   W01
+        BYTE           VOL     44
+        BYTE           BEND    c_v-48
+        BYTE   W01
+        BYTE           VOL     34
+        BYTE           BEND    c_v-56
+        BYTE   W01
+        BYTE           VOL     24
+        BYTE           BEND    c_v-64
+        BYTE   FINE
+
+
+//********************** End of Song ***********************//
+
+        ALIGN 4
+song056:
+        BYTE   1                       // Num Tracks
+        BYTE   0                       // Unknown
+        BYTE   song056_pri             // Priority
+        BYTE   song056_rev             // Reverb
+
+        POIN2   song056_grp            
+
+        POIN2   song056_0
+
+        

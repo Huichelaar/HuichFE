@@ -1,0 +1,6 @@
+ALIGN 4
+AbilityBonusTableLABEL:
+FILL 256*8
+PUSH
+ORG AbilityBonusTableLABEL + EXPBoost*8 ; BYTE (5) (9) (13) (17) (21) (25) (Suffix) (PercentageSign) 
+POP

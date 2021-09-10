@@ -1,0 +1,33 @@
+## PuzzleMenuCommandNameText
+ Puzzle[X]
+
+## PuzzleMenuCommandDescText
+There's a puzzle here...[N]
+Solve it to get a reward![X]
+
+## PuzzleTut0
+The goal of this puzzle is to match all the symbols.[X]
+
+##
+You can change a symbol by moving the cursor[X]
+
+##
+over it and pressing     .[X]
+
+##
+Adjacent symbols will change as well.[X]
+
+##
+Symbols will change in accordance to the diagram.[X]
+
+##
+Completing the puzzle will net you a reward.[X]
+
+##
+Press      to give up on this puzzle.[X]
+
+##
+This puzzle can not be skipped.[X]
+
+## PuzzleQuit
+Would you like to skip this puzzle?[X]

@@ -1,0 +1,9 @@
+#ifdef OverwriteSuspend
+  ALIGN 4
+  SuspendEvent:
+  #include "SuspendEvent.event"
+#else
+  ALIGN 4
+  BackupEvent:
+  #include "BackupEvent.event"
+#endif

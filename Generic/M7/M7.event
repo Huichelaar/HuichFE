@@ -1,0 +1,42 @@
+#ifndef M7_INCLUDED
+#define M7_INCLUDED
+
+#ifndef SetSymbolDefined
+	#define SetSymbolDefined
+
+	#define SetSymbol(aName, aValue) "PUSH; ORG (aValue); aName:; POP"
+//	#define SetSymbol(aName, aValue) "aName = (aValue)"
+#endif // SetSymbolDefined
+
+// Helper functions and procs for creating "mode 7" style effects within GBAFE.
+// Based the amazing GBA M7 demos and guides featured in tonc (https://www.coranac.com/tonc/text/)
+// hack by Stan
+
+/*
+ * NOTE ABOUT USED RAM AREA
+ * 
+ * This hack makes use of the "free" IWRAM area located at 03003750.
+ * 
+ * Why is it "free"? Well, this area is normally part of where ARM functions are being copied to at startup,
+ * but only a few of those copies are actually managed and called by the engine.
+ * The other functions are not unused tho, but it's the *original* ROM functions that are called instead.
+ * 
+ * The source area starts at 08000228, but the first relevant copied function starts at 08000490 (it's PushToHiOAM).
+ * This means that we have 08000490 - 08000228 = 0x268 (616) bytes to play with starting at 03003750!
+ * Huichelaar edit: Try not to let M7HBlank_Size get to ~0x110. lam[SCREEN_SIZE] takes up 0x140 bytes and
+ * the m7World struct has a size of about 0xC bytes.
+ */
+
+#include "Src/M7RamFunc.lyn.event"
+ALIGN 4; SetSymbol(M7HBlank_Size, CURRENTOFFSET - M7HBlank)
+
+m7RamFuncRom:  POIN M7HBlank
+m7RamFuncSize: WORD M7HBlank_Size
+m7RamFunc:     WORD 0x03003750
+m7World:       WORD 0x03003750 + M7HBlank_Size
+
+//MESSAGE M7RAMsize is M7HBlank_Size
+
+#include "Src/M7Core.lyn.event"
+
+#endif // M7_INCLUDED

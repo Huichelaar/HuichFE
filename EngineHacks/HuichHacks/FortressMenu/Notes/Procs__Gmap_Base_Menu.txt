@@ -1,0 +1,36 @@
+0x08A3EEEC, 25 proc codes
+
+0001 0000 08206B90    Set name to "Gmap Base Menu".
+000F 0800 00000000    Set mark to 0.
+0004 0000 080C3EC5    Set end routine to bx r14.
+0002 0000 080C3EC9    Call. Set +0x2A(b) and +0x2B(b) to 0. Set +0x2C(w) to 0xFFFFFFFF, used by 
+                      080958FC, called by Procs_PrepScreenItemsMenu. Indicates the next units 
+                      should be skipped?
+
+000B 0000 00000000    LABEL 0x0
+0002 0000 080C3EDD    Call. Set +0x30(b) to IsSongPlay flag. Set +0x34(w) to playing BGM.
+                      Creates Blocking Procs_PrepScreenItemsMenu child.
+000E 0000 00000000    Yield. We continue only once we exit out of the new menu.
+0002 0000 080C3F25    Call. GOTO 0x5 if menuoption is >1 (secret shop & manage items).
+
+000B 0100 00000000    LABEL 0x1
+0002 0000 080C3F89    Call.
+000E 0000 00000000    Yield.
+000C 0400 00000000    Goto 0x4.
+
+000B 0200 00000000    LABEL 0x2
+0002 0000 080C3FB5    Call.
+000E 0000 00000000    Yield.
+000C 0400 00000000    Goto 0x4.
+
+000B 0300 00000000    LABEL 0x3
+0002 0000 080C3FE1    Call.
+000E 0000 00000000    Yield.
+000C 0400 00000000    Goto 0x4.
+
+000B 0400 00000000    LABEL 0x4
+0002 0000 080C3F05    Call.
+000C 0000 00000000    Goto 0x0.
+
+000B 0500 00000000    LABEL 0x5
+0000 0000 00000000    End.

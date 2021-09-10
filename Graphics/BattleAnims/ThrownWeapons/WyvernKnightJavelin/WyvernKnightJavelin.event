@@ -1,0 +1,8 @@
+// WyvernKnight javelin
+ALIGN 4
+WyvernKnightJavelinPalette:
+#incbin "WyvernKnightJavelinPalette.dmp"
+
+ALIGN 4
+WyvernKnightJavelinTiles:
+#incbin "WyvernKnightJavelin.dmp"

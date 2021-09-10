@@ -1,0 +1,84 @@
+// Menu stuff
+
+PUSH
+
+  // Add one more command to 59D1CC's commands.
+  // For selecting the gambit attack.
+  ORG 0x59D1D4
+  POIN GAM_NewSelectAttackCommands
+  
+  // Use our helpbox for items.
+  ORG 0x59D1EC
+  POIN GAM_AttackCommandHelpbox|1
+  
+POP
+
+// Menu commands when selecting a weapon
+// after pressing 'Attack'.
+// Mostly the same as vanilla, menucommands 0x59C95C,
+// but with an extra command for gambits.
+GAM_NewSelectAttackCommands:
+POIN 0xD7CB8
+SHORT 0x0 0x0
+BYTE 0x0 0x49 0x0 0x0
+POIN 0x22CA5 0x22D35 0x22CF1
+WORD 0x0
+POIN 0x22D85 0x22DD9
+
+POIN 0xD7CB8
+SHORT 0x0 0x0
+BYTE 0x0 0x4A 0x0 0x0
+POIN 0x22CA5 0x22D35 0x22CF1
+WORD 0x0
+POIN 0x22D85 0x22DD9
+
+POIN 0xD7CB8
+SHORT 0x0 0x0
+BYTE 0x0 0x4B 0x0 0x0
+POIN 0x22CA5 0x22D35 0x22CF1
+WORD 0x0
+POIN 0x22D85 0x22DD9
+
+POIN 0xD7CB8
+SHORT 0x0 0x0
+BYTE 0x0 0x4C 0x0 0x0
+POIN 0x22CA5 0x22D35 0x22CF1
+WORD 0x0
+POIN 0x22D85 0x22DD9
+
+POIN 0xD7CB8
+SHORT 0x0 0x0
+BYTE 0x0 0x4D 0x0 0x0
+POIN 0x22CA5 0x22D35 0x22CF1
+WORD 0x0
+POIN 0x22D85 0x22DD9
+
+POIN 0xD7CB8
+SHORT 0x0 0x0
+BYTE 0x0 0x4E 0x0 0x0
+POIN GAM_SelectGambitUsability|1 GAM_SelectGambitDraw|1 GAM_SelectGambitEffect|1
+WORD 0x0
+POIN GAM_SelectGambitHover|1 0x22DD9
+
+WORD 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0
+
+
+ALIGN 4
+GAM_AttackCommandUsability:
+#include "AttackCommandUsability.lyn.event"
+ALIGN 4
+GAM_AttackCommandHelpbox:
+#include "AttackCommandHelpbox.lyn.event"
+
+ALIGN 4
+GAM_SelectGambitUsability:
+#include "SelectGambitUsability.lyn.event"
+ALIGN 4
+GAM_SelectGambitDraw:
+#include "SelectGambitDraw.lyn.event"
+ALIGN 4
+GAM_SelectGambitHover:
+#include "SelectGambitHover.lyn.event"
+ALIGN 4
+GAM_SelectGambitEffect:
+#include "SelectGambitEffect.lyn.event"

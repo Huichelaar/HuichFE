@@ -1,0 +1,7 @@
+// Stuff I couldn't manage to categorise better.
+
+// Clear enemy fortmaster from fort after
+// their chapter has been completed.
+ALIGN 4
+ClearFortMaster:
+#include "ClearFortMaster.lyn.event"

@@ -1,0 +1,262 @@
+// Change some battle animation stuff:
+// - Change how level-up is drawn.
+// - Remove plateaus.
+// - Shake BG3 on quake.
+// - Make BG3 use 8bpp mode with 192 colours.
+// - Remove "battle without bg" option.
+// - Display map battle if battle range >3.
+#ifndef _FE8_
+    ERROR "You're not assembling to an FE8 ROM!"
+#endif
+
+#include "Extensions/Hack Installation.txt"
+#include "EAstdlib.event"
+
+#ifndef FreeSpace
+	#define FreeSpace 0x1000000
+	ORG FreeSpace
+#endif
+
+{
+#include "LevelUp/LevelUp.event"
+
+PUSH
+
+  // Remove animations without BG option.
+  ORG 0xA2E9A0
+  SHORT 0xA2 0xBD 0x270 0x0     // Anims ON (with BG).
+  SHORT 0xA3 0xBE 0x287 0x0     // Anims OFF.
+  SHORT 0xA4 0xC7 0x2A0 0x0     // Anims Solo.
+  SHORT 0x0 0x0 0xBD 0x0        // Terminate.
+  // Moved here from EssentialFixes.
+  // Initialize new game with battle with backgrounds.
+  ORG 0x30D8A                   // Animations type 2.
+  SHORT 0x3306
+  // Change initial displayed option.
+  ORG 0xB1E72
+  SHORT 0x2000                  // Option 0, ON.
+  ORG 0xB1E76
+  SHORT 0x2001                  // Option 1, OFF.
+  ORG 0xB1E7A
+  SHORT 0x2002                  // Option 3, Solo.
+  // Change option functionality branches.
+  ORG 0xB1FD2
+  SHORT 0xD00F                  // Option 0, ON.
+  ORG 0xB1FCA
+  SHORT 0xD01D                  // Option 1, OFF.
+  ORG 0xB1FD8
+  SHORT 0xD020                  // Option 3, Solo.
+  // Allow A-press on option 2.
+  ORG 0xB22B4
+  SHORT 0x2802
+  ORG 0xB19C4
+  SHORT 0x2802                  // Draw "Press A" sprite.
+  ORG 0xB19D2
+  SHORT 0x20BB                  // Different X, to match moved "Solo" option.
+  // Solo animation, either set to OFF or 2.
+  ORG 0x91416
+  SHORT 0x2002 0x4048 0x46C0 0x46C0 0x46C0
+  ORG 0x92566
+  SHORT 0x20BD                  // Display ON instead of 2 in Animation menu.
+  
+
+  // Don't use OBJ plateau during quake.
+  ORG 0x53A7E
+  SHORT 0x46C0
+  
+  // Shake BG3 instead of BG2 during quake.
+  ORG 0x5387A
+  SHORT 0x2003
+  ORG 0x538D8
+  SHORT 0x2003
+  
+  // Don't shift BG2 when moving battle camera.
+  // Instead, shift BG3.
+  ORG 0x53618
+  jumpToHack(MoveBG3)
+  
+  // Don't show glowing platforms when
+  // starting or ending battle.
+  ORG 0x55F70
+  SHORT 0x46C0 0x46C0
+  ORG 0x56262
+  SHORT 0x46C0 0x46C0
+  
+  // Don't load or draw BG2 plateaus
+  // during battle animations.
+  ORG 0x51EEE
+  SHORT 0x46C0 0x46C0
+  /*
+  ORG 0x5AB28
+  SHORT 0x46C0 0x46C0
+  ORG 0x5AB3C
+  SHORT 0x46C0 0x46C0
+  ORG 0x5AB4E
+  SHORT 0x46C0 0x46C0
+  ORG 0x5AB5E
+  SHORT 0x46C0 0x46C0 0x46C0 0x46C0
+  ORG 0x5AB68
+  SHORT 0x46C0 0x46C0
+  ORG 0x5AB8C                                   // Messes with promo branch screen.
+  SHORT 0x46C0 0x46C0
+  ORG 0x5ABBA                                   // Messes with promo branch screen.
+  SHORT 0x46C0 0x46C0
+  ORG 0x5AD10                                   // Messes with promo branch screen.
+  SHORT 0x46C0 0x46C0 0x46C0
+  ORG 0x5ADFC                                   // Messes with promo branch screen.
+  SHORT 0x46C0 0x46C0 0x46C0
+  */
+  
+  // Draw Battle BG and
+  // move screen blocks to end of BG VRAM.
+  // We repoint this proc and add
+  // our own routines to it.
+  ORG 0x55CEC
+  POIN BattleStartProc
+  // Put screen blocks back.
+  // We repoint this proc and add
+  // our own routine to it.
+  ORG 0x560EC
+  POIN BattleEndProc
+
+  // BattleBG palettes aren't compressed anymore.
+  // Change DrawBattleBG_Low to fit
+  ORG 0x75AB6
+  SHORT 0x00C1 0x0080 0x1809
+  ORG 0x75ABE
+  SHORT 0x3008 0x5840 0x2260
+  ORG 0x75AC6
+  SHORT 0xDF0C 0x46C0
+  ORG 0x75AD4
+  WORD 0x2022928
+  /*
+  lsl   r1, r0, #0x3
+  lsl   r0, #0x2
+  add   r1, r0
+  ldr   r0, =BattleBGTable
+  add   r1, #0x8
+  ldr   r0, [r0, r1]
+  mov   r2, #0x60
+  ldr   r1, =gPalette4Buffer
+  swi   #0xC
+  nop
+  */
+  
+  // Fade 12 palettes starting at 4.
+    // StartBattle
+    ORG 0x560A0
+    SHORT 0x2104 0x220C
+    // EndBattle
+    ORG 0x5613A
+    SHORT 0x2104 0x220C
+  // SpellCasting, repoint
+  // to not use buffer.
+  ORG 0x5B9A94
+  PROC_LOOP_ROUTINE(SpellCast1|1)
+  PROC_LOOP_ROUTINE(SpellCast2|1)
+  PROC_LOOP_ROUTINE(SpellCast3|1)
+  
+  // Use first BattleBG entry's palette
+  ORG 0x56098
+  SHORT 0x46C0
+  ORG 0x56132
+  SHORT 0x46C0
+  
+  // BattleBGID 0 is not a special case anymore.
+  ORG 0x055FBA
+  SHORT 0x46C0
+  ORG 0x0560FE
+  SHORT 0x46C0
+  ORG 0x05617C
+  SHORT 0x46C0
+  ORG 0x0561D6
+  SHORT 0x46C0
+  
+  // Use distance 1 (range)
+  // instead of distance 2 (long-range).
+  ORG 0x57279
+  BYTE 0xE0
+  ORG 0x57326
+  BYTE 0x1
+  
+  // Just in case I overlooked something,
+  // skip long-range battle anims.
+  // Also skip anim battle if L is held.
+  ORG 0x2CA98
+  jumpToHack(SkipLongRangeAnim)
+  
+  
+  // Draw Battle BG during
+  // Prep/Overworld promotion.
+  ORG 0x7639E
+  SHORT 0x4C0E
+  callHack_r0(PromoBG)
+  // Cyan throne BG.
+  ORG 0x57A70
+  BYTE 0x9
+
+POP
+
+
+BattleStartProc:
+PROC_LOOP_ROUTINE(0x8055CF1)
+PROC_LOOP_ROUTINE(0x8055DF5)
+PROC_LOOP_ROUTINE(0x8055F01)
+PROC_LOOP_ROUTINE(0x8055FA1)
+PROC_LOOP_ROUTINE(0x8055FE9)
+PROC_CALL_ROUTINE(MoveScrEntr|1)
+PROC_YIELD
+PROC_CALL_ROUTINE(DrawBattleBG|1)
+PROC_LOOP_ROUTINE(0x8056079)
+PROC_END
+
+BattleEndProc:
+PROC_LOOP_ROUTINE(0x80560F1)
+PROC_CALL_ROUTINE(DisableBG3|1)
+PROC_YIELD
+PROC_CALL_ROUTINE(ResetScrEntr|1)
+PROC_YIELD
+PROC_LOOP_ROUTINE(0x8056171)
+PROC_LOOP_ROUTINE(0x80561C9)
+PROC_LOOP_ROUTINE(0x8056229)
+PROC_LOOP_ROUTINE(0x8056289)
+PROC_LOOP_ROUTINE(0x8056311)
+PROC_LOOP_ROUTINE(0x8056391)
+PROC_LOOP_ROUTINE(0x8056485)
+PROC_END
+
+
+ALIGN 4
+ResetScrEntr:
+#include "ASM/ResetScrEntr.lyn.event"
+ALIGN 4
+MoveScrEntr:
+#include "ASM/MoveScrEntr.lyn.event"
+ALIGN 4
+DrawBattleBG:
+#include "ASM/DrawBattleBG.lyn.event"
+ALIGN 4
+PromoBG:
+#include "ASM/PromoBG.lyn.event"
+ALIGN 4
+DrawUpperBG3:
+#include "ASM/DrawUpperBG3.lyn.event"
+ALIGN 4
+MoveBG3:
+#include "ASM/MoveBG3.lyn.event"
+ALIGN 4
+DisableBG3:
+#include "ASM/DisableBG3.lyn.event"
+ALIGN 4
+SpellCast1:
+#include "ASM/SpellCast1.lyn.event"
+ALIGN 4
+SpellCast2:
+#include "ASM/SpellCast2.lyn.event"
+ALIGN 4
+SpellCast3:
+#include "ASM/SpellCast3.lyn.event"
+ALIGN 4
+SkipLongRangeAnim:
+#include "ASM/SkipLongRangeAnim.lyn.event"
+}

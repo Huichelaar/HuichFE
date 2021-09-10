@@ -1,0 +1,193 @@
+// Adds fortress menu to WM menu.
+#ifndef _FE8_
+    ERROR "You're not assembling to an FE8 ROM!"
+#endif
+
+#include "Extensions/Hack Installation.txt"
+#include "EAstdlib.event"
+
+#ifndef FreeSpace
+	#define FreeSpace 0x1000000
+	ORG FreeSpace
+#endif
+
+{
+	PUSH
+  
+    // Repoint the WM menu
+    ORG 0xA3E208
+    POIN WorldMapMenu
+    
+    // Repoint the world map proc
+    ORG 0xC194
+    POIN Proc_WorldMap
+    ORG 0xC1C8
+    POIN Proc_WorldMap
+    ORG 0xC338
+    POIN Proc_WorldMap
+    ORG 0xC404
+    POIN Proc_WorldMap
+    ORG 0xC4B8
+    POIN Proc_WorldMap
+    ORG 0xC524
+    POIN Proc_WorldMap
+    ORG 0xC5E4
+    POIN Proc_WorldMap
+    ORG 0xC620
+    POIN Proc_WorldMap
+    ORG 0xC688
+    POIN Proc_WorldMap
+    ORG 0xC6BC
+    POIN Proc_WorldMap
+    ORG 0xC71C
+    POIN Proc_WorldMap
+    ORG 0xC7E0
+    POIN Proc_WorldMap
+    ORG 0xC810
+    POIN Proc_WorldMap
+    ORG 0xCBD4
+    POIN Proc_WorldMap
+    ORG 0xCBEC
+    POIN Proc_WorldMap
+    ORG 0xB9FD0
+    POIN Proc_WorldMap
+    ORG 0xBA020
+    POIN Proc_WorldMap
+    ORG 0xBA050
+    POIN Proc_WorldMap
+    ORG 0xBA068
+    POIN Proc_WorldMap
+    ORG 0xBA0F8
+    POIN Proc_WorldMap
+    ORG 0xBA1E4
+    POIN Proc_WorldMap
+    ORG 0xBA2D4
+    POIN Proc_WorldMap
+    ORG 0xBA310
+    POIN Proc_WorldMap
+    ORG 0xBA454
+    POIN Proc_WorldMap
+    ORG 0xBB260
+    POIN Proc_WorldMap
+    ORG 0xBB504
+    POIN Proc_WorldMap
+    ORG 0xBB534
+    POIN Proc_WorldMap
+    ORG 0xBB57C
+    POIN Proc_WorldMap
+    ORG 0xBB5AC
+    POIN Proc_WorldMap
+    ORG 0xBC4C0
+    POIN Proc_WorldMap
+    ORG 0xBC4D8
+    POIN Proc_WorldMap
+    ORG 0xBC4F0
+    POIN Proc_WorldMap
+    ORG 0xBC580
+    POIN Proc_WorldMap
+    ORG 0xBC598
+    POIN Proc_WorldMap
+    ORG 0xBC5B0
+    POIN Proc_WorldMap
+    ORG 0xBC670
+    POIN Proc_WorldMap
+    ORG 0xBC7A0
+    POIN Proc_WorldMap
+    ORG 0xBC7C8
+    POIN Proc_WorldMap
+    ORG 0xBC7F0
+    POIN Proc_WorldMap
+    ORG 0xBC818
+    POIN Proc_WorldMap
+    ORG 0xBF48C
+    POIN Proc_WorldMap
+    ORG 0xBF4A4
+    POIN Proc_WorldMap
+    ORG 0xBF4C8
+    POIN Proc_WorldMap
+    ORG 0xBF500
+    POIN Proc_WorldMap
+    ORG 0xBF534
+    POIN Proc_WorldMap
+    ORG 0xBF550
+    POIN Proc_WorldMap
+    ORG 0xBF56C
+    POIN Proc_WorldMap
+    ORG 0xBF588
+    POIN Proc_WorldMap
+    ORG 0xBF5BC
+    POIN Proc_WorldMap
+    ORG 0xBF888
+    POIN Proc_WorldMap
+    ORG 0xBF960
+    POIN Proc_WorldMap
+    ORG 0xBFA18
+    POIN Proc_WorldMap
+    ORG 0xBFB88
+    POIN Proc_WorldMap
+    ORG 0xBFC18
+    POIN Proc_WorldMap
+    ORG 0xBFCC4
+    POIN Proc_WorldMap
+    ORG 0xC05A8
+    POIN Proc_WorldMap
+    ORG 0xC06A0
+    POIN Proc_WorldMap
+    ORG 0xC06EC
+    POIN Proc_WorldMap
+    ORG 0xC07A8
+    POIN Proc_WorldMap
+    ORG 0xC1458
+    POIN Proc_WorldMap
+    ORG 0xC1A4C
+    POIN Proc_WorldMap
+    ORG 0xC1AD8
+    POIN Proc_WorldMap
+    ORG 0xC1B5C
+    POIN Proc_WorldMap
+    ORG 0xC1BDC
+    POIN Proc_WorldMap
+    ORG 0xC1FD0
+    POIN Proc_WorldMap
+    ORG 0xC2040
+    POIN Proc_WorldMap
+    ORG 0xC2240
+    POIN Proc_WorldMap
+    ORG 0xC22F8
+    POIN Proc_WorldMap
+    ORG 0xC231C
+    POIN Proc_WorldMap
+    ORG 0xC238C
+    POIN Proc_WorldMap
+    ORG 0xC2410
+    POIN Proc_WorldMap
+    ORG 0xC2588
+    POIN Proc_WorldMap
+    ORG 0xC3170
+    POIN Proc_WorldMap
+    ORG 0xC3240
+    POIN Proc_WorldMap
+    ORG 0xC3260
+    POIN Proc_WorldMap
+    ORG 0xC32E0
+    POIN Proc_WorldMap
+    ORG 0xC334C
+    POIN Proc_WorldMap
+    ORG 0xC3374
+    POIN Proc_WorldMap
+    ORG 0xC38A8
+    POIN Proc_WorldMap
+    ORG 0xC3A14
+    POIN Proc_WorldMap
+    ORG 0xC3A54
+    POIN Proc_WorldMap
+    ORG 0xA3DD6C
+    POIN Proc_WorldMap
+    
+	POP
+  
+  #include "Defs/ProcDefinitions.event"
+  #include "Menus/Menus.event"
+  #include "Procs/Procs.event"
+  #include "Graphics/Graphics.event"
+}

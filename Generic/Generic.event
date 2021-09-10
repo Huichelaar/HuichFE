@@ -1,0 +1,104 @@
+// Variables
+SinusoidRAM:
+WORD 0x03003F48
+
+
+// Various general-purpose asm
+ALIGN 4
+DrawTextSimple:
+#include "DrawTextSimple.lyn.event"
+ALIGN 4
+PlayBGM:
+#include "PlayBGM.lyn.event"
+ALIGN 4
+PlaySFX:
+#include "PlaySFX.lyn.event"
+
+
+// ASMC
+ALIGN 4
+ChapterEndExtra:
+#include "ASMC/ChapterEndExtra.lyn.event"
+ALIGN 4
+Ch1Unit3:
+#include "ASMC/Ch1Unit3.lyn.event"
+ALIGN 4
+CheckUnitDisappear:
+#include "ASMC/CheckUnitDisappear.lyn.event"
+ALIGN 4
+SendAllTransporter:
+#incbin "ASMC/SendAllTransporter.dmp"
+ALIGN 4
+SilentGiveItem:
+#incbin "ASMC/SilentGiveItem.dmp"
+ALIGN 4
+SilentGiveGold:
+#incbin "ASMC/SilentGiveGold.dmp"
+
+
+// LCDIO stuff. Not as general-purpose but useful in multiple contexts
+ALIGN 4
+Loop_FadeOut:
+#include "Loop_FadeOut.lyn.event"
+// FadeBG
+ALIGN 4
+Procs_FadeBG:
+#include "FadeBG/FadeBG.event"
+  ALIGN 4
+  Init_FadeBG:
+  #include "FadeBG/Init_FadeBG.lyn.event"
+  ALIGN 4
+  Loop_FadeBG:
+  #include "FadeBG/Loop_FadeBG.lyn.event"
+// ScrollBG
+ALIGN 4
+Procs_ScrollBG:
+#include "ScrollBG/ScrollBG.event"
+  ALIGN 4
+  Init_ScrollBG:
+  #include "ScrollBG/Init_ScrollBG.lyn.event"
+  ALIGN 4
+  Loop_ScrollBG:
+  #include "ScrollBG/Loop_ScrollBG.lyn.event"
+// Blend
+ALIGN 4
+Procs_Blend:
+#include "Blend/Blend.event"
+  ALIGN 4
+  Init_Blend:
+  #include "Blend/Init_Blend.lyn.event"
+  ALIGN 4
+  Loop_Blend:
+  #include "Blend/Loop_Blend.lyn.event"
+// BlendWindows
+ALIGN 4
+Procs_BlendWindows:
+#include "BlendWindows/BlendWindows.event"
+  ALIGN 4
+  Init_BlendWindows:
+  #include "BlendWindows/Init_BlendWindows.lyn.event"
+  ALIGN 4
+  Loop_BlendWindows:
+  #include "BlendWindows/Loop_BlendWindows.lyn.event"
+// Sinusoid
+ALIGN 4
+Procs_Sinusoid:
+#include "Sinusoid/Sinusoid.event"
+  ALIGN 4
+  Loop_Sinusoid:
+  #include "Sinusoid/Loop_Sinusoid.lyn.event"
+  ALIGN 4
+  HBlankScrollBG:
+  #include "Sinusoid/HBlankScrollBG.lyn.event"
+  ALIGN 4
+  ClearSinusoidCNT:
+  #include "Sinusoid/ClearSinusoidCNT.lyn.event"
+ALIGN 4
+FilterPalette:
+#include "FilterPalette.lyn.event"
+// Mode7
+#include "M7/M7.event"
+// Mosaic
+#include "Mosaic/Mosaic.lyn.event"
+// opinfoview2
+#include "opinfoview2/opinfoview2.event"

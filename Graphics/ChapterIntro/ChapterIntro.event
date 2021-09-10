@@ -1,0 +1,77 @@
+// Graphics
+
+
+// Relief
+ALIGN 4
+ReliefPalette:
+#incbin "Relief/ReliefPalettes.dmp"
+ALIGN 4
+ReliefBG:
+POIN ReliefBG0 ReliefBG1 ReliefBG2 ReliefBG3 ReliefBG4 ReliefBG5 ReliefBG6
+  ReliefBG0:
+  #incbin "Relief/Relief0.dmp"
+  ReliefBG1:
+  #incbin "Relief/Relief1.dmp"
+  ReliefBG2:
+  #incbin "Relief/Relief2.dmp"
+  ReliefBG3:
+  #incbin "Relief/Relief3.dmp"
+  ReliefBG4:
+  #incbin "Relief/Relief4.dmp"
+  ReliefBG5:
+  #incbin "Relief/Relief5.dmp"
+  ReliefBG6:
+  #incbin "Relief/Relief6.dmp"
+
+
+// Gem
+ALIGN 4
+GemObject32x64:
+#incbin "Gem/gem32x64.dmp"
+  ALIGN 4
+  GemPalettes: GemPaletteRed:
+  #incbin "Gem/gemred_pal.dmp"
+  GemPaletteOrange:
+  #incbin "Gem/gemorange_pal.dmp"
+  GemPaletteYellow:
+  #incbin "Gem/gemyellow_pal.dmp"
+  GemPaletteGreen:
+  #incbin "Gem/gemgreen_pal.dmp"
+  GemPaletteBlue:
+  #incbin "Gem/gemblue_pal.dmp"
+  GemPalettePurple:
+  #incbin "Gem/gempurple_pal.dmp"
+ALIGN 4
+GemOAM:
+WORD 0x0
+POIN GemOAM1 GemOAM2 GemOAM3 GemOAM4 GemOAM5 GemOAM6
+  ALIGN 4
+  GemOAM1:
+  #incbin "Gem/GemOAM1.dmp"
+  ALIGN 4
+  GemOAM2:
+  #incbin "Gem/GemOAM2.dmp"
+  ALIGN 4
+  GemOAM3:
+  #incbin "Gem/GemOAM3.dmp"
+  ALIGN 4
+  GemOAM4:
+  #incbin "Gem/GemOAM4.dmp"
+  ALIGN 4
+  GemOAM5:
+  #incbin "Gem/GemOAM5.dmp"
+  ALIGN 4
+  GemOAM6:
+  #incbin "Gem/GemOAM6.dmp"
+  
+  
+// TitleBG
+ALIGN 4
+TitleBGPalette:
+#incbin "TitleBG/TitleBGPalettes.dmp"
+ALIGN 4
+TitleBG:
+#incbin "TitleBG/TitleBG.dmp"
+ALIGN 4
+TitleBGTSA:
+#incbin "TitleBG/TitleBGTSA.dmp"

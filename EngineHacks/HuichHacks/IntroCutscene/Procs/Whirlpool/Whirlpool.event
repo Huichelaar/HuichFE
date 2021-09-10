@@ -1,0 +1,14 @@
+Procs_WhirlpoolScene2:
+PROC_CALL_ROUTINE(Init_Whirlpool|1)
+PROC_LOOP_ROUTINE(Loop_WhirlpoolScene2|1)
+PROC_END
+
+Procs_WhirlpoolScene5:
+PROC_CALL_ROUTINE(Init_Whirlpool|1)
+PROC_LOOP_ROUTINE(Loop_WhirlpoolScene5|1)
+PROC_END
+
+Procs_WhirlpoolScene7:
+PROC_CALL_ROUTINE(Init_Whirlpool|1)
+PROC_LOOP_ROUTINE(Loop_WhirlpoolScene7|1)
+PROC_END

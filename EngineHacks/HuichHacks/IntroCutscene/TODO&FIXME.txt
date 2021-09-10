@@ -1,0 +1,1 @@
+TODO, create your own version of 0xC6355 that doesn't use a timer. Press select for class reel/cutscene?. Also change WMSlider2's route (circle?).

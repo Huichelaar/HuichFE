@@ -1,0 +1,160 @@
+## VivianName
+Vivian[X]
+
+## VivianDesc
+An aspiring Archaeologist, uncontent with[NL]
+her current position as transporter.[X]
+
+## VivianDQ
+[MR][LoadVivian][CloseEyes]
+[MR]
+How did I ever get tangled up[N]
+in such a mess?[AN]
+I still wanted to do[N]
+so much more.[AN]
+[X]
+
+## SimonName
+Simon[X]
+
+## SimonDesc
+An eclectic archaeologist, with a[NL]
+grand ambition. Mentor to Vivian.[X]
+
+## SimonDQ1
+[MR][LoadSimon]
+[MR]
+To get this far[TMM]...[TMM][.6][CloseEyes][N]
+only to see it all crumble[TMM]...[TMM][AN]
+I'm sorry everyone[TMM]...[TMM][.6][N]
+I failed you.[AN]
+[X]
+
+## SimonDQ2
+[ML][LoadSimon]
+[ML]
+Simon Death Quote2.[AN]
+[X]
+
+## SellswordDesc
+A mercenary hired by an unknown force.[X]
+
+## TurnerName
+Turner[X]
+
+## TurnerDQ
+[ML][LoadTurner][CloseEyes]
+[ML]
+It wasn't[TMM]...[TMM][.6] supposed[N]
+to go like this[TMM]...[TMM][AN]
+[X]
+
+## LeonaName
+Leona[X]
+
+## LeonaDesc
+A soldier originally deployed[NL]
+to protect Vivian and Simon.[X]
+
+## LeonaDQ
+[MR][LoadLeona][CloseEyes]
+[MR]
+Milo[TMM]...[TMM][.6] I'm sorry, but[N]
+I can't join you yet.[AN]
+I have to see this[N]
+through to the end.[AN]
+[X]
+
+## MiloName
+Milo[X]
+
+## MiloDQ
+[MR][LoadMilo][CloseEyes]
+[MR]
+Leona[TMM]...[TMM][.6] I'm sorry, but[N]
+I can't join you yet.[AN]
+I have to see this[N]
+through to the end.[AN]
+[X]
+
+## DemiName
+Demi[X]
+
+## DemiDesc
+A venerated soldier of Arzil.[NL]
+Punctual and strict.[X]
+
+## DemiDQ1
+[MR][LoadDemi][CloseEyes]
+[MR]
+I[TMM]...[TMM][.5] I have failed[TMM]...[TMM][AN]
+My kingdom[TMM]...[TMM][.5] my people[TMM]...[TMM][AN]
+Everyone[TMM]...[TMM][.5] I'm so sorry.[AN]
+[X]
+
+## DemiDQ2
+[MR][LoadDemi][CloseEyes]
+[MR]
+No. Things won't end here.[N][OpenEyes]
+I withdraw.[AN]
+[X]
+
+## TheresaName
+Theresa[X]
+
+## TheresaDesc
+A dear friend of Vivian. Influenceable,[NL]
+she's quick to follow her anywhere.[X]
+
+## TheresaDQ
+[MR][LoadTheresa][CloseEyes]
+[MR]
+It's getting dark[TMM]...[TMM][N]
+What is happening to me?[AN]
+[X]
+
+## HerbertName
+Herbert[X]
+
+## HerbertDesc
+A retired soldier of Arzil. He's quick[NL]
+to assume he's taken advantage of.[X]
+
+## HerbertDQ
+[MR][LoadHerbert][CloseEyes]
+[MR]
+I knew this wasn't a good idea.[N]
+I should have just retired.[AN]
+[X]
+
+## AidenName
+Aiden[X]
+
+## AidenDesc
+Leader of Coramo's scouting platoon.[NL]
+Quick to adapt to circumstance.[X]
+
+## AidenDQ1
+[ML][LoadAiden][CloseEyes]
+[ML]
+I can't believe it[TMM]...[TMM][AN]
+This has to be the worst-case[N]
+scenario. Blast it all.[AN]
+If I retreat now it will[N]
+be regarded as desertion.[AN]
+[OpenEyes]Beats dying though.[AN]
+[X]
+
+## AidenDQ2
+[MR][LoadAiden][CloseEyes]
+[MR]
+TODO[N]
+Aiden death quote.[AN]
+[X]
+
+## CoramoName
+Coramo[X]
+
+## CoramoDesc
+A soldier from the[N]
+kingdom of Coramo.[X]

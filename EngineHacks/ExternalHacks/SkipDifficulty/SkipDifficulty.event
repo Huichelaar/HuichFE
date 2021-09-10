@@ -1,0 +1,43 @@
+// Credit to StanH
+#ifndef _FE8_
+    ERROR "You're not assembling to an FE8 ROM!"
+#endif
+
+#include "Extensions/Hack Installation.txt"
+#include "EAstdlib.event"
+
+#ifndef FreeSpace
+	#define FreeSpace 0x1000000
+	ORG FreeSpace
+#endif
+
+{
+PUSH
+  ORG 0xA20164
+  POIN (prFixedDifficulty+1)
+POP
+
+ALIGN 4
+prFixedDifficulty:
+  SHORT (0x2200 | 1) // Difficulty: 0 for easy, 1 for normal, 2 for hard
+  SHORT 0x2300
+  SHORT 0x212A
+  SHORT 0x5442
+  SHORT 0x213D
+  SHORT 0x5443
+  SHORT 0x4770
+}
+
+/*
+prFixedDifficulty in thumb:
+mov r2, #2 @ 0 for easy, 1 for normal, 2 for hard
+mov r3, #0
+
+mov  r1, #0x2A
+strb r2, [r0, r1]
+
+mov  r1, #0x3D
+strb r3, [r0, r1]
+
+bx lr
+*/

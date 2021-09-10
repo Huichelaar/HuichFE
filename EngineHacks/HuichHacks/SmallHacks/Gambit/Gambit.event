@@ -1,0 +1,63 @@
+// Add a gambit option to attack menu.
+
+// Gambit Menu stuff
+#include "Menu/Menu.event"
+
+// GambitTarget structs.
+#include "GambitTargetStructs/GambitTargetStructs.event"
+
+// Target Selection Routine Lists
+#include "TargetSelectionRoutineLists/TargetSelectionRoutineLists.event"
+
+
+PUSH
+  
+  // Add another routine for
+  // equipped item slot 9
+  ORG 0x2A764
+  BYTE 0x9
+  ORG 0x2A774
+  POIN GAM_EquippedItemSlots
+  
+  // Don't equip item if
+  // equipped item slot is 9
+  ORG 0x2A260
+  jumpToHack(GAM_BattleDontEquip)
+  
+  // Also consider gambits when
+  // determining UnitUseFlags.
+  // Calced when selecting units.
+  ORG 0x18B28
+  jumpToHack(GAM_GambitUseFlags)
+  
+POP
+
+GAM_EquippedItemSlots:
+POIN 0x2A79C 0x2A79C 0x2A79C 0x2A79C 0x2A79C 0x2A7B0 0x2A7CC 0x2A7EC 0x2A80C GAM_EquipItemSlot9
+
+ALIGN 4
+GAM_GetGambit:
+#include "ASM/GetGambit.lyn.event"
+ALIGN 4
+GAM_EquipItemSlot9:
+#include "ASM/EquipItemSlot9.lyn.event"
+ALIGN 4
+GAM_BattleDontEquip:
+#include "ASM/BattleDontEquip.lyn.event"
+ALIGN 4
+GAM_GambitUseFlags:
+#include "ASM/GambitUseFlags.lyn.event"
+
+ALIGN 4
+GAM_GambitHitTargets:
+#include "ASM/GambitHitTargets.lyn.event"
+ALIGN 4
+GAM_GambitHitTarget:
+#include "ASM/GambitHitTarget.lyn.event"
+ALIGN 4
+GAM_DecreaseGambitCharges:
+#include "ASM/DecreaseGambitCharges.lyn.event"
+
+ALIGN 4
+GAM_GambitPrepRange:
+#include "ASM/GambitPrepRange.lyn.event"

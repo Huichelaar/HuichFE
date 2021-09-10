@@ -1,0 +1,46 @@
+SBG_SoundRoomShowBG3_Proc:
+PROC_SLEEP(1)
+PROC_LOOP_ROUTINE(SBG_ListenForKeys|1)
+PROC_END
+
+  
+PUSH
+  
+  // Display only background if L is pressed.
+  ORG 0xAF8A4
+  jumpToHack(SBG_ListenForL)
+  SHORT 0x2600
+  
+  // Start BGSwitching proc when switching songs.
+  ORG 0xAF81A
+  SHORT 0x1C31
+  callHack_r2(SBG_StartBGSwitchProc)
+  SHORT 0x46C0
+  
+  // Move screenblocks to end of BG VRAM.
+  ORG 0xAF532       // Load SBG_BGSetup in r0.
+  SHORT 0x480C
+  ORG 0xAF554       // Exploit redundancy to insert literal.
+  WORD 0x469A2302 0x431A3314 0x430A2108 0x46C0E002
+  POIN SBG_BGSetup
+  
+POP
+
+
+ALIGN 4
+SBG_ListenForL:
+#include "ListenForL.lyn.event"
+ALIGN 4
+SBG_ListenForKeys:
+#include "ListenForKeys.lyn.event"
+ALIGN 4
+SBG_StartBGSwitchProc:
+#include "StartBGSwitchProc.lyn.event"
+
+// Argument to SetupBackgrounds, 0x8001B58.
+ALIGN 4
+SBG_BGSetup:
+SHORT 0 0xE000 0
+SHORT 0 0xE800 0
+SHORT 0 0xF000 0
+SHORT 0 0xF800 0

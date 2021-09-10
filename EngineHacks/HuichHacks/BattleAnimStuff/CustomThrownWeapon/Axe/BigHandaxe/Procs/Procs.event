@@ -1,0 +1,13 @@
+ALIGN 4
+Procs_BHA:
+#include "BHA/BHA.event"
+  ALIGN 4
+  BHAInit:
+  #include "BHA/BHAInit.lyn.event"
+  ALIGN 4
+  BHALoop:
+  #include "BHA/BHALoop.lyn.event"
+
+ALIGN 4
+BHASEInit:
+#include "BHASE/BHASEInit.lyn.event"

@@ -1,0 +1,66 @@
+// Gem Trajectories
+ALIGN 4
+SpiralTrajectoryTable:
+#incbin "GemTrajectory/Spiral/GemSpiralFaster.dmp"
+ALIGN 4
+LineTrajectoryTable:
+#incbin "GemTrajectory/Line/Line.dmp"
+ALIGN 4
+StationaryTrajectoryTable:
+#incbin "GemTrajectory/Stationary/Stationary.dmp"
+ALIGN 4
+CircleTrajectoryTable:
+#incbin "GemTrajectory/Circle/CircleSlow.dmp"
+
+// Gem Shine
+ALIGN 4
+ShineFrame:
+#incbin "GemShine/ShineFrame.dmp"
+
+
+// WMSlide
+ALIGN 4
+WMSlideTable:
+#incbin "WMSlide/WMSlide.dmp"
+ALIGN 4
+WMSlideTable2:
+#incbin "WMSlide/WMSlide2.dmp"
+ALIGN 4
+WMScreenEntries:
+#incbin "WMSlide/WMScreenEntries.dmp"
+ALIGN 4
+WMGemPalettes:
+#incbin "WMSlide/WMGemPalettes.dmp"
+
+
+// MoonBlend
+ALIGN 4
+MoonBlendTable:
+#incbin "MoonBlend/MoonBlend.dmp"
+
+
+// Sinusoid
+ALIGN 4
+SinusoidMoonGemTable:
+#incbin "SinusoidParam/SinusoidMoonGem.dmp"
+ALIGN 4
+SinusoidMoonCloudTable:
+#incbin "SinusoidParam/SinusoidMoonCloud.dmp"
+ALIGN 4
+SinusoidFELogoTable:
+#incbin "SinusoidParam/SinusoidFELogo.dmp"
+ALIGN 4
+SinusoidStatPanelTable:
+#incbin "SinusoidParam/SinusoidStatPanel.dmp"
+
+
+// Whirlpool Scene5
+ALIGN 4
+WhirlpoolScene5Table:
+#incbin "WhirlpoolScene5/WhirlpoolScene5.dmp"
+
+
+// WINDM tables
+ALIGN 4
+WINDMStatPanelTable:
+#incbin "WINDM/WINDMStatPanel.dmp"

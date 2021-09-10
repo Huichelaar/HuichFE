@@ -1,0 +1,13 @@
+PROC_CALL_ROUTINE(FortMenu1Constructor+0x1)
+PROC_CALL_ROUTINE(LoadRelief+0x1)
+PROC_CALL_ROUTINE(LoadMenu+0x1)             // Put Menu stuff in BG & OBJ tiles.
+
+PROC_CALL_ROUTINE_ARG(0xAE2D1, 0x10)        // NewFadeIn
+
+PROC_CALL_ROUTINE(InitMenu+0x1)
+PROC_WHILE_ROUTINE(0xAE2A1)                 // FadeInExists
+PROC_YIELD
+
+PROC_CALL_ROUTINE_ARG(0xAE2F5, 0x10)        // NewFadeOut
+PROC_WHILE_ROUTINE(0xAE2B9)                 // FadeOutExists
+PROC_END

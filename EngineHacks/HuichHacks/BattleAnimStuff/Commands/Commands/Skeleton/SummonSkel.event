@@ -1,0 +1,70 @@
+// Summon some Bonewalkers to gang up on target.
+
+// Command.
+ALIGN 4
+SummonSkel:
+#include "SummonSkel.lyn.event"
+
+
+// PhaseStruct.
+  ALIGN 4
+  SkeletonMeleeRightPhaseStruct:
+  #include "PhaseStructs/SkeletonMeleeRightPhaseStruct.event"
+  //ALIGN 4
+  //SkeletonMeleeLeftPhaseStruct:
+  //#include "PhaseStructs/SkeletonMeleeLeftPhaseStruct.event"
+  //ALIGN 4
+  //SkeletonRangedRightPhaseStruct:
+  //#include "PhaseStructs/SkeletonRangedRightPhaseStruct.event"
+  //ALIGN 4
+  //SkeletonRangedLeftPhaseStruct:
+  //#include "PhaseStructs/SkeletonRangedLeftPhaseStruct.event"
+
+
+// FrameData.
+  // Spawn.
+  ALIGN 4
+  SkelSpawnFDMeleeRight:
+  #include "FrameData/SkelSpawnFDMeleeRight.event"
+  ALIGN 4
+  SkelSpawnFDRangedRight:
+  #include "FrameData/SkelSpawnFDRangedRight.event"
+  ALIGN 4
+  SkelSpawnFDMeleeLeft:
+  #include "FrameData/SkelSpawnFDMeleeLeft.event"
+  //ALIGN 4
+  //SkelSpawnFDRangedLeft:
+  //#include "FrameData/SkelSpawnFDRangedLeft.event"
+
+  // Walk.
+  ALIGN 4
+  Skel1WalkFDRight:
+  #include "FrameData/Skel1WalkFDRight.event"
+  ALIGN 4
+  Skel2WalkFDLeft:
+  #include "FrameData/Skel2WalkFDLeft.event"
+  ALIGN 4
+  Skel3WalkFDRight:
+  #include "FrameData/Skel3WalkFDRight.event"
+  ALIGN 4
+  Skel4WalkFDRight:
+  #include "FrameData/Skel4WalkFDRight.event"
+  ALIGN 4
+  Skel5WalkFDLeft:
+  #include "FrameData/Skel5WalkFDLeft.event"
+
+  // Slash.
+  ALIGN 4
+  SkelSlashFDRight:
+  #include "FrameData/SkelSlashFDRight.event"
+  ALIGN 4
+  SkelSlashFDLeft:
+  #include "FrameData/SkelSlashFDLeft.event"
+
+  // Despawn.
+  ALIGN 4
+  SkelDespawnFDMeleeRight:
+  #include "FrameData/SkelDespawnFDMeleeRight.event"
+  ALIGN 4
+  SkelDespawnFDMeleeLeft:
+  #include "FrameData/SkelDespawnFDMeleeLeft.event"

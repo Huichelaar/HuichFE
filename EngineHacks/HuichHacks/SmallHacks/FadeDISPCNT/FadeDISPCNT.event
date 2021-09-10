@@ -1,0 +1,18 @@
+// extraRAMBitfield bit zero is used to indicate that
+// DISPCNT shouldn't change during fades.
+
+PUSH
+
+  // Don't change DISPCNT during fades
+  // if FadeKeepDISPCNT bit set.
+  ORG 0xAE1D0
+  WORD 0xE0014800 extraRAMBitfield 0x21017800 0xD1044208
+  WORD 0x78504A06 0x4308211F
+  ORG 0xAD5D8
+  WORD 0xE0014800 extraRAMBitfield 0x21017800 0xD1044208
+  WORD 0x78504A02 0x4308211F
+  ORG 0xAE278         // Still uses vanilla behaviour proc+0x34w == 0xFFFF (Disable all BG, enable OBJ).
+  WORD 0xE0014800 extraRAMBitfield 0x21017800 0xD1064208    // ^ NewFadeIn & NewFadeOut set this to -1
+  WORD 0x78504A04 0x400821E0 0x46C046C0   // which would be 0xFFFF if the variable were a short. Odd.
+  
+POP

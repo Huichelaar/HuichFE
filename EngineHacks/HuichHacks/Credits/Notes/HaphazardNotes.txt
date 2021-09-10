@@ -1,0 +1,43 @@
+Letters start at 70A in FEBuilder graphics editor. Also, check out 0x80B2C70 onwards in No$GBA. Used to display class names in class reel.
+
+Cam settings:
+
+X:        00 02 08 00
+Y:        00 00 0F 00
+Z:        00 03 88 00
+theta:    00 00 0A 01
+phi:      00 00 26 00
+
+
+CopyTileGfxForObj, 0x8013020. This can be useful for (moving) map sprites. Example use at 0x80B2CBC.
+  r0: source
+  r1: dest
+  r2: width
+  r3: height
+  
+  
+Procs_opinfoenter,
+  +0x2E byte,           String length.
+  +0x2C short,          Max-len minus string length.
+
+  Procs_opinfoview
+    +0x2A short,        Init to 0. Timer.
+    +0x2C byte,         Parent sets this on init. Seems to indicate index of character in name to be drawn.
+    +0x2E short,        Max-len minus string length + (+0x2C*0xC), determines letter's X.
+    
+    Loop routine1:
+      Seems to set OAMRotScale matrixes. Increases +0x2A by 0x10 every iteration until equal to 0x100: Reset +0x2A and end loop.
+    Loop routine2:
+      Seems to just draw the characters.
+    Loop routine3:
+      Seems to set OAMRotScale matrixes for removing the characters.
+      
+    0x80B2A14 first RegisterObject call is for when letter rotscale, second for when they don't.
+    
+    0x80B2A14:
+      r0:       Letter index in VRAM. [0, 0x10).
+      r1:       X
+      r2:       Y
+      r3:       width
+      [sp]:     scale
+      [sp+4]:   palette brightness.

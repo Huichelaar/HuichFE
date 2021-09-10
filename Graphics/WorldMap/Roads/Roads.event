@@ -1,0 +1,126 @@
+ALIGN 4
+Road0:
+#incbin "Road0.road.bin"
+ALIGN 4
+Road1:
+#incbin "Road1.road.bin"
+ALIGN 4
+Road2:
+#incbin "Road2.road.bin"
+ALIGN 4
+Road3:
+#incbin "Road3.road.bin"
+ALIGN 4
+Road4:
+#incbin "Road4.road.bin"
+  ALIGN 4
+  Road4PD:
+  #incbin "Road4PathData.dmp"
+ALIGN 4
+Road5:
+#incbin "Road5.road.bin"
+  ALIGN 4
+  Road5PD:
+  #incbin "Road5PathData.dmp"
+ALIGN 4
+Road6:
+#incbin "Road6.road.bin"
+  ALIGN 4
+  Road6PD:
+  #incbin "Road6PathData.dmp"
+ALIGN 4
+Road7:
+#incbin "Road7.road.bin"
+  ALIGN 4
+  Road7PD:
+  #incbin "Road7PathData.dmp"
+ALIGN 4
+Road8:
+#incbin "Road8.road.bin"
+  ALIGN 4
+  Road8PD:
+  #incbin "Road8PathData.dmp"
+ALIGN 4
+Road9:
+#incbin "Road9.road.bin"
+  ALIGN 4
+  Road9PD:
+  #incbin "Road9PathData.dmp"
+ALIGN 4
+Road10:
+#incbin "Road10.road.bin"
+  ALIGN 4
+  Road10PD:
+  #incbin "Road10PathData.dmp"
+ALIGN 4
+Road11:
+#incbin "Road11.road.bin"
+ALIGN 4
+Road12:
+#incbin "Road12.road.bin"
+ALIGN 4
+Road13:
+#incbin "Road13.road.bin"
+  ALIGN 4
+  Road13PD:
+  #incbin "Road13PathData.dmp"
+ALIGN 4
+Road14:
+#incbin "Road14.road.bin"
+  ALIGN 4
+  Road14PD:
+  #incbin "Road14PathData.dmp"
+ALIGN 4
+Road15:
+#incbin "Road15.road.bin"
+  ALIGN 4
+  Road15PD:
+  #incbin "Road15PathData.dmp"
+ALIGN 4
+Road16:
+#incbin "Road16.road.bin"
+  ALIGN 4
+  Road16PD:
+  #incbin "Road16PathData.dmp"
+ALIGN 4
+Road17:
+#incbin "Road17.road.bin"
+ALIGN 4
+Road18:
+#incbin "Road18.road.bin"
+ALIGN 4
+Road19:
+#incbin "Road19.road.bin"
+ALIGN 4
+Road20:
+#incbin "Road20.road.bin"
+ALIGN 4
+Road21:
+#incbin "Road21.road.bin"
+ALIGN 4
+Road22:
+#incbin "Road22.road.bin"
+  ALIGN 4
+  Road22PD:
+  #incbin "Road22PathData.dmp"
+ALIGN 4
+Road23:
+#incbin "Road23.road.bin"
+ALIGN 4
+Road24:
+#incbin "Road24.road.bin"
+  ALIGN 4
+  Road24PD:
+  #incbin "Road24PathData.dmp"
+ALIGN 4
+Road25:
+#incbin "Road25.road.bin"
+  ALIGN 4
+  Road25PD:
+  #incbin "Road25PathData.dmp"
+ALIGN 4
+Road26:
+#incbin "Road26.road.bin"
+  ALIGN 4
+  Road26PD:
+  #incbin "Road26PathData.dmp"

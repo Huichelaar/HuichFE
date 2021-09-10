@@ -1,0 +1,48 @@
+PUSH
+
+  // Repoint "Extras" menutitles
+  ORG 0xA8F34
+  POIN ExtrasMenuTiles
+  ORG 0xA9A60
+  POIN ExtrasMenuTiles
+  ORG 0xAA010
+  POIN ExtrasMenuTiles
+  ORG 0xAA450
+  POIN ExtrasMenuTiles
+
+POP
+
+ALIGN 4
+ExtrasMenuTiles:
+#incbin "ExtrasMenuCredits.dmp"
+
+
+// OAM to use ClassReelBG as sprites.
+ALIGN 4
+ClassReelBGOAM:
+#incbin "ClassReelBGOAM.dmp"
+// OAM to draw class card.
+ALIGN 4
+ccOAM:
+#incbin "ccOAM.dmp"
+// OAM to draw map sprites.
+ALIGN 4
+msOAM:
+#incbin "msOAM.dmp"
+// OAM to draw most 80x80 & 256 colour sprites.
+ALIGN 4
+OAM80x80_256col:
+#incbin "80x80_256colOAM.dmp"
+// Font used when displaying the segment's title
+ALIGN 4
+segmentTitleFont:
+#incbin "segmentTitleFont.dmp"
+ALIGN 4
+segmentTitleFontPal:
+#incbin "segmentTitleFontPal.dmp"
+
+
+#include "Maps/Maps.event"
+#include "Tilesets/Tilesets.event"
+#include "Authors/Authors.event"
+#include "Other/Other.event"

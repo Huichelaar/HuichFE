@@ -1,0 +1,433 @@
+ALIGN 4
+authorPalette:
+#incbin "AuthorPalette.dmp"
+ALIGN 4
+authorOAM:
+#incbin "AuthorOAM.dmp"
+
+ALIGN 4
+auth2WB:
+#incbin "2WB.dmp"
+ALIGN 4
+auth7743:
+#incbin "7743.dmp"
+ALIGN 4
+authaera:
+#incbin "aera.dmp"
+ALIGN 4
+authAgro:
+#incbin "Agro.dmp"
+ALIGN 4
+authAlusq:
+#incbin "Alusq.dmp"
+ALIGN 4
+authAmBrosiac:
+#incbin "AmBrosiac.dmp"
+ALIGN 4
+authArch:
+#incbin "Arch.dmp"
+ALIGN 4
+authAtlus:
+#incbin "Atlus.dmp"
+ALIGN 4
+authBeansy:
+#incbin "Beansy.dmp"
+ALIGN 4
+authBlackMage:
+#incbin "BlackMage.dmp"
+ALIGN 4
+authblademaster:
+#incbin "blademaster.dmp"
+ALIGN 4
+authBlaze:
+#incbin "Blaze.dmp"
+ALIGN 4
+authBregalad:
+#incbin "Bregalad.dmp"
+ALIGN 4
+authBrendor:
+#incbin "Brendor.dmp"
+ALIGN 4
+authCamtech075:
+#incbin "Camtech075.dmp"
+ALIGN 4
+authCapcom:
+#incbin "Capcom.dmp"
+ALIGN 4
+authCapibarainspace:
+#incbin "Capibarainspace.dmp"
+ALIGN 4
+authcearn:
+#incbin "cearn.dmp"
+ALIGN 4
+authCircleseverywhere:
+#incbin "Circleseverywhere.dmp"
+ALIGN 4
+authCrazycolorz5:
+#incbin "Crazycolorz5.dmp"
+ALIGN 4
+authDarrman:
+#incbin "Darrman.dmp"
+ALIGN 4
+authDavidCapello:
+#incbin "DavidCapello.dmp"
+ALIGN 4
+authdenopqrihg:
+#incbin "denopqrihg.dmp"
+ALIGN 4
+authDerTheVaporeon:
+#incbin "DerTheVaporeon.dmp"
+ALIGN 4
+authDJSSouche:
+#incbin "DJSSouche.dmp"
+ALIGN 4
+authDonHo:
+#incbin "DonHo.dmp"
+ALIGN 4
+authDragonLuca:
+#incbin "DragonLuca.dmp"
+ALIGN 4
+authDRAGOON:
+#incbin "DRAGOON.dmp"
+ALIGN 4
+authEldritchAbomination:
+#incbin "EldritchAbomination.dmp"
+ALIGN 4
+authEndrift:
+#incbin "Endrift.dmp"
+ALIGN 4
+authFatih:
+#incbin "Fatih.dmp"
+ALIGN 4
+authfeels:
+#incbin "feels.dmp"
+ALIGN 4
+authFireBlazer:
+#incbin "FireBlazer.dmp"
+ALIGN 4
+authFlasuban:
+#incbin "Flasuban.dmp"
+ALIGN 4
+authflyingace24:
+#incbin "flyingace24.dmp"
+ALIGN 4
+authGabrielKnight:
+#incbin "GabrielKnight.dmp"
+ALIGN 4
+authGameFreak:
+#incbin "GameFreak.dmp"
+ALIGN 4
+authGanzap:
+#incbin "Ganzap.dmp"
+ALIGN 4
+authGaramonde:
+#incbin "Garamonde.dmp"
+ALIGN 4
+authGenericPretsel:
+#incbin "GenericPretsel.dmp"
+ALIGN 4
+authGreigaMaster:
+#incbin "GreigaMaster.dmp"
+ALIGN 4
+authGryz:
+#incbin "Gryz.dmp"
+ALIGN 4
+authHALLaboratory:
+#incbin "HALLaboratory.dmp"
+ALIGN 4
+authHeadlock:
+#incbin "Headlock.dmp"
+ALIGN 4
+authHenrai:
+#incbin "Henrai.dmp"
+ALIGN 4
+authHextator:
+#incbin "Hextator.dmp"
+ALIGN 4
+authHirokiMorishita:
+#incbin "HirokiMorishita.dmp"
+ALIGN 4
+authHudsonSoft:
+#incbin "HudsonSoft.dmp"
+ALIGN 4
+authHuichelaar:
+#incbin "Huichelaar.dmp"
+ALIGN 4
+authHyperGammaSpaces:
+#incbin "HyperGammaSpaces.dmp"
+ALIGN 4
+authIanTaylor:
+#incbin "IanTaylor.dmp"
+ALIGN 4
+authIcyToast:
+#incbin "IcyToast.dmp"
+ALIGN 4
+authIntelligentSystems:
+#incbin "IntelligentSystems.dmp"
+ALIGN 4
+authipatix:
+#incbin "ipatix.dmp"
+ALIGN 4
+authJackster:
+#incbin "Jackster.dmp"
+ALIGN 4
+authJagex:
+#incbin "Jagex.dmp"
+ALIGN 4
+authJeyTheCount:
+#incbin "JeyTheCount.dmp"
+ALIGN 4
+authJj09:
+#incbin "Jj09.dmp"
+ALIGN 4
+authJonoTheRed:
+#incbin "JonoTheRed.dmp"
+ALIGN 4
+authKao:
+#incbin "Kao.dmp"
+ALIGN 4
+authKate:
+#incbin "Kate.dmp"
+ALIGN 4
+authKawa:
+#incbin "Kawa.dmp"
+ALIGN 4
+authkb:
+#incbin "kb.dmp"
+ALIGN 4
+authKirb:
+#incbin "Kirb.dmp"
+ALIGN 4
+authKonami:
+#incbin "Konami.dmp"
+ALIGN 4
+authkuzu:
+#incbin "kuzu.dmp"
+ALIGN 4
+authkxu:
+#incbin "kxu.dmp"
+ALIGN 4
+authL95:
+#incbin "L95.dmp"
+ALIGN 4
+authLeonarth:
+#incbin "Leonarth.dmp"
+ALIGN 4
+authLibera:
+#incbin "Libera.dmp"
+ALIGN 4
+authLordReyson:
+#incbin "LordReyson.dmp"
+ALIGN 4
+authloveemu:
+#incbin "loveemu.dmp"
+ALIGN 4
+authMaelHorz:
+#incbin "MaelHorz.dmp"
+ALIGN 4
+authmagical:
+#incbin "magical.dmp"
+ALIGN 4
+authMaiser6:
+#incbin "Maiser6.dmp"
+ALIGN 4
+authMariobro3828:
+#incbin "Mariobro3828.dmp"
+ALIGN 4
+authmarkyjoe1990:
+#incbin "markyjoe1990.dmp"
+ALIGN 4
+authMicrosoft:
+#incbin "Microsoft.dmp"
+ALIGN 4
+authMike:
+#incbin "Mike.dmp"
+ALIGN 4
+authMojangStudios:
+#incbin "MojangStudios.dmp"
+ALIGN 4
+authMonkeybard:
+#incbin "Monkeybard.dmp"
+ALIGN 4
+authMrC:
+#incbin "MrC.dmp"
+ALIGN 4
+authN426:
+#incbin "N426.dmp"
+ALIGN 4
+authNickt:
+#incbin "Nickt.dmp"
+ALIGN 4
+authNintenlord:
+#incbin "Nintenlord.dmp"
+ALIGN 4
+authNocash:
+#incbin "Nocash.dmp"
+ALIGN 4
+authOlivierLapicque:
+#incbin "OlivierLapicque.dmp"
+ALIGN 4
+authOmni:
+#incbin "Omni.dmp"
+ALIGN 4
+authOriharaSaki:
+#incbin "OriharaSaki.dmp"
+ALIGN 4
+authotherCont:
+#incbin "otherCont.dmp"
+ALIGN 4
+authP33rl355:
+#incbin "P33rl355.dmp"
+ALIGN 4
+authPatriciaSaunders:
+#incbin "PatriciaSaunders.dmp"
+ALIGN 4
+authPikmin1211:
+#incbin "Pikmin1211.dmp"
+ALIGN 4
+authPlanetInteractive:
+#incbin "PlanetInteractive.dmp"
+ALIGN 4
+authPokemonHacker:
+#incbin "PokemonHacker.dmp"
+ALIGN 4
+authPrevious:
+#incbin "Previous.dmp"
+ALIGN 4
+authPrimefusion:
+#incbin "Primefusion.dmp"
+ALIGN 4
+authRealtimeAssociates:
+#incbin "RealtimeAssociates.dmp"
+ALIGN 4
+authredblueyellow:
+#incbin "redblueyellow.dmp"
+ALIGN 4
+authReds:
+#incbin "Reds.dmp"
+ALIGN 4
+authreEject:
+#incbin "reEject.dmp"
+ALIGN 4
+authRexacuse:
+#incbin "Rexacuse.dmp"
+ALIGN 4
+authRobertFPY:
+#incbin "RobertFPY.dmp"
+ALIGN 4
+authRossendale:
+#incbin "Rossendale.dmp"
+ALIGN 4
+authRyan914:
+#incbin "Ryan914.dmp"
+ALIGN 4
+authRyrumeli:
+#incbin "Ryrumeli.dmp"
+ALIGN 4
+authSALVAGED:
+#incbin "SALVAGED.dmp"
+ALIGN 4
+authScraiza:
+#incbin "Scraiza.dmp"
+ALIGN 4
+authSD9K:
+#incbin "SD9K.dmp"
+ALIGN 4
+authShoda:
+#incbin "Shoda.dmp"
+ALIGN 4
+authSimonTatham:
+#incbin "SimonTatham.dmp"
+ALIGN 4
+authSme:
+#incbin "Sme.dmp"
+ALIGN 4
+authSMITHYGCN:
+#incbin "SMITHYGCN.dmp"
+ALIGN 4
+authSnakey1:
+#incbin "Snakey1.dmp"
+ALIGN 4
+authSoundTest774:
+#incbin "SoundTest774.dmp"
+ALIGN 4
+authSpyroDi:
+#incbin "SpyroDi.dmp"
+ALIGN 4
+authSquareEnix:
+#incbin "SquareEnix.dmp"
+ALIGN 4
+authSSHX:
+#incbin "SSHX.dmp"
+ALIGN 4
+authStanH:
+#incbin "StanH.dmp"
+ALIGN 4
+authTequila:
+#incbin "Tequila.dmp"
+ALIGN 4
+authTeraspark:
+#incbin "Teraspark.dmp"
+ALIGN 4
+authTheDocumentFoundation:
+#incbin "TheDocumentFoundation.dmp"
+ALIGN 4
+authThorbjornLindeijer:
+#incbin "ThorbjornLindeijer.dmp"
+ALIGN 4
+authTigerElectronics:
+#incbin "TigerElectronics.dmp"
+ALIGN 4
+authTR143:
+#incbin "TR143.dmp"
+ALIGN 4
+authTSP184:
+#incbin "TSP184.dmp"
+ALIGN 4
+authUnknown:
+#incbin "Unknown.dmp"
+ALIGN 4
+authUrathros:
+#incbin "Urathros.dmp"
+ALIGN 4
+authVennobennu:
+#incbin "Vennobennu.dmp"
+ALIGN 4
+authVesly:
+#incbin "Vesly.dmp"
+ALIGN 4
+authvlak:
+#incbin "vlak.dmp"
+ALIGN 4
+authWarPath:
+#incbin "WarPath.dmp"
+ALIGN 4
+authWAve:
+#incbin "WAve.dmp"
+ALIGN 4
+authWizToad:
+#incbin "WizToad.dmp"
+ALIGN 4
+authZahlman:
+#incbin "Zahlman.dmp"
+ALIGN 4
+authZaim:
+#incbin "Zaim.dmp"
+ALIGN 4
+authZarg:
+#incbin "Zarg.dmp"
+ALIGN 4
+authZeld:
+#incbin "Zeld.dmp"
+ALIGN 4
+authZephyr:
+#incbin "Zephyr.dmp"
+ALIGN 4
+authZeta:
+#incbin "Zeta.dmp"
+ALIGN 4
+authZmr:
+#incbin "Zmr.dmp"
+ALIGN 4
+authZoramineFae:
+#incbin "ZoramineFae.dmp"

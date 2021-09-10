@@ -1,0 +1,19 @@
+// Changes the World Map.
+
+PUSH
+
+  // Change Lagdou & Valni icon tcs params
+  // Raises destination flag.
+  ORG 0x20607C
+  SHORT 0x809
+  
+  ORG 0x20608C
+  SHORT 0x80F
+
+POP
+
+// Graphics
+#include "Graphics/Graphics.event"
+
+// Roads & Path Data pointers
+#include "Roads/Roads.event"

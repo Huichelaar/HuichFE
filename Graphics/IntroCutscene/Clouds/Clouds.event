@@ -1,0 +1,9 @@
+// Tiles
+ALIGN 4
+CloudsTiles:
+#incbin "Clouds.dmp"
+
+// Palette
+ALIGN 4
+CloudsPalette:
+#incbin "CloudsPalette.dmp"

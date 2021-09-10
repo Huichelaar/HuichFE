@@ -1,0 +1,6 @@
+ALIGN 4
+FieldsOBJ:
+#incbin "RevampedFields/RevampedFields.dmp"
+ALIGN 4
+FF5CaveOBJ:
+#incbin "FF5Cave/FF5Cave.dmp"

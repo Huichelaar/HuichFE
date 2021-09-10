@@ -1,0 +1,37 @@
+// Pauses right before fading in prep
+// to sync with song drums and build tension.
+// We run a new proc after pause, to indicate
+// we've already paused once. Proc gets deleted
+// when Gamestate+0x4 prepflag is unset.
+
+// Definitions
+#include "Defs/ProcDefinitions.event"
+
+{
+Procs_PrepTension:
+PROC_CALL_ROUTINE(CheckPause|1)
+PROC_SLEEP(0x60)
+PROC_END
+
+Procs_ResetPause:
+PROC_LOOP_ROUTINE(ResetPauseLoop|1)
+PROC_END
+
+  
+PUSH
+  
+  // Block prepscreen
+  // right before fade-in
+  ORG 0xA182CC
+  PROC_NEW_CHILD_BLOCKING(Procs_PrepTension)
+  
+POP
+
+
+ALIGN 4
+CheckPause:
+#include "CheckPause.lyn.event"
+ALIGN 4
+ResetPauseLoop:
+#include "ResetPauseLoop.lyn.event"
+}

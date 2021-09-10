@@ -1,0 +1,12 @@
+Written by gamma | #FORSYTHSQUAD
+
+WM data is at FE8U:03005280 and is layed out as follows:
+    +00 | byte  | flags bitfield
+       &01 | is currently in world map mode (used by save screen, convoy, shops etc. to know which screen to put you back on when backing out)
+       &02 | "free roam" mode (player has control and is not traveling toward a destination node)
+       &04 | show/hide minimap
+       &08 | show/hide mapsprites
+       &10 | show minimap on right (1) or left (0) (used to move the minimap so it doesn't draw over the cursor)
+       &20 | unknown, seems to always be set during normal play
+       &40 | set by SKIPWM event, purpose unknown
+       &80 | set by EventC2_ (0xCC04), purpose unknown

@@ -1,0 +1,56 @@
+// Titlescreen proc
+
+
+// Determine next action
+PROC_YIELD
+PROC_CALL_ROUTINE(0xC55CD)                    // Clears EVERYTHING LCDIO related.
+PROC_CALL_ROUTINE(Init_TitleScreen|1)         // jumps to 0 to do more buildup if +0x29 is unset.
+
+
+// Skip to immediate Titlescreen
+PROC_LABEL(2)
+PROC_LOOP_ROUTINE(Loop_FadeOut|1)
+PROC_CALL_ROUTINE(0xC63C5)                    // Clears all children
+PROC_CALL_ROUTINE(Init_Skip|1)
+PROC_NEW_CHILD(Procs_Gem3)
+PROC_NEW_CHILD(Procs_WhirlpoolScene7)
+PROC_CALL_ROUTINE(Init_Logo|1)
+PROC_NEW_CHILD(Procs_Subtitle)
+PROC_CALL_ROUTINE_ARG(Init_FadeBG|1, 0x11F)
+PROC_SLEEP(16)
+PROC_GOTO(1)
+
+
+// Build up the Titlescreen
+// This is basically Scene7, plane + remain
+PROC_LABEL(0)
+PROC_NEW_CHILD(0x59B0F0)                      // Starts keylistener child proc.
+PROC_CALL_ROUTINE_ARG(0x21081, 2)             // Unlocks the ability to skip. Arg is label to skip to.
+PROC_CALL_ROUTINE(Init_Scene7|1)
+PROC_CALL_ROUTINE_ARG(Init_DTS|1, 0xA)
+PROC_SLEEP(360)
+PROC_CALL_ROUTINE_ARG(Init_FadeBG|1, 0x210)
+PROC_NEW_CHILD(Procs_Gem3)
+PROC_SLEEP(120)
+PROC_END_ALL(Procs_DrawTextSprites)
+PROC_CALL_ROUTINE(LCDIO_Scene7|1)
+PROC_NEW_CHILD(Procs_WhirlpoolScene7)
+PROC_CALL_ROUTINE_ARG(Init_FadeBG|1, 0x401)
+PROC_SLEEP(60)
+PROC_CALL_ROUTINE(Init_Logo|1)
+PROC_SLEEP(32)
+PROC_CALL_ROUTINE(0x8B25)                     // Clears HBlankHandler
+PROC_END_ALL(Procs_Sinusoid)
+PROC_CALL_ROUTINE(ClearSinusoidCNT|1)
+PROC_NEW_CHILD(Procs_Subtitle)
+PROC_SLEEP(16)
+PROC_END_ALL(0x59B0F0)
+
+
+PROC_LABEL(1)
+PROC_NEW_CHILD(Procs_WMSlider2)
+PROC_LOOP_ROUTINE(0xC6355)                    // Main Loop
+PROC_CALL_ROUTINE(0x13F41)                    // Creates blocking child, 59A0A4, seems to fade out. Does some other pal stuff.
+PROC_YIELD
+PROC_CALL_ROUTINE(End_TitleScreen|1)          // Enables 2d sprite mapping
+PROC_END

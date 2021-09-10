@@ -1,0 +1,6 @@
+ALIGN 4
+GambitTargetStructTableLABEL:
+FILL 256*4
+PUSH
+ORG GambitTargetStructTableLABEL + SkelGambit*4 ; WORD (SkelGTS|IsPointer) 
+POP

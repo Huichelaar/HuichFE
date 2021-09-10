@@ -1,0 +1,78 @@
+// Scroll through Mural.
+
+// Definitions
+#include "Defs/ProcDefinitions.event"
+
+Procs_ScrollMural:
+{
+PROC_CALL_ROUTINE(SCMU_Init|1)
+PROC_LOOP_ROUTINE(SCMU_Loop|1)
+PROC_END
+
+  
+PUSH
+  
+  // Repoint PrepScreen BG3_HSlider Proc to ours.
+  ORG 0x86C4C
+  POIN Procs_ScrollMural
+  
+  // End our proc as well when ending BG3_HSlider.
+  ORG 0x86DBC
+  jumpToHack(SCMU_End)
+  ORG 0x95A20
+  callHack_r0(SCMU_End2)
+  SHORT 0x46C0
+  
+  // No need to decompress this image anymore.
+  // only gets in the way with SoundRoomBG.
+  ORG 0x86C0A
+  SHORT 0x46C0 0x46C0
+  
+POP
+
+
+ALIGN 4
+SCMU_Loop:
+#include "Loop.lyn.event"
+ALIGN 4
+SCMU_End:
+#include "End.lyn.event"
+ALIGN 4
+SCMU_End2:
+#include "End2.lyn.event"
+ALIGN 4
+SCMU_Init:
+#include "Init.lyn.event"
+
+
+// Mural Entry struct:
+//  TileSlot: short, [0x0, 0x580] Inidcates where to start putting mural tiles
+//  PaletteSlot: byte, [0x0, 0x16] Indicates which palette to overwrite
+//  FilterR: byte, [-31, 31] Indicates modifier to add to every colour's R-value
+//  FilterG: analogous to above
+//  FilterB: analogous to above
+//  Padding, short.
+#define MuralEntry(TileSlot, PaletteSlot, FilterR, FilterG, FilterB) "SHORT TileSlot; BYTE PaletteSlot FilterR FilterG FilterB; SHORT 0"
+
+SCMU_MuralEntries:
+// StatScreenMural, Ally
+MuralEntry(0x580, 0xC, 0x4, 0x4, 0x4)
+// StatScreenMural, NPC
+MuralEntry(0x580, 0xC, 0xF9, 0x8, 0xF9)
+// StatScreenMural, Enemy
+MuralEntry(0x580, 0xC, 0x12, 0xFC, 0xF8)
+// PrepMural
+MuralEntry(0x400, 0xA, 0x8, 0xF8, 0xF8)
+// SoundRoomMural
+MuralEntry(0x180, 0xF, 0x10, 0xC, 0x2)
+// PromotionBranchMural
+MuralEntry(0x400, 0xA, 0xB, 0x0, 0xF8)
+// EverythingElseMural
+MuralEntry(0x400, 0xA, 0xF8, 0x8, 0x0)
+
+// Unused palettes
+// Desaturated violet
+// MuralEntry(0x400, 0xA, 0xC, 0x0, 0xFC)
+// Greenish-Yellow
+// MuralEntry(0x400, 0xA, 0x8, 0x0, 0xEE)
+}

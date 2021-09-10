@@ -1,0 +1,19 @@
+
+//Weapon Crit 0xFF = Cannot Crit by Sme
+
+// Huichelaar edit: Ensure battle crit is 0
+// during ComputeCrit.
+PUSH
+
+  ORG 0x2ACA0
+  callHack_r3(CannotCrit2)
+
+POP
+
+ALIGN 4
+CannotCrit2:
+#include "CannotCrit2.lyn.event"
+
+
+ALIGN 4
+#inctext lyn "CannotCrit.elf"

@@ -1,0 +1,5 @@
+// mimics Menu Idle, 0x085B64B8
+
+PROC_LOOP_ROUTINE(FortMenu2Idle+0x1)
+PROC_CALL_ROUTINE(0x49D1)
+PROC_END

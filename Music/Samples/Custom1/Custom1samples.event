@@ -1,0 +1,22 @@
+#ifndef _FE8_
+    ERROR "You're not assembling to an FE8 ROM!"
+#endif
+
+//Samples
+//Direct
+
+
+//Multisample
+
+
+
+//Drum
+
+
+
+// Multisample tables
+
+
+// Note charts
+
+

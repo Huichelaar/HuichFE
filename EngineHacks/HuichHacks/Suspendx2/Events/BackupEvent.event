@@ -1,0 +1,28 @@
+
+////////////////////////////////////////////////////
+//                                                //
+// Disassembled with Nintenlord's Event Assembler //
+// Version: 11.1.0.0                              //
+// Game: FE8                                      //
+// File: FE8_clean.event_assembler.gba            //
+// Offset: $5920B8                                //
+//                                                //
+////////////////////////////////////////////////////
+
+
+
+EVBIT_MODIFY 0x4
+TEXTSTART
+TEXTSHOW BackupQuestion2
+TEXTEND
+SCOORD 0x7 [1,0]
+BNE 0x0 0xC 0x7
+  ASMC BackupASMC+0x1
+  TEXTSHOW2 BackupReply
+  TEXTEND
+
+LABEL 0x0
+REMA
+EVBIT_T 0x7
+ENDA
+

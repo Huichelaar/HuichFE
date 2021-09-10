@@ -1,0 +1,49 @@
+#ifdef _FE8_
+    #include "EAstdlib.event"
+    //#include "EA Standard Library/Backward Compatibility.txt"
+    #include "Custom Definitions.event"
+    ORG FreeSpace
+
+    //#define DEBUG
+    //#define BACKWARDS_COMPATIBILITY
+    
+    // TODO, this holds a pointer to the StatusScreen glowy image. No need to protect once we finish SS.
+    PROTECT 0x88620 0x88624
+
+    #include "repointedTextTable.event"
+
+    //Text first for Text ID definitions
+    #include "Text/Install Text Data.event"
+    MESSAGE Used text space ends at currentOffset
+    
+    //Maps, need to come before tables
+    #include "Maps/Maps.event"
+    
+    //CSV tables
+    #include "Tables/DataInstaller.event"
+    MESSAGE Used table space ends at currentOffset
+    
+    //Debug stuff
+    #ifdef DEBUG
+      #include "Debug/Debug.event"
+    #endif
+    //Engine Hacks
+    #include "EngineHacks/_MasterHackInstaller.event"
+    //General purpose code
+    #include "Generic/Generic.event"
+    MESSAGE Used hax space ends at currentOffset
+
+    //Events
+    #include "Events/Events.event"
+    
+    //Graphics
+    #include "Graphics/Graphics.event"
+    
+    //Music
+    #include "Music/Music.event"
+    
+    MESSAGE Used free space ends at currentOffset
+    
+#else
+    ERROR You are not assembling FE8 events!
+#endif

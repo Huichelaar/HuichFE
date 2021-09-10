@@ -1,0 +1,23 @@
+0xC0FFEE,Name,Gather Helptext,Material 1,Material 2,Material 3,Material 4,Level 2 Material 1,Level 2 Count 1,Level 2 Material 2,Level 2 Count 2,Level 3 Material 1,Level 3 Count 1,Level 3 Material 2,Level 3 Count 2,Level 4 Material 1,Level 4 Count 1,Level 4 Material 2,Level 4 Count 2,ProduceStruct ID,Affinity,Padding
+0,WMNode0,Fort0GatherHelp,Belladonna,Diamond,Gunpowder,Fish,Copper,1,Gunpowder,2,Rune,3,Rune,4,Iron,50,Milk,25,0,AffAnima,0
+1,WMNode1,Fort1GatherHelp,Laurel,Fish,Meat,Rune,Laurel,7,Grape,8,Laurel,9,Wood,10,Diamond,11,Grape,12,0,AffFire,0
+2,WMNode2,Fort2GatherHelp,Belladonna,Fish,Milk,MagicWood,MagicWood,13,Feather,14,Gunpowder,15,Coal,16,Belladonna,17,Iron,18,1,AffFire,0
+3,WMNode3,Fort0GatherHelp,Fish,Wool,Ruby,Copper,Gunpowder,19,Fish,20,Rune,21,Hemp,22,Iron,23,Copper,24,0,AffFire,0
+4,WMNode4,Fort0GatherHelp,Milk,Feather,Spice,Iron,Copper,25,Meat,26,Wood,27,Copper,28,Gunpowder,29,Oil,30,0,AffFire,0
+5,WMNode5,Fort0GatherHelp,Diamond,Milk,Spice,Laurel,Oil,31,Feather,32,Diamond,33,Belladonna,34,Lime,35,Rune,36,0,AffFire,0
+6,WMNode6,Fort0GatherHelp,Laurel,Coal,Wheat,Topaz,Spice,37,Oil,38,Rune,39,Emerald,40,Wool,41,Hemp,42,0,AffFire,0
+7,WMNode7,Fort0GatherHelp,Laurel,MagicWood,Wool,Rune,Topaz,43,Belladonna,44,Feather,45,Wood,46,Cabbage,47,Cabbage,48,0,AffFire,0
+8,WMNode8,Fort0GatherHelp,Lime,Ruby,MagicWood,Hide,Fish,49,Meat,50,Iron,51,Cabbage,52,Meat,53,Meat,54,0,AffFire,0
+9,WMNode9,Fort0GatherHelp,MagicWood,Grape,Cabbage,Feather,Hide,55,Oil,56,Iron,57,Wheat,58,Wool,59,Fish,60,0,AffFire,0
+10,WMNode10,Fort0GatherHelp,Milk,Wheat,Fish,Oil,Meat,61,Lime,62,Milk,63,Rune,64,Rune,65,Wheat,66,0,AffFire,0
+11,WMNode11,Fort0GatherHelp,Wood,Emerald,Iron,Spice,Ruby,67,Grape,68,Meat,69,Spice,70,Grape,71,Fish,72,0,AffFire,0
+12,WMNode12,Fort0GatherHelp,Spice,Cabbage,Emerald,Oil,Copper,73,Wheat,74,Hide,75,Wool,76,Grape,77,Spice,78,0,AffFire,0
+13,WMNode13,Fort0GatherHelp,Spice,Topaz,Meat,Gunpowder,Rune,79,Wheat,80,Meat,81,Coal,82,Laurel,83,Meat,84,0,AffFire,0
+14,WMNode14,Fort0GatherHelp,Diamond,Hemp,Milk,Belladonna,Iron,85,Iron,86,Cabbage,87,Wool,88,Belladonna,89,Rune,90,0,AffFire,0
+15,WMNode15,Fort0GatherHelp,Meat,Iron,Wool,Coal,MagicWood,91,Fish,92,Hide,93,Rune,94,Laurel,95,Meat,96,0,AffThunder,0
+16,WMNode16,Fort0GatherHelp,Coal,Hemp,Rune,MagicWood,Milk,97,Wood,98,Diamond,99,Cabbage,99,MagicWood,99,Meat,99,0,AffDark,0
+17,WMNode17,Fort0GatherHelp,Rune,Oil,Wheat,Iron,Spice,99,Spice,98,Grape,1,Wood,2,Spice,3,Emerald,4,0,AffIce,0
+18,WMNode18,Fort0GatherHelp,Lime,Ruby,MagicWood,Milk,Wheat,5,Cabbage,6,Feather,7,Iron,8,Oil,9,Rune,10,0,AffWind,0
+19,WMNode19,Fort0GatherHelp,Wheat,Oil,Lime,Hemp,Coal,11,Copper,12,Hide,13,Coal,14,Laurel,15,Fish,16,0,AffLight,0
+20,WMNode20,Fort0GatherHelp,Feather,Hemp,Emerald,Copper,Meat,17,Hemp,18,Iron,19,Milk,20,Hide,21,Feather,22,0,AffAnima,0
+21,WMNode21,Fort0GatherHelp,Flax,Topaz,Iron,Hemp,Flax,1,Oil,2,Flax,5,Cabbage,2,Belladonna,15,Spice,2,0,AffDark,0

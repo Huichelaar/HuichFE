@@ -1,0 +1,4 @@
+// Uses BLDY to fade in/out a BG
+PROC_YIELD
+PROC_LOOP_ROUTINE(Loop_FadeBG|1)
+PROC_END

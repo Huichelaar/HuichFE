@@ -1,0 +1,25 @@
+EVBIT_MODIFY 0x1
+
+// Paralogue 3 completed, mark as unavailable
+ENUF Paralogue3Flag
+
+// Do set next chapter in WMAct3DestinationsEvent
+SVAL 0x5 0x0
+CALL WMAct3DestinationsEvent
+
+WM_SPAWNLORD 0x0 0x0 0x1 0x14 0x0
+WM_CENTERCAMONLORD
+WM_FADEOUT 0x0 0x0 0x0
+WM_TEXTDECORATE
+EVBIT_MODIFY 0x0
+
+STAL 20
+WM_DRAWPATH 0x0 0x14 0x0
+WM_WAITFORFX
+
+STAL 40
+MUSC 0x4
+WM_MAKELORDVISIBLE 0x0
+EVBIT_MODIFY 0x1
+CALL 0x591F40
+ENDA

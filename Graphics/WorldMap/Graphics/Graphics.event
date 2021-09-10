@@ -1,0 +1,27 @@
+PUSH
+  
+  // Repoint Palette Map
+  ORG 0xBA800
+  POIN WMPaletteMap
+  
+  // World Map Image
+  ORG 0xA83364
+  WMTiles:
+  #incbin "WMTiles.dmp"
+  
+  // Mini World Map
+  ORG 0xC3E6C
+  POIN MiniWM
+  
+POP
+
+
+// Palette Map
+ALIGN 4
+WMPaletteMap:
+#incbin "WMPaletteMapComp.dmp"
+
+// MiniWM
+ALIGN 4
+MiniWM:
+#incbin "MiniWM.dmp"

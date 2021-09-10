@@ -1,0 +1,13 @@
+#include "Defs/ProcDefinitions.event"
+
+// Unique thrown lance and thrown handaxe animations per class
+#include "CustomThrownWeapon/CustomThrownWeapon.event"
+
+{
+// Changes to battle animation backgrounds.
+#include "Backgrounds/Backgrounds.event"
+
+// New battle animation commands.
+#include "Defs/CommandDefinitions.event"
+#include "Commands/Commands.event"
+}

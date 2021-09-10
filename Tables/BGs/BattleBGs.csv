@@ -1,0 +1,16 @@
+0x875A794,Image,TSA,Palette
+Placeholder,BF_Placeholder|IsPointer,0x0,BF_PlaceholderPalette|IsPointer
+Bridge1,BF_Bridge|IsPointer,0x0,BF_BridgePalette|IsPointer
+Cliff1,BF_Cliff|IsPointer,0x0,BF_CliffPalette|IsPointer
+Forest1,BF_Forest|IsPointer,0x0,BF_ForestPalette|IsPointer
+Peak1,BF_Peak|IsPointer,0x0,BF_PeakPalette|IsPointer
+Plain1,BF_Plain|IsPointer,0x0,BF_PlainPalette|IsPointer
+River1,BF_River|IsPointer,0x0,BF_RiverPalette|IsPointer
+Roads1,BF_Road|IsPointer,0x0,BF_RoadPalette|IsPointer
+Sea1,BF_Sea|IsPointer,0x0,BF_SeaPalette|IsPointer
+Village1,BF_Village|IsPointer,0x0,BF_VillagePalette|IsPointer
+Throne1,BF_Throne|IsPointer,0x0,BF_ThronePalette|IsPointer
+ThroneBlue,BF_Throne|IsPointer,0x0,BF_ThronePaletteBlue|IsPointer
+ThroneCyan,BF_Throne|IsPointer,0x0,BF_ThronePaletteCyan|IsPointer
+ThroneGreen,BF_Throne|IsPointer,0x0,BF_ThronePaletteGreen|IsPointer
+ThroneRed,BF_Throne|IsPointer,0x0,BF_ThronePaletteRed|IsPointer

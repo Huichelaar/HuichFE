@@ -1,0 +1,9 @@
+// Tiles
+ALIGN 4
+MoonTiles:
+#incbin "Moon.dmp"
+
+// Palette
+ALIGN 4
+MoonPalette:
+#incbin "MoonPalette.dmp"

@@ -1,0 +1,18 @@
+Class Card        Author
+
+Supplier          N426
+Summoner          Orihara_Saki
+MercenaryF        L95
+Cleric            flasuban
+MonkF             RobertFPY
+MonkM             RobertFPY, Blademaster
+-HatlessMageM      RobertFPY
+MageF             Unknown
+ShamanF           Unknown
+SoldierF          IS, flasuban
+FighterF          Jj09, HyperGammaSpaces
+ArcherM           DerTheVaporeon
+ArcherF           DerTheVaporeon
+MyrmidonF         L95
+CavalierF         RobertFPY, Pikmin
+CavalierM         RobertFPY

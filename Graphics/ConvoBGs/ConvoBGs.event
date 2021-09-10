@@ -1,0 +1,9 @@
+ALIGN 4
+ConvoCaveBG:
+#incbin "CaveBG.dmp"
+ALIGN 4
+ConvoCaveTSA:
+#incbin "CaveTSA.dmp"
+ALIGN 4
+ConvoCavePal:
+#incbin "CavePalette.dmp"

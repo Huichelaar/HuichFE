@@ -1,0 +1,34 @@
+// Portraits
+#include "Portraits/_Portrait Installer.event"
+// Class Cards
+#include "ClassCards/Class Card Installer.event"
+// Map Sprites
+#include "MapSprites/MapSprites.event"
+// Item icons
+#include "Items/Items.event"
+// Materials
+#include "Materials/Materials.event"
+// BattleAnims
+#include "BattleAnims/Master Animation Installer.event"
+// BattleFields
+#include "BattleBGs/BattleBGs.event"
+// Tilesets
+#include "Tilesets/Tilesets.event"
+// Conversation backgrounds
+#include "ConvoBGs/ConvoBGs.event"
+// UI
+#include "UI/UI.event"
+// ChapterIntro
+#include "ChapterIntro/ChapterIntro.event"
+// IntroCutscene
+#include "IntroCutscene/IntroCutscene.event"
+// Various effects
+#include "Effects/Effects.event"
+// StatScreen
+#include "StatScreen/StatScreen.event"
+// Credits
+#include "Credits/Credits.event"
+// SoundRoomBG
+#include "SoundRoomBG/SoundRoomBG.event"
+// World Map
+#include "WorldMap/WorldMap.event"

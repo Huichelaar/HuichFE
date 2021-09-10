@@ -1,0 +1,5 @@
+blue bar stored at 0x08A1D4E8. Also check out function at 0x80AD47C
+
+DrawSpecialUiChar arg r3, +0x14 onwards, - + / ~ S +0x20 : . +0x26 -> <3 +0x2A % +0xFF empty
+
+Lvl things at 0x08A9901C, palette at 0x08A99120

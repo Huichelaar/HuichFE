@@ -1,0 +1,119 @@
+// Mimics 0xAA7680, Procs_PreIntroSequence.
+// We add another screen for our own logo.
+PROC_YIELD
+PROC_CALL_ROUTINE(0x80CC1E1)
+PROC_CALL_ROUTINE(0x80CC1F9)
+PROC_LOOP_ROUTINE(0x80CC2F5)
+PROC_LOOP_ROUTINE(0x80CC075)
+PROC_LOOP_ROUTINE(0x80CC32D)
+PROC_LOOP_ROUTINE(0x80CC431)
+PROC_LOOP_ROUTINE(0x80CC075)
+
+PROC_LABEL(999)
+  PROC_CALL_ROUTINE(0x80CBE0D)
+  PROC_CALL_ROUTINE(0x8000D01)        // EnableSoftReset
+  PROC_CALL_ROUTINE(0x80CC1F1)        // Allow skipping
+  PROC_LOOP_ROUTINE(0x80CC099)        // Fade in IS+Nintendo
+  PROC_LOOP_ROUTINE(0x80CC075)        // Hold
+  PROC_LOOP_ROUTINE(0x80CC0FD)        // Fade out IS+Nintendo
+  PROC_LOOP_ROUTINE(0x80CC075)        // Hold
+  PROC_LOOP_ROUTINE(0x80CC13D)        // Fade in FEU
+  PROC_LOOP_ROUTINE(0x80CC075)        // Hold
+  PROC_LOOP_ROUTINE(0x80CC1A1)        // Fade out FEU
+  PROC_LOOP_ROUTINE(0x80CC075)        // Hold
+  PROC_LOOP_ROUTINE(FadeInHuich|1)    // Fade in Huichelaar
+  PROC_LOOP_ROUTINE(0x80CC075)        // Hold
+  PROC_LOOP_ROUTINE(FadeOutHuich|1)   // Fade out Huichelaar
+  PROC_LOOP_ROUTINE(0x80CC075)        // Hold
+  
+  PROC_GOTO(1)
+
+PROC_LABEL(0)
+PROC_CALL_ROUTINE(0x8000D01)        // EnableSoftReset
+PROC_CALL_ROUTINE(0x80CBF9D)
+PROC_LOOP_ROUTINE(0x80CBFC1)
+PROC_LABEL(1)
+PROC_END
+
+
+PUSH
+  
+  // Repoint PreIntroSequence proc to ours.
+  ORG 0x591710
+  POIN Procs_BootupLogos
+
+  // Move screen entries to end of BG VRAM.
+  ORG 0xCBE20
+  SHORT 0x4821                // ldr r0, =StartLogoBackgrounds
+  ORG 0xCBE2E
+  SHORT 0x2000 0x7068 0x46C0  // Saves some instructions for repurposing.
+
+  // Fill BG1Map with screen entries.
+  WORD 0x491D482D 0x23002200 0x31018001 0x32013002
+  WORD 0xDBF92A1E 0x22003004 0x2B143301
+  SHORT 0xDBF4
+
+  ORG 0xCBE78
+  SHORT 0x480D 0x490E         // No more IS TSA, use to decompress Huichelaar Screen.
+  ORG 0xCBE80                 // and to set 256 colour mode in BG1.
+  WORD 0x7C014812 0x43112280 0x46C07401
+
+  ORG 0xCBEA4
+  SHORT 0xE009                // Skip redundant but now nonfunctional instructions.
+  SHORT 0x0                   // Repurposed as literal pool.
+  POIN StartLogoBackgrounds
+  WORD 0x128
+  POIN FEUTiles
+  WORD 0x6004A00
+
+  // Show Nintendo + IS logo on first screen using new TSA.
+  ORG 0xCBED4
+  POIN ISNintendoLogosTSA
+  ORG 0xCC0F8
+  WORD 0x8B11864              // IS palette.
+  ORG 0xCC138
+  WORD 0x8B11864              // IS palette.
+  ORG 0xCC0CE
+  BYTE 0x3                    // Three palettes.
+  ORG 0xCC112
+  BYTE 0x3                    // Three palettes.
+
+  // Show my logo on second screen.
+  ORG 0xCC19C
+  POIN FEUPalette
+  ORG 0xCC1DC
+  POIN FEUPalette
+  ORG 0xCC172
+  SHORT 0x2100 0x2210         // Sixteen palettes.
+  ORG 0xCC1B4
+  SHORT 0x2100 0x2210         // Sixteen palettes.
+  
+  // Speed up logo display time
+  ORG 0xCC0C2
+  BYTE 2                      // Double IS+Nintendo FadeIn speed.
+  ORG 0xCC0DA
+  BYTE 30                     // IS+Nintendo display time.
+  ORG 0xCC104
+  BYTE 2                      // Double IS+Nintendo FadeOut speed.
+  ORG 0xCC11E
+  BYTE 1                      // Time of dark between IS+Nintendo and FEU.
+  ORG 0xCC168
+  BYTE 2                      // Double FEU FadeIn speed.
+  ORG 0xCC180
+  BYTE 30                     // FEU display time.
+  ORG 0xCC1A8
+  BYTE 2                      // Double FEU FadeOut speed.
+  ORG 0xCC1C2
+  BYTE 1                      // Time of dark between FEU and Huichelaar.
+  
+POP
+
+
+// Input given to the SetupBackgrounds call at 0xCBE22.
+// Moves screen blocks to end of BG VRAM.
+ALIGN 4
+StartLogoBackgrounds:
+SHORT 0x0 0xE000 0x0
+SHORT 0x0 0xE800 0x0
+SHORT 0x0 0xF000 0x0
+SHORT 0x0 0xF800 0x0

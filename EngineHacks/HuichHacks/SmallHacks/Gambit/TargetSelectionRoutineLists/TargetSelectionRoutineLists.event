@@ -1,0 +1,9 @@
+// Gambit
+ALIGN 4
+GambitTSRL:
+#include "GambitTSRL.event"
+
+  // Routines
+  ALIGN 4
+  GAM_GambitTSRLChangeConstruct:
+  #include "GambitTSRLChangeConstruct.lyn.event"

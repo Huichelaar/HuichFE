@@ -1,0 +1,61 @@
+__________________________________________________________
+Alusq 04/09/2020:
+a multi sample is just a voice table within a voice table
+
+image1 (in this directory)
+
+so here, 0x0681cb0 is the location of the song's voice table, but 0x0676AC0 is the table for instrument 48, the strings
+
+if you double-click the offset next to "Voices", you can change it to whatever (I would recommend using a new copy of your rom for this so you don't mess up whatever rom you're using)
+
+after you do that, then you can dump that table, which will give you the samples used by instrument 48
+
+now, you're probably wondering which sample maps to which notes of the instrument, and that's what the second pointer in 48's table entry is for
+
+image2 (in this directory)
+
+btw, when you dump samples, I would recommend dumping them as .wav (as an editable/reference version to listen and hear how it sounds) and .s (these are easier to insert back into a game because they already have loop points defined)
+__________________________________________________________
+
+Same goes for drums. Set the voicetable to the address of the drums and the 128 instrument addresses correspond to the 128 available notes/pitches (10 octaves ([-2, 7]) + 8 notes of 8). Each pitch corresponding to a specific sample.
+
+Exporting these samples can be done as usual, but take care to unset fixed frequency for the addresses that have it enabled, otherwise their samples won't get exported.
+
+Use gba_mus_riper, image4, to obtain midis and corresponding soundfonts. The soundfonts can be imported into VirtualMIDISynth. Use this to check whether exported samples are correct/similar sounding.
+
+For MultiSample, open game in HxD and Ctrl+G to Address2 to get the 0x80 bytes long note chart. Copy this to a new file and dump it to a chart.dmp. For the DirectSound subtable, remember to start indexing at 0x0, or make sure the cursor is moved by another 0xC if you index at 0x1. Drums, unlike MultiSample, don't use charts. Drums subtable contains all 127 DirectSounds for drums.
+__________________________________________________________
+
+Huichelaar 06/09/2020:
+is there a quick no-combing-over-each-track way of removing all modulation commands in a .midi?
+
+Alusq 06/09/2020:
+use midi2agb's modscale feature, or just copy the track and use "paste special" to paste it onto a new track while pasting only notes and not events
+__________________________________________________________
+Alusq 06/09/2020:
+
+only mid2agb (Nintendo's) uses the _mvl parameter; to change the volume with midi2agb, you have to define it when you run the song through it (e.g. you run the program as midi2agb -m 100 for a master volume of 100
+
+...
+
+anyway, for volume stuff, I would recommend having volumes in your songs in general max out at 64 and you can adjust it from there
+__________________________________________________________
+Shift+right click in explorer to open a powershell (idk why power, but ok) command prompt.
+Or type cmd.exe into explorer for regular command prompt. Use
+./midi2agb -m <[0, 127]> <midi>
+to change the volume of the .s produced by midi2agb. 
+
+Convert the .s to .event using s2ea.exe.
+
+Optionally, grab the .event file, add a "<songname>_mvl <[0, 127]>" between "songname_rev" and "songname_key" and
+Find & replace:
+BYTE                   ([0-9]+)
+BYTE                   \1\*<songname>_mvl/mxv
+
+Find & replace:
+VOL     ([0-9]*)
+VOL     \1\*<songname>_mvl/mxv
+
+Now, volume can be changed depending on the value given to <songname>_mvl.
+
+Either way, remember to replace the voices000 voicegroup with the relevant one, and to replace all ".align 2" with "ALIGN 4".

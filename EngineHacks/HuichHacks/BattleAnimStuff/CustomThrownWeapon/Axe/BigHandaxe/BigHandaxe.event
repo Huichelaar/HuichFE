@@ -1,0 +1,35 @@
+// Big handaxe
+
+ALIGN 4
+BigHandaxe:
+#include "BigHandaxe.lyn.event"
+ALIGN 4
+BigHandaxeEffect:
+{
+#include "BigHandaxeEffect.lyn.event"
+
+
+// Parameters
+
+// Sound effect to play when throwing big handaxe
+ALIGN 2
+BHASFE:
+SHORT 0x263
+
+// Vanilla sets this to 0x50. Takes a long
+// pause, before continuing battle. If there's
+// a good reason for that, just change this back to 0x50
+BHATotalTime:
+BYTE 0x38
+
+// Will end melee big handaxe anim after this many frames
+BHAMeleeTime:
+BYTE 0x20
+
+// Analogous to above for ranged.
+BHARangedTime:
+BYTE 0x20
+
+
+#include "Procs/Procs.event"
+}

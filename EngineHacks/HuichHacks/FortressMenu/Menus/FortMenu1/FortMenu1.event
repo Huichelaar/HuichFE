@@ -1,0 +1,70 @@
+// Menu
+WORD  0x00070001              // Geometry.
+WORD  0x0                     // Window frame style.
+POIN  FortMenu1Commands       // Pointer to command definitions. 
+WORD  0x0                     // Called on menu construction.
+WORD  0x0                     // Called by Generic R-Text at Start.
+WORD  0x0                     // Unknown, pointer to routine. Leave 0x0.
+POIN  FortMenu1Destructor+0x1 // Called on B press. Set to general menu destructor.
+POIN  FortMenu1CallHelp+0x1   // Called on R press.
+WORD  0x804F459               // Called by generic R-text at End. Using the same as vanilla WMmenu.
+
+
+// Menu Commands
+ALIGN 4
+FortMenu1Commands:
+// Command 1, Gather
+WORD  0x80D7E9C               // Name pointer, used if Name ID is 0x0. Set to some nonsense.
+SHORT FortMenuGather          // Name ID.
+SHORT GatherHelp              // Help ID.
+BYTE  0x0                     // Colour.
+BYTE  0x0                     // MenuCommandID.
+SHORT 0x0                     // Unknown. Just leave 0.
+WORD  0x804F449               // Function determining whether to show option. Set to always usable.
+WORD  0x0                     // Drawing routine, 0 means default.
+POIN  CommandEffect+0x1       // Function executed when selecting this option.
+WORD  0x0                     // Function called every turn while option is selected, idk.
+POIN  HoverGather+0x1         // Function called when hovering over this command.
+WORD  0x0                     // Function called when you stop hovering over this command.
+
+// Command 2, Upgrade
+WORD  0x80D7E9C
+SHORT FortMenuUpgrade
+SHORT UpgradeHelp
+BYTE  0x0
+BYTE  0x1
+SHORT 0x0
+WORD  0x804F449
+WORD  0x0
+POIN  CommandEffect+0x1
+WORD  0x0
+POIN  HoverUpgrade+0x1
+WORD  0x0
+
+// Command 2, Change
+WORD  0x80D7E9C
+SHORT FortMenuChange
+SHORT ChangeHelp
+BYTE  0x0
+BYTE  0x2
+SHORT 0x0
+WORD  0x804F449
+WORD  0x0
+POIN  CommandEffect+0x1
+WORD  0x0
+POIN  HoverChange+0x1
+WORD  0x0
+
+// 0-terminator
+WORD  0x0
+SHORT 0x0
+SHORT 0x0
+BYTE  0x0
+BYTE  0x0
+SHORT 0x0
+WORD  0x0
+WORD  0x0
+WORD  0x0
+WORD  0x0
+WORD  0x0
+WORD  0x0

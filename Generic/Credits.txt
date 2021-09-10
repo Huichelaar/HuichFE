@@ -1,0 +1,3 @@
+Credit to 7743 for the SendAllTransporter, SilentGiveItem and SilentGiveGold patches.
+
+Credit to StanH for the M7 implementation.

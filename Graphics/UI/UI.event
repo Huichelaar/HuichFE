@@ -1,0 +1,156 @@
+// System Icons, Button prompts, Movement arrows, range square palettes
+ALIGN 4
+SystemIconsGfx:
+#incbin "SystemIcons.dmp"
+ALIGN 4
+PrepUIGfx:
+#incbin "PrepUI.dmp"
+ALIGN 4
+ActionPromptsGfx:
+#incbin "ActionPrompts.dmp"
+ALIGN 4
+PrepPromptsGfx:
+#incbin "PrepPrompts.dmp"
+ALIGN 4
+ButtonPromptsGfx:
+#incbin "ButtonPrompts.dmp"
+ALIGN 4
+MovementArrowsGfx:
+#incbin "MovementArrows.dmp"
+ALIGN 4
+ButtonPromptsPalette:
+MovementArrowsPalette:
+#incbin "ButtonPromptPalette.dmp"
+ALIGN 4
+SoundRoomOBJ:
+#incbin "SoundRoomOBJ.dmp"
+ALIGN 4
+SoundRoomOAM:
+#incbin "SoundRoomOAM.dmp"
+ALIGN 4
+SoundRoomControlWindowTSA:
+#incbin "SoundRoomControlWindowTSA.dmp"
+ALIGN 4
+UnitListGfx:
+#incbin "UnitList.dmp"
+ALIGN 4
+AnimationGfx:
+#incbin "Animation.dmp"
+ALIGN 4
+RangeSquarePurplePalette:
+#incbin "RangeSquaresPurplePalette.dmp"
+ALIGN 4
+BackupGfx:
+#incbin "BackupBox.dmp"
+ALIGN 4
+ClassReelFontAmpersand:
+#incbin "Ampersand.dmp"
+ALIGN 4
+ClassReelFontUnderscore:
+#incbin "Underscore.dmp"
+
+
+//BG Mural
+ALIGN 4
+MuralTiles:
+#incbin "Mural.dmp"
+ALIGN 4
+MuralPalette:
+#incbin "MuralPalette.dmp"
+
+PUSH
+
+  ORG 0x156AC
+  POIN SystemIconsGfx
+  PROTECT 0x156AC CURRENTOFFSET
+  
+  ORG 0x95C78
+  POIN PrepUIGfx
+  
+  ORG 0x90F88
+  POIN UnitListGfx
+  
+  ORG 0x90F84
+  POIN AnimationGfx
+  
+  // Button prompt palettes for
+  // SaveMenu, Manage items, Menu,Exit,Fight!, Prep Screen
+  ORG 0x89538
+  POIN ButtonPromptsPalette
+  ORG 0x3361C
+  POIN ButtonPromptsPalette
+  ORG 0x90F90
+  POIN ButtonPromptsPalette
+  ORG 0x95E30
+  POIN ButtonPromptsPalette
+  ORG 0xADBF8
+  POIN ButtonPromptsPalette
+  
+  // R:info
+  // Share palettes with top right counter
+  // instead of scroll bar.
+  // Counter still looks nice despite the altered palette.
+    // Supply
+    ORG 0x9DB18
+    BYTE 0xF
+    // List
+    ORG 0x9EF02
+    BYTE 0xF
+  // Display in bottom-left corner
+  // when using item in prep/overworld.
+  ORG 0x9C780
+  SHORT 0x2000 0x2192
+  
+  // Extend prep/overworld item-use-textbox to fit third line.
+  ORG 0x9C718
+  BYTE 0xA2
+  
+  // Menu, Exit, Fight! sprite
+  ORG 0x3356C
+  POIN ActionPromptsGfx
+  ORG 0x8D898
+  POIN ActionPromptsGfx
+  
+  // Unit list, Fight!, Done, Menu
+  ORG 0x95E28
+  POIN PrepPromptsGfx
+  ORG 0x9A8EC
+  POIN PrepPromptsGfx
+  
+  // Sound room
+  // Load obj palette 6.
+  ORG 0xAF6C8
+  WORD 0x21164803 0x22200149 0xFB72F751 0xE0014652
+  POIN ButtonPromptsPalette
+  WORD 0x21207878 0x213F4308 0x70784008 0x31341C39
+  WORD 0x231D7808 0x43184313
+  // Use obj palette 6.
+  ORG 0xB03DC
+  SHORT 0x1E4
+  // Use SoundRoomOBJ.
+  ORG 0xAF7E0
+  POIN SoundRoomOBJ
+  // Add L-button prompt.
+  ORG 0xB0438
+  POIN SoundRoomOAM
+  // Lengthen control window box.
+  ORG 0xAF7C8
+  POIN SoundRoomControlWindowTSA
+  ORG 0xAFC40
+  POIN SoundRoomControlWindowTSA
+  ORG 0xAFB1A
+  BYTE 0xD                // Random mode, Y dimension of control window when sliding out.
+  ORG 0xAF6F8
+  BYTE 0x58               // Don't make Control Window (partially) transparent.
+  
+  // UNDObox, display during SaveMenu when resuming.
+  ORG 0x896A4
+  POIN BackupGfx
+  
+  // Add ampersand & underscore to ClassReelFont
+  ORG 0xA2F358
+  POIN ClassReelFontAmpersand
+  ORG 0xA2F43C
+  POIN ClassReelFontUnderscore
+  
+POP

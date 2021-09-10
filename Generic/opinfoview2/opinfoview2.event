@@ -1,0 +1,35 @@
+// Mimics 0x8A2EFC0, Procs_opinfoview,
+// but uses FE7U's classreel letter effects,
+// keeps palette variance and
+// has a custom Y.
+ALIGN 4
+Procs_opinfoview2:
+PROC_SLEEP(1)
+PROC_CALL_ROUTINE(0x80B2F59)
+PROC_LOOP_ROUTINE(opinfoview2_Loop1|1)
+PROC_LOOP_ROUTINE(opinfoview2_Loop2|1)
+PROC_LOOP_ROUTINE(opinfoview2_Loop3|1)
+PROC_END
+
+
+// Determines Y position of segment title.
+ALIGN 4
+SegTitleY:
+WORD 44
+
+
+ALIGN 4
+//opinfoview2_Start:
+#include "opinfoview2_Start.lyn.event"
+ALIGN 4
+opinfoview2_DrawChar:
+#include "opinfoview2_DrawChar.lyn.event"
+ALIGN 4
+opinfoview2_Loop1:
+#include "opinfoview2_Loop1.lyn.event"
+ALIGN 4
+opinfoview2_Loop2:
+#include "opinfoview2_Loop2.lyn.event"
+ALIGN 4
+opinfoview2_Loop3:
+#include "opinfoview2_Loop3.lyn.event"

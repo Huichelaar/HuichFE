@@ -1,0 +1,80 @@
+PUSH
+
+  ORG 0xAA0C4                         // Choose which suspended save to load
+  callHack_r3(LoadSuspendedGame2)
+  
+  ORG 0xA8AA0                         // Put BackupCount into SaveMenu Procstate +0x41 (may be unused).
+  callHack_r3(InitBackupDisplayValue) // Also load BackupGfx into VRAM.
+  SHORT 0xE01D
+
+  ORG 0xAA864                         // Draw BackupCount
+  callHack_r0(DrawBackupValue)
+  
+  
+  // Make Resume create a dialoguebox if undos are not 0 or 0xFF.
+  // We simplify the branches here to give us room for this check.
+  ORG 0xA9580
+  WORD 0xD0122801 0xD0182802 0xD0432804 0xD0412808
+  WORD 0xD0312810 0x0000E004 0x0202BCF0 0x0858791C
+  WORD 0xD0372840 0xD00E2880 0x1C28E08E 0x78003041
+  WORD 0xD0112800 0xD00F28FF
+  SHORT 0x46C0
+  
+  // "Mode" (Resume, Restart, etc.) is a bitfield. If we change
+  // beq rX, #2 into bls rX #2 we'll make Resume act like Restart
+  // in those instances.
+    // Let resume open a dialoguebox like restart (AGAIN).
+    ORG 0xA92C1
+    BYTE 0xD9
+    // Determine which dialoguebox resume should open.
+    ORG 0xA8915
+    BYTE 0xD9
+    ORG 0xA8932
+    SHORT 0x1C20
+    callHack_r1(DetermineHelpBoxText)
+    
+  // We change this such that low short is left option and
+  // high short is right option. Allowing right option
+  // to be something other than "Cancel" as well.
+  ORG 0xA20720
+  SHORT BackupSaveMenuCommandName SuspendSaveMenuCommandName
+  SHORT 0x143 0x142 0x144 0x142 0x140 0x142 0x143 0x142 0x143 0x142 0x145 0x142
+  ORG 0xAB854
+  SHORT 0x8842 0x8800 0x46C0
+  ORG 0xAB7BC
+  SHORT 0xB570 0x1C16
+  ORG 0xAB7F8
+  SHORT 0x1C30 0x46C0
+  ORG 0xAB832
+  SHORT 0xBC70
+  
+  // Determine action based on "Bkup" or "Susp" press.
+  // We abuse redundancy to make room for a hook.
+  // We cheat and assume r1 still holds the value it did before the hook.
+  ORG 0xA933C
+  WORD 0x8828350C
+  jumpToHack(DetermineSuspend)
+  WORD 0xD0412810 0xD0292802 0xD0432808
+  
+
+POP
+
+
+ALIGN 4
+BackupASMC:
+#include "BackupASMC.lyn.event"
+ALIGN 4
+LoadSuspendedGame2:
+#include "LoadSuspendedGame2.lyn.event"
+ALIGN 4
+InitBackupDisplayValue:
+#include "InitBackupDisplayValue.lyn.event"
+ALIGN 4
+DrawBackupValue:
+#include "DrawBackupValue.lyn.event"
+ALIGN 4
+DetermineHelpBoxText:
+#include "DetermineHelpBoxText.lyn.event"
+ALIGN 4
+DetermineSuspend:
+#include "DetermineSuspend.lyn.event"

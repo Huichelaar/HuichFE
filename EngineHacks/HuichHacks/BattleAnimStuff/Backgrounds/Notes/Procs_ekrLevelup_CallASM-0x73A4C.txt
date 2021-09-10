@@ -1,0 +1,57 @@
+Procs_ekrLevelup_CallASM 0x73A4C:
+
+Clear BG1 & BG2 MapBuffers
+RegisterTileGraphics used to copy BG1 screen entries to screen base block 0xD and 0xE.
+RegisterTileGraphics used to copy BG2 screen entries to screen base block 0xA and 0xB.
+
+Does some stuff to some lvlup RAM data.
+Does something if anim distance long range (move camera back?)
+StartAnime_EkrUnitMain
+Changes some proc vars.
+Changes right and left unit AIS OAM2. Sets priority to 3.
+BG2Priority = 0.
+BG1Priority = 1.
+BG0Priority = 2.
+BG3Priority = 3.
+
+if 0x6FAB0 stuff, seems to affect AISes and BGPriorities. Not taken yet.
+
+more lvlup RAM data stuff.
+Set BG1 and BG2 position to 0 horizontal, 8 vertical.
+BG0 screenblock = 0xC
+BG1 screenblock = 0xD
+BG2 screenblock = 0xA
+
+BG1 size = 512x256
+BG2 size = 512x256
+
+Call
+  Start Procs__efxPartsofScroll, 0x7593DC. Store procstate in lvlup RAM data.
+
+Call
+  Increment gSomeSubAnim6CCounter.
+  Four loops clearing some 0x1400 sized things (why not use CPUFastSet?)
+  More RAM data stuff.
+  Start Procs__efxLevelupHB (HBlank?), 0x75945C
+
+Call
+  Idk, Idc.
+
+Call
+  Change some value in EkrGaugeProc?
+
+Call
+  Something todo with gpSome6C_RightUnit. Using Right AIS.
+Call
+  Something todo with gpSome6C_RightUnit. Using Left AIS.
+
+Call PauseEfxWeaponIcon.
+
+Call
+  Change some variable in some other proc.
+
+Turns off window 0, 1 and OBJ window.
+
+Call SetDefaultColours.
+
+Break this proc's loop (why not just make it a call IN THE FIRST PLACE!?)

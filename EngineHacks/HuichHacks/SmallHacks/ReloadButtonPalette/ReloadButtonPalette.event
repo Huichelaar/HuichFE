@@ -1,0 +1,13 @@
+// Re-load button palette when viewing map during preps.
+
+PUSH
+
+  ORG 0x8D880
+  callHack_r0(ReloadButtonPalette)
+  SHORT 0x2200 0x3456 0x7022
+
+POP
+
+ALIGN 4
+ReloadButtonPalette:
+#include "ReloadButtonPalette.lyn.event"

@@ -1,0 +1,11 @@
+// Tables
+
+// Active Gems
+ALIGN 4
+ActiveGemsTable:
+#incbin "ActiveGems/Example1.dmp"
+
+// BG Palettes
+ALIGN 4
+BGPaletteTable:
+#incbin "BGPalette/Example1.dmp"

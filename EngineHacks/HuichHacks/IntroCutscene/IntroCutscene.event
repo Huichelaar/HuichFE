@@ -1,0 +1,59 @@
+// Changes the Game intro.
+#ifndef _FE8_
+    ERROR "You're not assembling to an FE8 ROM!"
+#endif
+
+#include "Extensions/Hack Installation.txt"
+#include "EAstdlib.event"
+
+#ifndef FreeSpace
+	#define FreeSpace 0x1000000
+	ORG FreeSpace
+#endif
+
+
+{
+// Definitions
+#include "Defs/ProcDefinitions.event"
+
+PUSH
+  
+  // Repoint intro cutscene to ours
+  ORG 0x591724
+  PROC_NEW_CHILD_BLOCKING(Procs_GameIntro)
+  
+  // Repoint TitleScreen to ours
+  ORG 0xC6440
+  POIN Procs_TitleScreen
+  ORG 0xC6458
+  POIN Procs_TitleScreen
+  ORG 0xC6470
+  POIN Procs_TitleScreen
+  
+  // Hang on Titlescreen longer before moving to class reel/cutscene
+  ORG 0xC63C0
+  SHORT 0x3D0
+  
+  // Get rid of two pairs of eyes that overlap
+  // with monologue sprites.
+  ORG 0xCA800
+  SHORT 0xE005
+  ORG 0xCA812
+  SHORT 0xE005
+  
+  // Don't change the BG palettes during eyes
+  ORG 0xCA87C
+  SHORT 0x46C0 0x46C0
+  ORG 0xCA89C
+  SHORT 0x46C0 0x46C0
+  
+  // Draw eyes for longer
+  ORG 0xCA8AC
+  SHORT 0x3CDF
+  ORG 0xCA902
+  SHORT 0x28FF
+  
+POP
+
+#include "Procs/Procs.event"
+}

@@ -1,0 +1,52 @@
+ALIGN 4
+PortraitTable:
+#incbin "Vanilla Portrait Table.dmp"
+ORG PortraitTable+0x512*0x1C
+
+
+ALIGN 4
+Blank_PortraitTiles:
+#incbin "blank_portrait.dmp"
+ALIGN 4
+VivianPortraitTiles:
+#incbin "Splice1_1~Huichelaar.dmp"
+ALIGN 4
+SimonPortraitTiles:
+#incbin "Cosimo~GenericPretsel.dmp"
+ALIGN 4
+TurnerPortraitTiles:
+#incbin "2~Zmr.dmp"
+ALIGN 4
+LeonaPortraitTiles:
+#incbin "2~Capibarainspace.dmp"
+ALIGN 4
+MiloPortraitTiles:
+#incbin "28~SSHX.dmp"
+ALIGN 4
+AidenPortraitTiles:
+#incbin "Vette~Nickt.dmp"
+ALIGN 4
+DemiPortraitTiles:
+#incbin "2~DragonLuca.dmp"
+ALIGN 4
+TheresaPortraitTiles:
+#incbin "Brava~AmBrosiac.dmp"
+ALIGN 4
+HerbertPortraitTiles:
+#incbin "Faustosilva~AmBrosiac.dmp"
+ALIGN 4
+SoldierFPortraitTiles:
+#incbin "SoldierF~LaurentLacroix.dmp"
+
+
+setMugEntry(0x1,Blank_PortraitTiles,3,5,3,3)
+setMugEntry(0x2,VivianPortraitTiles,4,5,4,3)
+setMugEntry(0x3,SimonPortraitTiles,4,5,4,3)
+setMugEntry(0x4,TurnerPortraitTiles,3,5,3,3)
+setMugEntry(0x5,LeonaPortraitTiles,3,6,3,4)
+setMugEntry(0x6,MiloPortraitTiles,3,5,3,3)
+setMugEntry(0x7,AidenPortraitTiles,2,5,2,3)
+setMugEntry(0x8,DemiPortraitTiles,3,6,3,4)
+setMugEntry(0x9,TheresaPortraitTiles,3,6,3,4)
+setMugEntry(0xa,HerbertPortraitTiles,3,6,3,4)
+setMugEntry(0x6c,SoldierFPortraitTiles,4,6,4,4)

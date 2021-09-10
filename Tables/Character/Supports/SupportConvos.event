@@ -1,0 +1,8 @@
+ALIGN 4
+SupportConvosTableLABEL:
+; BYTE (Vivian) (0x0) (Leona) (0) ; SHORT (VivianLeonaSupportC) (VivianLeonaSupportB) (VivianLeonaSupportA) ; BYTE (0) (0) (0) (0) (0) (0) 
+; BYTE (Vivian) (0x0) (Milo) (0) ; SHORT (VivianMiloSupportC) (VivianMiloSupportB) (VivianMiloSupportA) ; BYTE (0) (0) (0) (0) (0) (0) 
+; BYTE (Leona) (0x0) (Demi) (0) ; SHORT (LeonaDemiSupportC) (LeonaDemiSupportB) (LeonaDemiSupportA) ; BYTE (0) (0) (0) (0) (0) (0) 
+; BYTE (Milo) (0x0) (Demi) (0) ; SHORT (MiloDemiSupportC) (MiloDemiSupportB) (MiloDemiSupportA) ; BYTE (0) (0) (0) (0) (0) (0) 
+; BYTE (Theresa) (0x0) (Herbert) (0) ; SHORT (TheresaHerbertSupportC) (TheresaHerbertSupportB) (TheresaHerbertSupportA) ; BYTE (0) (0) (0) (0) (0) (0) 
+; BYTE (0xFF) (0xFF) (0x0) (0) ; SHORT (0x0) (0x0) (0x0) ; BYTE (0) (0) (0) (0) (0) (0) 

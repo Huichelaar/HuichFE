@@ -1,0 +1,4 @@
+// Gambit Target Selection Routine.
+// Basically the same as 0x59D3F8,
+// but different change & construction routine.
+POIN 0x3730D 0x22F11 GAM_GambitTSRLChangeConstruct|1 0x22E8D GAM_GambitTSRLChangeConstruct|1 0x22DF1 0x22E65 0x373F1

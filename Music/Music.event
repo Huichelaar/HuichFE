@@ -1,0 +1,31 @@
+#ifndef _FE8_
+    ERROR "You're not assembling to an FE8 ROM!"
+#endif
+
+#include "Extensions/Hack Installation.txt"
+#include "EAstdlib.event"
+
+#ifndef FreeSpace
+	#define FreeSpace 0x1000000
+	ORG FreeSpace
+#endif
+
+{
+PUSH
+    
+  //16 Tracks/12 Sounds Fix (credit: Agro/Brendor)
+  ORG $2900
+    SHORT $e00c
+  ORG $2924
+    SHORT $280c $d00e $200c
+  ORG $22440c
+    BYTE $10
+  ORG $224414
+    SHORT $67b0 $0300 $0010
+
+POP
+
+ALIGN 4
+#include "Install/music installer.event"
+#include "Install/custom music installer.event"
+}

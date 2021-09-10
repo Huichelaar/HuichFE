@@ -1,0 +1,25 @@
+#ifndef _FE8_
+    ERROR "You're not assembling to an FE8 ROM!"
+#endif
+
+//Samples
+//Direct
+ALIGN 4
+SfxSample0:
+#include "Knock.event"
+
+
+//Multisample
+
+
+
+//Drum
+
+
+
+// Multisample tables
+
+
+// Note charts
+
+

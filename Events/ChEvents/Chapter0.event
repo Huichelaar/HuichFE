@@ -1,0 +1,108 @@
+// Prologue
+{
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno Tutorial
+POIN Traps1 Traps2
+POIN PrepUnits PrepUnits  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+PrepUnits:
+UNIT
+
+PlayerUnits:
+UNIT Vivian Supplier Vivian Level(0x2, Ally, 0x0) [15,0] 0b 0x0 0x0 0x0 [IronLance, Vulnerary] NoAI
+UNIT Simon  Shaman   Vivian Level(0x8, Ally, 0x0) [15,1] 0b 0x0 0x0 0x0 [Flux] AttackInRangeAI
+UNIT
+
+EnemyUnits:
+UNIT
+
+BeginningScene:
+// Enable all guide entries
+ASMC 0x080CF461
+#ifdef DEBUG
+  ENUT FortressAccessibleFlag
+#else
+  // Disable these though:
+  ENUF 0x12B        // Obtain Materials
+  ENUF 0x129        // Material Uses
+  ENUF 0x127        // Fortresses
+#endif
+
+LOAD1 1 PlayerUnits
+ENUN
+LOAD1 0 EnemyUnits
+ENUN
+
+MUSC 0xC
+REMOVEPORTRAITS
+
+Text(ConvoCave,Chapter0_1)
+
+//SetBackground(0x35)
+//FADI 0x10
+//SetBackground(ConvoCaveID)
+//FADU 0x2
+//Text(0x906)
+//EndConvo
+
+EVBIT_MODIFY 1
+MUSC 0x9
+SVAL 0xA 0x1
+StartPuzzle2(0x0, 0x2, 0x1, 0x0)
+
+// Set or don't set the Miloflag
+SVAL 0x1 0xC0
+BLT 0x0 0xC 0x1
+  ENUT MiloFlag
+LABEL 0x0
+
+EVBIT_MODIFY 0
+FADI 16
+
+MUSC 0xC
+SetBackground(ConvoCave)
+TEXTSHOW Chapter0_2
+TEXTEND
+MUSC 0x7FFF
+TEXTCONT
+TEXTEND
+REMA
+
+//FADI 16
+MNC2 0x1
+ENDA
+
+LocationBasedEvents:
+END_MAIN
+
+// Technically unreachable.
+EndingScene:
+ENDA
+
+TurnBasedEvents:
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+END_MAIN
+
+Traps1:
+END_MAIN
+
+Traps2:
+END_MAIN
+}

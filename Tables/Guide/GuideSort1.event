@@ -1,0 +1,17 @@
+ALIGN 4
+GuideSort1TableLABEL:
+FILL 256*2
+PUSH
+ORG GuideSort1TableLABEL + 1*2 ; SHORT (GuideCategoryNew) 
+ORG GuideSort1TableLABEL + 2*2 ; SHORT (0x5C9) 
+ORG GuideSort1TableLABEL + 3*2 ; SHORT (0x5CA) 
+ORG GuideSort1TableLABEL + 4*2 ; SHORT (0x5CB) 
+ORG GuideSort1TableLABEL + 5*2 ; SHORT (GuideCategoryMaterials) 
+ORG GuideSort1TableLABEL + 6*2 ; SHORT (0x5CD) 
+ORG GuideSort1TableLABEL + 7*2 ; SHORT (0x5CE) 
+ORG GuideSort1TableLABEL + 8*2 ; SHORT (0x5CF) 
+ORG GuideSort1TableLABEL + 9*2 ; SHORT (0x5D0) 
+ORG GuideSort1TableLABEL + 10*2 ; SHORT (0x5D1) 
+ORG GuideSort1TableLABEL + 11*2 ; SHORT (0x5D2) 
+ORG GuideSort1TableLABEL + 12*2 ; SHORT (0x5D3) 
+POP

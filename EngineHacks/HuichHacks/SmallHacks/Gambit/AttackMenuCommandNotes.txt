@@ -1,0 +1,269 @@
+AttackEffect starts menu and calls usability of each command. After that calls ForceMenuItemPanel, which calls SetupBattleWeaponData. After all that, all drawing routines for usable commands are called. Then, hover which calls UpdateMenuItemPanel which calls SetupBattleWeaponData.
+
+
+ForceMenuItemPanel
+  Determines equipped weapon by going through unit's inventory (GetUnitEquippedWeaponSlot). -1 if no item can be equipped.
+
+  0x1E6C6 stores equipped item slot. If >= 0, used by the panel proc at 0x1E50C to determine what arrows to display.
+  
+  Allocates text.
+  
+  Calls SetupBattleStructFromUnitAndWeapon with r0 = Unitstruct, r1 = -1.
+  
+  Copies panel stats from Right to Left.
+
+
+SetupBattleStructFromUnitAndWeapon, r0 = unitstruct, r1 = weapon slot of item to equip. Don't equip if negative.
+  Changes battlestats bitfield.
+  
+  Sets Left pointer to class data, equipped-item-and-uses-after-battle, weapon ability to 0. Weapon type to 0xFF.
+
+  Sets Right weapon triangle hit & damage effect to 0. Equips item if r1 != negative. Copies (CopyUnitToBattleStruct) unit to Right.
+  
+  Calls BattleSetupTerrainData for Right.
+  
+  Calls SetupBattleWeaponData with Right and received r1.
+  
+  Call FillPreBattleStats (CalcLoop) with r0 = Right, r1 = Left.
+  
+  Hard-coded checks. Compares equipped-item-and-uses-after-battle index against Runesword, Dummy 0x0. ItemWeapon effect against 0x3. Index against Stone.
+
+
+CopyUnitToBattleStruct
+  Copies unit to battlestruct. Recalcs stats, sets level, exp, current hp, prior to battle to level, exp and current hp. Unsets Stats Change bytes to 0. Unsets weapon exp multiplier of Left and Right to 0. Unsets weapon triangle hit & damage effect to 0. Unsets damage non-zero bool to 0. Unsets weaponbroke bool of Left and Right to 0. Sets experience gaind in this battle to 0 for both Right and Left.
+  
+
+SetupBattleWeaponData, r0 = battlestruct, r1 = equipped weapon slot. -1 means to use battlestruct +0x51.
+  If equipped item slot is -1, call GetUnitEquippedWeaponSlot to get it. Put result in r3.
+  
+  If unit's using ballista, overwrite r3 with 8.
+  
+  Set canCounter bool.
+  
+  Switch statement based on r3, having cases for 0-8. 0-4 are the same case. 5-8 each have unique cases.
+    0-4. Set inventory slot of equipped weapon to r3. Store item and uses of that slot in equipped-item-and-uses-after-battle
+    
+    5. Set inventory slot of equipped weapon to 0xFF. Store ItemGotButNotYet in equipped-item-and-uses-after-battle.
+    
+    6. Set inventory slot of equipped weapon to 0. Store ArenaData +0x1A in equipped-item-and-uses-after-battle. Unset canCounter.
+    
+    7. Set inventory slot of equipped weapon to 0. Store ArenaData +0x1C in equipped-item-and-uses-after-battle. Unset canCounter.
+    
+    8. Set inventory slot of equipped weapon to 0xFF. Store ballista at unit's location in equipped-item-and-uses-after-battle. Unset canCounter.
+  
+  Store equipped-item-and-uses-after-battle in equipped-item-and-uses-before-battle. Store equipped-item-and-uses-after-battle's attributes in +0x4C and weapon type in +0x50.
+  
+  Skips some stuff depending on battlestats bitfield. Seems to not skip on WeaponSelectMenuCommands Effect.
+    Check item ability against Magic Damage bit.
+    
+    Check if item can attack target.
+    
+    Check equipped weapon slot +0x51. If -1, unset equipped-item-and-uses-after-battle and canCounter (which means no decrement will happen).
+
+
+
+Plan: Create new attack command effect which calls a copy of ForceMenuItemPanel which calls SetupBattleStructFromUnitAndWeapon with r1 = 0x9 which calls SetupBattleWeaponData which has a different switch case for 9 to determine gambit and sets equipped item slot to -1. If not superfluous unset canCounter byte to prevent decrement and writeback of item.
+
+
+
+WeaponSelectMenuCommands. Usability routine, 0x22CA5.
+  Uses command index to grab item from unitstruct's inventory. Checks attributes to see if unit can wield it. Returns 0x3 if not. Also starts attack map.
+
+WeaponSelectMenuCommands. Drawing routine, 0x22D35.
+  Uses command index to grab item from unitstruct's inventory.
+  
+WeaponSelectMenuCommands. Hover routine, 0x22D85.
+  Calls UpdateMenuItemPanel with r0 = command index.
+
+  UpdateMenuItemPanel
+    Clears the three textstructs. Create new panel window, all args constant. if arg r0 <0 or >5, interpret as item. Otherwise grab item from equipped slot r0 or ItemGotButNotYet and put 8 in r5 as equipslot. Calls CopyUnitToBattleStruct with equipslot in r5.
+    
+    0x1E8B2 - 0x1E8E4 ballista, copy panel stats.
+    
+    Checks if unit can use weapon in equipped-item-and-uses-after-battle.
+    
+    Draws text. Draws equipped-item-and-uses-after-battle item icon.
+    
+  Fill movement & range maps with ones and zeroes respectively.
+
+
+
+Plan: create new usability command and draw command which just grabs gambit item if applicable. Make hover call UpdateMenuItemPanelAlt to call SetupBattleStructFromUnitAndWeapon with r1 = 9. Change Return_Range_Bitfield to accept slot 5 as gambit item.
+
+
+
+WeaponSelectMenuCommands. Effect routine, 0x22CF1
+  Equips item by command index, doesn't affect any battlestructs. puts slot 0 in actionData +0x12.
+  
+  Calls New_Weapon_Select, freespace. Uses weapon slot 0 to make target list.
+  
+  Calls NewTargetSelection. Ultimately calls SimulateBattle which will call SetupBattleWeaponData using actionData+0x12 as equipped item slot.
+
+
+
+Plan: Create new effect routine. mimic the old one. Don't equip item. Put 9 in actionData+0x12. Make variant of New_Weapon_Select which gets the correct item to make targetlist for.
+
+
+A-press after target.
+  ApplyUnitAction -> prNewActionApplication (freespace)
+    Uses ActionData +0x12 (which is 9!) to get equipped item slot by going over unit's inventory.
+    
+    If combat, calls ActionCombat -> BattleGenerateReal -> BattleGenerateRealInternal
+
+
+Plan: Change prNewActionApplication to use gambit item if ActionData +0x12 is 9. Change ActionCombat likewise. Hook in BattleGenerateRealInternal, 0x2A25C and check if ActionData +0x12 is 9, if so, call SetupBattleWeaponData with 9 in r1 instead of -1.
+
+
+
+
+
+
+If battlestruct +0x52 (canCounter bool) is unset weapon uses won't decrease.
+
+
+
+
+Instances that write to weapon-uses-before-battle:
+
+  - SetupBattleWeaponData, 0x2A850.
+  
+Instances that write to canCounter byte:
+
+  - SetupBattleWeaponData, 0x2A760. Set.
+  
+  - SetupBattleWeaponData, 0x2A82A. Unset. Ballista.
+  
+  - SetupBattleBallistaWeaponData, 0x2A94E. Unset. Ballista.
+  
+
+
+
+
+
+
+Ballista Attack menu:
+
+Usability, 0x24A29.
+
+  Might be able to copy some of this.
+
+Effect, FreeSpace.
+
+  0x22B68 skips over AttackCommandEffect_DrawFace, but calls 0x8022B8C instead, which is similar, but starts menu 0x59D1A8 instead.
+
+  SetupBattleWeaponData
+  
+    0x2A756 set equipped weapon slot to 0x8 if ballista.
+    
+    0x2A80C put 0xFF in battle+0x51 inventory slot of equipped weapon. Also sets equipped item and uses after battle to ballista item. Sets can counter to 0.
+
+
+Ballista item select menu, 0x59D1A8, command 0, 0x59C914:
+
+Usability, 0x8023919
+
+  Not much happening here.
+  
+Drawing, 0x8023951
+
+  Not much happening here.
+
+Hover, FillBallistaRange 0x80239CD
+
+  UpdateMenuItemPanel
+
+    0x1E7B8 compares item itself against number of item slots, ends up branching to 0x1E7E0.
+    
+    0x1E8A4 calls SetupBattleStructFromUnitAndWeapon, using 0x8 for weapon slot arg.
+
+    0x1E8B0, Copy atk, hit, crit, avoid from right to left if equipped slot 0x8.
+
+Effect
+
+  0x239AA store slot 0x8 in actionData +0x12 (itemSlotIndex).
+
+  0x239B0 also tries to add traps to target list.
+  
+  CurrenRound_ComputeWeaponEffects decreases weapon-uses-after-battle.
+
+
+TargetSelection_HandleSelectInput, checks for A, B and R.
+
+
+gTargetArray, 0x203DDEC consists of entries:
+  +0x0, byte, target's X
+  +0x1, byte, target's Y
+  +0x2, byte, target's deployment byte
+  +0x3, byte, ???
+  +0x4, poin, next target array entry.
+  +0x8, copy of above pointer?
+
+
+NewSelectionStruct used by ballista
+
+  0x22EE8 checks if slot in actionData +0x12 (itemSlotIndex) is 0x8.
+  
+
+
+
+
+
+
+
+
+Regular Attack menu:
+
+
+Hover routine, 0x22D85.
+
+  UpdateMenuItemPanel.
+
+    0x1E7B8, compares against number of item slots. Slot 0x5 is ItemGotButNotYet. if menu command is > 0x5, item will be menucommand index? and menucommand index will be replaced by 0x4 (0x8 post-shift).
+
+    0x1E7F0 checks if itemtype is > 9 (unconventional weapons).
+
+    0x1E8A4 calls SetupBattleStructFromUnitAndWeapon, which uses unit and weapon slot.
+
+
+    SetupBattleStructFromUnitAndWeapon, also called by ForceMenuItemPanel.
+    
+      0x2A43E compares weapon slot to 0x4, if higher, don't equip item. ForceMenuItemPanel set this to 0xFF.
+    
+    
+      SetupBattleWeaponData
+      args:
+        r0: battlestruct.
+        r1: equipped weapon slot. -1 means to use battlestruct +0x51.
+      
+        0x2A778 has addresses for weapon slot 0x0 through 0x8. 0x5 uses ItemGotButNotYet and puts 0xFF in battlestruct +0x51 (inventory slot of equipped weapon). Converges and puts equipped item and uses after battle (+0x48). 0x2A80C for ballista.
+      
+        0x2A7C0 sets weapon and uses after battle.
+      
+        0x2A850 sets weapon and uses before battle, based on weapon and uses after battle.
+
+  Show_Red_Squares -> All_Weapons_One_Square -> Return_Range_Bitfield, all in FreeSpace.
+  
+    Early on, loads item from inventory + commandindex. CHANGE.
+
+
+Usability routine, 0x22CA5.
+  
+  0x22CAC loads item from inventory + commandindex. CHANGE.
+  
+Drawing routine, 0x22D35.
+  
+  0x22D46 loads item from inventory + commandindex. CHANGE.
+
+Effect routine, 0x22CF1
+
+  0x22CFE uses command index to equip item.
+  
+  New_Weapon_Select, FreeSpace.
+    
+    Toward the end, uses top item to make target list for weapon.
+  
+  0x22EC8, compares actionstruct +0x12, equipped weapon slot to ballista, 0x8
+  
+  SetupBattleWeaponData, again.
+  
+  0x2A8D8, sets Equipped item and uses after battle to 0.

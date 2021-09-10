@@ -1,0 +1,17 @@
+Map Sprite            Author
+
+Supplier              N426
+MercenaryF            Agro
+Priest                flasuban
+Cleric                flasuban
+MonkF                 Teraspark
+-HatlessMageM          Pikmin1211
+ShamanF               IS
+SoldierF              Rexacuse, Peerless, Alusq, WarPath
+SoldierM              Rexacuse, Peerless, Alusq
+FighterF              Alusq
+FighterM              Alusq
+ArcherM               DerTheVaporeon
+ArcherF               DerTheVaporeon
+CavalierM             SALVAGED
+CavalierF             SALVAGED, Pikmin

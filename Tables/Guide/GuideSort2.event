@@ -1,0 +1,14 @@
+ALIGN 4
+GuideSort2TableLABEL:
+FILL 9*4
+PUSH
+ORG GuideSort2TableLABEL + 0*4 ; SHORT (0x5C0) (0) 
+ORG GuideSort2TableLABEL + 1*4 ; SHORT (0x5C1) (0) 
+ORG GuideSort2TableLABEL + 2*4 ; SHORT (0x5C2) (0) 
+ORG GuideSort2TableLABEL + 3*4 ; SHORT (0x5C3) (0) 
+ORG GuideSort2TableLABEL + 4*4 ; SHORT (0x5C4) (0) 
+ORG GuideSort2TableLABEL + 5*4 ; SHORT (0x5C5) (0) 
+ORG GuideSort2TableLABEL + 6*4 ; SHORT (0x5C6) (0) 
+ORG GuideSort2TableLABEL + 7*4 ; SHORT (0x5C7) (0) 
+ORG GuideSort2TableLABEL + 8*4 ; SHORT (0x5C8) (0) 
+POP

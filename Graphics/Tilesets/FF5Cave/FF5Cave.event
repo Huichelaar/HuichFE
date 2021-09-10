@@ -1,0 +1,113 @@
+ALIGN 4
+FF5CaveObjects:
+#incbin "FF5CaveObjects.dmp"
+ALIGN 4
+FF5CavePalette:
+#incbin "FF5CavePalette.dmp"
+ALIGN 4
+FF5CaveConfig:
+#incbin "FF5CaveConfig.mapchip_config.dmp"
+
+// Anims
+ALIGN 4
+FF5CaveAnim0:
+#incbin "FF5CaveAnim/FF5CaveAnim0.dmp"
+ALIGN 4
+FF5CaveAnim1:
+#incbin "FF5CaveAnim/FF5CaveAnim1.dmp"
+ALIGN 4
+FF5CaveAnim2:
+#incbin "FF5CaveAnim/FF5CaveAnim2.dmp"
+ALIGN 4
+FF5CaveAnim3:
+#incbin "FF5CaveAnim/FF5CaveAnim3.dmp"
+ALIGN 4
+FF5CaveAnim4:
+#incbin "FF5CaveAnim/FF5CaveAnim4.dmp"
+ALIGN 4
+FF5CaveAnim5:
+#incbin "FF5CaveAnim/FF5CaveAnim5.dmp"
+ALIGN 4
+FF5CaveAnim6:
+#incbin "FF5CaveAnim/FF5CaveAnim6.dmp"
+ALIGN 4
+FF5CaveAnim7:
+#incbin "FF5CaveAnim/FF5CaveAnim7.dmp"
+ALIGN 4
+FF5CaveAnim8:
+#incbin "FF5CaveAnim/FF5CaveAnim8.dmp"
+ALIGN 4
+FF5CaveAnim9:
+#incbin "FF5CaveAnim/FF5CaveAnim9.dmp"
+ALIGN 4
+FF5CaveAnimA:
+#incbin "FF5CaveAnim/FF5CaveAnimA.dmp"
+ALIGN 4
+FF5CaveAnimB:
+#incbin "FF5CaveAnim/FF5CaveAnimB.dmp"
+ALIGN 4
+FF5CaveAnimC:
+#incbin "FF5CaveAnim/FF5CaveAnimC.dmp"
+ALIGN 4
+FF5CaveAnimD:
+#incbin "FF5CaveAnim/FF5CaveAnimD.dmp"
+ALIGN 4
+FF5CaveAnimE:
+#incbin "FF5CaveAnim/FF5CaveAnimE.dmp"
+ALIGN 4
+FF5CaveAnimF:
+#incbin "FF5CaveAnim/FF5CaveAnimF.dmp"
+
+ALIGN 4
+FF5CaveAnimStruct:
+SHORT 0x1C
+SHORT 0x1000
+POIN  FF5CaveAnim0
+SHORT 0x1C
+SHORT 0x1000
+POIN  FF5CaveAnim1
+SHORT 0x1C
+SHORT 0x1000
+POIN  FF5CaveAnim2
+SHORT 0x1C
+SHORT 0x1000
+POIN  FF5CaveAnim3
+SHORT 0x1C
+SHORT 0x1000
+POIN  FF5CaveAnim4
+SHORT 0x1C
+SHORT 0x1000
+POIN  FF5CaveAnim5
+SHORT 0x1C
+SHORT 0x1000
+POIN  FF5CaveAnim6
+SHORT 0x1C
+SHORT 0x1000
+POIN  FF5CaveAnim7
+SHORT 0x1C
+SHORT 0x1000
+POIN  FF5CaveAnim8
+SHORT 0x1C
+SHORT 0x1000
+POIN  FF5CaveAnim9
+SHORT 0x1C
+SHORT 0x1000
+POIN  FF5CaveAnimA
+SHORT 0x1C
+SHORT 0x1000
+POIN  FF5CaveAnimB
+SHORT 0x1C
+SHORT 0x1000
+POIN  FF5CaveAnimC
+SHORT 0x1C
+SHORT 0x1000
+POIN  FF5CaveAnimD
+SHORT 0x1C
+SHORT 0x1000
+POIN  FF5CaveAnimE
+SHORT 0x1C
+SHORT 0x1000
+POIN  FF5CaveAnimF
+SHORT 0x0
+SHORT 0x0
+WORD  0x0

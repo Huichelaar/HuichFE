@@ -1,0 +1,82 @@
+INLINE IBArray,Name,Statboster Text Routine Pointer
+0,0x0,0x802F90C
+1,Heal,0x802F90C
+2,Mend,0x802F90C
+3,Recover,0x802F90C
+4,Physic,0x802F90C
+5,Fortify,0x802F90C
+6,Restore,0x802F90C
+7,Silence Staff,0x802F90C
+8,Sleep Staff,0x802F90C
+9,Berserk Staff,0x802F90C
+10,Warp Staff,0x802F90C
+11,Rescue Staff,0x802F90C
+12,Torch Staff,0x802F90C
+13,Hammerne,0x802F90C
+14,Unlock Staff,0x802F90C
+15,Barrier Staff,0x802F90C
+16,Angelic Robe,0x802f83a
+17,Energy Ring,0x802f83a
+18,Secret Book,0x802f83a
+19,Speedwings,0x802f83a
+20,Goddess Icon,0x802f83a
+21,Dragonshield,0x802f83a
+22,Talisman,0x802f83a
+23,Boots,0x802f83a
+24,Body Ring,0x802f83a
+25,Hero Crest,0x802F90C
+26,Knight Crest,0x802F90C
+27,Orion's Bolt,0x802F90C
+28,Elysian Whip,0x802F90C
+29,Guiding Ring,0x802F90C
+30,Chest Key,0x802F90C
+31,Door Key,0x802F90C
+32,Lockpick,0x802F90C
+33,Vulnerary,0x802F90C
+34,Elixir,0x802F90C
+35,Pure Water,0x802F90C
+36,Antidote,0x802F90C
+37,Torch Item,0x802F90C
+38,Chest Key (master key will replace this),0x802F90C
+39,Mine,0x802F90C
+40,Light Rune,0x802F90C
+41,Filla's Might,0x802F90C
+42,Ninis' Grace,0x802F90C
+43,Thor's Ire,0x802F90C
+44,Set's Litany,0x802F90C
+45,Master Seal,0x802F90C
+46,Metis's Tome,0x802F824
+47,Heaven Seal,0x802F90C
+48,Ocean Seal,0x802F90C
+49,Lunar Brace,0x802F90C
+50,Solar Brace,0x802F90C
+51,Vulnerary (Might Vulnerary will replace this),0x802F90C
+52,Other Vulnerary (Custom promotion items will replace this),0x802F90C
+53,Another Vulnerary (can be replaced with custom item effect),0x802F90C
+54,Juna Fruit,0x802F90C
+55,Latona,0x802F90C
+56,Multi-Skill Scroll,MultiScrollPrepEffect|IsPointer
+57,0x39,0x802F90C
+58,0x3A,0x802F90C
+59,0x3B,0x802F90C
+60,0x3C,0x802F90C
+61,0x3D,0x802F90C
+62,0x3E,0x802F90C
+63,0x3F,0x802F90C
+64,0x40,0x802F90C
+65,0x41,0x802F90C
+66,0x42,0x802F90C
+67,0x43,0x802F90C
+68,0x44,0x802F90C
+69,0x45,0x802F90C
+70,0x46,0x802F90C
+71,0x47,0x802F90C
+72,0x48,0x802F90C
+73,0x49,0x802F90C
+74,0x4a,0x802F90C
+75,0x4b,0x802F90C
+76,0x4c,0x802F90C
+77,0x4d,0x802F90C
+78,0x4e,0x802F90C
+79,0x4f,0x802F90C
+80,0x50,0x802F90C

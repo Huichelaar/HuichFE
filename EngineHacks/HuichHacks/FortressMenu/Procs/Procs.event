@@ -1,0 +1,125 @@
+// Procs and proc routines
+
+ALIGN 4
+Proc_WorldMap:
+#include "WorldMap.event"
+  ALIGN 4
+  Proc_FortMenu1:
+  #include "FortMenu1/FortMenu1.event"
+    ALIGN 4
+    FortMenu1Constructor:
+    #include "FortMenu1/FortMenu1Constructor.lyn.event"
+    ALIGN 4
+    LoadRelief:
+    #include "FortMenu1/LoadRelief.lyn.event"
+    ALIGN 4
+    LoadMenu:
+    #include "FortMenu1/LoadMenu.lyn.event"
+    ALIGN 4
+    InitMenu:
+    #include "FortMenu1/InitMenu.lyn.event"
+    ALIGN 4
+    NewFortMenu2BG0BG1:
+    #include "FortMenu1/NewFortMenu2BG0BG1.lyn.event"
+    ALIGN 4
+    Proc_FortMenu2:
+    #include "FortMenu1/FortMenu2/FortMenu2.event"
+    ALIGN 4
+    Proc_FortMenu2HelpText:
+    #include "FortMenu1/FortMenu2/FortMenu2HelpText.event"
+    ALIGN 4
+    Proc_FortMenu2Idle:
+    #include "FortMenu1/FortMenu2/FortMenu2Idle.event"
+      ALIGN 4
+      FortMenu2Idle:
+      #include "FortMenu1/FortMenu2/FortMenu2Idle.lyn.event"
+      ALIGN 4
+      FortMenu2Directions:
+      #include "FortMenu1/FortMenu2/FortMenu2Directions.lyn.event"
+    ALIGN 4
+    Proc_FortMenu1HelpText:
+    #include "FortMenu1/FortMenu1HelpText.event"
+    ALIGN 4
+    Proc_DrawFortMenu2:
+    #include "FortMenu1/DrawFortMenu2/DrawFortMenu2.event"
+      ALIGN 4
+      InitDrawFortMenu2:
+      #include "FortMenu1/DrawFortMenu2/InitDrawFortMenu2.lyn.event"
+      ALIGN 4
+      DrawFortsBlock:
+      #include "FortMenu1/DrawFortMenu2/DrawFortsBlock.lyn.event"
+      ALIGN 4
+      LoadArrows:
+      #include "FortMenu1/DrawFortMenu2/LoadArrows.lyn.event"
+      ALIGN 4
+      InitDrawEntities:
+      #include "FortMenu1/DrawFortMenu2/InitDrawEntities.lyn.event"
+      ALIGN 4
+      DrawEntityLeft:
+      #include "FortMenu1/DrawFortMenu2/DrawEntityLeft.lyn.event"
+        ALIGN 4
+        DrawMiniMug:
+        #include "FortMenu1/DrawFortMenu2/DrawMiniMug.lyn.event"
+        ALIGN 4
+        DrawAffinity:
+        #include "FortMenu1/DrawFortMenu2/DrawAffinity.lyn.event"
+      ALIGN 4
+      DrawIdle:
+      #include "FortMenu1/DrawFortMenu2/DrawIdle.lyn.event"
+        ALIGN 4
+        DrawIdleChange:
+        #include "FortMenu1/DrawFortMenu2/DrawIdleChange.lyn.event"
+        ALIGN 4
+        ClearEntity:
+        #include "FortMenu1/DrawFortMenu2/ClearEntity.lyn.event"
+        ALIGN 4
+        DrawMatPreview:
+        #include "FortMenu1/DrawFortMenu2/DrawMatPreview.lyn.event"
+          ALIGN 4
+          DrawMatPreviewComponent:
+          #include "FortMenu1/DrawFortMenu2/DrawMatPreviewComponent.lyn.event"
+        ALIGN 4
+        ClearMatPreview:
+        #include "FortMenu1/DrawFortMenu2/ClearMatPreview.lyn.event"
+      ALIGN 4
+      DrawArrows:
+      #include "FortMenu1/DrawFortMenu2/DrawArrows.lyn.event"
+        ALIGN 4
+        DrawArrowsChange:
+        #include "FortMenu1/DrawFortMenu2/DrawArrowsChange.lyn.event"
+      ALIGN 4
+      DrawEffectivenessArrows:
+      #include "FortMenu1/DrawFortMenu2/DrawEffectivenessArrows.lyn.event"
+      ALIGN 4
+      DrawEntityRight:
+      #include "FortMenu1/DrawFortMenu2/DrawEntityRight.lyn.event"
+        ALIGN 4
+        DrawEntityRightGather:
+        #include "FortMenu1/DrawFortMenu2/DrawEntityRightGather.lyn.event"
+        ALIGN 4
+        DrawEntityRightUpgrade:
+        #include "FortMenu1/DrawFortMenu2/DrawEntityRightUpgrade.lyn.event"
+        ALIGN 4
+        DrawEntityRightChange:
+        #include "FortMenu1/DrawFortMenu2/DrawEntityRightChange.lyn.event"
+      ALIGN 4
+      SetRightItems:
+      #include "FortMenu1/DrawFortMenu2/SetRightItems.lyn.event"
+      ALIGN 4
+      Proc_BGScroller:
+      #include "FortMenu1/DrawFortMenu2/BGScroller/BGScroller.event"
+        ALIGN 4
+        BGScroll:
+        #include "FortMenu1/DrawFortMenu2/BGScroller/BGScroll.lyn.event"
+    ALIGN 4
+    Proc_DrawSprites:
+    #include "FortMenu1/DrawSprites/DrawSprites.event"
+      ALIGN 4
+      InitSprites:
+      #include "FortMenu1/DrawSprites/InitSprites.lyn.event"
+      ALIGN 4
+      LoopSprites:
+      #include "FortMenu1/DrawSprites/LoopSprites.lyn.event"
+      ALIGN 4
+      LabourLumber:
+      #include "FortMenu1/DrawSprites/LabourLumber.lyn.event"

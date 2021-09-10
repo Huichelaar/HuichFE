@@ -1,0 +1,232 @@
+//Procs
+
+
+// BootupLogos
+ALIGN 4
+Procs_BootupLogos:
+#include "BootupLogos/BootupLogos.event"
+  ALIGN 4
+  FadeInHuich:
+  #include "BootupLogos/FadeInHuich.lyn.event"
+  ALIGN 4
+  FadeOutHuich:
+  #include "BootupLogos/FadeOutHuich.lyn.event"
+
+
+// GameIntro
+ALIGN 4
+Procs_GameIntro:
+#include "GameIntro/GameIntro.event"
+  ALIGN 4
+  Init_Scene1:
+  #include "GameIntro/Scene1/Init_Scene1.lyn.event"
+  ALIGN 4
+  Init_Scene2:
+  #include "GameIntro/Scene2/Init_Scene2.lyn.event"
+  ALIGN 4
+  Init_Scene3:
+  #include "GameIntro/Scene3/Init_Scene3.lyn.event"
+  ALIGN 4
+  End_Scene3:
+  #include "GameIntro/Scene3/End_Scene3.lyn.event"
+  ALIGN 4
+  Init_Scene4:
+  #include "GameIntro/Scene4/Init_Scene4.lyn.event"
+  ALIGN 4
+  Scene4_Sinusoid:
+  #include "GameIntro/Scene4/Scene4_Sinusoid.lyn.event"
+  ALIGN 4
+  Init_Scene5:
+  #include "GameIntro/Scene5/Init_Scene5.lyn.event"
+  ALIGN 4
+  Scene5_Blend:
+  #include "GameIntro/Scene5/Scene5_Blend.lyn.event"
+  ALIGN 4
+  Init_Scene6:
+  #include "GameIntro/Scene6/Init_Scene6.lyn.event"
+  ALIGN 4
+  End_Cutscene:
+  #include "GameIntro/End_Cutscene.lyn.event"
+
+
+// TitleScreen
+ALIGN 4
+Procs_TitleScreen:
+#include "TitleScreen/TitleScreen.event"
+  ALIGN 4
+  Init_TitleScreen:
+  #include "TitleScreen/Init_TitleScreen.lyn.event"
+  ALIGN 4
+  Init_Scene7:
+  #include "TitleScreen/Init_Scene7.lyn.event"
+  ALIGN 4
+  LCDIO_Scene7:
+  #include "TitleScreen/LCDIO_Scene7.lyn.event"
+  ALIGN 4
+  Init_Skip:
+  #include "TitleScreen/Init_Skip.lyn.event"
+  ALIGN 4
+  Init_Logo:
+  #include "TitleScreen/Init_Logo.lyn.event"
+  ALIGN 4
+  End_TitleScreen:
+  #include "TitleScreen/End_TitleScreen.lyn.event"
+
+
+// DrawTextSprites
+ALIGN 4
+Procs_DrawTextSprites:
+#include "DrawTextSprites/DrawTextSprites.event"
+  ALIGN 4
+  Init_DTS:
+  #include "DrawTextSprites/Init_DTS.lyn.event"
+  ALIGN 4
+  Loop_DTS:
+  #include "DrawTextSprites/Loop_DTS.lyn.event"
+  
+
+// Judge
+ALIGN 4
+Procs_Judge:
+#include "Judge/Judge.event"
+  ALIGN 4
+  Init_Judge:
+  #include "Judge/Init_Judge.lyn.event"
+  ALIGN 4
+  Loop_Judge:
+  #include "Judge/Loop_Judge.lyn.event"
+  ALIGN 4
+  Init_Slam:
+  #include "Judge/Init_Slam.lyn.event"
+  ALIGN 4
+  Loop_Slam:
+  #include "Judge/Loop_Slam.lyn.event"
+
+
+// Gem
+ALIGN 4
+Procs_Gem:
+#include "Gem/Gem.event"
+  ALIGN 4
+  Init_Spiral:
+  #include "Gem/Init_Spiral.lyn.event"
+  ALIGN 4
+  Loop_Move:
+  #include "Gem/Loop_Move.lyn.event"
+  ALIGN 4
+  End_Segment:
+  #include "Gem/End_Segment.lyn.event"
+  ALIGN 4
+  Init_Line:
+  #include "Gem/Init_Line.lyn.event"
+  ALIGN 4
+  Init_Stationary1:
+  #include "Gem/Init_Stationary1.lyn.event"
+  ALIGN 4
+  Init_OBJWindow:
+  #include "Gem/Init_OBJWindow.lyn.event"
+  ALIGN 4
+  Init_Stationary2:
+  #include "Gem/Init_Stationary2.lyn.event"
+  ALIGN 4
+  Init_Stationary3:
+  #include "Gem/Init_Stationary3.lyn.event"
+  ALIGN 4
+  Init_Circle:
+  #include "Gem/Init_Circle.lyn.event"
+
+
+// Whirlpool
+ALIGN 4
+Procs_Whirlpool:
+#include "Whirlpool/Whirlpool.event"
+  ALIGN 4
+  Init_Whirlpool:
+  #include "Whirlpool/Init_Whirlpool.lyn.event"
+  ALIGN 4
+  Loop_WhirlpoolScene2:
+  #include "Whirlpool/Loop_WhirlpoolScene2.lyn.event"
+  ALIGN 4
+  Loop_WhirlpoolScene5:
+  #include "Whirlpool/Loop_WhirlpoolScene5.lyn.event"
+  ALIGN 4
+  Loop_WhirlpoolScene7:
+  #include "Whirlpool/Loop_WhirlpoolScene7.lyn.event"
+
+
+// WMSlider
+ALIGN 4
+Procs_WMSlider:
+#include "WMSlider/WMSlider.event"
+  ALIGN 4
+  Init_WMSlider1:
+  #include "WMSlider/Init_WMSlider1.lyn.event"
+  ALIGN 4
+  Prep_WMSlider1:
+  #include "WMSlider/Prep_WMSlider1.lyn.event"
+  ALIGN 4
+  Loop_WMSlider1:
+  #include "WMSlider/Loop_WMSlider1.lyn.event"
+    ALIGN 4
+    WMSliderBlend:
+    #include "WMSlider/WMSliderBlend.lyn.event"
+  ALIGN 4
+  End_WMSlider:
+  #include "WMSlider/End_WMSlider.lyn.event"
+  ALIGN 4
+  Prep_WMSlider2:
+  #include "WMSlider/Prep_WMSlider2.lyn.event"
+  ALIGN 4
+  Init_WMSlider2:
+  #include "WMSlider/Init_WMSlider2.lyn.event"
+  ALIGN 4
+  Loop_WMSlider2:
+  #include "WMSlider/Loop_WMSlider2.lyn.event"
+
+
+// Moon
+ALIGN 4
+Procs_Moon:
+#include "Moon/Moon.event"
+  ALIGN 4
+  Init_MoonBlend1:
+  #include "Moon/Init_MoonBlend1.lyn.event"
+  ALIGN 4
+  Init_MoonBlend2:
+  #include "Moon/Init_MoonBlend2.lyn.event"
+  ALIGN 4
+  Moon_Sinusoid:
+  #include "Moon/Moon_Sinusoid.lyn.event"
+  ALIGN 4
+  End_Moon:
+  #include "Moon/End_Moon.lyn.event"
+
+
+// Clouds
+ALIGN 4
+Procs_Clouds:
+#include "Clouds/Clouds.event"
+  ALIGN 4
+  Init_Clouds:
+  #include "Clouds/Init_Clouds.lyn.event"
+  ALIGN 4
+  Loop_Clouds1:
+  #include "Clouds/Loop_Clouds1.lyn.event"
+  ALIGN 4
+  Loop_Clouds2:
+  #include "Clouds/Loop_Clouds2.lyn.event"
+  ALIGN 4
+  End_Clouds:
+  #include "Clouds/End_Clouds.lyn.event"
+
+
+// Subtitle
+ALIGN 4
+Procs_Subtitle:
+#include "Subtitle/Subtitle.event"
+  ALIGN 4
+  Init_Subtitle:
+  #include "Subtitle/Init_Subtitle.lyn.event"
+  ALIGN 4
+  Loop_Subtitle:
+  #include "Subtitle/Loop_Subtitle.lyn.event"

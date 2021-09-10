@@ -1,0 +1,25 @@
+PUSH
+
+  // Make AI1 byte 0x7 not attack char 0x2 instead of 0xD.
+  // I'm using this AI in Ch1 to have enemies not target Simon.
+  #define DontAttackSimon 0x7
+  ORG 0x5A8A00
+  BYTE 0x2
+  
+  // Make AI2 byte 0x1 not move toward char 0x2 instead of 0x0.
+  // I'm using this AI in Ch1 to have enemies not target Simon.
+  #define DontPursueSimon 0x1
+  ORG 0x5A817A
+  BYTE 0x2
+  
+  // Make AI2 byte 0x10 move to [13,14] if not in area [12,14]-[13,19].
+  // If in area [12,14]-[13,19], CHAI to AI1 0x6 and AI2 0xC, escape if possible.
+  // I'm using this AI for NPC Simon in Ch2.
+  ORG 0x5A90C0
+  BYTE 13 14 0 0 12 14 13 19
+  ORG 0x5A9119
+  BYTE 0x6 0xC
+
+  #define IgnoreSimonAI [DontAttackSimon DontPursueSimon 0x0 0x0]
+  
+POP

@@ -1,0 +1,3 @@
+PROC_YIELD
+PROC_LOOP_ROUTINE(Loop_Sinusoid|1)           // Manipulates wavyness of the screen.
+PROC_END

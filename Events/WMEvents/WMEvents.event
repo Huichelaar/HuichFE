@@ -1,0 +1,172 @@
+// World Map Events
+// TODO clean up directory
+PUSH
+// Get rid of some Save Menu Chapter Title hardcoding, w/thanks to gamma.
+// A8B10: seems to skip determining chapter from WM if current chapter <= 1 or = 0x38.
+ORG 0xA8B10
+SHORT 0x46C0 0x46C0 0x46C0 0x46C0
+
+// Further Save Menu Chapter Title hardcoding. Notes:
+/*
+A8B3A, for chapter 6. Seems to set chapter to 0x38, castle frelia if some flag is set.
+A8B50, for chapter 1. A8B54, for chapter 10. A8B58, for chapter 23. These three seem to skip:
+  Check if ChapterData +0x4A bit 2 is set and 1 & 3 unset, if so, skip:
+    Check if PrepScreen flag is unset, if so, skip:
+      Run Worldmap_GetNextChapterID and store result in ChapterID, 202BCBE.
+      This one seems to be the main culprit in chapter title being weird during save.
+
+
+080BA336
+*/
+ORG 0xA8B7C
+SHORT 0x46C0
+POP
+
+
+// Called by Act3 pre-events to determine optional and main destinations to prepare.
+ALIGN 4
+WMAct3DestinationsEvent:
+#include "WMAct3Destinations.event"
+
+ALIGN 4
+WM0PreEvent:
+#include "WM0Pre.event"
+ALIGN 4
+WM1PreEvent:
+#include "WM1Pre.event"
+ALIGN 4
+WM2PreEvent:
+#include "WM2Pre.event"
+ALIGN 4
+WM2PostEvent:
+#include "WM2Post.event"
+ALIGN 4
+WM3PreEvent:
+//#ifdef DEBUG
+  //#include "DebugPre.event"
+//#else
+  #include "WM3Pre.event"
+//#endif
+ALIGN 4
+WM3PostEvent:
+#include "WM3Post.event"
+ALIGN 4
+WM4PreEvent:
+#include "WM4Pre.event"
+ALIGN 4
+WM4PostEvent:
+#include "WM4Post.event"
+ALIGN 4
+WM5PreEvent:
+#include "WM5Pre.event"
+ALIGN 4
+WM5PostEvent:
+#include "WM5Post.event"
+ALIGN 4
+WM6PreEvent:
+#include "WM6Pre.event"
+ALIGN 4
+WM6PostEvent:
+#include "WM6Post.event"
+ALIGN 4
+WM7PreEvent:
+#include "WM7Pre.event"
+ALIGN 4
+WM7PostEvent:
+#include "WM7Post.event"
+ALIGN 4
+WM8PreEvent:
+#include "WM8Pre.event"
+ALIGN 4
+WM8PostEvent:
+#include "WM8Post.event"
+ALIGN 4
+WM9PreEvent:
+#include "WM9Pre.event"
+ALIGN 4
+WM9PostEvent:
+#include "WM9Post.event"
+ALIGN 4
+WM10PreEvent:
+#include "WM10Pre.event"
+ALIGN 4
+WM10PostEvent:
+#include "WM10Post.event"
+ALIGN 4
+WM11PreEvent:
+#include "WM11Pre.event"
+ALIGN 4
+WM11PostEvent:
+#include "WM11Post.event"
+ALIGN 4
+WM12PreEvent:
+#include "WM12Pre.event"
+ALIGN 4
+WM12PostEvent:
+#include "WM12Post.event"
+ALIGN 4
+WM13PreEvent:
+#include "WM13Pre.event"
+ALIGN 4
+WM13PostEvent:
+#include "WM13Post.event"
+ALIGN 4
+WM14PreEvent:
+#include "WM14Pre.event"
+ALIGN 4
+WM14PostEvent:
+#include "WM14Post.event"
+ALIGN 4
+WM15PreEvent:
+#include "WM15Pre.event"
+ALIGN 4
+WM15PostEvent:
+#include "WM15Post.event"
+ALIGN 4
+WM16PreEvent:
+#include "WM16Pre.event"
+ALIGN 4
+WM16PostEvent:
+#include "WM16Post.event"
+ALIGN 4
+WM17PreEvent:
+#include "WM17Pre.event"
+ALIGN 4
+WM17PostEvent:
+#include "WM17Post.event"
+ALIGN 4
+WM18PreEvent:
+#include "WM18Pre.event"
+ALIGN 4
+WM18PostEvent:
+#include "WM18Post.event"
+ALIGN 4
+WM19PreEvent:
+#include "WM19Pre.event"
+ALIGN 4
+WM19PostEvent:
+#include "WM19Post.event"
+ALIGN 4
+WM20PreEvent:
+#include "WM20Pre.event"
+ALIGN 4
+WM20PostEvent:
+#include "WM20Post.event"
+ALIGN 4
+WM21PreEvent:
+#include "WM21Pre.event"
+ALIGN 4
+WM21PostEvent:
+#include "WM21Post.event"
+ALIGN 4
+WM22PreEvent:
+#include "WM22Pre.event"
+ALIGN 4
+WM22PostEvent:
+#include "WM22Post.event"
+ALIGN 4
+WM23PreEvent:
+#include "WM23Pre.event"
+ALIGN 4
+WM23PostEvent:
+#include "WM23Post.event"

@@ -1,0 +1,108 @@
+0x8070F62, updates BG2 during quake.
+
+0x8053A7C, checks if arena during start of quake.
+0x805362A, checks if arena during quake (and scroll?)
+
+0x8053552, scroll?
+0x80535C2, scroll?
+
+0x8055C3E, right before fading out of battle anim.
+
+0x8053B28, puts plateau in buffer, to be flushed to OBJ VRAM
+
+
+0x8055F70, startbattle, calls glowing rotating floor, r0 = 0x0
+0x8056262, endbattle, calls glowing rotating floor, r0 = 0x1
+
+
+
+
+changing 0x8053A7C, 0x8055F70 and 0x8056262 seems to work.
+
+
+080538DA, changes BG2 position.
+
+Calls to 080559F0 update left or right unit's AIS (and some other AIS) X and Y
+
+
+
+AnimDistance:
+  0: Melee
+  1: Ranged 2-3
+  2: Ranged 4+
+  3: Solo (fortify staff & such)
+
+AnimType:
+  0: Anim without BG
+  1: map anim
+  2: Solo (not returned by GetBattleAnimType)
+  3: Anim with bg
+
+
+08053618:
+
+
+0           0
+0           0
+0           0
+-2          -2
+-5          -3
+-10         -5
+-16         -6
+-22         -6
+-27         -5
+-30         -3
+-32         -2
+-32         0
+
+-32         0
+
+-32         0
+-32         0
+-32         0
+-30         +2
+-27         +3
+-22         +5
+-16         +6
+-10         +6
+-5          +5
+-2          +3
+0           +2
+0           0
+
+
+
+
+
+
+0201FADC as used by 0805AA68
+
++0x0 signed short, battle terrain ID
++0x2 signed short, left terrain paletteslot
++0x4 signed short, top TID offset
++0x6 signed short, battle terrain ID 2
++0x8 signed short, right terrain paletteslot
++0xA signed short, bottom TID offset
++0xC signed short, distance?
++0xE signed short, 
++0x1C word, TID correction?
++0x20 Poin, terrain Tilebuffer
+
+
+
+Procs_efxQuake
+
++0x29, byte, something, init 0.
++0x2C, sshort, timer, used with quake.
++0x34, short, init 0.
++0x3C, short, init 0.
++0x44, word, quake type.
++0x5C, word, main linked AIS.
++0x60, word, another AIS.
+
+
+FadeInPalette.
+  r0: overall palette start.
+  r1: Start palette.
+  r2: Number of palettes to fade.
+  r3: fade coefficient.

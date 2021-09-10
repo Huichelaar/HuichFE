@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="2020.12.18" orientation="orthogonal" renderorder="right-down" width="15" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="1">
+ <properties>
+  <property name="Main" value=""/>
+ </properties>
+ <tileset firstgid="1" name="Standard Green Raw Tiles" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="../Graphics/Tilesets/RevampedFields/Standard Green Raw Tiles.png" trans="ffffff" width="512" height="512"/>
+ </tileset>
+ <layer id="1" name="Main" width="15" height="10">
+  <properties>
+   <property name="Main" value=""/>
+  </properties>
+  <data>
+   <tile gid="932"/>
+   <tile gid="933"/>
+   <tile gid="934"/>
+   <tile gid="540"/>
+   <tile gid="541"/>
+   <tile gid="542"/>
+   <tile gid="684"/>
+   <tile gid="401"/>
+   <tile gid="593"/>
+   <tile gid="625"/>
+   <tile gid="431"/>
+   <tile gid="502"/>
+   <tile gid="430"/>
+   <tile gid="463"/>
+   <tile gid="593"/>
+   <tile gid="964"/>
+   <tile gid="965"/>
+   <tile gid="966"/>
+   <tile gid="572"/>
+   <tile gid="573"/>
+   <tile gid="574"/>
+   <tile gid="636"/>
+   <tile gid="684"/>
+   <tile gid="401"/>
+   <tile gid="657"/>
+   <tile gid="495"/>
+   <tile gid="627"/>
+   <tile gid="430"/>
+   <tile gid="495"/>
+   <tile gid="592"/>
+   <tile gid="67"/>
+   <tile gid="299"/>
+   <tile gid="129"/>
+   <tile gid="604"/>
+   <tile gid="605"/>
+   <tile gid="766"/>
+   <tile gid="129"/>
+   <tile gid="2"/>
+   <tile gid="652"/>
+   <tile gid="526"/>
+   <tile gid="430"/>
+   <tile gid="431"/>
+   <tile gid="623"/>
+   <tile gid="430"/>
+   <tile gid="399"/>
+   <tile gid="65"/>
+   <tile gid="173"/>
+   <tile gid="65"/>
+   <tile gid="132"/>
+   <tile gid="6"/>
+   <tile gid="70"/>
+   <tile gid="65"/>
+   <tile gid="67"/>
+   <tile gid="2"/>
+   <tile gid="652"/>
+   <tile gid="411"/>
+   <tile gid="571"/>
+   <tile gid="628"/>
+   <tile gid="462"/>
+   <tile gid="495"/>
+   <tile gid="65"/>
+   <tile gid="65"/>
+   <tile gid="99"/>
+   <tile gid="6"/>
+   <tile gid="3"/>
+   <tile gid="98"/>
+   <tile gid="65"/>
+   <tile gid="65"/>
+   <tile gid="67"/>
+   <tile gid="584"/>
+   <tile gid="2"/>
+   <tile gid="3"/>
+   <tile gid="652"/>
+   <tile gid="620"/>
+   <tile gid="531"/>
+   <tile gid="98"/>
+   <tile gid="99"/>
+   <tile gid="2"/>
+   <tile gid="540"/>
+   <tile gid="734"/>
+   <tile gid="163"/>
+   <tile gid="97"/>
+   <tile gid="205"/>
+   <tile gid="65"/>
+   <tile gid="132"/>
+   <tile gid="2"/>
+   <tile gid="34"/>
+   <tile gid="2"/>
+   <tile gid="636"/>
+   <tile gid="686"/>
+   <tile gid="636"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="765"/>
+   <tile gid="766"/>
+   <tile gid="267"/>
+   <tile gid="171"/>
+   <tile gid="167"/>
+   <tile gid="207"/>
+   <tile gid="38"/>
+   <tile gid="636"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="368"/>
+   <tile gid="35"/>
+   <tile gid="321"/>
+   <tile gid="268"/>
+   <tile gid="326"/>
+   <tile gid="263"/>
+   <tile gid="225"/>
+   <tile gid="328"/>
+   <tile gid="6"/>
+   <tile gid="161"/>
+   <tile gid="166"/>
+   <tile gid="2"/>
+   <tile gid="584"/>
+   <tile gid="368"/>
+   <tile gid="306"/>
+   <tile gid="51"/>
+   <tile gid="3"/>
+   <tile gid="363"/>
+   <tile gid="225"/>
+   <tile gid="225"/>
+   <tile gid="225"/>
+   <tile gid="225"/>
+   <tile gid="360"/>
+   <tile gid="584"/>
+   <tile gid="2"/>
+   <tile gid="7"/>
+   <tile gid="368"/>
+   <tile gid="308"/>
+   <tile gid="51"/>
+   <tile gid="14"/>
+   <tile gid="49"/>
+   <tile gid="34"/>
+   <tile gid="165"/>
+   <tile gid="293"/>
+   <tile gid="225"/>
+   <tile gid="225"/>
+   <tile gid="290"/>
+   <tile gid="3"/>
+   <tile gid="2"/>
+   <tile gid="306"/>
+   <tile gid="375"/>
+   <tile gid="15"/>
+   <tile gid="45"/>
+   <tile gid="49"/>
+   <tile gid="109"/>
+   <tile gid="110"/>
+  </data>
+ </layer>
+ <layer id="4" name="House1destroyed" width="15" height="10">
+  <properties>
+   <property name="Height" type="int" value="2"/>
+   <property name="ID" type="int" value="0"/>
+   <property name="Width" type="int" value="3"/>
+   <property name="X" type="int" value="0"/>
+   <property name="Y" type="int" value="0"/>
+  </properties>
+  <data>
+   <tile gid="944"/>
+   <tile gid="945"/>
+   <tile gid="946"/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile gid="976"/>
+   <tile gid="977"/>
+   <tile gid="978"/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+  </data>
+ </layer>
+ <layer id="2" name="House1visited" width="15" height="10" visible="0">
+  <properties>
+   <property name="Height" type="int" value="1"/>
+   <property name="ID" type="int" value="1"/>
+   <property name="Width" type="int" value="1"/>
+   <property name="X" type="int" value="1"/>
+   <property name="Y" type="int" value="1"/>
+  </properties>
+  <data>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile gid="901"/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+  </data>
+ </layer>
+</map>

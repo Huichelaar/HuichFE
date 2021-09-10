@@ -1,0 +1,4 @@
+// Materials
+ALIGN 4
+MaterialsGfx:
+#incbin "Materials.dmp"

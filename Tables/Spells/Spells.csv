@@ -1,0 +1,75 @@
+0xC0FFEE,Animation Pointer
+0,0x805BE91
+Handaxe,0x805BF09
+Arrow,0x805C265
+DefaultJavelin,0x805C3F1
+CavalierJavelin,0x805C44D
+SoldierJavelin,0x805C4A9
+PaladinJavelin,0x805C505
+PegasusKnightJavelin,0x805C561
+FalcoKnightJavelin,0x805C5BD
+WyvernRiderJavelin,0x805C619
+WyvernLordJavelin,0x805C675
+GeneralJavelin,0x805C6D1
+EliwoodJavelin,0x805C72D
+PaladinFJavelin,0x805C789
+Dance/Play,0x805C935
+Dance/Play,0x805CBDD
+Ballista,0x805CD0D
+Ecksacks,0x805CEC5
+Sword of Seals,0x805CEC9
+Flametongue,0x805D065
+Fa's Dragonstone,0x805D389
+Idounn's Dark Dragonstone,0x805D4D1
+Fire,0x805DAD5
+Elfire,0x805DB19
+0,0x805FE81
+Thunder,0x805D7D9
+Bolting,0x805E755
+Fimbulvetr,0x805E0E5
+Aircalibur,0x805EB99
+Flux,0x805EED9
+Nosferatu,0x805F355
+Lightning,0x805F8B5
+Purge,0x805FAE1
+0,0x8060285
+Divine,0x805FE85
+0,0x8060289
+Eclipse,0x806028D
+Fenrir,0x80608A5
+Heal,0x8061025
+Mend,0x8061159
+Recover,0x80612BD
+Physic,0x8061421
+Fortify,0x8061C19
+Latona,0x8061C49
+Restore,0x80620ED
+Silence,0x80623E1
+Sleep,0x8062679
+Hammerne,0x8062999
+Berserk,0x8062C15
+Barrier,0x8063215
+0,0x0
+Shine,0x8063481
+Luna,0x8063975
+Excalibur,0x8064309
+0,0x8064CFD
+Aura,0x8064E75
+0,0x8065491
+0,0x8065495
+Fila's Might,0x8065635
+Thor's Ire,0x8065671
+Nini's Grace,0x80656AD
+Set's Litany,0x80656E9
+Stone,0x80674D5
+Ivaldi,0x80657D5
+Demon Light,0x8066515
+Gleipnir,0x8068B81
+Crimson Eye,0x8069EC5
+Evil Eye,0x8067799
+Shadowshot,0x806AEF5
+Demon Surge,0x806B4F9
+Naglfar,0x8067B7D
+Wretched Breath,0x80687E5
+WyvernKnightJavelin,WyvernKnightJavelinEffect|IsPointer|1
+BigHandaxe,BigHandaxeEffect|IsPointer|1

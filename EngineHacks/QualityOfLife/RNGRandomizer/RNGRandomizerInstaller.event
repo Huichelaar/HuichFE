@@ -1,0 +1,88 @@
+// Credit to TR143
+#ifdef _FE6_
+
+ERROR This hack is not compatible with FE6.
+
+#endif
+
+#ifndef FreeSpace
+	#define FreeSpace 0x1000000
+	ORG FreeSpace
+#endif
+
+#ifdef _FE7_
+
+PUSH
+
+ORG 0x19D8
+jumpToHack(RNGBodyFE7)
+
+POP
+
+ALIGN 4
+RNGBodyFE7:
+#incbin rngbodyFE7.dmp
+
+PUSH
+
+ORG 0xB5A
+BYTE 0x08 0xB4 // push r3
+jumpToHack(bootHackBodyFE7)
+
+POP
+
+ALIGN 4
+bootHackBodyFE7:
+#incbin BootHackFE7.dmp
+
+PUSH
+
+ORG 0xD74
+jumpToHack(resumeHackBodyFE7)
+
+POP
+
+ALIGN 4
+resumeHackBodyFE7:
+#incbin ResumeHackFE7.dmp
+
+#endif
+
+#ifdef _FE8_
+
+PUSH
+
+ORG 0x1336
+BYTE 0x08 0xB4 // push r3
+jumpToHack(RNGBodyFE8)
+
+POP
+
+ALIGN 4
+RNGBodyFE8:
+#incbin rngbodyFE8.dmp
+
+PUSH
+
+ORG 0x0A4C
+jumpToHack(bootHackBodyFE8)
+
+POP
+
+ALIGN 4
+bootHackBodyFE8:
+#incbin BootHackFE8.dmp
+
+PUSH
+
+ORG 0xC36
+BYTE 0x08 0xB4 // push r3
+jumpToHack(resumeHackBodyFE8)
+
+POP
+
+ALIGN 4
+resumeHackBodyFE8:
+#incbin ResumeHackFE8.dmp
+
+#endif

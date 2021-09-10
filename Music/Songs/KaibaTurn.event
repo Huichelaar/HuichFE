@@ -1,0 +1,39 @@
+//Event file generated from Sappy .s format.
+        #include "MPlayDef.event"
+
+        #define    KaibaTurn_grp  soundbank_040
+        #define    KaibaTurn_pri  0
+        #define    KaibaTurn_rev  0
+        #define    KaibaTurn_key  0
+
+        // .rodata
+        // KaibaTurn
+        ALIGN 4
+
+//****************** Track 0 (Midi-Chn.0) ******************//
+
+KaibaTurn_0:
+        BYTE   KEYSH   KaibaTurn_key+0
+// 000   ----------------------------------------
+        BYTE   TEMPO   40/2
+        BYTE           VOICE   40
+        BYTE           VOL     76
+        BYTE           N18     Cn3   v127
+        BYTE   W18
+        BYTE   FINE
+
+
+//********************** End of Song ***********************//
+
+        ALIGN 4
+KaibaTurn:
+        BYTE   1                       // Num Tracks
+        BYTE   0                       // Unknown
+        BYTE   KaibaTurn_pri           // Priority
+        BYTE   KaibaTurn_rev           // Reverb
+
+        POIN2   KaibaTurn_grp          
+
+        POIN2   KaibaTurn_0
+
+        

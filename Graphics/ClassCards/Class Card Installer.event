@@ -1,0 +1,102 @@
+#define setCardEntry(cardEntry,cardLocation,cardPaletteLocation) "PUSH; ORG PortraitTable+cardEntry*0x1C; POIN 0 0 cardPaletteLocation 0 cardLocation 0; BYTE 0x1; POP"
+
+ALIGN 4
+SupplierCCTiles:
+#incbin "[MISC] Merchant (M) Lance {N426}.dmp"
+ALIGN 4
+SupplierCCPal:
+#incbin "[MISC] Merchant (M) Lance {N426}_pal.dmp"
+ALIGN 4
+MercenaryFCCTiles:
+#incbin "[SWD] Mercenary (F) Sword {L95}.dmp"
+ALIGN 4
+MercenaryFCCPal:
+#incbin "[SWD] Mercenary (F) Sword {L95}_pal.dmp"
+ALIGN 4
+FighterFCCTiles:
+#incbin "[AXE] Fighter (F) Axe {Jj09, HyperGammaSpaces}.dmp"
+ALIGN 4
+FighterFCCPal:
+#incbin "[AXE] Fighter (F) Axe {Jj09, HyperGammaSpaces}_pal.dmp"
+ALIGN 4
+ArcherFCCTiles:
+#incbin "[BOW] Archer (F) (Improved) {DerTheVaporeon}.dmp"
+ALIGN 4
+ArcherFCCPal:
+#incbin "[BOW] Archer (F) (Improved) {DerTheVaporeon}_pal.dmp"
+ALIGN 4
+ArcherMCCTiles:
+#incbin "[BOW] Archer (M) (Improved) {DerTheVaporeon}.dmp"
+ALIGN 4
+ArcherMCCPal:
+#incbin "[BOW] Archer (M) (Improved) {DerTheVaporeon}_pal.dmp"
+ALIGN 4
+SoldierFCCTiles:
+#incbin "[LNC] Soldier (F) Lance {IS, flasuban}.dmp"
+ALIGN 4
+SoldierFCCPal:
+#incbin "[LNC] Soldier (F) Lance {IS, flasuban}_pal.dmp"
+ALIGN 4
+ClericCCTiles:
+#incbin "[MAG] Cleric (F) Staff {flasuban}.dmp"
+ALIGN 4
+ClericCCPal:
+#incbin "[MAG] Cleric (F) Staff {flasuban}_pal.dmp"
+ALIGN 4
+MonkFCCTiles:
+#incbin "[MAG] Monk (F) Magic {RobertFPY}.dmp"
+ALIGN 4
+MonkFCCPal:
+#incbin "[MAG] Monk (F) Magic {RobertFPY}_pal.dmp"
+ALIGN 4
+MonkMCCTiles:
+#incbin "[MAG] Monk (M) Magic {RobertFPY, Blademaster}.dmp"
+ALIGN 4
+MonkMCCPal:
+#incbin "[MAG] Monk (M) Magic {RobertFPY, Blademaster}_pal.dmp"
+ALIGN 4
+ShamanFCCTiles:
+#incbin "[MAG] Shaman (F) Magic {Unknown}.dmp"
+ALIGN 4
+ShamanFCCPal:
+#incbin "[MAG] Shaman (F) Magic {Unknown}_pal.dmp"
+ALIGN 4
+MageFCCTiles:
+#incbin "[MAG] Mage (F) Magic {Unkown}.dmp"
+ALIGN 4
+MageFCCPal:
+#incbin "[MAG] Mage (F) Magic {Unkown}_pal.dmp"
+ALIGN 4
+MyrmidonFCCTiles:
+#incbin "Myrmidon (F) Sword {L95}.dmp"
+ALIGN 4
+MyrmidonFCCPal:
+#incbin "Myrmidon (F) Sword {L95}_pal.dmp"
+ALIGN 4
+CavalierFCCTiles:
+#incbin "Cavalier (F) SALVAGED Twintails Lance {RobertFPY, Pikmin}.dmp"
+ALIGN 4
+CavalierFCCPal:
+#incbin "Cavalier (F) SALVAGED Twintails Lance {RobertFPY, Pikmin}_pal.dmp"
+ALIGN 4
+CavalierMCCTiles:
+#incbin "Cavalier (M) Helmless Lance {RobertFPY}.dmp"
+ALIGN 4
+CavalierMCCPal:
+#incbin "Cavalier (M) Helmless Lance {RobertFPY}_pal.dmp"
+
+
+setCardEntry(0xad,SupplierCCTiles,SupplierCCPal)
+setCardEntry(MercenaryFCC,MercenaryFCCTiles,MercenaryFCCPal)
+setCardEntry(FighterFCC,FighterFCCTiles,FighterFCCPal)
+setCardEntry(ArcherFCC,ArcherFCCTiles,ArcherFCCPal)
+setCardEntry(ArcherMCC,ArcherMCCTiles,ArcherMCCPal)
+setCardEntry(SoldierFCC,SoldierFCCTiles,SoldierFCCPal)
+setCardEntry(ClericCC,ClericCCTiles,ClericCCPal)
+setCardEntry(MonkFCC,MonkFCCTiles,MonkFCCPal)
+setCardEntry(MonkMCC,MonkMCCTiles,MonkMCCPal)
+setCardEntry(ShamanFCC,ShamanFCCTiles,ShamanFCCPal)
+setCardEntry(MyrmidonFCC,MyrmidonFCCTiles,MyrmidonFCCPal)
+setCardEntry(CavalierFCC,CavalierFCCTiles,CavalierFCCPal)
+setCardEntry(CavalierMCC,CavalierMCCTiles,CavalierMCCPal)
+setCardEntry(MageFCC,MageFCCTiles,MageFCCPal)

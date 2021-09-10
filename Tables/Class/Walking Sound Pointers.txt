@@ -1,0 +1,14 @@
+13
+0x8078FD4 Heavy
+0x8078FEC Default
+0x8078FE4 Manakete wings
+0x8078FDC Fleet sailing
+0x8078FA4 Zombie sounds
+0x8078FAC Skeleton rattle
+0x8078FB4 Spider shuffle
+0x8078FBC Mauthe walk
+0x8078FC4 Horse
+0x8078FB0 Mogall hover
+0x8078FCC Gorgon slither
+0x8078D9C Gargoyle wings
+0x8079022 No sound

@@ -1,0 +1,29 @@
+#FE8 Statbooster Text Table by Teraspark
+#
+
+1
+FE8 Item with Textbox Jump Table
+0xDEADDAD
+9
+8
+NULL
+NULL
+
+
+ItemID
+0
+2
+NDHU
+Item List.txt
+
+TextID
+2
+2
+NEHU
+NULL
+
+Pointer
+4
+4
+NEHU
+NULL

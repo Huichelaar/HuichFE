@@ -1,0 +1,4 @@
+// Scroll a BG
+PROC_YIELD
+PROC_LOOP_ROUTINE(Loop_ScrollBG|1)
+PROC_END

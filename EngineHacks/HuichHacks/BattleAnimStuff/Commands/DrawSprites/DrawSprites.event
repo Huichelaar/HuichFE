@@ -1,0 +1,36 @@
+// Draw sprites.
+
+ALIGN 4
+Procs_BACDrawSprites:
+PROC_CALL_ROUTINE(BACInitDrawSprites|1)
+PROC_LOOP_ROUTINE(BACLoopDrawSprites|1)
+PROC_END
+
+ALIGN 4
+BACInitDrawSprites:
+#include "InitDrawSprites.lyn.event"
+ALIGN 4
+BACLoopDrawSprites:
+#include "LoopDrawSprites.lyn.event"
+
+
+// Called by FrameData
+ALIGN 4
+BACHitTarget:
+#include "HitTarget.lyn.event"
+
+ALIGN 4
+BACPlayHitSFE:
+#include "PlayHitSFE.lyn.event"
+
+ALIGN 4
+BACTargetStartDodge:
+#include "TargetStartDodge.lyn.event"
+
+ALIGN 4
+BACTargetEndDodge:
+#include "TargetEndDodge.lyn.event"
+
+ALIGN 4
+BACStallSprite:
+#include "StallSprite.lyn.event"

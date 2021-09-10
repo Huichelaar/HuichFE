@@ -1,0 +1,118 @@
+ALIGN 4
+VillageObjects:
+#incbin "VillageObjects.dmp"
+ALIGN 4
+VillageConfig:
+#incbin "Updated Village config.mapchip_config.dmp"
+
+
+// Palettes
+ALIGN 4
+VillageNightPalette:
+#incbin "NightPalette.dmp"
+
+
+// Anims
+ALIGN 4
+VillageAnim0:
+#incbin "Anim/Anim.mapanime 1_000.dmp"
+ALIGN 4
+VillageAnim1:
+#incbin "Anim/Anim.mapanime 1_001.dmp"
+ALIGN 4
+VillageAnim2:
+#incbin "Anim/Anim.mapanime 1_002.dmp"
+ALIGN 4
+VillageAnim3:
+#incbin "Anim/Anim.mapanime 1_003.dmp"
+ALIGN 4
+VillageAnim4:
+#incbin "Anim/Anim.mapanime 1_004.dmp"
+ALIGN 4
+VillageAnim5:
+#incbin "Anim/Anim.mapanime 1_005.dmp"
+ALIGN 4
+VillageAnim6:
+#incbin "Anim/Anim.mapanime 1_006.dmp"
+ALIGN 4
+VillageAnim7:
+#incbin "Anim/Anim.mapanime 1_007.dmp"
+ALIGN 4
+VillageAnim8:
+#incbin "Anim/Anim.mapanime 1_008.dmp"
+ALIGN 4
+VillageAnim9:
+#incbin "Anim/Anim.mapanime 1_009.dmp"
+ALIGN 4
+VillageAnim10:
+#incbin "Anim/Anim.mapanime 1_010.dmp"
+ALIGN 4
+VillageAnim11:
+#incbin "Anim/Anim.mapanime 1_011.dmp"
+ALIGN 4
+VillageAnim12:
+#incbin "Anim/Anim.mapanime 1_012.dmp"
+ALIGN 4
+VillageAnim13:
+#incbin "Anim/Anim.mapanime 1_013.dmp"
+ALIGN 4
+VillageAnim14:
+#incbin "Anim/Anim.mapanime 1_014.dmp"
+ALIGN 4
+VillageAnim15:
+#incbin "Anim/Anim.mapanime 1_015.dmp"
+
+
+ALIGN 4
+VillageAnimStruct:
+SHORT 0x1C
+SHORT 0x1000
+POIN  VillageAnim0
+SHORT 0x1C
+SHORT 0x1000
+POIN  VillageAnim1
+SHORT 0x1C
+SHORT 0x1000
+POIN  VillageAnim2
+SHORT 0x1C
+SHORT 0x1000
+POIN  VillageAnim3
+SHORT 0x1C
+SHORT 0x1000
+POIN  VillageAnim4
+SHORT 0x1C
+SHORT 0x1000
+POIN  VillageAnim5
+SHORT 0x1C
+SHORT 0x1000
+POIN  VillageAnim6
+SHORT 0x1C
+SHORT 0x1000
+POIN  VillageAnim7
+SHORT 0x1C
+SHORT 0x1000
+POIN  VillageAnim8
+SHORT 0x1C
+SHORT 0x1000
+POIN  VillageAnim9
+SHORT 0x1C
+SHORT 0x1000
+POIN  VillageAnim10
+SHORT 0x1C
+SHORT 0x1000
+POIN  VillageAnim11
+SHORT 0x1C
+SHORT 0x1000
+POIN  VillageAnim12
+SHORT 0x1C
+SHORT 0x1000
+POIN  VillageAnim13
+SHORT 0x1C
+SHORT 0x1000
+POIN  VillageAnim14
+SHORT 0x1C
+SHORT 0x1000
+POIN  VillageAnim15
+SHORT 0x0
+SHORT 0x0
+WORD  0x0

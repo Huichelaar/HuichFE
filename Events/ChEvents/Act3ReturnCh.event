@@ -1,0 +1,27 @@
+// Set correct chapter's title for save screen.
+CHECK_EVENTID Act3Flag1
+SADD 0xC3
+CHECK_EVENTID Act3Flag2
+SADD 0xC4
+
+BNE 0x0 0x0 0x3
+  BNE 0x1 0x0 0x4
+    // 00, Chapter 15
+    MNCH 0xF
+    ENDA
+
+    LABEL 0x0
+    BNE 0x2 0x0 0x4
+      // 10, Chapter 17
+      MNCH 0x11
+      ENDA
+
+        LABEL 0x1
+        // 01, Chapter 16
+        MNCH 0x10
+        ENDA
+
+          LABEL 0x2
+          // 11, Chapter 18
+          MNCH 0x12
+          ENDA

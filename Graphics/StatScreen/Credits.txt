@@ -1,0 +1,2 @@
+Unused mural, portraitbox and moving map sprite plateau are from FE7, credit to IS.
+StatPage titles are from FE8, credit to IS.

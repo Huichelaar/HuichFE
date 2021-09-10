@@ -1,0 +1,58 @@
+#Custom Class bonus growths NMM
+#
+
+1
+Class bonus growths
+0xC0FFEE
+128
+8
+FE8 Class Editor.txt
+NULL
+
+HP Bonus Growth
+0
+1
+NEDS
+NULL
+
+STR Bonus Growth
+1
+1
+NEDS
+NULL
+
+MAG Bonus Growth
+2
+1
+NEDS
+NULL
+
+SKL Bonus Growth
+3
+1
+NEDS
+NULL
+
+SPD Bonus Growth
+4
+1
+NEDS
+NULL
+
+DEF Bonus Growth
+5
+1
+NEDS
+NULL
+
+RES Bonus Growth
+6
+1
+NEDS
+NULL
+
+LUK Bonus Growth
+7
+1
+NEDS
+NULL

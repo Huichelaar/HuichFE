@@ -1,0 +1,27 @@
+## FortMenuCommand
+ Manage Forts[X]
+
+## FortMenuHelp
+Gather materials from, upgrade or assign[NL]
+fortmasters to your fortresses.[X]
+
+## FortMenuGather
+ Gather[X]
+ 
+## GatherHelp
+Gather materials from any[NL]
+fortress you control.[X]
+
+## FortMenuUpgrade
+ Upgrade[X]
+ 
+## UpgradeHelp
+Spend materials to increase the level[NL]
+of any fortress you control.[X]
+
+## FortMenuChange
+ Assign[X]
+
+## ChangeHelp
+Enable a unit's ability by assigning them[NL]
+to any fortress you control.[X]

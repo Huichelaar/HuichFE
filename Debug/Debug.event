@@ -1,0 +1,16 @@
+// Unlock sound room
+PUSH
+  ORG $AEDE0
+  BYTE $FF
+POP
+
+// Turn chapter Guide into win button.
+// Technically useless as Suspendx2 repoints this menu.
+PUSH
+  ORG 0x59CEC8
+  POIN WinFunctionality+0x1
+POP
+
+ALIGN 4
+WinFunctionality:
+#include "WinFunctionality.lyn.event"

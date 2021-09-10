@@ -1,0 +1,38 @@
+// Menutitles, "Materials" & "Forts"
+ALIGN 4
+MenuUITiles:
+#incbin "MenuUITiles.dmp"
+ALIGN 4
+MenuUITSA:
+#incbin "MenuUITSA.dmp"
+
+// Tree
+ALIGN 4
+TreePalette:
+#incbin "Tree_pal.dmp"
+ALIGN 4
+Tree:
+#incbin "Tree.dmp"
+
+// Pirate palette, the vanilla palette is compressed (I think?) So we just insert it here
+ALIGN 4
+PiratePalette:
+#incbin "Pirate_pal.dmp"
+
+// Plateau OAM data
+ALIGN 4
+PlateauOAM:
+#incbin "PlateauOAM.dmp"
+
+// Tree OAM data
+ALIGN 4
+TreeOAM:
+#incbin "TreeOAM.dmp"
+
+// Lumberjack OAM data
+ALIGN 4
+LumberjackOAM:
+#incbin "LumberjackOAM.dmp"
+ALIGN 4
+LumberjackFrame:
+#incbin "LumberjackFrame.dmp"

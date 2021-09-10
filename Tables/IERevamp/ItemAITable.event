@@ -1,0 +1,9 @@
+ALIGN 4
+AI_ItemArrayLABEL:
+FILL 5*8
+PUSH
+ORG AI_ItemArrayLABEL + 0*8 ; BYTE (0x1F) (0) (0) (0) ; WORD (0x80408dd) 
+ORG AI_ItemArrayLABEL + 1*8 ; BYTE (0x20) (0) (0) (0) ; WORD (0x8040975) 
+ORG AI_ItemArrayLABEL + 2*8 ; BYTE (0x24) (0) (0) (0) ; WORD (0x8040a79) 
+ORG AI_ItemArrayLABEL + 3*8 ; BYTE (0x26) (0) (0) (0) ; WORD (0x80408dd) 
+POP

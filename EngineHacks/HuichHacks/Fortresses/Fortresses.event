@@ -1,0 +1,32 @@
+// Adds fortresses.
+#ifndef _FE8_
+    ERROR "You're not assembling to an FE8 ROM!"
+#endif
+
+#ifndef FreeSpace
+	#define FreeSpace 0x1000000
+	ORG FreeSpace
+#endif
+
+// Variables
+  // If you change FortCount or MaterialCount, make sure to change offsets & sizes in EMS as well!
+  #define FortCount 22
+  #define MaterialCount 27
+  #define FortRAM 0x3003B48
+  
+  ALIGN 4
+  FortExpGainUpper:                   // Max fort exp gain per chapter completion
+  WORD 0xF
+  ALIGN 4
+  FortExpGainLower:                   // Min fort exp gain per chapter completion
+  WORD 0x1
+  
+// Definitions
+  #define FortCountSize FortCount*5
+  #define MaterialCountSize ((MaterialCount*10)>>3)+1
+  #define MaterialRAM FortRAM+FortCountSize
+  #define FortMatSaveChunkSize FortCountSize+MaterialCountSize    // RAM size = SRAM size.
+  
+#include "Abilities/Abilities.event"
+#include "Calcs/Calcs.event"
+#include "Other/Other.event"

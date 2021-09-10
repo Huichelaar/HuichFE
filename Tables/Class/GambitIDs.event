@@ -1,0 +1,6 @@
+ALIGN 4
+GambitIDTableLABEL:
+FILL 256*1
+PUSH
+ORG GambitIDTableLABEL + Monk*1 ; BYTE (SkelGambit) 
+POP

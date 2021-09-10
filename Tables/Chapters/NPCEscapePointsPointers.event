@@ -1,0 +1,31 @@
+PUSH
+ORG 0x5A828C
+NPCEscapePointTableLABEL:
+FILL 1*4
+PUSH
+ORG NPCEscapePointTableLABEL + 0*4 ; WORD (NoEscapePoints) 
+ORG NPCEscapePointTableLABEL + 1*4 ; WORD (NoEscapePoints) 
+ORG NPCEscapePointTableLABEL + 2*4 ; WORD (Ch2NPCEscapePoints|IsPointer) 
+ORG NPCEscapePointTableLABEL + 3*4 ; WORD (NoEscapePoints) 
+ORG NPCEscapePointTableLABEL + 4*4 ; WORD (NoEscapePoints) 
+ORG NPCEscapePointTableLABEL + 5*4 ; WORD (NoEscapePoints) 
+ORG NPCEscapePointTableLABEL + 6*4 ; WORD (NoEscapePoints) 
+ORG NPCEscapePointTableLABEL + 7*4 ; WORD (NoEscapePoints) 
+ORG NPCEscapePointTableLABEL + 8*4 ; WORD (NoEscapePoints) 
+ORG NPCEscapePointTableLABEL + 9*4 ; WORD (NoEscapePoints) 
+ORG NPCEscapePointTableLABEL + 10*4 ; WORD (NoEscapePoints) 
+ORG NPCEscapePointTableLABEL + 11*4 ; WORD (NoEscapePoints) 
+ORG NPCEscapePointTableLABEL + 12*4 ; WORD (NoEscapePoints) 
+ORG NPCEscapePointTableLABEL + 13*4 ; WORD (NoEscapePoints) 
+ORG NPCEscapePointTableLABEL + 14*4 ; WORD (NoEscapePoints) 
+ORG NPCEscapePointTableLABEL + 15*4 ; WORD (NoEscapePoints) 
+ORG NPCEscapePointTableLABEL + 16*4 ; WORD (NoEscapePoints) 
+ORG NPCEscapePointTableLABEL + 17*4 ; WORD (NoEscapePoints) 
+ORG NPCEscapePointTableLABEL + 18*4 ; WORD (NoEscapePoints) 
+ORG NPCEscapePointTableLABEL + 19*4 ; WORD (NoEscapePoints) 
+ORG NPCEscapePointTableLABEL + 20*4 ; WORD (NoEscapePoints) 
+ORG NPCEscapePointTableLABEL + 21*4 ; WORD (NoEscapePoints) 
+ORG NPCEscapePointTableLABEL + 22*4 ; WORD (NoEscapePoints) 
+ORG NPCEscapePointTableLABEL + 23*4 ; WORD (NoEscapePoints) 
+POP
+POP

@@ -1,0 +1,23 @@
+Ask Stan if he knows where best to put the vanilla function defs in FE8.h
+
+Pull request library stuff, also reference file.
+
+Credits credits:
+  Segment title font from FE7U.
+
+Base animIDs on class + RNG? Make sure to ignore item animation.
+
+Scope once you're done.
+
+README buffer usage:
+  gGenericBuffer
+    - is used in CRE_segmentInit to prepare data to immediately objcopy.
+    - is used by Portrait.c to registertilegraphics for one frame during CRE_spriteInitPortrait
+    - is used by Class.c to prepare data to immediately objcopy.
+    - is used by Class.c to prepare map sprites to immediately objcopy.
+  gBg0MapBuffer (and the other three)
+    - is used by Class.c to registertilegraphics for one frame during CRE_spriteInitCC
+    - is used by Class.c to registertilegraphics for one frame during CRE_initMapSprites2
+  gSMSGfxBuffer_Frame1 and gSMSGfxBuffer_Frame2
+    - is used by Class.c to hold decompressed MMS for copying to OBJ VRAM.
+    

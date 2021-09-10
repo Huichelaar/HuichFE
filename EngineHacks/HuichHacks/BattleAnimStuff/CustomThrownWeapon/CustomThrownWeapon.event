@@ -1,0 +1,55 @@
+// Allow for unique thrown lance and
+// thrown axe animations per class
+#ifndef _FE8_
+    ERROR "You're not assembling to an FE8 ROM!"
+#endif
+
+#include "Extensions/Hack Installation.txt"
+#include "EAstdlib.event"
+
+#ifndef FreeSpace
+	#define FreeSpace 0x1000000
+	ORG FreeSpace
+#endif
+
+#ifndef IsPointer
+  #define IsPointer 0x8000000
+#endif
+
+#include "Lance/Lance.event"
+#include "Axe/Axe.event"
+
+// Variables
+// If you want Kao's separate melee and ranged spells:
+// https://feuniverse.us/t/fe8u-fe7u-spell-loader/3284
+// Don't use it in conjunction with this hack; They conflict.
+// Instead, set this variable to True.
+SeparateMeleeRangedSpells:
+BYTE False
+
+// If you're using the Item Effect Revamp, uncomment this.
+#define CTW_IERActive
+
+PUSH
+
+  #ifdef CTW_IERActive
+    ORG 0x5802E
+    SHORT 0x1C21    // mov r1, r4
+    jumpToHack(DetermineSpellAnim)
+  #else
+    ORG 0x58028
+    SHORT 0x1C18                      // mov r0, r3
+    SHORT 0x1C21                      // mov r1, r4
+    jumpToHack(DetermineSpellAnim)
+    PROTECT 0x58028 CurrentOffset
+  #endif
+
+POP
+
+ALIGN 4
+DetermineSpellAnim:
+#ifdef CTW_IERActive
+  #include "DetermineSpellAnimIER.lyn.event"
+#else
+  #include "DetermineSpellAnim.lyn.event"
+#endif

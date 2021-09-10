@@ -1,0 +1,243 @@
+#ifndef MODULAR_STAT_SCREEN
+#define MODULAR_STAT_SCREEN
+
+// Modular Stat Screen.
+// hack by circleseverywhere
+
+// Skill System Stat Screen by circleseverywhere with additions by Tequila, and probably more people too
+
+#ifdef _FE8_
+
+  #define Skl_Arrow_X 0x78
+  #define Skl_Arrow_Y 0x28
+  #define Spd_Arrow_X 0x78
+  #define Spd_Arrow_Y 0x38
+  #define Trv_Icon_X 0xB8
+  #define Trv_Icon_Y 0x2E
+  
+  #include "DisplayGrowthsOptions/DisplayGrowthsOptions.event"
+ 
+  PUSH
+    ORG 0x205b24 //24 for stat screen
+      POIN MSS_page2|1 MSS_page1|1 MSS_page3//|1 MSS_page4|1
+
+    ORG $88690
+      BYTE 3//4 //make 4 pages
+	  
+    ORG $88650
+      POIN NewPageNameGraphic
+
+    ORG $87f38
+      POIN NewPageNameLayout
+
+    ORG $87f3c
+      POIN NewPageNameTiles
+
+    ORG $87f40
+      POIN NewPageNamePalette
+
+    ORG $889d0
+      SHORT $e010 //Temporary r-text fix to prevent freezing
+
+    ORG $889f2  
+      SHORT $BD30
+      BL(RText_Page4_ladder) //this has to be in bl range somewhere
+
+    // Make all the arrows line up with the stats and stuff
+
+    ORG $883C0
+      BYTE Skl_Arrow_X 0x20 Skl_Arrow_Y
+ 
+    ORG $883CA
+      BYTE Spd_Arrow_X 0x20 Spd_Arrow_Y
+
+    ORG $883F6
+      BYTE Trv_Icon_X 0x21 Trv_Icon_Y
+
+    ORG $883B4
+      jumpToHack(Rescue_Arrows)
+
+    // Display growths hack
+
+    #ifdef PRESS_SELECT_TO_VIEW_GROWTHS
+      ORG $8888C
+        BYTE 0x82
+    #endif
+  
+    ORG $88896
+      SHORT 0x46C0
+      jumpToHack(Button_Branch)
+  
+    // Remember whether we were looking at growths or stats
+
+    ORG $8895C //Loads byte to store 1 before stat screen struct
+      callHack_r1(Load_Page)
+
+    ORG $888BC //Stores byte to store 1 before stat screen struct
+      callHack_r3(Store_Page)
+
+    // Display an R-button text about pressing Select, since I can't seem to fit it nicely, and make that the default
+    // RText page order is determined here.
+    
+    // Page1
+    ORG $889D8
+      WORD 0x8A00DA0
+    // Page2
+    ORG $889E0
+      POIN PersonalDataRText
+    // Page3
+    //ORG $889F8
+      //WORD 0x8A00F44
+    // Page 4 is handled differently it seems?
+
+    // HP name color
+	// This now gets called from within the left stat screen page
+    //ORG $86ED4
+    //  callHack_r3(HP_Name_Color)
+
+    ORG $2BA28
+      jumpToHack(Write_Growths_To_Battle_Struct)
+
+    ORG $2B9C4
+      jumpToHack(Enemy_Autolevel)
+
+    ORG $17E98
+      callHack_r3(New_Unit_Exp)
+      SHORT 0xE005
+
+	  ORG $86E44
+        jumpToHack(MSS_leftpage)
+
+    ORG $087184
+
+      // This is Vanilla Stat Screen Page
+      // This is now free (because unused) space
+      // We'll use this for stuff that needs to
+      // be in BL range
+
+    RText_Page4_ladder:
+      // page 4 helptext hook
+      #incbin "asm/rtext_page4.dmp"
+      POIN RText_Page4
+
+  POP
+  
+  ALIGN 4
+  TalkTextIDLink:
+  SHORT SS_TalkText
+  ALIGN 4
+  SkillsTextIDLink:
+  SHORT SS_SkillsText
+  ALIGN 4
+  Display_Growth_Options_Link:
+  WORD Growth_Options
+
+
+	#include "pages/mss_page1.lyn.event"
+  #include "pages/mss_page2.lyn.event"
+	#include "pages/mss_page3.lyn.event"
+  #include "pages/mss_page4.lyn.event"
+    ALIGN 4
+    TxtData0x0D4C:
+    String("Buzz off, Circles")
+    BYTE 0
+    setText(0x0D4C,TxtData0x0D4C)
+  #include "pages/mss_leftstatscreen.lyn.event"
+  
+
+  ALIGN 4
+  NewPageNameGraphic:
+    //#incext Png2Dmp "asm/pagenamegraphic.png" --lz77
+    #incbin "asm/SSOtherGfx.dmp"
+
+  ALIGN 4
+  NewPageNameLayout:
+    POIN $a008d0 $a008bc $a008de $a008d0
+
+  ALIGN 4
+  NewPageNameTiles:
+    SHORT $40 0 $e $80
+
+  ALIGN 4
+  NewPageNamePalette:
+    #incbin "asm/palettecycler.dmp"
+
+  ALIGN 4
+  Button_Branch:
+    #incbin "asm/ButtonBranch.dmp"
+
+  ALIGN 4
+  Load_Page:
+    #incbin "asm/LoadPage.dmp"
+    WORD Stat_Page_Ram_Loc
+
+  ALIGN 4
+  Store_Page:
+    #incbin "asm/StorePage.dmp"
+    WORD Stat_Page_Ram_Loc
+
+  ALIGN 4
+  Rescue_Arrows:
+    #incbin "asm/CheckRescueArrows.dmp"
+    POIN SkillTester
+    WORD SaviorID
+
+  ALIGN 4
+  Get_Palette_Index:
+    #incbin "asm/Get_Palette_Index.dmp"
+    POIN Growth_Color_Table
+
+  ALIGN 4
+  HP_Name_Color:
+    #incbin "asm/HPNameColor.dmp"
+    POIN New_Palettes
+    WORD Growth_Options
+    POIN Get_Hp_Growth
+    POIN Get_Palette_Index
+
+  ALIGN 4
+  Write_Growths_To_Battle_Struct:
+    #incbin "asm/Write_Growths_To_Battle_Struct.dmp"
+    POIN Class_Level_Cap_Table Get_Hp_Growth Get_Str_Growth Get_Skl_Growth Get_Spd_Growth Get_Def_Growth Get_Res_Growth Get_Luk_Growth
+    WORD Growth_Options
+
+  ALIGN 4
+/*
+  This has been moved to a CSV
+  Class_Level_Cap_Table:
+    #incbin "Display Growths Options/Class_Level_Cap_Table.dmp"
+*/
+  ALIGN 4
+  Enemy_Autolevel:
+    #incbin "asm/Enemy_Autolevel.dmp"
+    WORD Growth_Options
+
+  ALIGN 4
+  New_Unit_Exp:
+    #incbin "asm/New_Unit_Exp.dmp"
+    POIN Class_Level_Cap_Table
+
+  ALIGN 4
+  Growth_Color_Table:
+    #include "DisplayGrowthsOptions/GrowthColorsTable.event"
+
+  ALIGN 4
+  New_Palettes:
+    #include "DisplayGrowthsOptions/NewPalette.event"
+    
+  ALIGN 4
+  DontBlinkLeft:
+    #include "asm/DontBlinkLeft.lyn.event"
+    
+  ALIGN 4
+  RtextSkillsLooper:
+    #include "asm/RtextSkillsLooper.lyn.event"
+
+
+  #include "RText.event"
+
+#else // _FE8_
+  ERROR Modular Stat Screen hack is for FE8
+#endif // _FE8_
+
+#endif // MODULAR_STAT_SCREEN

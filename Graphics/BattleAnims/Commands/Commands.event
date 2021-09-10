@@ -1,0 +1,3 @@
+// Command graphics
+#include "Rune/Rune.event"
+#include "Skeleton/Skeleton.event"

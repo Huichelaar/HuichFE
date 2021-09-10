@@ -1,0 +1,39 @@
+//Event file generated from Sappy .s format.
+        #include "MPlayDef.event"
+
+        #define    Knock_grp  Sfxsoundbank
+        #define    Knock_pri  0
+        #define    Knock_rev  0
+        #define    Knock_key  0
+
+        // .rodata
+        // Knock
+        ALIGN 4
+
+//****************** Track 0 (Midi-Chn.0) ******************//
+
+Knock_0:
+        BYTE   KEYSH   Knock_key+0
+// 000   ----------------------------------------
+        BYTE   TEMPO   120/2
+        BYTE           VOICE   0
+        BYTE           VOL     79
+        BYTE           N24     Fs2   v100
+        BYTE   W24
+        BYTE   FINE
+
+
+//********************** End of Song ***********************//
+
+        ALIGN 4
+Knock:
+        BYTE   1                       // Num Tracks
+        BYTE   0                       // Unknown
+        BYTE   Knock_pri               // Priority
+        BYTE   Knock_rev               // Reverb
+
+        POIN2   Knock_grp              
+
+        POIN2   Knock_0
+
+        

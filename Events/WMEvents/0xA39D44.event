@@ -1,0 +1,34 @@
+
+////////////////////////////////////////////////////
+//                                                //
+// Disassembled with Nintenlord's Event Assembler //
+// Version: 11.1.0.0                              //
+// Game: FE8                                      //
+// File: Project.event_assembler.gba              //
+// Offset: $A39D44                                //
+//                                                //
+////////////////////////////////////////////////////
+
+
+
+ORG $A39D44
+EVBIT_MODIFY 0x1
+WM_SPAWNLORD 0x0 0x0 0x1 0x1 0x0
+WM_CENTERCAMONLORD
+WM_FADEOUT 0x0 0x0 0x0
+WM_TEXTDECORATE
+EVBIT_MODIFY 0x0
+STAL 20
+WM_CREATENEXTDESTINATION
+WM_WAITFORFX
+STAL 40
+WM_DRAWPATH 0x0 0x1 0x0
+STAL 70
+MUSC 0x4
+SCOORD 0x2 [40228,2211]
+CALL 0x9EE0C0
+WM_MAKELORDVISIBLE 0x0
+EVBIT_MODIFY 0x1
+CALL 0x591F40
+ENDA
+

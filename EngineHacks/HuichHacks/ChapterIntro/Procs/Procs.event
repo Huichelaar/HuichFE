@@ -1,0 +1,86 @@
+// Procs and proc routines
+
+ALIGN 4
+Proc_ChIntro:
+#include "ChIntro/ChIntro.event"
+  ALIGN 4
+  GetBGPalette:
+  #include "ChIntro/GetBGPalette.lyn.event"
+  ALIGN 4
+  GetGemCount:
+  #include "ChIntro/GetGemCount.lyn.event"
+  ALIGN 4
+  Init_BGOBJ:
+  #include "ChIntro/Init_BGOBJ.lyn.event"
+    ALIGN 4
+    Init_Relief:
+    #include "ChIntro/Init_Relief.lyn.event"
+    ALIGN 4
+    Init_Gem:
+    #include "ChIntro/Init_Gem.lyn.event"
+    ALIGN 4
+    Load_MapSprites:
+    #include "ChIntro/Load_MapSprites.lyn.event"
+      ALIGN 4
+      DrawUnitCheck:
+      #include "ChIntro/DrawUnitCheck.lyn.event"
+  ALIGN 4
+  PlaySfx:
+  #include "ChIntro/PlaySfx.lyn.event"
+  ALIGN 4
+  Init_Seg1:
+  #include "ChIntro/Init_Seg1.lyn.event"
+  ALIGN 4
+  Loop_Title:
+  #include "ChIntro/Loop_Title.lyn.event"
+  ALIGN 4
+  End_Seg1:
+  #include "ChIntro/End_Seg1.lyn.event"
+  ALIGN 4
+  FadeOutSfx:
+  #include "ChIntro/FadeOutSfx.lyn.event"
+  ALIGN 4
+  InitBattleMapBG:
+  #include "ChIntro/Init_BattleMapBG.lyn.event"
+  ALIGN 4
+  Loop_FadeIn:
+  #include "ChIntro/Loop_FadeIn.lyn.event"
+
+
+ALIGN 4
+Proc_Gem:
+#include "Gem/Gem.event"
+  ALIGN 4
+  Init_Shine:
+  #include "Gem/Init_Shine.lyn.event"
+  ALIGN 4
+  Loop_Shine:
+  #include "Gem/Loop_Shine.lyn.event"
+  
+
+ALIGN 4
+Proc_ScrollTitleBG:
+#include "TitleBG/ScrollTitleBG.event"
+  ALIGN 4
+  Loop_ScrollInTitleBG:
+  #include "TitleBG/Loop_ScrollInTitleBG.lyn.event"
+  ALIGN 4
+  Loop_ScrollTitleBG:
+  #include "TitleBG/Loop_ScrollTitleBG.lyn.event"
+  
+
+ALIGN 4
+Proc_MapSprites:
+#include "MapSprites/MapSprites.event"
+  ALIGN 4
+  Init_MapSprites:
+  #include "MapSprites/Init_MapSprites.lyn.event"
+  ALIGN 4
+  Loop_MapSprites:
+  #include "MapSprites/Loop_MapSprites.lyn.event"
+    ALIGN 4
+    VRAMUpdate:
+    #include "MapSprites/VRAMUpdate.lyn.event"
+    ALIGN 4
+    CalcMov:
+    #include "MapSprites/CalculateMovement.lyn.event"

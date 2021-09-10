@@ -1,0 +1,89 @@
+// Create second suspend
+#ifndef _FE8_
+    ERROR "You're not assembling to an FE8 ROM!"
+#endif
+
+#include "Extensions/Hack Installation.txt"
+#include "EAstdlib.event"
+
+#ifndef FreeSpace
+	#define FreeSpace 0x1000000
+	ORG FreeSpace
+#endif
+
+// Uncomment this to put backup functionality in the "Suspend" button,
+// instead of having a separate button. Useful if your menu's too cluttered.
+/*
+#ifndef OverwriteSuspend
+  #define OverwriteSuspend
+#endif
+*/
+
+#ifndef DebuffTable
+  #define DebuffTable     0x0203FA70
+  #define DebuffTableSize 0x00000590
+#endif
+
+{
+  // Variables
+  // UndoCount. Determines how many times you can load suspend2. Resets when loading or saving a chapter.
+  ALIGN 4
+  UndoCount:
+  WORD 0x3
+  
+	PUSH
+  
+  // Make third save inaccessible
+  ORG 0xABA50         // skip last save file when pressing down.
+  SHORT 0x2B01
+  ORG 0xABA68         // skip last save file when pressing up.
+  SHORT 0x2001
+  ORG 0xAB9DE         // skip last save file when pressing up after selecting New Game.
+  SHORT 0x2401
+  ORG 0xAB9AC         // skip last save file when pressing down after selecting New Game.
+  SHORT 0x2C01
+  ORG 0xAB9C0         // New game loop, only check save 0 & 1 to see if all save files are occupied.
+  SHORT 0x2D01
+  ORG 0xABC20         // Don't draw "copy", "newgame", etc. when save 0 & 1 occupied.
+  SHORT 0x2D01
+  ORG 0xAB10C         // Do not draw last save file.
+  SHORT 0x2F01
+  ORG 0xAB8D8         // Return to main menu when 0 and 1 are empty after erasing.
+  SHORT 0x2901
+  ORG 0xAB8E8         // Return to main menu when 0 and 1 are occupied after copying.
+  SHORT 0x2D01
+  ORG 0xAB8FC         // Return to main menu when 0 and 1 are occupied after copying (again).
+  SHORT 0x2D01
+  ORG 0xAB0BC         // Vertically center the two save files.
+  SHORT 0x3530
+  ORG 0xAB25C         // Adjust the pencil cursor.
+  SHORT 0x21C0
+  ORG 0xAB234         // Adjust the pencil cursor when selected.
+  SHORT 0x20C0
+  ORG 0xAB154         // Adjust the save scroll when it rotates & transforms.
+  SHORT 0x322E
+  ORG 0xAB194         // Adjust the save scroll when resuming.
+  SHORT 0x3240
+  ORG 0xAB1AA         // Adjust the save scroll. (Offscreen?)
+  SHORT 0x3240
+  ORG 0xAB1CA         // Adjust the save scroll.
+  SHORT 0x322E
+
+  // Move optionbox to avoid undobox overlap.
+  ORG 0xAB202
+  BYTE 0xC
+  ORG 0xAB222
+  BYTE 0x14
+  ORG 0xAB81C
+  BYTE 0xEE
+  ORG 0xAB838
+  BYTE 0xEE
+  
+	POP
+  
+  
+  #include "Defs/ProcDefinitions.event"
+  #include "asm/asm.event"
+  #include "Menus/Menus.event"
+  #include "Events/Events.event"
+}

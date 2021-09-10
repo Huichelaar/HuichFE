@@ -1,0 +1,121 @@
+//Custom samples
+
+//Direct
+ALIGN 4
+RSSample44:
+#include "44_3.event"
+ALIGN 4
+RSSample46:
+#include "46_3.event"
+ALIGN 4
+RSSample60:
+#include "60_3.event"
+ALIGN 4
+RSSample70:
+#include "70_3.event"
+ALIGN 4
+RSSample73:
+#include "73_4.event"
+ALIGN 4
+RSSample79:
+#include "79_3.event"
+ALIGN 4
+RSSample100:
+#include "100_3.event"
+ALIGN 4
+RSSample102:
+#include "102_3.event"
+ALIGN 4
+RSSample116:
+#include "116_2.event"
+
+
+//Multisample
+ALIGN 4
+RSSample45_1:
+#include "45_1.event"
+ALIGN 4
+RSSample45_2:
+#include "45_2.event"
+ALIGN 4
+RSSample45_3:
+#include "45_3.event"
+
+ALIGN 4
+RSSample48_0:
+#include "48_0.event"
+ALIGN 4
+RSSample48_1:
+#include "48_1.event"
+
+ALIGN 4
+RSSample49_3:
+#include "49_3.event"
+ALIGN 4
+RSSample49_4:
+#include "49_4.event"
+
+ALIGN 4
+RSSample57_1:
+#include "57_1.event"
+ALIGN 4
+RSSample57_3:
+#include "57_3.event"
+
+
+// Drum
+
+
+// Multisample tables
+RStable45:
+VoiceDummy(RStable45,0x0)
+VoiceDirect(RStable45,0x1,0x3c,RSSample45_1,0x0,0x0,0x0,0xff,0x0,0xff,0xa5)
+VoiceDirect(RStable45,0x2,0x3c,RSSample45_2,0x0,0x0,0x0,0xff,0x0,0xff,0xa5)
+VoiceDirect(RStable45,0x3,0x3c,RSSample45_3,0x0,0x0,0x0,0xff,0x0,0xff,0xa5)
+VoiceDummy(RStable45,0x4)
+VoiceDummy(RStable45,0x5)
+ORG RStable45+0x0c*6
+
+RStable48:
+VoiceDirect(RStable48,0x0,0x3c,RSSample48_0,0x0,0x0,0x0,0xff,0x0,0xff,0xa5)
+VoiceDirect(RStable48,0x1,0x3c,RSSample48_1,0x0,0x0,0x0,0xff,0x0,0xff,0xa5)
+VoiceDirect(RStable48,0x2,0x3c,RSSample48_0,0x0,0x0,0x0,0xff,0x0,0xff,0xd0)
+VoiceDirect(RStable48,0x3,0x3c,RSSample48_1,0x0,0x0,0x0,0xff,0x0,0xff,0xd0)
+VoiceDummy(RStable48,0x4)
+VoiceDummy(RStable48,0x5)
+ORG RStable48+0x0c*6
+
+RStable49:
+VoiceDummy(RStable49,0x0)
+VoiceDummy(RStable49,0x1)
+VoiceDummy(RStable49,0x2)
+VoiceDirect(RStable49,0x3,0x3c,RSSample49_3,0x0,0x0,0x0,0xff,0x0,0xff,0xa5)
+VoiceDirect(RStable49,0x4,0x3c,RSSample49_4,0x0,0x0,0x0,0xff,0x0,0xff,0xa5)
+VoiceDummy(RStable49,0x5)
+ORG RStable49+0x0c*6
+
+RStable57:
+VoiceDummy(RStable57,0x0)
+VoiceDirect(RStable57,0x1,0x3c,RSSample57_1,0x0,0x0,0x0,0xff,0x0,0xff,0xa0)
+VoiceDummy(RStable57,0x2)
+VoiceDirect(RStable57,0x3,0x3c,RSSample57_3,0x0,0x0,0x0,0xff,0x0,0xff,0xa0)
+VoiceDummy(RStable57,0x4)
+VoiceDummy(RStable57,0x5)
+ORG RStable57+0x0c*6
+
+// Note charts
+ALIGN 4
+RSchart32:
+#incbin "note charts/32chart.dmp"
+ALIGN 4
+RSchart45:
+#incbin "note charts/45chart.dmp"
+ALIGN 4
+RSchart48:
+#incbin "note charts/48chart.dmp"
+ALIGN 4
+RSchart49:
+#incbin "note charts/49chart.dmp"
+ALIGN 4
+RSchart57:
+#incbin "note charts/57chart.dmp"

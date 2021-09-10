@@ -1,0 +1,10 @@
+// Change BG3 based on songID.
+// Display only background if L is pressed.
+// Press any button to display everything again.
+
+{
+#include "Defs/ProcDefinitions.event"
+#include "Structs/Structs.event"
+#include "C/Main.lyn.event"
+#include "asm/asm.event"
+}

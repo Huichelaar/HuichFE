@@ -1,0 +1,16 @@
+// EA Installer based on the FEBuilder patch.
+// Credits to aera and 7743 for the original patch.
+#ifndef _FE8_
+    ERROR "You're not assembling to an FE8 ROM!"
+#endif
+
+#include "Extensions/Hack Installation.txt"
+#include "EAstdlib.event"
+
+PUSH
+  ORG 0x726CA
+  #incbin "battle_changer.bin"
+  
+  ORG 0x72700
+  #incbin "72700.bin"
+POP

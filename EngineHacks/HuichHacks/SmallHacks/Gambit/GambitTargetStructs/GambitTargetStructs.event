@@ -1,0 +1,6 @@
+// GambitTarget Structs.
+
+// Bonewalkers.
+ALIGN 4
+SkelGTS:
+#include "SkelGambit.event"

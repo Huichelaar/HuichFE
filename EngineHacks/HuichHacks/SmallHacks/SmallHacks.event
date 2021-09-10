@@ -1,0 +1,45 @@
+// Various small hack stuff
+
+
+PUSH
+
+  // Increase base staff accuracy from 30 to 50
+  ORG 0x2CD30
+  BYTE 0x32
+  
+POP
+
+
+// BugFixes
+#include "BugFixes/BugFixes.event"
+
+// Display page 3 RText only for obtained weapon ranks
+#include "WeaponRankStatScreen/WeaponRankStatScreen.event"
+
+// Extend the size of the guide.
+#include "ExtendGuide/ExtendGuide.event"
+
+// World Map Flags
+#include "WMSprites/WMSprites.event"
+
+// Wait longer before fading in prepscreen
+// to sync with song and build tension
+#include "PrepTension/PrepTension.event"
+
+// Re-load button palette when viewing map during preps.
+#include "ReloadButtonPalette/ReloadButtonPalette.event"
+
+// Scroll Mural Background.
+#include "ScrollMural/ScrollMural.event"
+
+// Execute proc tree 6 after tree 3, before tree 5.
+#include "EnableTree6/EnableTree6.event"
+
+// Gambits.
+#include "Gambit/Gambit.event"
+
+// More range square colours
+#include "RangeSquareColours/RangeSquareColours.event"
+
+// Don't change DISPCNT during fades if FadeKeepDISPCNT bit set.
+#include "FadeDISPCNT/FadeDISPCNT.event"

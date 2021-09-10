@@ -1,0 +1,9 @@
+0xC0FFEE,AffFire,AffThunder,AffWind,AffIce,AffDark,AffLight,AffAnima,Zero
+0,0,0,0,0,0,0,0,0
+AffFire,2,1,0,0,0,0,1,0
+AffThunder,1,2,1,0,0,0,0,0
+AffWind,0,1,2,1,0,0,0,0
+AffIce,0,0,1,2,1,0,0,0
+AffDark,0,0,0,1,2,1,0,0
+AffLight,0,0,0,0,1,2,1,0
+AffAnima,1,0,0,0,0,1,2,0

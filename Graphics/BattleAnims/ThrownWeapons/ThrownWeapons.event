@@ -1,0 +1,4 @@
+// Custom thrown weapon anims.
+#include "SupplierJavelin/SupplierJavelin.event"
+#include "WyvernKnightJavelin/WyvernKnightJavelin.event"
+#include "BigHandaxe/BigHandaxe.event"

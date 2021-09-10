@@ -1,0 +1,7 @@
+0x8AEBAC,Number of Supported Characters,Person 1,Initial Support Level 1,Support Growth Rate 1,Person 2,Initial Support Level 2,Support Growth Rate 2,Person 3,Initial Support Level 3,Support Growth Rate 3,Person 4,Initial Support Level 4,Support Growth Rate 4,Person 5,Initial Support Level 5,Support Growth Rate 5,Person 6,Initial Support Level 6,Support Growth Rate 6,Person 7,Initial Support Level 7,Support Growth Rate 7
+Vivian,2,Leona,0,2,Milo,0,2,0x0,0,0,0x0,0,0,0x0,0,0,0x0,0,0,0x0,0,0
+Leona,2,Vivian,0,2,Demi,30,4,0x0,0,0,0x0,0,0,0x0,0,0,0x0,0,0,0x0,0,0
+Milo,2,Vivian,0,2,Demi,30,4,0x0,0,0,0x0,0,0,0x0,0,0,0x0,0,0,0x0,0,0
+Demi,2,Leona,30,4,Milo,30,4,0x0,0,0,0x0,0,0,0x0,0,0,0x0,0,0,0x0,0,0
+Theresa,1,Herbert,50,4,0x0,0,0,0x0,0,0,0x0,0,0,0x0,0,0,0x0,0,0,0x0,0,0
+Herbert,1,Theresa,50,4,0x0,0,0,0x0,0,0,0x0,0,0,0x0,0,0,0x0,0,0,0x0,0,0

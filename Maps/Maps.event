@@ -1,0 +1,42 @@
+ALIGN 4
+Map0:Map3:Map4:Map5:Map6:Map7:Map8:Map9:Map10:Map11:Map12:Map13:Map14:Map15:Map16:Map17:Map18:Map19:Map20:Map21:Map22:Map23:Map24:
+#incbin Map0_data.dmp
+
+ALIGN 4
+Map1:
+#incbin Map1_data.dmp
+
+Map1Changes:
+{
+TileMap(0,0,0,3,2,House1destroyed)
+TileMap(1,1,1,1,1,House1visited)
+TileMapEnd
+
+House1destroyed:
+SHORT 0xebc 0xec0 0xec4 0xf3c 0xf40 0xf44 
+ALIGN 4
+
+House1visited:
+SHORT 0xe10 
+ALIGN 4
+}
+
+
+ALIGN 4
+Map2:
+#incbin Map2_data.dmp
+
+Map2Changes:
+{
+TileMap(1,10,3,1,1,House1visited)
+TileMap(2,10,7,1,3,Snag1broken)
+TileMapEnd
+
+House1visited:
+SHORT 0xe1c 
+ALIGN 4
+
+Snag1broken:
+SHORT 0xdf4 0xe64 0xe74 
+ALIGN 4
+}

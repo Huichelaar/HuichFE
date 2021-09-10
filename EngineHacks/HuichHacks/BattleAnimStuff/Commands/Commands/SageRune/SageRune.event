@@ -1,0 +1,12 @@
+// Differently coloured Sage runes.
+// Like C2E & C2F, but with different palettes.
+
+ALIGN 4
+RegularRedRune:
+#include "RegRed.lyn.event"
+ALIGN 4
+CriticalRedRune:
+#include "CritRed.lyn.event"
+ALIGN 4
+SageRune:
+#include "Rune.lyn.event"

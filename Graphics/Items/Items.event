@@ -1,0 +1,11 @@
+// Item Icons
+PUSH
+  ORG 0x36B4
+  POIN ItemIcons
+  
+  ORG 0x3788
+  POIN ItemIcons
+POP
+ALIGN 4
+ItemIcons:
+#incbin "ItemIcons.dmp"

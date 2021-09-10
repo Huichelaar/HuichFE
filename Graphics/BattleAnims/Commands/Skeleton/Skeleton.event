@@ -1,0 +1,22 @@
+// Graphics
+ALIGN 4
+SkelMeleePalettes:
+#incbin "SkelMeleePalettes.dmp"
+ALIGN 4
+SkelSpawnMeleeTiles:
+#incbin "SkelSpawnMelee.dmp"
+ALIGN 4
+SkelRangedPalette:
+#incbin "SkelRangedPalette.dmp"
+ALIGN 4
+SkelSpawnRangedTiles:
+#incbin "SkelSpawnRanged.dmp"
+ALIGN 4
+SkelWalkTiles:
+#incbin "SkelWalk.dmp"
+ALIGN 4
+SkelSlashTiles:
+#incbin "SkelSlash.dmp"
+ALIGN 4
+SkelDespawnMeleeTiles:
+#incbin "SkelDespawnMelee.dmp"

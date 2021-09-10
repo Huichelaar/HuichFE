@@ -1,0 +1,29 @@
+// Routines that calculate stuff
+
+ALIGN 4
+GetBonusLv:
+#include "GetBonusLv.lyn.event"
+  ALIGN 4
+  GetAffinityBonus:
+  #include "GetAffinityBonus.lyn.event"
+ALIGN 4
+GetFortMatCount:
+#include "GetFortMatCount.lyn.event"
+ALIGN 4
+SetFortMatCount:
+#include "SetFortMatCount.lyn.event"
+ALIGN 4
+GetMatCount:
+#include "GetMatCount.lyn.event"
+ALIGN 4
+SetMatCount:
+#include "SetMatCount.lyn.event"
+ALIGN 4
+GetFortUpgradeMatCount:
+#include "GetFortUpgradeMatCount.lyn.event"
+ALIGN 4
+IncreaseFortProduce:
+#include "IncreaseFortProduce.lyn.event"
+ALIGN 4
+IncreaseFortExp:
+#include "IncreaseFortExp.lyn.event"

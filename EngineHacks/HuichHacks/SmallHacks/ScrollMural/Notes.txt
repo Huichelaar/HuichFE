@@ -1,0 +1,36 @@
+Proc                                                      calls MuralScroller by
+
+0x8A1829C, Preps                                          0x8095C85
+0x8A18E8C, Preps_PickUnits                                0x809AE7D
+0x8A189A4, Items (preps & overworld)                      0x8098621
+0x8A1920C, Convoy (preps & overworld)                     0x809D915
+0x8A1901C, Trade (preps & overworld)                      0x809B86D
+0x8A19424, List (preps & overworld)                       0x809ED8D
+
+0x8A21338, SoundRoom                                      0x80AF525
+
+0x8A177A0, Unit list (battle & overworld)                 0x8090D81
+0x8A01B54, Status (battle)                                0x808DF25
+0x8A3E8B8, Status (overworld)                             0x80C0CF5
+
+0x8A19528, Overworld_Sell                                 0x80A00DD
+
+0x8B1271C, Promo Split (preps & overworld)                0x80CCD49
+
+0x8A009D8, StatScreen                                     0x80884B1, PrepSlidingBG
+
+TODO:
+(Secret) shops, armories, supports, guide.
+
+
+
+
+
+
+
+
+Palette Priorities:
+StatScreen
+  Preps
+    SoundRoom
+      Everything else

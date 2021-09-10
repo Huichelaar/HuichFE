@@ -1,0 +1,41 @@
+#ifdef OverwriteSuspend
+  PUSH
+
+    ORG 0x59CF58              // Suspend Command Effect
+    POIN NewSuspendEffect+0x1
+
+  POP
+
+  ALIGN 4
+  NewSuspendEffect:
+  #include "ChapterMenu/NewSuspendEffect.lyn.event"
+  
+#else
+  PUSH
+
+    ORG 0x59D21C            // ChapterMenu Commands
+    POIN ChapterMenuCommands
+
+  POP
+
+  ALIGN 4
+  ChapterMenuCommands:
+  #include "ChapterMenu/ChapterMenuCommands.event"
+    ALIGN 4
+    BackupCommandUsability:
+    #include "ChapterMenu/BackupCommandUsability.lyn.event"
+    ALIGN 4
+    BackupCommandDraw:
+    #include "ChapterMenu/BackupCommandDraw.lyn.event"
+    ALIGN 4
+    BackupCommandEffect:
+    #include "ChapterMenu/BackupCommandEffect.lyn.event"
+
+#endif
+
+
+
+
+
+
+
