@@ -2901,6 +2901,10 @@ __TEXTPROCESSFE2:
 #incbin ".TextEntries\TextBuildfileCreditsUIbuttons.fetxt.dmp"
 setText($FE2, __TEXTPROCESSFE2)
 
+__TEXTPROCESSFE3:
+#incbin ".TextEntries\TextBuildfileCreditsCredits.fetxt.dmp"
+setText($FE3, __TEXTPROCESSFE3)
+
 }
 
 #endif // TEXT_INSTALLER_TEXTBUILDFILE_EVENT

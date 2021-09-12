@@ -348,6 +348,15 @@ Songs used:
 - The background used by the StatScreen, on the prep screen, when checking status, etc. is modified from Fire Emblem: The Sacred Stones by Intelligent Systems.
 - The new UI buttons were made by GabrielKnight. I made 32x16 "Start" & "Select" variants based on these.
 - The puzzle background was taken from Yu-Gi-Oh!: Reshef of Destruction by Konami, submitted to the spriters resource by Urathros. The cursor and sound effects are also from Yu-Gi-Oh!: Reshef of Destruction. The 32x32 weapon icons and arrows used by the tutorial diagram were made by GabrielKnight.
+- Fortresses.
+  - The tree being chopped down in the fort menu was made by Obsidian Daddy.
+  - The other assets displayed in that animation (pirate, plateau) are in vanilla FE8, so credit goes 
+  to Intelligent Systems for that. I Frankenstein'd the "MATERIALS" and "FORTS" displayed in the fortmenu from vanilla FE8 menu UI, so credit goes to Intelligent Systems for that too.
+- In-game credits.
+  - The font and palettes used by the title cards were taken and modified from FE7U by Intelligent Systems.
+  - I'm also using Intelligent Systems' FE8U's classreel font and palette in between the title cards.
+  - Authornames were written in Monotype Corsiva which is a font by Patricia Saunders.
+  - The mode7 fields map is using a subset of the Revamped Fields tileset and was designed by Retrogamer.
 
 # Hacks
 

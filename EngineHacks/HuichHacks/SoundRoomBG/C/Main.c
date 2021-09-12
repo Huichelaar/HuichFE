@@ -60,11 +60,11 @@ const struct ProcInstruction SBG_ChangeSongBG_Proc[] = {
 void SBG_InitChangeSongBG(struct SBG_ProcStateChangeSongBG* proc) {
   proc->timer = 0;
   proc->fadeIn = false;
-  CpuFastCopy(gPaletteBuffer+0x20, gSMSGfxBuffer_Frame1, 0x1C0);      // Buffer palettes.
+  CpuFastCopy(gPaletteBuffer+0x20, gPaletteFadeBuffer, 0x1C0);      // Buffer palettes.
 }
 
 void SBG_fadePals(struct SBG_ProcStateChangeSongBG* proc) {
-  CpuFastCopy(gSMSGfxBuffer_Frame1, gPaletteBuffer+0x20, 0x1C0);      // Buffered palettes.
+  CpuFastCopy(gPaletteFadeBuffer, gPaletteBuffer+0x20, 0x1C0);      // Buffered palettes.
   
   if (!proc->fadeIn)
     FadePalette(gPaletteBuffer, 2, 14, proc->timer);
@@ -81,7 +81,7 @@ void SBG_DrawBG(struct SBG_ProcStateChangeSongBG* proc) {
   if (proc->songBGStruct == NULL) {
     CpuFastFill(0xBF00BF, (void*)0x600F800, 0x800)            // Clear screen entries by using empty tile.
     ProcStart(Procs_ScrollMural, proc->parent->parent);       // Grandparent is SoundRoomUI proc.
-    CpuFastCopy(gPaletteBuffer+0x20, gSMSGfxBuffer_Frame1, 0x1C0);
+    CpuFastCopy(gPaletteBuffer+0x20, gPaletteFadeBuffer, 0x1C0);
     gLCDIOBuffer.bgControl[3].colorMode = 0;
   }
   else {
@@ -96,7 +96,7 @@ void SBG_DrawBG(struct SBG_ProcStateChangeSongBG* proc) {
       }
     }
     EnableBgSyncByIndex(3);
-    CpuFastCopy(proc->songBGStruct->BGPalette+0x20, gSMSGfxBuffer_Frame1, 0x1C0);
+    CpuFastCopy(proc->songBGStruct->BGPalette+0x20, gPaletteFadeBuffer, 0x1C0);
     gLCDIOBuffer.bgControl[3].colorMode = 1;
   }
   proc->timer = 0;

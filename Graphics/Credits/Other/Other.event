@@ -58,3 +58,17 @@ CreditsUIbuttonsTiles:
 ALIGN 4
 CreditsUIButtonsOAM:
 #incbin "UIButtonsOAM.dmp"
+
+ALIGN 4
+CreditsFortressesTiles:
+#incbin "Fortresses.dmp"
+ALIGN 4
+CreditsFortressesPalette:
+#incbin "FortressesPal.dmp"
+
+ALIGN 4
+CreditsCreditsTiles:
+#incbin "Credits.dmp"
+ALIGN 4
+CreditsCreditsPalette:
+#incbin "CreditsPal.dmp"

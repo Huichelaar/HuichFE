@@ -85,6 +85,8 @@ CRE_ReelStruct_Entry(CreditsChIntro, 2, spriteChIntro, authChIntro)
 CRE_ReelStruct_Entry(CreditsGameIntro, 2, spriteGameIntro, authGameIntro)
 CRE_ReelStruct_Entry(CreditsStatScr, 2, spriteStatScr, authStatScr)
 CRE_ReelStruct_Entry(CreditsUIbuttons, 2, spriteUIbuttons, authUIbuttons)
+CRE_ReelStruct_Entry(GuideEntryForts, 2, spriteFortresses, authFortresses)
+CRE_ReelStruct_Entry(CreditsCredits, 2, spriteCredits, authCredits)
 CRE_ReelStruct_Entry(0, 0, 0, 0)        // Terminator.
 
 //reelStruct:
@@ -162,6 +164,10 @@ CRE_SpriteOtherStruct(0, 0, CreditsStatScrPalette+0x100, 160, 0)
 CRE_SpriteOtherStruct(0, 0, 0, 0, 0)   // Terminator.
 CRE_SpriteOtherStruct(spriteUIbuttons, CreditsUIbuttonsTiles, CreditsUIButtonsOAM, ButtonPromptsPalette, 160, 0)
 CRE_SpriteOtherStruct(0, 0, 0, 0, 0)   // Terminator.
+CRE_SpriteOtherStruct(spriteFortresses, CreditsFortressesTiles, OAM80x80_256col, CreditsFortressesPalette, 160, 0)
+CRE_SpriteOtherStruct(0, 0, 0, 0, 0)   // Terminator.
+CRE_SpriteOtherStruct(spriteCredits, CreditsCreditsTiles, OAM80x80_256col, CreditsCreditsPalette, 160, 0)
+CRE_SpriteOtherStruct(0, 0, 0, 0, 0)   // Terminator.
 
 // void* []
 ALIGN 4
@@ -199,3 +205,5 @@ authChIntro: POIN authSquareEnix authRyan914 authKonami authUrathros authGameFre
 authGameIntro: POIN authFatih authPatriciaSaunders authCapcom authShoda authTSP184 authSquareEnix authHALLaboratory authIntelligentSystems authJackster authPlanetInteractive authRealtimeAssociates authMrC authKonami authSMITHYGCN 0
 authStatScr: POIN authIntelligentSystems 0
 authUIbuttons: POIN authGabrielKnight 0
+authFortresses: POIN authIntelligentSystems authObsidianDaddy 0
+authCredits: POIN authIntelligentSystems authPatriciaSaunders authZoramineFae authFlasuban authP33rl355 authRetrogamer 0

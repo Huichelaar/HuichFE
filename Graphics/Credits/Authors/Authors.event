@@ -264,6 +264,9 @@ ALIGN 4
 authNocash:
 #incbin "Nocash.dmp"
 ALIGN 4
+authObsidianDaddy:
+#incbin "ObsidianDaddy.dmp"
+ALIGN 4
 authOlivierLapicque:
 #incbin "OlivierLapicque.dmp"
 ALIGN 4
@@ -308,6 +311,9 @@ authReds:
 ALIGN 4
 authreEject:
 #incbin "reEject.dmp"
+ALIGN 4
+authRetrogamer:
+#incbin "Retrogamer.dmp"
 ALIGN 4
 authRexacuse:
 #incbin "Rexacuse.dmp"

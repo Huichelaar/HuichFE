@@ -62,7 +62,9 @@ Generic'ize CRE_waitForChildren to just waitForChildren.
 
 There's a battle anim, either Female cavalier or Supplier with a palette in their frames.
 
-Slim lance Demi is getting a lot of Wexp (rank C to rank B in 2 chapters), look into this.
+Halve weapon exp!
+
+Darken screen for long-range attacks.
 
 PLAN, Crafting should allow:
   - fusing two of the same items (total durability no higher than 63?), no material cost. (seems Tequila has a "Convoy Combine" patch which already does this)

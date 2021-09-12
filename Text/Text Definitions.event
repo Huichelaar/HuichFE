@@ -678,5 +678,6 @@
 #define CreditsGameIntro $FE0
 #define CreditsStatScr $FE1
 #define CreditsUIbuttons $FE2
+#define CreditsCredits $FE3
 
 #endif // TEXT_DEFINITIONS_TEXTBUILDFILE_EVENT

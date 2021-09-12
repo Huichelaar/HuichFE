@@ -39,7 +39,7 @@ SBG_InitChangeSongBG:
 .L3:
 	.align	2
 .L2:
-	.word	gSMSGfxBuffer_Frame1
+	.word	gPaletteFadeBuffer
 	.word	gPaletteBuffer+64
 	.word	CpuFastSet
 	.size	SBG_InitChangeSongBG, .-SBG_InitChangeSongBG
@@ -98,7 +98,7 @@ SBG_fadePals:
 .L12:
 	.align	2
 .L11:
-	.word	gSMSGfxBuffer_Frame1
+	.word	gPaletteFadeBuffer
 	.word	CpuFastSet
 	.word	gPaletteBuffer+64
 	.word	gPaletteBuffer
@@ -222,7 +222,7 @@ SBG_DrawBG:
 	.word	16777728
 	.word	100726784
 	.word	ProcStart
-	.word	gSMSGfxBuffer_Frame1
+	.word	gPaletteFadeBuffer
 	.word	gPaletteBuffer+64
 	.word	EndEachProc
 	.word	16777232
