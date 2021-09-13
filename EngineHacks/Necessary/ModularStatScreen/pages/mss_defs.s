@@ -625,7 +625,7 @@
 .endm
 
 .macro draw_stats_box
-  ldr     r0,=0x8A02204        @0808748A @buffer TSA
+  ldr     r0,=SSEquipOverlayTSA        @0808748A @buffer TSA
   ldr     r4,=0x2020188        @0808748C
   mov     r1,r4       @0808748E
   blh      0x8012F50       @08087490
@@ -743,14 +743,17 @@
   mov     r0,r5       @08087630
   blh      0x8016CC0        @08087632
   mov     r5,r0       @08087636
-  ldr     r4,=0x2003CB4        @08087638
-  blh      0x8003EDC        @0808763A
-  mov     r1,#0x37        @0808763E
-  sub     r1,r1,r0        @08087640
-  mov     r0,r4       @08087642
-  mov     r2,#0x2       @08087644
-  mov     r3,r5       @08087646
-  blh      0x8004480, r4        @08087648
+  
+  ldr     r0, =0x203A4EC      @ Taken from knabepicer's 
+  add     r0, #0x5E           @ "Replace Range display 
+  mov     r1, #0x0            @ with Attack Speed display".
+  ldsh    r2, [r0, r1]        @ With help from Pawkkie.
+  mov     r0, r4
+  mov     r1, #0x2
+  sub     r0, #0x8E
+  sub     r0, #0x72
+  blh     0x8004B94
+
   mov     r4,#0x0       @0808764C
   ldr     r0,=0x2003D2C        @0808764E
   ldr     r3,=0x7060       @08087650

@@ -65,9 +65,6 @@
 #define MageFMagicAnim 0x6C
 #define ShamanMMagicAnim 0x75
 #define ShamanFMagicAnim 0x76
-//TEMP
-#define MarshallHandaxeAnim 0x29
-#define Custom2MagicAnim 0x2A
 
 // Characters
 #define Vivian 0x1

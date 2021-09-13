@@ -7,7 +7,7 @@ mov   r5, r0
 
 
 ldr   r0, =KeyStatusBuffer
-ldrh  r0, [r0, #0x6]
+ldrh  r0, [r0, #0x8]
 ldr   r1, =0x200
 tst   r0, r1
 beq   L1

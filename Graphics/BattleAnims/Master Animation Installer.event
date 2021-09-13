@@ -46,7 +46,6 @@ SupplierAnims:
 LanceAnim(SupplierLanceAnim)
 StaffAnim(SupplierStaffAnim)
 UnarmedAnim(SupplierStaffAnim)
-HandAxeAnim(MarshallHandaxeAnim) // FIXME, temp. delete this once we're done.
 EndAnim
 
 ALIGN 4
@@ -100,7 +99,6 @@ EndAnim
 ALIGN 4
 MonkMAnims:
 MagicAnim(MonkMMagicAnim)
-SpecialAnim(Custom2MagicAnim, SkelGambit) // FIXME, temp. delete this once we're done.
 EndAnim
 
 ALIGN 4
@@ -127,11 +125,6 @@ CavalierFAnims:
 SwordAnim(CavalierFSwordAnim)
 LanceAnim(CavalierFLanceAnim)
 UnarmedAnim(CavalierFUnarmedAnim)
-EndAnim
-
-ALIGN 4
-MarshallAnims:
-AxeAnim(MarshallHandaxeAnim)
 EndAnim
 
 
@@ -164,6 +157,3 @@ EndAnim
 #include "AnimInstallers/CavalierF Sword Installer.event"
 #include "AnimInstallers/CavalierF Lance Installer.event"
 #include "AnimInstallers/CavalierF Unarmed Installer.event"
-//TEMP
-#include "AnimInstallers/Marshall Handaxe Installer.event"
-#include "AnimInstallers/Custom2 Magic Installer.event"

@@ -2,7 +2,7 @@
 #define SBG_SongBGStructEntry(label, BGTiles, BGPalette, next) "ALIGN 4; label:; POIN BGTiles BGPalette next"
 
 ALIGN 4
-songBGList:
+SBG_songBGList:
 SBG_SongBGListEntry(0x1, SBG_YGISACRED)
 SBG_SongBGListEntry(0x2, SBG_YGIRESHEF)
 SBG_SongBGListEntry(0x3, SBG_PKMNBW)

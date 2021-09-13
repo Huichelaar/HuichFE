@@ -17,7 +17,7 @@ struct SBG_SongBGList {
   struct SBG_SongBGStruct* songBGStruct;
   
 };
-extern struct SBG_SongBGList songBGList[];
+extern struct SBG_SongBGList SBG_songBGList[];
 struct SBG_SongBGStruct* SBG_DetermineSongBGStruct(u32 songID);
 
 struct SBG_ProcStateMain {

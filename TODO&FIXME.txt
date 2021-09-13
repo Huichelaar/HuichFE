@@ -43,8 +43,6 @@ If we care enough, move SkilSys graphics stuff to graphics folder. Don't wanna i
 
 Toward the end. Remove text entries of features you didn't include (Raid? etc.)
 
-Replace "Rng" in statscreen with "AS". Pawkkie made an implementation of this. Search Discord.
-
 Do we need this thing Sme wrote?
 //change staff battle init to not give 0xFF status on miss
 ORG $2CBAC
@@ -59,10 +57,6 @@ ldr r1, #200        @Percent of speed. 100 is normal. Double speed at 200.
 blh 080D117C        @m4aMPlayTempoControl    {U}
 
 Generic'ize CRE_waitForChildren to just waitForChildren.
-
-There's a battle anim, either Female cavalier or Supplier with a palette in their frames.
-
-Halve weapon exp!
 
 Darken screen for long-range attacks.
 

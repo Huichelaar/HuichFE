@@ -84,8 +84,7 @@ SSMMSBoxOAM:
 #incbin "SSMMSBoxOAM.dmp"
 
 
-// Other StatScreen graphics.
-// Comment out if using MSS, MSS already repoints these.
+// Other StatScreen graphics. MSS already repoints these.
 /*
 PUSH
 
@@ -104,9 +103,11 @@ SSOtherGfx:
 // Equipment box
 PUSH
 
-  // Repoint TSA
+  // Repoint TSA. This is already repointed by MSS
+  /*
   ORG 0x874E4
   POIN SSEquipOverlayTSA
+  */
 
   // Repoint Tiles
   ORG 0x88658

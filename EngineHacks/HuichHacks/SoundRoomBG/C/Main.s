@@ -360,7 +360,7 @@ SBG_DetermineSongBGStruct:
 .L46:
 	.align	2
 .L45:
-	.word	songBGList
+	.word	SBG_songBGList
 	.size	SBG_DetermineSongBGStruct, .-SBG_DetermineSongBGStruct
 	.global	SBG_ChangeSongBG_Proc
 	.section	.rodata.str1.1,"aMS",%progbits,1

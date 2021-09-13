@@ -18,6 +18,13 @@
   #include "DisplayGrowthsOptions/DisplayGrowthsOptions.event"
  
   PUSH
+    //From knabepicer's "Replace Range display with Attack Speed display". With help from Pawkkie.
+    ORG $A00E76 //Replace RNG helptext with AS'.
+      SHORT 0x572
+    
+    ORG $A01194 //Replace "RNG" with "AS".
+      SHORT 0x504
+  
     ORG 0x205b24 //24 for stat screen
       POIN MSS_page2|1 MSS_page1|1 MSS_page3//|1 MSS_page4|1
 

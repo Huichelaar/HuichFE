@@ -6,10 +6,10 @@ struct SBG_SongBGStruct* SBG_DetermineSongBGStruct(u32 songID) {
   struct SBG_SongBGStruct* result = NULL;
   
   for (int i = 0; i < 1000; i++) {
-    if (songBGList[i].songID == 0)
+    if (SBG_songBGList[i].songID == 0)
       break;
-    if (songBGList[i].songID == songID) {
-      result = songBGList[i].songBGStruct;
+    if (SBG_songBGList[i].songID == songID) {
+      result = SBG_songBGList[i].songBGStruct;
       break;
     }
   }
