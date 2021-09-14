@@ -1,0 +1,22 @@
+// Credits to Sme.
+// Lets you use the highest bit in status applied by staff,
+// allowing for status duration up to 15.
+
+PUSH
+
+  //things to let you actually apply statuses with the highest bit set via staves
+  ORG $2FF94
+  SHORT 0x0E00 //asr -> lsr (this is really dumb)
+  ORG $30026
+  SHORT 0x7820 0x2800 0xD009 //ldsb -> ldrb, unchanged cmp, blt -> beq
+  ORG $30036
+  SHORT 0x7821 //ldsb -> ldrb
+
+  //change staff battle init to not give 0xFF status on miss
+  ORG $2CBAC
+  SHORT 0x2100 //mov r1,#1 -> mov r1,#0
+  SHORT 0x46C0 //neg r1,r1 -> nop
+  ORG $2A5FE
+  SHORT 0x2000 //mov r0,#0xFF -> mov r0,#0
+
+POP

@@ -39,17 +39,7 @@ Make retreated units not appear in chapterintro.
   - ChapterIntro song doesn't loop correctly. Try using what song 0x314 uses when chapter title appears.
   - ChapterIntro, DrawUnitCheck, check for Ephraim-disappear instead?
 
-If we care enough, move SkilSys graphics stuff to graphics folder. Don't wanna insert it until after all ASM instructions have been inserted.
-
 Toward the end. Remove text entries of features you didn't include (Raid? etc.)
-
-Do we need this thing Sme wrote?
-//change staff battle init to not give 0xFF status on miss
-ORG $2CBAC
-SHORT 0x2100 //mov r1,#1 -> mov r1,#0
-SHORT 0x46C0 //neg r1,r1 -> nop
-ORG $2A5FE
-SHORT 0x2000 //mov r0,#0xFF -> mov r0,#0
 
 7743 wrote this. Maybe we can find a use for it?
 ldr r0, =0x03006650    @gMusicPlayerInfo1    {U}

@@ -1,57 +1,52 @@
-#######################################################
-#03 lorf_sw1 Lord Sword
-#
-#When importing to FEditorAdv delete # and after each line.
-#######################################################
-/// - Mode 1               #Melee Animation
-C03                               #Start attack animation; should be followed by 0x07
-C07                               #Start attack animation; should be preceeded by 0x03
+/// - Mode 1
+C03
+C07
 5 p- Axe_000.png
-C1C                               #Play light horse stepping SFE; pitch decreases
+C1C
 3 p- Axe_001.png
 15 p- Axe_002.png
-C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit; Magic only.
+C04
 3 p- Axe_003.png
 2 p- Axe_004.png
 2 p- Axe_005.png
-C1A                               #Normal hit
-C41                               #EMPTY
-C1F                               #Play hit SFE (sounds like Eliwood with sword's hit)
+C1A
+C41
+C1F
 1 p- Axe_006.png
-C01                               #NOP
+C01
 2 p- Axe_007.png
-C42                               #Play long axe swinging SFE
+C42
 3 p- Axe_008.png
-C15                               #Slight vibration of screen
+C15
 2 p- Axe_009.png
 5 p- Axe_010.png
-C1E                               #Similar to 0x1D; a bit louder
+C1E
 3 p- Axe_011.png
 5 p- Axe_012.png
 3 p- Axe_013.png
 3 p- Axe_014.png
 3 p- Axe_015.png
 20 p- Axe_016.png
-C1D                               #Play light horse stepping SFE; pitch increases
+C1D
 5 p- Axe_017.png
 3 p- Axe_018.png
 5 p- Axe_019.png
-C1D                               #Play light horse stepping SFE; pitch increases
-C06                               #Begin opponent's turn after hit.next code 0D.
+C1D
+C06
 5 p- Axe_000.png
-C0D                               #End of dodge animation. preceeded by 0x06
+C0D
 ~~~
-/// - Mode 3               #Melee Critical Animation
-C03                               #Start attack animation; should be followed by 0x07
-C07                               #Start attack animation; should be preceeded by 0x03
+/// - Mode 3
+C03
+C07
 10 p- Axe_000.png
 3 p- Axe_020.png
 3 p- Axe_021.png
-C22                               #Play short sword swinging SFE
+C22
 3 p- Axe_022.png
 2 p- Axe_023.png
 10 p- Axe_024.png
-C38                               #Play heavy spear spinning SFE
+C38
 3 p- Axe_025.png
 2 p- Axe_026.png
 2 p- Axe_027.png
@@ -59,7 +54,7 @@ C38                               #Play heavy spear spinning SFE
 3 p- Axe_029.png
 3 p- Axe_030.png
 3 p- Axe_031.png
-C43                               #Play weapon stance SFE (Clicking noise)
+C43
 3 p- Axe_028.png
 3 p- Axe_032.png
 3 p- Axe_033.png
@@ -69,116 +64,116 @@ C43                               #Play weapon stance SFE (Clicking noise)
 3 p- Axe_037.png
 3 p- Axe_034.png
 7 p- Axe_035.png
-C1C                               #Play light horse stepping SFE; pitch decreases
-C15                               #Slight vibration of screen
+C1C
+C15
 9 p- Axe_002.png
-C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit; Magic only.
+C04
 3 p- Axe_003.png
 2 p- Axe_004.png
 2 p- Axe_005.png
-C41                               #EMPTY
-C08                               #Critical hit
-C1F                               #Play hit SFE (sounds like Eliwood with sword's hit)
+C41
+C08
+C1F
 1 p- Axe_006.png
-C01                               #NOP
+C01
 2 p- Axe_007.png
-C42                               #Play long axe swinging SFE
+C42
 3 p- Axe_008.png
-C15                               #Slight vibration of screen
+C15
 2 p- Axe_009.png
 5 p- Axe_010.png
-C1E                               #Similar to 0x1D; a bit louder
+C1E
 3 p- Axe_011.png
 5 p- Axe_012.png
 3 p- Axe_013.png
 3 p- Axe_014.png
 3 p- Axe_015.png
 20 p- Axe_016.png
-C1D                               #Play light horse stepping SFE; pitch increases
+C1D
 5 p- Axe_017.png
 3 p- Axe_018.png
 5 p- Axe_019.png
-C1D                               #Play light horse stepping SFE; pitch increases
-C06                               #Begin opponent's turn after hit.next code 0D.
+C1D
+C06
 5 p- Axe_000.png
-C0D                               #End of dodge animation. preceeded by 0x06
+C0D
 ~~~
-/// - Mode 5               #Ranged Animation 
+/// - Mode 5
 5 p- Axe_000.png
-C01                               #NOP
+C01
 ~~~
-/// - Mode 6               #Ranged Critical Animation
+/// - Mode 6
 5 p- Axe_000.png
-C01                               #NOP
+C01
 ~~~
-/// - Mode 7               #Dodge Melee Attack
-C02                               #Start of dodge
+/// - Mode 7
+C02
 1 p- Axe_000.png
-C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
+C0E
 3 p- Axe_038.png
 1 p- Axe_039.png
-C01                               #NOP
+C01
 3 p- Axe_038.png
 1 p- Axe_000.png
-C0D                               #End of dodge animation. preceeded by 0x06
+C0D
 ~~~
-/// - Mode 8               #Dodge Ranged Attack
-C02                               #Start of dodge
+/// - Mode 8
+C02
 1 p- Axe_000.png
-C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
+C0E
 3 p- Axe_038.png
 1 p- Axe_039.png
-C01                               #NOP
+C01
 3 p- Axe_038.png
 1 p- Axe_000.png
-C0D                               #End of dodge animation. preceeded by 0x06
+C0D
 ~~~
-/// - Mode 9               #Equiped with Melee Weapon
+/// - Mode 9
 1 p- Axe_000.png
-C01                               #NOP
+C01
 ~~~
-/// - Mode 10               #standing motions?
+/// - Mode 10
 1 p- Axe_000.png
-C01                               #NOP
+C01
 ~~~
-/// - Mode 11               #Equiped with Ranged weapon
+/// - Mode 11
 1 p- Axe_000.png
-C01                               #NOP
+C01
 ~~~
-/// - Mode 12               #Attack Missed Animation
-C03                               #Start attack animation; should be followed by 0x07
-C07                               #Start attack animation; should be preceeded by 0x03
+/// - Mode 12
+C03
+C07
 5 p- Axe_000.png
-C1C                               #Play light horse stepping SFE; pitch decreases
+C1C
 3 p- Axe_001.png
 20 p- Axe_002.png
-C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit; Magic only.
+C04
 3 p- Axe_003.png
 2 p- Axe_004.png
 2 p- Axe_005.png
-C41                               #EMPTY
+C41
 1 p- Axe_040.png
-C01                               #NOP
+C01
 2 p- Axe_007.png
-C42                               #Play long axe swinging SFE
+C42
 3 p- Axe_008.png
-C15                               #Slight vibration of screen
+C15
 2 p- Axe_009.png
 5 p- Axe_010.png
-C1E                               #Similar to 0x1D; a bit louder
+C1E
 3 p- Axe_011.png
 5 p- Axe_012.png
 3 p- Axe_013.png
 3 p- Axe_014.png
 3 p- Axe_015.png
 20 p- Axe_016.png
-C1D                               #Play light horse stepping SFE; pitch increases
+C1D
 5 p- Axe_017.png
 3 p- Axe_018.png
 5 p- Axe_019.png
-C1D                               #Play light horse stepping SFE; pitch increases
-C06                               #Begin opponent's turn after hit.next code 0D.
+C1D
+C06
 5 p- Axe_000.png
-C0D                               #End of dodge animation. preceeded by 0x06
+C0D
 ~~~
 /// - End of animation

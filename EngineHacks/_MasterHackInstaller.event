@@ -137,6 +137,9 @@ POP
   // Fix gaining wexp from weapons you don't have wexp in (for Shadowgift/Lumina)
   #include "Necessary/FixWpnRnk.event"
   
+  // Lets you use the highest bit in status applied by staff, allowing for status duration up to 15.
+  #include "Necessary/StaffStatusDuration.event"
+  
   // Unit Action Rework (required for movement skills)
   #include "Necessary/UnitActionRework/UnitActionRework.event"
 
