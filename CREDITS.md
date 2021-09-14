@@ -361,6 +361,7 @@ Songs used:
 # Hacks
 
 - [Cannot Crit](https://github.com/FireEmblemUniverse/SkillSystem_FE8/tree/master/EngineHacks/ExternalHacks/CannotCrit) by Sme.
+- [ChangeTileName](https://github.com/FEBuilderGBA/FEBuilderGBA/tree/master/FEBuilderGBA/bin/Debug/config/patch2/FE8U/ChangeTileName) by 7743.
 - [battle_changer](https://github.com/aera-ngmansion/FE8/tree/master/battle_changer) by aera. I used 7743's FEBuilder patch to figure out where to insert stuff in FE8U.
 - [ContinueBattleBGM](https://github.com/FEBuilderGBA/FEBuilderGBA/tree/c83c13930d7c5e5ef104faa6f8346d0edd63776e/FEBuilderGBA/bin/Debug/config/patch2/FE8U/ContinueBattleBGM) by 7743.
 - [Escape-Arrive](https://feuniverse.us/t/smes-asm-and-miscellany/4445) by Sme. Not in use atm.
@@ -403,6 +404,7 @@ Songs used:
 - [Unit Action Rework](https://feuniverse.us/t/fe8u-stans-asm-stuff/2376/14) by StanH.
 - [UnitMenu](https://feuniverse.us/t/assembly-is-sexciting/1654/12) by Crazycolorz5.
 - [Fix Weapon Rank](https://github.com/FireEmblemUniverse/SkillSystem_FE8/blob/master/EngineHacks/Necessary/FixWpnRnk.event) by Stan.
+- [StaffStatusDuration](https://discord.com/channels/144670830150811649/235253973588639747/856378055911407636) by Sme.
 - [Battle Stats With Anims Off](https://feuniverse.us/t/teqs-minor-assembly-shenanigans/1655/51) by Tequila.
 - [Casual Mode](https://github.com/FireEmblemUniverse/SkillSystem_FE8/tree/master/EngineHacks/QualityOfLife/CasualMode) by circleseverywhere.
 - [Contemporary Talk Support](https://feuniverse.us/t/contemporary-fe-style-talk-and-support-commands/912/13) by circleseverywhere.

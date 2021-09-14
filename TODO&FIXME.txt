@@ -50,6 +50,8 @@ Generic'ize CRE_waitForChildren to just waitForChildren.
 
 Darken screen for long-range attacks.
 
+Ask people who completed ch2 ||when (if at all) they noticed the tile Simon can use to escape||.
+
 PLAN, Crafting should allow:
   - fusing two of the same items (total durability no higher than 63?), no material cost. (seems Tequila has a "Convoy Combine" patch which already does this)
   - repairing an item, costs up to 5 different types of materials. Reserve three dec digits for each material (10 bits)

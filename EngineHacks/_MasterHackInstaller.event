@@ -79,6 +79,9 @@ POP
   // Skip difficulty selection and default to "Normal"
   #include "ExternalHacks/SkipDifficulty/SkipDifficulty.event"
 
+  // Change what terrainname to display for specific tiles.
+  #include "ExternalHacks/ChangeTileName/Installer.event"
+
   // Allow Battle BGM to be set per chapter.
   #include "ExternalHacks/ChapterBattleBGM/ChapterBattleBGM.event"
 
