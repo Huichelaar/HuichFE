@@ -60,6 +60,8 @@ PUSH
   BYTE 0xAB
   ORG 0x1049C
   BYTE 0xAD
+  ORG 0x2E6E0     // During tilechanges.
+  BYTE 0x8B
   
   // Hooked in ApplyStuffToRangeMaps.
   // Makes DR display in fog
