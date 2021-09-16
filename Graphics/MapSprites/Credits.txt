@@ -15,3 +15,4 @@ ArcherM               DerTheVaporeon
 ArcherF               DerTheVaporeon
 CavalierM             SALVAGED
 CavalierF             SALVAGED, Pikmin
+WyvernKnight          IS, ArcaneEli, Blood, Yikes!

@@ -31,7 +31,7 @@ ORG StandingMapSpriteTableLABEL + 25*8 ; BYTE (0x2) (0) (0x1) (0) ; WORD (0x81b9
 ORG StandingMapSpriteTableLABEL + 26*8 ; BYTE (0x2) (0) (0x1) (0) ; WORD (0x81b9a88) 
 ORG StandingMapSpriteTableLABEL + 27*8 ; BYTE (0x2) (0) (0x1) (0) ; WORD (0x81b9c7c) 
 ORG StandingMapSpriteTableLABEL + 28*8 ; BYTE (0x2) (0) (0x1) (0) ; WORD (0x81b9e70) 
-ORG StandingMapSpriteTableLABEL + 29*8 ; BYTE (0x3) (0) (0x1) (0) ; WORD (0x81ba068) 
+ORG StandingMapSpriteTableLABEL + 29*8 ; BYTE (0x3) (0) (0x2) (0) ; WORD (WyvKnightSt|IsPointer) 
 ORG StandingMapSpriteTableLABEL + 30*8 ; BYTE (0x2) (0) (0x0) (0) ; WORD (0x81ba274) 
 ORG StandingMapSpriteTableLABEL + 31*8 ; BYTE (0x2) (0) (0x0) (0) ; WORD (0x81ba3ac) 
 ORG StandingMapSpriteTableLABEL + 32*8 ; BYTE (0x2) (0) (0x0) (0) ; WORD (0x81ba4ec) 

@@ -220,16 +220,15 @@ Songs used:
 
 ## Portraits
 
-- 28~SSHX by SSHX.
-- Cosimo~GenericPretsel by GenericPretsel.
-- SoldierMirrored~IS by Intelligent Systems.
-- Vette~Nickt by Nickt
-- Splice1_1~Huichelaar by Huichelaar
-- 2~Capibarainspace by Capibarainspace
-- 2~Zmr by Zmr
-- 2~DragonLuca by DragonLuca
-- Brava~AmBrosiac by AmBrosiac
-- Faustosilva~AmBrosiac by AmBrosiac
+- SSHX~28 by SSHX.
+- GenericPretsel~Cosimo by GenericPretsel.
+- Nickt~Vette by Nickt
+- Huichelaar~Splice1_1 by Huichelaar
+- Capibarainspace~2 by Capibarainspace
+- Zmr~2 by Zmr
+- DragonLuca~2 by DragonLuca
+- AmBrosiac~Brava by AmBrosiac
+- AmBrosiac~Faustosilva by AmBrosiac
 
 ## Class Cards
 

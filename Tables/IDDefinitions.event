@@ -61,6 +61,10 @@
 #define CavalierFSwordAnim 0x26
 #define CavalierFLanceAnim 0x27
 #define CavalierFUnarmedAnim 0x28
+#define WyvKnightAxeAnim 0x29
+#define WyvKnightHandaxeAnim 0x2A
+#define WyvKnightUnarmedAnim 0x2B
+
 #define MageMMagicAnim 0x6B
 #define MageFMagicAnim 0x6C
 #define ShamanMMagicAnim 0x75
@@ -111,6 +115,7 @@
 #define CavalierFCC 0xb8
 #define CavalierMCC 0xb9
 #define MageFCC 0xba
+#define WyvKnightCC 0xbb
 
 // Items
 #define LegSwordD 0xbc

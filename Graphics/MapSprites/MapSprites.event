@@ -82,3 +82,9 @@ CavalierFSt:
 ALIGN 4
 CavalierFMv:
 #incbin "Cavalier (F) Lance {SALVAGED, Pikmin}-move.dmp"
+ALIGN 4
+WyvKnightSt:
+#incbin "WyvKnightStanding.dmp"
+ALIGN 4
+WyvKnightMv:
+#incbin "WyvKnightMoving.dmp"

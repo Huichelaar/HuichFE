@@ -16,3 +16,4 @@ ArcherF           DerTheVaporeon
 MyrmidonF         L95
 CavalierF         RobertFPY, Pikmin
 CavalierM         RobertFPY
+WyvernKnight      IS, MeatOfJustice, Pikmin, flasuban

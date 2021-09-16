@@ -2,6 +2,14 @@
     ERROR "You're not assembling to an FE8 ROM!"
 #endif
 
+// Inline vanilla changes
+PUSH
+
+  // Different exp blip
+  VoiceSquare1(0x2117F0,0x6,3,0,0x10,0x7,0,0,0xB,0)
+
+POP
+
 // Custom samples
 #include "../Samples/YUGIOH/YUGIOHsamples.event"
 #include "../Samples/OSRS/OSRSsamples.event"

@@ -97,8 +97,8 @@ REDA [12,14] 0 0x80 0 0
 REDA [12,16] 0 0x80 0 0
 
 EnemyUnits1:
-UNIT 0x4E Knight Aiden Level(6, Enemy, 1) [12,19] 0 0 0 0 [SteelLance, Concoction] AttackInRangeAI
-UNIT 0x4E Monk_F Aiden Level(5, Enemy, 1) [13,19] 0 0 3 REDA10 [Shine] AttackInRangeAI
+UNIT 0x4E Knight Aiden Level(3, Enemy, 1) [12,19] 0 0 0 0 [SteelLance, Concoction] AttackInRangeAI
+UNIT 0x4E Monk_F Aiden Level(4, Enemy, 1) [13,19] 0 0 3 REDA10 [Shine] AttackInRangeAI
 UNIT
 
 REDA10:
@@ -107,15 +107,15 @@ REDA [12,18] 0 0x80 0 0
 REDA [12,17] 0 0x80 0 0
 
 EnemyUnits2:
-UNIT Aiden Myrmidon_F Aiden Level(0x8, Enemy, 0x0) [0,19] DropItem 0 0 0 [Lancereaver, Vulnerary, KillingEdge] [0x03,0x03,0x0,0x20]
-UNIT 0x4E Soldier_F Aiden Level(5, Enemy, 1) [0,19] 0 0 1 REDA17 [IronLance] AttackInRangeAI
-UNIT 0x4F Soldier_F Aiden Level(7, Enemy, 1) [1,19] 0 0 0 0 [SteelLance] AttackInRangeAI
-UNIT 0x4E Soldier Aiden Level(6, Enemy, 1) [0,19] 0 0 2 REDA11 [SteelLance] AttackInRangeAI
+UNIT Aiden Myrmidon_F Aiden Level(5, Enemy, 0x0) [0,19] DropItem 0 0 0 [Lancereaver, Vulnerary, KillingEdge] [0x03,0x03,0x0,0x20]
+UNIT 0x4E Soldier_F Aiden Level(3, Enemy, 1) [0,19] 0 0 1 REDA17 [IronLance] AttackInRangeAI
+UNIT 0x4F Soldier_F Aiden Level(4, Enemy, 1) [1,19] 0 0 0 0 [SteelLance] AttackInRangeAI
+UNIT 0x4E Soldier Aiden Level(3, Enemy, 1) [0,19] 0 0 2 REDA11 [SteelLance] AttackInRangeAI
 UNIT 0x4E Mercenary_F Aiden Level(4, Enemy, 1) [0,19] 0 0 1 REDA12 [IronSword] AttackInRangeAI
-UNIT 0x4E Shaman Aiden Level(4, Enemy, 1) [4,19] 0 0 2 REDA13 [Flux] AttackInRangeAI
-UNIT 0x4E Mage_F Aiden Level(6, Enemy, 1) [7,19] 0 0 3 REDA14 [Elfire] AttackInRangeAI
-UNIT 0x4E Cavalier_F Aiden Level(7, Enemy, 1) [0,14] 0 0 1 REDA15 [IronSword, IronLance] AttackInRangeAI
-UNIT 0x4E Cavalier Aiden Level(8, Enemy, 1) [3,19] 0 0 2 REDA16 [IronLance, SteelSword] AttackInRangeAI
+UNIT 0x4E Shaman Aiden Level(3, Enemy, 1) [4,19] 0 0 2 REDA13 [Flux] AttackInRangeAI
+UNIT 0x4E Mage_F Aiden Level(3, Enemy, 1) [7,19] 0 0 3 REDA14 [Elfire] AttackInRangeAI
+UNIT 0x4E Cavalier_F Aiden Level(4, Enemy, 1) [0,14] 0 0 1 REDA15 [IronSword, IronLance] AttackInRangeAI
+UNIT 0x4E Cavalier Aiden Level(4, Enemy, 1) [3,19] 0 0 2 REDA16 [IronLance, SteelSword] AttackInRangeAI
 UNIT
 
 REDA11:
@@ -146,9 +146,9 @@ REDA [0,13] 0 0x80 0 0
 
 EnemyUnits3:
 UNIT 0x4E Mercenary Aiden Level(2, Enemy, 1) [2,3] 0 0 2 REDA18 [IronSword] AttackInRangeAI
-UNIT 0x4E Mage Aiden Level(4, Enemy, 1) [2,3] 0 0 2 REDA19 [Fire] AttackInRangeAI
+UNIT 0x4E Mage Aiden Level(2, Enemy, 1) [2,3] 0 0 2 REDA19 [Fire] AttackInRangeAI
 UNIT 0x4E Mercenary_F Aiden Level(5, Enemy, 1) [2,3] 0 0 2 REDA20 [IronSword] AttackInRangeAI
-UNIT 0x4E Archer_F Aiden Level(6, Enemy, 1) [2,3] 0 0 2 REDA21 [IronBow] AttackInRangeAI
+UNIT 0x4E Archer_F Aiden Level(3, Enemy, 1) [2,3] 0 0 2 REDA21 [IronBow] AttackInRangeAI
 UNIT
 
 REDA18:
@@ -169,7 +169,7 @@ REDA [5,0] 0 0x80 0 0
 
 
 EnemyReinf1:
-UNIT 0x4E Archer Aiden Level(8, Enemy, 1) [14,8] 0 0 1 REDA22 [Longbow, IronBow] AttackInRangeAI
+UNIT 0x4E Archer Aiden Level(5, Enemy, 1) [14,8] 0 0 1 REDA22 [Longbow, IronBow] AttackInRangeAI
 UNIT
 
 REDA22:
@@ -506,7 +506,7 @@ TurnBasedEvents:
 TurnEventPlayer(0x5,EastArcherReinf,2)
 TurnEventPlayer(0x9,HerbertSpawns,3)
 TurnEventNPC(0xA,SimonMovesToForest,7)
-TurnEventEnemy(0xB,BridgeKnightMoves,8)
+TurnEventEnemy(0xB,BridgeKnightMoves,9)
 END_MAIN
 
   EastArcherReinf:

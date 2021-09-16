@@ -84,6 +84,12 @@ CavalierMCCTiles:
 ALIGN 4
 CavalierMCCPal:
 #incbin "Cavalier (M) Helmless Lance {RobertFPY}_pal.dmp"
+ALIGN 4
+WyvKnightCCTiles:
+#incbin "WyvKnight.dmp"
+ALIGN 4
+WyvKnightCCPal:
+#incbin "WyvKnight_pal.dmp"
 
 
 setCardEntry(0xad,SupplierCCTiles,SupplierCCPal)
@@ -100,3 +106,4 @@ setCardEntry(MyrmidonFCC,MyrmidonFCCTiles,MyrmidonFCCPal)
 setCardEntry(CavalierFCC,CavalierFCCTiles,CavalierFCCPal)
 setCardEntry(CavalierMCC,CavalierMCCTiles,CavalierMCCPal)
 setCardEntry(MageFCC,MageFCCTiles,MageFCCPal)
+setCardEntry(WyvKnightCC,WyvKnightCCTiles,WyvKnightCCPal)

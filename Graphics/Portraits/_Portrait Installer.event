@@ -9,34 +9,34 @@ Blank_PortraitTiles:
 #incbin "blank_portrait.dmp"
 ALIGN 4
 VivianPortraitTiles:
-#incbin "Splice1_1~Huichelaar.dmp"
+#incbin "Huichelaar~Splice1_1.dmp"
 ALIGN 4
 SimonPortraitTiles:
-#incbin "Cosimo~GenericPretsel.dmp"
+#incbin "GenericPretsel~Cosimo.dmp"
 ALIGN 4
 TurnerPortraitTiles:
-#incbin "2~Zmr.dmp"
+#incbin "Zmr~2.dmp"
 ALIGN 4
 LeonaPortraitTiles:
-#incbin "2~Capibarainspace.dmp"
+#incbin "Capibarainspace~2.dmp"
 ALIGN 4
 MiloPortraitTiles:
-#incbin "28~SSHX.dmp"
+#incbin "SSHX~28.dmp"
 ALIGN 4
 AidenPortraitTiles:
-#incbin "Vette~Nickt.dmp"
+#incbin "Nickt~Vette.dmp"
 ALIGN 4
 DemiPortraitTiles:
-#incbin "2~DragonLuca.dmp"
+#incbin "DragonLuca~2.dmp"
 ALIGN 4
 TheresaPortraitTiles:
-#incbin "Brava~AmBrosiac.dmp"
+#incbin "AmBrosiac~Brava.dmp"
 ALIGN 4
 HerbertPortraitTiles:
-#incbin "Faustosilva~AmBrosiac.dmp"
+#incbin "AmBrosiac~Faustosilva.dmp"
 ALIGN 4
 SoldierFPortraitTiles:
-#incbin "SoldierF~LaurentLacroix.dmp"
+#incbin "LaurentLacroix~SoldierF.dmp"
 
 
 setMugEntry(0x1,Blank_PortraitTiles,3,5,3,3)
