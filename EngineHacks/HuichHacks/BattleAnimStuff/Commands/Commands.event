@@ -24,18 +24,6 @@
   // For drawing sprites to the screen.
   #include "DrawSprites/DrawSprites.event"
   
-  PUSH
-    
-    // Make right weapon use the same palette
-    // as left. This frees up another palette.
-    ORG 0x51AC0
-    SHORT 0xD1DE
-    // Don't load palette in this slot.
-    ORG 0x510C0
-    SHORT 0x46C0 0x46C0
-  
-  POP
-  
   // Buffers a 256x64 sheet to be moved
   // to the start of OBJ VRAM.
   ALIGN 4

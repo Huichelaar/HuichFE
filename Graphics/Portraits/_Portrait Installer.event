@@ -37,7 +37,15 @@ HerbertPortraitTiles:
 ALIGN 4
 SoldierFPortraitTiles:
 #incbin "LaurentLacroix~SoldierF.dmp"
-
+ALIGN 4
+LindaPortraitTiles:
+#incbin "Xenith~Woman.dmp"
+ALIGN 4
+CarmenPortraitTiles:
+#incbin "LaurentLacroix~3.dmp"
+ALIGN 4
+VincentPortraitTiles:
+#incbin "Nickt~Argolis.dmp"
 
 setMugEntry(0x1,Blank_PortraitTiles,3,5,3,3)
 setMugEntry(0x2,VivianPortraitTiles,4,5,4,3)
@@ -49,4 +57,7 @@ setMugEntry(0x7,AidenPortraitTiles,2,5,2,3)
 setMugEntry(0x8,DemiPortraitTiles,3,6,3,4)
 setMugEntry(0x9,TheresaPortraitTiles,3,6,3,4)
 setMugEntry(0xa,HerbertPortraitTiles,3,6,3,4)
+setMugEntry(0xb,LindaPortraitTiles,3,6,3,4)
+setMugEntry(0xc,CarmenPortraitTiles,3,6,3,4)
+setMugEntry(0xd,VincentPortraitTiles,2,5,2,3)
 setMugEntry(0x6c,SoldierFPortraitTiles,4,6,4,4)

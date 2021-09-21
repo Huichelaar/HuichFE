@@ -5,4 +5,7 @@ SupportConvosTableLABEL:
 ; BYTE (Leona) (0x0) (Demi) (0) ; SHORT (LeonaDemiSupportC) (LeonaDemiSupportB) (LeonaDemiSupportA) ; BYTE (0) (0) (0) (0) (0) (0) 
 ; BYTE (Milo) (0x0) (Demi) (0) ; SHORT (MiloDemiSupportC) (MiloDemiSupportB) (MiloDemiSupportA) ; BYTE (0) (0) (0) (0) (0) (0) 
 ; BYTE (Theresa) (0x0) (Herbert) (0) ; SHORT (TheresaHerbertSupportC) (TheresaHerbertSupportB) (TheresaHerbertSupportA) ; BYTE (0) (0) (0) (0) (0) (0) 
+; BYTE (Linda) (0x0) (Carmen) (0) ; SHORT (PlaceHolderSupport) (PlaceHolderSupport) (PlaceHolderSupport) ; BYTE (0) (0) (0) (0) (0) (0) 
+; BYTE (Carmen) (0x0) (Vincent) (0) ; SHORT (PlaceHolderSupport) (PlaceHolderSupport) (PlaceHolderSupport) ; BYTE (0) (0) (0) (0) (0) (0) 
+; BYTE (Vincent) (0x0) (Linda) (0) ; SHORT (PlaceHolderSupport) (PlaceHolderSupport) (PlaceHolderSupport) ; BYTE (0) (0) (0) (0) (0) (0) 
 ; BYTE (0xFF) (0xFF) (0x0) (0) ; SHORT (0x0) (0x0) (0x0) ; BYTE (0) (0) (0) (0) (0) (0) 

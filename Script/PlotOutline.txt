@@ -20,7 +20,7 @@ THE MACGUFFINS
 THE HARNESS
 Required to use a Macguffin. Basically exists so that it's not immediately game over if the bad guy gets a Macguffin. Every country has at least one Harness, but they're supposed to be expensive, so they'll probably not have many more. When the Macguffins were created only one Harness existed, the one X used to attack C. Y destroyed this Harness when she betrayed X.
 
-Extra function of the Harness is that it can detect how many Macguffins still exist. This will allow nations to immediately be aware when a Macguffin is used.
+Extra function of the Harness is that it can detect how many Macguffins still exist. This will allow nations to immediately be aware when a Macguffin is used. After a harness has been used, it will need to be prepared again before it can be used again.
 
 
 THE CURRENT STATE OF AFFAIRS
@@ -28,11 +28,11 @@ Relations between the kingdoms have turned hostile and instead of destroying the
 
 
 WHAT THE PEOPLE KNOW
-Basically everything mentioned up to this point. Except the detail that Macguffins have degraded and can be destroyed now.
+Basically everything mentioned up to this point. Except the part where Macguffins can detect one another.
 
 
 THE SHAKEUP
-Enter the new party D, geographically located in a corner of island A. D suddenly proclaims they have both of the missing Macguffins and proves they have at least one, by using it on A (targeting such that their location is the only part of island A outside of the blast radius). How did D build one of them expensive Harnesses? Eh, somehow. B, C, D remain. D still has an unused Macguffin. B & C still have their Macguffin. A's Macguffin remains unused and unclaimed. Technically B & C don't know whether D has this second Macguffin, they could be bluffing (they aren't). This shouldn't matter though.
+Enter the new party D (DetheCa, Destroy the Catalysts), geographically located in a corner of island A. D suddenly proclaims they have both of the missing Macguffins and proves they have at least one, by using it on A (targeting such that their location is the only part of island A outside of the blast radius). How did D build one of them expensive Harnesses? Eh, somehow. B, C, D remain. D still has an unused Macguffin. B & C still have their Macguffin. A's Macguffin remains unused and unclaimed. Technically B & C don't know whether D has this second Macguffin, they could be bluffing (they aren't). This shouldn't matter though.
 
 
 THE NEW 'BALANCE'

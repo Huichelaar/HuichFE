@@ -1,0 +1,69 @@
+// Many thanks to Sokaballa & Pikmin1211
+// for finding a bunch of these locations.
+
+PUSH
+
+  // Move left HP value to the right.
+  //ORG 0x51502         // Right HP value.
+  ORG 0x514F6           // Left HP value.
+  BYTE 0x5F
+
+  // Move left HP bars to the left.
+  //ORG 0x51522         // Right HP bars.
+  ORG 0x51510           // Left HP bars.
+  BYTE 0x3
+
+  // X-flip left HP bars.
+  //ORG 0x518AC         // Pointer to OAMData used by right HP bars.
+  ORG 0x51780           // Pointer to OAMData used by left HP bars.
+  POIN FlippedHPBarsOAMData
+
+  // Move right hit, dmg, crt values right.
+  //ORG 0x5190E         // Left.
+  ORG 0x5196A           // Right.
+  BYTE 0xC7
+
+  // Move right hit, dmg, crt names left.
+  //ORG 0x51938         // Left.
+  ORG 0x51994           // Right.
+  BYTE 0x9F
+
+  ORG 0x51050
+  callHack_r0(AlignDigitsLeft)
+  SHORT 0x46C0
+
+  // Move left item icon to the right.
+  //ORG 0x51A70         // Right item icon.
+  //ORG 0x51A04           // Left item icon.
+  //BYTE 0x75
+
+  // Move left item name to the left.
+  //ORG 0x51FF0           // Set item name length same as right item name.
+  //BYTE 0x3E
+  //TODO
+
+
+  // Make right weapon use the same palette
+  // as left. This frees up another palette.
+  ORG 0x51AC0
+  SHORT 0xD1DE
+  // Don't load palette in this slot.
+  ORG 0x510C0
+  SHORT 0x46C0 0x46C0
+
+POP
+
+ALIGN 4
+FlippedHPBarsOAMData:
+SHORT 0x4000 0x5000 0x180 0x38 0x0 0x0
+SHORT 0x4000 0x5000 0x184 0x18 0x0 0x0
+SHORT 0x4000 0x1000 0x188 0x08 0x0 0x0
+SHORT 0x0000 0x1000 0x18A 0x00 0x0 0x0
+WORD 0x1  // Terminator.
+ALIGN 4
+AlignDigitsLeft:
+WORD 0x2100480D 0x2A0B8842 0x8883D103 0x80828003
+WORD 0x8802E007 0xD1042A0B 0x80038843 0x80438883
+WORD 0x30068082 0x29033101 0x2000DBEC 0x46689000
+WORD 0x4A034902 0x4770DF0C 0x02017712 0x020169C8
+WORD 0x01000100

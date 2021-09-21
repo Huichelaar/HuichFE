@@ -146,8 +146,8 @@ be regarded as desertion.[AN]
 [X]
 
 ## AidenDQ2
-[MR][LoadAiden][CloseEyes]
-[MR]
+[ML][LoadAiden][CloseEyes]
+[ML]
 TODO[N]
 Aiden death quote.[AN]
 [X]
@@ -158,3 +158,45 @@ Coramo[X]
 ## CoramoDesc
 A soldier from the[N]
 kingdom of Coramo.[X]
+
+## LindaName
+Linda[X]
+
+## LindaDesc
+LindaDesc.[N]
+TODO.[X]
+
+## LindaDQ
+[MR][LoadLinda][CloseEyes]
+[MR]
+TODO[N]
+Linda death quote.[AN]
+[X]
+
+## CarmenName
+Carmen[X]
+
+## CarmenDesc
+CarmenDesc.[N]
+TODO.[X]
+
+## CarmenDQ
+[MR][LoadCarmen][CloseEyes]
+[MR]
+TODO[N]
+Carmen death quote.[AN]
+[X]
+
+## VincentName
+Vincent[X]
+
+## VincentDesc
+VincentDesc.[N]
+TODO.[X]
+
+## VincentDQ
+[MR][LoadVincent][CloseEyes]
+[MR]
+TODO[N]
+Vincent death quote.[AN]
+[X]

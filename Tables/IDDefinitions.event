@@ -78,6 +78,9 @@
 #define Demi 0x5
 #define Theresa 0x6
 #define Herbert 0x7
+#define Linda 0x8
+#define Carmen 0x9
+#define Vincent 0xa
 #define Turner 0x47
 #define Aiden 0x4d
 
@@ -88,6 +91,9 @@
 #define DemiSupports SupportValuesTableLABEL + (0x3 * 0x18)
 #define TheresaSupports SupportValuesTableLABEL + (0x4 * 0x18)
 #define HerbertSupports SupportValuesTableLABEL + (0x5 * 0x18)
+#define LindaSupports SupportValuesTableLABEL + (0x6 * 0x18)
+#define CarmenSupports SupportValuesTableLABEL + (0x7 * 0x18)
+#define VincentSupports SupportValuesTableLABEL + (0x8 * 0x18)
 
 // Portraits
 #define VivianPortrait 0x2
@@ -99,6 +105,9 @@
 #define DemiPortrait 0x8
 #define TheresaPortrait 0x9
 #define HerbertPortrait 0xa
+#define LindaPortrait 0xb
+#define CarmenPortrait 0xc
+#define VincentPortrait 0xd
 
 // Class Cards
 #define SupplierCC 0xad

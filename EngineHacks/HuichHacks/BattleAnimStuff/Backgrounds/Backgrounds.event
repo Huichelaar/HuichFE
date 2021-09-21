@@ -18,6 +18,7 @@
 #endif
 
 {
+#include "BattleScreen/BattleScreen.event"
 #include "LevelUp/LevelUp.event"
 
 PUSH

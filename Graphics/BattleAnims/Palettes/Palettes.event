@@ -15,31 +15,33 @@ POP
 ALIGN 4
 ShamanMPalette:
 #incbin "ShamanM/ShamanMPaletteComp.dmp"
-
 ALIGN 4
 SimonShamanPalette:
 #incbin "ShamanM/SimonPaletteComp.dmp"
-
 ALIGN 4
 MageMPalette:
 #incbin "MageM/MageMPaletteComp.dmp"
-
 ALIGN 4
 DemiSoldierPalette:
 #incbin "SoldierF/DemiPaletteComp.dmp"
-
 ALIGN 4
 TurnerMercenaryPalette:
 #incbin "MercenaryM/TurnerPaletteComp.dmp"
-
 ALIGN 4
 TheresaArcherPalette:
 #incbin "ArcherF/TheresaPaletteComp.dmp"
-
 ALIGN 4
 HerbertCavalierPalette:
 #incbin "CavalierM/HerbertPaletteComp.dmp"
-
 ALIGN 4
 AidenMyrmidonPalette:
 #incbin "MyrmidonF/AidenPaletteComp.dmp"
+ALIGN 4
+LindaShamanPalette:
+#incbin "ShamanF/LindaPaletteComp.dmp"
+ALIGN 4
+CarmenClericPalette:
+#incbin "Cleric/CarmenPaletteComp.dmp"
+ALIGN 4
+VincentWyvernKnightPalette:
+#incbin "WyvernKnight/VincentPaletteComp.dmp"

@@ -52,7 +52,7 @@ Darken screen for long-range attacks.
 
 Ask people who completed ch2 ||when (if at all) they noticed the tile Simon can use to escape||.
 
-Add new assets to Credits.md
+Add Ch3 assets to Credits.md
 
 Set class level-up skills for cavalier & others!
 
