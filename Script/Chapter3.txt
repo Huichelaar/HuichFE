@@ -5,9 +5,11 @@ That's when Vivian wakes up and realizes what's been bothering her. (Why didn't 
 Shaman: Linda
 Cleric: Carmen
 Wyvern Knight: Vincent
+General1: Alvin
+General2: Taylor
 
 
-
+*flashback*
 *Knock*
 S
 Come in.
@@ -128,8 +130,67 @@ Vivian, I can't do this alone. We need more people for this.
 L
 We can end the stalemate. This is an opportunity to make a real difference!
 V
-It's an opportunity for my head to separate from my body. The stalemate has been around for centuries, yet no catalyst has been fired in all that time. This plan is bound to stir up the other countries. Who knows, maybe they'll get trigger-happy. I'm not committing treason for that. Have fun playing revolutionary, I'll be looking out for number one.
+It's an opportunity to have my head separated from my body. The stalemate has been around for centuries, yet no catalyst has been fired in all that time. This plan is bound to stir up the other countries. Who knows, maybe they'll get trigger-happy. I'm not committing treason for that. Have fun playing revolutionary, I'll be looking out for number one.
+*flashback over*
 
+
+*thinkbubble*
+V
+Why did I follow him on this trip? Why did I trust him? Why didn't I just report him back then? It would have been so much easier to just steer clear of all of this.
+*\thinkbubble*
+ML
+Wake up, it's time to go.
+V
+I'm awake.
+ML
+Let's go then.
+***
+D
+Brief summary before we move: we're currently in the Ivylands, closing in on Til forest. There are signs we're catching up with our target, Simon. He's likely moving carefully to avoid damaging the catalyst.
+V
+R-right...
+ML
+His *supposed* allies have yet to appear.
+V
+*thinkbubble*
+Why are you looking at me when you say that?
+*\thinkbubble*
+D
+We'll have to be cautious, yet swift.
+
+*Camera pans south to Simon next to a fort.*
+
+S
+*Knock*
+It's me. Open up.
+A(lvin)
+How'd it go?
+S
+I got it, however I'm still being tailed by some remnants of my escorts.
+A
+Coramo?
+S
+No, Arzil. Coramo didn't manage to rout them. Instead *they* got routed.
+A
+How'd that happen? At best they'd wipe each other out.
+S
+Remember that girl I told you about? She's every bit a tactician as I expected her to be. Unfortunately so, as I couldn't recruit her.
+A
+You still want us to show her mercy?
+S
+No. Any moment she's able to guide her allies is a moment we're closer to losing everything. Seize the opportunity to kill her as soon as it presents itself. She might not lead their group, but she's the only reason they present a threat to us.
+A
+Now, now, we'll take care of it. Just take a rest here, I'll tell you when we're done.
+S
+Alvin, I mean it. She knows exactly where to find openings in enemy formations. Don't underestimate her.
+A
+And we know these woods. Some of us have lived here for decades. We have prepared for this moment for at least just as long. We'll clean their clocks. Just rest and watch.
+S
+No, I'm going to keep moving to HQ. I trust your abilities, but worst-case you'll only delay them.
+A
+Suit yourself, I'll send a few people to escort you.
+S
+Thank you.
 
 
 
