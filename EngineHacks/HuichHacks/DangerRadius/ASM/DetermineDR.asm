@@ -55,7 +55,7 @@ beq   L1
   mov   r0, #0xA
   add   r14, r0
   push  {r4, r14}
-  bl    GOTO_R4                   @ This draw SMS instead of MMS.
+  bl    GOTO_R4                   @ This draws SMS instead of MMS.
   bl    InitializeDR
   b     Return
 L1:

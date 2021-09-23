@@ -90,47 +90,36 @@ POP
 ALIGN 4
 EndDR:
 #include "EndDR.lyn.event"
-
 ALIGN 4
 ActionCommitDR:
 #include "ActionCommitDR.lyn.event"
-
 ALIGN 4
 ActionCancelDR:
 #include "ActionCancelDR.lyn.event"
-
 ALIGN 4
 DRHook:
 #include "Hook.lyn.event"
-
 ALIGN 4
 DetermineDR:
 #include "DetermineDR.lyn.event"
-
 ALIGN 4
 DisplayIcon:
 #include "DisplayIcon.lyn.event"
-
 ALIGN 4
 SetFog:
 #include "SetFog.lyn.event"
-
 ALIGN 4
 InvertFog:
 #include "InvertFog.lyn.event"
-
 ALIGN 4
 RefreshFog:
 #include "RefreshFog.lyn.event"
-
 ALIGN 4
 DisplayDR:
 #include "DisplayDR.lyn.event"
-
 ALIGN 4
 DisplayMarker:
 #include "DisplayMarker.lyn.event"
-
 ALIGN 4
 UpdateDRMove:
 #include "UpdateDRMove.lyn.event"
