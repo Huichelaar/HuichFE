@@ -5,6 +5,7 @@ PUSH
 ORG ClassBonusGrowthsTableLABEL + Supplier*8 ; BYTE (-10) (3) (5) (7) (8) (1) (2) (7) 
 ORG ClassBonusGrowthsTableLABEL + Cavalier*8 ; BYTE (3) (4) (0) (0) (-4) (3) (1) (0) 
 ORG ClassBonusGrowthsTableLABEL + Cavalier_F*8 ; BYTE (3) (4) (0) (0) (-4) (3) (1) (0) 
+ORG ClassBonusGrowthsTableLABEL + Knight*8 ; BYTE (0) (2) (-5) (0) (-5) (10) (2) (1) 
 ORG ClassBonusGrowthsTableLABEL + Mercenary*8 ; BYTE (5) (5) (0) (5) (0) (5) (0) (0) 
 ORG ClassBonusGrowthsTableLABEL + Mercenary_F*8 ; BYTE (5) (5) (0) (5) (0) (5) (0) (0) 
 ORG ClassBonusGrowthsTableLABEL + Archer*8 ; BYTE (0) (0) (0) (5) (1) (1) (0) (0) 

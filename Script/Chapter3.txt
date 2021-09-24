@@ -150,7 +150,7 @@ Brief summary before we move: we're currently in the Ivylands, closing in on Til
 V
 R-right...
 ML
-His *supposed* allies have yet to appear.
+His *hypothetical* allies have yet to appear.
 V
 *thinkbubble*
 Why are you looking at me when you say that?
@@ -166,11 +166,11 @@ It's me. Open up.
 A(lvin)
 How'd it go?
 S
-I got it, however I'm still being tailed by some remnants of my escorts.
+I got *it*, however I'm still being tailed by my escorts.
 A
 Coramo?
 S
-No, Arzil. Coramo didn't manage to rout them. Instead *they* got routed.
+No, Arzil. Coramo didn't manage to rout them and retreated.
 A
 How'd that happen? At best they'd wipe each other out.
 S
@@ -188,9 +188,88 @@ And we know these woods. Some of us have lived here for decades. We have prepare
 S
 No, I'm going to keep moving to HQ. I trust your abilities, but worst-case you'll only delay them.
 A
-Suit yourself, I'll send a few people to escort you.
+Suit yourself. I'll send a few people to escort you.
 S
 Thank you.
+
+*Alvin leaves fort*
+
+A
+ACTION STATIONS, EVERYONE. The enemy will be here any moment. Move to your positions.
+L
+General!
+A
+Linda. To your post.
+L
+What about the catalyst?
+A
+Handled.
+L
+Handled as in...?
+A
+As in don't worry your pretty little head about it. To your post!
+L
+Understood!
+
+*Forces scramble*
+*Linda approaches Vincent and Carmen*
+
+C
+Any idea what's going on?
+L
+Apparently the catalyst has been "handled".
+V
+What's that supposed to mean?
+L
+Alvin sent me off when I asked.
+C
+He's never been good at lying, you think Simon messed up?
+L
+I dunno, but I have a bad feeling about all of this. I need more intel, preferably from outside.
+V
+We're the only ones here not from Alvin's faction. We're as clueless as you. Who are you going to ask?
+L
+Not true; There's one more faction. Our enemies.
+V
+You're going to ask Arzil for intel? They'll sooner kill you.
+L
+I've got you two with me to prevent that from happening.
+C
+If Alvin heard you he'd treat this as defection.
+L
+Then it's a good thing he's not around.
+C
+Say you somehow open a dialogue with Arzil, Say you trust the intel they give you, what will we do then?
+L
+If they corroborate my worst suspicions, I'll plead with them to let us join them.
+V
+Again, they'll just kill you.
+C
+No they won't. We can guide them to HQ.
+V
+They only need one of us for that.
+L
+Yes, but none of us will help them if they hurt any of us.
+C
+Does that satisfy you?
+V
+...Fine.
+
+*Our heroes appear*
+
+V
+Why, I think Simon's not-so-hypothetical allies have appeared. Who could have thunk?
+ML
+...You vulpine-
+D
+Stop quibbling! Vivian, I expect you to command us on the field again.
+V
+Yes, Ma'am!
+D
+If we want to make up for the delay this battle will cause, we need to somehow [red]obtain intel on the enemy.[red]
+If we fail to, we won't catch up; [red]Game-over[red].
+
+
 
 
 

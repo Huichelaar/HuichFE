@@ -45,3 +45,6 @@ CarmenClericPalette:
 ALIGN 4
 VincentWyvernKnightPalette:
 #incbin "WyvernKnight/VincentPaletteComp.dmp"
+ALIGN 4
+AlvinKnightPalette:
+#incbin "Knight/AlvinPaletteComp.dmp"

@@ -134,6 +134,12 @@ HandaxeAnim(WyvKnightHandaxeAnim)
 UnarmedAnim(WyvKnightUnarmedAnim)
 EndAnim
 
+ALIGN 4
+KnightAnims:
+LanceAnim(KnightLanceAnim)
+UnarmedAnim(KnightUnarmedAnim)
+EndAnim
+
 #include "AnimInstallers/Supplier Lance Installer.event"
 #include "AnimInstallers/Supplier Staff Installer.event"
 #include "AnimInstallers/MercenaryM Sword Installer.event"
@@ -166,3 +172,5 @@ EndAnim
 #include "AnimInstallers/WyvKnight Axe Installer.event"
 #include "AnimInstallers/WyvKnight Handaxe Installer.event"
 #include "AnimInstallers/WyvKnight Unarmed Installer.event"
+#include "AnimInstallers/Knight Lance Installer.event"
+#include "AnimInstallers/Knight Unarmed Installer.event"

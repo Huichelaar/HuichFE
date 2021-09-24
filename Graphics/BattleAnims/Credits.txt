@@ -16,3 +16,4 @@ CavalierF                 Pikmin1211, Maiser6, SALVAGED
 MonkM                     Eldritch Abomination
 MonkF                     Eldritch Abomination
 WyvernKnight              St Jack
+Knight                    FPZero
