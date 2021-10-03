@@ -85,7 +85,7 @@
 
 // If uncommented, Raid will be implemented.
 // This patch adds an entry to the Unit Menu, so installing here is necessary.
-// #define RAID
+#define RAID
 
 // If uncommented, Escape-Arrive will be implemented.
 // /this adds entries to the Unit Menu and normally conflicts with Lunge and Stairs. Install here to avoid the conflicts.

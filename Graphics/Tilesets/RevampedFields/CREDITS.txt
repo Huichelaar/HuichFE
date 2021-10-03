@@ -1,4 +1,0 @@
-CREDITS:
-- ZoramineFae.
-- For tileset animation, Flasuban contributed a redux of the standard water flow, as he broke it in the first place with his Thracia water.
-- Cheers to Peer for constantly telling me (ZoramineFae) that the mansion looked too dark.

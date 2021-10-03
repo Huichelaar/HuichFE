@@ -34,7 +34,7 @@ They're large scale bio-weapons. There's but one reason why they're still around
 V
 Linda!
 L
-No, I'm done playing goody two-shoes. The man wants my honest thoughts? He can have them.
+The man wants my honest thoughts? He can have them.
 V
 For the record, these are her words, not mine.
 S
@@ -46,7 +46,7 @@ Shame, I happen to see things the same way as Linda.
 L
 Wha-
 V
-You... do?
+You do?
 S
 At their core, catalysts are used to change the weather of a desired geographical location. With a blast radius the size of a country, this results in precipitation of Fowler particles. These turn gaseous upon contact with the earth. When humans inhale enough of these, they either die, metamorphosize or both. A modern harness can be used to target any place on the planet. Maybe bio-weapon would be a misnomer, but the danger of catalysts can not be overstated.
 L
@@ -58,9 +58,9 @@ Other than the assumption people will commit genocide to ensure world domination
 L
 Given the opportunity, that's exactly what those in charge would do. If they had even a shred of humanity, they'd have destroyed their catalysts.
 S
-Exactly. If one of the three monarchs destroyed their catalyst, they would not be targeted by either of the others. The other monarchs would instead try to pre-empt one another instead.
+Exactly. If one of the three monarchs destroyed their catalyst, they would not be targeted by either of the others. The other monarchs would instead try to pre-empt one another.
 L
-The only reason why none of them have destroyed their catalyst is because they still believe in the deterrent theory and are hoping for their chance at world domination. Nevermind the fact it'll involve two countries' populations getting wiped out.
+The only reason why none of them have destroyed their catalyst is because they still believe in the deterrent theory. They're waiting for someone to mess up, giving them a chance at world domination. Nevermind the fact it'll involve two countries' populations getting wiped out.
 S
 Going back to the three issues with the deterrent theory. First of all, it's optimistic; It relies on those in charge of the catalysts to put protecting their citizens over personal vendettas. A single moment of emotion is all it takes to fire off a catalyst. The second problem lies with the Alchemist's Poem. Do you remember how it goes?
 L
@@ -100,7 +100,7 @@ If any country gets their hands on a second catalyst they can use both to wipe o
 L
 Weren't the lost catalysts destroyed?
 S
-They were never found. It's possible one or both may still be intact. There are two ways of confirming it though. One is by finding them. This option is out if they're destroyed. The second option has been an oddly well-kept secret, considering how much information regarding catalysts is common knowledge. Catalysts constantly emit a specific long-range radiowave unique to them. Installing a catalyst into a harness will reveal how many active catalysts exist in this world.
+They were never found. It's possible one or both may still be intact. There are two ways of confirming it though. One is by simply finding them. This option is out if they're destroyed. The second option has been an oddly well-kept secret, considering how much information regarding catalysts is common knowledge. Catalysts constantly emit a specific long-range radiowave unique to them. They can also be used to transceive this radiowave. Installing a catalyst into a harness will reveal how many active catalysts exist in this world.
 V
 You're saying the monarchs know exactly how many catalysts still exist? Why didn't any of them pick up a lost one, and wipe out the other nations?
 S
@@ -195,7 +195,7 @@ Thank you.
 *Alvin leaves fort*
 
 A
-ACTION STATIONS, EVERYONE. The enemy will be here any moment. Move to your positions.
+ACTION STATIONS, EVERYONE. The enemy will be here any moment. Move to your positions. Send word to our forts.
 L
 General!
 A
@@ -235,7 +235,7 @@ You're going to ask Arzil for intel? They'll sooner kill you.
 L
 I've got you two with me to prevent that from happening.
 C
-If Alvin heard you he'd treat this as defection.
+If Alvin heard you, he'd treat this as defection.
 L
 Then it's a good thing he's not around.
 C
@@ -245,15 +245,17 @@ If they corroborate my worst suspicions, I'll plead with them to let us join the
 V
 Again, they'll just kill you.
 C
-No they won't. We can guide them to HQ.
+No they won't. Linda can guide them to HQ.
 V
-They only need one of us for that.
+They only need Linda for that.
 L
-Yes, but none of us will help them if they hurt any of us.
+Yes, but I won't help them if they hurt either of us.
 C
 Does that satisfy you?
 V
 ...Fine.
+L
+Vincent, take Carmen with you and keep an eye on me from above. If I give the signal, land.
 
 *Our heroes appear*
 
@@ -266,7 +268,7 @@ Stop quibbling! Vivian, I expect you to command us on the field again.
 V
 Yes, Ma'am!
 D
-If we want to make up for the delay this battle will cause, we need to somehow [red]obtain intel on the enemy.[red]
+If we want to make up for the delay this battle will cause, we need to [red]obtain intel on the enemy.[red]
 If we fail to, we won't catch up; [red]Game-over[red].
 
 

@@ -18,12 +18,12 @@
 // CRE_CreditStruct[]
 ALIGN 4
 creditStruct:
-//CRE_CreditStruct_Entry(Graphics, Classes, 1, FieldsBG, FieldsAquamarinePalette, 0x20700, 0x10000, -0x5200, 0x40, 0x80, -0x100, 0, 0, 0, 0, 0x100, 0, 0x100, 0, fieldsTravelStruct, reelStructClass, CRE_classSegConstructor, CRE_classSegDestructor)
-//CRE_CreditStruct_Entry(Graphics, Portraits, 0, FieldsBG, FieldsAquamarinePalette, 0x20800, 0x2100, 0x3EF00, 0xA02, 0x2600, 0x100, 0, 0, 0, 0xFF, -12, 0, 0xC, 0xFF, fieldsTravelStruct, reelStructPortrait, CRE_portraitSegConstructor, CRE_portraitSegDestructor)
-CRE_CreditStruct_Entry(Graphics, Classes, 1, FieldsBG, FieldsAquamarinePalette, 0x2C000, 0x18000, 0x8800, 0xA03, 0x40, 0, 0, 0x100, 0x12, 0xFF, 0, -0xFF, 0x12, 0, fieldsTravelStruct, reelStructClass, CRE_classSegConstructor, CRE_classSegDestructor)
-CRE_CreditStruct_Entry(Graphics, Portraits, 0, FieldsBG, FieldsAquamarinePalette, 0x2C000, 0x1900, 0x8800, 0xA03, 0x40, 0, 0, 0x100, 0x12, 0xFF, 0, -0xFF, 0x12, 0, fieldsTravelStructTemp, reelStructPortrait, CRE_portraitSegConstructor, CRE_portraitSegDestructor)
-CRE_CreditStruct_Entry(Graphics, Tilesets, 2, FieldsBG, FieldsAquamarinePalette, 0x2C000, 0x1900, 0x8800, 0xA03, 0x40, 0, 0, 0x100, 0x12, 0xFF, 0, -0xFF, 0x12, 0, fieldsTravelStructTemp, reelStructTileset, 0, 0)
-CRE_CreditStruct_Entry(Graphics, 0x5D3, 3, FieldsBG, FieldsAquamarinePalette, 0x2C000, 0x1900, 0x8800, 0xA03, 0x40, 0, 0, 0x100, 0x12, 0xFF, 0, -0xFF, 0x12, 0, fieldsTravelStructTemp, reelStructGraphicsOther, 0, 0)
+//CRE_CreditStruct_Entry(Graphics, Classes, 1, FieldsBG, Fields1AquamarinePalette, 0x20700, 0x10000, -0x5200, 0x40, 0x80, -0x100, 0, 0, 0, 0, 0x100, 0, 0x100, 0, fieldsTravelStruct, reelStructClass, CRE_classSegConstructor, CRE_classSegDestructor)
+//CRE_CreditStruct_Entry(Graphics, Portraits, 0, FieldsBG, Fields1AquamarinePalette, 0x20800, 0x2100, 0x3EF00, 0xA02, 0x2600, 0x100, 0, 0, 0, 0xFF, -12, 0, 0xC, 0xFF, fieldsTravelStruct, reelStructPortrait, CRE_portraitSegConstructor, CRE_portraitSegDestructor)
+CRE_CreditStruct_Entry(Graphics, Classes, 1, FieldsBG, Fields1AquamarinePalette, 0x2C000, 0x18000, 0x8800, 0xA03, 0x40, 0, 0, 0x100, 0x12, 0xFF, 0, -0xFF, 0x12, 0, fieldsTravelStruct, reelStructClass, CRE_classSegConstructor, CRE_classSegDestructor)
+CRE_CreditStruct_Entry(Graphics, Portraits, 0, FieldsBG, Fields1AquamarinePalette, 0x2C000, 0x1900, 0x8800, 0xA03, 0x40, 0, 0, 0x100, 0x12, 0xFF, 0, -0xFF, 0x12, 0, fieldsTravelStructTemp, reelStructPortrait, CRE_portraitSegConstructor, CRE_portraitSegDestructor)
+CRE_CreditStruct_Entry(Graphics, Tilesets, 2, FieldsBG, Fields1AquamarinePalette, 0x2C000, 0x1900, 0x8800, 0xA03, 0x40, 0, 0, 0x100, 0x12, 0xFF, 0, -0xFF, 0x12, 0, fieldsTravelStructTemp, reelStructTileset, 0, 0)
+CRE_CreditStruct_Entry(Graphics, 0x5D3, 3, FieldsBG, Fields1AquamarinePalette, 0x2C000, 0x1900, 0x8800, 0xA03, 0x40, 0, 0, 0x100, 0x12, 0xFF, 0, -0xFF, 0x12, 0, fieldsTravelStructTemp, reelStructGraphicsOther, 0, 0)
 CRE_CreditStruct_Entry(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)      // Terminator.
 
 
@@ -123,11 +123,11 @@ spritePortraitHerbert: SHORT HerbertPortrait 0
 
 
 // CRE_SpriteOtherStruct[]
-CRE_SpriteOtherStruct(spriteTilesetFields, FieldsOBJ, OAM80x80_256col, FieldsAquamarinePalette, 160, 0)
-CRE_SpriteOtherStruct(0, 0, FieldsGreenPalette, 160, 0)
-CRE_SpriteOtherStruct(0, 0, FieldsAutumnalPalette, 160, 0)
-CRE_SpriteOtherStruct(0, 0, FieldsPurplePalette, 160, 0)
-CRE_SpriteOtherStruct(0, 0, FieldsNightPalette, 160, 0)
+CRE_SpriteOtherStruct(spriteTilesetFields, FieldsOBJ, OAM80x80_256col, Fields1AquamarinePalette, 160, 0)
+CRE_SpriteOtherStruct(0, 0, Fields1GreenPalette, 160, 0)
+CRE_SpriteOtherStruct(0, 0, Fields1AutumnalPalette, 160, 0)
+CRE_SpriteOtherStruct(0, 0, Fields1PurplePalette, 160, 0)
+CRE_SpriteOtherStruct(0, 0, Fields1NightPalette, 160, 0)
 CRE_SpriteOtherStruct(0, 0, 0, 0, 0)   // Terminator.
 CRE_SpriteOtherStruct(spriteTilesetFF5Cave, FF5CaveOBJ, OAM80x80_256col, FF5CavePalette, 160, 0)
 CRE_SpriteOtherStruct(0, 0, 0, 0, 0)   // Terminator.

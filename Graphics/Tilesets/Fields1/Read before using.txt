@@ -1,0 +1,11 @@
+Hey, Zora here!
+
+Might start making these more for my tilesets honestly.
+
+Should be backwards compatible 90% with previous maps.
+
+What's different in this version is the addition of Barrels, shadows for bridge tiles, rope (all 3 of which work in tandem to create ports), along with better shading on the fence tiles AND tall walls for them.
+
+They aren't perfect - nothing I make is - but they should be good enough.
+
+Especially considering everything else this tileset can do already, missing a few pieces is juuuuuuuuuuuust fine.

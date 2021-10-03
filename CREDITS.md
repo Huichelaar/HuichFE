@@ -313,11 +313,12 @@ Songs used:
 ## Tilesets
 
 - FF5Cave from Final Fantasy 5 by Square. WAve prepared the tileset for FEGBA.
-- RevampedFields by:
+- Fields1 & Fields2 by:
   - ZoramineFae.
   - For tileset animation, Flasuban contributed a redux of the standard water flow, as he broke it in the first place with his Thracia water.
   - Cheers to Peer for constantly telling me (ZoramineFae) that the mansion looked too dark.
-- UpdatedVillage by N426, ZoramineFae and Venno.
+  - Two of the palettes in this batch, the Sunset and Nighttime ones, are almost completely ripped from two of JellyUnicorn’s fantastic palettes.
+- Village by N426, ZoramineFae and Venno.
 
 ## Other
 

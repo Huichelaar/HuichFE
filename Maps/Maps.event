@@ -1,10 +1,10 @@
 ALIGN 4
-Map0:Map3:Map4:Map5:Map6:Map7:Map8:Map9:Map10:Map11:Map12:Map13:Map14:Map15:Map16:Map17:Map18:Map19:Map20:Map21:Map22:Map23:Map24:
-#incbin Map0_data.dmp
+Map0:Map4:Map5:Map6:Map7:Map8:Map9:Map10:Map11:Map12:Map13:Map14:Map15:Map16:Map17:Map18:Map19:Map20:Map21:Map22:Map23:Map24:
+#incbin "Map0_data.dmp"
 
 ALIGN 4
 Map1:
-#incbin Map1_data.dmp
+#incbin "Map1_data.dmp"
 
 Map1Changes:
 {
@@ -24,7 +24,7 @@ ALIGN 4
 
 ALIGN 4
 Map2:
-#incbin Map2_data.dmp
+#incbin "Map2_data.dmp"
 
 Map2Changes:
 {
@@ -38,5 +38,34 @@ ALIGN 4
 
 Snag1broken:
 SHORT 0xdf4 0xe64 0xe74 
+ALIGN 4
+}
+
+ALIGN 4
+Map3:
+#incbin "Map3_data.dmp"
+
+Map3Changes:
+{
+TileMap(0,14,6,1,1,Fort1Raided)
+TileMap(1,8,9,1,1,Fort2Raided)
+TileMap(2,8,16,1,1,Fort3Raided)
+TileMap(3,0,20,1,1,Fort4Raided)
+TileMapEnd
+
+Fort1Raided:
+SHORT 0xdc8 
+ALIGN 4
+
+Fort2Raided:
+SHORT 0xdc8 
+ALIGN 4
+
+Fort3Raided:
+SHORT 0xdc8 
+ALIGN 4
+
+Fort4Raided:
+SHORT 0xdc8 
 ALIGN 4
 }

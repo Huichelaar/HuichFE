@@ -2,7 +2,8 @@
 #include "FF5Cave/FF5Cave.event"
 
 //Revamped Fields (& villages)
-#include "RevampedFields/RevampedFields.event"
+#include "Fields1/Fields1.event"
+#include "Fields2/Fields2.event"
 
 //Updated Villages
-#include "UpdatedVillage/UpdatedVillage.event"
+#include "Village/Village.event"

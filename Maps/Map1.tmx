@@ -4,7 +4,7 @@
   <property name="Main" value=""/>
  </properties>
  <tileset firstgid="1" name="Standard Green Raw Tiles" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
-  <image source="../Graphics/Tilesets/RevampedFields/Standard Green Raw Tiles.png" trans="ffffff" width="512" height="512"/>
+  <image source="../Graphics/Tilesets/Fields1/Standard Green Raw Tiles.png" trans="ffffff" width="512" height="512"/>
  </tileset>
  <layer id="1" name="Main" width="15" height="10">
   <properties>
@@ -163,7 +163,7 @@
    <tile gid="110"/>
   </data>
  </layer>
- <layer id="4" name="House1destroyed" width="15" height="10">
+ <layer id="4" name="House1destroyed" width="15" height="10" visible="0">
   <properties>
    <property name="Height" type="int" value="2"/>
    <property name="ID" type="int" value="0"/>

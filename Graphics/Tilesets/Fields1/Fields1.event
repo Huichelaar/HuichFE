@@ -1,0 +1,70 @@
+ALIGN 4
+Fields1Objects:
+#incbin "Objects.dmp"
+ALIGN 4
+Fields1Config:
+#incbin "Mapchip Conf.mapchip_config.dmp"
+
+// Palettes
+ALIGN 4
+Fields1AutumnalPalette:
+#incbin "AutumnalPalette.dmp"
+ALIGN 4
+Fields1AquamarinePalette:
+#incbin "AquamarinePalette.dmp"
+ALIGN 4
+Fields1GreenPalette:
+#incbin "StandardGreenPalette.dmp"
+ALIGN 4
+Fields1PurplePalette:
+#incbin "ThraciaPurplePalette.dmp"
+ALIGN 4
+Fields1NightPalette:
+#incbin "NightPalette.dmp"
+
+// Anims
+ALIGN 4
+Fields1Anim0:
+#incbin "Anim/tile_animasinos.mapanime_1_000.dmp"
+ALIGN 4
+Fields1Anim1:
+#incbin "Anim/tile_animasinos.mapanime_1_001.dmp"
+ALIGN 4
+Fields1Anim2:
+#incbin "Anim/tile_animasinos.mapanime_1_002.dmp"
+ALIGN 4
+Fields1Anim3:
+#incbin "Anim/tile_animasinos.mapanime_1_003.dmp"
+ALIGN 4
+Fields1Anim4:
+#incbin "Anim/tile_animasinos.mapanime_1_004.dmp"
+ALIGN 4
+Fields1Anim5:
+#incbin "Anim/tile_animasinos.mapanime_1_005.dmp"
+ALIGN 4
+Fields1Anim6:
+#incbin "Anim/tile_animasinos.mapanime_1_006.dmp"
+ALIGN 4
+Fields1Anim7:
+#incbin "Anim/tile_animasinos.mapanime_1_007.dmp"
+
+
+ALIGN 4
+Fields1AnimStruct:
+SHORT 0x10 0x1000
+POIN  Fields1Anim0
+SHORT 0x10 0x1000
+POIN  Fields1Anim1
+SHORT 0x10 0x1000
+POIN  Fields1Anim2
+SHORT 0x10 0x1000
+POIN  Fields1Anim3
+SHORT 0x10 0x1000
+POIN  Fields1Anim4
+SHORT 0x10 0x1000
+POIN  Fields1Anim5
+SHORT 0x10 0x1000
+POIN  Fields1Anim6
+SHORT 0x10 0x1000
+POIN  Fields1Anim7
+WORD  0 0
