@@ -1,6 +1,9 @@
 ## Ch3Title
 Chapter 3[X]
 
+## Ch3ObjectiveStatus1
+Obtain intel[X]
+
 ## Ch3WM
 Chapter 3 World Map text[N]
 Make sure to eat fruit as well![AN]
@@ -11,3 +14,8 @@ Right is Simon.[AN]
 [LoadOverworldFaces]
 Avatar is walking now.[AN]
 [LoadOverworldFaces][X]
+
+## Ch3_0
+[ML][LoadVivian][BoxHeight][0x1]
+Chapter 3.[AN]
+[X]

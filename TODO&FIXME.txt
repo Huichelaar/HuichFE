@@ -56,8 +56,12 @@ Add Ch3 assets to Credits.md
   Fields: JellyUnicorn
   WyvernKnight, Knight
   Linda, Carmen, Vincent, Alvin portraits
+  Zeta for ChangeChapterObjective, https://feuniverse.us/t/zetas-asm-c-spellbook/4824/18
 
-Set class level-up skills for cavalier & others!
+Set class level-up skills for cavalier, warrior & others!
+
+Add skillprocdisplay stuff.
+
 
 PLAN, Crafting should allow:
   - fusing two of the same items (total durability no higher than 63?), no material cost. (seems Tequila has a "Convoy Combine" patch which already does this)

@@ -85,7 +85,7 @@ BYTE 00 00
 ALIGN 4
 
 WyvernKnightSkillList:
-BYTE 1 LunaID
+BYTE 5 LunaID
 BYTE 00 00
 ALIGN 4
 
@@ -157,6 +157,7 @@ BYTE 00 00
 ALIGN 4
 
 PriestSkillList:
+BYTE 5 AmaterasuID
 BYTE 00 00
 ALIGN 4
 
@@ -169,6 +170,7 @@ BYTE 00 00
 ALIGN 4
 
 ClericSkillList:
+BYTE 5 AmaterasuID
 BYTE 00 00
 ALIGN 4
 
