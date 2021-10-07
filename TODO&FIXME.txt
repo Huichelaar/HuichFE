@@ -39,7 +39,7 @@ Make retreated units not appear in chapterintro.
   - ChapterIntro song doesn't loop correctly. Try using what song 0x314 uses when chapter title appears.
   - ChapterIntro, DrawUnitCheck, check for Ephraim-disappear instead?
 
-Toward the end. Remove text entries of features you didn't include (Raid? etc.)
+Toward the end. Remove text entries of features you didn't include.
 
 7743 wrote this. Maybe we can find a use for it?
 ldr r0, =0x03006650    @gMusicPlayerInfo1    {U}
@@ -57,10 +57,16 @@ Add Ch3 assets to Credits.md
   WyvernKnight, Knight
   Linda, Carmen, Vincent, Alvin portraits
   Zeta for ChangeChapterObjective, https://feuniverse.us/t/zetas-asm-c-spellbook/4824/18
+  7743 for MultiSeizeUnits, FEBuilder.
 
 Set class level-up skills for cavalier, warrior & others!
 
 Add skillprocdisplay stuff.
+
+Remove Raid config define.
+
+If we need space:
+  - Some tables have entries they're not using, see Tables/TableOptions.s.
 
 
 PLAN, Crafting should allow:

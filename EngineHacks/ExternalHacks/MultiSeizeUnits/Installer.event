@@ -1,0 +1,19 @@
+#ifdef _FE8_
+
+#include "EAstdlib.event"
+#include "Extensions/Hack Installation.txt"
+
+PUSH
+ORG $37b64		//FE8U
+jumpToHack(MultiSeizeUnits)
+POP
+
+
+ALIGN 4
+MultiSeizeUnits:
+#incbin "MultiSeizeUnits.dmp"
+POIN MultiSeizeUnitsTableLABEL
+
+#else
+    ERROR This version of MultiSeizeUnits is for FE8!
+#endif

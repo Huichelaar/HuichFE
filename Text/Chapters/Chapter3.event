@@ -19,3 +19,26 @@ Avatar is walking now.[AN]
 [ML][LoadVivian][BoxHeight][0x1]
 Chapter 3.[AN]
 [X]
+
+## Ch3_BQ1
+[ML][LoadAlvin]
+Generic Alvin BQ[AN]
+[X]
+
+## Ch3_BQ2
+[ML][LoadAlvin]
+Alvin & Linda BQ[AN]
+[X]
+
+## Ch3_BQ3
+[ML][LoadAlvin]
+Alvin & Vivian BQ.[AN]
+Vivian talked to Linda,[N]
+or Alvin attacked already.[AN]
+[X]
+
+## Ch3_BQ4
+[ML][LoadAlvin]
+Alvin & Vivian BQ.[N]
+No other flags set.[AN]
+[X]

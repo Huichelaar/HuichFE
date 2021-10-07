@@ -30,7 +30,7 @@ V
 S
 Oh, not at all. Feel free to speak your mind.
 L
-They're large scale bio-weapons. There's but one reason why they're still around: To make citizens too scared of their life to think of rebelling against the crown.
+They're large scale bio-weapons. Their main purpose is to make citizens too scared of their life to think of rebelling against the crown.
 V
 Linda!
 L
@@ -178,7 +178,7 @@ Remember that girl I told you about? She's every bit a tactician as I expected h
 A
 You still want us to show her mercy?
 S
-No. Any moment she's able to guide her allies is a moment we're closer to losing everything. Seize the opportunity to kill her as soon as it presents itself. She might not lead their group, but she's the only reason they present a threat to us.
+No. Any moment she's able to guide her allies is a moment we're closer to losing everything. Seize the opportunity to [red]kill her[\red] as soon as it presents itself. She might not lead their group, but she's the only reason they present a threat to us.
 A
 Now, now, we'll take care of it. Just take a rest here, I'll tell you when we're done.
 S
@@ -191,6 +191,13 @@ A
 Suit yourself. I'll send a few people to escort you.
 S
 Thank you.
+...
+Alvin.
+A
+Yeah?
+S
+She's still naive. Make use of that.
+
 
 *Alvin leaves fort*
 
@@ -237,7 +244,7 @@ I've got you two with me to prevent that from happening.
 C
 If Alvin heard you, he'd treat this as defection.
 L
-Then it's a good thing he's not around.
+Then it's a good thing he's not nearby.
 C
 Say you somehow open a dialogue with Arzil, Say you trust the intel they give you, what will we do then?
 L
@@ -272,21 +279,204 @@ If we want to make up for the delay this battle will cause, we need to [red]obta
 If we fail to, we won't catch up; [red]Game-over[red].
 
 
+Vivian talks to Linda:
+
+V
+Linda, is that you!?
+L
+Vivian? What are *you* doing here?
+V
+Right back at you! You disappeared without a trace two years ago! Where have you been?
+L
+I joined the revolution. That's why I'm here. Why are you here?
+V
+Then you're aligned with Simon? He's currently carrying a catalyst. I don't know what he's planning, but it can't be good.
+L
+He's... carrying it?
+V
+Yes! That's the part that confused me. He's part of the revolutionists, right? Why didn't he destroy the catalyst?
+L
+You confirmed he's carrying it? Without a doubt?
+V
+He showed it to me. He killed his entourage just so he could escape with the catalyst. He wouldn't need to do that if he'd just destroyed it.
+L
+Oh no... I knew something was up, but this is far worse than I expected.
+V
+Does he have a harness? Is he planning on using the catalyst to confirm how many others exist?
+L
+Oh Vivian, it's much worse than that. We do have a harness, but we're already holding on to a catalyst for that purpose. There's absolutely no need for another. The only reason I could think of...
+V
+He's... He's going to fire it, isn't he?
+L
+What in the world is he thinking? How could...
+Right, no time for this. *whistle*
+*Vincent & Carmen appear*
+Vin
+You called?
+L
+Vincent, Carmen. Simon is carrying the catalyst.
+Vin
+I knew it!
+C
+No you didn't.
+L
+Defection time. This here is Vivian. We'll be joining up with her now.
+V
+I don't know if...
+L
+You're leading this group right? Let us join. I know where the revolutionists' base is. I can lead you through the passage Simon is taking.
+V
+Err, alright. I'm sure Demi won't mind the help. ML's going to be furious again, I'm sure.
+C
+We'll have to [red]seize the gate[\red] to the passage. Alvin should be guarding it right now.
+Vin
+Leave him to me. Never liked that guy.
+V
+If you're joining us, then you'll follow my instructions.
+L
+Vincent.
+Vin
+...Fine.
+V
+Thank you! We can use all the help we can get.
+C
+This mess is partially our mistake. We'll be glad to correct it.
+
+
+*Seize without talking to Linda*
+V
+I guess I'll just take control of this. There has to be something here, considering how well it was guarded.
+***
+D
+The enemy retreated. Did you do something?
+V
+I took control of this gate. I'm not sure where it leads, but it the enemy commander was in charge of guarding it.
+ML
+You... took control of it?
+V
+Yep.
+ML
+Without any intel, you decided to seize the gate?
+V
+It felt intuitive.
+ML
+...
+***
+L
+Excuse me.
+D
+Who are you? Hands in the air!
+V
+Linda!?
+L
+Vivian!
+V
+Demi, it's alright, she's a friend. What are you doing here?
+L
+I joined the revolution.
+V
+Then you're aligned with Simon? He's currently carrying a catalyst. I don't know what he's planning, but it can't be good.
+L
+He's... carrying it?
+V
+Yes! That's the part that confused me. He's part of the revolutionists, right? Why didn't he destroy the catalyst?
+L
+You confirmed he's carrying it? Without a doubt?
+V
+He showed it to me. He killed his entourage just so he could escape with the catalyst. He wouldn't need to do that if he'd just destroyed it.
+L
+Oh no... I knew something was up, but this is far worse than I expected.
+V
+Does he have a harness? Is he planning on using the catalyst to confirm how many others exist?
+L
+Oh Vivian, it's much worse than that. We do have a harness, but we're already holding on to a catalyst for that purpose. There's absolutely no need for another. The only reason I could think of...
+ML
+He's going to fire it.
+L
+What in the world is he thinking? How could...
+Right, no time for this. *whistle*
+*Vincent & Carmen appear*
+Vin
+You called?
+L
+Vincent, Carmen. Simon is carrying the catalyst.
+Vin
+I knew it!
+C
+No you didn't.
+L
+Defection time. This here is Vivian. We'll be joining up with her now.
+V
+I don't know if...
+L
+You're leading this group right? Let us join. I know where the revolutionists' base is. I can lead you through the passage Simon is taking.
+V
+Demi?
+D
+You're a revolutionist? We represent Arzil. Are you sure you want to work together? If your friends attack us, we will fight back with lethal force.
+L
+I'm not affiliating myself with the revolution anymore. I wasn't aware they were going to fire catalysts.
+D
+Alright then, lead the way.
+
+
+*Seize after talking to Linda*
+ML
+The gate's been seized, now what?
+V
+Demi, ML, there's someone I need you to meet.
+L
+Hello.
+V
+This is Linda, she's an old classmate. We both used to study under Simon.
+ML
+Did I not see her among the enemies we were just fighting?
+L
+They were revolutionists! You wouldn't be fighting them in the first place if you had treated your subjects as people!
+ML
+Terrorists more like. Your fellow `revolutionist' is carrying a catalyst!
+L
+I don't have to hear that from you! Arzil's been flaunting their catalyst for centuries!
+D
+Vivian, why did you introduce her to us?
+V
+Right! Linda, don't argue with ML. You'll be here all night.
+L
+I would like...
+I would like to join you.
+ML
+Oh that's rich. Abandoning the revolution so soon?
+L
+I didn't abandon it. My allies did. We were not supposed to be collecting catalysts. We were supposed to destroy them. Including the one that is kept at headquarters, we have two catalysts.
+D
+Simon already owned the other lost catalyst?
+L
+Yes, he didn't fire it under pretense of using it to keep tabs on the other catalysts.
+ML
+How does that work?
+D
+A harness can be used to detect catalysts, if a catalyst is slotted.
+ML
+That's the first I'm hearing of this!
+D
+It's highly classified info. I guess Simon saw that differently, considering his subordinates know.
+V
+He's got two catalysts. He'll only need one to detect other catalysts. We don't know what he's going to do with the other.
+L
+Hence my defection. I'll show you the way through this passage commander Alvin was guarding. Please let me help.
+D
+We were killing your comrades just before. Can we still work together?
+L
+Although I don't like it, I understand why you were doing it. Besides, there's a much bigger problem that needs solving.
+D
+Alright then, lead the way.
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
+TODO ALLOW ANYONE TO SEIZE
 
 
 

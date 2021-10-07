@@ -455,7 +455,7 @@
 //Author Unknown (Initial Commit)
 #define LifeAndDeathID 255
 
-//Light Weight: When holding three or less items, attack speed +3.
+//Light Weight: When holding three or fewer items, attack speed +3.
 //Author Unknown (Initial Commit)
 #define LightWeightID 222
 
@@ -806,7 +806,7 @@
 //Push Skills: When HP is full, gain +5 to the given stat.
 //By Sme
 #define PushStrID 255
-#define PushMagID 255
+#define PushMagID 4
 #define PushSklID 62
 #define PushSpdID 255
 #define PushDefID 255
@@ -930,7 +930,7 @@
 #define NihilID 114
 
 //Live to Serve: When healing an ally, also heals self.
-////Author Unknown (Initial Commit) & Leonarth
+//Author Unknown (Initial Commit) & Leonarth
 #define LiveToServeID 133
 
 //Locktouch: Can open locks without keys or picks.
@@ -1032,7 +1032,7 @@
 
 
 //Display-Only Skills
-#define CunningID 4
+#define CunningID 255
 #define NiceThighsID 225
 #define PersonalityID 255
 

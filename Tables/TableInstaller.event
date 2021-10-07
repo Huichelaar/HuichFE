@@ -6,6 +6,7 @@
 #include "Chapters/ChapterDefinition.event"
 #include "Chapters/EnemyEscapePointsPointers.event"
 #include "Chapters/NPCEscapePointsPointers.event"
+#include "Chapters/MultiSeizeUnits.event"
 #include "Chapters/PointerTable.event"
 #include "Chapters/WorldMapEventTable.event"
 #include "Chapters/WorldMapCutsceneTable.event"

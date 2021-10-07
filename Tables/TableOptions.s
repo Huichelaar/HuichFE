@@ -13,7 +13,13 @@ CSV Chapters/ChapterDefinition.csv
   INLINE False
   WRITE_SEQUENTIALLY False
   MAX_ENTRIES 1
-  
+
+CSV Chapters/MultiSeizeUnits.csv
+  TABLE MultiSeizeUnitsTableLABEL Chapters/MultiSeizeUnits.nmm
+  INLINE True
+  WRITE_SEQUENTIALLY False
+  MAX_ENTRIES 256
+
 CSV Chapters/PointerTable.csv
   TABLE PLISTLABEL Chapters/PointerTable.nmm
   INLINE False

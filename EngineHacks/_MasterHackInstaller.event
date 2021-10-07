@@ -88,34 +88,37 @@ POP
   // Allow Battle BGM to be set per chapter.
   #include "ExternalHacks/ChapterBattleBGM/ChapterBattleBGM.event"
 
-  // Continue BGM during battle if Battle BGM is the same as Map BGM
+  // Continue BGM during battle if Battle BGM is the same as Map BGM.
   #include "ExternalHacks/ContinueBattleBGM/ContinueBattleBGM.event"
   
   // Text engine rework
   #include "ExternalHacks/FE8-Text_Engine_Rework/_FE8-Text_Engine_Rework_EA.event"
   
-  // Negative Stat Boosts
+  // Create a table determining which unit can seize when.
+  #include "ExternalHacks/MultiSeizeUnits/Installer.event"
+  
+  // Negative Stat Boosts.
   #include "Necessary/NegativeStatBoosts/NegativeStatBoosts.event"
 
-  // Trap Rework (Dragon Veins & Heal Tiles)
+  // Trap Rework (Dragon Veins & Heal Tiles).
   #include "ExternalHacks/TrapRework/TrapRework.event"
   
-  // Proper Range Getters
+  // Proper Range Getters.
   #include "ExternalHacks/ProperRangeGetters/ProperRangeGetters/ProperRangeGetters.event"
 
-  // Modular Stat Screen
+  // Modular Stat Screen.
   #include "Necessary/ModularStatScreen/ModularStatScreen.event"
   
-  // Strength/Magic Split
+  // Strength/Magic Split.
 	#include "ExternalHacks/StrMagSplit/_MasterAsmInstaller.event"
   
-  // Modular EXP
+  // Modular EXP.
   #include "ExternalHacks/ModularEXP/ModularEXP.event"
   
-  // Portrait Selection
+  // Portrait Selection.
   #include "ExternalHacks/PortraitSelectASM/PortraitSelectionASM.event"
 
-  // Raid
+  // Raid.
   #include "ExternalHacks/Raid/Raid.event"
   
   // Escape-Arrive

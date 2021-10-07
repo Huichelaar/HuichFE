@@ -1,0 +1,9 @@
+ALIGN 4
+MultiSeizeUnitsTableLABEL:
+FILL 256*8
+PUSH
+ORG MultiSeizeUnitsTableLABEL + 0*8 ; BYTE (Vivian) (0xFF) (3) (0xFF) ; SHORT (0xA) (0) 
+ORG MultiSeizeUnitsTableLABEL + 1*8 ; BYTE (Linda) (0xFF) (3) (0xFF) ; SHORT (0xA) (0) 
+ORG MultiSeizeUnitsTableLABEL + 2*8 ; BYTE (Vincent) (0xFF) (3) (0xFF) ; SHORT (0xA) (0) 
+ORG MultiSeizeUnitsTableLABEL + 3*8 ; BYTE (Carmen) (0xFF) (3) (0xFF) ; SHORT (0xA) (0) 
+POP

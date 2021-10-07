@@ -12,6 +12,7 @@
 #define WeaponLockArrayPointerTable WeaponLockArrayPointerTableLABEL
 #define BiorhythmTable BiorhythmTableLABEL
 #define ChapterDataTable ChapterDataTableLABEL
+#define MultiSeizeUnitsTable MultiSeizeUnitsTableLABEL
 #define PLIST PLISTLABEL
 #define WMNTable WMNTableLABEL
 #define WMPTable WMPTableLABEL

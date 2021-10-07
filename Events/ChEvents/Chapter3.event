@@ -1,11 +1,15 @@
 /*  Chapter 3
-    Highest label: 5
+    Highest label: 7
     Temporary flags used:
       0x5 Raided fortress 1
       0x7 Raided fortress 2
       0x8 Raided fortress 3
       0x9 Raided fortress 4
-      0xA Vivian & Linda talk.
+      0xA Vivian & Linda talk. Also allows seize.
+      0xB Vivian & Alvin BQ.
+      0xC Alvin generic BQ.
+      0xD := Flag 0xA | 0xB | 0xC. Vivian & Alvin talk.
+      0xE Alvin & Linda BQ.
 */
 {
 POIN TurnBasedEvents
@@ -53,7 +57,7 @@ UNIT Simon Shaman 0 Level(1, NPC, 0) [12,19] 0 0 0 0 [] NoAI
 UNIT
 
 EnemyUnits1:
-UNIT Alvin Warrior Alvin Level(10, Enemy, 0) [16,19] 0 0 0 0 [IronAxe] [0x03,0x03,0x0,0x20]
+UNIT Alvin Knight Alvin Level(11, Enemy, 0) [16,19] 0 0 0 0 [IronLance, Horseslayer, Concoction] [0x03,0x03,0x0,0x20]
 UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [13,20] 0 0 0 0 [IronLance] AttackInRangeAI
 UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [18,17] 0 0 1 REDA3 [IronLance] AttackInRangeAI
 UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [18,17] 0 0 1 REDA4 [IronLance] AttackInRangeAI
@@ -267,23 +271,47 @@ ENDA
 TurnBasedEvents:
 END_MAIN
 
+
+/*
+Flag D := A | B | C
+
+if Alvin has fought any unit but Vivian:
+  Set flag C, D in generic battle quote.
+if Vivian talks to Linda:
+  Set flag A, D.
+if Vivian attacks Alvin and flag A or C is set, B unset:
+  Battle conversation, set flag B, D.
+if Vivian attacks Alvin and flag A & B are unset:
+  Different battle conversation, sets flag B, D.
+if Vivian talks to Alvin, only possible when Flag A, B, C (so D) unset:
+  Conversation where Alvin tricks Vivian. Vivian gets killed.
+*/
 CharacterBasedEvents:
 CharacterEvent(0xA,VivianLindaTalk,Vivian,Linda)
+CharacterEvent(0xD,VivianAlvinTalk,Vivian,Alvin)
 END_MAIN
   VivianLindaTalk:
   Text(Ch3_0)
   CUSA Linda
-  SetChapterObjectiveText(0x1A0, 0x1B7) // "Seze gate", "Seize lair gate"
+  SetChapterObjectiveText(0x1A0, 0x1B7) // "Seize gate", "Seize lair gate"
   LOAD1 1 LindaReinfUnits
   ENUN
   CUMO Vincent
   STAL 60
   CURE
   Text(Ch3_0)
+  ENUT 0xD
+  NoFade
+  ENDA
+  
+  VivianAlvinTalk:
+  Text(Ch3_0)
+  ENUT 0x65     // GameOver.
   NoFade
   ENDA
 
 MiscBasedEvents:
+CauseGameOverIfLordDies
 END_MAIN
 
 Traps1:
@@ -292,3 +320,18 @@ END_MAIN
 Traps2:
 END_MAIN
 }
+
+AlvinBQEvent:
+CHECK_EVENTID 0xA
+BNE 6 0x0 0xC
+  CHECK_EVENTID 0xC
+  BNE 6 0x0 0xC
+    TEXTSHOW Ch3_BQ3
+    GOTO 7
+LABEL 6
+  TEXTSHOW Ch3_BQ4
+LABEL 7
+TEXTEND
+REMA
+ENUT 0xD
+ENDA

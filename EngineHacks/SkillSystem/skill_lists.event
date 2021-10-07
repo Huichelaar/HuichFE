@@ -20,6 +20,7 @@ BYTE 00 00
 ALIGN 4
 
 CavalierSkillList:
+BYTE 5 DesperationID
 BYTE 00 00
 ALIGN 4
 
@@ -28,6 +29,7 @@ BYTE 00 00
 ALIGN 4
 
 KnightSkillList:
+BYTE 5 PaviseID
 BYTE 00 00
 ALIGN 4
 
@@ -65,6 +67,7 @@ BYTE 00 00
 ALIGN 4
 
 ArcherSkillList:
+BYTE 5 Prescience
 BYTE 00 00
 ALIGN 4
 
@@ -90,6 +93,7 @@ BYTE 00 00
 ALIGN 4
 
 MageSkillList:
+BYTE 5 PushMagID
 BYTE 00 00
 ALIGN 4
 
@@ -111,6 +115,7 @@ BYTE 00 00
 ALIGN 4
 
 DruidSkillList:
+BYTE 15 ThunderstormID
 BYTE 00 00
 ALIGN 4
 
@@ -133,10 +138,12 @@ BYTE 00 00
 ALIGN 4
 
 FighterSkillList:
+BYTE 5 DragonFangID
 BYTE 00 00
 ALIGN 4
 
 WarriorSkillList:
+BYTE 15 HeroID
 BYTE 00 00
 ALIGN 4
 
@@ -153,10 +160,11 @@ BYTE 00 00
 ALIGN 4
 
 MonkSkillList:
+BYTE 5 PursuitID
 BYTE 00 00
 ALIGN 4
 
-PriestSkillList:
+PriestSkillList:ClericSkillList:
 BYTE 5 AmaterasuID
 BYTE 00 00
 ALIGN 4
@@ -166,11 +174,6 @@ BYTE 00 00
 ALIGN 4
 
 FalcoknightSkillList:
-BYTE 00 00
-ALIGN 4
-
-ClericSkillList:
-BYTE 5 AmaterasuID
 BYTE 00 00
 ALIGN 4
 
@@ -187,6 +190,7 @@ BYTE 00 00
 ALIGN 4
 
 SoldierSkillList:
+BYTE 5 ChivalryID
 BYTE 00 00
 ALIGN 4
 

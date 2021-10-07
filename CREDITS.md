@@ -373,7 +373,7 @@ Songs used:
 - [Narrow Font](https://feuniverse.us/t/scraizas-crazy-asm/5624/2) by Scraiza. Not in use atm.
 - [Portrait Selection](https://feuniverse.us/t/snakes-pit-of-asm-and-other-stuff/3627/17) by Snakey1.
 - [Proper Range Getters](https://github.com/StanHash/FE8UASMHax/tree/master/ProperRangeGetters). by Stan. Not in use atm.
-- [Raid](https://feuniverse.us/t/snakes-pit-of-asm-and-other-stuff/3627/2) by Snakey1. Not in use atm.
+- [Raid](https://feuniverse.us/t/snakes-pit-of-asm-and-other-stuff/3627/2) by Snakey1.
 - [Reaver Split](https://github.com/FireEmblemUniverse/SkillSystem_FE8/tree/master/EngineHacks/ExternalHacks/ReaverSplit) by Crazycolorz5 and Sme. Not in use atm.
 - [Skip Difficulty](https://feuniverse.us/t/fe8-skip-the-difficulty-selection-defaulting-to-a-set-one/2927) by StanH.
 - [Status Weapons](https://feuniverse.us/t/smes-asm-and-miscellany/4445) by Sme.
