@@ -118,6 +118,7 @@
 [LoadCarmen] = [LoadFace][0xc][0x01][BoopPitch][0x13]
 [LoadVincent] = [LoadFace][0xd][0x01][BoopPitch][0xA]
 [LoadAlvin] = [LoadFace][0xe][0x01][BoopPitch][0x8]
+[LoadAlvinFake] = [LoadFace][0xe][0x01][BoopPitch][0xA]
 
 [LoadCivilian2] = [LoadFace][0x5A][0x01]
 [LoadSoldier1] = [LoadFace][0x6A][0x01]

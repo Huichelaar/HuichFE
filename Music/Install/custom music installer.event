@@ -16,6 +16,7 @@ POP
 #include "../Samples/Custom1/Custom1samples.event"
 #include "../Samples/Sfx/Sfxsamples.event"
 #include "../Samples/Pokemon/Pokemonsamples.event"
+#include "../Samples/Rayman3/R3Samples.event"
 
 // Custom soundfonts
 #include "../Soundfonts/YUGIOH/soundbank_014/soundbank installer.event"
@@ -30,6 +31,7 @@ POP
 #include "../Soundfonts/Custom/Custom1/soundbank installer.event"
 #include "../Soundfonts/Sfx/soundbank installer.event"
 #include "../Soundfonts/Pokemon/BW/soundbank installer.event"
+#include "../Soundfonts/Rayman3/soundbank installer.event"
 
 // Songs
 #include "../Songs/song027.event"
@@ -80,3 +82,5 @@ SongTable(0x5F,song057,2)
 SongTable(0xC0,KaibaTurn,7)
 #include "../Songs/Knock.event"
 SongTable(0xC1,Knock,7)
+#include "../Songs/Whistle.event"
+SongTable(0xC2,Whistle,7)

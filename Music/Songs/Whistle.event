@@ -1,0 +1,38 @@
+//Event file generated from Sappy .s format.
+        #include "MPlayDef.event"
+
+        #define    Whistle_grp  R3
+        #define    Whistle_pri  0
+        #define    Whistle_rev  0
+        #define    Whistle_key  0
+
+        // .rodata
+        // Whistle
+        ALIGN 4
+
+//****************** Track 0 (Midi-Chn.0) ******************//
+
+Whistle_0:
+        BYTE   KEYSH   Whistle_key+0
+// 000   ----------------------------------------
+        BYTE           VOL     72
+        BYTE           VOICE   53
+        BYTE           N24     Cn3   v112
+        BYTE   W24
+        BYTE   FINE
+
+
+//********************** End of Song ***********************//
+
+        ALIGN 4
+Whistle:
+        BYTE   1                       // Num Tracks
+        BYTE   0                       // Unknown
+        BYTE   Whistle_pri             // Priority
+        BYTE   Whistle_rev             // Reverb
+
+        POIN2   Whistle_grp            
+
+        POIN2   Whistle_0
+
+        

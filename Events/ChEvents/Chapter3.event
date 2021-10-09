@@ -155,12 +155,14 @@ _0x1328 0x2C                // Fades in song apparently. Taken from FE8 Ch14.
 FAWU 4
 BROWNBOXTEXT 0x210 [8,8]
 ShowText(Ch3_0)
+TEXTSHOW2 Ch3_1             // Allows manipulating previously loaded portraits.
+TEXTEND
 _0x1328 0x7FFF
 FAWI 4
 BACG 0x12
 REMA
 FAWU 4
-ShowText(Ch3_0)
+ShowText(Ch3_2)
 REMA
 FADI 16
 CLEAN
@@ -178,7 +180,7 @@ CUMO Demi
 STAL 60
 CURE
 FADI 16
-Text(Plain_3,Ch3_0)
+Text(Plain_3,Ch3_3)
 
 CAMERA [18,20]
 MOVE 0x80 Simon [16, 19]
@@ -188,7 +190,7 @@ CUMO [16, 19]
 STAL 60
 CURE
 FADI 16
-Text(Plain_3,Ch3_0)
+Text(Plain_3,Ch3_4)
 
 LOAD1 1 EnemyUnits1
 ENUN

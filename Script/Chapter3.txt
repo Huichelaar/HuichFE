@@ -440,10 +440,9 @@ I don't have to hear that from you! Arzil's been flaunting their catalyst for ce
 D
 Vivian, why did you introduce her to us?
 V
-Right! Linda, don't argue with ML. You'll be here all night.
+Right! Linda would like to join us.
 L
-I would like...
-I would like to join you.
+Yes.
 ML
 Oh that's rich. Abandoning the revolution so soon?
 L
@@ -459,9 +458,9 @@ A harness can be used to detect catalysts, if a catalyst is slotted.
 ML
 That's the first I'm hearing of this!
 D
-It's highly classified info. I guess Simon saw that differently, considering his subordinates know.
+It's classified info. I guess Simon saw that differently, considering his subordinates know.
 V
-He's got two catalysts. He'll only need one to detect other catalysts. We don't know what he's going to do with the other.
+Simon only needs one catalyst to detect others. We don't know what he's going to do with the second catalyst.
 L
 Hence my defection. I'll show you the way through this passage commander Alvin was guarding. Please let me help.
 D
@@ -472,12 +471,70 @@ D
 Alright then, lead the way.
 
 
+*Alvin & Vivian talk*
+A
+Hey, are you okay? You look hurt.
+V
+Yes I'm fine, thanks for asking. Sir, you should probably take cover somewhere. There's a fight happening.
+A
+Goodness! Are you involved in this fight? Is that how you ended up getting hurt?
+V
+Like I said, I'm fine. It's a long story.
+A
+You don't look fine. Please, allow me to help.
+V
+No, I really couldn't involve even more civilians in this...
+Wait, there might be something you could help me with.
+A
+I'm all ears.
+V
+Did you happen to see my friend? He's got black hair, light skin and a turquoise gown.
+A
+I did actually! He wasn't in great shape himself either.
+V
+Oh! Could you tell me which way he went? I've got to find him.
+A
+Despite my advice he went into the forest east of here. He left just a little while ago, you might still catch up to him.
+V
+Thank you! I'll make sure to give proper thanks once I find him, but I can't lose him right now.
+A
+Of course! I'm here to help.
+
+*Alvin stabs Vivian in the back, literally*
+
+V
+Wha-
+A
+[thought]That was easier than I thought. Naive is an understatement.[/thought]
+
+
+*Alvin & Vivian BQ when Alvin has fought an allied unit or Linda and Vivian talked already*
+A
+Hey, are you okay? You look hurt.
+V
+Pack it in; I know you're leading these troops.
+A
+Can't say I didn't give it a try.
+
+
+*Alvin & Vivian BQ when no related flag has been set*
+A
+Hey, are you okay? You look hurt.
+V
+I've got a hunch you're just going to exacerbate the issue.
+A
+Hey, I was about to offer help, but if you're going to be like that...
+V
+You're going to hold back giving aid because of a quip?
+A
+Err...
+V
+You're not very good at acting are you?
+A
+Can't say I didn't give it a try.
 
 
 
 
-TODO ALLOW ANYONE TO SEIZE
 
-
-
-
+GIVE ALVIN A DIFFERENT PITCH WHEN HE'S TRYING TO TRICK VIVIAN.
