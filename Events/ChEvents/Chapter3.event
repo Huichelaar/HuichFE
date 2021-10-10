@@ -56,8 +56,11 @@ SimonUnit:
 UNIT Simon Shaman 0 Level(1, NPC, 0) [12,19] 0 0 0 0 [] NoAI
 UNIT
 
-EnemyUnits1:
+AlvinUnit:
 UNIT Alvin Knight Alvin Level(11, Enemy, 0) [16,19] 0 0 0 0 [IronLance, Horseslayer, Concoction] [0x03,0x03,0x0,0x20]
+UNIT
+
+EnemyUnits1:
 UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [13,20] 0 0 0 0 [IronLance] AttackInRangeAI
 UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [18,17] 0 0 1 REDA3 [IronLance] AttackInRangeAI
 UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [18,17] 0 0 1 REDA4 [IronLance] AttackInRangeAI
@@ -131,8 +134,8 @@ UNIT
   REDA [6,8] 0 0x80 0 0
 
 LindaReinfUnits:
-UNIT Carmen Cleric Vivian Level(11, Ally, 0) [6,8] 0 0 2 REDA12 [Heal, Mend, Concoction] NoAI
-UNIT Vincent WyvernKnight Vivian Level(10, Ally, 0) [6,8] 0 0 2 REDA13 [IronAxe, Hatchet, Vulnerary] NoAI
+UNIT Carmen Cleric Alvin Level(11, Enemy, 0) [6,8] 0 0 2 REDA12 [Heal, Mend, Concoction] NoAI
+UNIT Vincent WyvernKnight Alvin Level(10, Enemy, 0) [6,8] 0 0 2 REDA13 [IronAxe, Hatchet, Vulnerary] NoAI
 UNIT
   REDA12:
   REDA [6,9] 0 0x80 0 0
@@ -192,6 +195,12 @@ CURE
 FADI 16
 Text(Plain_3,Ch3_4)
 
+LOAD1 1 AlvinUnit
+ENUN
+CUMO Alvin
+STAL 60
+CURE
+Text(Ch3_5)
 LOAD1 1 EnemyUnits1
 ENUN
 DISA Linda
@@ -209,7 +218,7 @@ LOAD1 1 EnemyUnits3
 ENUN
 LOAD1 1 EnemyUnits4
 ENUN
-Text(Plain_3,Ch3_0)
+Text(Plain_3,Ch3_6)
 
 EVBIT_T 0x9
 MOVE 0x80 Linda [8, 9]
@@ -220,11 +229,16 @@ CUMO [8, 9]
 STAL 60
 CURE
 FADI 16
-Text(Plain_3,Ch3_0)
+Text(Plain_3,Ch3_7)
 
 LOAD1 1 LindaUnit2
 ENUN
 CAMERA [0,0]
+CUMO Vivian
+STAL 60
+CURE
+Text(Plain_3,Ch3_8)
+
 CHECK_EVENTID MiloFlag
 BNE 2 0x0 0xC
   RemoveRetreatedUnit(Leona)
@@ -293,15 +307,17 @@ CharacterEvent(0xA,VivianLindaTalk,Vivian,Linda)
 CharacterEvent(0xD,VivianAlvinTalk,Vivian,Alvin)
 END_MAIN
   VivianLindaTalk:
-  Text(Ch3_0)
-  CUSA Linda
-  SetChapterObjectiveText(0x1A0, 0x1B7) // "Seize gate", "Seize lair gate"
+  Text(Plain_3,Ch3_9)
   LOAD1 1 LindaReinfUnits
   ENUN
   CUMO Vincent
   STAL 60
   CURE
-  Text(Ch3_0)
+  Text(Plain_3,Ch3_10)
+  SetChapterObjectiveText(0x1A0, 0x1B7) // "Seize gate", "Seize lair gate"
+  CUSA Linda
+  CUSA Vincent
+  CUSA Carmen
   ENUT 0xD
   NoFade
   ENDA

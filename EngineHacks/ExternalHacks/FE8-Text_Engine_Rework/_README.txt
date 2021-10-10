@@ -1,7 +1,9 @@
 FE8 Text Interpreter Rework README
 By Tequila
 
-Huichelaar edit: I added Snek's Gendered Text.
+Huichelaar edits:
+  - I added Snek's Gendered Text.
+  - Also added a boop pitch which doesn't make sound.
 
 This hack adds some new features to the existing text engine.
 It IS backwards compatible with existing text.
