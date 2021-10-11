@@ -84,6 +84,8 @@
 [ColorGroup] = [0x80][0x28]
 [BoxBgPalette] = [0x80][0x29]
 [BoxType] = [0x80][0x2A]
+[TypeDefault] = [BoxType][0x1]
+[Exclaim] = [BoxType][0x2]
 [BoxHeight] = [0x80][0x2B]
 [BH1] = [BoxHeight][0x1]
 [BH2] = [BoxHeight][0x2]
@@ -111,6 +113,7 @@
 [Milo] = [0x80][0x3F]
 
 [BoopSilent] = [BoopPitch][0x1A]
+[Thought] = [BoxType][0x3][BoopSilent][TMM]
 [BoopVivian] = [BoopPitch][0x10]
 [BoopSimon] = [BoopPitch][0xC]
 [BoopTurner] = [BoopPitch][0xD]
