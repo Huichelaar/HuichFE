@@ -112,6 +112,7 @@
 #define CarmenPortrait 0xc
 #define VincentPortrait 0xd
 #define AlvinPortrait 0xe
+#define ClericPortrait 0xf
 
 // Class Cards
 #define SupplierCC 0xad

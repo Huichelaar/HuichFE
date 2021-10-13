@@ -55,7 +55,7 @@ Ask people who completed ch2 ||when (if at all) they noticed the tile Simon can 
 Add Ch3 assets to Credits.md
   Fields: JellyUnicorn
   WyvernKnight, Knight
-  Linda, Carmen, Vincent, Alvin portraits
+  Linda, Carmen, Vincent, Alvin, Cleric portraits
   Zeta for ChangeChapterObjective, https://feuniverse.us/t/zetas-asm-c-spellbook/4824/18
   7743 for MultiSeizeUnits, FEBuilder.
   Rayman3 for whistle sfx.
@@ -65,6 +65,8 @@ Set class level-up skills for cavalier, warrior & others!
 Add skillprocdisplay stuff.
 
 Remove Raid config define.
+
+Don't play heal song to avoid interrupting map music.
 
 If we need space:
   - Some tables have entries they're not using, see Tables/TableOptions.s.

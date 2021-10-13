@@ -10,6 +10,7 @@
       0xC Alvin generic BQ.
       0xD := Flag 0xA | 0xB | 0xC. Vivian & Alvin talk.
       0xE Alvin & Linda BQ.
+      0xF House visited.
 */
 {
 POIN TurnBasedEvents
@@ -261,6 +262,7 @@ Raid(0x5, Raid1, 14, 6)
 Raid(0x7, Raid2, 8, 9)
 Raid(0x8, Raid3, 8, 16)
 Raid(0x9, Raid4, 0, 20)
+Village(0xF,VillageEvent,15,0)
 Seize(16, 19)
 END_MAIN
   Raid1:
@@ -275,6 +277,8 @@ END_MAIN
   Raid4:
   TileChange(0, 20)
   ENDA
+  VillageEvent:
+  VillageEventMoney(Ch3_13, Salehs_House, 5000)
 
 EndingScene:
 ASMC ChapterEndExtra+0x1

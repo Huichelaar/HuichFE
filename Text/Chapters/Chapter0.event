@@ -4,7 +4,7 @@ Prologue[X]
 ## Chapter0_1
 [L][LoadSimon]
 [FL][LoadVivian]
-[FR][LoadFaceFancy][0x70][0x01][0x81][DefaultAttrs][.5]
+[FR][LoadSoldier4M][.5]
 [FR][MoveFFR][.5]
 [FFR][ClearFace]
 [FL][BoxHeight][0x1]

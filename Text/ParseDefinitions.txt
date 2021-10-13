@@ -111,9 +111,9 @@
 [His] = [0x80][0x3D]
 [his] = [0x80][0x3E]
 [Milo] = [0x80][0x3F]
-
 [BoopSilent] = [BoopPitch][0x1A]
 [Thought] = [BoxType][0x3][BoopSilent][TMM]
+
 [BoopVivian] = [BoopPitch][0x10]
 [BoopSimon] = [BoopPitch][0xC]
 [BoopTurner] = [BoopPitch][0xD]
@@ -127,9 +127,12 @@
 [BoopVincent] = [BoopPitch][0xA]
 [BoopAlvin] = [BoopPitch][0x8]
 [BoopAlvinFake] = [BoopPitch][0xA]
+[BoopCleric] = [BoopPitch][0x10]
+[BoopClericFake] = [BoopPitch][0x14]
 
 [LoadVivian] = [LoadFace][0x2][0x01][BoopVivian]
-[LoadVivianClosedEyes] = [LoadFace][0xf][0x01][BoopVivian]
+[LoadVivianC] = [LoadFaceFancy][0x2][0x01][0x82][DefaultAttrs][BoopVivian]
+[LoadFace][0xf][0x01][BoopVivian]
 [LoadSimon] = [LoadFace][0x3][0x01][BoopSimon]
 [LoadTurner] = [LoadFace][0x4][0x01][BoopTurner]
 [LoadML] = [LoadFace][0x3][0x3][BoopML]
@@ -144,6 +147,8 @@
 [LoadVincent] = [LoadFace][0xd][0x01][BoopVincent]
 [LoadAlvin] = [LoadFace][0xe][0x01][BoopAlvin]
 [LoadAlvinFake] = [LoadFace][0xe][0x01][BoopAlvinFake]
+[LoadCleric] = [LoadFace][0xf][0x01][BoopCleric]
+[LoadClericM] = [LoadFaceFancy][0xf][0x01][0x81][DefaultAttrs][BoopCleric]
 
 [LoadCivilian2] = [LoadFace][0x5A][0x01]
 [LoadSoldier1] = [LoadFace][0x6A][0x01]
@@ -151,6 +156,7 @@
 [LoadSoldierF] = [LoadFace][0x6C][0x01]
 [LoadSoldier3] = [LoadFace][0x6F][0x01]
 [LoadSoldier4] = [LoadFace][0x70][0x01]
+[LoadSoldier4M] = [LoadFaceFancy][0x70][0x01][0x81][DefaultAttrs]
 [LoadSoldier5] = [LoadFace][0x71][0x01]
 
 [Pause] = [BoopSilent][TextSpeed][0x8][TMM]...[TMM][TextSpeed][0xFF]

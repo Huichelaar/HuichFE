@@ -49,6 +49,9 @@ VincentPortraitTiles:
 ALIGN 4
 AlvinPortraitTiles:
 #incbin "AmBrosiac~6.dmp"
+ALIGN 4
+ClericPortraitTiles:
+#incbin "Retrogamer~Cleric.dmp"
 
 
 setMugEntry(0x1,Blank_PortraitTiles,3,5,3,3)
@@ -65,5 +68,5 @@ setMugEntry(0xb,LindaPortraitTiles,3,6,3,4)
 setMugEntry(0xc,CarmenPortraitTiles,3,6,3,4)
 setMugEntry(0xd,VincentPortraitTiles,2,5,2,3)
 setMugEntry(0xe,AlvinPortraitTiles,2,5,2,3)
-setMugEntry(0xf,VivianPortraitTiles,4,5,4,3,6)
+setMugEntry(0xf,ClericPortraitTiles,2,6,3,4)
 setMugEntry(0x6c,SoldierFPortraitTiles,4,6,4,4)
