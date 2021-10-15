@@ -62,10 +62,10 @@ UNIT Alvin Knight Alvin Level(11, Enemy, 0) [16,19] 0 0 0 0 [IronLance, Horsesla
 UNIT
 
 EnemyUnits1:
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [13,20] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [18,17] 0 0 1 REDA3 [IronLance] AttackInRangeAI
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [18,17] 0 0 1 REDA4 [IronLance] AttackInRangeAI
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [18,17] 0 0 2 REDA5 [IronLance] AttackInRangeAI
+UNIT 0x4E Fighter_F Alvin Level(3, Enemy, 1) [13,20] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT 0x4E Mercenary_F Alvin Level(3, Enemy, 1) [18,17] 0 0 1 REDA3 [IronLance] AttackInRangeAI
+UNIT 0x4E Monk Alvin Level(3, Enemy, 1) [18,17] 0 0 1 REDA4 [IronLance] AttackInRangeAI
+UNIT 0x4E Priest Alvin Level(3, Enemy, 1) [18,17] 0 0 2 REDA5 [IronLance] AttackInRangeAI
 UNIT Linda Cavalier Alvin Level(3, Enemy, 1) [16,19] 0 0 4 REDA6 [] AttackInRangeAI
 UNIT
   REDA3:
@@ -80,8 +80,8 @@ UNIT
   REDA [8,16] 0 0x80 0 0
 
 EnemyUnits2:
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [8,16] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [8,16] 0 0 2 REDA7 [IronLance] AttackInRangeAI
+UNIT 0x4E Cavalier Alvin Level(3, Enemy, 1) [8,16] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT 0x4E PegasusKnight Alvin Level(3, Enemy, 1) [8,16] 0 0 2 REDA7 [IronLance] AttackInRangeAI
 UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [8,16] 0 0 2 REDA8 [IronLance] AttackInRangeAI
 UNIT 0x4E PegasusKnight Alvin Level(3, Enemy, 1) [8,16] 0 0 2 REDA9 [IronLance] AttackInRangeAI
 UNIT Linda Cavalier Alvin Level(3, Enemy, 1) [8,16] 0 0 1 REDA10 [] AttackInRangeAI
@@ -103,28 +103,28 @@ UNIT Linda Shaman_F Alvin Level(1, Enemy, 0) [16,19] 0 0 1 REDA6 [] NoAI
 UNIT
 
 EnemyUnits3:    // Loadbuffer overlaps with debufftable. Hence we split these in two.
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [1,18] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [3,11] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [0,8] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [3,4] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [6,0] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [13,5] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [10,8] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [18,9] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [17,10] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [16,6] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT 0x4E PegasusKnight Alvin Level(3, Enemy, 1) [1,18] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT 0x4E Mage Alvin Level(3, Enemy, 1) [3,11] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT 0x4E Mercenary Alvin Level(3, Enemy, 1) [0,8] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT 0x4E Cavalier_F Alvin Level(3, Enemy, 1) [3,4] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT 0x4E Fighter Alvin Level(3, Enemy, 1) [6,0] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT 0x4E Fighter_F Alvin Level(3, Enemy, 1) [13,5] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT 0x4E Archer Alvin Level(3, Enemy, 1) [10,8] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT 0x4E Myrmidon Alvin Level(3, Enemy, 1) [18,9] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT 0x4E Monk Alvin Level(3, Enemy, 1) [17,10] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT 0x4E PegasusKnight Alvin Level(3, Enemy, 1) [16,6] 0 0 0 0 [IronLance] AttackInRangeAI
 UNIT
 EnemyUnits4:
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [13,3] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [11,1] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [9,6] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [10,13] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [11,13] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [16,19] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT 0x4E Soldier Alvin Level(3, Enemy, 1) [13,3] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT 0x4E Myrmidon_F Alvin Level(3, Enemy, 1) [11,1] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT 0x4E Myrmidon Alvin Level(3, Enemy, 1) [9,6] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT 0x4E PegasusKnight Alvin Level(3, Enemy, 1) [10,13] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT 0x4E Cavalier Alvin Level(3, Enemy, 1) [11,13] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT 0x4E Archer_F Alvin Level(3, Enemy, 1) [16,19] 0 0 0 0 [IronLance] AttackInRangeAI
 UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [0,13] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [4,14] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [14,11] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [8,4] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT 0x4E Mage Alvin Level(3, Enemy, 1) [4,14] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT 0x4E Priest Alvin Level(3, Enemy, 1) [14,11] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT 0x4E Archer Alvin Level(3, Enemy, 1) [8,4] 0 0 0 0 [IronLance] AttackInRangeAI
 UNIT
 
 LindaUnit2:

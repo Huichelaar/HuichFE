@@ -67,6 +67,8 @@
 #define KnightLanceAnim 0x2C
 #define KnightUnarmedAnim 0x2D
 
+#define PegKnightLanceAnim 0x66
+#define PegKnightUnarmedAnim 0x67
 #define MageMMagicAnim 0x6B
 #define MageFMagicAnim 0x6C
 #define ShamanMMagicAnim 0x75

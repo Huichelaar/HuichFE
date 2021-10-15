@@ -17,3 +17,4 @@ MonkM                     Eldritch Abomination
 MonkF                     Eldritch Abomination
 WyvernKnight              St Jack
 Knight                    FPZero
+PegasusKnight             Flasuban

@@ -140,6 +140,12 @@ LanceAnim(KnightLanceAnim)
 UnarmedAnim(KnightUnarmedAnim)
 EndAnim
 
+ALIGN 4
+PegKnightAnims:
+LanceAnim(PegKnightLanceAnim)
+UnarmedAnim(PegKnightUnarmedAnim)
+EndAnim
+
 #include "AnimInstallers/Supplier Lance Installer.event"
 #include "AnimInstallers/Supplier Staff Installer.event"
 #include "AnimInstallers/MercenaryM Sword Installer.event"
@@ -174,3 +180,5 @@ EndAnim
 #include "AnimInstallers/WyvKnight Unarmed Installer.event"
 #include "AnimInstallers/Knight Lance Installer.event"
 #include "AnimInstallers/Knight Unarmed Installer.event"
+#include "AnimInstallers/PegKnight Lance Installer.event"
+#include "AnimInstallers/PegKnight Unarmed Installer.event"
