@@ -100,4 +100,5 @@ ASSERT _200G + (-91) ; ORG PrepScreenUsabilityTableLABEL + (_200G+(-91))*4 ; WOR
 ASSERT BlackGem + (-91) ; ORG PrepScreenUsabilityTableLABEL + (BlackGem+(-91))*4 ; WORD (0x802a100) 
 ASSERT GoldGem + (-91) ; ORG PrepScreenUsabilityTableLABEL + (GoldGem+(-91))*4 ; WORD (0x802a100) 
 ASSERT Concoction + (-91) ; ORG PrepScreenUsabilityTableLABEL + (Concoction+(-91))*4 ; WORD (0x802a100) 
+ASSERT SpiritDust + (-91) ; ORG PrepScreenUsabilityTableLABEL + (SpiritDust+(-91))*4 ; WORD (0x802a0d0) 
 POP

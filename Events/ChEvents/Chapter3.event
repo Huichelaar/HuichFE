@@ -58,15 +58,15 @@ UNIT Simon Shaman 0 Level(1, NPC, 0) [12,19] 0 0 0 0 [] NoAI
 UNIT
 
 AlvinUnit:
-UNIT Alvin Knight Alvin Level(11, Enemy, 0) [16,19] 0 0 0 0 [IronLance, Horseslayer, Concoction] [0x03,0x03,0x0,0x20]
+UNIT Alvin Knight Alvin Level(12, Enemy, 0) [16,19] 0 0 0 0 [IronLance, Horseslayer, Concoction] [0x03,0x03,0x0,0x20]
 UNIT
 
 EnemyUnits1:
-UNIT 0x4E Fighter_F Alvin Level(3, Enemy, 1) [13,20] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Mercenary_F Alvin Level(3, Enemy, 1) [18,17] 0 0 1 REDA3 [IronLance] AttackInRangeAI
-UNIT 0x4E Monk Alvin Level(3, Enemy, 1) [18,17] 0 0 1 REDA4 [IronLance] AttackInRangeAI
-UNIT 0x4E Priest Alvin Level(3, Enemy, 1) [18,17] 0 0 2 REDA5 [IronLance] AttackInRangeAI
-UNIT Linda Cavalier Alvin Level(3, Enemy, 1) [16,19] 0 0 4 REDA6 [] AttackInRangeAI
+UNIT 0x58 Fighter_F Alvin Level(7, Enemy, 1) [13,20] 0 0 0 0 [IronLance] GroupEightAI
+UNIT 0x59 Mercenary_F Alvin Level(7, Enemy, 1) [18,17] 0 0 1 REDA3 [IronLance] GroupNineAI
+UNIT 0x59 Monk Alvin Level(8, Enemy, 1) [18,17] 0 0 1 REDA4 [IronLance] GroupNineAI
+UNIT 0x5A Priest Alvin Level(6, Enemy, 1) [18,17] 0 0 2 REDA5 [Mend] AttackInRangeAI
+UNIT Linda Cavalier Alvin Level(7, Enemy, 1) [16,19] 0 0 4 REDA6 [] AttackInRangeAI
 UNIT
   REDA3:
   REDA [15,17] 0 0x80 0 0
@@ -80,11 +80,11 @@ UNIT
   REDA [8,16] 0 0x80 0 0
 
 EnemyUnits2:
-UNIT 0x4E Cavalier Alvin Level(3, Enemy, 1) [8,16] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E PegasusKnight Alvin Level(3, Enemy, 1) [8,16] 0 0 2 REDA7 [IronLance] AttackInRangeAI
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [8,16] 0 0 2 REDA8 [IronLance] AttackInRangeAI
-UNIT 0x4E PegasusKnight Alvin Level(3, Enemy, 1) [8,16] 0 0 2 REDA9 [IronLance] AttackInRangeAI
-UNIT Linda Cavalier Alvin Level(3, Enemy, 1) [8,16] 0 0 1 REDA10 [] AttackInRangeAI
+UNIT 0x55 Cavalier Alvin Level(8, Enemy, 1) [8,16] 0 0 0 0 [IronLance] GroupFiveAI
+UNIT 0x58 PegasusKnight Alvin Level(6, Enemy, 1) [8,16] 0 0 2 REDA7 [IronLance] GroupEightAI
+UNIT 0x58 Soldier_F Alvin Level(7, Enemy, 1) [8,16] 0 0 2 REDA8 [IronLance] GroupEightAI
+UNIT 0x57 PegasusKnight Alvin Level(8, Enemy, 1) [8,16] 0 0 2 REDA9 [IronLance] GroupSevenAI
+UNIT Linda Cavalier Alvin Level(1, Enemy, 0) [8,16] 0 0 1 REDA10 [] NoAI
 UNIT
   REDA7:
   REDA [8,17] 0 0x80 0 0
@@ -103,28 +103,28 @@ UNIT Linda Shaman_F Alvin Level(1, Enemy, 0) [16,19] 0 0 1 REDA6 [] NoAI
 UNIT
 
 EnemyUnits3:    // Loadbuffer overlaps with debufftable. Hence we split these in two.
-UNIT 0x4E PegasusKnight Alvin Level(3, Enemy, 1) [1,18] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Mage Alvin Level(3, Enemy, 1) [3,11] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Mercenary Alvin Level(3, Enemy, 1) [0,8] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Cavalier_F Alvin Level(3, Enemy, 1) [3,4] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Fighter Alvin Level(3, Enemy, 1) [6,0] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Fighter_F Alvin Level(3, Enemy, 1) [13,5] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Archer Alvin Level(3, Enemy, 1) [10,8] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Myrmidon Alvin Level(3, Enemy, 1) [18,9] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Monk Alvin Level(3, Enemy, 1) [17,10] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E PegasusKnight Alvin Level(3, Enemy, 1) [16,6] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT 0x57 PegasusKnight Alvin Level(7, Enemy, 1) [1,18] 0 0 0 0 [IronLance] GroupSevenAI
+UNIT 0x56 PegasusKnight Alvin Level(9, Enemy, 1) [3,11] 0 0 0 0 [IronLance, Javelin] GroupSixAI
+UNIT 0x56 PegasusKnight Alvin Level(9, Enemy, 1) [0,8] 0 0 0 0 [IronLance, Javelin] GroupSixAI
+UNIT 0x51 Cavalier_F Alvin Level(6, Enemy, 1) [3,4] 0 0 0 0 [IronLance] GroupOneAI
+UNIT 0x51 Fighter Alvin Level(8, Enemy, 1) [6,0] 0 0 0 0 [IronAxe] GroupOneAI
+UNIT 0x52 Fighter_F Alvin Level(6, Enemy, 1) [13,5] 0 0 0 0 [IronAxe, Hatchet] GroupTwoAI
+UNIT 0x53 Archer Alvin Level(9, Enemy, 1) [10,8] 0 0 0 0 [IronBow] GroupThreeAI
+UNIT 0x54 Myrmidon Alvin Level(8, Enemy, 1) [18,9] 0 0 0 0 [IronSword, SlimSword] GroupFourAI
+UNIT 0x54 Monk Alvin Level(9, Enemy, 1) [17,10] 0 0 0 0 [Lightning, Vulnerary] GroupFourAI
+UNIT 0x5A Mage Alvin Level(10, Enemy, 1) [16,6] 0 0 0 0 [Thunder] AttackInRangeAI
 UNIT
 EnemyUnits4:
-UNIT 0x4E Soldier Alvin Level(3, Enemy, 1) [13,3] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Myrmidon_F Alvin Level(3, Enemy, 1) [11,1] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Myrmidon Alvin Level(3, Enemy, 1) [9,6] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E PegasusKnight Alvin Level(3, Enemy, 1) [10,13] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Cavalier Alvin Level(3, Enemy, 1) [11,13] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Archer_F Alvin Level(3, Enemy, 1) [16,19] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Soldier_F Alvin Level(3, Enemy, 1) [0,13] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Mage Alvin Level(3, Enemy, 1) [4,14] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Priest Alvin Level(3, Enemy, 1) [14,11] 0 0 0 0 [IronLance] AttackInRangeAI
-UNIT 0x4E Archer Alvin Level(3, Enemy, 1) [8,4] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT 0x52 Soldier Alvin Level(6, Enemy, 1) [13,3] 0 0 0 0 [Javelin] GroupTwoAI
+UNIT 0x52 Myrmidon_F Alvin Level(9, Enemy, 1) [11,1] 0 0 0 0 [Zanbato] GroupTwoAI
+UNIT 0x53 Myrmidon Alvin Level(8, Enemy, 1) [9,6] 0 0 0 0 [IronSword, SteelSword] GroupThreeAI
+UNIT 0x55 Mercenary Alvin Level(7, Enemy, 1) [10,13] 0 0 0 0 [IronBlade] GroupFiveAI
+UNIT 0x55 Cavalier Alvin Level(10, Enemy, 1) [11,13] 0 0 0 0 [IronLance, IronSword] GroupFiveAI
+UNIT 0x5A Archer_F Alvin Level(8, Enemy, 1) [16,19] 0 0 0 0 [ShortBow] AttackInRangeAI
+UNIT 0x5A Soldier_F Alvin Level(11, Enemy, 1) [0,13] 0 0 0 0 [IronLance, Horseslayer] AttackInRangeAI
+UNIT 0x5A Mage Alvin Level(7, Enemy, 1) [4,14] 0 0 0 0 [Fire] AttackInRangeAI
+UNIT 0x5A Priest Alvin Level(11, Enemy, 1) [14,11] 0 0 0 0 [Heal, Vulnerary] AttackInRangeAI
+UNIT 0x51 Archer Alvin Level(10, Enemy, 1) [8,4] 0 0 0 0 [IronBow] GroupOneAI
 UNIT
 
 LindaUnit2:
@@ -135,7 +135,7 @@ UNIT
   REDA [6,8] 0 0x80 0 0
 
 LindaReinfUnits:
-UNIT Carmen Cleric Alvin Level(11, Enemy, 0) [6,8] 0 0 2 REDA12 [Heal, Mend, Concoction] NoAI
+UNIT Carmen Cleric Alvin Level(11, Enemy, 0) [6,8] 0 0 2 REDA12 [Heal, Concoction] NoAI
 UNIT Vincent WyvernKnight Alvin Level(10, Enemy, 0) [6,8] 0 0 2 REDA13 [IronAxe, Hatchet, Vulnerary] NoAI
 UNIT
   REDA12:
@@ -147,7 +147,7 @@ UNIT
 
 BadEndCutsceneUnits:
 UNIT Vivian Supplier Vivian Level(5, Ally, 0) [16,20] 0 0 0 0 [] NoAI
-UNIT Alvin Knight Alvin Level(11, Enemy, 0) [16,19] 0 0 0 0 [IronLance] NoAI
+UNIT Alvin Knight Alvin Level(12, Enemy, 0) [16,19] 0 0 0 0 [IronLance] NoAI
 UNIT
 
 
@@ -266,6 +266,7 @@ Village(0xF,VillageEvent,15,0)
 Seize(16, 19)
 END_MAIN
   Raid1:
+  
   TileChange(14, 6)
   ENDA
   Raid2:
@@ -295,6 +296,7 @@ MNCH 0x4
 ENDA
 
 TurnBasedEvents:
+
 END_MAIN
 
 

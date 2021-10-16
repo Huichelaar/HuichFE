@@ -62,3 +62,20 @@ for healing deeper wounds.[X]
 
 ## ConcoctionDesc2
 Restores 20 HP.[X]
+
+## EnergyRingDesc1
+Increases Strength by 2 points.[N]
+Vanishes after use.[X]
+
+## EnergyRingDesc2
+Raises strength.[X]
+
+## SpiritDustName
+Spirit Dust[X]
+
+## SpiritDustDesc1
+Increases Magic by 2 points.[N]
+Vanishes after use.[X]
+
+## SpiritDustDesc2
+Raises magic.[X]

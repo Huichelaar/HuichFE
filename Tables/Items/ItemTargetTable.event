@@ -119,4 +119,5 @@ ASSERT LegStaffD + (-75) ; ORG ItemTargetTableLABEL + (LegStaffD+(-75))*4 ; WORD
 ASSERT LegStaffB + (-75) ; ORG ItemTargetTableLABEL + (LegStaffB+(-75))*4 ; WORD (0x8028f9c) 
 ASSERT LegStaffS + (-75) ; ORG ItemTargetTableLABEL + (LegStaffS+(-75))*4 ; WORD (0x8028f9c) 
 ASSERT Concoction + (-75) ; ORG ItemTargetTableLABEL + (Concoction+(-75))*4 ; WORD (0x802905c) 
+ASSERT SpiritDust + (-75) ; ORG ItemTargetTableLABEL + (SpiritDust+(-75))*4 ; WORD (0x802905c) 
 POP

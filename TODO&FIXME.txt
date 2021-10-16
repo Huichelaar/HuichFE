@@ -60,6 +60,8 @@ Add Ch3 assets to Credits.md
   7743 for MultiSeizeUnits, FEBuilder.
   Rayman3 for whistle sfx.
   PegasusKnight BattleAnim repal v2 by Flasuban.
+  GroupAI by PhantomSentine
+  Spirit Dust             Pikmin1211
 
 Set class level-up skills for cavalier, warrior & others!
 
@@ -70,6 +72,7 @@ Remove Raid config define.
 Don't play heal song to avoid interrupting map music.
 
 If we need space:
+  - Room for 0x2000 text entries. Can reduce this in repointedTextTable.event.
   - Some tables have entries they're not using, see Tables/TableOptions.s.
 
 

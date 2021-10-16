@@ -97,6 +97,9 @@ POP
   // Create a table determining which unit can seize when.
   #include "ExternalHacks/MultiSeizeUnits/Installer.event"
   
+  // Create AI that turn aggresive when any group member has fought.
+  #include "ExternalHacks/GroupAI/GroupAI.event"
+  
   // Negative Stat Boosts.
   #include "Necessary/NegativeStatBoosts/NegativeStatBoosts.event"
 

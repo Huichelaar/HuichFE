@@ -11,6 +11,7 @@ PostCombatLoop:
 POIN PostCombatSkills
 
 PostCombatSkills: //I like having savage blow as the first one because it makes the activation sound play first
+POIN GroupAI
 POIN SavageBlow BreathOfLife Despoil Lifetaker Fury PoisonStrike GrislyWound//lifetaker should probably go after any messages because it can mess with the palette a bit
 POIN Canto CantoPlus Galeforce ReMove Powerstaff CulturedPostCombat Gridmaster //this order for canto and friends is the only one I tested
 
@@ -18,6 +19,7 @@ POIN Canto CantoPlus Galeforce ReMove Powerstaff CulturedPostCombat Gridmaster /
 POIN GAM_GambitHitTargets
 // Decrease gambit charges
 POIN GAM_DecreaseGambitCharges
+
 
 WORD 0 //Terminator
 

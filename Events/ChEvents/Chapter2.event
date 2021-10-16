@@ -33,17 +33,17 @@ PrepUnits:
 UNIT
 
 PlayerUnits1L:
-UNIT Leona Mercenary_F Vivian Level(0x1, Ally, 0x0) [14,5] 0 0 1 REDA1 [] NoAI
-UNIT Demi Soldier_F Vivian Level(0x1, Ally, 0x0) [13,4] 0 0 2 REDA2 [] NoAI
-UNIT Vivian Supplier Vivian Level(0x1, Ally, 0x0) [14,4] 0 0 1 REDA3 [] NoAI
-UNIT Simon Shaman Vivian Level(0x8, Ally, 0x0) [14,3] 0 0 1 REDA4 [] AttackInRangeAI
+UNIT Leona Mercenary_F Vivian Level(1, Ally, 0) [14,5] 0 0 1 REDA1 [] NoAI
+UNIT Demi Soldier_F Vivian Level(1, Ally, 0) [13,4] 0 0 2 REDA2 [] NoAI
+UNIT Vivian Supplier Vivian Level(1, Ally, 0) [14,4] 0 0 1 REDA3 [] NoAI
+UNIT Simon Shaman Vivian Level(8, Ally, 0) [14,3] 0 0 1 REDA4 [] AttackInRangeAI
 UNIT
 
 PlayerUnits1M:
-UNIT Milo Monk Vivian Level(0x1, Ally, 0x0) [14,5] 0 0 1 REDA1 [] NoAI
-UNIT Demi Soldier_F Vivian Level(0x1, Ally, 0x0) [13,4] 0 0 2 REDA2 [] NoAI
-UNIT Vivian Supplier Vivian Level(0x1, Ally, 0x0) [14,4] 0 0 1 REDA3 [] NoAI
-UNIT Simon Shaman Vivian Level(0x8, Ally, 0x0) [14,3] 0 0 1 REDA4 [] AttackInRangeAI
+UNIT Milo Monk Vivian Level(1, Ally, 0) [14,5] 0 0 1 REDA1 [] NoAI
+UNIT Demi Soldier_F Vivian Level(1, Ally, 0) [13,4] 0 0 2 REDA2 [] NoAI
+UNIT Vivian Supplier Vivian Level(1, Ally, 0) [14,4] 0 0 1 REDA3 [] NoAI
+UNIT Simon Shaman Vivian Level(8, Ally, 0) [14,3] 0 0 1 REDA4 [] AttackInRangeAI
 UNIT
 
 REDA1:
@@ -57,15 +57,15 @@ REDA4:
 REDA [12,3] 0 0x80 0 0
 
 PlayerUnits2L:
-UNIT Leona Mercenary_F Vivian Level(0x1, Ally, 0x0) [10,3] 0 0 1 REDA5 [] NoAI
-UNIT Demi Soldier_F Vivian Level(0x1, Ally, 0x0) [10,3] 0 0 3 REDA6 [] NoAI
-UNIT Vivian Supplier Vivian Level(0x1, Ally, 0x0) [10,3] 0 0 2 REDA7 [] NoAI
+UNIT Leona Mercenary_F Vivian Level(1, Ally, 0) [10,3] 0 0 1 REDA5 [] NoAI
+UNIT Demi Soldier_F Vivian Level(1, Ally, 0) [10,3] 0 0 3 REDA6 [] NoAI
+UNIT Vivian Supplier Vivian Level(1, Ally, 0) [10,3] 0 0 2 REDA7 [] NoAI
 UNIT
 
 PlayerUnits2M:
-UNIT Milo Monk Vivian Level(0x1, Ally, 0x0) [10,3] 0 0 1 REDA5 [] NoAI
-UNIT Demi Soldier_F Vivian Level(0x1, Ally, 0x0) [10,3] 0 0 3 REDA6 [] NoAI
-UNIT Vivian Supplier Vivian Level(0x1, Ally, 0x0) [10,3] 0 0 2 REDA7 [] NoAI
+UNIT Milo Monk Vivian Level(1, Ally, 0) [10,3] 0 0 1 REDA5 [] NoAI
+UNIT Demi Soldier_F Vivian Level(1, Ally, 0) [10,3] 0 0 3 REDA6 [] NoAI
+UNIT Vivian Supplier Vivian Level(1, Ally, 0) [10,3] 0 0 2 REDA7 [] NoAI
 UNIT
 
 REDA5:
@@ -79,14 +79,14 @@ REDA [10,4] 0 0x80 0 0
 REDA [9,4] 0 0x80 0 0
 
 TheresaUnit:
-UNIT Theresa Archer_F Vivian Level(0x1, Ally, 0x0) [10,3] 0 0 1 REDA8 [IronBow, Vulnerary] NoAI
+UNIT Theresa Archer_F Vivian Level(1, Ally, 0) [10,3] 0 0 1 REDA8 [IronBow, Vulnerary] NoAI
 UNIT
 
 REDA8:
 REDA [10,4] 0 0x80 0 0
 
 SimonUnit:
-UNIT Simon Shaman 0 Level(0x8, NPC, 0x0) [10,3] 0 0 5 REDA9 [] AttackInRangeAI
+UNIT Simon Shaman 0 Level(8, NPC, 0) [10,3] 0 0 5 REDA9 [] AttackInRangeAI
 UNIT
 
 REDA9:
@@ -97,8 +97,8 @@ REDA [12,14] 0 0x80 0 0
 REDA [12,16] 0 0x80 0 0
 
 EnemyUnits1:
-UNIT 0x4E Knight Aiden Level(3, Enemy, 1) [12,19] 0 0 0 0 [SteelLance, Concoction] AttackInRangeAI
-UNIT 0x4E Monk_F Aiden Level(4, Enemy, 1) [13,19] 0 0 3 REDA10 [Shine] AttackInRangeAI
+UNIT 0x4E Knight Aiden Level(7, Enemy, 1) [12,19] 0 0 0 0 [SteelLance, Concoction] AttackInRangeAI
+UNIT 0x4E Monk_F Aiden Level(8, Enemy, 1) [13,19] 0 0 3 REDA10 [Shine] AttackInRangeAI
 UNIT
 
 REDA10:
@@ -107,15 +107,15 @@ REDA [12,18] 0 0x80 0 0
 REDA [12,17] 0 0x80 0 0
 
 EnemyUnits2:
-UNIT Aiden Myrmidon_F Aiden Level(5, Enemy, 0x0) [0,19] DropItem 0 0 0 [Lancereaver, Vulnerary, KillingEdge] [0x03,0x03,0x0,0x20]
-UNIT 0x4E Soldier_F Aiden Level(3, Enemy, 1) [0,19] 0 0 1 REDA17 [IronLance] AttackInRangeAI
-UNIT 0x4F Soldier_F Aiden Level(4, Enemy, 1) [1,19] 0 0 0 0 [SteelLance] AttackInRangeAI
-UNIT 0x4E Soldier Aiden Level(3, Enemy, 1) [0,19] 0 0 2 REDA11 [SteelLance] AttackInRangeAI
-UNIT 0x4E Mercenary_F Aiden Level(4, Enemy, 1) [0,19] 0 0 1 REDA12 [IronSword] AttackInRangeAI
-UNIT 0x4E Shaman Aiden Level(3, Enemy, 1) [4,19] 0 0 2 REDA13 [Flux] AttackInRangeAI
-UNIT 0x4E Mage_F Aiden Level(3, Enemy, 1) [7,19] 0 0 3 REDA14 [Elfire] AttackInRangeAI
-UNIT 0x4E Cavalier_F Aiden Level(4, Enemy, 1) [0,14] 0 0 1 REDA15 [IronSword, IronLance] AttackInRangeAI
-UNIT 0x4E Cavalier Aiden Level(4, Enemy, 1) [3,19] 0 0 2 REDA16 [IronLance, SteelSword] AttackInRangeAI
+UNIT Aiden Myrmidon_F Aiden Level(9, Enemy, 0x0) [0,19] DropItem 0 0 0 [Lancereaver, Vulnerary, KillingEdge] [0x03,0x03,0x0,0x20]
+UNIT 0x4E Soldier_F Aiden Level(7, Enemy, 1) [0,19] 0 0 1 REDA17 [IronLance] AttackInRangeAI
+UNIT 0x4F Soldier_F Aiden Level(8, Enemy, 1) [1,19] 0 0 0 0 [SteelLance] AttackInRangeAI
+UNIT 0x4E Soldier Aiden Level(7, Enemy, 1) [0,19] 0 0 2 REDA11 [SteelLance] AttackInRangeAI
+UNIT 0x4E Mercenary_F Aiden Level(8, Enemy, 1) [0,19] 0 0 1 REDA12 [IronSword] AttackInRangeAI
+UNIT 0x4E Shaman Aiden Level(7, Enemy, 1) [4,19] 0 0 2 REDA13 [Flux] AttackInRangeAI
+UNIT 0x4E Mage_F Aiden Level(7, Enemy, 1) [7,19] 0 0 3 REDA14 [Elfire] AttackInRangeAI
+UNIT 0x4E Cavalier_F Aiden Level(8, Enemy, 1) [0,14] 0 0 1 REDA15 [IronSword, IronLance] AttackInRangeAI
+UNIT 0x4E Cavalier Aiden Level(8, Enemy, 1) [3,19] 0 0 2 REDA16 [IronLance, SteelSword] AttackInRangeAI
 UNIT
 
 REDA11:
@@ -145,10 +145,10 @@ REDA17:
 REDA [0,13] 0 0x80 0 0
 
 EnemyUnits3:
-UNIT 0x4E Mercenary Aiden Level(2, Enemy, 1) [2,3] 0 0 2 REDA18 [IronSword] AttackInRangeAI
-UNIT 0x4E Mage Aiden Level(2, Enemy, 1) [2,3] 0 0 2 REDA19 [Fire] AttackInRangeAI
-UNIT 0x4E Mercenary_F Aiden Level(5, Enemy, 1) [2,3] 0 0 2 REDA20 [IronSword] AttackInRangeAI
-UNIT 0x4E Archer_F Aiden Level(3, Enemy, 1) [2,3] 0 0 2 REDA21 [IronBow] AttackInRangeAI
+UNIT 0x4E Mercenary Aiden Level(6, Enemy, 1) [2,3] 0 0 2 REDA18 [IronSword] AttackInRangeAI
+UNIT 0x4E Mage Aiden Level(6, Enemy, 1) [2,3] 0 0 2 REDA19 [Fire] AttackInRangeAI
+UNIT 0x4E Mercenary_F Aiden Level(9, Enemy, 1) [2,3] 0 0 2 REDA20 [IronSword] AttackInRangeAI
+UNIT 0x4E Archer_F Aiden Level(7, Enemy, 1) [2,3] 0 0 2 REDA21 [IronBow] AttackInRangeAI
 UNIT
 
 REDA18:
@@ -169,7 +169,7 @@ REDA [5,0] 0 0x80 0 0
 
 
 EnemyReinf1:
-UNIT 0x4E Archer Aiden Level(5, Enemy, 1) [14,8] 0 0 1 REDA22 [Longbow, IronBow] AttackInRangeAI
+UNIT 0x4E Archer Aiden Level(9, Enemy, 1) [14,8] 0 0 1 REDA22 [Longbow, IronBow] AttackInRangeAI
 UNIT
 
 REDA22:
@@ -177,7 +177,7 @@ REDA [13,8] 0 0x80 0 0
 
 
 HerbertUnit:
-UNIT Herbert Cavalier Vivian Level(0x9, NPC, 0x0) [0,0] 0 0 1 REDA23 [SteelSword, IronLance, Vulnerary] AttackInRangeAI
+UNIT Herbert Cavalier Vivian Level(9, NPC, 0) [0,0] 0 0 1 REDA23 [SteelSword, IronLance, Vulnerary] AttackInRangeAI
 UNIT
 
 REDA23:
@@ -185,40 +185,40 @@ REDA [1,0] 0 0x80 0 0
 
 
 HerbertUnit2:
-UNIT Herbert Cavalier Vivian Level(0x9, NPC, 0x0) [4,0] 0 0 0 0 [SteelSword, IronLance, Vulnerary] AttackInRangeAI
+UNIT Herbert Cavalier Vivian Level(9, NPC, 0) [4,0] 0 0 0 0 [SteelSword, IronLance, Vulnerary] AttackInRangeAI
 UNIT
 
 
 EndCutsceneUnits1:
-UNIT Vivian Supplier Vivian Level(0x1, Ally, 0x0) [11,14] 0 0 0 0 [] NoAI
-UNIT Simon Shaman 0 Level(0x8, NPC, 0x0) [12,14] 0 0 0 0 [] NoAI
+UNIT Vivian Supplier Vivian Level(1, Ally, 0) [11,14] 0 0 0 0 [] NoAI
+UNIT Simon Shaman 0 Level(8, NPC, 0) [12,14] 0 0 0 0 [] NoAI
 UNIT
 
 
 EndCutsceneUnits2_M:
-UNIT Milo Monk Vivian Level(0x1, Ally, 0x0) [5,10] 0 0 2 REDA26 [] NoAI
-UNIT Demi Soldier_F Vivian Level(0x1, Ally, 0x0) [4,10] 0 0 4 REDA27 [] NoAI
-UNIT Theresa Archer_F Vivian Level(0x1, Ally, 0x0) [10,10] 0 0 4 REDA24 [] NoAI
+UNIT Milo Monk Vivian Level(1, Ally, 0) [5,10] 0 0 2 REDA26 [] NoAI
+UNIT Demi Soldier_F Vivian Level(1, Ally, 0) [4,10] 0 0 4 REDA27 [] NoAI
+UNIT Theresa Archer_F Vivian Level(1, Ally, 0) [10,10] 0 0 4 REDA24 [] NoAI
 UNIT
 
 EndCutsceneUnits2_MH:
-UNIT Milo Monk Vivian Level(0x1, Ally, 0x0) [5,10] 0 0 2 REDA26 [] NoAI
-UNIT Demi Soldier_F Vivian Level(0x1, Ally, 0x0) [4,10] 0 0 4 REDA27 [] NoAI
-UNIT Theresa Archer_F Vivian Level(0x1, Ally, 0x0) [10,10] 0 0 4 REDA24 [] NoAI
-UNIT Herbert Cavalier Vivian Level(0x9, Ally, 0x0) [9,10] 0 0 2 REDA25 [] NoAI
+UNIT Milo Monk Vivian Level(1, Ally, 0) [5,10] 0 0 2 REDA26 [] NoAI
+UNIT Demi Soldier_F Vivian Level(1, Ally, 0) [4,10] 0 0 4 REDA27 [] NoAI
+UNIT Theresa Archer_F Vivian Level(1, Ally, 0) [10,10] 0 0 4 REDA24 [] NoAI
+UNIT Herbert Cavalier Vivian Level(9, Ally, 0) [9,10] 0 0 2 REDA25 [] NoAI
 UNIT
 
 EndCutsceneUnits2_L:
-UNIT Leona Mercenary_F Vivian Level(0x1, Ally, 0x0) [5,10] 0 0 2 REDA26 [] NoAI
-UNIT Demi Soldier_F Vivian Level(0x1, Ally, 0x0) [4,10] 0 0 4 REDA27 [] NoAI
-UNIT Theresa Archer_F Vivian Level(0x1, Ally, 0x0) [10,10] 0 0 4 REDA24 [] NoAI
+UNIT Leona Mercenary_F Vivian Level(1, Ally, 0) [5,10] 0 0 2 REDA26 [] NoAI
+UNIT Demi Soldier_F Vivian Level(1, Ally, 0) [4,10] 0 0 4 REDA27 [] NoAI
+UNIT Theresa Archer_F Vivian Level(1, Ally, 0) [10,10] 0 0 4 REDA24 [] NoAI
 UNIT
 
 EndCutsceneUnits2_LH:
-UNIT Leona Mercenary_F Vivian Level(0x1, Ally, 0x0) [5,10] 0 0 2 REDA26 [] NoAI
-UNIT Demi Soldier_F Vivian Level(0x1, Ally, 0x0) [4,10] 0 0 4 REDA27 [] NoAI
-UNIT Theresa Archer_F Vivian Level(0x1, Ally, 0x0) [10,10] 0 0 4 REDA24 [] NoAI
-UNIT Herbert Cavalier Vivian Level(0x9, Ally, 0x0) [9,10] 0 0 2 REDA25 [] NoAI
+UNIT Leona Mercenary_F Vivian Level(1, Ally, 0) [5,10] 0 0 2 REDA26 [] NoAI
+UNIT Demi Soldier_F Vivian Level(1, Ally, 0) [4,10] 0 0 4 REDA27 [] NoAI
+UNIT Theresa Archer_F Vivian Level(1, Ally, 0) [10,10] 0 0 4 REDA24 [] NoAI
+UNIT Herbert Cavalier Vivian Level(9, Ally, 0) [9,10] 0 0 2 REDA25 [] NoAI
 UNIT
 
 REDA24:

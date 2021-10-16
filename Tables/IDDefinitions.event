@@ -162,8 +162,8 @@
 #define LegStaffS 0xd3
 
 #define SkelGambit 0xd4
-
 #define Concoction 0xd5
+#define SpiritDust 0xd6
 
 // Conversation Backgrounds
 #define ConvoCave 0x36

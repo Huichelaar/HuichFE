@@ -3,7 +3,7 @@ StatBoosterTextTableLABEL:
 FILL 10*8
 PUSH
 ORG StatBoosterTextTableLABEL + 0x0*8 ; SHORT (0x5B) (0x1C) ; WORD (0) 
-ORG StatBoosterTextTableLABEL + 0x1*8 ; SHORT (0x5C) (0x0) ; WORD (0x802F8FC) 
+ORG StatBoosterTextTableLABEL + 0x1*8 ; SHORT (0x5C) (0x13) ; WORD (0) 
 ORG StatBoosterTextTableLABEL + 0x2*8 ; SHORT (0x5D) (0x15) ; WORD (0) 
 ORG StatBoosterTextTableLABEL + 0x3*8 ; SHORT (0x5E) (0x16) ; WORD (0) 
 ORG StatBoosterTextTableLABEL + 0x4*8 ; SHORT (0x5F) (0x17) ; WORD (0) 
@@ -11,5 +11,6 @@ ORG StatBoosterTextTableLABEL + 0x5*8 ; SHORT (0x60) (0x18) ; WORD (0)
 ORG StatBoosterTextTableLABEL + 0x6*8 ; SHORT (0x61) (0x19) ; WORD (0) 
 ORG StatBoosterTextTableLABEL + 0x7*8 ; SHORT (0x62) (0x1A) ; WORD (0) 
 ORG StatBoosterTextTableLABEL + 0x8*8 ; SHORT (0x63) (0x1B) ; WORD (0) 
-ORG StatBoosterTextTableLABEL + 0x9*8 ; SHORT (0x0) (0x25) ; WORD (0) 
+ORG StatBoosterTextTableLABEL + 0x9*8 ; SHORT (0xd6) (0x14) ; WORD (0) 
+ORG StatBoosterTextTableLABEL + 0xa*8 ; SHORT (0x0) (0x25) ; WORD (0) 
 POP
