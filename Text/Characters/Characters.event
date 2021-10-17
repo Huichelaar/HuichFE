@@ -163,54 +163,59 @@ kingdom of Coramo.[X]
 Linda[X]
 
 ## LindaDesc
-LindaDesc.[N]
-TODO.[X]
+A former classmate of Vivian's.[N]
+Rebellious and at the top of her class.[X]
 
 ## LindaDQ
 [MR][LoadLinda][CloseEyes]
 [MR]
-TODO[N]
-Linda death quote.[AN]
+I can't die here[Pause][BoopLinda][AN]
+The world[Pause][BoopLinda] My family[Pause][BoopLinda][AN]
+What have I actually[N]
+done for them?[AN]
 [X]
 
 ## CarmenName
 Carmen[X]
 
 ## CarmenDesc
-CarmenDesc.[N]
-TODO.[X]
+Former insurgent and member of Linda's[N]
+platoon. She and Vincent argue a lot.[X]
 
 ## CarmenDQ
 [MR][LoadCarmen][CloseEyes]
 [MR]
-TODO[N]
-Carmen death quote.[AN]
+But why today?[.5] Yesterday[Pause][BoopCarmen] or[N]
+tomorrow would've been fine.[AN]
+Just[Pause][BoopCarmen] not[Pause][BoopCarmen] today.[AN]
 [X]
 
 ## VincentName
 Vincent[X]
 
 ## VincentDesc
-VincentDesc.[N]
-TODO.[X]
+Former insurgent and member of Linda's[N]
+platoon. Careful but pessimistic.[X]
 
 ## VincentDQ
 [MR][LoadVincent][CloseEyes]
 [MR]
-TODO[N]
-Vincent death quote.[AN]
+It was a particularly[N]
+bad hunch today.[AN][ToggleSmile]
+I knew I should've just[N]
+taken sick leave.[AN]
 [X]
 
 ## AlvinName
 Alvin[X]
 
 ## AlvinDesc
-AlvinDesc.[N]
-TODO.[X]
+A commander of the revolutionists.[N]
+Confident, he never ceases to smile.[X]
 
 ## AlvinDQ1
 [ML][LoadAlvin]
-GAH! Unbelievable.[AN]
+GAH![.6] Unbelievable.[AN]
 Simon wasn't being[N]
 hyperbolic at all.[AN]
 I'm going to have to[N]
@@ -228,4 +233,5 @@ Alvin death quote.[AN]
 Insurgent[X]
 
 ## RevolutionaryDesc
-TODO Revolutionary Desc[X]
+Domestic to Arzil, these are[N]
+Self-proclaimed revolutionists.[X]

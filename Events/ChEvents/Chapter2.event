@@ -601,5 +601,5 @@ Traps2:
 END_MAIN
 }
 
-  Ch2Armory:
-  SHLI IronSword IronLance IronAxe IronBow Vulnerary
+Ch2Armory:
+SHLI IronSword IronLance IronAxe IronBow Vulnerary

@@ -275,7 +275,10 @@ RemoveRetreatedUnit(Demi)
 NoFade
 ENDA
 
+
 LocationBasedEvents:
+Armory(Ch3Armory,18,1)
+Vendor(Ch3Vendor,0,15)
 Raid(0x7, Raid1, 8, 16)
 Raid(0x8, Raid2, 0, 20)
 Raid(0x9, Raid3, 14, 6)
@@ -319,6 +322,7 @@ LABEL 5
 
 MNCH 0x4
 ENDA
+
 
 TurnBasedEvents:
 TurnEventPlayer(0,FortReinforcements,2,254)
@@ -454,12 +458,15 @@ END_MAIN
   NoFade
   ENDA
 
+
 MiscBasedEvents:
 CauseGameOverIfLordDies
 END_MAIN
 
+
 Traps1:
 END_MAIN
+
 
 Traps2:
 END_MAIN
@@ -479,3 +486,8 @@ TEXTEND
 REMA
 ENUT 0xE
 ENDA
+
+Ch3Armory:
+SHLI IronSword IronBlade IronLance IronAxe IronBow ShortBow Vulnerary
+Ch3Vendor:
+SHLI Fire Lightning Flux Heal Vulnerary
