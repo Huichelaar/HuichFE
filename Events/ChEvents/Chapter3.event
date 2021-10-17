@@ -1,16 +1,16 @@
 /*  Chapter 3
-    Highest label: 7
+    Highest label: 10
     Temporary flags used:
-      0x5 Raided fortress 1
-      0x7 Raided fortress 2
-      0x8 Raided fortress 3
-      0x9 Raided fortress 4
-      0xA Vivian & Linda talk. Also allows seize.
-      0xB Vivian & Alvin BQ.
-      0xC Alvin generic BQ.
-      0xD := Flag 0xA | 0xB | 0xC. Vivian & Alvin talk.
-      0xE Alvin & Linda BQ.
-      0xF House visited.
+      0x5 House visited.
+      0x7 Raided fortress 1
+      0x8 Raided fortress 2
+      0x9 Raided fortress 3
+      0xA Raided fortress 4
+      0xB Vivian & Linda talk. Also allows seize.
+      0xC Vivian & Alvin BQ.
+      0xD Alvin generic BQ.
+      0xE := Flag 0xB | 0xC | 0xD. Vivian & Alvin talk.
+      0xF Alvin & Linda BQ.
 */
 {
 POIN TurnBasedEvents
@@ -150,6 +150,24 @@ UNIT Vivian Supplier Vivian Level(5, Ally, 0) [16,20] 0 0 0 0 [] NoAI
 UNIT Alvin Knight Alvin Level(12, Enemy, 0) [16,19] 0 0 0 0 [IronLance] NoAI
 UNIT
 
+FortReinfUnits:
+UNIT 0x5A Cavalier Alvin Level(9, Enemy, 1) [8,16] 0 0 0 0 [IronLance] NoAI
+UNIT
+UNIT 0x5B Cavalier_F Alvin Level(11, Enemy, 1) [8,16] 0 0 0 0 [IronLance, IronSword] NoAI
+UNIT
+UNIT 0x5A PegasusKnight Alvin Level(10, Enemy, 1) [0,20] 0 0 0 0 [SlimLance] NoAI
+UNIT
+UNIT 0x5B PegasusKnight Alvin Level(12, Enemy, 1) [0,20] 0 0 0 0 [IronLance] NoAI
+UNIT
+UNIT 0x5A Soldier Alvin Level(7, Enemy, 1) [14,6] 0 0 0 0 [IronLance] NoAI
+UNIT
+UNIT 0x5B Soldier_F Alvin Level(9, Enemy, 1) [14,6] 0 0 0 0 [Javelin] NoAI
+UNIT
+UNIT 0x5A Fighter_F Alvin Level(8, Enemy, 1) [8,9] 0 0 0 0 [IronAxe] NoAI
+UNIT
+UNIT 0x5B Fighter Alvin Level(10, Enemy, 1) [8,9] 0 0 0 0 [IronAxe, HandAxe] NoAI
+UNIT
+
 
 BeginningScene:
 LOAD2 0 PlayerUnits1
@@ -258,24 +276,31 @@ NoFade
 ENDA
 
 LocationBasedEvents:
-Raid(0x5, Raid1, 14, 6)
-Raid(0x7, Raid2, 8, 9)
-Raid(0x8, Raid3, 8, 16)
-Raid(0x9, Raid4, 0, 20)
-Village(0xF,VillageEvent,15,0)
+Raid(0x7, Raid1, 8, 16)
+Raid(0x8, Raid2, 0, 20)
+Raid(0x9, Raid3, 14, 6)
+Raid(0xA, Raid4, 8, 9)
+Village(0x5,VillageEvent,15,0)
 Seize(16, 19)
 END_MAIN
   Raid1:
-  
+  SVAL 0x3 Hatchet
+  GIVEITEM (-1)
   TileChange(14, 6)
   ENDA
   Raid2:
+  SVAL 0x3 Hammer
+  GIVEITEM (-1)
   TileChange(8, 9)
   ENDA
   Raid3:
+  SVAL 0x3 SecretBook
+  GIVEITEM (-1)
   TileChange(8, 16)
   ENDA
   Raid4:
+  SVAL 0x3 Mend
+  GIVEITEM (-1)
   TileChange(0, 20)
   ENDA
   VillageEvent:
@@ -296,27 +321,89 @@ MNCH 0x4
 ENDA
 
 TurnBasedEvents:
-
+TurnEventPlayer(0,FortReinforcements,2,254)
+TurnEventEnemy(0,CHAIgroup2,3)                      // Aggro enemies.
+TurnEventEnemy(0,CHAIgroup3,2)
+TurnEventEnemy(0,CHAIgroup4,5)
+TurnEventEnemy(0,CHAIgroup5,7)
+TurnEventEnemy(0,CHAIgroup6,6)
+TurnEventEnemy(0,CHAIgroup7,10)
+TurnEventEnemy(0,CHAIgroup8,12)
+TurnEventEnemy(0,CHAIgroup9,14)
 END_MAIN
+  FortReinforcements:
+  CHECK_TURNNUMBER
+  SADD 0x4 0x0 0xC
+  SVAL 0x2 4
+  SMOD 0x5 0xC 0x2
+  SVAL 0x3 0x7
+  SADD 0x2 0x5 0x3
+  CHECK_EVENTID (-1)
+  BNE 9 0x0 0xC           // Don't load reinforcements if fort raided.
+    SVAL 0x3 FortReinfUnits|0x8000000
+    SVAL 0x2 10
+    BGT 10 0x2 0x4
+      SVAL 0x3 40         // Load zero-exp-granting enemies past turn 10
+    LABEL 10
+    SVAL 0x2 80
+    SMUL 0x2 0x5 0x2      // Determine which fort sends reinforcements.
+    SADD 0x2 0x2 0x3      // Forts will alternate.
+    LOAD_S2 1
+    GOTO 9
+
+  CHAIgroup2:
+  SVAL 0x1 0
+  CHAI 0x52
+  GOTO 9
+  CHAIgroup3:
+  SVAL 0x1 0
+  CHAI 0x53
+  GOTO 9
+  CHAIgroup4:
+  SVAL 0x1 0
+  CHAI 0x54
+  GOTO 9
+  CHAIgroup5:
+  SVAL 0x1 0
+  CHAI 0x55
+  GOTO 9
+  CHAIgroup6:
+  SVAL 0x1 0
+  CHAI 0x56
+  GOTO 9
+  CHAIgroup7:
+  SVAL 0x1 0
+  CHAI 0x57
+  GOTO 9
+  CHAIgroup8:
+  SVAL 0x1 0
+  CHAI 0x58
+  GOTO 9
+  CHAIgroup9:
+  SVAL 0x1 0
+  CHAI 0x59
+  LABEL 9
+  NoFade
+  ENDA
 
 
 /*
-Flag D := A | B | C
+Flag C := B | C | D
 
 if Alvin has fought any unit but Vivian:
-  Set flag C, D in generic battle quote.
+  Set flag D, E in generic battle quote.
 if Vivian talks to Linda:
-  Set flag A, D.
-if Vivian attacks Alvin and flag A or C is set, B unset:
-  Battle conversation, set flag B, D.
-if Vivian attacks Alvin and flag A & B are unset:
-  Different battle conversation, sets flag B, D.
-if Vivian talks to Alvin, only possible when Flag A, B, C (so D) unset:
+  Set flag B, E.
+if Vivian attacks Alvin and flag B or D is set, C unset:
+  Battle conversation, set flag C, E.
+if Vivian attacks Alvin and flag B & C are unset:
+  Different battle conversation, sets flag C, E.
+if Vivian talks to Alvin, only possible when Flag B, C, D (so E) unset:
   Conversation where Alvin tricks Vivian. Vivian gets killed.
 */
 CharacterBasedEvents:
-CharacterEvent(0xA,VivianLindaTalk,Vivian,Linda)
-CharacterEvent(0xD,VivianAlvinTalk,Vivian,Alvin)
+CharacterEvent(0xB,VivianLindaTalk,Vivian,Linda)
+CharacterEvent(0xE,VivianAlvinTalk,Vivian,Alvin)
 END_MAIN
   VivianLindaTalk:
   CAMERA Vivian
@@ -335,7 +422,7 @@ END_MAIN
   CUSA Linda
   CUSA Vincent
   CUSA Carmen
-  ENUT 0xD
+  ENUT 0xE
   NoFade
   ENDA
   
@@ -379,9 +466,9 @@ END_MAIN
 }
 
 AlvinBQEvent:
-CHECK_EVENTID 0xA
+CHECK_EVENTID 0xB
 BNE 6 0x0 0xC
-  CHECK_EVENTID 0xC
+  CHECK_EVENTID 0xD
   BNE 6 0x0 0xC
     TEXTSHOW Ch3_BQ3
     GOTO 7
@@ -390,5 +477,5 @@ LABEL 6
 LABEL 7
 TEXTEND
 REMA
-ENUT 0xD
+ENUT 0xE
 ENDA
