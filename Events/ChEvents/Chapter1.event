@@ -30,7 +30,7 @@ UNIT
 
 PlayerUnits:
 UNIT Vivian Supplier Vivian Level(0x2, Ally, 0x0) [10,3] 0 0 1 REDA1 [0x0] NoAI
-UNIT Simon  Shaman   Vivian Level(0x8, Ally, 0x0) [10,3] 0 0 3 REDA2 [0x0] AttackInRangeAI
+UNIT Simon  Shaman   Vivian Level(12, Ally, 0x0) [10,3] 0 0 3 REDA2 [0x0] AttackInRangeAI
 UNIT
 
 REDA1:

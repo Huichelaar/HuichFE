@@ -50,6 +50,8 @@ Generic'ize CRE_waitForChildren to just waitForChildren.
 
 Darken screen for long-range attacks.
 
+What if we make a proc that refreshes/loops some colours in a palette and create a battleanim command that we insert in the standing motions mode? Pay attention to when the palette is set to all-white during hit-frames (maybe hook in the attack-hit command or whatever changes the palette to white?).
+
 Ask people who completed ch2 ||when (if at all) they noticed the tile Simon can use to escape||.
 
 Add Ch3 assets to Credits.md
