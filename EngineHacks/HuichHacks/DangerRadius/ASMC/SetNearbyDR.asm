@@ -59,34 +59,37 @@ Loop:
           bl    GOTO_R2
           cmp   r0, #0x0
           beq   NextIteration2
-
             ldr   r1, [r0]
             cmp   r1, #0x0
             beq   NextIteration2
+              ldr   r1, [r0, #0xC] 
+              ldr   r2, =0x1000C
+              tst   r1, r2
+              bne   NextIteration2
           
-              @ Check if unit is nearby
-              mov   r2, #0x10
-              mov   r3, #0x11            
-              ldsb  r1, [r0, r3]                      @ Ally or NPC Y.
-              ldsb  r0, [r0, r2]                      @ Ally or NPC X.
-              mov   r2, r10
-              mov   r3, r11
-              sub   r0, r2
-              sub   r1, r3
-              
-              @ Take coordinates'
-              @ absolute values.
-              cmp   r0, #0x0
-              bge   L2
-                neg   r0, r0
-              L2:
-              cmp   r1, #0x0
-              bge   L3
-                neg   r1, r1
-              L3:
-              add   r0, r1
-              cmp   r0, r8
-              ble   L1                                @ Break.
+                @ Check if unit is nearby
+                mov   r2, #0x10
+                mov   r3, #0x11            
+                ldsb  r1, [r0, r3]                      @ Ally or NPC Y.
+                ldsb  r0, [r0, r2]                      @ Ally or NPC X.
+                mov   r2, r10
+                mov   r3, r11
+                sub   r0, r2
+                sub   r1, r3
+                
+                @ Take coordinates'
+                @ absolute values.
+                cmp   r0, #0x0
+                bge   L2
+                  neg   r0, r0
+                L2:
+                cmp   r1, #0x0
+                bge   L3
+                  neg   r1, r1
+                L3:
+                add   r0, r1
+                cmp   r0, r8
+                ble   L1                                @ Break.
           
           NextIteration2:
           add   r7, #0x1
