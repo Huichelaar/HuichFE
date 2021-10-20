@@ -499,7 +499,8 @@ BEQ 18 0x2 0xC
     DISA Theresa
 LABEL 18
 
-MNCH 0x3
+MNTS 0
+//MNCH 0x3
 ENDA
 
 TurnBasedEvents:

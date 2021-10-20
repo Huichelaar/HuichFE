@@ -47,3 +47,7 @@
 #else
     ERROR You are not assembling FE8 events!
 #endif
+
+// CRC Correction
+ALIGN 16
+WORD 0 0 0 0
