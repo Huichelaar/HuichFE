@@ -1,0 +1,18 @@
+// Called at the end of the latest finished chapter's EndingScene.
+// Thanks the player for playing and returns to the title screen.
+EVBIT_MODIFY 4
+MUSC 0x7FFF
+
+CHECK_EVBIT 0x8
+BEQ 1 0xC 0x0
+  // Fade in if we aren't faded in yet (when player skipped to this point)
+  FADU 16
+LABEL 1
+_0x1A25
+SCOORD 0xB [12,48]
+TEXTSHOW DemoEndText
+TEXTEND
+REMA
+EVBIT_MODIFY 0
+MNTS 0
+ENDA

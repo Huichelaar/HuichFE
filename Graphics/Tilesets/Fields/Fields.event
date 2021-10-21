@@ -1,0 +1,48 @@
+#include "Fields1/Fields1.event"
+#include "Fields2/Fields2.event"
+
+// Anims
+ALIGN 4
+FieldsAnim0:
+#incbin "Anim/tile_animasinos.mapanime_1_000.dmp"
+ALIGN 4
+FieldsAnim1:
+#incbin "Anim/tile_animasinos.mapanime_1_001.dmp"
+ALIGN 4
+FieldsAnim2:
+#incbin "Anim/tile_animasinos.mapanime_1_002.dmp"
+ALIGN 4
+FieldsAnim3:
+#incbin "Anim/tile_animasinos.mapanime_1_003.dmp"
+ALIGN 4
+FieldsAnim4:
+#incbin "Anim/tile_animasinos.mapanime_1_004.dmp"
+ALIGN 4
+FieldsAnim5:
+#incbin "Anim/tile_animasinos.mapanime_1_005.dmp"
+ALIGN 4
+FieldsAnim6:
+#incbin "Anim/tile_animasinos.mapanime_1_006.dmp"
+ALIGN 4
+FieldsAnim7:
+#incbin "Anim/tile_animasinos.mapanime_1_007.dmp"
+
+ALIGN 4
+FieldsAnimStruct:
+SHORT 0x10 0x1000
+POIN  FieldsAnim0
+SHORT 0x10 0x1000
+POIN  FieldsAnim1
+SHORT 0x10 0x1000
+POIN  FieldsAnim2
+SHORT 0x10 0x1000
+POIN  FieldsAnim3
+SHORT 0x10 0x1000
+POIN  FieldsAnim4
+SHORT 0x10 0x1000
+POIN  FieldsAnim5
+SHORT 0x10 0x1000
+POIN  FieldsAnim6
+SHORT 0x10 0x1000
+POIN  FieldsAnim7
+WORD  0 0

@@ -1,3 +1,9 @@
+// Called at the end of latest chapter.
+// Returns to title screen after some text.
+ALIGN 4
+DemoEnd:
+#include "DemoEnd.event"
+
 // Called by paralogues to determine which chapter
 // should be put in savescreen upon completion.
 ALIGN 4

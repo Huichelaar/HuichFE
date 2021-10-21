@@ -276,7 +276,7 @@
 #define Fields1AquamarinePalettePLIST 0x37
 #define Fields1GreenPalettePLIST 0x38
 #define Fields1ConfigPLIST 0x39
-#define Fields1AnimPLIST 0x3A
+#define FieldsAnimPLIST 0x3A
 #define Map1ChangesPLIST 0x3B
 #define Fields1PurplePalettePLIST 0x3C
 #define Fields1NightPalettePLIST 0x3D

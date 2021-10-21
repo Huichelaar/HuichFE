@@ -16,9 +16,10 @@ Don't forget slim lance needs an upgrade to something with Shade or Shade+
 
 Make sure to write supports.
 
-Country names: Arzil, Beria, Coramo
+Add SummonASM once you've got playable summoners. https://feuniverse.us/t/snakes-pit-of-asm-and-other-stuff/3627/45
+Add Support rework rework & base convo's. https://feuniverse.us/t/snakes-pit-of-asm-and-other-stuff/3627/81
 
-Status Screen, change Personal Data, weapons & supports, etc. headers
+Status Screen, change Personal Data, weapons & supports, etc. headers. Actually, statscreen is ugly. Idk what to do about this.
 
 TODO write proper guide entries for materials, fortresses, class level caps. Also change existing guide entries to reflect changes you made.
 
@@ -27,9 +28,6 @@ If you give units the Slayer skill, check out the README in SkillSystem/Skills/E
 Fort affinity matchups idea: Joker affinity that always gives +2 bonus? Affinity that at best gives +1 bonus?
 
 If there's space left and the original BGs are lengthy enough: Replace BattleBGs with uncompressed longer panoramas for siege tome anims.
-
-Define an item ID for Spirit Dust (Mag statbooster) in "Strmag/Str Mag Split/Installer.event". Energy Ring is used by default!
-Item icon for Spirit Dust is included! Define your icon ID in "Strmag/_Master Asm Installer.event". Default is Green Note.
 
 Config contains toggles of stuff I'm not sure I want to disable or enable. Once hack finished, remove these toggles.
 
@@ -59,26 +57,23 @@ Set REDA speeds to 0 or 1
 Add Ch3 assets to Credits.md
   Fields: JellyUnicorn
   WyvernKnight, Knight
+  PegasusKnight BattleAnim repal v2 by Flasuban.
   Linda, Carmen, Vincent, Alvin, Cleric portraits
   Zeta for ChangeChapterObjective, https://feuniverse.us/t/zetas-asm-c-spellbook/4824/18
   7743 for MultiSeizeUnits, FEBuilder.
   Rayman3 for whistle sfx.
-  PegasusKnight BattleAnim repal v2 by Flasuban.
   GroupAI by PhantomSentine
   Spirit Dust             Pikmin1211
-
-Set class level-up skills for cavalier, warrior & others!
 
 Add skillprocdisplay stuff.
 
 Remove Raid config define.
 
-Don't play heal song to avoid interrupting map music.
-
 If we need space:
   - Room for 0x2000 text entries. Can reduce this in repointedTextTable.event.
   - Some tables have entries they're not using, see Tables/TableOptions.s.
 
+MAKE SURE THE LINK IN DemoEnd.event IS THE SAME AS THE TOPIC'S!
 
 PLAN, Crafting should allow:
   - fusing two of the same items (total durability no higher than 63?), no material cost. (seems Tequila has a "Convoy Combine" patch which already does this)

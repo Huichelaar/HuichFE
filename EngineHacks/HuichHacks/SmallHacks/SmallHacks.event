@@ -3,9 +3,13 @@
 
 PUSH
 
-  // Increase base staff accuracy from 30 to 50
+  // Increase base staff accuracy from 30 to 50.
   ORG 0x2CD30
   BYTE 0x32
+  
+  // Continue map BGM during healing.
+  ORG 0x72886
+  SHORT 0x46C0 0x46C0
   
 POP
 

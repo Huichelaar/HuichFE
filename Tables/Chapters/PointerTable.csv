@@ -57,7 +57,7 @@
 0x37,Fields1AquamarinePalette|IsPointer
 0x38,Fields1GreenPalette|IsPointer
 0x39,Fields1Config|IsPointer
-0x3A,Fields1AnimStruct|IsPointer
+0x3A,FieldsAnimStruct|IsPointer
 0x3B,Map1Changes|IsPointer
 0x3C,Fields1PurplePalette|IsPointer
 0x3D,Fields1NightPalette|IsPointer

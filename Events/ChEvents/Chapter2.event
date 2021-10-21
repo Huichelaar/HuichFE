@@ -499,7 +499,7 @@ BEQ 18 0x2 0xC
     DISA Theresa
 LABEL 18
 
-MNTS 0
+CALL DemoEnd
 //MNCH 0x3
 ENDA
 

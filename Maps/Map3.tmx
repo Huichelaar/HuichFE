@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.4" tiledversion="2020.12.18" orientation="orthogonal" renderorder="right-down" width="19" height="21" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="1">
  <tileset firstgid="1" name="Nighttime Raw Tiles" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
-  <image source="../Graphics/Tilesets/Fields2/Nighttime Raw Tiles.png" trans="ffffff" width="512" height="512"/>
+  <image source="../Graphics/Tilesets/Fields/Fields2/Nighttime Raw Tiles.png" trans="ffffff" width="512" height="512"/>
  </tileset>
  <layer id="1" name="Main" width="19" height="21">
   <properties>

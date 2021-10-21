@@ -1,0 +1,23 @@
+ALIGN 4
+Fields1Objects:
+#incbin "Objects.dmp"
+ALIGN 4
+Fields1Config:
+#incbin "Mapchip Conf.mapchip_config.dmp"
+
+// Palettes
+ALIGN 4
+Fields1AutumnalPalette:
+#incbin "AutumnalPalette.dmp"
+ALIGN 4
+Fields1AquamarinePalette:
+#incbin "AquamarinePalette.dmp"
+ALIGN 4
+Fields1GreenPalette:
+#incbin "StandardGreenPalette.dmp"
+ALIGN 4
+Fields1PurplePalette:
+#incbin "ThraciaPurplePalette.dmp"
+ALIGN 4
+Fields1NightPalette:
+#incbin "NightPalette.dmp"

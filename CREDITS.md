@@ -217,6 +217,9 @@ Songs used:
 - ArcherF by Flasuban, DerTheVaporeon.
 - CavalierM by SALVAGED.
 - CavalierF by Pikmin1211, Maiser6, SALVAGED.
+- WyvernKnight by St Jack.
+- Knight by FPZero.
+- PegasusKnight by Flasuban.
 
 ## Portraits
 
@@ -248,6 +251,7 @@ Songs used:
 - MyrmidonF by L95.
 - CavalierF by RobertFPY, Pikmin.
 - CavalierM by RobertFPY.
+- WyvernKnight by IS, MeatOfJustice, Pikmin, flasuban.
 
 ## Map Sprites
 
@@ -266,6 +270,7 @@ Songs used:
 - ArcherF by DerTheVaporeon.
 - CavalierM by SALVAGED.
 - CavalierF by SALVAGED, Pikmin.
+- WyvernKnight by IS, ArcaneEli, Blood, Yikes!
 
 ## Items
 
