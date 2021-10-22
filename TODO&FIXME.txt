@@ -73,9 +73,53 @@ If we need space:
   - Room for 0x2000 text entries. Can reduce this in repointedTextTable.event.
   - Some tables have entries they're not using, see Tables/TableOptions.s.
 
+Mention in topic that in-game credits are incomplete atm.
+
 MAKE SURE THE LINK IN DemoEnd.event IS THE SAME AS THE TOPIC'S!
+
+
+PLAN, Meals. Can feed any unit one or zero meals in prep screen. Costs food-materials. Gives boost to stats. Can feed multiple units, but each only gets one meal at most. Idea is, the larger your army, the more materials you could spend on food. Maybe also let recipes be optional objectives in chapters to unlock meals? Re-use support bits to indicate which meal a unit has eaten (5 bits for 31 possible meals?) or use unused debufftable bits. Check which things check debufftable to implement buffs & debuffs. Maybe increase buffs if unit affinity matches with meal? Meal ideas:
+  - +1 Str.
+  - +1 Mag.
+  - +1 Res.
+  - +1 Def.
+  - +1 Skl.
+  - +1 Spd.
+  - +1 Luk.
+  - +1 Con.
+  - +1 Mov, +1 Spd, -2 Str, -2 Mag.
+  - +2 Str, -1 Spd.
+  - +2 Mag, -1 Spd.
+
+PLAN, Need enough fortmaster abilities for at least 35 people (22 forts + 20 units = 42 playable units).
+14 abilities (including duplicates) lined out here atm (21 more to go!):
+  - 2x Exp boost. Unlock first exp boost unit early on, second exp boost unit lateishgame.
+  - 1x Str boost. +1 for tier 1-2, +2 for tier 3-4, +3 for tier 5-6.
+  - 1x Mag boost.
+  - 1x Def boost.
+  - 1x Res boost.
+  - 1x Skl boost.
+  - 1x Spd boost.
+  - 1x Luk boost.
+  - 1x Con boost.
+  - 1x Produce boost. Increases how many materials every fort produces after chapter completion. Unlock lateishgame.
+  - 1x Miracle. Per chapter, one 15% chance for an ally to survive a lethal attack if HP > 1. SkillSys Miracle doesn't work. Make a new proc-skill and make skilltester check forts for a fortmaster with this ability. Tiers:
+      2: one 20% chance.
+      3: two 20% chances.
+      4: two 25% chances.
+      5: three 25% chances.
+      6: three 30% chances.
+  - 2x Backup boost. Increase the amount of times you can return to a backup. Tiers:
+      1-2: +1.
+      3-4: +2.
+      5-6: +3.
 
 PLAN, Crafting should allow:
   - fusing two of the same items (total durability no higher than 63?), no material cost. (seems Tequila has a "Convoy Combine" patch which already does this)
   - repairing an item, costs up to 5 different types of materials. Reserve three dec digits for each material (10 bits)
   - upgrading an item. Same idea for costs as above.
+
+CREDITS
+Add portraits!
+Move wyvernknight to somewhere better.
+Make wyvern and peg knight use KNIGHT in their name.

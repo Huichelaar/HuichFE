@@ -187,6 +187,8 @@ Songs used:
   - Knock sfx. Smethlyn gave this one to me.
 - Pokémon Black (and White) by Game Freak.
   - SEQ_BGM_DIVING.
+- Rayman3 (GBA) by Ubisoft.
+  - song565 (Summon Murphy whistle).
 - Runescape by Jagex. Pretty sure all of these were composed and arranged by Ian Taylor.
   - Principality.
 - Yu-Gi-Oh Reshef of Destruction by Konami.
@@ -225,13 +227,18 @@ Songs used:
 
 - SSHX~28 by SSHX.
 - GenericPretsel~Cosimo by GenericPretsel.
-- Nickt~Vette by Nickt
-- Huichelaar~Splice1_1 by Huichelaar
-- Capibarainspace~2 by Capibarainspace
-- Zmr~2 by Zmr
-- DragonLuca~2 by DragonLuca
-- AmBrosiac~Brava by AmBrosiac
-- AmBrosiac~Faustosilva by AmBrosiac
+- Nickt~Vette by Nickt.
+- Huichelaar~Splice1_1 spliced from various FEGBA portraits.
+- Capibarainspace~2 by Capibarainspace.
+- Zmr~2 by Zmr.
+- DragonLuca~2 by DragonLuca.
+- AmBrosiac~Brava by AmBrosiac.
+- AmBrosiac~Faustosilva by AmBrosiac.
+- Xenith~Woman by Xenith.
+- LaurentLacroix~3 by LaurentLacroix.
+- Nickt~Argolis by Nickt.
+- AmBrosiac~6 by AmBrosiac.
+- Retrogamer~Cleric by Retrogamer.
 
 ## Class Cards
 
@@ -284,6 +291,7 @@ Songs used:
 - Rehua by GabrielKnight.
 - Gambit (skeleton) by Intelligent Systems. The skulls are from Fire Emblem: The Sacred Stones' bonewalker animations.
 - Concoction by 2WB.
+- Spirit Dust by Pikmin1211.
 
 ## Materials
 
@@ -447,3 +455,6 @@ Songs used:
 - [Slayer and Effectiveness Rework](https://feuniverse.us/t/teqs-minor-assembly-shenanigans/1655/6) by Tequila, Vennobennu and Crazycolorz.
 - The puzzle introduced in the prologue is an implementation of [Lights Out](https://en.wikipedia.org/wiki/Lights_Out_(game)) by Tiger Electronics. I also made use of [Simon Tatham's Flip](https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/flip.html) to play around and setup some initial puzzle settings.
 - [Mode7](https://github.com/StanHash/FE-CHAX/tree/master/Wizardry/M7) by StanH.
+- [ChangeChapterObjective](https://feuniverse.us/t/zetas-asm-c-spellbook/4824/18) by Zeta.
+- [MultiSeizeUnits](https://github.com/FEBuilderGBA/FEBuilderGBA/tree/master/FEBuilderGBA/bin/Debug/config/patch2/FE8U/MultiSeizeUnits) by 7743.
+- [GroupAI](https://feuniverse.us/t/fe8-skill-system-ai4-as-group-ai/10777) by PhantomSentine.

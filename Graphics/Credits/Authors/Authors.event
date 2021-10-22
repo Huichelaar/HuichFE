@@ -111,6 +111,9 @@ ALIGN 4
 authflyingace24:
 #incbin "flyingace24.dmp"
 ALIGN 4
+authFPZero:
+#incbin "FPZero.dmp"
+ALIGN 4
 authGabrielKnight:
 #incbin "GabrielKnight.dmp"
 ALIGN 4
@@ -174,6 +177,9 @@ ALIGN 4
 authJagex:
 #incbin "Jagex.dmp"
 ALIGN 4
+authJellyUnicorn:
+#incbin "JellyUnicorn.dmp"
+ALIGN 4
 authJeyTheCount:
 #incbin "JeyTheCount.dmp"
 ALIGN 4
@@ -209,6 +215,9 @@ authkxu:
 ALIGN 4
 authL95:
 #incbin "L95.dmp"
+ALIGN 4
+authLaurentLacroix:
+#incbin "LaurentLacroix.dmp"
 ALIGN 4
 authLeonarth:
 #incbin "Leonarth.dmp"
@@ -284,6 +293,9 @@ authP33rl355:
 ALIGN 4
 authPatriciaSaunders:
 #incbin "PatriciaSaunders.dmp"
+ALIGN 4
+authPhantomSentine:
+#incbin "PhantomSentine.dmp"
 ALIGN 4
 authPikmin1211:
 #incbin "Pikmin1211.dmp"
@@ -369,6 +381,9 @@ ALIGN 4
 authStanH:
 #incbin "StanH.dmp"
 ALIGN 4
+authStJack:
+#incbin "StJack.dmp"
+ALIGN 4
 authTequila:
 #incbin "Tequila.dmp"
 ALIGN 4
@@ -389,6 +404,9 @@ authTR143:
 ALIGN 4
 authTSP184:
 #incbin "TSP184.dmp"
+ALIGN 4
+authUbisoft:
+#incbin "Ubisoft.dmp"
 ALIGN 4
 authUnknown:
 #incbin "Unknown.dmp"
@@ -413,6 +431,9 @@ authWAve:
 ALIGN 4
 authWizToad:
 #incbin "WizToad.dmp"
+ALIGN 4
+authXenith:
+#incbin "Xenith.dmp"
 ALIGN 4
 authZahlman:
 #incbin "Zahlman.dmp"

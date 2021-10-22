@@ -49,14 +49,17 @@ reelStructClass:
 CRE_ReelStruct_Entry(0x2CB, 0, spriteClassArcher, authArcher)
 CRE_ReelStruct_Entry(0x2C1, 0, spriteClassCavalier, authCavalier)
 CRE_ReelStruct_Entry(0x2DC, 0, spriteClassFighter, authFighter)
+CRE_ReelStruct_Entry(0x2C3, 0, spriteClassKnight, authKnight)
 CRE_ReelStruct_Entry(0x2D1, 0, spriteClassMage, authMage)
 CRE_ReelStruct_Entry(0x2C6, 0, spriteClassMercenary, authMercenary)
 CRE_ReelStruct_Entry(0x2E4, 0, spriteClassMonk, authMonk)
 CRE_ReelStruct_Entry(0x2C8, 0, spriteClassMyrmidon, authMyrmidon)
+CRE_ReelStruct_Entry(0x2E7, 0, spriteClassPegKnight, authPegKnight)
 CRE_ReelStruct_Entry(PriestClericName, 0, spriteClassPriestCleric, authPriestCleric)
 CRE_ReelStruct_Entry(0x2E1, 0, spriteClassShaman, authShaman)
 CRE_ReelStruct_Entry(0x2ED, 0, spriteClassSoldier, authSoldier)
 CRE_ReelStruct_Entry(SupplierName, 0, spriteClassSupplier, authSupplier)
+CRE_ReelStruct_Entry(0x2D0, 0, spriteClassWyvKnight, authWyvKnight)
 CRE_ReelStruct_Entry(0, 0, 0, 0)        // Terminator.
 
 reelStructPortrait:
@@ -98,14 +101,17 @@ CRE_ReelStruct_Entry(0, 0, 0, 0)        // Terminator.
 CRE_SpriteClassStruct(spriteClassArcher, Archer, 1, -1, ArcherMBowAnim, 200, 60, Archer_F, 0, 0x3, ArcherFBowAnim, 200, 60)
 CRE_SpriteClassStruct(spriteClassCavalier, Cavalier, 0, 0x4, CavalierMSwordAnim, 200, 60, Cavalier_F, 3, -1, CavalierFLanceAnim, 200, 60)
 CRE_SpriteClassStruct(spriteClassFighter, Fighter, 1, -1, FighterMAxeAnim, 200, 60, Fighter_F, 0, -1, FighterFAxeAnim, 200, 60)
+CRE_SpriteClassStruct(spriteClassKnight, Knight, 0, 0x9, KnightLanceAnim, 200, 60, Knight, 0, 0x9, KnightLanceAnim, 200, 60)
 CRE_SpriteClassStruct(spriteClassMage, Mage, 0, -1, MageMMagicAnim, 200, 60, Mage_F, 2, -1, MageFMagicAnim, 200, 60)
 CRE_SpriteClassStruct(spriteClassMercenary, Mercenary, 0, 0x2, MercenaryMSwordAnim, 200, 60, Mercenary_F, 0, -1, MercenaryFSwordAnim, 200, 60)
 CRE_SpriteClassStruct(spriteClassMonk, Monk, 0, -1, MonkMMagicAnim, 200, 60, Monk_F, 1, -1, MonkFMagicAnim, 200, 60)
 CRE_SpriteClassStruct(spriteClassMyrmidon, Myrmidon, 3, -1, MyrmidonMSwordAnim, 200, 60, Myrmidon_F, 0, 0x5, MyrmidonFSwordAnim, 200, 60)
-CRE_SpriteClassStruct(spriteClassPriestCleric, Priest, 0, -1, PriestStaffAnim, 200, 60, Cleric, 0, -1, ClericStaffAnim, 200, 60)
-CRE_SpriteClassStruct(spriteClassShaman, Shaman, 0, 0x0, ShamanMMagicAnim, 200, 60, Shaman_F, 1, -1, ShamanFMagicAnim, 200, 60)
+CRE_SpriteClassStruct(spriteClassPegKnight, PegasusKnight, 1, -1, PegKnightLanceAnim, 200, 60, PegasusKnight, 1, -1, PegKnightLanceAnim, 200, 60)
+CRE_SpriteClassStruct(spriteClassPriestCleric, Priest, 0, -1, PriestStaffAnim, 200, 60, Cleric, 0, 0x7, ClericStaffAnim, 200, 60)
+CRE_SpriteClassStruct(spriteClassShaman, Shaman, 0, 0x0, ShamanMMagicAnim, 200, 60, Shaman_F, 0, 0x6, ShamanFMagicAnim, 200, 60)
 CRE_SpriteClassStruct(spriteClassSoldier, Soldier, 3, -1, SoldierMLanceAnim, 200, 60, Soldier_F, 0, 0x1, SoldierFLanceAnim, 200, 60)
 CRE_SpriteClassStruct(spriteClassSupplier, Supplier, 0, -1, SupplierLanceAnim, 200, 60, Supplier, 0, -1, SupplierLanceAnim, 200, 60)
+CRE_SpriteClassStruct(spriteClassWyvKnight, WyvernKnight, 0, 0x8, WyvKnightAxeAnim, 200, 60, WyvernKnight, 0, 0x8, WyvKnightAxeAnim, 200, 60)
 //CRE_SpriteClassStruct(spriteClassMarshall, Monk_F, 0, -1, MarshallAxeAnim, 184, 61, Monk_F, 1, -1, MarshallAxeAnim, 184, 61)
 
 
@@ -175,13 +181,16 @@ authArcher: POIN authIntelligentSystems authDerTheVaporeon authFlasuban 0
 authCavalier: POIN authIntelligentSystems authRobertFPY authPikmin1211 authSALVAGED authMaiser6 0
 authFighter: POIN authIntelligentSystems authJj09 authHyperGammaSpaces authAlusq authBlackMage 0
 authMage: POIN authIntelligentSystems authUnknown 0
+authKnight: POIN authFPZero 0
 authMercenary: POIN authIntelligentSystems authL95 authAgro authSALVAGED authJeyTheCount 0
 authMonk: POIN authIntelligentSystems authRobertFPY authblademaster authTeraspark authEldritchAbomination 0
 authMyrmidon: POIN authIntelligentSystems authL95 0
+authPegKnight: POIN authFlasuban 0
 authPriestCleric: POIN authIntelligentSystems authFlasuban authEldritchAbomination 0
 authShaman: POIN authIntelligentSystems authUnknown 0
 authSoldier: POIN authIntelligentSystems authFlasuban authRexacuse authP33rl355 authAlusq authWarPath authMaiser6 authJeyTheCount 0
 authSupplier: POIN authN426 authJonoTheRed authHuichelaar 0
+authWyvKnight: POIN authStJack 0
 //authMarshall: POIN authIntelligentSystems authHuichelaar 0
 
 authVivian: POIN authIntelligentSystems authHuichelaar 0
@@ -194,10 +203,10 @@ authDemi: POIN authDragonLuca 0
 authTheresa: POIN authAmBrosiac 0
 authHerbert: POIN authAmBrosiac 0
 
-authFields: POIN authIntelligentSystems authZoramineFae authFlasuban authP33rl355 0
+authFields: POIN authIntelligentSystems authZoramineFae authFlasuban authP33rl355 authJellyUnicorn 0
 authFF5Cave: POIN authSquareEnix authWAve 0
 
-authItems: POIN authGabrielKnight authIntelligentSystems auth2WB 0
+authItems: POIN authGabrielKnight authIntelligentSystems auth2WB authPikmin1211 0
 authMaterials: POIN authHudsonSoft authGaramonde authkb authMojangStudios authWizToad authZarg authBeansy authGabrielKnight authIntelligentSystems authHenrai authKonami authGreigaMaster authAtlus authHeadlock authredblueyellow 0
 authBattleBGs: POIN authIntelligentSystems authPrevious 0
 authConvoBG: POIN authIntelligentSystems 0
