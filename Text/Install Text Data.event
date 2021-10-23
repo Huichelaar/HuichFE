@@ -3038,40 +3038,48 @@ __TEXTPROCESS1004:
 setText($1004, __TEXTPROCESS1004)
 
 __TEXTPROCESS1005:
-#incbin ".TextEntries\TextBuildfileRevampedFieldsName.fetxt.dmp"
+#incbin ".TextEntries\TextBuildfilePegKnightName.fetxt.dmp"
 setText($1005, __TEXTPROCESS1005)
 
 __TEXTPROCESS1006:
-#incbin ".TextEntries\TextBuildfileFF5CaveName.fetxt.dmp"
+#incbin ".TextEntries\TextBuildfileWyvKnightName.fetxt.dmp"
 setText($1006, __TEXTPROCESS1006)
 
 __TEXTPROCESS1007:
-#incbin ".TextEntries\TextBuildfileCreditsBattleBGs.fetxt.dmp"
+#incbin ".TextEntries\TextBuildfileRevampedFieldsName.fetxt.dmp"
 setText($1007, __TEXTPROCESS1007)
 
 __TEXTPROCESS1008:
-#incbin ".TextEntries\TextBuildfileCreditsConvoBGs.fetxt.dmp"
+#incbin ".TextEntries\TextBuildfileFF5CaveName.fetxt.dmp"
 setText($1008, __TEXTPROCESS1008)
 
 __TEXTPROCESS1009:
-#incbin ".TextEntries\TextBuildfileCreditsChIntro.fetxt.dmp"
+#incbin ".TextEntries\TextBuildfileCreditsBattleBGs.fetxt.dmp"
 setText($1009, __TEXTPROCESS1009)
 
 __TEXTPROCESS100A:
-#incbin ".TextEntries\TextBuildfileCreditsGameIntro.fetxt.dmp"
+#incbin ".TextEntries\TextBuildfileCreditsConvoBGs.fetxt.dmp"
 setText($100A, __TEXTPROCESS100A)
 
 __TEXTPROCESS100B:
-#incbin ".TextEntries\TextBuildfileCreditsStatScr.fetxt.dmp"
+#incbin ".TextEntries\TextBuildfileCreditsChIntro.fetxt.dmp"
 setText($100B, __TEXTPROCESS100B)
 
 __TEXTPROCESS100C:
-#incbin ".TextEntries\TextBuildfileCreditsUIbuttons.fetxt.dmp"
+#incbin ".TextEntries\TextBuildfileCreditsGameIntro.fetxt.dmp"
 setText($100C, __TEXTPROCESS100C)
 
 __TEXTPROCESS100D:
-#incbin ".TextEntries\TextBuildfileCreditsCredits.fetxt.dmp"
+#incbin ".TextEntries\TextBuildfileCreditsStatScr.fetxt.dmp"
 setText($100D, __TEXTPROCESS100D)
+
+__TEXTPROCESS100E:
+#incbin ".TextEntries\TextBuildfileCreditsUIbuttons.fetxt.dmp"
+setText($100E, __TEXTPROCESS100E)
+
+__TEXTPROCESS100F:
+#incbin ".TextEntries\TextBuildfileCreditsCredits.fetxt.dmp"
+setText($100F, __TEXTPROCESS100F)
 
 }
 

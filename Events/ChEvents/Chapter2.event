@@ -238,8 +238,8 @@ REDA [10,15] 0 0x80 0 0
 REDA27:
 REDA [4,14] 0 0x80 0 0
 REDA [10,14] 0 0x80 0 0
-REDA [10,16] 0 0x80 0 0
-REDA [11,16] 0 0x80 0 0
+REDA [10,15] 0 0x80 0 0
+REDA [12,15] 0 0x80 0 0
 
 
 BeginningScene:
@@ -413,9 +413,10 @@ CURE
 MUSC 0x3
 Text(Plain_3,Ch2_5)
 
-//FADU 16
+EVBIT_T 0x9 
 MOVE 0x80 Simon [12,19]
 ENUN
+EVBIT_F 0x9
 DISA Simon
 MOVE 0x80 Vivian [12,14]
 ENUN

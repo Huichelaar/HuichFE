@@ -1,5 +1,6 @@
-Some changes I made to the engine, whether vanilla or SkillSys. I put these here so I can keep track of these.
+Known issues in the README.md. Most of the stuff in this file is just for me so I can keep track of stuff.
 
+Some changes I made to the engine:
   - Reworked Str/Mag growthgetters to use a different table for class growths when named unit (units 0x0-0x3F and all units with boss flag set). For these units: growth = char + class growth.
   
   - Changed Skill_Getter to not get skills for generic units. Also changed MSS page1 RText & MSS page1 so that skills won't display on the status screen for generic units. I described in the previous point what units Vanilla considers generic. SkillSys seems to save skills for units up to charID 0x46 instead of 0x3F. To be safe, I'm not using units 0x40-0x46 for any purpose.
@@ -16,19 +17,19 @@ Some changes I made to the engine, whether vanilla or SkillSys. I put these here
 
 
 USED FLAGS:
-- 0x71-0x77 for indicating whether a WM node should be set as destination or not.
-- 0x86 for indicating whether Leona or Milo shows up (set in ch0).
-- 0x87 for indicating Manage Forts menu command is now available.
-- 0xB0 if set, casual mode enabled.
-- Flags 0x122-0x12C are used for guide entries. Old entries use 0x12C for read and display. New entries use different flags for read. New entries use 0x12C for display if they're immediately relevant, otherwise different flags again.
+  - 0x71-0x77 for indicating whether a WM node should be set as destination or not.
+  - 0x86 for indicating whether Leona or Milo shows up (set in ch0).
+  - 0x87 for indicating Manage Forts menu command is now available.
+  - 0xB0 if set, casual mode enabled.
+  - Flags 0x122-0x12C are used for guide entries. Old entries use 0x12C for read and display. New entries use different flags for read. New entries use 0x12C for display if they're immediately relevant, otherwise different flags again.
+
 
 USED FREE RAM:
+  - bit 7 of byte 0x39 of enemy RAM unit structs. Holds DR-active bit.
+  - 0x300 0006, byte,       holds Danger Radius count.
+  - 0x300 0007, byte,       bitfield:
+                              0x1: Don't change LCDIO DISPCNT during fadein or fadout (NewFadeIn & NewFadeOut).
+                              0x2: Don't buffer minimugs. Necessary when drawing multiple minimnugs in a frame.
 
-- bit 7 of byte 0x39 of enemy RAM unit structs. Holds DR-active bit.
-- 0x300 0006, byte,       holds Danger Radius count.
-- 0x300 0007, byte,       bitfield:
-                            0x1: Don't change LCDIO DISPCNT during fadein or fadout (NewFadeIn & NewFadeOut).
-                            0x2: Don't buffer minimugs. Necessary when drawing multiple minimnugs in a frame.
-
-- [0x3003F48, 0x300408C)  Used to hold BG horizontal & vertical offsets during sinusoid HBlank. Can be re-used 
-                          when no sinusoid is active.
+  - [0x3003F48, 0x300408C)  Used to hold BG horizontal & vertical offsets during sinusoid HBlank. Can be re-used 
+                            when no sinusoid is active.

@@ -54,20 +54,11 @@ Ask people who completed ch2 ||when (if at all) they noticed the tile Simon can 
 
 Set REDA speeds to 0 or 1
 
-Add Ch3 assets to Credits.md
-  Fields: JellyUnicorn
-  WyvernKnight, Knight
-  PegasusKnight BattleAnim repal v2 by Flasuban.
-  Linda, Carmen, Vincent, Alvin, Cleric portraits
-  Zeta for ChangeChapterObjective, https://feuniverse.us/t/zetas-asm-c-spellbook/4824/18
-  7743 for MultiSeizeUnits, FEBuilder.
-  Rayman3 for whistle sfx.
-  GroupAI by PhantomSentine
-  Spirit Dust             Pikmin1211
-
 Add skillprocdisplay stuff.
 
 Remove Raid config define.
+
+Seems like credits still get stuck at portraits sometimes. Need to find out how to reproduce this.
 
 If we need space:
   - Room for 0x2000 text entries. Can reduce this in repointedTextTable.event.
@@ -75,7 +66,7 @@ If we need space:
 
 Mention in topic that in-game credits are incomplete atm.
 
-MAKE SURE THE LINK IN DemoEnd.event IS THE SAME AS THE TOPIC'S!
+MAKE SURE THE LINK IN DemoEnd.event & README.md IS THE SAME AS THE TOPIC'S!
 
 
 PLAN, Meals. Can feed any unit one or zero meals in prep screen. Costs food-materials. Gives boost to stats. Can feed multiple units, but each only gets one meal at most. Idea is, the larger your army, the more materials you could spend on food. Maybe also let recipes be optional objectives in chapters to unlock meals? Re-use support bits to indicate which meal a unit has eaten (5 bits for 31 possible meals?) or use unused debufftable bits. Check which things check debufftable to implement buffs & debuffs. Maybe increase buffs if unit affinity matches with meal? Meal ideas:

@@ -54,12 +54,12 @@ CRE_ReelStruct_Entry(0x2D1, 0, spriteClassMage, authMage)
 CRE_ReelStruct_Entry(0x2C6, 0, spriteClassMercenary, authMercenary)
 CRE_ReelStruct_Entry(0x2E4, 0, spriteClassMonk, authMonk)
 CRE_ReelStruct_Entry(0x2C8, 0, spriteClassMyrmidon, authMyrmidon)
-CRE_ReelStruct_Entry(0x2E7, 0, spriteClassPegKnight, authPegKnight)
+CRE_ReelStruct_Entry(PegKnightName, 0, spriteClassPegKnight, authPegKnight)
 CRE_ReelStruct_Entry(PriestClericName, 0, spriteClassPriestCleric, authPriestCleric)
 CRE_ReelStruct_Entry(0x2E1, 0, spriteClassShaman, authShaman)
 CRE_ReelStruct_Entry(0x2ED, 0, spriteClassSoldier, authSoldier)
 CRE_ReelStruct_Entry(SupplierName, 0, spriteClassSupplier, authSupplier)
-CRE_ReelStruct_Entry(0x2D0, 0, spriteClassWyvKnight, authWyvKnight)
+CRE_ReelStruct_Entry(WyvKnightName, 0, spriteClassWyvKnight, authWyvKnight)
 CRE_ReelStruct_Entry(0, 0, 0, 0)        // Terminator.
 
 reelStructPortrait:
@@ -72,6 +72,11 @@ CRE_ReelStruct_Entry(AidenName, 1, spritePortraitAiden, authAiden)
 CRE_ReelStruct_Entry(DemiName, 1, spritePortraitDemi, authDemi)
 CRE_ReelStruct_Entry(TheresaName, 1, spritePortraitTheresa, authTheresa)
 CRE_ReelStruct_Entry(HerbertName, 1, spritePortraitHerbert, authHerbert)
+CRE_ReelStruct_Entry(LindaName, 1, spritePortraitLinda, authLinda)
+CRE_ReelStruct_Entry(CarmenName, 1, spritePortraitCarmen, authCarmen)
+CRE_ReelStruct_Entry(VincentName, 1, spritePortraitVincent, authVincent)
+CRE_ReelStruct_Entry(AlvinName, 1, spritePortraitAlvin, authAlvin)
+CRE_ReelStruct_Entry(0x2E9, 1, spritePortraitCleric, authCleric)
 CRE_ReelStruct_Entry(0, 0, 0, 0)        // Terminator.
 
 reelStructTileset:
@@ -111,7 +116,7 @@ CRE_SpriteClassStruct(spriteClassPriestCleric, Priest, 0, -1, PriestStaffAnim, 2
 CRE_SpriteClassStruct(spriteClassShaman, Shaman, 0, 0x0, ShamanMMagicAnim, 200, 60, Shaman_F, 0, 0x6, ShamanFMagicAnim, 200, 60)
 CRE_SpriteClassStruct(spriteClassSoldier, Soldier, 3, -1, SoldierMLanceAnim, 200, 60, Soldier_F, 0, 0x1, SoldierFLanceAnim, 200, 60)
 CRE_SpriteClassStruct(spriteClassSupplier, Supplier, 0, -1, SupplierLanceAnim, 200, 60, Supplier, 0, -1, SupplierLanceAnim, 200, 60)
-CRE_SpriteClassStruct(spriteClassWyvKnight, WyvernKnight, 0, 0x8, WyvKnightAxeAnim, 200, 60, WyvernKnight, 0, 0x8, WyvKnightAxeAnim, 200, 60)
+CRE_SpriteClassStruct(spriteClassWyvKnight, WyvernKnight, 0, 0x8, WyvKnightAxeAnim, 165, 60, WyvernKnight, 0, 0x8, WyvKnightAxeAnim, 165, 60)
 //CRE_SpriteClassStruct(spriteClassMarshall, Monk_F, 0, -1, MarshallAxeAnim, 184, 61, Monk_F, 1, -1, MarshallAxeAnim, 184, 61)
 
 
@@ -126,6 +131,11 @@ spritePortraitAiden: SHORT AidenPortrait 0
 spritePortraitDemi: SHORT DemiPortrait 0
 spritePortraitTheresa: SHORT TheresaPortrait 0
 spritePortraitHerbert: SHORT HerbertPortrait 0
+spritePortraitLinda: SHORT LindaPortrait 0
+spritePortraitCarmen: SHORT CarmenPortrait 0
+spritePortraitVincent: SHORT VincentPortrait 0
+spritePortraitAlvin: SHORT AlvinPortrait 0
+spritePortraitCleric: SHORT ClericPortrait 0
 
 
 // CRE_SpriteOtherStruct[]
@@ -202,6 +212,11 @@ authAiden: POIN authNickt 0
 authDemi: POIN authDragonLuca 0
 authTheresa: POIN authAmBrosiac 0
 authHerbert: POIN authAmBrosiac 0
+authLinda: POIN authXenith 0
+authCarmen: POIN authLaurentLacroix 0
+authVincent: POIN authNickt 0
+authAlvin: POIN authAmBrosiac 0
+authCleric: POIN authRetrogamer 0
 
 authFields: POIN authIntelligentSystems authZoramineFae authFlasuban authP33rl355 authJellyUnicorn 0
 authFF5Cave: POIN authSquareEnix authWAve 0

@@ -712,14 +712,16 @@
 #define Portraits $1002
 #define Tilesets $1003
 #define PriestClericName $1004
-#define RevampedFieldsName $1005
-#define FF5CaveName $1006
-#define CreditsBattleBGs $1007
-#define CreditsConvoBGs $1008
-#define CreditsChIntro $1009
-#define CreditsGameIntro $100A
-#define CreditsStatScr $100B
-#define CreditsUIbuttons $100C
-#define CreditsCredits $100D
+#define PegKnightName $1005
+#define WyvKnightName $1006
+#define RevampedFieldsName $1007
+#define FF5CaveName $1008
+#define CreditsBattleBGs $1009
+#define CreditsConvoBGs $100A
+#define CreditsChIntro $100B
+#define CreditsGameIntro $100C
+#define CreditsStatScr $100D
+#define CreditsUIbuttons $100E
+#define CreditsCredits $100F
 
 #endif // TEXT_DEFINITIONS_TEXTBUILDFILE_EVENT
