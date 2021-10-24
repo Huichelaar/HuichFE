@@ -43,7 +43,7 @@ There's some more technical details in `ImplementationDetails.txt`. Granted some
   
   - Player units' growths = character growths + class bonus growths. Generic enemies will use class growths. Mind, class bonus growths =/= class growths. Lower class tiers will have lower class bonus growths, so the sooner you promote a unit, the sooner they can take advantage of the greater class bonus growths.
   
-  - RNGRandomizer: RNG sequence is iterated every frame, should make it a bit harder to RNG abuse. Still using 2RN though.
+  - RNGRandomizer: RNG sequence is iterated every frame. This should make it a bit harder to RNG abuse. Still using 2RN though.
   
   - There's still numerous other features either planned, WIP or implemented but unavailable at the moment.
 
