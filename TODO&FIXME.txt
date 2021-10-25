@@ -58,6 +58,8 @@ Add skillprocdisplay stuff.
 
 Remove Raid config define.
 
+Create some button to load backup save in battle menu?
+
 Seems like credits still get stuck at portraits sometimes. Need to find out how to reproduce this.
 
 credits: WyvKnight battle anim doesn't slide far back enough. Wyvern's snout is still visible. Increase how far battle anims slide to the right.
@@ -71,7 +73,7 @@ Mention in topic that in-game credits are incomplete atm.
 MAKE SURE THE LINK IN DemoEnd.event & README.md IS THE SAME AS THE TOPIC'S!
 
 
-PLAN, Meals. Can feed any unit one or zero meals in prep screen. Costs food-materials. Gives boost to stats. Can feed multiple units, but each only gets one meal at most. Idea is, the larger your army, the more materials you could spend on food. Maybe also let recipes be optional objectives in chapters to unlock meals? Re-use support bits to indicate which meal a unit has eaten (5 bits for 31 possible meals?) or use unused debufftable bits. Check which things check debufftable to implement buffs & debuffs. Maybe increase buffs if unit affinity matches with meal? Meal ideas:
+PLAN, Meals. Can feed any unit one or zero meals in prep screen. Costs food-materials. Can feed multiple units, but each only gets one meal at most. Idea is, the larger your army, the more materials you could spend on food. Maybe also let recipes be optional objectives in chapters to unlock meals? Re-use support bits to indicate which meal a unit has eaten (5 bits for 31 possible meals?) or use unused debufftable bits. Check which things check debufftable to implement buffs & debuffs. Maybe increase buffs if unit affinity matches with meal? Make certain effects overlap with fort abilities and skills for maximum optimization fun. Meal ideas:
   - +1 Str.
   - +1 Mag.
   - +1 Res.
@@ -83,9 +85,10 @@ PLAN, Meals. Can feed any unit one or zero meals in prep screen. Costs food-mate
   - +1 Mov, +1 Spd, -2 Str, -2 Mag.
   - +2 Str, -1 Spd.
   - +2 Mag, -1 Spd.
+  - Meals that have effects which overlap with fortmaster abilities & skills.
 
 PLAN, Need enough fortmaster abilities for at least 35 people (22 forts + 20 units = 42 playable units).
-18 abilities (including duplicates) lined out here atm (17 more to go!):
+23 abilities (including duplicates) lined out here atm (12 more to go!). Fort abilities do stack.
   - 2x Exp boost. Unlock first exp boost unit early on, second exp boost unit lateishgame.
   - 1x Str boost. +1 for tier 1-2, +2 for tier 3-5, +3 for tier 6.
   - 1x Mag boost.
@@ -107,24 +110,37 @@ PLAN, Need enough fortmaster abilities for at least 35 people (22 forts + 20 uni
     - 3-5: +2.
     - 6: +3.
   - 1x Armsthrift. Percentage chance of any allied unit to not consume a weapon use. Tiers:
-    - 1: 5%
-    - 2: 10%
+    - 1: 5%.
+    - 2: 10%.
       ...
-    - 6: 30%
+    - 6: 30%.
   - 1x AltArmsthrift. The first X allied weapon uses in a chapter won't be consumed. X = Tier * 2. If Armsthrift and AltArmsthrift are active: Roll once for Armsthrift, if negative, consume AltArmsthrift charge if any are left. If positive, don't consume AltArmsthrift charge.
+  - 2x Despoil. X% chance to receive Y gold when an allied unit defeats an enemy. Tiers:
+    - 1: X = 2%, Y = 50.
+    - 2: X = 2%, Y = 100.
+    - 3: X = 5%, Y = 100.
+    - 4: X = 5%, Y = 250.
+    - 5: X = 10%, Y = 250.
+    - 6: X = 10%, Y = 500.
   - 1x Cheaper armories/vendors/secretshops. ONLY during chapters, not on the WM! (Do skirmishes have functional shops?) Discount 5% per tier, up to 30%.
   - 1x Renewal. Among allied units that don't have full HP, X will be randomly chosen and Y% of their max HP will be added to their current HP at the start of player phase. Tiers:
-    - 1-2: X = 1, Y = 10%
-    - 3-4: X = 1, Y = 20%
-    - 5: X = 2, Y = 20%
-    - 6: X = 3, Y = 20%
+    - 1-2: X = 1, Y = 10%.
+    - 3-4: X = 1, Y = 20%.
+    - 5: X = 2, Y = 20%.
+    - 6: X = 3, Y = 20%.
+  - 2x Staff Savant. Increase staff range by X. Tiers:
+    - 1-2: X = 1.
+    - 3-5: X = 2.
+    - 6: X = 3.
+  - 1x ProcSkill activation rate up by X (flat increase). Tiers:
+    - 1: X = 5.
+    - 2: X = 10.
+    ...
+    - 6: X = 30.
+  - Crit, Hit, Ddg, Avo increase?
+    
 
 PLAN, Crafting should allow:
   - fusing two of the same items (total durability no higher than 63?), no material cost. (seems Tequila has a "Convoy Combine" patch which already does this)
   - repairing an item, costs up to 5 different types of materials. Reserve three dec digits for each material (10 bits)
   - upgrading an item. Same idea for costs as above.
-
-CREDITS
-Add portraits!
-Move wyvernknight to somewhere better.
-Make wyvern and peg knight use KNIGHT in their name.
