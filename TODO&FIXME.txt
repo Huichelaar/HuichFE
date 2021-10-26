@@ -67,11 +67,7 @@ credits: WyvKnight battle anim doesn't slide far back enough. Wyvern's snout is 
 If we need space:
   - Room for 0x2000 text entries. Can reduce this in repointedTextTable.event.
   - Some tables have entries they're not using, see Tables/TableOptions.s.
-
-Mention in topic that in-game credits are incomplete atm.
-
-MAKE SURE THE LINK IN DemoEnd.event & README.md IS THE SAME AS THE TOPIC'S!
-
+  
 
 PLAN, Meals. Can feed any unit one or zero meals in prep screen. Costs food-materials. Can feed multiple units, but each only gets one meal at most. Idea is, the larger your army, the more materials you could spend on food. Maybe also let recipes be optional objectives in chapters to unlock meals? Re-use support bits to indicate which meal a unit has eaten (5 bits for 31 possible meals?) or use unused debufftable bits. Check which things check debufftable to implement buffs & debuffs. Maybe increase buffs if unit affinity matches with meal? Make certain effects overlap with fort abilities and skills for maximum optimization fun. Meal ideas:
   - +1 Str.
