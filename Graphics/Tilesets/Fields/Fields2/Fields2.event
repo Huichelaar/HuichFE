@@ -7,5 +7,5 @@ Fields2Config:
 
 // Palettes
 ALIGN 4
-Fields2NightPalette:
-#incbin "NightPalette.dmp"
+Fields2AutumnalPalette:
+#incbin "AutumnalPalette.dmp"

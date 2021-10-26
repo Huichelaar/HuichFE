@@ -68,7 +68,7 @@
 0x42,Map2Changes|IsPointer
 0x43,Fields2Objects|IsPointer
 0x44,Fields2Config|IsPointer
-0x45,Fields2NightPalette|IsPointer
+0x45,Fields2AutumnalPalette|IsPointer
 0x46,Map3Changes|IsPointer
 0x47,0x89e9a00
 0x48,0x81ae1f0

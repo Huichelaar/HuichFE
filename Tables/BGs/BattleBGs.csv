@@ -14,3 +14,9 @@ ThroneBlue,BF_Throne|IsPointer,0x0,BF_ThronePaletteBlue|IsPointer
 ThroneCyan,BF_Throne|IsPointer,0x0,BF_ThronePaletteCyan|IsPointer
 ThroneGreen,BF_Throne|IsPointer,0x0,BF_ThronePaletteGreen|IsPointer
 ThroneRed,BF_Throne|IsPointer,0x0,BF_ThronePaletteRed|IsPointer
+Bridge2,BF_Bridge|IsPointer,0x0,BF_BridgeAutumnalPalette|IsPointer
+Forest2,BF_Forest|IsPointer,0x0,BF_ForestAutumnalPalette|IsPointer
+Plain2,BF_Plain|IsPointer,0x0,BF_PlainAutumnalPalette|IsPointer
+River2,BF_River|IsPointer,0x0,BF_RiverAutumnalPalette|IsPointer
+Roads2,BF_Road|IsPointer,0x0,BF_RoadAutumnalPalette|IsPointer
+Village2,BF_Village|IsPointer,0x0,BF_VillageAutumnalPalette|IsPointer

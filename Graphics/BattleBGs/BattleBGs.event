@@ -13,6 +13,9 @@ BF_Bridge:
 ALIGN 4
 BF_BridgePalette:
 #incbin "Bridge/BridgePalette.dmp"
+  ALIGN 4
+  BF_BridgeAutumnalPalette:
+  #incbin "Bridge/BridgeAutumnalPalette.dmp"
 
 //ALIGN 4
 //BF_Cave:
@@ -34,6 +37,9 @@ BF_Forest:
 ALIGN 4
 BF_ForestPalette:
 #incbin "Forest/ForestPalette.dmp"
+  ALIGN 4
+  BF_ForestAutumnalPalette:
+  #incbin "Forest/ForestAutumnalPalette.dmp"
 
 ALIGN 4
 BF_Peak:
@@ -48,6 +54,9 @@ BF_Plain:
 ALIGN 4
 BF_PlainPalette:
 #incbin "Plain/PlainPalette.dmp"
+  ALIGN 4
+  BF_PlainAutumnalPalette:
+  #incbin "Plain/PlainAutumnalPalette.dmp"
 
 ALIGN 4
 BF_River:
@@ -55,6 +64,10 @@ BF_River:
 ALIGN 4
 BF_RiverPalette:
 #incbin "River/RiverPalette.dmp"
+  ALIGN 4
+  BF_RiverAutumnalPalette:
+  #incbin "River/RiverAutumnalPalette.dmp"
+
 
 ALIGN 4
 BF_Road:
@@ -62,6 +75,9 @@ BF_Road:
 ALIGN 4
 BF_RoadPalette:
 #incbin "Road/RoadPalette.dmp"
+  ALIGN 4
+  BF_RoadAutumnalPalette:
+  #incbin "Road/RoadAutumnalPalette.dmp"
 
 ALIGN 4
 BF_Sea:
@@ -95,3 +111,6 @@ BF_Village:
 ALIGN 4
 BF_VillagePalette:
 #incbin "Village/VillagePalette.dmp"
+  ALIGN 4
+  BF_VillageAutumnalPalette:
+  #incbin "Village/VillageAutumnalPalette.dmp"

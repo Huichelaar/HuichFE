@@ -287,7 +287,7 @@
 #define Map2ChangesPLIST 0x42
 #define Fields2ObjectsPLIST 0x43
 #define Fields2ConfigPLIST 0x44
-#define Fields2NightPalettePLIST 0x45
+#define Fields2AutumnalPalettePLIST 0x45
 #define Map3ChangesPLIST 0x46
 
 // Escape points
@@ -309,6 +309,12 @@
 #define ThroneCyan 0xC
 #define ThroneGreen 0xD
 #define ThroneRed 0xE
+#define Bridge2 0xF
+#define Forest2 0x10
+#define Plain2 0x11
+#define River2 0x12
+#define Roads2 0x13
+#define Village2 0x14
 
 // Other
 #define DefaultJavelin 0x8058196
