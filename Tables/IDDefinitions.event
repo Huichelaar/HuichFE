@@ -13,6 +13,7 @@
 #define Act3Flag2 0x77
 #define MiloFlag 0x86
 #define FortressAccessibleFlag 0x87
+#define SepiaFlag 0x88
 
 // Classes
 #define Supplier 0x1
@@ -289,6 +290,7 @@
 #define Fields2ConfigPLIST 0x44
 #define Fields2AutumnalPalettePLIST 0x45
 #define Map3ChangesPLIST 0x46
+#define Fields2AquamarinePalettePLIST 0x47
 
 // Escape points
 #define NoEscapePoints 0x80D84E0
@@ -315,6 +317,10 @@
 #define River2 0x12
 #define Roads2 0x13
 #define Village2 0x14
+#define Fort1 0x15
+#define Fort2 0x16
+#define Gate1 0x17
+#define Gate2 0x18
 
 // Other
 #define DefaultJavelin 0x8058196

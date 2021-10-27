@@ -1,0 +1,26 @@
+// https://feuniverse.us/t/funky-color-stuff/3763
+// By Tequila.
+// Applies sepia filter if
+// SepiaFlag is set (and defined of course).
+#ifndef _FE8_
+    ERROR "You're not assembling to an FE8 ROM!"
+#endif
+
+#include "Extensions/Hack Installation.txt"
+#include "EAstdlib.event"
+
+#ifndef FreeSpace
+	#define FreeSpace 0x1000000
+	ORG FreeSpace
+#endif
+
+PUSH
+
+  ORG $DB8
+  jumpToHack(Sepia)
+  
+POP
+
+ALIGN 4
+Sepia:
+#include "Sepia.lyn.event"

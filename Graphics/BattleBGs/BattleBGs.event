@@ -42,6 +42,26 @@ BF_ForestPalette:
   #incbin "Forest/ForestAutumnalPalette.dmp"
 
 ALIGN 4
+BF_Fort:
+#incbin "Fort/Fort.dmp"
+ALIGN 4
+BF_FortPalette:
+#incbin "Fort/FortPalette.dmp"
+  ALIGN 4
+  BF_FortAutumnalPalette:
+  #incbin "Fort/FortAutumnalPalette.dmp"
+
+ALIGN 4
+BF_Gate:
+#incbin "Gate/Gate.dmp"
+ALIGN 4
+BF_GatePalette:
+#incbin "Gate/GatePalette.dmp"
+  ALIGN 4
+  BF_GateAutumnalPalette:
+  #incbin "Gate/GateAutumnalPalette.dmp"
+
+ALIGN 4
 BF_Peak:
 #incbin "Peak/Peak.dmp"
 ALIGN 4

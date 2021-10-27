@@ -100,6 +100,9 @@ POP
   // Create AI that turn aggresive when any group member has fought.
   #include "ExternalHacks/GroupAI/GroupAI.event"
   
+  // Apply sepia filter when SepiaFlag is set.
+  //#include "ExternalHacks/Sepia/Sepia.event"
+  
   // Negative Stat Boosts.
   #include "Necessary/NegativeStatBoosts/NegativeStatBoosts.event"
 
