@@ -178,7 +178,7 @@ REMOVEPORTRAITS
 BACG 0x35
 FADU 128
 FAWI 4
-//ENUT SepiaFlag
+ENUT SepiaFlag
 BACG Castle_Room
 _0x1328 0x2C                // Fades in song apparently. Taken from FE8 Ch14.
 FAWU 4
@@ -188,7 +188,7 @@ TEXTSHOW2 Ch3_1             // Allows manipulating previously loaded portraits.
 TEXTEND
 _0x1328 0x7FFF
 FAWI 4
-//ENUF SepiaFlag
+ENUF SepiaFlag
 BACG Forest_2
 REMA
 FAWU 4

@@ -1,7 +1,8 @@
 // https://feuniverse.us/t/funky-color-stuff/3763
 // By Tequila.
-// Applies sepia filter if
-// SepiaFlag is set (and defined of course).
+// Applies sepia filter if SepiaFlag is set (and defined of course).
+// I also added a hook to apply sepia to portraits when they fade in.
+
 #ifndef _FE8_
     ERROR "You're not assembling to an FE8 ROM!"
 #endif
@@ -16,11 +17,20 @@
 
 PUSH
 
-  ORG $DB8
-  jumpToHack(Sepia)
+  ORG 0xDB8
+  jumpToHack(Hook1)
+  
+  ORG 0x139F4
+  jumpToHack(Hook2)
   
 POP
 
 ALIGN 4
-Sepia:
-#include "Sepia.lyn.event"
+Hook1:
+#include "asm/Hook1.lyn.event"
+ALIGN 4
+Hook2:
+#include "asm/Hook2.lyn.event"
+ALIGN 4
+GetSepia:
+#include "asm/GetSepia.lyn.event"

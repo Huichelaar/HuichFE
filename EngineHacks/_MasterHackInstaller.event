@@ -101,7 +101,7 @@ POP
   #include "ExternalHacks/GroupAI/GroupAI.event"
   
   // Apply sepia filter when SepiaFlag is set.
-  //#include "ExternalHacks/Sepia/Sepia.event"
+  #include "ExternalHacks/Sepia/Sepia.event"
   
   // Negative Stat Boosts.
   #include "Necessary/NegativeStatBoosts/NegativeStatBoosts.event"

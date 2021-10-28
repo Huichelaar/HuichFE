@@ -1,0 +1,54 @@
+
+////////////////////////////////////////////////////
+//                                                //
+// Disassembled with Nintenlord's Event Assembler //
+// Version: 11.1.0.0                              //
+// Game: FE8                                      //
+// File: FE8_clean.event_assembler.gba            //
+// Offset: $A39F90                                //
+//                                                //
+////////////////////////////////////////////////////
+
+
+
+ORG $A39F90
+STAL 6
+WM_MOVECAM 0x0 0xFFFF 0xFFFF 0x0 0x48 0x3C 0x0
+WM_WAITFORCAM
+CALL 0xA3974C
+WM_TEXTSTART
+PUTSPRITE 0x3 0x2 0x0 0x2
+WM_MAKELORDVISIBLE 0x3
+WM_MAKELORDDISAPPEAR
+PUTSPRITE 0x2 0xD 0x2 0x2
+WM_MOVESPRITETO 0x0 0x2 0x3 0x2 0x3 0xFFFC 0x0
+WM_WAITFORSPRITES 0x0 0x2 0x0
+REMSPRITE 0x2
+WM_SHOWPORTRAIT 0x2 1332
+STAL 6 46
+WM_TEXT 0x8E0
+TEXTEND
+WM_MAKELORDVISIBLE 0x0
+REMSPRITE 0x3
+WM_CLEARPORTRAIT 0x0 0x634 0x0
+STAL 46
+PUTSPRITE 0x2 0x41 0x1 0x3
+WM_FADEINSPRITE 0x0 0x2 0x3C
+WM_SHOWPORTRAIT 0x33 700
+STAL 6 46
+TEXTCONT
+TEXTEND
+WM_CLEARPORTRAIT 0x0 0x1BC 0x0
+STAL 46
+WM_FADEOUTSPRITE 0x0 0x2 0x3C
+WM_MOVESPRITETO 0x0 0x0 0x0 0x2 0x3 0xFFFC 0x0
+WM_WAITFORSPRITES 0x0 0xFFFF 0xFFFF
+WM_WAITFORSPRITELOAD
+REMSPRITE 0x2
+TEXTCONT
+TEXTEND
+WM_REMOVETEXT
+STAL 2 20
+FADI 16
+ENDA
+
