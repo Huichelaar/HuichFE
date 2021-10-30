@@ -9,7 +9,7 @@ Blank_PortraitTiles:
 #incbin "blank_portrait.dmp"
 ALIGN 4
 VivianPortraitTiles:
-#incbin "Huichelaar~Splice1_1.dmp"
+#incbin "Huichelaar,Retrogamer~Splice1_1.dmp"
 ALIGN 4
 SimonPortraitTiles:
 #incbin "GenericPretsel~Cosimo.dmp"

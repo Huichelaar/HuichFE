@@ -42,8 +42,8 @@ SongTable(0x2,song410,0)
 SongTable(0x3,SEQ_BGM_DIVING,1)
 #include "../Songs/song500.event"
 SongTable(0x9,song500,1)
-#include "../Songs/Principality.event"
-SongTable(0xA,Principality,1)
+#include "../Songs/Principality2.event"
+SongTable(0xA,Principality2,1)
 #include "../Songs/DesireBelow.event"
 SongTable(0xB,DesireBelow,1)
 #include "../Songs/cave.event"

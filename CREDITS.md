@@ -228,7 +228,7 @@ Songs used:
 - SSHX~28 by SSHX.
 - GenericPretsel~Cosimo by GenericPretsel.
 - Nickt~Vette by Nickt.
-- Huichelaar~Splice1_1 spliced from various FEGBA portraits.
+- Huichelaar,Retrogamer~Splice1_1 spliced from various FEGBA portraits. Smile frame by Retrogamer.
 - Capibarainspace~2 by Capibarainspace.
 - Zmr~2 by Zmr.
 - DragonLuca~2 by DragonLuca.

@@ -3,7 +3,7 @@ Portrait authorName~name:               Used by character:
 SSHX~28                                 Milo.
 GenericPretsel~Cosimo                   Simon.
 Nickt~Vette                             Aiden.
-Huichelaar~Splice1_1                    Vivian.
+Huichelaar,Retrogamer~Splice1_1         Vivian.
 Capibarainspace~2                       Leona.
 Zmr~2                                   Turner.
 DragonLuca~2                            Demi.

@@ -203,7 +203,7 @@ authSupplier: POIN authN426 authJonoTheRed authHuichelaar 0
 authWyvKnight: POIN authStJack 0
 //authMarshall: POIN authIntelligentSystems authHuichelaar 0
 
-authVivian: POIN authIntelligentSystems authHuichelaar 0
+authVivian: POIN authIntelligentSystems authHuichelaar authRetrogamer 0
 authSimon: POIN authGenericPretsel 0
 authLeona: POIN authCapibarainspace 0
 authMilo: POIN authSSHX 0
