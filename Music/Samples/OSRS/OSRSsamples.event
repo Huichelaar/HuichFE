@@ -1,34 +1,14 @@
 //Direct
-ALIGN 4
-RSSample44:
-#include "44_3.event"
-ALIGN 4
-RSSample46:
-#include "46_3.event"
-ALIGN 4
-RSSample60:
-#include "60_3.event"
-ALIGN 4
-RSSample70:
-#include "70_3.event"
-ALIGN 4
-RSSample73:
-#include "73_4.event"
-ALIGN 4
-RSSample79:
-#include "79_3.event"
-ALIGN 4
-RSSample100:
-#include "100_3.event"
-ALIGN 4
-RSSample102:
-#include "102_3.event"
-ALIGN 4
-RSSample116:
-#include "116_2.event"
 
 
 //Multisample
+ALIGN 4
+RSSample44_2:
+#include "44_2.event"
+ALIGN 4
+RSSample44_3:
+#include "44_3.event"
+
 ALIGN 4
 RSSample45_1:
 #include "45_1.event"
@@ -41,6 +21,13 @@ RSSample45_3:
 ALIGN 4
 RSSample45_4:
 #include "45_4.event"
+
+ALIGN 4
+RSSample46_3:
+#include "46_3.event"
+ALIGN 4
+RSSample46_4:
+#include "46_4.event"
 
 ALIGN 4
 RSSample48_0:
@@ -63,8 +50,8 @@ RSSample49_2:
 #include "49_2.event"
 
 ALIGN 4
-RSSample57_1:
-#include "57_1.event"
+RSSample57_2:
+#include "57_2.event"
 ALIGN 4
 RSSample57_3:
 #include "57_3.event"
@@ -79,11 +66,64 @@ ALIGN 4
 RSSample60_4:
 #include "60_4.event"
 
+ALIGN 4
+RSSample70_1:
+#include "70_1.event"
+
+ALIGN 4
+RSSample73_5:
+#include "73_5.event"
+
+ALIGN 4
+RSSample79_3:
+#include "79_3.event"
+ALIGN 4
+RSSample79_4:
+#include "79_4.event"
+
+ALIGN 4
+RSSample100_2:
+#include "100_2.event"
+ALIGN 4
+RSSample100_3:
+#include "100_3.event"
+ALIGN 4
+RSSample100_4:
+#include "100_4.event"
+ALIGN 4
+RSSample100_5:
+#include "100_5.event"
+
+ALIGN 4
+RSSample102_1:
+#include "102_1.event"
+ALIGN 4
+RSSample102_2:
+#include "102_2.event"
+
+ALIGN 4
+RSSample116_1:
+#include "116_1.event"
+ALIGN 4
+RSSample116_2:
+#include "116_2.event"
+ALIGN 4
+RSSample116_3:
+#include "116_3.event"
 
 // Drum
 
 
 // Multisample tables
+RStable44:
+VoiceDummy(RStable44,0x0)
+VoiceDummy(RStable44,0x1)
+VoiceDirect(RStable44,0x2,0x3c,RSSample44_2,0x0,0x0,0x0,0xff,0x0,0xff,0xa0)
+VoiceDirect(RStable44,0x3,0x3c,RSSample44_3,0x0,0x0,0x0,0xff,0x0,0xff,0xa0)
+VoiceDummy(RStable44,0x4)
+VoiceDummy(RStable44,0x5)
+ORG RStable44+0x0c*6
+
 RStable45:
 VoiceDummy(RStable45,0x0)
 VoiceDirect(RStable45,0x1,0x3c,RSSample45_1,0x0,0x0,0x0,0xff,0x0,0xff,0xa5)
@@ -92,6 +132,15 @@ VoiceDirect(RStable45,0x3,0x3c,RSSample45_3,0x0,0x0,0x0,0xff,0x0,0xff,0xa5)
 VoiceDirect(RStable45,0x4,0x3c,RSSample45_4,0x0,0x0,0x0,0xff,0x0,0xff,0xa5)
 VoiceDummy(RStable45,0x5)
 ORG RStable45+0x0c*6
+
+RStable46:
+VoiceDummy(RStable46,0x0)
+VoiceDummy(RStable46,0x1)
+VoiceDummy(RStable46,0x2)
+VoiceDirect(RStable46,0x3,0x3c,RSSample46_3,0x0,0x0,0x0,0xff,0x40,0xc0,0xa5)
+VoiceDirect(RStable46,0x4,0x3c,RSSample46_4,0x0,0x0,0x0,0xff,0x40,0xc0,0xa5)
+VoiceDummy(RStable46,0x5)
+ORG RStable46+0x0c*6
 
 RStable48:
 VoiceDirect(RStable48,0x0,0x3c,RSSample48_0,0x0,0x0,0x0,0xff,0x0,0xff,0xa5)
@@ -113,8 +162,8 @@ ORG RStable49+0x0c*6
 
 RStable57:
 VoiceDummy(RStable57,0x0)
-VoiceDirect(RStable57,0x1,0x3c,RSSample57_1,0x0,0x0,0x0,0xff,0x0,0xff,0xa0)
-VoiceDummy(RStable57,0x2)
+VoiceDummy(RStable57,0x1)
+VoiceDirect(RStable57,0x2,0x3c,RSSample57_2,0x0,0x0,0x0,0xff,0x0,0xff,0xa0)
 VoiceDirect(RStable57,0x3,0x3c,RSSample57_3,0x0,0x0,0x0,0xff,0x0,0xff,0xa0)
 VoiceDummy(RStable57,0x4)
 VoiceDummy(RStable57,0x5)
@@ -129,22 +178,62 @@ VoiceDirect(RStable60,0x4,0x3c,RSSample60_4,0x0,0x0,0x0,0xff,0x0,0xff,0xa5)
 VoiceDummy(RStable49,0x5)
 ORG RStable60+0x0c*6
 
+RStable70:
+VoiceDummy(RStable70,0x0)
+VoiceDirect(RStable70,0x1,0x3c,RSSample70_1,0x0,0x0,0x0,0xff,0x0,0xff,0xa0)
+VoiceDummy(RStable70,0x2)
+VoiceDummy(RStable70,0x3)
+VoiceDummy(RStable70,0x4)
+VoiceDummy(RStable70,0x5)
+ORG RStable70+0x0c*6
+
+RStable73:
+VoiceDummy(RStable73,0x0)
+VoiceDummy(RStable73,0x1)
+VoiceDummy(RStable73,0x2)
+VoiceDummy(RStable73,0x3)
+VoiceDummy(RStable73,0x4)
+VoiceDirect(RStable73,0x5,0x3c,RSSample73_5,0x0,0x0,0x0,0xff,0x0,0xff,0xa5)
+ORG RStable73+0x0c*6
+
+RStable79:
+VoiceDummy(RStable79,0x0)
+VoiceDummy(RStable79,0x1)
+VoiceDummy(RStable79,0x2)
+VoiceDirect(RStable79,0x3,0x3c,RSSample79_3,0x0,0x0,0x0,0xff,0x0,0xff,0xa5)
+VoiceDirect(RStable79,0x4,0x3c,RSSample79_4,0x0,0x0,0x0,0xff,0x0,0xff,0xa5)
+VoiceDummy(RStable79,0x5)
+ORG RStable79+0x0c*6
+
+RStable100:
+VoiceDummy(RStable100,0x0)
+VoiceDummy(RStable100,0x1)
+VoiceDirect(RStable100,0x2,0x3c,RSSample100_2,0x0,0x0,0x0,0xff,0x0,0xff,0xf4)
+VoiceDirect(RStable100,0x3,0x3c,RSSample100_3,0x0,0x0,0x0,0xff,0x0,0xff,0xf4)
+VoiceDirect(RStable100,0x4,0x3c,RSSample100_4,0x0,0x0,0x0,0xff,0x0,0xff,0xf4)
+VoiceDirect(RStable100,0x5,0x3c,RSSample100_5,0x0,0x0,0x0,0xff,0x0,0xff,0xf4)
+ORG RStable100+0x0c*6
+
+RStable102:
+VoiceDummy(RStable102,0x0)
+VoiceDirect(RStable102,0x1,0x3c,RSSample102_1,0x0,0x0,0x0,0xff,0x0,0xff,0xa5)
+VoiceDirect(RStable102,0x2,0x3c,RSSample102_2,0x0,0x0,0x0,0xff,0x0,0xff,0xa5)
+VoiceDummy(RStable102,0x3)
+VoiceDummy(RStable102,0x4)
+VoiceDummy(RStable102,0x5)
+ORG RStable102+0x0c*6
+
+RStable116:
+VoiceDummy(RStable116,0x0)
+VoiceDirect(RStable116,0x1,0x3c,RSSample116_1,0x0,0x0,0x0,0xff,0x0,0xff,0xa0)
+VoiceDirect(RStable116,0x2,0x3c,RSSample116_2,0x0,0x0,0x0,0xff,0x0,0xff,0xa0)
+VoiceDirect(RStable116,0x3,0x3c,RSSample116_3,0x0,0x0,0x0,0xff,0x0,0xff,0xa0)
+VoiceDummy(RStable116,0x4)
+VoiceDummy(RStable116,0x5)
+ORG RStable116+0x0c*6
+
+
 // Note charts
 ALIGN 4
-RSchart32:
-#incbin "note charts/32chart.dmp"
-ALIGN 4
-RSchart45:
-#incbin "note charts/45chart.dmp"
-ALIGN 4
-RSchart48:
-#incbin "note charts/48chart.dmp"
-ALIGN 4
-RSchart49:
-#incbin "note charts/49chart.dmp"
-ALIGN 4
-RSchart57:
-#incbin "note charts/57chart.dmp"
-ALIGN 4
-RSchart60:
-#incbin "note charts/60chart.dmp"
+RSchart:
+#incbin "note charts/chart.dmp"

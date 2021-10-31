@@ -17,7 +17,7 @@ Principality_0:
 // 000   ----------------------------------------
         BYTE   TEMPO   114/2
         BYTE           VOICE   49
-        BYTE           VOL     67
+        BYTE           VOL     54
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W96
@@ -84,8 +84,8 @@ Principality_0_LOOP:
         BYTE   W96
 // 032   ----------------------------------------
 Principality_0_32:
-        BYTE           TIE     En1   v096
-        BYTE           TIE     En0   v104
+        BYTE           TIE     En2   v096
+        BYTE           TIE     En1   v104
         BYTE   W96
         BYTE   PEND
 // 033   ----------------------------------------
@@ -96,9 +96,9 @@ Principality_0_32:
 Principality_0_35:
         BYTE   W80
         BYTE   W02
-        BYTE           EOT     En1
+        BYTE           EOT     En2
         BYTE   W02
-        BYTE                   En0
+        BYTE                   En1
         BYTE   W12
         BYTE   PEND
 // 036   ----------------------------------------
@@ -294,12 +294,10 @@ Principality_0_35:
 // 126   ----------------------------------------
         BYTE   W96
 // 127   ----------------------------------------
-        BYTE   W92
-        BYTE   W03
+        BYTE   W96
+// 128   ----------------------------------------
         BYTE   GoTo
          POIN2  Principality_0_LOOP
-        BYTE   W01
-// 128   ----------------------------------------
         BYTE   FINE
 
 //****************** Track 1 (Midi-Chn.1) ******************//
@@ -308,7 +306,8 @@ Principality_1:
         BYTE   KEYSH   Principality_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   48
-        BYTE           VOL     69
+        BYTE           VOL     57
+        BYTE           PAN     c_v+25
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W96
@@ -333,32 +332,32 @@ Principality_1_LOOP:
         BYTE   W96
 // 011   ----------------------------------------
         BYTE   W60
-        BYTE           N04     Bn3   v100
+        BYTE           N04     Bn1   v100
         BYTE   W06
-        BYTE                   An3   v092
+        BYTE                   An1   v092
         BYTE   W06
-        BYTE           N05     Bn3   v084
+        BYTE           N05     Bn1   v084
         BYTE   W06
-        BYTE           N03     An3   v076
+        BYTE           N03     An1   v076
         BYTE   W06
-        BYTE           N05     Bn3   v068
+        BYTE           N05     Bn1   v068
         BYTE   W06
-        BYTE           N04     An3   v060
+        BYTE           N04     An1   v060
         BYTE   W06
 // 012   ----------------------------------------
-        BYTE           N05     Bn3   v056
+        BYTE           N05     Bn1   v056
         BYTE   W06
-        BYTE           N04     An3   v048
+        BYTE           N04     An1   v048
         BYTE   W06
-        BYTE           N05     Bn3   v040
+        BYTE           N05     Bn1   v040
         BYTE   W06
-        BYTE           N03     An3   v032
+        BYTE           N03     An1   v032
         BYTE   W06
-        BYTE           N04     Bn3   v024
+        BYTE           N04     Bn1   v024
         BYTE   W06
-        BYTE                   An3   v016
+        BYTE                   An1   v016
         BYTE   W06
-        BYTE                   Bn3   v008
+        BYTE                   Bn1   v008
         BYTE   W60
 // 013   ----------------------------------------
         BYTE   W96
@@ -368,40 +367,40 @@ Principality_1_LOOP:
         BYTE   W96
 // 016   ----------------------------------------
 Principality_1_16:
-        BYTE           N21     En3   v116
+        BYTE           N21     En1   v116
         BYTE   W24
-        BYTE           N24     En3   v112
+        BYTE           N24     En1   v112
         BYTE   W60
-        BYTE           N04     Gn3   v104
+        BYTE           N04     Gn1   v104
         BYTE   W06
-        BYTE                   An3   v108
+        BYTE                   An1   v108
         BYTE   W06
         BYTE   PEND
 // 017   ----------------------------------------
 Principality_1_17:
-        BYTE           N84     Bn3   v116
+        BYTE           N84     Bn1   v116
         BYTE   W84
-        BYTE           N05     An3   v112
+        BYTE           N05     An1   v112
         BYTE   W06
-        BYTE           N04     Gn3   v108
+        BYTE           N04     Gn1   v108
         BYTE   W06
         BYTE   PEND
 // 018   ----------------------------------------
 Principality_1_18:
-        BYTE           N19     En3   v120
+        BYTE           N19     En1   v120
         BYTE   W24
         BYTE           N36
         BYTE   W60
-        BYTE           N04     Fs3
+        BYTE           N04     Fs1
         BYTE   W06
-        BYTE                   Gn3
+        BYTE                   Gn1
         BYTE   W06
         BYTE   PEND
 // 019   ----------------------------------------
 Principality_1_19:
-        BYTE           N80     Bn2   v112
+        BYTE           N80     Bn0   v112
         BYTE   W84
-        BYTE           N13     Dn3
+        BYTE           N13     Dn1
         BYTE   W12
         BYTE   PEND
 // 020   ----------------------------------------
@@ -443,76 +442,76 @@ Principality_1_19:
 // 032   ----------------------------------------
 Principality_1_32:
         BYTE   W12
-        BYTE           N03     En5   v080
-        BYTE           N03     En4   v084
+        BYTE           N03     En3   v080
+        BYTE           N03     En2   v084
         BYTE   W12
-        BYTE           N02     En5   v100
-        BYTE           N02     As4   v084
-        BYTE           N03     En4   v108
+        BYTE           N02     En3   v100
+        BYTE           N02     As2   v084
+        BYTE           N03     En2   v108
         BYTE   W06
-        BYTE                   En5   v096
-        BYTE           N04     As4   v080
+        BYTE                   En3   v096
+        BYTE           N04     As2   v080
         BYTE   W66
         BYTE   PEND
 // 033   ----------------------------------------
 Principality_1_33:
         BYTE   W12
-        BYTE           N03     En5   v076
-        BYTE           N03     En4   v092
+        BYTE           N03     En3   v076
+        BYTE           N03     En2   v092
         BYTE   W12
-        BYTE           N02     En5   v100
-        BYTE           N02     Bn4   v084
-        BYTE           N03     En4   v112
+        BYTE           N02     En3   v100
+        BYTE           N02     Bn2   v084
+        BYTE           N03     En2   v112
         BYTE   W06
-        BYTE                   En5   v092
-        BYTE           N03     Bn4   v072
-        BYTE           N03     En4   v092
+        BYTE                   En3   v092
+        BYTE           N03     Bn2   v072
+        BYTE           N03     En2   v092
         BYTE   W66
         BYTE   PEND
 // 034   ----------------------------------------
 Principality_1_34:
         BYTE   W12
-        BYTE           N03     En5   v080
-        BYTE           N03     En4   v088
+        BYTE           N03     En3   v080
+        BYTE           N03     En2   v088
         BYTE   W12
-        BYTE           N02     En5   v100
-        BYTE           N03     As4   v088
-        BYTE           N03     En4   v112
+        BYTE           N02     En3   v100
+        BYTE           N03     As2   v088
+        BYTE           N03     En2   v112
         BYTE   W06
-        BYTE                   En5   v104
-        BYTE           N03     As4   v080
-        BYTE           N03     En4   v084
+        BYTE                   En3   v104
+        BYTE           N03     As2   v080
+        BYTE           N03     En2   v084
         BYTE   W66
         BYTE   PEND
 // 035   ----------------------------------------
 Principality_1_35:
         BYTE   W12
-        BYTE           N03     En5   v080
-        BYTE           N03     En4   v084
+        BYTE           N03     En3   v080
+        BYTE           N03     En2   v084
         BYTE   W12
-        BYTE           N02     En5   v108
-        BYTE           N03     Bn4   v096
-        BYTE           N03     En4   v112
+        BYTE           N02     En3   v108
+        BYTE           N03     Bn2   v096
+        BYTE           N03     En2   v112
         BYTE   W06
-        BYTE                   En5   v108
-        BYTE           N03     Bn4   v080
-        BYTE           N03     En4   v096
+        BYTE                   En3   v108
+        BYTE           N03     Bn2   v080
+        BYTE           N03     En2   v096
         BYTE   W66
         BYTE   PEND
 // 036   ----------------------------------------
 Principality_1_36:
         BYTE   W12
-        BYTE           N03     En5   v080
-        BYTE           N03     En4   v084
+        BYTE           N03     En3   v080
+        BYTE           N03     En2   v084
         BYTE   W11
-        BYTE           N02     As4
+        BYTE           N02     As2
         BYTE   W01
-        BYTE                   En5   v100
-        BYTE           N03     En4   v108
+        BYTE                   En3   v100
+        BYTE           N03     En2   v108
         BYTE   W05
-        BYTE           N04     As4   v080
+        BYTE           N04     As2   v080
         BYTE   W01
-        BYTE           N03     En5   v096
+        BYTE           N03     En3   v096
         BYTE   W66
         BYTE   PEND
 // 037   ----------------------------------------
@@ -638,36 +637,36 @@ Principality_1_36:
         BYTE   W96
 // 080   ----------------------------------------
 Principality_1_80:
-        BYTE           N04     En5   v112
+        BYTE           N04     En3   v112
         BYTE   W24
-        BYTE                   En5
+        BYTE                   En3
         BYTE   W18
-        BYTE           N01     Ds5   v104
+        BYTE           N01     Ds3   v104
         BYTE   W06
-        BYTE           N04     En5
+        BYTE           N04     En3
         BYTE   W12
-        BYTE                   Gn5
+        BYTE                   Gn3
         BYTE   W12
-        BYTE                   An5   v112
+        BYTE                   An3   v112
         BYTE   W18
-        BYTE                   Gn5   v104
+        BYTE                   Gn3   v104
         BYTE   W06
         BYTE   PEND
 // 081   ----------------------------------------
 Principality_1_81:
-        BYTE           N05     An5   v100
+        BYTE           N05     An3   v100
         BYTE   W12
-        BYTE           N03     Gn5   v112
+        BYTE           N03     Gn3   v112
         BYTE   W12
-        BYTE                   Fs5   v120
+        BYTE                   Fs3   v120
         BYTE   W18
-        BYTE           N04     Gn5   v108
+        BYTE           N04     Gn3   v108
         BYTE   W06
-        BYTE                   Fs5   v124
+        BYTE                   Fs3   v124
         BYTE   W12
-        BYTE                   Dn5   v112
+        BYTE                   Dn3   v112
         BYTE   W12
-        BYTE                   En5   v116
+        BYTE                   En3   v116
         BYTE   W24
         BYTE   PEND
 // 082   ----------------------------------------
@@ -781,69 +780,68 @@ Principality_1_81:
         BYTE   PATT
          POIN2  Principality_1_19
 // 120   ----------------------------------------
-        BYTE           N21     En3   v112
+        BYTE           N21     En1   v112
         BYTE   W24
-        BYTE           N24     En3   v108
+        BYTE           N24     En1   v108
         BYTE   W60
-        BYTE           N04     Gn3   v100
+        BYTE           N04     Gn1   v100
         BYTE   W06
-        BYTE                   An3   v096
+        BYTE                   An1   v096
         BYTE   W06
 // 121   ----------------------------------------
-        BYTE           N84     Bn3
+        BYTE           N84     Bn1
         BYTE   W84
-        BYTE           N05     An3   v084
+        BYTE           N05     An1   v084
         BYTE   W06
-        BYTE           N04     Gn3
+        BYTE           N04     Gn1
         BYTE   W06
 // 122   ----------------------------------------
-        BYTE           N19     En3
+        BYTE           N19     En1
         BYTE   W24
-        BYTE           N36     En3   v080
+        BYTE           N36     En1   v080
         BYTE   W60
-        BYTE           N04     Fs3   v072
+        BYTE           N04     Fs1   v072
         BYTE   W06
-        BYTE                   Gn3
+        BYTE                   Gn1
         BYTE   W06
 // 123   ----------------------------------------
-        BYTE           N80     Bn2   v068
+        BYTE           N80     Bn0   v068
         BYTE   W84
-        BYTE           N13     Dn3   v056
+        BYTE           N13     Dn1   v056
         BYTE   W12
 // 124   ----------------------------------------
-        BYTE           N21     En3
+        BYTE           N21     En1
         BYTE   W24
-        BYTE           N24     En3   v052
+        BYTE           N24     En1   v052
         BYTE   W60
-        BYTE           N04     Gn3   v044
+        BYTE           N04     Gn1   v044
         BYTE   W06
-        BYTE                   An3
+        BYTE                   An1
         BYTE   W06
 // 125   ----------------------------------------
-        BYTE           N84     Bn3
+        BYTE           N84     Bn1
         BYTE   W84
-        BYTE           N05     An3   v032
+        BYTE           N05     An1   v032
         BYTE   W06
-        BYTE           N04     Gn3   v028
+        BYTE           N04     Gn1   v028
         BYTE   W06
 // 126   ----------------------------------------
-        BYTE           N19     En3
+        BYTE           N19     En1
         BYTE   W24
-        BYTE           N36     En3   v024
+        BYTE           N36     En1   v024
         BYTE   W60
-        BYTE           N04     Fs3   v016
+        BYTE           N04     Fs1   v016
         BYTE   W06
-        BYTE                   Gn3
+        BYTE                   Gn1
         BYTE   W06
 // 127   ----------------------------------------
-        BYTE           N80     Bn2
+        BYTE           N80     Bn0
         BYTE   W84
-        BYTE           N12     Dn3   v004
-        BYTE   W11
+        BYTE           N12     Dn1   v004
+        BYTE   W12
+// 128   ----------------------------------------
         BYTE   GoTo
          POIN2  Principality_1_LOOP
-        BYTE   W01
-// 128   ----------------------------------------
         BYTE   FINE
 
 //****************** Track 2 (Midi-Chn.2) ******************//
@@ -852,7 +850,8 @@ Principality_2:
         BYTE   KEYSH   Principality_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   60
-        BYTE           VOL     62
+        BYTE           VOL     48
+        BYTE           PAN     c_v-26
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W96
@@ -1158,12 +1157,12 @@ Principality_2_75:
         BYTE           N02     Dn3   v080
         BYTE   W06
         BYTE           N32     An3   v096
+        BYTE           N32     Fs3   v124
+        BYTE           N30     Dn3   v084
         BYTE           N03     An2   v108
         BYTE           N04     Dn2   v096
-        BYTE           N30     Fs3   v084
-        BYTE           N30     Dn3
         BYTE   W12
-        BYTE           N03     An2
+        BYTE           N03     An2   v084
         BYTE           N04     Dn2   v080
         BYTE   W12
         BYTE           N03     An2
@@ -1307,11 +1306,11 @@ Principality_2_79:
         BYTE   W06
         BYTE           N32     An3   v100
         BYTE           N32     Fs3   v116
+        BYTE           N32     Dn3   v084
         BYTE           N03     An2   v108
         BYTE           N04     Dn2   v096
-        BYTE           N30     Dn3   v084
         BYTE   W12
-        BYTE           N03     An2
+        BYTE           N03     An2   v084
         BYTE           N04     Dn2   v080
         BYTE   W12
         BYTE           N03     An2
@@ -1432,12 +1431,10 @@ Principality_2_79:
 // 126   ----------------------------------------
         BYTE   W96
 // 127   ----------------------------------------
-        BYTE   W92
-        BYTE   W03
+        BYTE   W96
+// 128   ----------------------------------------
         BYTE   GoTo
          POIN2  Principality_2_LOOP
-        BYTE   W01
-// 128   ----------------------------------------
         BYTE   FINE
 
 //****************** Track 3 (Midi-Chn.3) ******************//
@@ -1446,7 +1443,8 @@ Principality_3:
         BYTE   KEYSH   Principality_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   70
-        BYTE           VOL     76
+        BYTE           VOL     79
+        BYTE           PAN     c_v+7
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W96
@@ -1774,12 +1772,10 @@ Principality_3_38:
 // 126   ----------------------------------------
         BYTE   W96
 // 127   ----------------------------------------
-        BYTE   W92
-        BYTE   W03
+        BYTE   W96
+// 128   ----------------------------------------
         BYTE   GoTo
          POIN2  Principality_3_LOOP
-        BYTE   W01
-// 128   ----------------------------------------
         BYTE   FINE
 
 //****************** Track 4 (Midi-Chn.4) ******************//
@@ -1788,7 +1784,8 @@ Principality_4:
         BYTE   KEYSH   Principality_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   32
-        BYTE           VOL     62
+        BYTE           VOL     38
+        BYTE           PAN     c_v-24
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W96
@@ -2382,11 +2379,10 @@ Principality_4_79:
         BYTE           N18     Bn1   v004
         BYTE   W24
         BYTE           N17     An1
-        BYTE   W23
+        BYTE   W24
+// 128   ----------------------------------------
         BYTE   GoTo
          POIN2  Principality_4_LOOP
-        BYTE   W01
-// 128   ----------------------------------------
         BYTE   FINE
 
 //****************** Track 5 (Midi-Chn.5) ******************//
@@ -2395,7 +2391,8 @@ Principality_5:
         BYTE   KEYSH   Principality_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   45
-        BYTE           VOL     79
+        BYTE           VOL     56
+        BYTE           PAN     c_v-12
         BYTE           N04     En3   v092
         BYTE           N03     Bn2
         BYTE           N04     En2   v084
@@ -3893,11 +3890,10 @@ Principality_5_75:
         BYTE           N03     Fs2
         BYTE           N03     Dn2
         BYTE           N05     Bn1
-        BYTE   W11
+        BYTE   W12
+// 128   ----------------------------------------
         BYTE   GoTo
          POIN2  Principality_5_LOOP
-        BYTE   W01
-// 128   ----------------------------------------
         BYTE   FINE
 
 //****************** Track 6 (Midi-Chn.6) ******************//
@@ -3906,7 +3902,8 @@ Principality_6:
         BYTE   KEYSH   Principality_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   57
-        BYTE           VOL     79
+        BYTE           VOL     73
+        BYTE           PAN     c_v+15
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W96
@@ -3948,23 +3945,23 @@ Principality_6_LOOP:
 // 019   ----------------------------------------
 Principality_6_19:
         BYTE   W12
-        BYTE           N05     En4   v092
+        BYTE           N05     En2   v092
         BYTE   W06
-        BYTE           N07     Fs4   v088
+        BYTE           N07     Fs2   v088
         BYTE   W06
-        BYTE           N05     Gn4   v076
+        BYTE           N05     Gn2   v076
         BYTE   W06
-        BYTE           N08     An4   v084
+        BYTE           N08     An2   v084
         BYTE   W06
-        BYTE           N04     Gn4   v100
+        BYTE           N04     Gn2   v100
         BYTE   W06
-        BYTE           N05     Fs4   v108
+        BYTE           N05     Fs2   v108
         BYTE   W06
-        BYTE                   En4   v092
+        BYTE                   En2   v092
         BYTE   W12
-        BYTE           N04     En4   v100
+        BYTE           N04     En2   v100
         BYTE   W12
-        BYTE           N17     En4   v104
+        BYTE           N17     En2   v104
         BYTE   W01
         BYTE           BEND    c_v-17
         BYTE   W01
@@ -4105,49 +4102,21 @@ Principality_6_19:
 // 079   ----------------------------------------
         BYTE   W96
 // 080   ----------------------------------------
-Principality_6_80:
-        BYTE           N04     En3   v112
-        BYTE   W24
-        BYTE                   En3
-        BYTE   W18
-        BYTE           N01     Ds3   v104
-        BYTE   W06
-        BYTE           N04     En3
-        BYTE   W12
-        BYTE                   Gn3
-        BYTE   W12
-        BYTE                   An3   v112
-        BYTE   W18
-        BYTE                   Gn3   v104
-        BYTE   W06
-        BYTE   PEND
+        BYTE   PATT
+         POIN2  Principality_1_80
 // 081   ----------------------------------------
-Principality_6_81:
-        BYTE           N05     An3   v100
-        BYTE   W12
-        BYTE           N03     Gn3   v112
-        BYTE   W12
-        BYTE                   Fs3   v120
-        BYTE   W18
-        BYTE           N04     Gn3   v108
-        BYTE   W06
-        BYTE                   Fs3   v124
-        BYTE   W12
-        BYTE                   Dn3   v112
-        BYTE   W12
-        BYTE                   En3   v116
-        BYTE   W24
-        BYTE   PEND
+        BYTE   PATT
+         POIN2  Principality_1_81
 // 082   ----------------------------------------
         BYTE   W96
 // 083   ----------------------------------------
         BYTE   W96
 // 084   ----------------------------------------
         BYTE   PATT
-         POIN2  Principality_6_80
+         POIN2  Principality_1_80
 // 085   ----------------------------------------
         BYTE   PATT
-         POIN2  Principality_6_81
+         POIN2  Principality_1_81
 // 086   ----------------------------------------
         BYTE   W96
 // 087   ----------------------------------------
@@ -4225,23 +4194,23 @@ Principality_6_81:
         BYTE   W96
 // 123   ----------------------------------------
         BYTE   W12
-        BYTE           N05     En4   v084
+        BYTE           N05     En2   v084
         BYTE   W06
-        BYTE           N07     Fs4   v080
+        BYTE           N07     Fs2   v080
         BYTE   W06
-        BYTE           N05     Gn4
+        BYTE           N05     Gn2
         BYTE   W06
-        BYTE           N08     An4   v076
+        BYTE           N08     An2   v076
         BYTE   W06
-        BYTE           N04     Gn4   v072
+        BYTE           N04     Gn2   v072
         BYTE   W06
-        BYTE           N05     Fs4
+        BYTE           N05     Fs2
         BYTE   W06
-        BYTE                   En4   v068
+        BYTE                   En2   v068
         BYTE   W12
-        BYTE           N04     En4   v064
+        BYTE           N04     En2   v064
         BYTE   W12
-        BYTE           N17     En4   v056
+        BYTE           N17     En2   v056
         BYTE   W01
         BYTE           BEND    c_v-17
         BYTE   W01
@@ -4266,12 +4235,10 @@ Principality_6_81:
 // 126   ----------------------------------------
         BYTE   W96
 // 127   ----------------------------------------
-        BYTE   W92
-        BYTE   W03
+        BYTE   W96
+// 128   ----------------------------------------
         BYTE   GoTo
          POIN2  Principality_6_LOOP
-        BYTE   W01
-// 128   ----------------------------------------
         BYTE   FINE
 
 //****************** Track 7 (Midi-Chn.7) ******************//
@@ -4280,7 +4247,8 @@ Principality_7:
         BYTE   KEYSH   Principality_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   102
-        BYTE           VOL     68
+        BYTE           VOL     55
+        BYTE           PAN     c_v+29
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W96
@@ -4628,12 +4596,10 @@ Principality_7_22:
         BYTE   W24
 // 127   ----------------------------------------
         BYTE           N88     Bn1   v004
-        BYTE   W92
-        BYTE   W03
+        BYTE   W96
+// 128   ----------------------------------------
         BYTE   GoTo
          POIN2  Principality_7_LOOP
-        BYTE   W01
-// 128   ----------------------------------------
         BYTE   FINE
 
 //****************** Track 8 (Midi-Chn.8) ******************//
@@ -4642,7 +4608,7 @@ Principality_8:
         BYTE   KEYSH   Principality_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   127
-        BYTE           VOL     70
+        BYTE           VOL     58
         BYTE           N04     Dn1   v088
         BYTE   W12
         BYTE           N03     Dn1   v104
@@ -5418,11 +5384,10 @@ Principality_8_79:
         BYTE   W12
         BYTE           N03     Dn1   v004
         BYTE           N03     Dn1   v092
-        BYTE   W11
+        BYTE   W12
+// 128   ----------------------------------------
         BYTE   GoTo
          POIN2  Principality_8_LOOP
-        BYTE   W01
-// 128   ----------------------------------------
         BYTE   FINE
 
 //***************** Track 9 (Midi-Chn.10) ******************//
@@ -5431,7 +5396,8 @@ Principality_9:
         BYTE   KEYSH   Principality_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   100
-        BYTE           VOL     69
+        BYTE           VOL     58
+        BYTE           PAN     c_v+15
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W96
@@ -5782,12 +5748,10 @@ Principality_9_30:
 // 126   ----------------------------------------
         BYTE   W96
 // 127   ----------------------------------------
-        BYTE   W92
-        BYTE   W03
+        BYTE   W96
+// 128   ----------------------------------------
         BYTE   GoTo
          POIN2  Principality_9_LOOP
-        BYTE   W01
-// 128   ----------------------------------------
         BYTE   FINE
 
 //***************** Track 10 (Midi-Chn.11) *****************//
@@ -5796,7 +5760,8 @@ Principality_10:
         BYTE   KEYSH   Principality_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   73
-        BYTE           VOL     56
+        BYTE           VOL     41
+        BYTE           PAN     c_v-32
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W96
@@ -5854,25 +5819,25 @@ Principality_10_LOOP:
 // 027   ----------------------------------------
 Principality_10_27:
         BYTE   W12
-        BYTE           N04     Gn4   v100
+        BYTE           N04     Gn5   v100
         BYTE   W06
-        BYTE                   An4
+        BYTE                   An5
         BYTE   W05
-        BYTE           N03     Gn4   v084
+        BYTE           N03     Gn5   v084
         BYTE   W01
-        BYTE           N08     Bn4   v096
+        BYTE           N08     Bn5   v096
         BYTE   W07
-        BYTE           N04     An4   v092
+        BYTE           N04     An5   v092
         BYTE   W06
-        BYTE           N05     Gn4   v088
+        BYTE           N05     Gn5   v088
         BYTE   W06
-        BYTE           N03     Fs4   v112
+        BYTE           N03     Fs5   v112
         BYTE   W05
-        BYTE           N04     En4   v104
+        BYTE           N04     En5   v104
         BYTE   W12
-        BYTE                   Gn4
+        BYTE                   Gn5
         BYTE   W12
-        BYTE                   En4   v116
+        BYTE                   En5   v116
         BYTE   W24
         BYTE   PEND
 // 028   ----------------------------------------
@@ -5883,89 +5848,89 @@ Principality_10_27:
         BYTE   W96
 // 031   ----------------------------------------
 Principality_10_31:
-        BYTE           N04     En5   v100
+        BYTE           N04     En6   v100
         BYTE   W12
-        BYTE           N06     En5   v104
+        BYTE           N06     En6   v104
         BYTE   W06
-        BYTE           N04     Dn5   v092
-        BYTE           N04     Bn4
+        BYTE           N04     Dn6   v092
+        BYTE           N04     Bn5
         BYTE   W06
-        BYTE                   An4   v084
+        BYTE                   An5   v084
         BYTE   W12
-        BYTE           N03     Gn4   v092
+        BYTE           N03     Gn5   v092
         BYTE   W12
-        BYTE                   An4   v108
+        BYTE                   An5   v108
         BYTE   W12
-        BYTE           N05     Bn4   v112
-        BYTE           N02     An4
-        BYTE           N03     Gn4   v080
+        BYTE           N05     Bn5   v112
+        BYTE           N02     An5
+        BYTE           N03     Gn5   v080
         BYTE   W12
-        BYTE           N02     En4   v072
+        BYTE           N02     En5   v072
         BYTE   W03
-        BYTE           N03     Dn4   v084
+        BYTE           N03     Dn5   v084
         BYTE   W03
-        BYTE           N02     En4   v092
+        BYTE           N02     En5   v092
         BYTE   W03
-        BYTE                   Dn4   v100
+        BYTE                   Dn5   v100
         BYTE   W03
-        BYTE                   En4   v104
+        BYTE                   En5   v104
         BYTE   W03
-        BYTE           N03     Dn4   v108
+        BYTE           N03     Dn5   v108
         BYTE   W03
-        BYTE           N02     En4   v104
+        BYTE           N02     En5   v104
         BYTE   W03
-        BYTE           N03     Dn4   v100
+        BYTE           N03     Dn5   v100
         BYTE   W03
         BYTE   PEND
 // 032   ----------------------------------------
 Principality_10_32:
-        BYTE           N02     En4   v100
+        BYTE           N02     En5   v100
         BYTE   W03
-        BYTE           N03     Dn4   v096
+        BYTE           N03     Dn5   v096
         BYTE   W03
-        BYTE                   En4   v092
+        BYTE                   En5   v092
         BYTE   W03
-        BYTE                   Dn4   v088
+        BYTE                   Dn5   v088
         BYTE   W03
-        BYTE           N02     En4   v080
+        BYTE           N02     En5   v080
         BYTE   W03
-        BYTE                   Dn4
+        BYTE                   Dn5
         BYTE   W03
-        BYTE           N03     En4   v076
+        BYTE           N03     En5   v076
         BYTE   W03
-        BYTE                   Dn4   v072
+        BYTE                   Dn5   v072
         BYTE   W03
-        BYTE           N02     En4   v068
+        BYTE           N02     En5   v068
         BYTE   W03
-        BYTE           N03     Dn4   v064
+        BYTE           N03     Dn5   v064
         BYTE   W03
-        BYTE           N02     En4   v060
+        BYTE           N02     En5   v060
         BYTE   W03
-        BYTE                   Dn4   v056
+        BYTE                   Dn5   v056
         BYTE   W03
-        BYTE                   En4   v052
+        BYTE                   En5   v052
         BYTE   W03
-        BYTE           N03     Dn4   v048
+        BYTE           N03     Dn5   v048
         BYTE   W03
-        BYTE           N02     En4   v044
+        BYTE           N02     En5   v044
         BYTE   W03
-        BYTE           N03     Dn4   v040
+        BYTE           N03     Dn5   v040
         BYTE   W03
-        BYTE           N02     En4   v036
+        BYTE           N02     En5   v036
         BYTE   W03
-        BYTE           N03     Dn4   v032
+        BYTE           N03     Dn5   v032
         BYTE   W03
-        BYTE                   En4   v028
+        BYTE                   En5   v028
         BYTE   W03
-        BYTE                   Dn4   v024
+        BYTE                   Dn5   v024
         BYTE   W03
-        BYTE           N02     En4   v020
+        BYTE           N02     En5   v020
         BYTE   W03
-        BYTE                   Dn4   v016
+        BYTE                   Dn5   v016
         BYTE   W03
-        BYTE           N03     En4   v012
+        BYTE           N03     En5   v012
         BYTE   W03
-        BYTE                   Dn4   v008
+        BYTE                   Dn5   v008
         BYTE   W24
         BYTE   W03
         BYTE   PEND
@@ -6164,12 +6129,10 @@ Principality_10_32:
 // 126   ----------------------------------------
         BYTE   W96
 // 127   ----------------------------------------
-        BYTE   W92
-        BYTE   W03
+        BYTE   W96
+// 128   ----------------------------------------
         BYTE   GoTo
          POIN2  Principality_10_LOOP
-        BYTE   W01
-// 128   ----------------------------------------
         BYTE   FINE
 
 //***************** Track 11 (Midi-Chn.12) *****************//
@@ -6178,7 +6141,8 @@ Principality_11:
         BYTE   KEYSH   Principality_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   116
-        BYTE           VOL     57
+        BYTE           VOL     42
+        BYTE           PAN     c_v-14
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W96
@@ -6213,9 +6177,9 @@ Principality_11_LOOP:
         BYTE   W96
 // 016   ----------------------------------------
 Principality_11_16:
-        BYTE           N03     Cn3   v127
+        BYTE           N03     Cn2   v127
         BYTE   W12
-        BYTE           N04     Cn3   v124
+        BYTE           N04     Cn2   v124
         BYTE   W84
         BYTE   PEND
 // 017   ----------------------------------------
@@ -6226,9 +6190,9 @@ Principality_11_16:
         BYTE   W96
 // 020   ----------------------------------------
 Principality_11_20:
-        BYTE           N04     Cn3   v116
+        BYTE           N04     Cn2   v116
         BYTE   W12
-        BYTE           N05     Cn3   v127
+        BYTE           N05     Cn2   v127
         BYTE   W84
         BYTE   PEND
 // 021   ----------------------------------------
@@ -6336,83 +6300,83 @@ Principality_11_20:
 // 071   ----------------------------------------
         BYTE   W96
 // 072   ----------------------------------------
-        BYTE           VOL     68
-        BYTE           N03     Cn3   v108
+        BYTE           VOL     56
+        BYTE           N03     Cn2   v108
         BYTE   W12
-        BYTE                   Cn3   v096
+        BYTE                   Cn2   v096
         BYTE   W12
-        BYTE                   Cn4   v108
+        BYTE                   Cn3   v108
         BYTE   W72
 // 073   ----------------------------------------
 Principality_11_73:
-        BYTE           N04     Cn3   v104
+        BYTE           N04     Cn2   v104
         BYTE   W12
-        BYTE           N05     Cn3   v092
+        BYTE           N05     Cn2   v092
         BYTE   W12
-        BYTE                   Gn2   v096
+        BYTE                   Gn1   v096
         BYTE   W72
         BYTE   PEND
 // 074   ----------------------------------------
 Principality_11_74:
-        BYTE           N04     Cn3   v108
+        BYTE           N04     Cn2   v108
         BYTE   W12
-        BYTE                   Cn3   v096
+        BYTE                   Cn2   v096
         BYTE   W12
-        BYTE                   Cn4   v108
+        BYTE                   Cn3   v108
         BYTE   W72
         BYTE   PEND
 // 075   ----------------------------------------
 Principality_11_75:
-        BYTE           N04     Cn3   v108
+        BYTE           N04     Cn2   v108
         BYTE   W12
-        BYTE           N05     Cn3   v100
+        BYTE           N05     Cn2   v100
         BYTE   W12
-        BYTE                   Gn2
+        BYTE                   Gn1
         BYTE   W72
         BYTE   PEND
 // 076   ----------------------------------------
 Principality_11_76:
-        BYTE           N04     Cn3   v100
+        BYTE           N04     Cn2   v100
         BYTE   W12
-        BYTE                   Cn3   v096
+        BYTE                   Cn2   v096
         BYTE   W12
-        BYTE                   Cn4   v112
+        BYTE                   Cn3   v112
         BYTE   W72
         BYTE   PEND
 // 077   ----------------------------------------
 Principality_11_77:
-        BYTE           N04     Cn3   v096
+        BYTE           N04     Cn2   v096
         BYTE   W12
         BYTE           N05
         BYTE   W12
-        BYTE                   Gn2
+        BYTE                   Gn1
         BYTE   W72
         BYTE   PEND
 // 078   ----------------------------------------
 Principality_11_78:
-        BYTE           N04     Cn3   v104
+        BYTE           N04     Cn2   v104
         BYTE   W12
-        BYTE                   Cn3   v096
+        BYTE                   Cn2   v096
         BYTE   W12
-        BYTE                   Cn4   v108
+        BYTE                   Cn3   v108
         BYTE   W72
         BYTE   PEND
 // 079   ----------------------------------------
 Principality_11_79:
-        BYTE           N04     Cn3   v100
+        BYTE           N04     Cn2   v100
         BYTE   W12
-        BYTE                   Cn3   v096
+        BYTE                   Cn2   v096
         BYTE   W12
-        BYTE           N01     An2   v084
-        BYTE           N04     Gn2   v096
+        BYTE           N01     An1   v084
+        BYTE           N04     Gn1   v096
         BYTE   W72
         BYTE   PEND
 // 080   ----------------------------------------
-        BYTE           N03     Cn3   v108
+        BYTE           N03     Cn2   v108
         BYTE   W12
-        BYTE                   Cn3   v096
+        BYTE                   Cn2   v096
         BYTE   W12
-        BYTE                   Cn4   v108
+        BYTE                   Cn3   v108
         BYTE   W72
 // 081   ----------------------------------------
         BYTE   PATT
@@ -6514,13 +6478,11 @@ Principality_11_79:
 // 126   ----------------------------------------
         BYTE   W96
 // 127   ----------------------------------------
-        BYTE   W92
-        BYTE   W03
-        BYTE           VOL     57
+        BYTE   W96
+// 128   ----------------------------------------
+        BYTE           VOL     42
         BYTE   GoTo
          POIN2  Principality_11_LOOP
-        BYTE   W01
-// 128   ----------------------------------------
         BYTE   FINE
 
 //***************** Track 12 (Midi-Chn.13) *****************//
@@ -6529,7 +6491,8 @@ Principality_12:
         BYTE   KEYSH   Principality_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   44
-        BYTE           VOL     73
+        BYTE           VOL     62
+        BYTE           PAN     c_v-38
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W96
@@ -6873,12 +6836,10 @@ Principality_12_75:
 // 126   ----------------------------------------
         BYTE   W96
 // 127   ----------------------------------------
-        BYTE   W92
-        BYTE   W03
+        BYTE   W96
+// 128   ----------------------------------------
         BYTE   GoTo
          POIN2  Principality_12_LOOP
-        BYTE   W01
-// 128   ----------------------------------------
         BYTE   FINE
 
 //***************** Track 13 (Midi-Chn.14) *****************//
@@ -6887,7 +6848,8 @@ Principality_13:
         BYTE   KEYSH   Principality_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   46
-        BYTE           VOL     72
+        BYTE           VOL     61
+        BYTE           PAN     c_v-34
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W96
@@ -7594,11 +7556,10 @@ Principality_13_59:
         BYTE                   Gn4
         BYTE           N03     En4
         BYTE           N03     Bn3
-        BYTE   W23
+        BYTE   W24
+// 128   ----------------------------------------
         BYTE   GoTo
          POIN2  Principality_13_LOOP
-        BYTE   W01
-// 128   ----------------------------------------
         BYTE   FINE
 
 //***************** Track 14 (Midi-Chn.15) *****************//
@@ -7607,7 +7568,8 @@ Principality_14:
         BYTE   KEYSH   Principality_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   79
-        BYTE           VOL     63
+        BYTE           VOL     49
+        BYTE           PAN     c_v-28
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W96
@@ -8016,12 +7978,10 @@ Principality_14_23:
 // 126   ----------------------------------------
         BYTE   W96
 // 127   ----------------------------------------
-        BYTE   W92
-        BYTE   W03
+        BYTE   W96
+// 128   ----------------------------------------
         BYTE   GoTo
          POIN2  Principality_14_LOOP
-        BYTE   W01
-// 128   ----------------------------------------
         BYTE   FINE
 
 
