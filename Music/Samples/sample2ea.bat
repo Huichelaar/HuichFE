@@ -1,0 +1,1 @@
+Python "sample2ea.py" -i "%~dpn1.wav" -o "%~dpn1.event"

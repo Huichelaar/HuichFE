@@ -1,0 +1,53 @@
+#define SongTableOffset  0x224470
+#define SongTable(index,SongPointer,Group) "PUSH; ORG SongTableOffset+(8*index); POIN SongPointer; SHORT Group Group; POP"
+SongTable(0,48_3,0)
+
+    #include "MPlayDef.event"
+
+    #define    loop_sfx_grp_48_3  48_3_map
+    #define    loop_sfx_pri_48_3  0
+    #define    loop_sfx_rev_48_3  0
+    #define    loop_sfx_mvl_48_3  127
+    #define    loop_sfx_key_48_3  0
+    #define    loop_sfx_tbs_48_3  1
+    #define    loop_sfx_exg_48_3  0
+    #define    loop_sfx_cmp_48_3  1
+
+    ALIGN 4
+
+loop_sfx_1:
+    BYTE        VOL     127*loop_sfx_mvl/mxv
+    BYTE    KEYSH   loop_sfx_key_48_3+0
+    BYTE        VOICE   0
+    BYTE        TIE     Cn3   v064
+    BYTE    W96
+loop_sfx_1_B1:
+    BYTE    W96
+    BYTE    W96
+    BYTE    GoTo
+     POIN2    loop_sfx_1_B1
+loop_sfx_1_B2:
+    BYTE    W06
+    BYTE        EOT     Cn3 
+    BYTE    FINE
+
+    ALIGN 4
+
+48_3:
+    BYTE    1    // NumTrks
+    BYTE    0    // NumBlks
+    BYTE    loop_sfx_pri_48_3    // Priority
+    BYTE    loop_sfx_rev_48_3    // Reverb.
+
+    POIN2    loop_sfx_grp_48_3
+
+    POIN2    loop_sfx_1
+
+    
+48_3_map:
+WORD $3c00
+POIN 48_3_wav
+WORD $FF00FF
+
+48_3_wav:
+#incbin "48_3.bin"

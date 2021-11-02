@@ -86,6 +86,7 @@ PLAN, Meals. Can feed any unit one or zero meals in prep screen. Costs food-mate
   - +2 Mag, -1 Spd.
   - Meals that have effects which overlap with fortmaster abilities & skills.
   - +1 weapon exp.
+  - Status condition immunity. (from Absolution)
 
 PLAN, Need enough fortmaster abilities for at least 35 people (22 forts + 20 units = 42 playable units).
 23 abilities (including duplicates) lined out here atm (12 more to go!). Fort abilities do stack.

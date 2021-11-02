@@ -110,6 +110,7 @@ RSSample116_2:
 ALIGN 4
 RSSample116_3:
 #include "116_3.event"
+ALIGN 4
 
 // Drum
 
