@@ -6,219 +6,220 @@
 //Direct
 ALIGN 4
 YGI14Sample1:YGI30Sample1:
-#include "soundbank_014/1.event"
+#incbin "soundbank_014/1.dmp"
 ALIGN 4
 YGI14Sample5:YGI28Sample5:YGI30Sample5:YGI30Sample15:
-#include "soundbank_030/5.event"
+#incbin "soundbank_030/5.dmp"
 ALIGN 4
 YGI21Sample6:YGI28Sample6:YGI30Sample6:
-#include "soundbank_021/6.event"
+#incbin "soundbank_021/6.dmp"
 ALIGN 4
 YGI28Sample11:YGI30Sample11:
-#include "soundbank_028/11.event"
+#incbin "soundbank_028/11.dmp"
 ALIGN 4
 YGI14Sample17:YGI30Sample17:YGISCSample17:
-#include "soundbank_014/17.event"
+#incbin "soundbank_014/17.dmp"
 ALIGN 4
 YGI28Sample21:YGI14Sample22:YGI21Sample22:YGI28Sample22:YGI30Sample22:YGISCSample22:YGI14Sample101:YGI30Sample101:
-#include "soundbank_030/22.event"
+#incbin "soundbank_030/22.dmp"
 ALIGN 4
 YGI34Sample24:
-#include "soundbank_034/24.event"
+#incbin "soundbank_034/24.dmp"
 ALIGN 4
 YGI28Sample32:YGI30Sample32:
-#include "soundbank_028/32.event"
+#incbin "soundbank_028/32.dmp"
 ALIGN 4
 YGI40Sample40:
-#include "soundbank_040/KaibaTurn.event"
+#incbin "soundbank_040/KaibaTurn.dmp"
 ALIGN 4
 YGI21Sample51:YGI28Sample51:YGI30Sample51:YGI30Sample56:YGI30Sample57:
-#include "soundbank_028/51.event"
+#incbin "soundbank_028/51.dmp"
 ALIGN 4
 YGI28Sample52:YGI30Sample52:YGI30Sample53:YGI30Sample54:YGI30Sample55:
-#include "soundbank_030/52.event"
+#incbin "soundbank_030/52.dmp"
 ALIGN 4
 YGI30Sample58:YGI21Sample59:YGI28Sample59:YGI30Sample59:
-#include "soundbank_021/59.event"
+#incbin "soundbank_021/59.dmp"
 ALIGN 4
 YGI14Sample63:YGI21Sample63:YGI28Sample63:YGI30Sample63:YGI14Sample64:YGI21Sample64:YGI28Sample64:YGI30Sample64:YGI14Sample65:YGI14Sample66:
-#include "soundbank_014/66.event"
+#incbin "soundbank_014/66.dmp"
 ALIGN 4
 YGI14Sample87:YGI30Sample87:YGISCSample87:YGI14Sample99:YGI21Sample99:YGI28Sample99:YGI30Sample99:
-#include "soundbank_030/99.event"
+#incbin "soundbank_030/99.dmp"
 ALIGN 4
 YGISCSample92:
-#include "soundbank_SC/92.event"
+#incbin "soundbank_SC/92.dmp"
 ALIGN 4
 YGI14Sample93:YGI30Sample93:YGISCSample93:
-#include "soundbank_SC/93.event"
+#incbin "soundbank_SC/93.dmp"
 ALIGN 4
 YGI14Sample95:YGI30Sample95:
-#include "soundbank_014/95.event"
+#incbin "soundbank_014/95.dmp"
 ALIGN 4
 YGI39Sample105:
-#include "soundbank_039/105.event"
+#incbin "soundbank_039/105.dmp"
 ALIGN 4
 YGI14Sample108:YGI21Sample108:YGI28Sample108:YGI30Sample108:
-#include "soundbank_030/108.event"
+#incbin "soundbank_030/108.dmp"
 ALIGN 4
 YGI39Sample117:
-#include "soundbank_039/117.event"
+#incbin "soundbank_039/117.dmp"
 ALIGN 4
 YGI39Sample118:
-#include "soundbank_039/118.event"
+#incbin "soundbank_039/118.dmp"
 ALIGN 4
 YGI39Sample119:
-#include "soundbank_039/119.event"
+#incbin "soundbank_039/119.dmp"
 
 
 //Multisample
 ALIGN 4
 YGI14Sample2_1:YGI30Sample2_1:YGI14Sample3_1:YGI21Sample3_1:YGI30Sample3_1:
-#include "soundbank_030/2_1.event"
+#incbin "soundbank_030/2_1.dmp"
 ALIGN 4
 YGI14Sample2_2:YGI30Sample2_2:YGI14Sample3_2:YGI21Sample3_2:YGI30Sample3_2:
-#include "soundbank_030/2_2.event"
+#incbin "soundbank_030/2_2.dmp"
 
 ALIGN 4
 YGI14Sample4_1:YGI21Sample4_1:YGI30Sample4_1:YGI21Sample10_1:YGI30Sample10_1:
-#include "soundbank_014/4_1.event"
+#incbin "soundbank_014/4_1.dmp"
 ALIGN 4
 YGI14Sample4_2:YGI21Sample4_2:YGI30Sample4_2:YGI21Sample10_2:YGI30Sample10_2:
-#include "soundbank_014/4_2.event"
+#incbin "soundbank_014/4_2.dmp"
 ALIGN 4
 YGI14Sample4_3:YGI21Sample4_3:YGI30Sample4_3:YGI30Sample10_3:YGI21Sample10_3:
-#include "soundbank_014/4_3.event"
+#incbin "soundbank_014/4_3.dmp"
 
 ALIGN 4
 YGISCSample86_2:
-#include "soundbank_SC/86_2.event"
+#incbin "soundbank_SC/86_2.dmp"
 ALIGN 4
 YGISCSample86_3:
-#include "soundbank_SC/86_3.event"
+#incbin "soundbank_SC/86_3.dmp"
 ALIGN 4
 YGISCSample86_4:
-#include "soundbank_SC/86_4.event"
+#incbin "soundbank_SC/86_4.dmp"
 ALIGN 4
 YGISCSample86_5:
-#include "soundbank_SC/86_5.event"
+#incbin "soundbank_SC/86_5.dmp"
 
 ALIGN 4
 YGI14Sample89_1:YGI21Sample89_1:YGI28Sample89_1:YGI30Sample89_1:YGISCSample89_1:YGI14Sample110_1:YGI30Sample110_1:
-#include "soundbank_030/89_1.event"
+#incbin "soundbank_030/89_1.dmp"
 ALIGN 4
 YGI14Sample89_2:YGI21Sample89_2:YGI28Sample89_2:YGI30Sample89_2:YGISCSample89_2:YGI14Sample110_2:YGI30Sample110_2:
-#include "soundbank_030/89_2.event"
+#incbin "soundbank_030/89_2.dmp"
 ALIGN 4
 YGI14Sample89_3:YGI21Sample89_3:YGI28Sample89_3:YGI30Sample89_3:
-#include "soundbank_030/89_3.event"
+#incbin "soundbank_030/89_3.dmp"
 
 ALIGN 4
 YGISCSample90_1:YGI14Sample105_1:YGI21Sample105_1:YGI28Sample105_1:YGI30Sample105_1:
-#include "soundbank_030/105_1.event"
+#incbin "soundbank_030/105_1.dmp"
 ALIGN 4
 YGISCSample90_2:YGI14Sample105_2:YGI21Sample105_2:YGI28Sample105_2:YGI30Sample105_2:
-#include "soundbank_030/105_2.event"
+#incbin "soundbank_030/105_2.dmp"
 ALIGN 4
 YGISCSample90_3:YGI14Sample105_3:YGI21Sample105_3:YGI28Sample105_3:YGI30Sample105_3:
-#include "soundbank_030/105_3.event"
+#incbin "soundbank_030/105_3.dmp"
 ALIGN 4
 YGISCSample90_4:YGI14Sample105_4:YGI21Sample105_4:YGI28Sample105_4:YGI30Sample105_4:
-#include "soundbank_030/105_4.event"
+#incbin "soundbank_030/105_4.dmp"
 ALIGN 4
 YGISCSample90_5:YGI14Sample105_5:YGI21Sample105_5:YGI28Sample105_5:YGI30Sample105_5:
-#include "soundbank_030/105_5.event"
+#incbin "soundbank_030/105_5.dmp"
 
 ALIGN 4
 YGI14Sample98_1:YGI21Sample98_1:YGI28Sample98_1:YGI30Sample98_1:YGI14Sample113_1:YGI21Sample113_1:YGI28Sample113_1:YGI30Sample113_1:YGI30Sample114_1:
-#include "soundbank_030/98_1.event"
+#incbin "soundbank_030/98_1.dmp"
 ALIGN 4
 YGI14Sample98_2:YGI21Sample98_2:YGI28Sample98_2:YGI30Sample98_2:YGI14Sample113_2:YGI21Sample113_2:YGI28Sample113_2:YGI30Sample113_2:YGI30Sample114_2:
-#include "soundbank_030/98_2.event"
+#incbin "soundbank_030/98_2.dmp"
 ALIGN 4
 YGI14Sample98_3:YGI21Sample98_3:YGI28Sample98_3:YGI30Sample98_3:YGI14Sample113_3:YGI21Sample113_3:YGI28Sample113_3:YGI30Sample113_3:YGI30Sample114_3:
-#include "soundbank_030/98_3.event"
+#incbin "soundbank_030/98_3.dmp"
 
 ALIGN 4
 YGISCSample100_1:
-#include "soundbank_SC/100_1.event"
+#incbin "soundbank_SC/100_1.dmp"
 ALIGN 4
 YGISCSample100_2:
-#include "soundbank_SC/100_2.event"
+#incbin "soundbank_SC/100_2.dmp"
 ALIGN 4
 YGISCSample100_3:
-#include "soundbank_SC/100_3.event"
+#incbin "soundbank_SC/100_3.dmp"
 ALIGN 4
 YGISCSample100_4:
-#include "soundbank_SC/100_4.event"
+#incbin "soundbank_SC/100_4.dmp"
 ALIGN 4
 YGISCSample100_5:
-#include "soundbank_SC/100_5.event"
+#incbin "soundbank_SC/100_5.dmp"
 
 ALIGN 4
 YGI14Sample103_1:YGI21Sample103_1:YGI28Sample103_1:YGI30Sample103_1:YGI14Sample112_1:YGI30Sample112_1:
-#include "soundbank_030/112_1.event"
+#incbin "soundbank_030/112_1.dmp"
 ALIGN 4
 YGI14Sample103_2:YGI21Sample103_2:YGI28Sample103_2:YGI30Sample103_2:YGI14Sample112_2:YGI30Sample112_2:
-#include "soundbank_030/112_2.event"
+#incbin "soundbank_030/112_2.dmp"
 ALIGN 4
 YGI14Sample103_3:YGI21Sample103_3:YGI28Sample103_3:YGI30Sample103_3:YGI14Sample112_3:YGI30Sample112_3:
-#include "soundbank_030/112_3.event"
+#incbin "soundbank_030/112_3.dmp"
 ALIGN 4
 YGI14Sample103_4:YGI21Sample103_4:YGI28Sample103_4:YGI30Sample103_4:YGI14Sample112_4:YGI30Sample112_4:
-#include "soundbank_030/112_4.event"
+#incbin "soundbank_030/112_4.dmp"
 ALIGN 4
 YGI14Sample103_5:YGI21Sample103_5:YGI28Sample103_5:YGI30Sample103_5:YGI14Sample112_5:YGI30Sample112_5:
-#include "soundbank_030/112_5.event"
+#incbin "soundbank_030/112_5.dmp"
 
 ALIGN 4
 YGI14Sample110_3:YGI30Sample110_3:
-#include "soundbank_014/110_3.event"
+#incbin "soundbank_014/110_3.dmp"
 
 
 //Drum
 ALIGN 4
 YGI30SampleDrum1:
-#include "soundbank_030/drum1.event"
+#incbin "soundbank_030/drum1.dmp"
 ALIGN 4
 YGI30SampleDrum36:
-#include "soundbank_030/drum36.event"
+#incbin "soundbank_030/drum36.dmp"
 ALIGN 4
 YGI30SampleDrum37:
-#include "soundbank_030/drum37.event"
+#incbin "soundbank_030/drum37.dmp"
 ALIGN 4
 YGI30SampleDrum38:
-#include "soundbank_030/drum38.event"
+#incbin "soundbank_030/drum38.dmp"
 ALIGN 4
 YGI30SampleDrum41:
-#include "soundbank_030/drum41.event"
+#incbin "soundbank_030/drum41.dmp"
 ALIGN 4
 YGI30SampleDrum42:
-#include "soundbank_030/drum42.event"
+#incbin "soundbank_030/drum42.dmp"
 ALIGN 4
 YGI30SampleDrum44:
-#include "soundbank_030/drum44.event"
+#incbin "soundbank_030/drum44.dmp"
 ALIGN 4
 YGI30SampleDrum49:
-#include "soundbank_030/drum49.event"
+#incbin "soundbank_030/drum49.dmp"
 ALIGN 4
 YGI30SampleDrum56:
-#include "soundbank_030/drum56.event"
+#incbin "soundbank_030/drum56.dmp"
 ALIGN 4
 YGI30SampleDrum59:
-#include "soundbank_030/drum59.event"
+#incbin "soundbank_030/drum59.dmp"
 ALIGN 4
 YGI30SampleDrum83:
-#include "soundbank_030/drum83.event"
+#incbin "soundbank_030/drum83.dmp"
 ALIGN 4
 YGI30SampleDrum88:
-#include "soundbank_030/drum88.event"
+#incbin "soundbank_030/drum88.dmp"
 ALIGN 4
 YGI30SampleDrum93:
-#include "soundbank_030/drum93.event"
+#incbin "soundbank_030/drum93.dmp"
 ALIGN 4
 YGI30SampleDrum117:
-#include "soundbank_030/drum117.event"
+#incbin "soundbank_030/drum117.dmp"
+ALIGN 4
 
 
 // Multisample tables

@@ -10,7 +10,7 @@ Test if retreat also awards materials!
 
 TODO, remove Simon's Stubborn Cynic ability, and just make him lv14?
 
-If there's space left, leave chapter & game intro graphics uncompressed for faster load (on hardware).
+If there's space left, leave chapter & game intro graphics uncompressed for faster load (on hardware). Also make 256-col convo BGs (we should have 14 available palettes).
 
 Don't forget slim lance needs an upgrade to something with Shade or Shade+
 
@@ -85,8 +85,11 @@ PLAN, Meals. Can feed any unit one or zero meals in prep screen. Costs food-mate
   - +2 Str, -1 Spd.
   - +2 Mag, -1 Spd.
   - Meals that have effects which overlap with fortmaster abilities & skills.
+    - staffrange +1
+    - others...
   - +1 weapon exp.
   - Status condition immunity. (from Absolution)
+  - Bowrange+1
 
 PLAN, Need enough fortmaster abilities for at least 35 people (22 forts + 20 units = 42 playable units).
 23 abilities (including duplicates) lined out here atm (12 more to go!). Fort abilities do stack.

@@ -4,112 +4,112 @@
 //Multisample
 ALIGN 4
 RSSample44_2:
-#include "44_2.event"
+#incbin "44_2.dmp"
 ALIGN 4
 RSSample44_3:
-#include "44_3.event"
+#incbin "44_3.dmp"
 
 ALIGN 4
 RSSample45_1:
-#include "45_1.event"
+#incbin "45_1.dmp"
 ALIGN 4
 RSSample45_2:
-#include "45_2.event"
+#incbin "45_2.dmp"
 ALIGN 4
 RSSample45_3:
-#include "45_3.event"
+#incbin "45_3.dmp"
 ALIGN 4
 RSSample45_4:
-#include "45_4.event"
+#incbin "45_4.dmp"
 
 ALIGN 4
 RSSample46_3:
-#include "46_3.event"
+#incbin "46_3.dmp"
 ALIGN 4
 RSSample46_4:
-#include "46_4.event"
+#incbin "46_4.dmp"
 
 ALIGN 4
 RSSample48_0:
-#include "48_0.event"
+#incbin "48_0.dmp"
 ALIGN 4
 RSSample48_1:
-#include "48_1.event"
+#incbin "48_1.dmp"
 ALIGN 4
 RSSample48_2:
-#include "48_2.event"
+#incbin "48_2.dmp"
 ALIGN 4
 RSSample48_3:
-#include "48_3.event"
+#incbin "48_3.dmp"
 
 ALIGN 4
 RSSample49_1:
-#include "49_1.event"
+#incbin "49_1.dmp"
 ALIGN 4
 RSSample49_2:
-#include "49_2.event"
+#incbin "49_2.dmp"
 
 ALIGN 4
 RSSample57_2:
-#include "57_2.event"
+#incbin "57_2.dmp"
 ALIGN 4
 RSSample57_3:
-#include "57_3.event"
+#incbin "57_3.dmp"
 
 ALIGN 4
 RSSample60_2:
-#include "60_2.event"
+#incbin "60_2.dmp"
 ALIGN 4
 RSSample60_3:
-#include "60_3.event"
+#incbin "60_3.dmp"
 ALIGN 4
 RSSample60_4:
-#include "60_4.event"
+#incbin "60_4.dmp"
 
 ALIGN 4
 RSSample70_1:
-#include "70_1.event"
+#incbin "70_1.dmp"
 
 ALIGN 4
 RSSample73_5:
-#include "73_5.event"
+#incbin "73_5.dmp"
 
 ALIGN 4
 RSSample79_3:
-#include "79_3.event"
+#incbin "79_3.dmp"
 ALIGN 4
 RSSample79_4:
-#include "79_4.event"
+#incbin "79_4.dmp"
 
 ALIGN 4
 RSSample100_2:
-#include "100_2.event"
+#incbin "100_2.dmp"
 ALIGN 4
 RSSample100_3:
-#include "100_3.event"
+#incbin "100_3.dmp"
 ALIGN 4
 RSSample100_4:
-#include "100_4.event"
+#incbin "100_4.dmp"
 ALIGN 4
 RSSample100_5:
-#include "100_5.event"
+#incbin "100_5.dmp"
 
 ALIGN 4
 RSSample102_1:
-#include "102_1.event"
+#incbin "102_1.dmp"
 ALIGN 4
 RSSample102_2:
-#include "102_2.event"
+#incbin "102_2.dmp"
 
 ALIGN 4
 RSSample116_1:
-#include "116_1.event"
+#incbin "116_1.dmp"
 ALIGN 4
 RSSample116_2:
-#include "116_2.event"
+#incbin "116_2.dmp"
 ALIGN 4
 RSSample116_3:
-#include "116_3.event"
+#incbin "116_3.dmp"
 ALIGN 4
 
 // Drum

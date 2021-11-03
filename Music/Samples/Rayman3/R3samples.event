@@ -1,7 +1,8 @@
 //Direct
 ALIGN 4
 R3Sample53:
-#include "53.event"
+#incbin "53.dmp"
+ALIGN 4
 
 
 //Multisample

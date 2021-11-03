@@ -6,7 +6,8 @@
 //Direct
 ALIGN 4
 SfxSample0:
-#include "Knock.event"
+#incbin "Knock.dmp"
+ALIGN 4
 
 
 //Multisample

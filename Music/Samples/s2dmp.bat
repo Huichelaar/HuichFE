@@ -1,0 +1,1 @@
+Python "s2dmp.py" -i "%~dpn1.s" -o "%~dpn1.dmp"

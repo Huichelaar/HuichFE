@@ -1,0 +1,1 @@
+Python "wav2dmp.py" -i "%~dpn1.wav" -o "%~dpn1.dmp"

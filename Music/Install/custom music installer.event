@@ -50,6 +50,8 @@ SongTable(0xB,DesireBelow,1)
 SongTable(0xC,cave,0)
 #include "../Songs/song008.event"
 SongTable(0xD,song008,0)
+#include "../Songs/CloseQuarters.event"
+SongTable(0xE,CloseQuarters,1)
 #include "../Songs/song023.event"
 SongTable(0x25,song023,1)
 #include "../Songs/song033.event"

@@ -9,75 +9,76 @@
 //Multisample
 ALIGN 4
 PkmnBWSample3_0:
-#include "BW/3_0.event"
+#incbin "BW/3_0.dmp"
 ALIGN 4
 PkmnBWSample3_1:
-#include "BW/3_1.event"
+#incbin "BW/3_1.dmp"
 
 //ALIGN 4
 //PkmnBWSample17_0:
-//#include "BW/17_0.event"
+//#incbin "BW/17_0.dmp"
 //ALIGN 4
 //PkmnBWSample17_1:
-//#include "BW/17_1.event"
+//#incbin "BW/17_1.dmp"
 //ALIGN 4
 //PkmnBWSample17_2:
-//#include "BW/17_2.event"
+//#incbin "BW/17_2.dmp"
 
 ALIGN 4
 PkmnBWSample30_0:
-#include "BW/30_0.event"
+#incbin "BW/30_0.dmp"
 ALIGN 4
 PkmnBWSample30_1:
-#include "BW/30_1.event"
+#incbin "BW/30_1.dmp"
 ALIGN 4
 PkmnBWSample30_2:
-#include "BW/30_2.event"
+#incbin "BW/30_2.dmp"
 ALIGN 4
 PkmnBWSample30_3:
-#include "BW/30_3.event"
+#incbin "BW/30_3.dmp"
 
 ALIGN 4
 PkmnBWSample56_0:
-#include "BW/56_0.event"
+#incbin "BW/56_0.dmp"
 ALIGN 4
 PkmnBWSample56_1:
-#include "BW/56_1.event"
+#incbin "BW/56_1.dmp"
 ALIGN 4
 PkmnBWSample56_2:
-#include "BW/56_2.event"
+#incbin "BW/56_2.dmp"
 ALIGN 4
 PkmnBWSample56_3:
-#include "BW/56_3.event"
+#incbin "BW/56_3.dmp"
 ALIGN 4
 PkmnBWSample56_4:
-#include "BW/56_4.event"
+#incbin "BW/56_4.dmp"
 
 ALIGN 4
 PkmnBWSample75_0:
-#include "BW/75_0.event"
+#incbin "BW/75_0.dmp"
 ALIGN 4
 PkmnBWSample75_1:
-#include "BW/75_1.event"
+#incbin "BW/75_1.dmp"
 ALIGN 4
 PkmnBWSample75_2:
-#include "BW/75_2.event"
+#incbin "BW/75_2.dmp"
 ALIGN 4
 PkmnBWSample75_3:
-#include "BW/75_3.event"
+#incbin "BW/75_3.dmp"
 
 ALIGN 4
 PkmnBWSample80_1:
-#include "BW/80_1.event"
+#incbin "BW/80_1.dmp"
 ALIGN 4
 PkmnBWSample80_2:
-#include "BW/80_2.event"
+#incbin "BW/80_2.dmp"
 ALIGN 4
 PkmnBWSample80_3:
-#include "BW/80_3.event"
+#incbin "BW/80_3.dmp"
 ALIGN 4
 PkmnBWSample80_4:
-#include "BW/80_4.event"
+#incbin "BW/80_4.dmp"
+ALIGN 4
 
 
 //Drum
