@@ -1,0 +1,139 @@
+//Event file generated from Sappy .s format.
+        #include "MPlayDef.event"
+
+        #define    AudioTest_grp  OSRS
+        #define    AudioTest_pri  0
+        #define    AudioTest_rev  0
+        #define    AudioTest_key  0
+
+        // .rodata
+        // AudioTest
+        ALIGN 4
+
+//****************** Track 0 (Midi-Chn.0) ******************//
+
+AudioTest_0:
+        BYTE   KEYSH   AudioTest_key+0
+// 000   ----------------------------------------
+        BYTE   TEMPO   100/2
+        BYTE           VOICE   45
+        BYTE           VOL     79
+        BYTE           N12     Cn1   v096
+        BYTE   W12
+        BYTE                   Cs1
+        BYTE   W12
+        BYTE                   Dn1
+        BYTE   W12
+        BYTE                   Ds1
+        BYTE   W12
+        BYTE                   En1
+        BYTE   W12
+        BYTE                   Fn1
+        BYTE   W12
+        BYTE                   Fs1
+        BYTE   W12
+        BYTE                   Gn1
+        BYTE   W12
+// 001   ----------------------------------------
+        BYTE                   Gs1
+        BYTE   W12
+        BYTE                   An1
+        BYTE   W12
+        BYTE                   As1
+        BYTE   W12
+        BYTE                   Bn1
+        BYTE   W12
+        BYTE                   Cn2
+        BYTE   W12
+        BYTE                   Cs2
+        BYTE   W12
+        BYTE                   Dn2
+        BYTE   W12
+        BYTE                   Ds2
+        BYTE   W12
+// 002   ----------------------------------------
+        BYTE                   En2
+        BYTE   W12
+        BYTE                   Fn2
+        BYTE   W12
+        BYTE                   Fs2
+        BYTE   W12
+        BYTE                   Gn2
+        BYTE   W12
+        BYTE                   Gs2
+        BYTE   W12
+        BYTE                   An2
+        BYTE   W12
+        BYTE                   As2
+        BYTE   W12
+        BYTE                   Bn2
+        BYTE   W12
+// 003   ----------------------------------------
+        BYTE                   Cn3
+        BYTE   W12
+        BYTE                   Cs3
+        BYTE   W12
+        BYTE                   Dn3
+        BYTE   W12
+        BYTE                   Ds3
+        BYTE   W12
+        BYTE                   En3
+        BYTE   W12
+        BYTE                   Fn3
+        BYTE   W12
+        BYTE                   Fs3
+        BYTE   W12
+        BYTE                   Gn3
+        BYTE   W12
+// 004   ----------------------------------------
+        BYTE                   Gs3
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W12
+        BYTE                   As3
+        BYTE   W12
+        BYTE                   Bn3
+        BYTE   W12
+        BYTE                   Cn4
+        BYTE   W12
+        BYTE                   Cs4
+        BYTE   W12
+        BYTE                   Dn4
+        BYTE   W12
+        BYTE                   Ds4
+        BYTE   W12
+// 005   ----------------------------------------
+        BYTE                   En4
+        BYTE   W12
+        BYTE                   Fn4
+        BYTE   W12
+        BYTE                   Fs4
+        BYTE   W12
+        BYTE                   Gn4
+        BYTE   W12
+        BYTE                   Gs4
+        BYTE   W12
+        BYTE                   An4
+        BYTE   W12
+        BYTE                   As4
+        BYTE   W12
+        BYTE                   Bn4
+        BYTE   W12
+// 006   ----------------------------------------
+        BYTE   FINE
+
+
+//********************** End of Song ***********************//
+
+        ALIGN 4
+AudioTest:
+        BYTE   1                       // Num Tracks
+        BYTE   0                       // Unknown
+        BYTE   AudioTest_pri           // Priority
+        BYTE   AudioTest_rev           // Reverb
+
+        POIN2   AudioTest_grp          
+
+        POIN2   AudioTest_0
+
+        

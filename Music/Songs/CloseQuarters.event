@@ -15,6 +15,7 @@
 CloseQuarters_0:
         BYTE   KEYSH   CloseQuarters_key+0
 // 000   ----------------------------------------
+        BYTE   TEMPO   150/2
         BYTE           VOICE   4
         BYTE           VOL     63
         BYTE           PAN     c_v-22

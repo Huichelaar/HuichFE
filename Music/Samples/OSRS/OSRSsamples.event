@@ -110,9 +110,22 @@ RSSample116_2:
 ALIGN 4
 RSSample116_3:
 #incbin "116_3.dmp"
-ALIGN 4
+
 
 // Drum
+ALIGN 4
+RSSampleDrum35:
+#incbin "drumkit/35.dmp"
+ALIGN 4
+RSSampleDrum38:
+#incbin "drumkit/38.dmp"
+ALIGN 4
+RSSampleDrum50:
+#incbin "drumkit/50.dmp"
+ALIGN 4
+RSSampleDrum69:
+#incbin "drumkit/69.dmp"
+ALIGN 4
 
 
 // Multisample tables
