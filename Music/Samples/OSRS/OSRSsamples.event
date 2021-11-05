@@ -123,8 +123,41 @@ ALIGN 4
 RSSampleDrum50:
 #incbin "drumkit/50.dmp"
 ALIGN 4
+RSSampleDrum63:
+#incbin "drumkit/63.dmp"
+ALIGN 4
+RSSampleDrum65:
+#incbin "drumkit/65.dmp"
+ALIGN 4
+RSSampleDrum66:
+#incbin "drumkit/66.dmp"
+ALIGN 4
+RSSampleDrum67:
+#incbin "drumkit/67.dmp"
+ALIGN 4
+RSSampleDrum68:
+#incbin "drumkit/68.dmp"
+ALIGN 4
 RSSampleDrum69:
 #incbin "drumkit/69.dmp"
+ALIGN 4
+RSSampleDrum70:
+#incbin "drumkit/70.dmp"
+ALIGN 4
+RSSampleDrum71:
+#incbin "drumkit/71.dmp"
+ALIGN 4
+RSSampleDrum72:
+#incbin "drumkit/72.dmp"
+ALIGN 4
+RSSampleDrum73:
+#incbin "drumkit/73.dmp"
+ALIGN 4
+RSSampleDrum78:
+#incbin "drumkit/78.dmp"
+ALIGN 4
+RSSampleDrum79:
+#incbin "drumkit/79.dmp"
 ALIGN 4
 
 
