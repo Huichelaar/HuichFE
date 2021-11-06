@@ -264,6 +264,7 @@ VoiceDummy(soundbank_030,0x7e)
 //127
 VoiceDrum(soundbank_030,0x7f,YGI30drumtable)
 
+
 YGI14drumtable:YGI21drumtable:YGI28drumtable:YGI30drumtable:YGISCdrumtable:
 //0
 VoiceDummy(YGI30drumtable,0x0)

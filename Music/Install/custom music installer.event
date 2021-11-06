@@ -40,6 +40,8 @@ SongTable(0x1,song027,0)
 SongTable(0x2,song410,0)
 #include "../Songs/SEQ_BGM_DIVING.event"
 SongTable(0x3,SEQ_BGM_DIVING,1)
+#include "../Songs/DarkSong.event"
+SongTable(0x4,DarkSong,0)
 #include "../Songs/song500.event"
 SongTable(0x9,song500,1)
 #include "../Songs/Principality.event"
