@@ -16,7 +16,7 @@ AudioTest_0:
         BYTE   KEYSH   AudioTest_key+0
 // 000   ----------------------------------------
         BYTE   TEMPO   100/2
-        BYTE           VOICE   45
+        BYTE           VOICE   48
         BYTE           VOL     79
         BYTE           N12     Cn1   v096
         BYTE   W12

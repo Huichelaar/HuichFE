@@ -18,7 +18,6 @@ CloseQuarters_0:
         BYTE   TEMPO   150/2
         BYTE           VOICE   4
         BYTE           VOL     63
-        BYTE           PAN     c_v-22
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W96
@@ -534,7 +533,6 @@ CloseQuarters_1:
 // 000   ----------------------------------------
         BYTE           VOICE   45
         BYTE           VOL     70
-        BYTE           PAN     c_v+15
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W96
@@ -935,7 +933,6 @@ CloseQuarters_2:
 // 000   ----------------------------------------
         BYTE           VOICE   45
         BYTE           VOL     64
-        BYTE           PAN     c_v-26
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W96
@@ -1520,7 +1517,6 @@ CloseQuarters_3:
 // 000   ----------------------------------------
         BYTE           VOICE   65
         BYTE           VOL     52
-        BYTE           PAN     c_v-6
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W96
@@ -1859,7 +1855,6 @@ CloseQuarters_4:
 // 000   ----------------------------------------
         BYTE           VOICE   60
         BYTE           VOL     66
-        BYTE           PAN     c_v-38
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W96
@@ -2244,7 +2239,6 @@ CloseQuarters_5:
 // 000   ----------------------------------------
         BYTE           VOICE   52
         BYTE           VOL     49
-        BYTE           PAN     c_v-22
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W96
@@ -2571,7 +2565,6 @@ CloseQuarters_6:
 // 000   ----------------------------------------
         BYTE           VOICE   62
         BYTE           VOL     44
-        BYTE           PAN     c_v-26
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W96
@@ -3005,7 +2998,6 @@ CloseQuarters_7:
 // 000   ----------------------------------------
         BYTE           VOICE   13
         BYTE           VOL     71
-        BYTE           PAN     c_v+23
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W96
@@ -3390,7 +3382,6 @@ CloseQuarters_8:
 // 000   ----------------------------------------
         BYTE           VOICE   127
         BYTE           VOL     62
-        BYTE           PAN     c_v+1
         BYTE           N03     An3   v100
         BYTE   W06
         BYTE           N04
@@ -4240,7 +4231,6 @@ CloseQuarters_9:
 // 000   ----------------------------------------
         BYTE           VOICE   115
         BYTE           VOL     45
-        BYTE           PAN     c_v+31
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W96
@@ -4687,7 +4677,7 @@ CloseQuarters_9_LOOP:
         BYTE   PATT
          POIN2  CloseQuarters_9_41
 // 114   ----------------------------------------
-        BYTE           PAN     c_v+31
+        BYTE           PAN     c_v+0
         BYTE   GoTo
          POIN2  CloseQuarters_9_LOOP
         BYTE   FINE
@@ -4699,7 +4689,6 @@ CloseQuarters_10:
 // 000   ----------------------------------------
         BYTE           VOICE   62
         BYTE           VOL     0
-        BYTE           PAN     c_v-42
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W07
@@ -5075,7 +5064,6 @@ CloseQuarters_11:
 // 000   ----------------------------------------
         BYTE           VOICE   62
         BYTE           VOL     0
-        BYTE           PAN     c_v+41
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W07

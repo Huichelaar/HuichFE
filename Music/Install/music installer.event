@@ -51,7 +51,7 @@ Sound_Mixer_Dump:
 #incbin SoundMixer.bin
 */
 //voice table entry definitions
-  #define VoiceDirect(VoiceTable,VoiceIndex,BaseNote,Address,FixedFreq,IsForcedPan,Pan,EnvAtk,EnvDec,EnvSus,EnvRel) "ORG VoiceTable+VoiceIndex*0x0c; BYTE $00+FixedFreq*0x8 BaseNote $00 (IsForcedPan*0x80) | (IsForcedPan*Pan); POIN Address; BYTE EnvAtk EnvDec EnvSus EnvRel"
+  #define VoiceDirect(VoiceTable,VoiceIndex,BaseNote,Address,FixedFreq,IsForcedPan,Pan,EnvAtk,EnvDec,EnvSus,EnvRel) "ORG VoiceTable+VoiceIndex*0x0c; BYTE $00+FixedFreq*0x8 BaseNote $00 Pan+IsForcedPan*0x80; POIN Address; BYTE EnvAtk EnvDec EnvSus EnvRel"
   #define VoiceSquare1(VoiceTable,VoiceIndex,DutyCycle,NoteOffWithNoise,SweepTime,SweepShift,EnvAtk,EnvDec,EnvSus,EnvRel) "ORG VoiceTable+VoiceIndex*0x0c; BYTE $01+NoteOffWithNoise*8 $3c $00 SweepTime+SweepShift DutyCycle $00 $00 $00 EnvAtk EnvDec EnvSus EnvRel" 
   #define VoiceSquare2(VoiceTable,VoiceIndex,DutyCycle,NoteOffWithNoise,EnvAtk,EnvDec,EnvSus,EnvRel) "ORG VoiceTable+VoiceIndex*0x0c; BYTE $02+NoteOffWithNoise*8 $3c $00 $00 DutyCycle $00 $00 $00 EnvAtk EnvDec EnvSus EnvRel" 
   #define VoiceWave(VoiceTable,VoiceIndex,WaveData,NoteOffWithNoise,EnvAtk,EnvDec,EnvSus,EnvRel) "ORG VoiceTable+VoiceIndex*0x0c; BYTE $03+NoteOffWithNoise*8 $3c $00 $00; POIN WaveData; BYTE EnvAtk EnvDec EnvSus EnvRel"
@@ -250,9 +250,9 @@ VoiceMulti(MusicVoices,0x49,FluteTable,C4toC5Chart)
 //74 recorder (use 73 instead) - C4
 VoiceDirect(MusicVoices,0x4a,0x3c,0x04D373C,0x0,0x0,0x0,0xff,0x0,0xff,0xa5)
 //75 pan flute - C4
-VoiceDirect(MusicVoices,0x4b,0x3c,0x04D9314,0x0,0x0,0x0,0xff,0x0,0xff,0xa5)
+VoiceDirect(MusicVoices,0x4b,0x3c,0x04D9304,0x0,0x0,0x0,0xff,0x0,0xff,0xa5)
 //76 pan flute with lower attack (recommend use 75 instead) - C4
-VoiceDirect(MusicVoices,0x4c,0x3c,0x04D9314,0x0,0x0,0x0,0x30,0xfe,0x0,0xd0)
+VoiceDirect(MusicVoices,0x4c,0x3c,0x04D9304,0x0,0x0,0x0,0x30,0xfe,0x0,0xd0)
 //77 ocarina (shifted one octave up) - C4 (+1)
 VoiceDirect(MusicVoices,0x4d,0x3c,0x04BE7C0,0x0,0x0,0x0,0x30,0xfe,0x0,0x80)
 //78 clarinet c3 (use 71 instead) - C3
