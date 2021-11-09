@@ -7,45 +7,45 @@
 // Custom voicetable.
 ALIGN 4
 OSRS:
-//0
-VoiceDummy(OSRS,0x1)
-//1
-VoiceDummy(OSRS,0x1)
-//2
-VoiceDummy(OSRS,0x2)
-//3
-VoiceDummy(OSRS,0x3)
-//4
+//0 NIMAP 1
+VoiceDirect(OSRS,0x0,0x3c,0x02A8068,0x0,0x0,0x0,0xff,0xfc,0x40,0xd0)
+//1 NIMAP 0
+VoiceMulti(OSRS,0x1,PianoTable,PianoChart)
+//2 R3 12
+//VoiceDirect(OSRS,0x2,0x3c,R3Sample12,//0x0,0x0,0x0,0xff,0xfc,0x40,0xd0) TODO
+//3 like 2 but loops
+//VoiceDirect(OSRS,0x2,0x3c,R3Sample12Loop,//0x0,0x0,0x0,0xff,0xfc,0x40,0xd0) TODO
+//4 YGIReshef soundbank_30 41
 VoiceMulti(OSRS,0x4,RStable4,RSchart)
-//5
+//5 R3 16 Organ1
 VoiceDummy(OSRS,0x5)
-//6
+//6 NIMAP 15
 VoiceDummy(OSRS,0x6)
-//7
+//7 NIMAP 15 more immediate attack?
 VoiceDummy(OSRS,0x7)
-//8
+//8 NIMAP 11
 VoiceMulti(OSRS,0x8,RStable8,RSchart)
-//9
+//9 YGIReshef soundbank_30 2
 VoiceDummy(OSRS,0x9)
-//10
+//10 NIMAP 10
 VoiceDummy(OSRS,0xa)
-//11
+//11 DIVING 3
 VoiceDummy(OSRS,0xb)
-//12
+//12 NIMAP 13
 VoiceDummy(OSRS,0xc)
-//13
+//13 NIMAP 15
 VoiceMulti(OSRS,0xd,RStable13,RSchart)
-//14
+//14 OSRS 14
 VoiceMulti(OSRS,0xe,RStable14,RSchart)
-//15
+//15 R3 5
 VoiceDummy(OSRS,0xf)
-//16
+//16 DIVING 17
 VoiceDummy(OSRS,0x10)
-//17
+//17 R3 10
 VoiceDummy(OSRS,0x11)
-//18
+//18 NIMAP 18
 VoiceDummy(OSRS,0x12)
-//19
+//19 NIMAP 19
 VoiceDummy(OSRS,0x13)
 //20
 VoiceDummy(OSRS,0x14)

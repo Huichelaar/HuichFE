@@ -57,13 +57,13 @@ RSSample45_1:
 #incbin "45_1.dmp"
 ALIGN 4
 RSSample45_2:
-#incbin "45_2.dmp"
+#incbin "45_2_i.dmp"
 ALIGN 4
 RSSample45_3:
 #incbin "45_3.dmp"
 ALIGN 4
 RSSample45_4:
-#incbin "45_4.dmp"
+#incbin "45_4_i.dmp"
 
 ALIGN 4
 RSSample46_2:
