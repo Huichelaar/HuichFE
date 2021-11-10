@@ -47,47 +47,47 @@ VoiceDummy(OSRS,0x11)
 VoiceDummy(OSRS,0x12)
 //19 NIMAP 19
 VoiceDummy(OSRS,0x13)
-//20
+//20 NIMAP 20
 VoiceDummy(OSRS,0x14)
-//21
+//21 NIMAP 21 doesn't loop well so maybe OSRS 21
 VoiceDummy(OSRS,0x15)
-//22
+//22 NIMAP 59
 VoiceDummy(OSRS,0x16)
-//23
+//23 If room, OSRS 23, otherwise NIMAP 23
 VoiceDummy(OSRS,0x17)
-//24
+//24 YGIReshef soundbank_30 84. Set sustain to 0 to avoid loop.
 VoiceDummy(OSRS,0x18)
-//25
+//25 NIMAP 15, or just use OSRS 6 for this, 6 and 7.
 VoiceDummy(OSRS,0x19)
-//26
+//26 NIMAP 24
 VoiceDummy(OSRS,0x1a)
-//27
+//27 NIMAP 103, set sustain to 0.
 VoiceDummy(OSRS,0x1b)
-//28
+//28 YGIReshef soundbank_30 16, set sustain low
 VoiceDummy(OSRS,0x1c)
-//29
+//29 NIMAP 104
 VoiceDummy(OSRS,0x1d)
-//30
+//30 NIMAP 30
 VoiceDummy(OSRS,0x1e)
-//31
+//31 OSRS 31
 VoiceDummy(OSRS,0x1f)
-//32
+//32 NIMAP 2
 VoiceDirect(OSRS,0x20,0x3c,0x0227988,0x0,0x0,0x0,0x80,0x0,0xff,0xc0)
-//33
+//33 NIMAP 2
 VoiceDummy(OSRS,0x21)
-//34
+//34 YGIReshef soundbank_30 84 (again). Set sustain to 0 to avoid loop.
 VoiceDummy(OSRS,0x22)
-//35
+//35 R3 4
 VoiceDirect(OSRS,0x23,0x3c,0x0227988,0x0,0x0,0x0,0x80,0x0,0xff,0xc0)
-//36
+//36 NIMAP 36. OSRS 36 if enough space left.
 VoiceDummy(OSRS,0x24)
-//37
+//37 YGIReshef soundbank_30 17. OSRS 37 if enough space left.
 VoiceDummy(OSRS,0x25)
-//38
+//38 NIMAP 38
 VoiceDummy(OSRS,0x26)
-//39
+//39 NIMAP 39
 VoiceDummy(OSRS,0x27)
-//40
+//40 OSRS 40
 VoiceDummy(OSRS,0x28)
 //41
 VoiceDummy(OSRS,0x29)
@@ -125,7 +125,7 @@ VoiceDummy(OSRS,0x38)
 VoiceMulti(OSRS,0x39,RStable57,RSchart)
 //58
 VoiceDummy(OSRS,0x3a)
-//59
+//59 YGIReshef soundbank_30 101 (or 22, different envelope I think? Sustain seems louder)
 VoiceDummy(OSRS,0x3b)
 //60
 VoiceMulti(OSRS,0x3c,RStable60,RSchart)
