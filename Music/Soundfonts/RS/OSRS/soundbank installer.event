@@ -12,9 +12,9 @@ VoiceDirect(OSRS,0x0,0x3c,0x02A8068,0x0,0x0,0x0,0xff,0xfc,0x40,0xd0)
 //1 NIMAP 0
 VoiceMulti(OSRS,0x1,PianoTable,PianoChart)
 //2 R3 12
-//VoiceDirect(OSRS,0x2,0x3c,R3Sample12,//0x0,0x0,0x0,0xff,0xfc,0x40,0xd0) TODO
+VoiceDirect(OSRS,0x2,0x3c,R3Sample12,//0x0,0x0,0x0,0xff,0xfc,0x40,0xd0) TODO
 //3 like 2 but loops
-//VoiceDirect(OSRS,0x2,0x3c,R3Sample12Loop,//0x0,0x0,0x0,0xff,0xfc,0x40,0xd0) TODO
+VoiceDirect(OSRS,0x2,0x3c,R3Sample12Loop,//0x0,0x0,0x0,0xff,0xfc,0x40,0xd0) TODO
 //4 YGIReshef soundbank_30 41
 VoiceMulti(OSRS,0x4,RStable4,RSchart)
 //5 R3 16 Organ1
@@ -89,33 +89,33 @@ VoiceDummy(OSRS,0x26)
 VoiceDummy(OSRS,0x27)
 //40 OSRS 40
 VoiceDummy(OSRS,0x28)
-//41
+//41 NIMAP 51
 VoiceDummy(OSRS,0x29)
-//42
+//42 DIVING 30
 VoiceDummy(OSRS,0x2a)
-//43
+//43 CHAMPROAD 33
 VoiceDummy(OSRS,0x2b)
-//44
+//44 NIMAP 49
 VoiceMulti(OSRS,0x2c,RStable44,RSchart)
-//45
+//45 OSRS 45
 VoiceMulti(OSRS,0x2d,RStable45,RSchart)
-//46
+//46 YGIReshef soundbank_30 99
 VoiceMulti(OSRS,0x2e,RStable46,RSchart)
-//47
+//47 YGIReshef soundbank_30 116 partially, OSRS for lower notes.
 VoiceMulti(OSRS,0x2f,RStable47,RSchart)
-//48
+//48 OSRS 48
 VoiceMulti(OSRS,0x30,RStable48,RS48chart)
-//49
+//49 OSRS 48 but with longer attack?
 VoiceMulti(OSRS,0x31,RStable49,RSchart)
-//50
+//50 R3 17 (could you move it down an octave?)
 VoiceDummy(OSRS,0x32)
-//51
+//51 YGIReshef soundbank_30 51 (can you set a loop?)
 VoiceDummy(OSRS,0x33)
-//52
+//52 NIMAP 52
 VoiceMulti(OSRS,0x34,RStable52,RSchart)
-//53
+//53 DQMJ BANK_BGM_003 0
 VoiceDummy(OSRS,0x35)
-//54
+//54 DQMJ BANK_BGM_015 1
 VoiceDummy(OSRS,0x36)
 //55
 VoiceDummy(OSRS,0x37)
@@ -215,7 +215,7 @@ VoiceDummy(OSRS,0x65)
 VoiceMulti(OSRS,0x66,RStable102,RSchart)
 //103
 VoiceDummy(OSRS,0x67)
-//104
+//104 DIVING 75
 VoiceDummy(OSRS,0x68)
 //105
 VoiceDummy(OSRS,0x68)
