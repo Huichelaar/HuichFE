@@ -178,7 +178,7 @@ With additional credits to:
 
 # Music
 
-Songs used:
+## Songs
 - Fire Emblem Fates by Intelligent Systems.
   - Desire Below. Composed by Hiroki Morishita, arranged by Libera. I added some extra instruments to the MIDI.
 - Fire Emblem The Sacred Stones by Intelligent Systems.
@@ -201,6 +201,9 @@ Songs used:
 - Yu-Gi-Oh The Sacred Cards by Konami.
   - song027.
   - song033.
+
+## Soundfonts
+TODO. OSRS Orchestra hit was either recorded straight from the Sound Canvas VST or from an SC-88 soundfont.
 
 # Graphics
 

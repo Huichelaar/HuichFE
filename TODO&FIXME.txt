@@ -64,6 +64,10 @@ Seems like credits still get stuck at portraits sometimes. Need to find out how 
 
 credits: WyvKnight battle anim doesn't slide far back enough. Wyvern's snout is still visible. Increase how far battle anims slide to the right.
 
+circleseverywhere — Today at 03:59 (12-11-2021
+gravity tome: after combat whichever unit had lower con gets dragged to the other one
+Siege tome?
+
 If we need space:
   - Room for 0x2000 text entries. Can reduce this in repointedTextTable.event.
   - Some tables have entries they're not using, see Tables/TableOptions.s.
@@ -71,6 +75,7 @@ If we need space:
 
 CREDIT
   - Tequila for Sepia filter. https://feuniverse.us/t/funky-color-stuff/3763
+  - Soundfonts/samples
 
 PLAN, Meals. Can feed any unit one or zero meals in prep screen. Costs food-materials. Can feed multiple units, but each only gets one meal at most. Idea is, the larger your army, the more materials you could spend on food. Maybe also let recipes be optional objectives in chapters to unlock meals? Re-use support bits to indicate which meal a unit has eaten (5 bits for 31 possible meals?) or use unused debufftable bits. Check which things check debufftable to implement buffs & debuffs. Maybe increase buffs if unit affinity matches with meal? Make certain effects overlap with fort abilities and skills for maximum optimization fun. Meal ideas:
   - +1 Str.

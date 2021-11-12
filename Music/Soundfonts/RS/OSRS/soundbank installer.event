@@ -69,7 +69,7 @@ VoiceDummy(OSRS,0x1c)
 VoiceDummy(OSRS,0x1d)
 //30 NIMAP 30
 VoiceDummy(OSRS,0x1e)
-//31 OSRS 31
+//31 DQMJ BANK_BGM_024 7
 VoiceDummy(OSRS,0x1f)
 //32 NIMAP 2
 VoiceDirect(OSRS,0x20,0x3c,0x0227988,0x0,0x0,0x0,0x80,0x0,0xff,0xc0)
@@ -117,47 +117,47 @@ VoiceMulti(OSRS,0x34,RStable52,RSchart)
 VoiceDummy(OSRS,0x35)
 //54 DQMJ BANK_BGM_015 1
 VoiceDummy(OSRS,0x36)
-//55
+//55 Alusq's orchestra hit from somewhere.
 VoiceDummy(OSRS,0x37)
-//56
+//56 YGIReshef soundbank_30 101 (or 22, different envelope I think? Sustain seems louder)
 VoiceDummy(OSRS,0x38)
-//57
+//57 NIMAP 65
 VoiceMulti(OSRS,0x39,RStable57,RSchart)
-//58
+//58 NIMAP 58
 VoiceDummy(OSRS,0x3a)
-//59 YGIReshef soundbank_30 101 (or 22, different envelope I think? Sustain seems louder)
+//59 OSRS 59
 VoiceDummy(OSRS,0x3b)
-//60
+//60 OSRS 60, NIMAP 66 if need be. OSRS French horn is kinda iconic though.
 VoiceMulti(OSRS,0x3c,RStable60,RSchart)
-//61
+//61 DQMJ BANK_BGM_021 4
 VoiceDummy(OSRS,0x3d)
-//62
+//62 R3 17 (transpose down an octave)
 VoiceMulti(OSRS,0x3e,RStable62,RSchart)
-//63
+//63 R3 17 (transpose down an octave). Same as above.
 VoiceDummy(OSRS,0x3f)
-//64
+//64 NIMAP 64. Quite different, but I like this sample.
 VoiceDummy(OSRS,0x40)
-//65
+//65 NIMAP 59
 VoiceMulti(OSRS,0x41,RStable65,RSchart)
-//66
+//66 NIMAP 70
 VoiceDummy(OSRS,0x42)
-//67
+//67 YGIReshef soundbank_30 77
 VoiceDummy(OSRS,0x43)
-//68
+//68 NIMAP 67
 VoiceDummy(OSRS,0x44)
-//69
+//69 NIMAP 56
 VoiceDummy(OSRS,0x45)
-//70
+//70 NIMAP 69
 VoiceMulti(OSRS,0x46,RStable70,RSchart)
-//71
+//71 OSRS 71
 VoiceDummy(OSRS,0x47)
-//72
+//72 NIMAP 68
 VoiceMulti(OSRS,0x48,RStable72,RSchart)
-//73
+//73 NIMAP 78
 VoiceMulti(OSRS,0x49,RStable73,RSchart)
-//74
+//74 OSRS 74, seems have a short loop early.
 VoiceDummy(OSRS,0x4a)
-//75
+//75 NIMAP 75
 VoiceDirect(OSRS,0x4b,0x3c,0x04D9304,0x0,0x0,0x0,0xff,0x0,0xff,0xa5)
 //76
 VoiceDummy(OSRS,0x4c)

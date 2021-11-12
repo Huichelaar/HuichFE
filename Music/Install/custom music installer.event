@@ -44,6 +44,8 @@ SongTable(0x3,SEQ_BGM_DIVING,1)
 SongTable(0x4,DarkSong,0)
 #include "../Songs/AudioTest.event"
 SongTable(0x5,AudioTest,0)
+#include "../Songs/AudioTest2.event"
+SongTable(0x6,AudioTest2,0)
 #include "../Songs/song500.event"
 SongTable(0x9,song500,1)
 #include "../Songs/Principality.event"

@@ -1,0 +1,65 @@
+//Event file generated from Sappy .s format.
+        #include "MPlayDef.event"
+
+        #define    AudioTest2_grp  OSRS
+        #define    AudioTest2_pri  0
+        #define    AudioTest2_rev  0
+        #define    AudioTest2_key  0
+
+        // .rodata
+        // AudioTest2
+        ALIGN 4
+
+//****************** Track 0 (Midi-Chn.0) ******************//
+
+AudioTest2_0:
+        BYTE   KEYSH   AudioTest2_key+0
+// 000   ----------------------------------------
+        BYTE           TIE     Cn3   v100
+        BYTE           VOL     79
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+        BYTE   W96
+// 009   ----------------------------------------
+        BYTE   W96
+// 010   ----------------------------------------
+        BYTE   W96
+// 011   ----------------------------------------
+        BYTE   W96
+// 012   ----------------------------------------
+        BYTE   W96
+// 013   ----------------------------------------
+        BYTE   W96
+// 014   ----------------------------------------
+        BYTE           EOT
+        BYTE   FINE
+
+
+//********************** End of Song ***********************//
+
+        ALIGN 4
+AudioTest2:
+        BYTE   1                       // Num Tracks
+        BYTE   0                       // Unknown
+        BYTE   AudioTest2_pri          // Priority
+        BYTE   AudioTest2_rev          // Reverb
+
+        POIN2   AudioTest2_grp         
+
+        POIN2   AudioTest2_0
+
+        
