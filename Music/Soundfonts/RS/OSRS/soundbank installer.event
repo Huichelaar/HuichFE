@@ -11,13 +11,13 @@ OSRS:
 VoiceDirect(OSRS,0x0,0x3c,0x02A8068,0x0,0x0,0x0,0xff,0xfc,0x40,0xd0)
 //1 NIMAP 0
 VoiceMulti(OSRS,0x1,PianoTable,PianoChart)
-//2 R3 12
-VoiceDirect(OSRS,0x2,0x3c,R3Sample12,//0x0,0x0,0x0,0xff,0xfc,0x40,0xd0) TODO
-//3 like 2 but loops
-VoiceDirect(OSRS,0x2,0x3c,R3Sample12Loop,//0x0,0x0,0x0,0xff,0xfc,0x40,0xd0) TODO
+//2 R3 16
+VoiceDummy(OSRS,0x2)
+//3 R3 16, loops so give high release?
+VoiceDummy(OSRS,0x3)
 //4 YGIReshef soundbank_30 41
 VoiceMulti(OSRS,0x4,RStable4,RSchart)
-//5 R3 16 Organ1
+//5 NIMAP 4
 VoiceDummy(OSRS,0x5)
 //6 NIMAP 15
 VoiceDummy(OSRS,0x6)
@@ -87,7 +87,7 @@ VoiceDummy(OSRS,0x25)
 VoiceDummy(OSRS,0x26)
 //39 NIMAP 39
 VoiceDummy(OSRS,0x27)
-//40 OSRS 40
+//40 OSRS 40. Iconic
 VoiceDummy(OSRS,0x28)
 //41 NIMAP 51
 VoiceDummy(OSRS,0x29)
@@ -105,9 +105,9 @@ VoiceMulti(OSRS,0x2e,RStable46,RSchart)
 VoiceMulti(OSRS,0x2f,RStable47,RSchart)
 //48 OSRS 48
 VoiceMulti(OSRS,0x30,RStable48,RS48chart)
-//49 OSRS 48 but with longer attack?
+//49 OSRS 48 but with longer attack
 VoiceMulti(OSRS,0x31,RStable49,RSchart)
-//50 R3 17 (could you move it down an octave?)
+//50 R3 17 (could you move it down an octave?), alt NIMAP 105
 VoiceDummy(OSRS,0x32)
 //51 YGIReshef soundbank_30 51 (can you set a loop?)
 VoiceDummy(OSRS,0x33)
@@ -153,99 +153,99 @@ VoiceMulti(OSRS,0x46,RStable70,RSchart)
 VoiceDummy(OSRS,0x47)
 //72 NIMAP 68
 VoiceMulti(OSRS,0x48,RStable72,RSchart)
-//73 NIMAP 78
+//73 NIMAP 77
 VoiceMulti(OSRS,0x49,RStable73,RSchart)
 //74 OSRS 74, seems have a short loop early.
 VoiceDummy(OSRS,0x4a)
 //75 NIMAP 75
 VoiceDirect(OSRS,0x4b,0x3c,0x04D9304,0x0,0x0,0x0,0xff,0x0,0xff,0xa5)
-//76
+//76 OSRS 76. I don't think this one is used much so maybe replace with something else.
 VoiceDummy(OSRS,0x4c)
-//77
+//77 NIMAP 76
 VoiceDummy(OSRS,0x4d)
-//78
+//78 OSRS 78. Loops very early. Can also probably dummy out C0 and C1.
 VoiceDummy(OSRS,0x4e)
-//79
+//79 NIMAP 79. If enough space, OSRS 79.
 VoiceMulti(OSRS,0x4f,RStable79,RSchart)
-//80
+//80 OSRS 80, should loop cheaply.
 VoiceDummy(OSRS,0x50)
-//81
+//81 OSRS 81, should loop cheaply.
 VoiceDummy(OSRS,0x51)
-//82
+//82 NIMAP 71
 VoiceDummy(OSRS,0x52)
-//83
+//83 NIMAP 71 (more immediate attack?)
 VoiceDummy(OSRS,0x53)
-//84
+//84 NIMAP 103
 VoiceDummy(OSRS,0x54)
-//85
+//85 NIMAP 85
 VoiceDummy(OSRS,0x55)
-//86
+//86 OSRS 86
 VoiceDummy(OSRS,0x56)
-//87
+//87 R3 12
 VoiceDummy(OSRS,0x57)
-//88
+//88 OSRS 88
 VoiceDummy(OSRS,0x58)
-//89
+//89 NIMAP 89
 VoiceDummy(OSRS,0x59)
-//90
+//90 OSRS 86. Basically the same. Play with envelope?
 VoiceDummy(OSRS,0x5a)
-//91
+//91 NIMAP 91
 VoiceDummy(OSRS,0x5b)
-//92
+//92 NIMAP 92
 VoiceDummy(OSRS,0x5c)
-//93
+//93 NIMAP 93
 VoiceDummy(OSRS,0x5d)
-//94
+//94 Roland 94
 VoiceDummy(OSRS,0x5e)
-//95
+//95 OSRS 95
 VoiceDummy(OSRS,0x5f)
-//96
+//96 Sounds stuttery, unused? Roland 52
 VoiceDummy(OSRS,0x60)
-//97
+//97 Unused? It's out of tune at least. Put something you like here.
 VoiceDummy(OSRS,0x61)
-//98
+//98 OSRS 98. Kinda iconic.
 VoiceMulti(OSRS,0x62,RStable98,RSchart)
-//99
+//99 OSRS 88 but with quicker release.
 VoiceMulti(OSRS,0x63,RStable99,RSchart)
-//100
+//100 NIMAP 100
 VoiceMulti(OSRS,0x64,RStable100,RSchart)
-//101
+//101 Sounds stuttery, unused? CHAMPROAD 42
 VoiceDummy(OSRS,0x65)
-//102
+//102 OSRS 102
 VoiceMulti(OSRS,0x66,RStable102,RSchart)
-//103
+//103 NIMAP 104
 VoiceDummy(OSRS,0x67)
-//104 DIVING 75
+//104 OSRS 104
 VoiceDummy(OSRS,0x68)
-//105
+//105 DIVING 75. Not at all like a banjo, but I wanted this sample in.
 VoiceDummy(OSRS,0x68)
-//106
+//106 POKBW BANK_MUS_DUMMY 14, no loop.
 VoiceDummy(OSRS,0x6a)
-//107
+//107 YGIReshef soundbank_30 107
 VoiceDummy(OSRS,0x6b)
-//108
+//108 OSRS 108
 VoiceDummy(OSRS,0x6c)
-//109
+//109 NIMAP 48
 VoiceDummy(OSRS,0x6d)
-//110
+//110 OSRS 40. Yeah, the same one.
 VoiceDummy(OSRS,0x6e)
-//111
+//111 OSRS 111
 VoiceDummy(OSRS,0x6f)
-//112
+//112 OSRS 112, uses a different chart and only 5 samples apparently.
 VoiceDummy(OSRS,0x70)
-//113
+//113 NIMAP 127 -> 33
 VoiceDummy(OSRS,0x71)
-//114
+//114 YGIReshef soundbank_30 7
 VoiceDummy(OSRS,0x72)
-//115
+//115 OSRS 115
 VoiceDummy(OSRS,0x73)
-//116
+//116 OSRS 116
 VoiceMulti(OSRS,0x74,RStable116,RSchart)
-//117
+//117 OSRS 117
 VoiceDummy(OSRS,0x75)
-//118
+//118 OSRS 118
 VoiceDummy(OSRS,0x76)
-//119
+//119 NIMAP 127 -> 4
 VoiceDummy(OSRS,0x77)
 //120
 VoiceDummy(OSRS,0x78)
