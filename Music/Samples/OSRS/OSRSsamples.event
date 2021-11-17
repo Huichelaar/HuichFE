@@ -35,6 +35,225 @@ ALIGN 4; RSSample45_4:
 ALIGN 4; RSSample45_5:
 #incbin "45_5.dmp"
 
+ALIGN 4; RSSample48_0:
+#incbin "48_0.dmp"
+ALIGN 4; RSSample48_1:
+#incbin "48_1.dmp"
+ALIGN 4; RSSample48_2:
+#incbin "48_2.dmp"
+ALIGN 4; RSSample48_3:
+#incbin "48_3.dmp"
+ALIGN 4; RSSample48_4:
+#incbin "48_4.dmp"
+ALIGN 4; RSSample48_5:
+#incbin "48_5.dmp"
+
+ALIGN 4; RSSample59_0:RSSample59_1:
+#incbin "59_1.dmp"
+ALIGN 4; RSSample59_2:
+#incbin "59_2.dmp"
+ALIGN 4; RSSample59_3:
+#incbin "59_3.dmp"
+ALIGN 4; RSSample59_4:
+#incbin "59_4.dmp"
+ALIGN 4; RSSample59_5:
+#incbin "59_5.dmp"
+
+ALIGN 4; RSSample60_0:RSSample60_1:
+#incbin "60_1.dmp"
+ALIGN 4; RSSample60_2:
+#incbin "60_2.dmp"
+ALIGN 4; RSSample60_3:
+#incbin "60_3.dmp"
+ALIGN 4; RSSample60_4:
+#incbin "60_4.dmp"
+ALIGN 4; RSSample60_5:
+#incbin "60_5.dmp"
+
+ALIGN 4; RSSample71_0:RSSample71_1:
+#incbin "71_1.dmp"
+ALIGN 4; RSSample71_2:
+#incbin "71_2.dmp"
+ALIGN 4; RSSample71_3:
+#incbin "71_3.dmp"
+ALIGN 4; RSSample71_4:
+#incbin "71_4.dmp"
+ALIGN 4; RSSample71_5:
+#incbin "71_5.dmp"
+
+ALIGN 4; RSSample74_0:RSSample74_1:
+#incbin "74_1.dmp"
+ALIGN 4; RSSample74_2:
+#incbin "74_2.dmp"
+ALIGN 4; RSSample74_3:
+#incbin "74_3.dmp"
+ALIGN 4; RSSample74_4:
+#incbin "74_4.dmp"
+ALIGN 4; RSSample74_5:
+#incbin "74_5.dmp"
+
+ALIGN 4; RSSample76_0:RSSample76_1:
+#incbin "76_1.dmp"
+ALIGN 4; RSSample76_2:
+#incbin "76_2.dmp"
+ALIGN 4; RSSample76_3:
+#incbin "76_3.dmp"
+ALIGN 4; RSSample76_4:
+#incbin "76_4.dmp"
+ALIGN 4; RSSample76_5:
+#incbin "76_5.dmp"
+
+ALIGN 4; RSSample78_0:RSSample78_1:RSSample78_2:
+#incbin "78_2.dmp"
+ALIGN 4; RSSample78_3:
+#incbin "78_3.dmp"
+ALIGN 4; RSSample78_4:
+#incbin "78_4.dmp"
+ALIGN 4; RSSample78_5:
+#incbin "78_5.dmp"
+
+ALIGN 4; RSSample86_0:RSSample86_1:RSSample86_2:
+#incbin "86_2.dmp"
+ALIGN 4; RSSample86_3:
+#incbin "86_3.dmp"
+ALIGN 4; RSSample86_4:
+#incbin "86_4.dmp"
+ALIGN 4; RSSample86_5:
+#incbin "86_5.dmp"
+
+ALIGN 4; RSSample88_0:RSSample88_1:
+#incbin "88_1.dmp"
+ALIGN 4; RSSample88_2:
+#incbin "88_2.dmp"
+ALIGN 4; RSSample88_3:
+#incbin "88_3.dmp"
+ALIGN 4; RSSample88_4:
+#incbin "88_4.dmp"
+ALIGN 4; RSSample88_5:
+#incbin "88_5.dmp"
+
+ALIGN 4; RSSample95_0:RSSample95_1:
+#incbin "95_1.dmp"
+ALIGN 4; RSSample95_2:
+#incbin "95_2.dmp"
+ALIGN 4; RSSample95_3:
+#incbin "95_3.dmp"
+ALIGN 4; RSSample95_4:
+#incbin "95_4.dmp"
+ALIGN 4; RSSample95_5:
+#incbin "95_5.dmp"
+
+ALIGN 4; RSSample98_0:RSSample98_1:RSSample98_2:
+#incbin "98_2.dmp"
+ALIGN 4; RSSample98_3:
+#incbin "98_3.dmp"
+ALIGN 4; RSSample98_4:
+#incbin "98_4.dmp"
+ALIGN 4; RSSample98_5:
+#incbin "98_5.dmp"
+
+ALIGN 4; RSSample102_0:RSSample102_1:
+#incbin "102_1.dmp"
+ALIGN 4; RSSample102_2:
+#incbin "102_2.dmp"
+ALIGN 4; RSSample102_3:
+#incbin "102_3.dmp"
+ALIGN 4; RSSample102_4:
+#incbin "102_4.dmp"
+ALIGN 4; RSSample102_5:
+#incbin "102_5.dmp"
+
+ALIGN 4; RSSample104_0:RSSample104_1:
+#incbin "104_1.dmp"
+ALIGN 4; RSSample104_2:
+#incbin "104_2.dmp"
+ALIGN 4; RSSample104_3:
+#incbin "104_3.dmp"
+ALIGN 4; RSSample104_4:
+#incbin "104_4.dmp"
+ALIGN 4; RSSample104_5:
+#incbin "104_5.dmp"
+
+ALIGN 4; RSSample108_0:RSSample108_1:
+#incbin "108_1.dmp"
+ALIGN 4; RSSample108_2:
+#incbin "108_2.dmp"
+ALIGN 4; RSSample108_3:
+#incbin "108_3.dmp"
+ALIGN 4; RSSample108_4:
+#incbin "108_4.dmp"
+ALIGN 4; RSSample108_5:
+#incbin "108_5.dmp"
+
+ALIGN 4; RSSample111_0:RSSample111_1:
+#incbin "111_1.dmp"
+ALIGN 4; RSSample111_2:
+#incbin "111_2.dmp"
+ALIGN 4; RSSample111_3:
+#incbin "111_3.dmp"
+ALIGN 4; RSSample111_4:
+#incbin "111_4.dmp"
+ALIGN 4; RSSample111_5:
+#incbin "111_5.dmp"
+
+ALIGN 4; RSSample112_0:RSSample112_1:
+#incbin "112_1.dmp"
+ALIGN 4; RSSample112_2:
+#incbin "112_2.dmp"
+ALIGN 4; RSSample112_3:
+#incbin "112_3.dmp"
+ALIGN 4; RSSample112_4:RSSample112_5:
+#incbin "112_4.dmp"
+
+ALIGN 4; RSSample115_0:
+#incbin "115_0.dmp"
+ALIGN 4; RSSample115_1:
+#incbin "115_1.dmp"
+ALIGN 4; RSSample115_2:
+#incbin "115_2.dmp"
+ALIGN 4; RSSample115_3:
+#incbin "115_3.dmp"
+ALIGN 4; RSSample115_4:
+#incbin "115_4.dmp"
+ALIGN 4; RSSample115_5:
+#incbin "115_5.dmp"
+
+ALIGN 4; RSSample116_0:
+#incbin "116_0.dmp"
+ALIGN 4; RSSample116_1:
+#incbin "116_1.dmp"
+ALIGN 4; RSSample116_2:
+#incbin "116_2.dmp"
+ALIGN 4; RSSample116_3:
+#incbin "116_3.dmp"
+ALIGN 4; RSSample116_4:
+#incbin "116_4.dmp"
+ALIGN 4; RSSample116_5:
+#incbin "116_5.dmp"
+
+ALIGN 4; RSSample117_0:
+#incbin "117_0.dmp"
+ALIGN 4; RSSample117_1:
+#incbin "117_1.dmp"
+ALIGN 4; RSSample117_2:
+#incbin "117_2.dmp"
+ALIGN 4; RSSample117_3:
+#incbin "117_3.dmp"
+ALIGN 4; RSSample117_4:
+#incbin "117_4.dmp"
+ALIGN 4; RSSample117_5:
+#incbin "117_5.dmp"
+
+ALIGN 4; RSSample118_0:RSSample118_1:RSSample118_2:
+#incbin "118_2.dmp"
+ALIGN 4; RSSample118_3:
+#incbin "118_3.dmp"
+ALIGN 4; RSSample118_4:
+#incbin "118_4.dmp"
+ALIGN 4; RSSample118_5:
+#incbin "118_5.dmp"
+
+
 // Drum
 ALIGN 4
 RSSampleDrum35:
@@ -168,12 +387,12 @@ VoiceDirect(RStable48,0x5,0x3c,RSSample48_5,0x0,0x0,0x0,0xff,0x0,0xff,0xa5)
 ORG RStable48+0x0c*6
 
 RStable49:
-VoiceDirect(RStable49,0x0,0x3c,RSSample49_0,0x0,0x0,0x0,0x80,0x0,0xff,0xa5)
-VoiceDirect(RStable49,0x1,0x3c,RSSample49_1,0x0,0x0,0x0,0x80,0x0,0xff,0xa5)
-VoiceDirect(RStable49,0x2,0x3c,RSSample49_2,0x0,0x0,0x0,0x80,0x0,0xff,0xa5)
-VoiceDirect(RStable49,0x3,0x3c,RSSample49_3,0x0,0x0,0x0,0x80,0x0,0xff,0xa5)
-VoiceDirect(RStable49,0x4,0x3c,RSSample49_4,0x0,0x0,0x0,0x80,0x0,0xff,0xa5)
-VoiceDirect(RStable49,0x5,0x3c,RSSample49_5,0x0,0x0,0x0,0x80,0x0,0xff,0xa5)
+VoiceDirect(RStable49,0x0,0x3c,RSSample48_0,0x0,0x0,0x0,0x80,0x0,0xff,0xa5)
+VoiceDirect(RStable49,0x1,0x3c,RSSample48_1,0x0,0x0,0x0,0x80,0x0,0xff,0xa5)
+VoiceDirect(RStable49,0x2,0x3c,RSSample48_2,0x0,0x0,0x0,0x80,0x0,0xff,0xa5)
+VoiceDirect(RStable49,0x3,0x3c,RSSample48_3,0x0,0x0,0x0,0x80,0x0,0xff,0xa5)
+VoiceDirect(RStable49,0x4,0x3c,RSSample48_4,0x0,0x0,0x0,0x80,0x0,0xff,0xa5)
+VoiceDirect(RStable49,0x5,0x3c,RSSample48_5,0x0,0x0,0x0,0x80,0x0,0xff,0xa5)
 ORG RStable49+0x0c*6
 /*
 RStable52:

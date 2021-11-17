@@ -11,12 +11,15 @@ PUSH
 POP
 
 // Custom samples
+BeforeSamplesOffset:
 #include "../Samples/YUGIOH/YUGIOHsamples.event"
 #include "../Samples/OSRS/OSRSsamples.event"
 #include "../Samples/Custom1/Custom1samples.event"
 #include "../Samples/Sfx/Sfxsamples.event"
 #include "../Samples/Pokemon/Pokemonsamples.event"
 #include "../Samples/Rayman3/R3Samples.event"
+#include "../Samples/Roland_SC_88/RolandSamples.event"
+MESSAGE Soundsamples occupy CurrentOffset-BeforeSamplesOffset bytes
 
 // Custom soundfonts
 #include "../Soundfonts/YUGIOH/soundbank_014/soundbank installer.event"

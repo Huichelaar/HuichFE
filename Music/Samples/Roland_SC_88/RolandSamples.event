@@ -1,0 +1,21 @@
+//Direct
+ALIGN 4
+RolandSample94:
+#incbin "HaloPadC5.dmp"
+ALIGN 4
+RolandSample52:
+#incbin "GirlsChoirC4.dmp"
+ALIGN 4
+
+
+//Multisample
+
+
+// Drum
+
+
+// Multisample tables
+
+
+// Note charts
+
