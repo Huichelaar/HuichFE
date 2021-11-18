@@ -14,8 +14,14 @@ ALIGN 4
 YGI21Sample6:YGI28Sample6:YGI30Sample6:
 #incbin "soundbank_021/6.dmp"
 ALIGN 4
+YGI30Sample7:
+#incbin "soundbank_030/7.dmp"
+ALIGN 4
 YGI28Sample11:YGI30Sample11:
 #incbin "soundbank_028/11.dmp"
+ALIGN 4
+YGI30Sample16:
+#incbin "soundbank_030/16.dmp"
 ALIGN 4
 YGI14Sample17:YGI30Sample17:YGISCSample17:
 #incbin "soundbank_014/17.dmp"
@@ -32,6 +38,9 @@ ALIGN 4
 YGI40Sample40:
 #incbin "soundbank_040/KaibaTurn.dmp"
 ALIGN 4
+YGI30Sample41:YGI34Sample41:YGISCSample41:
+#incbin "soundbank_030/41.dmp"
+ALIGN 4
 YGI21Sample51:YGI28Sample51:YGI30Sample51:YGI30Sample56:YGI30Sample57:
 #incbin "soundbank_028/51.dmp"
 ALIGN 4
@@ -43,6 +52,12 @@ YGI30Sample58:YGI21Sample59:YGI28Sample59:YGI30Sample59:
 ALIGN 4
 YGI14Sample63:YGI21Sample63:YGI28Sample63:YGI30Sample63:YGI14Sample64:YGI21Sample64:YGI28Sample64:YGI30Sample64:YGI14Sample65:YGI14Sample66:
 #incbin "soundbank_014/66.dmp"
+ALIGN 4
+YGI34Sample61:YGISCSample61:YGI30Sample77:
+#incbin "soundbank_030/77.dmp"
+ALIGN 4
+YGI14Sample84:YGI30Sample84:YGISCSample84:
+#incbin "soundbank_030/84.dmp"
 ALIGN 4
 YGI14Sample87:YGI30Sample87:YGISCSample87:YGI14Sample99:YGI21Sample99:YGI28Sample99:YGI30Sample99:
 #incbin "soundbank_030/99.dmp"
@@ -61,6 +76,9 @@ YGI39Sample105:
 ALIGN 4
 YGI14Sample108:YGI21Sample108:YGI28Sample108:YGI30Sample108:
 #incbin "soundbank_030/108.dmp"
+ALIGN 4
+YGI30Sample116:
+#incbin "soundbank_030/116.dmp"
 ALIGN 4
 YGI39Sample117:
 #incbin "soundbank_039/117.dmp"
@@ -170,6 +188,13 @@ YGI14Sample103_4:YGI21Sample103_4:YGI28Sample103_4:YGI30Sample103_4:YGI14Sample1
 ALIGN 4
 YGI14Sample103_5:YGI21Sample103_5:YGI28Sample103_5:YGI30Sample103_5:YGI14Sample112_5:YGI30Sample112_5:
 #incbin "soundbank_030/112_5.dmp"
+
+ALIGN 4
+YGI14Sample107_0:YGI30Sample107_0:
+#incbin "soundbank_030/107_0.dmp"
+ALIGN 4
+YGI14Sample107_1:YGI30Sample107_1:
+#incbin "soundbank_030/107_1.dmp"
 
 ALIGN 4
 YGI14Sample110_3:YGI30Sample110_3:
@@ -293,6 +318,11 @@ VoiceDirect(YGI14table103,0x3,0x3c,YGI14Sample103_4,0x0,0x0,0x0,0xff,0xf9,0x0,0x
 VoiceDirect(YGI14table103,0x4,0x3c,YGI14Sample103_5,0x0,0x0,0x0,0xff,0xf9,0x0,0x0)
 ORG YGI14table103+0x0c*5
 
+YGI14table107:YGI30table107:
+VoiceDirect(YGI14table107,0x0,0x3c,YGI30Sample107_0,0x0,0x0,0x0,0xff,0xf7,0x0,0x0)
+VoiceDirect(YGI14table107,0x1,0x3c,YGI30Sample107_1,0x0,0x0,0x0,0xff,0xf7,0x0,0x0)
+ORG YGI14table107+0x0c*2
+
 YGI14table110:YGI30table110:
 VoiceDirect(YGI14table110,0x0,0x3c,YGI14Sample110_1,0x0,0x0,0x0,0x25,0xff,0x33,0xbc)
 VoiceDirect(YGI14table110,0x1,0x3c,YGI14Sample110_2,0x0,0x0,0x0,0x25,0xff,0x33,0xbc)
@@ -357,6 +387,9 @@ ALIGN 4
 YGI14chart103:YGI21chart103:YGI28chart103:YGI30chart103:YGI14chart112:YGI30chart112:
 #incbin "soundbank_030/note charts/112chart.dmp"
 
+ALIGN 4
+YGI14chart107:YGI30chart107:
+#incbin "soundbank_030/note charts/107chart.dmp"
 
 // Wave memories
 ALIGN 4

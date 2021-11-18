@@ -176,7 +176,7 @@ VoiceDummy(soundbank_014,0x52)
 //83
 VoiceDummy(soundbank_014,0x53)
 //84
-VoiceDummy(soundbank_014,0x54)
+VoiceDirect(soundbank_014,0x54,0x3c,YGI14Sample84,0x0,0x0,0x0,0xff,0xfd,0x4d,0x0)
 //85
 VoiceDummy(soundbank_014,0x55)
 //86
@@ -222,7 +222,7 @@ VoiceMulti(soundbank_014,0x69,YGI14table105,YGI14chart105)
 //106
 VoiceDummy(soundbank_014,0x6a)
 //107
-VoiceDummy(soundbank_014,0x6b)
+VoiceMulti(soundbank_014,0x6b,YGI14table107,YGI14chart107)
 //108
 VoiceDirect(soundbank_014,0x6c,0x3c,YGI14Sample108,0x0,0x0,0x0,0xff,0xfe,0x0,0x0)
 //109

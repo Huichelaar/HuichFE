@@ -17,9 +17,9 @@ VoiceDummy(R3,0x2)
 //3
 VoiceDummy(R3,0x3)
 //4
-VoiceDummy(R3,0x4)
+VoiceMulti(R3,0x4,R3table4,R3chart4)
 //5
-VoiceDummy(R3,0x5)
+VoiceDirect(R3,0x5,0x3c,R3Sample5,0x0,0x0,0x0,255,0,255,127)
 //6
 VoiceDummy(R3,0x6)
 //7
@@ -29,11 +29,11 @@ VoiceDummy(R3,0x8)
 //9
 VoiceDummy(R3,0x9)
 //10
-VoiceDummy(R3,0xa)
+VoiceDirect(R3,0xa,0x3c,R3Sample10,0x0,0x0,0x0,255,0,255,127)
 //11
 VoiceDummy(R3,0xb)
 //12
-VoiceDummy(R3,0xc)
+VoiceDirect(R3,0xc,0x3c,R3Sample12,0x0,0x0,0x0,255,0,255,127)
 //13
 VoiceDummy(R3,0xd)
 //14
@@ -41,9 +41,9 @@ VoiceDummy(R3,0xe)
 //15
 VoiceDummy(R3,0xf)
 //16
-VoiceDummy(R3,0x10)
+VoiceMulti(R3,0x10,R3table16,R3chart16)
 //17
-VoiceDummy(R3,0x11)
+VoiceDirect(R3,0x11,0x3c,R3Sample17,0x0,0x0,0x0,255,0,255,127)
 //18
 VoiceDummy(R3,0x12)
 //19

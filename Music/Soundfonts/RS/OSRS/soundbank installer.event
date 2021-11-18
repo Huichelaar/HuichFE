@@ -12,11 +12,11 @@ VoiceDirect(OSRS,0x0,0x3c,0x02A8068,0x0,0x0,0x0,0xff,0xfc,0x40,0xd0)
 //1 NIMAP 0
 VoiceMulti(OSRS,0x1,PianoTable,PianoChart)
 //2 R3 16
-VoiceDummy(OSRS,0x2)
+VoiceMulti(OSRS,0x2,R3table16,R3chart16)
 //3 R3 16, loops so give high release?
-VoiceDummy(OSRS,0x3)
+VoiceMulti(OSRS,0x3,R3table16_2,R3chart16)
 //4 YGIReshef soundbank_30 41
-VoiceDummy(OSRS,0x4)
+VoiceDirect(OSRS,0x4,0x3c,YGI30Sample41,0x0,0x0,0x0,0xff,0x0,0xff,0x0)
 //5 NIMAP 4
 VoiceDummy(OSRS,0x5)
 //6 NIMAP 15
@@ -26,7 +26,7 @@ VoiceDummy(OSRS,0x7)
 //8 NIMAP 11
 VoiceDummy(OSRS,0x8)
 //9 YGIReshef soundbank_30 2
-VoiceDummy(OSRS,0x9)
+VoiceMulti(OSRS,0x9,YGI30table2,YGI30chart2)
 //10 NIMAP 10
 VoiceDummy(OSRS,0xa)
 //11 DIVING 3
@@ -38,11 +38,11 @@ VoiceDummy(OSRS,0xd)
 //14 OSRS 14
 VoiceMulti(OSRS,0xe,RStable14,RSchart)
 //15 R3 5
-VoiceDummy(OSRS,0xf)
+VoiceDirect(OSRS,0xf,0x3c,R3Sample5,0x0,0x0,0x0,255,0,255,127)
 //16 DIVING 17
 VoiceDummy(OSRS,0x10)
 //17 R3 10
-VoiceDummy(OSRS,0x11)
+VoiceDirect(OSRS,0x11,0x3c,R3Sample10,0x0,0x0,0x0,255,0,255,127)
 //18 NIMAP 18
 VoiceDummy(OSRS,0x12)
 //19 NIMAP 19
@@ -56,7 +56,7 @@ VoiceDummy(OSRS,0x16)
 //23 If room, OSRS 23, otherwise NIMAP 23
 VoiceDummy(OSRS,0x17)
 //24 YGIReshef soundbank_30 84. Set sustain to 0 to avoid loop.
-VoiceDummy(OSRS,0x18)
+VoiceDirect(OSRS,0x18,0x3c,YGI30Sample84,0x0,0x0,0x0,0xff,0xfd,0x0,0x0)
 //25 NIMAP 15, or just use OSRS 6 for this, 6 and 7.
 VoiceDummy(OSRS,0x19)
 //26 NIMAP 24
@@ -64,7 +64,7 @@ VoiceDummy(OSRS,0x1a)
 //27 NIMAP 103, set sustain to 0.
 VoiceDummy(OSRS,0x1b)
 //28 YGIReshef soundbank_30 16, set sustain low
-VoiceDummy(OSRS,0x1c)
+VoiceDirect(OSRS,0x1c,0x3c,YGI30Sample16,0x0,0x0,0x0,0xff,0x0,0x40,0x0)
 //29 NIMAP 104
 VoiceDummy(OSRS,0x1d)
 //30 NIMAP 30
@@ -78,7 +78,7 @@ VoiceDummy(OSRS,0x21)
 //34 YGIReshef soundbank_30 84 (again). Set sustain to 0 to avoid loop.
 VoiceDummy(OSRS,0x22)
 //35 R3 4
-VoiceDummy(OSRS,0x23)
+VoiceMulti(OSRS,0x23,R3table4,R3chart4)
 //36 NIMAP 36. OSRS 36 if enough space left.
 VoiceDummy(OSRS,0x24)
 //37 YGIReshef soundbank_30 17. OSRS 37 if enough space left.
@@ -100,15 +100,15 @@ VoiceDummy(OSRS,0x2c)
 //45 OSRS 45
 VoiceMulti(OSRS,0x2d,RStable45,RSchart)
 //46 YGIReshef soundbank_30 99
-VoiceDummy(OSRS,0x2e)
-//47 YGIReshef soundbank_30 116 partially, OSRS for lower notes.
-VoiceDummy(OSRS,0x2f)
+VoiceDirect(OSRS,0x2e,0x3c,YGI30Sample99,0x0,0x0,0x0,0xff,0xeb,0xc,0x0)
+//47 YGIReshef soundbank_30 116 partially, OSRS for lower notes. TODO!
+VoiceDirect(OSRS,0x2f,0x3c,YGI30Sample116,0x0,0x0,0x0,0xff,0x0,0xff,0x0)
 //48 OSRS 48
 VoiceDummy(OSRS,0x30)
 //49 OSRS 48 but with longer attack
 VoiceDummy(OSRS,0x31)
-//50 R3 17 (could you move it down an octave?), alt NIMAP 105
-VoiceDummy(OSRS,0x32)
+//50 R3 17 transposed down an octave. Alt NIMAP 105.
+VoiceDirect(OSRS,0x32,0x3c,R3Sample17,0x0,0x0,0x0,255,0,255,127)
 //51 YGIReshef soundbank_30 51 (can you set a loop?)
 VoiceDummy(OSRS,0x33)
 //52 NIMAP 52
@@ -131,10 +131,10 @@ VoiceDummy(OSRS,0x3b)
 VoiceDummy(OSRS,0x3c)
 //61 DQMJ BANK_BGM_021 4
 VoiceDummy(OSRS,0x3d)
-//62 R3 17 (transpose down an octave)
-VoiceDummy(OSRS,0x3e)
-//63 R3 17 (transpose down an octave). Same as above.
-VoiceDummy(OSRS,0x3f)
+//62 R3 17 transposed down an octave.
+VoiceDirect(OSRS,0x3e,0x3c,R3Sample17,0x0,0x0,0x0,255,0,255,127)
+//63 R3 17 transposed down an octave. Same as above.
+VoiceDirect(OSRS,0x3f,0x3c,R3Sample17,0x0,0x0,0x0,255,0,255,127)
 //64 NIMAP 64. Quite different, but I like this sample.
 VoiceDummy(OSRS,0x40)
 //65 NIMAP 59
@@ -142,7 +142,7 @@ VoiceDummy(OSRS,0x41)
 //66 NIMAP 70
 VoiceDummy(OSRS,0x42)
 //67 YGIReshef soundbank_30 77
-VoiceDummy(OSRS,0x43)
+VoiceDirect(OSRS,0x43,0x3c,YGI30Sample77,0x0,0x0,0x0,0xff,0x0,0xff,0x0)
 //68 NIMAP 67
 VoiceDummy(OSRS,0x44)
 //69 NIMAP 56
@@ -182,7 +182,7 @@ VoiceDummy(OSRS,0x55)
 //86 OSRS 86
 VoiceDummy(OSRS,0x56)
 //87 R3 12
-VoiceDummy(OSRS,0x57)
+VoiceDirect(OSRS,0x57,0x3c,R3Sample12,0x0,0x0,0x0,255,0,255,127)
 //88 OSRS 88
 VoiceDummy(OSRS,0x58)
 //89 NIMAP 89
@@ -196,11 +196,11 @@ VoiceDummy(OSRS,0x5c)
 //93 NIMAP 93
 VoiceDummy(OSRS,0x5d)
 //94 Roland 94
-VoiceDummy(OSRS,0x5e)
+VoiceDirect(OSRS,0x5e,0x3c,RolandSample94,0x0,0x0,0x0,0x5,0xff,0x0,0xf0)
 //95 OSRS 95
 VoiceDummy(OSRS,0x5f)
 //96 Sounds stuttery, unused? Roland 52
-VoiceDummy(OSRS,0x60)
+VoiceDirect(OSRS,0x60,0x3c,RolandSample52,0x0,0x0,0x0,0xff,0x0,0xff,0xc0)
 //97 Unused? It's out of tune at least. Put something you like here.
 VoiceDummy(OSRS,0x61)
 //98 OSRS 98. Kinda iconic.
@@ -222,7 +222,7 @@ VoiceDummy(OSRS,0x69)
 //106 POKBW BANK_MUS_DUMMY 14, no loop.
 VoiceDummy(OSRS,0x6a)
 //107 YGIReshef soundbank_30 107
-VoiceDummy(OSRS,0x6b)
+VoiceMulti(OSRS,0x6b,YGI30table107,YGI30chart107)
 //108 OSRS 108
 VoiceDummy(OSRS,0x6c)
 //109 NIMAP 48
@@ -236,7 +236,7 @@ VoiceDummy(OSRS,0x70)
 //113 NIMAP 127 -> 33
 VoiceDummy(OSRS,0x71)
 //114 YGIReshef soundbank_30 7
-VoiceDummy(OSRS,0x72)
+VoiceDirect(OSRS,0x72,0x3c,YGI30Sample7,0x0,0x0,0x0,0xff,0xcc,0x9a,0x0)
 //115 OSRS 115
 VoiceDummy(OSRS,0x73)
 //116 OSRS 116

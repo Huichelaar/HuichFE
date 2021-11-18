@@ -1,18 +1,61 @@
 //Direct
-ALIGN 4
-R3Sample53:
+ALIGN 4; R3Sample5:
+#incbin "5.dmp"
+ALIGN 4; R3Sample10:
+#incbin "10.dmp"
+ALIGN 4; R3Sample12:
+#incbin "12.dmp"
+ALIGN 4; R3Sample17:    // Transposed down an octave. Move notes up an octave if R3 MIDI.
+#incbin "17.dmp"
+ALIGN 4; R3Sample53:
 #incbin "53.dmp"
-ALIGN 4
 
 
 //Multisample
+ALIGN 4; R3Sample4_0:
+#incbin "4_0.dmp"
+ALIGN 4; R3Sample4_1:
+#incbin "4_1.dmp"
+ALIGN 4; R3Sample4_2:
+#incbin "4_2.dmp"
+
+ALIGN 4; R3Sample16_0:
+#incbin "16_0.dmp"
+ALIGN 4; R3Sample16_1:
+#incbin "16_1.dmp"
+ALIGN 4; R3Sample16_2:
+#incbin "16_2.dmp"
+ALIGN 4; R3Sample16_3:
+#incbin "16_3.dmp"
+ALIGN 4
 
 
 // Drum
 
 
 // Multisample tables
+R3table4:
+VoiceDirect(R3table4,0x0,0x3c,R3Sample4_0,0x0,0x0,0x0,255,0,255,196)
+VoiceDirect(R3table4,0x1,0x3c,R3Sample4_1,0x0,0x0,0x0,255,0,255,196)
+VoiceDirect(R3table4,0x2,0x3c,R3Sample4_2,0x0,0x0,0x0,255,0,255,127)
+ORG R3table4+0x0c*3
+
+R3table16:
+VoiceDirect(R3table16,0x0,0x3c,R3Sample16_0,0x0,0x0,0x0,255,0,255,165)
+VoiceDirect(R3table16,0x1,0x3c,R3Sample16_1,0x0,0x0,0x0,255,0,255,165)
+VoiceDirect(R3table16,0x2,0x3c,R3Sample16_2,0x0,0x0,0x0,255,0,255,165)
+VoiceDirect(R3table16,0x3,0x3c,R3Sample16_3,0x0,0x0,0x0,255,0,255,165)
+ORG R3table16+0x0c*4
+  R3table16_2:    // Higher release
+  VoiceDirect(R3table16_2,0x0,0x3c,R3Sample16_0,0x0,0x0,0x0,255,0,255,210)
+  VoiceDirect(R3table16_2,0x1,0x3c,R3Sample16_1,0x0,0x0,0x0,255,0,255,210)
+  VoiceDirect(R3table16_2,0x2,0x3c,R3Sample16_2,0x0,0x0,0x0,255,0,255,210)
+  VoiceDirect(R3table16_2,0x3,0x3c,R3Sample16_3,0x0,0x0,0x0,255,0,255,210)
+  ORG R3table16_2+0x0c*4
 
 
 // Note charts
-
+ALIGN 4; R3chart16:
+#incbin "Notecharts/16chart.dmp"
+ALIGN 4; R3chart4:
+#incbin "Notecharts/4chart.dmp"
