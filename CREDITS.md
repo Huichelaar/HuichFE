@@ -178,6 +178,9 @@ With additional credits to:
 
 # Music
 
+TODO credit B.H. suits for frequency table
+https://pages.mtu.edu/~suits/NoteFreqCalcs.html
+
 ## Songs
 - Fire Emblem Fates by Intelligent Systems.
   - Desire Below. Composed by Hiroki Morishita, arranged by Libera. I added some extra instruments to the MIDI.
