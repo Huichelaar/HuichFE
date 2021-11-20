@@ -1,7 +1,7 @@
 //Event file generated from Sappy .s format.
         #include "MPlayDef.event"
 
-        #define    AudioTest2_grp  OSRS
+        #define    AudioTest2_grp  PkmnBWsoundbank
         #define    AudioTest2_pri  0
         #define    AudioTest2_rev  0
         #define    AudioTest2_key  0
@@ -15,37 +15,30 @@
 AudioTest2_0:
         BYTE   KEYSH   AudioTest2_key+0
 // 000   ----------------------------------------
-        BYTE           TIE     Cn3   v100
-        BYTE           VOL     79
-        BYTE   W96
+        BYTE           VOICE   80
+        BYTE           VOL     63
+        BYTE           N48     En3   v100
+        BYTE   W48
+        BYTE                   Fn3
+        BYTE   W48
 // 001   ----------------------------------------
-        BYTE   W96
+        BYTE                   Fs3
+        BYTE   W48
+        BYTE                   Gn3
+        BYTE   W48
 // 002   ----------------------------------------
-        BYTE   W96
+        BYTE                   Gs3
+        BYTE   W48
+        BYTE                   An3
+        BYTE   W48
 // 003   ----------------------------------------
-        BYTE   W96
+        BYTE                   As3
+        BYTE   W48
+        BYTE                   Bn3
+        BYTE   W48
 // 004   ----------------------------------------
-        BYTE   W96
-// 005   ----------------------------------------
-        BYTE   W96
-// 006   ----------------------------------------
-        BYTE   W96
-// 007   ----------------------------------------
-        BYTE   W96
-// 008   ----------------------------------------
-        BYTE   W96
-// 009   ----------------------------------------
-        BYTE   W96
-// 010   ----------------------------------------
-        BYTE   W96
-// 011   ----------------------------------------
-        BYTE   W96
-// 012   ----------------------------------------
-        BYTE   W96
-// 013   ----------------------------------------
-        BYTE   W96
-// 014   ----------------------------------------
-        BYTE           EOT
+        BYTE                   Cn4
+        BYTE   W48
         BYTE   FINE
 
 

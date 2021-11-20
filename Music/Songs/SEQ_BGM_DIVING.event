@@ -3821,9 +3821,8 @@ SEQ_BGM_DIVING_9_7:
         BYTE           N05     Fn3   v030
         BYTE   W06
         BYTE           N11     Cn4   v050
-        BYTE   W24
-        BYTE           N32     Dn0   v080   gtp3
-        BYTE   W06
+        BYTE           N60     Dn0   v080
+        BYTE   W30
         BYTE           N02     En3   v110
         BYTE   W03
         BYTE                   En3   v080

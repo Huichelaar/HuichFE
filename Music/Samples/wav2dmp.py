@@ -47,12 +47,12 @@ if wavSize - sampleSize > 36:
     else:
         output.write((0).to_bytes(1, byteorder='little', signed=False))
         loop = 0;
-        interpolation = [0x80, 0x80];
+        interpolation = [0x0, 0x0];
         print("  Couldn't find loop info. Loop not set.")
 else:
     output.write((0).to_bytes(1, byteorder='little', signed=False))
     loop = 0;
-    interpolation = [0x80, 0x80];
+    interpolation = [0x0, 0x0];
     print("  Couldn't find loop info. Loop not set.")
 
 # Frequency
