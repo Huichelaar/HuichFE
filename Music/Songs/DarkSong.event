@@ -1037,7 +1037,7 @@ DarkSong_3_33:
 DarkSong_4:
         BYTE   KEYSH   DarkSong_key+0
 // 000   ----------------------------------------
-        BYTE           VOL     64
+        BYTE           VOL     79
         BYTE           VOICE   62
         BYTE   W96
 // 001   ----------------------------------------
@@ -2700,84 +2700,84 @@ DarkSong_8_LOOP:
         BYTE   W96
 // 023   ----------------------------------------
         BYTE   W48
-        BYTE           N05     Fn3   v080
+        BYTE           N05     Fn2   v080
         BYTE   W06
+        BYTE                   Gn2   v060
+        BYTE   W03
+        BYTE           N04     An2
+        BYTE   W03
+        BYTE           N03     Bn2   v076
+        BYTE   W06
+        BYTE           N02     Dn3   v072
+        BYTE           N03     Cn3   v076
+        BYTE   W03
+        BYTE           N02     En3
+        BYTE   W03
+        BYTE                   Fn3   v068
+        BYTE   W03
         BYTE                   Gn3   v060
         BYTE   W03
-        BYTE           N04     An3
+        BYTE                   An3
         BYTE   W03
-        BYTE           N03     Bn3   v076
-        BYTE   W06
-        BYTE           N02     Dn4   v072
-        BYTE           N03     Cn4   v076
+        BYTE                   Bn3
+        BYTE   W03
+        BYTE           N01     Cn4
+        BYTE   W03
+        BYTE                   Dn4   v052
         BYTE   W03
         BYTE           N02     En4
         BYTE   W03
-        BYTE                   Fn4   v068
-        BYTE   W03
-        BYTE                   Gn4   v060
-        BYTE   W03
-        BYTE                   An4
-        BYTE   W03
-        BYTE                   Bn4
-        BYTE   W03
-        BYTE           N01     Cn5
-        BYTE   W03
-        BYTE                   Dn5   v052
-        BYTE   W03
-        BYTE           N02     En5
-        BYTE   W03
-        BYTE                   Fn5   v060
+        BYTE                   Fn4   v060
         BYTE   W03
 // 024   ----------------------------------------
-        BYTE           N04     An3   v100
-        BYTE           N04     Fn3   v092
+        BYTE           N04     An2   v100
+        BYTE           N04     Fn2   v092
         BYTE   W12
-        BYTE                   An3   v076
-        BYTE           N04     En3   v080
+        BYTE                   An2   v076
+        BYTE           N04     En2   v080
         BYTE   W12
-        BYTE                   An3
-        BYTE           N04     Fn3
+        BYTE                   An2
+        BYTE           N04     Fn2
         BYTE   W12
-        BYTE                   An3   v100
-        BYTE           N04     Gn3   v084
+        BYTE                   An2   v100
+        BYTE           N04     Gn2   v084
         BYTE   W12
-        BYTE           N05     An3   v080
-        BYTE           N04     Fn3
+        BYTE           N05     An2   v080
+        BYTE           N04     Fn2
         BYTE   W12
-        BYTE                   An3
-        BYTE           N04     En3
+        BYTE                   An2
+        BYTE           N04     En2
         BYTE   W12
-        BYTE                   An3   v084
-        BYTE           N04     Fn3   v080
+        BYTE                   An2   v084
+        BYTE           N04     Fn2   v080
         BYTE   W12
-        BYTE                   An3   v100
-        BYTE           N04     Gn3   v088
+        BYTE                   An2   v100
+        BYTE           N04     Gn2   v088
         BYTE   W12
 // 025   ----------------------------------------
-        BYTE           N05     An3   v080
-        BYTE           N04     Fn3
+        BYTE           N05     An2   v080
+        BYTE           N04     Fn2
         BYTE   W12
-        BYTE           N05     An3
-        BYTE           N04     En3
+        BYTE           N05     An2
+        BYTE           N04     En2
         BYTE   W12
-        BYTE                   An3   v092
-        BYTE           N04     Fn3   v084
+        BYTE                   An2   v092
+        BYTE           N04     Fn2   v084
         BYTE   W12
-        BYTE                   An3   v092
-        BYTE           N04     Gn3   v080
+        BYTE                   An2   v092
+        BYTE           N04     Gn2   v080
         BYTE   W12
-        BYTE                   An3   v084
-        BYTE           N04     Fn3
+        BYTE                   An2   v084
+        BYTE           N04     Fn2
         BYTE   W12
-        BYTE           N05     An3   v080
-        BYTE           N03     En3   v076
+        BYTE           N05     An2   v080
+        BYTE           N03     En2   v076
         BYTE   W12
-        BYTE           N04     An3   v084
-        BYTE           N04     Fn3   v080
+        BYTE           N04     An2   v084
+        BYTE           N04     Fn2   v080
         BYTE   W12
-        BYTE                   An3   v084
-        BYTE           N04     Gn3
+        BYTE                   An2   v084
+        BYTE           N04     Gn2
         BYTE   W12
 // 026   ----------------------------------------
         BYTE   W96

@@ -16,12 +16,13 @@ SEQ_BGM_D_CHAMPROAD_0:
         BYTE   KEYSH   SEQ_BGM_D_CHAMPROAD_key+0
 // 000   ----------------------------------------
         BYTE   TEMPO   86/2
+SEQ_BGM_D_CHAMPROAD_0_LOOP:
+        BYTE           VOICE   42
         BYTE           BENDR   12
         BYTE           VOL     50
         BYTE           N05     As2   v125
         BYTE           N05     As3
         BYTE   W12
-        BYTE           VOICE   42
         BYTE           PAN     c_v+10
         BYTE           N44     Gn3
         BYTE           N44     Gn4
@@ -380,16 +381,19 @@ SEQ_BGM_D_CHAMPROAD_0:
         BYTE           N19     Cn4
         BYTE   W21
         BYTE           N11     Cs4
+        BYTE           N72     Dn3
+        BYTE           N72     As4
         BYTE   W12
-        BYTE           N68     Dn3   v120   gtp3
         BYTE           N32     Dn4   v120   gtp3
-        BYTE           N68     As4   v120   gtp3
+        BYTE   W24
+        BYTE           N36     Fn4
         BYTE   W36
-        BYTE           N32     Fn4   v120   gtp3
-        BYTE   W24
 // 018   ----------------------------------------
-        BYTE   W24
-        BYTE   W01
+        BYTE           VOICE   42
+        BYTE           VOL     50
+        BYTE           PAN     c_v+0
+        BYTE   GoTo
+         POIN2  SEQ_BGM_D_CHAMPROAD_0_LOOP
         BYTE   FINE
 
 //****************** Track 1 (Midi-Chn.1) ******************//
@@ -397,9 +401,10 @@ SEQ_BGM_D_CHAMPROAD_0:
 SEQ_BGM_D_CHAMPROAD_1:
         BYTE   KEYSH   SEQ_BGM_D_CHAMPROAD_key+0
 // 000   ----------------------------------------
+SEQ_BGM_D_CHAMPROAD_1_LOOP:
         BYTE           BENDR   12
         BYTE           VOICE   14
-        BYTE           VOL     63
+        BYTE           VOL     79
         BYTE   W12
         BYTE           PAN     c_v+21
         BYTE           N10     As2   v120
@@ -613,7 +618,6 @@ SEQ_BGM_D_CHAMPROAD_1_5:
         BYTE           N10     En3   v016
         BYTE   W12
         BYTE           PAN     c_v+18
-        BYTE           VOL     54
         BYTE   W12
         BYTE           N10     Fs3   v120
         BYTE   W12
@@ -659,12 +663,15 @@ SEQ_BGM_D_CHAMPROAD_1_5:
         BYTE                   An2
         BYTE   W36
         BYTE                   As3
-        BYTE   W36
-        BYTE                   Fn3
-        BYTE   W24
-// 018   ----------------------------------------
         BYTE   W24
         BYTE   W01
+        BYTE                   Fn3
+        BYTE   W32
+        BYTE   W03
+// 018   ----------------------------------------
+        BYTE           PAN     c_v+0
+        BYTE   GoTo
+         POIN2  SEQ_BGM_D_CHAMPROAD_1_LOOP
         BYTE   FINE
 
 //****************** Track 2 (Midi-Chn.2) ******************//
@@ -672,6 +679,7 @@ SEQ_BGM_D_CHAMPROAD_1_5:
 SEQ_BGM_D_CHAMPROAD_2:
         BYTE   KEYSH   SEQ_BGM_D_CHAMPROAD_key+0
 // 000   ----------------------------------------
+SEQ_BGM_D_CHAMPROAD_2_LOOP:
         BYTE           BENDR   12
         BYTE           VOICE   33
         BYTE           VOL     63
@@ -1366,9 +1374,9 @@ SEQ_BGM_D_CHAMPROAD_2_4:
         BYTE                   An1
         BYTE   W12
 // 018   ----------------------------------------
-        BYTE                   As1
-        BYTE   W24
-        BYTE   W01
+        BYTE           VOL     63
+        BYTE   GoTo
+         POIN2  SEQ_BGM_D_CHAMPROAD_2_LOOP
         BYTE   FINE
 
 //****************** Track 3 (Midi-Chn.3) ******************//
@@ -1376,6 +1384,7 @@ SEQ_BGM_D_CHAMPROAD_2_4:
 SEQ_BGM_D_CHAMPROAD_3:
         BYTE   KEYSH   SEQ_BGM_D_CHAMPROAD_key+0
 // 000   ----------------------------------------
+SEQ_BGM_D_CHAMPROAD_3_LOOP:
         BYTE           BENDR   12
         BYTE           VOL     59
         BYTE   W12
@@ -1924,13 +1933,18 @@ SEQ_BGM_D_CHAMPROAD_3_2:
         BYTE   W12
         BYTE           N32     As2   v115   gtp3
         BYTE                   Dn3
-        BYTE   W36
-        BYTE                   Dn3
-        BYTE           N32     As3   v123   gtp3
-        BYTE   W24
-// 018   ----------------------------------------
         BYTE   W24
         BYTE   W01
+        BYTE                   Dn3
+        BYTE           N32     As3   v123   gtp3
+        BYTE   W32
+        BYTE   W03
+// 018   ----------------------------------------
+        BYTE           VOICE   0
+        BYTE           VOL     59
+        BYTE           PAN     c_v+0
+        BYTE   GoTo
+         POIN2  SEQ_BGM_D_CHAMPROAD_3_LOOP
         BYTE   FINE
 
 //****************** Track 4 (Midi-Chn.4) ******************//
@@ -1938,6 +1952,7 @@ SEQ_BGM_D_CHAMPROAD_3_2:
 SEQ_BGM_D_CHAMPROAD_4:
         BYTE   KEYSH   SEQ_BGM_D_CHAMPROAD_key+0
 // 000   ----------------------------------------
+SEQ_BGM_D_CHAMPROAD_4_LOOP:
         BYTE           BENDR   12
         BYTE           VOICE   38
         BYTE           VOL     60
@@ -2150,14 +2165,8 @@ SEQ_BGM_D_CHAMPROAD_4:
         BYTE                   An2   v081
         BYTE   W03
 // 018   ----------------------------------------
-        BYTE                   An2   v096
-        BYTE   W03
-        BYTE                   An2   v085
-        BYTE   W03
-        BYTE                   An2   v104
-        BYTE   W03
-        BYTE                   An2   v109
-        BYTE   W16
+        BYTE   GoTo
+         POIN2  SEQ_BGM_D_CHAMPROAD_4_LOOP
         BYTE   FINE
 
 //****************** Track 5 (Midi-Chn.5) ******************//
@@ -2165,6 +2174,7 @@ SEQ_BGM_D_CHAMPROAD_4:
 SEQ_BGM_D_CHAMPROAD_5:
         BYTE   KEYSH   SEQ_BGM_D_CHAMPROAD_key+0
 // 000   ----------------------------------------
+SEQ_BGM_D_CHAMPROAD_5_LOOP:
         BYTE           BENDR   12
         BYTE           VOL     56
         BYTE   W12
@@ -2685,9 +2695,11 @@ SEQ_BGM_D_CHAMPROAD_5_4:
         BYTE                   Gs3
         BYTE   W12
 // 018   ----------------------------------------
-        BYTE                   As3
-        BYTE   W24
-        BYTE   W01
+        BYTE           VOICE   0
+        BYTE           VOL     56
+        BYTE           PAN     c_v+0
+        BYTE   GoTo
+         POIN2  SEQ_BGM_D_CHAMPROAD_5_LOOP
         BYTE   FINE
 
 //****************** Track 6 (Midi-Chn.6) ******************//
@@ -2695,6 +2707,7 @@ SEQ_BGM_D_CHAMPROAD_5_4:
 SEQ_BGM_D_CHAMPROAD_6:
         BYTE   KEYSH   SEQ_BGM_D_CHAMPROAD_key+0
 // 000   ----------------------------------------
+SEQ_BGM_D_CHAMPROAD_6_LOOP:
         BYTE           BENDR   12
         BYTE           VOICE   43
         BYTE           VOL     59
@@ -2902,9 +2915,8 @@ SEQ_BGM_D_CHAMPROAD_6_2:
         BYTE                   Cn1
         BYTE   W12
 // 018   ----------------------------------------
-        BYTE                   Dn1
-        BYTE   W24
-        BYTE   W01
+        BYTE   GoTo
+         POIN2  SEQ_BGM_D_CHAMPROAD_6_LOOP
         BYTE   FINE
 
 //****************** Track 7 (Midi-Chn.7) ******************//
@@ -2912,6 +2924,7 @@ SEQ_BGM_D_CHAMPROAD_6_2:
 SEQ_BGM_D_CHAMPROAD_7:
         BYTE   KEYSH   SEQ_BGM_D_CHAMPROAD_key+0
 // 000   ----------------------------------------
+SEQ_BGM_D_CHAMPROAD_7_LOOP:
         BYTE           BENDR   12
         BYTE           VOL     54
         BYTE   W12
@@ -3113,14 +3126,16 @@ SEQ_BGM_D_CHAMPROAD_7:
         BYTE           N72     As4
         BYTE   W23
 // 017   ----------------------------------------
-        BYTE   W48
-        BYTE   W01
-        BYTE                   As4
-        BYTE   W44
-        BYTE   W03
-// 018   ----------------------------------------
         BYTE   W24
-        BYTE   W01
+        BYTE                   As4
+        BYTE   W72
+// 018   ----------------------------------------
+        BYTE           VOICE   0
+        BYTE           VOL     54
+        BYTE           PAN     c_v+0
+        BYTE           BEND    c_v+0
+        BYTE   GoTo
+         POIN2  SEQ_BGM_D_CHAMPROAD_7_LOOP
         BYTE   FINE
 
 //****************** Track 8 (Midi-Chn.8) ******************//
@@ -3128,6 +3143,7 @@ SEQ_BGM_D_CHAMPROAD_7:
 SEQ_BGM_D_CHAMPROAD_8:
         BYTE   KEYSH   SEQ_BGM_D_CHAMPROAD_key+0
 // 000   ----------------------------------------
+SEQ_BGM_D_CHAMPROAD_8_LOOP:
         BYTE           BENDR   12
         BYTE           VOICE   80
         BYTE           VOL     63
@@ -3852,22 +3868,8 @@ SEQ_BGM_D_CHAMPROAD_8_2:
         BYTE           N11     Dn1   v125
         BYTE   W12
 // 018   ----------------------------------------
-        BYTE           N01     Dn1   v124
-        BYTE   W01
-        BYTE                   Dn1   v103
-        BYTE   W02
-        BYTE                   Dn1   v110
-        BYTE   W01
-        BYTE                   Dn1   v086
-        BYTE   W02
-        BYTE                   Dn1   v093
-        BYTE   W01
-        BYTE                   Dn1   v075
-        BYTE   W02
-        BYTE                   Dn1   v082
-        BYTE   W01
-        BYTE                   Dn1   v070
-        BYTE   W15
+        BYTE   GoTo
+         POIN2  SEQ_BGM_D_CHAMPROAD_8_LOOP
         BYTE   FINE
 
 //***************** Track 9 (Midi-Chn.10) ******************//
@@ -3875,6 +3877,7 @@ SEQ_BGM_D_CHAMPROAD_8_2:
 SEQ_BGM_D_CHAMPROAD_9:
         BYTE   KEYSH   SEQ_BGM_D_CHAMPROAD_key+0
 // 000   ----------------------------------------
+SEQ_BGM_D_CHAMPROAD_9_LOOP:
         BYTE           BENDR   12
         BYTE           VOICE   76
         BYTE           VOL     79
@@ -5694,6 +5697,7 @@ SEQ_BGM_D_CHAMPROAD_9:
         BYTE                   20
         BYTE   W03
         BYTE                   19
+        BYTE           N84     En2   v092   gtp3
         BYTE   W03
         BYTE           BEND    c_v+39
         BYTE           VOL     18
@@ -5707,7 +5711,6 @@ SEQ_BGM_D_CHAMPROAD_9:
         BYTE   W01
         BYTE           BEND    c_v+36
         BYTE           VOL     14
-        BYTE           N84     En2   v092   gtp2
         BYTE   W03
         BYTE           BEND    c_v+34
         BYTE           VOL     15
@@ -5797,22 +5800,11 @@ SEQ_BGM_D_CHAMPROAD_9:
         BYTE           VOL     11
         BYTE   W03
 // 018   ----------------------------------------
-        BYTE           PAN     c_v-53
-        BYTE           BEND    c_v-15
-        BYTE           VOL     10
-        BYTE   W03
-        BYTE           PAN     c_v-57
-        BYTE           BEND    c_v-14
-        BYTE           VOL     8
-        BYTE   W03
-        BYTE           PAN     c_v-61
-        BYTE           BEND    c_v-12
-        BYTE           VOL     7
-        BYTE   W03
-        BYTE           PAN     c_v-64
-        BYTE           BEND    c_v-11
-        BYTE           VOL     5
-        BYTE   W16
+        BYTE                   79
+        BYTE           PAN     c_v+0
+        BYTE           BEND    c_v+0
+        BYTE   GoTo
+         POIN2  SEQ_BGM_D_CHAMPROAD_9_LOOP
         BYTE   FINE
 
 

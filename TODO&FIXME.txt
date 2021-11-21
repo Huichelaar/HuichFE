@@ -68,6 +68,8 @@ circleseverywhere — Today at 03:59 (12-11-2021
 gravity tome: after combat whichever unit had lower con gets dragged to the other one
 Siege tome?
 
+(Optional?) stage where we use gen5 victory road song, block sound channels initially and unblock them one by one every turn.
+
 If we need space:
   - Room for 0x2000 text entries. Can reduce this in repointedTextTable.event.
   - Some tables have entries they're not using, see Tables/TableOptions.s.

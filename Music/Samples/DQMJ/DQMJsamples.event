@@ -1,0 +1,49 @@
+#ifndef _FE8_
+    ERROR "You're not assembling to an FE8 ROM!"
+#endif
+
+//Samples
+//Direct
+// DQMJ BANK_BGM_015 1.
+ALIGN 4; DQMJSample1:
+#incbin "1.dmp"
+
+// DQMJ BANK_BGM_021 4.
+ALIGN 4; DQMJSample2:
+#incbin "2.dmp"
+
+
+//Multisample
+// DQMJ BANK_BGM_003 0.
+ALIGN 4; DQMJSample0_0:
+#incbin "0_0.dmp"
+ALIGN 4; DQMJSample0_1:
+#incbin "0_1.dmp"
+
+// DQMJ BANK_BGM_024 7.
+ALIGN 4; DQMJSample3_0:
+#incbin "3_0.dmp"
+ALIGN 4; DQMJSample3_1:
+#incbin "3_1.dmp"
+ALIGN 4
+
+//Drum
+
+
+// Multisample tables
+DQMJtable0:
+VoiceDirect(DQMJtable0,0x0,0x3c,DQMJSample0_0,0x0,0x0,0x0,0xff,0x0,0xff,0xa0)
+VoiceDirect(DQMJtable0,0x1,0x3c,DQMJSample0_1,0x0,0x0,0x0,0xff,0x0,0xff,0xa0)
+ORG DQMJtable0+0x0c*2
+
+DQMJtable3:
+VoiceDirect(DQMJtable3,0x0,0x3c,DQMJSample3_0,0x0,0x0,0x0,0xff,0x0,0xff,0xa0)
+VoiceDirect(DQMJtable3,0x1,0x3c,DQMJSample3_1,0x0,0x0,0x0,0xff,0x0,0xff,0xa0)
+ORG DQMJtable3+0x0c*2
+
+
+// Note charts
+ALIGN 4; DQMJchart0:
+#incbin "note charts/0chart.dmp"
+ALIGN 4; DQMJchart3:
+#incbin "note charts/3chart.dmp"

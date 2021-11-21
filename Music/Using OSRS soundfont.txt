@@ -1,0 +1,3 @@
+If you're going to import OSRS MIDIs using the OSRS soundfont, take heed of these things:
+  - Move the MIDI's notes down an octave if they're using instrument 46, Harp or 73, Flute.
+  - Increase volume of instrument 62 notes or volume control change. Maybe increase overall note & volume control change in the first place.

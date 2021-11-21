@@ -14,9 +14,10 @@ POP
 BeforeSamplesOffset:
 #include "../Samples/YUGIOH/YUGIOHsamples.event"
 #include "../Samples/OSRS/OSRSsamples.event"
-#include "../Samples/Custom1/Custom1samples.event"
+#include "../Samples/Other/Othersamples.event"
 #include "../Samples/Sfx/Sfxsamples.event"
 #include "../Samples/Pokemon/Pokemonsamples.event"
+#include "../Samples/DQMJ/DQMJsamples.event"
 #include "../Samples/Rayman3/R3Samples.event"
 #include "../Samples/Roland_SC_88/RolandSamples.event"
 MESSAGE Soundsamples occupy CurrentOffset-BeforeSamplesOffset bytes
@@ -50,7 +51,7 @@ SongTable(0x5,AudioTest,0)
 #include "../Songs/AudioTest2.event"
 SongTable(0x6,AudioTest2,0)
 #include "../Songs/SEQ_BGM_D_CHAMPROAD.event"
-SongTable(0x7,SEQ_BGM_D_CHAMPROAD,0)
+SongTable(0x7,SEQ_BGM_D_CHAMPROAD,1)
 #include "../Songs/song500.event"
 SongTable(0x9,song500,1)
 #include "../Songs/Principality.event"

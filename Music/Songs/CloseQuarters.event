@@ -2564,7 +2564,7 @@ CloseQuarters_6:
         BYTE   KEYSH   CloseQuarters_key+0
 // 000   ----------------------------------------
         BYTE           VOICE   62
-        BYTE           VOL     44
+        BYTE           VOL     63
         BYTE   W96
 // 001   ----------------------------------------
         BYTE   W96

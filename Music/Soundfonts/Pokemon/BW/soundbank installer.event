@@ -13,7 +13,7 @@ VoiceDummy(PkmnBWsoundbank,0x0)
 VoiceDummy(PkmnBWsoundbank,0x1)
 //2
 VoiceDummy(PkmnBWsoundbank,0x2)
-//3
+//3, SEQ_BGM_DIVING 3
 VoiceMulti(PkmnBWsoundbank,0x3,PkmnBWtable3,PkmnBWchart3)
 //4
 VoiceDummy(PkmnBWsoundbank,0x4)
@@ -35,15 +35,14 @@ VoiceDummy(PkmnBWsoundbank,0xb)
 VoiceDummy(PkmnBWsoundbank,0xc)
 //13
 VoiceDummy(PkmnBWsoundbank,0xd)
-//14
-VoiceDummy(PkmnBWsoundbank,0xe)
-//15
-VoiceDummy(PkmnBWsoundbank,0xf)
+//14 OSRS 14
+VoiceMulti(PkmnBWsoundbank,0xe,RStable14,RSchart)
+//15, Actually BANK_MUS_DUMMY instrument 14. We're already using different tubular bells.
+VoiceMulti(PkmnBWsoundbank,0xf,PkmnBWtable15,PkmnBWchart15)
 //16
 VoiceDummy(PkmnBWsoundbank,0x10)
-//17
+//17, Originally planned to be SEQ_BGM_DIVING 17
 //VoiceMulti(PkmnBWsoundbank,0x11,PkmnBWtable17,PkmnBWchart17)
-//VoiceMulti(PkmnBWsoundbank,0x11,PkmnBWtable3,PkmnBWchart3)
 VoiceDirect(PkmnBWsoundbank,0x11,0x3c,0x02BB7F4,0x0,0x0,0x0,0xff,0xfd,0x0,0xcc)
 //18
 VoiceDummy(PkmnBWsoundbank,0x12)
@@ -69,34 +68,34 @@ VoiceDummy(PkmnBWsoundbank,0x1b)
 VoiceDummy(PkmnBWsoundbank,0x1c)
 //29
 VoiceDummy(PkmnBWsoundbank,0x1d)
-//30
+//30, SEQ_BGM_DIVING 30
 VoiceMulti(PkmnBWsoundbank,0x1e,PkmnBWtable30,PkmnBWchart30)
 //31
 VoiceDummy(PkmnBWsoundbank,0x1f)
 //32
 VoiceDummy(PkmnBWsoundbank,0x20)
-//33
-VoiceDummy(PkmnBWsoundbank,0x21)
-//34
-VoiceDummy(PkmnBWsoundbank,0x22)
+//33, BANK_MUS_WB_D_CHAMPROAD 33
+VoiceMulti(PkmnBWsoundbank,0x21,PkmnBWtable33,PkmnBWchart33)
+//34, OSRS 45
+VoiceMulti(PkmnBWsoundbank,0x22,RStable45,RSchart)
 //35
 VoiceDummy(PkmnBWsoundbank,0x23)
 //36
 VoiceDummy(PkmnBWsoundbank,0x24)
 //37
 VoiceDummy(PkmnBWsoundbank,0x25)
-//38
-VoiceDummy(PkmnBWsoundbank,0x26)
+//33, BANK_MUS_WB_D_CHAMPROAD 38
+VoiceMulti(PkmnBWsoundbank,0x26,PkmnBWtable38,PkmnBWchart38)
 //39
 VoiceDummy(PkmnBWsoundbank,0x27)
 //40
 VoiceDummy(PkmnBWsoundbank,0x28)
 //41
 VoiceDummy(PkmnBWsoundbank,0x29)
-//42
-VoiceDummy(PkmnBWsoundbank,0x2a)
-//43
-VoiceDummy(PkmnBWsoundbank,0x2b)
+//42, BANK_MUS_WB_D_CHAMPROAD 42
+VoiceMulti(PkmnBWsoundbank,0x2a,PkmnBWtable42,PkmnBWchart42)
+//43 NIMAP 65
+VoiceDirect(PkmnBWsoundbank,0x2b,0x3c,0x024BBAC,0x0,0x0,0x0,0xff,0x0,0xff,0xd0)
 //44
 VoiceDummy(PkmnBWsoundbank,0x2c)
 //45
@@ -121,7 +120,7 @@ VoiceDummy(PkmnBWsoundbank,0x35)
 VoiceDummy(PkmnBWsoundbank,0x36)
 //55
 VoiceDummy(PkmnBWsoundbank,0x37)
-//56
+//56, SEQ_BGM_DIVING 56
 VoiceMulti(PkmnBWsoundbank,0x38,PkmnBWtable56,PkmnBWchart56)
 //57
 VoiceDummy(PkmnBWsoundbank,0x39)
@@ -159,17 +158,17 @@ VoiceDummy(PkmnBWsoundbank,0x48)
 VoiceDummy(PkmnBWsoundbank,0x49)
 //74
 VoiceDummy(PkmnBWsoundbank,0x4a)
-//75
+//75, SEQ_BGM_DIVING 75
 VoiceMulti(PkmnBWsoundbank,0x4b,PkmnBWtable75,PkmnBWchart75)
-//76
-VoiceDummy(PkmnBWsoundbank,0x4c)
+//76, BANK_MUS_WB_D_CHAMPROAD 76
+VoiceDirect(PkmnBWsoundbank,0x4c,0x3c,PkmnBWSample76,0x0,0x0,0x0,0xff,0x0,0xff,0xa5)
 //77
 VoiceDummy(PkmnBWsoundbank,0x4d)
 //78
 VoiceDummy(PkmnBWsoundbank,0x4e)
 //79
 VoiceDummy(PkmnBWsoundbank,0x4f)
-//80
+//80 mix of SEQ_BGM_DIVING 80 and BANK_MUS_WB_D_CHAMPROAD 80. Seems to be a drum table actually.
 VoiceMulti(PkmnBWsoundbank,0x50,PkmnBWtable80,PkmnBWchart80)
 //81
 VoiceDummy(PkmnBWsoundbank,0x51)
@@ -267,4 +266,4 @@ VoiceDummy(PkmnBWsoundbank,0x7e)
 VoiceDummy(PkmnBWsoundbank,0x7f)
 
 
-// Drum table, TODO (if necessary)
+// Drum table, we're using VoiceMulti 80.

@@ -1,0 +1,24 @@
+#ifndef _FE8_
+    ERROR "You're not assembling to an FE8 ROM!"
+#endif
+
+//Samples
+//Direct
+// Orchestra Hit.
+// It was either recorded straight from the Sound Canvas VST or from an SC-88 soundfont; don't remember.
+ALIGN 4; OtherSample0:
+#incbin "55-orchhit13k.dmp"
+ALIGN 4
+
+
+//Multisample
+
+
+//Drum
+
+
+// Multisample tables
+
+
+// Note charts
+
