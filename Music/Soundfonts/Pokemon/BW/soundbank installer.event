@@ -93,7 +93,7 @@ VoiceDummy(PkmnBWsoundbank,0x28)
 //41
 VoiceDummy(PkmnBWsoundbank,0x29)
 //42, BANK_MUS_WB_D_CHAMPROAD 42
-VoiceMulti(PkmnBWsoundbank,0x2a,PkmnBWtable42,PkmnBWchart42)
+VoiceMulti(PkmnBWsoundbank,0x2a,RStable60,RSchart)
 //43 NIMAP 65
 VoiceDirect(PkmnBWsoundbank,0x2b,0x3c,0x024BBAC,0x0,0x0,0x0,0xff,0x0,0xff,0xd0)
 //44

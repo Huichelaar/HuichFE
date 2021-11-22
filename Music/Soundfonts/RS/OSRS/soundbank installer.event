@@ -209,8 +209,8 @@ VoiceMulti(OSRS,0x62,RStable98,RSchart)
 VoiceMulti(OSRS,0x63,RStable99,RSchart)
 //100 NIMAP 100
 VoiceDirect(OSRS,0x64,0x3c,0x04BF480,0x0,0x0,0x0,0xff,0xfc,0x40,0xe0)
-//101 Sounds stuttery, unused? POKBW CHAMPROAD 42
-VoiceMulti(OSRS,0x65,PkmnBWtable42,PkmnBWchart42)
+//101 Sounds stuttery, unused? Put something you like here.
+VoiceDummy(OSRS,0x65)
 //102 OSRS 102
 VoiceMulti(OSRS,0x66,RStable102,RSchart)
 //103 NIMAP 104
