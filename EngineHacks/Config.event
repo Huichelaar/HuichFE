@@ -235,7 +235,6 @@
 //If true, enemy/NPC autolevels will use fixed growths as well.
 #define ENEMY_NPC_FIXED_GROWTHS True
 
-
 //If true, the effects of multiple passive growth boosters can stack.
 #define STACKABLE_GROWTH_BOOSTS True
 

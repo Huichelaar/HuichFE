@@ -32,4 +32,5 @@ USED FREE RAM:
                               0x2: Don't buffer minimugs. Necessary when drawing multiple minimnugs in a frame.
 
   - [0x3003F48, 0x300408C)  Used to hold BG horizontal & vertical offsets during sinusoid HBlank. Can be re-used 
-                            when no sinusoid is active.
+                            when no sinusoid is active. First byte is also used when loading units to keep track of
+                            player army level.

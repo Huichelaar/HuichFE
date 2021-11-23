@@ -1,0 +1,15 @@
+PUSH
+
+ORG 0xFB84
+jumpToHack(SCU_UnitLoadHook)
+
+POP
+
+
+ALIGN 4; SCU_UnitLoadHook:
+#include "UnitLoadHook.lyn.event"
+ALIGN 4; SCU_CalcPlayerLevel:
+#include "CalcPlayerLevel.lyn.event"
+//}
+ALIGN 4; SCU_CalcLoadedUnitLevel:
+#include "CalcLoadedUnitLevel.lyn.event"

@@ -107,7 +107,7 @@ REDA [12,18] 0 0x80 0 0
 REDA [12,17] 0 0x80 0 0
 
 EnemyUnits2:
-UNIT Aiden Myrmidon_F Aiden Level(9, Enemy, 0x0) [0,19] DropItem 0 0 0 [Lancereaver, Vulnerary, KillingEdge] [0x03,0x03,0x0,0x20]
+UNIT Aiden Myrmidon_F Aiden Level(9, Enemy, 0) [0,19] DropItem 0 0 0 [Lancereaver, Vulnerary, KillingEdge] [0x03,0x03,0x0,0x20]
 UNIT 0x4E Soldier_F Aiden Level(3, Enemy, 1) [0,19] 0 0 1 REDA17 [IronLance] AttackInRangeAI
 UNIT 0x4F Soldier_F Aiden Level(4, Enemy, 1) [1,19] 0 0 0 0 [SteelLance] AttackInRangeAI
 UNIT 0x4E Soldier Aiden Level(3, Enemy, 1) [0,19] 0 0 2 REDA11 [SteelLance] AttackInRangeAI

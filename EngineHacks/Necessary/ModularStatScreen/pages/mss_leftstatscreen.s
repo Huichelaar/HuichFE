@@ -32,5 +32,5 @@ ldr r0,=0x442
 bl HP_Name_Color
 
 
-page_end
+leftpage_end
 

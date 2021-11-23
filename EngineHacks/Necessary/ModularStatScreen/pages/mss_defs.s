@@ -1,6 +1,6 @@
 .equ MagConGetter, 0x8019284 @defined in the modularstatgetter
 .equ MovGetter, 0x8019224 @defined in the modularstatgetter
-.equ DebuffTable, 0x203f100
+.equ DebuffTable, 0x203fa70
 .equ BufferText, 0x800A240
 .equ DrawText, 0x800443C
 .equ DrawBar, 0x80870BC
@@ -71,6 +71,15 @@
   pop {r4-r5}
   mov r8,r4
   mov r9,r5
+  pop {r4-r7}
+  pop {r0}
+  bx r0 
+.endm
+
+.macro leftpage_end
+  add     sp,#0x50   
+  pop {r7}
+  mov r8,r7
   pop {r4-r7}
   pop {r0}
   bx r0 

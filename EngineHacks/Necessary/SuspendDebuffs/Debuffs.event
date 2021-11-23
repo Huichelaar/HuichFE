@@ -73,8 +73,7 @@
 
   ALIGN 4
   Initialization:
-    #incbin "asm/Debuffs/NewInitializer.dmp"
-    WORD DebuffTable
+    #include "asm/Debuffs/NewInitializer.lyn.event"
 
   ALIGN 4
   Reloading:

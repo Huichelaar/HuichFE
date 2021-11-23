@@ -37,3 +37,6 @@
 // Display different BG3s based on songID.
 // Also, display only BG3 in soundroom when L is pressd.
 #include "SoundRoomBG/SoundRoomBG.event"
+
+// Scale loaded units
+#include "ScaleUnits/ScaleUnits.event"
