@@ -1,15 +1,47 @@
+#ifndef jumpToHack_r0
+  #define jumpToHack_r0(offset) "SHORT 0x4800 0x4700; POIN (offset|0x1)"
+#endif
+
 PUSH
 
+// Increment 3 UNITS instead of 1.
+ORG 0xF664; BYTE 0x3C
+ORG 0xF696; BYTE 0xFD
+ORG 0xF6E6; BYTE 0x3C
+ORG 0xF702; BYTE 0xFD
+
+// Pick UNIT, based on absolute level.
+ORG 0xF714
+jumpToHack_r0(SCU_PickScaledUnit)
+
+// Calc & buffer player army level when LOAD.
 ORG 0xFB84
 jumpToHack(SCU_UnitLoadHook)
+
+// Give UNIT* as arg to autolevel routines in LoadUnit (17AC4) routine.
+ORG 0x17C20       // First autolevel call.
+SHORT 0x4208 0xD108 0x1C31
+ORG 0x17C4E       // Jump slightly shorter distance.
+BYTE 0x1B
+ORG 0x17C66       // Second and third autolevel call.
+SHORT 0x1C31
+WORD 0xFA7AF000 0xF7FF1C28 0x1C20FDC1 0xF7FF1C29
+WORD 0x1C20FDD1 0xFDBAF7FF 0x726820FF 0x46C0E004
+SHORT 0x1C31
+
+//TODO! Do something with arg r1 in AutolevelUnit & AutolevelRealistic!
+ORG 0x1812A
+
 
 POP
 
 
 ALIGN 4; SCU_UnitLoadHook:
 #include "UnitLoadHook.lyn.event"
-ALIGN 4; SCU_CalcPlayerLevel:
+ALIGN 4; SCU_CalcPlayerLevel:           // Called by SCU_UnitLoadHook
 #include "CalcPlayerLevel.lyn.event"
+ALIGN 4; SCU_PickScaledUnit:
+#include "PickScaledUnit.lyn.event"
 //}
-ALIGN 4; SCU_CalcLoadedUnitLevel:
+ALIGN 4; SCU_CalcLoadedUnitLevel:       // Called by SuspendDebuffs' NewInitializer.
 #include "CalcLoadedUnitLevel.lyn.event"

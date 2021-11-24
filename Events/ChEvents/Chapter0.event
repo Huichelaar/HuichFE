@@ -7,8 +7,8 @@ POIN MiscBasedEvents
 POIN Dunno Dunno Dunno Tutorial
 POIN Traps1 Traps2
 POIN PrepUnits PrepUnits  //This unit group determines the number and position of deployment slots when there is a prep screen
-POIN $0 $0 $0
-POIN $0 $0 $0
+POIN 0 0 0
+POIN 0 0 0
 POIN BeginningScene EndingScene
 
 Dunno:
@@ -21,8 +21,12 @@ PrepUnits:
 UNIT
 
 PlayerUnits:
-UNIT Vivian Supplier Vivian Level(0x2, Ally, 0x0) [15,0] 0b 0x0 0x0 0x0 [IronLance, Vulnerary] NoAI
-UNIT Simon  Shaman   Vivian Level(0x8, Ally, 0x0) [15,1] 0b 0x0 0x0 0x0 [Flux] AttackInRangeAI
+UNIT Vivian Supplier Vivian Level(2, Ally, 0) [15,0] 0 0 0 0 [IronLance, Vulnerary] NoAI
+UNIT Vivian Supplier Vivian Level(2, Ally, 0) [15,0] 0 0 0 0 [IronLance, Vulnerary] NoAI
+UNIT Vivian Supplier Vivian Level(2, Ally, 0) [15,0] 0 0 0 0 [IronLance, Vulnerary] NoAI
+UNIT Simon Shaman Vivian Level(8, Ally, 0) [15,1] 0 0 0 0 [Flux] AttackInRangeAI
+UNIT Simon Shaman Vivian Level(8, Ally, 0) [15,1] 0 0 0 0 [Flux] AttackInRangeAI
+UNIT Simon Shaman Vivian Level(8, Ally, 0) [15,1] 0 0 0 0 [Flux] AttackInRangeAI
 UNIT
 
 EnemyUnits:

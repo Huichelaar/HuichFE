@@ -15,7 +15,19 @@ ldrb  r1, [r1]
 mov   r2, #0x1
 and   r2, r0
 mul   r1, r2
-lsr   r0, #0x3
+lsl   r0, #0x18     @ 5-bit level value is now signed,
+asr   r0, #0x1B     @ meaning relative level can only be in [-16, 15].
 add   r0, r1
 
+@ Ensure absolute level is in [1, 99].
+cmp   r0, #0
+bgt   L1
+  mov   r0, #1      @ Level too low. Set to 1.
+  b     Return
+L1:
+cmp   r0, #99
+ble   Return
+  mov   r0, #99     @ Level too high. Set to 99.
+
+Return:
 bx    r14

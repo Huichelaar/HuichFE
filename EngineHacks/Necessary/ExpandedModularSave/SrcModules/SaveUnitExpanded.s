@@ -1,4 +1,5 @@
-
+  @ Huichelaar edit: State no longer saves rescue bits (bit 5 & 6).
+  @ Instead unit level gets an additional 2 bits. Lv99 cap here we go!
 	.thumb
 
 	@ THE PLAN:
@@ -24,7 +25,7 @@
 	@   +0F | u8[8] wexp
 	@   +17 | u8[7] supports
 	@   +1E | u16[5] items
-	@   +28 | u32 state
+	@   +28 | u32 state (bits 5 & 6 will be level bits 6 & 7.)
 	@   +2C | (end)
 
 	GameSaveUnit.size = 0x2C
@@ -231,10 +232,17 @@ PackGameSaveUnit.lop_items:
 	sub r5, #1
 	bge PackGameSaveUnit.lop_items
 
-	@ STATE
+	@ STATE + LEVEL BITS 6 AND 7.
+  
+  @ We're going to replace bits 5 & 6 (rescue stuff) with level bits 6 & 7.
 
-	ldr r2, [r1, #0x0C] @ r2 = Unit->state
-	str r2, [r0, #0x28] @ GameSaveUnit->state = Unit->state
+  ldrb  r2, [r1, #0x8] @ r2 = Unit->level
+  mov   r3, #0x60
+  and   r3, r2
+  lsr   r3, #0x1
+	ldr   r2, [r1, #0xC] @ r2 = Unit->state
+  orr   r2, r3
+	str   r2, [r0, #0x28] @ GameSaveUnit->state = Unit->state
 
 	@ END
 
@@ -409,10 +417,23 @@ UnpackGameSaveUnit.lop_items:
 	sub r3, #1
 	bge UnpackGameSaveUnit.lop_items
 
-	@ STATE
+	@ STATE + LEVEL BITS 6 AND 7.
+  
+  @ 5 & 6 (rescue stuff) actually represent level bits 6 & 7.
 
-	ldr r2, [r5, #0x28] @ r2 = GameSaveUnit->state
-	str r2, [r4, #0x0C] @ Unit->state = GameSaveUnit->state
+	ldr   r2, [r5, #0x28] @ r2 = GameSaveUnit->state
+  
+  mov   r3, #0x30
+  mov   r0, r3
+  and   r0, r2
+  lsl   r0, #0x1
+  bic   r2, r3
+  
+	str   r2, [r4, #0xC] @ Unit->state = GameSaveUnit->state
+  
+  ldrb  r2, [r4, #0x8]
+  orr   r2, r0
+  strb  r2, [r4, #0x8]
 
 	@ MISC
 

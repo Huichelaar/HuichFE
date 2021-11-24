@@ -17,4 +17,9 @@
 // RAM Location where player army level (byte) is stored during LOAD.
 #define PlayerLevelRAM 0x3003F48
 
+// Tier-distinction levels. Determines at what level
+// the next UNIT will be loaded.
+#define SCU_T1UnitMaxLv 19
+#define SCU_T2UnitMaxLv 39
+
 #include "ASM/ASM.event"

@@ -7,7 +7,7 @@ Some changes I made to the engine:
   
   - Changed LevelUp.event in ExternalHacks/StrMagSplit/StrMagSplit/LevelUp. It now uses WritePromotoRAM2.dmp which does the same thing as WritePromotoRAM.dmp, but uses the unit's level instead of level 1 for the promo `level-up' screen. We also nopped out an instruction, making level not reset upon promotion. When a unit reaches their maximum level, their EXP is set to 0xFF to prevent them from gaining more EXP. Promoting comes with a higher level cap and thus sets EXP to 0 to allow EXP to be gained again.
   
-  - Units can no longer rescue units, unless a rescue staff is used.
+  - Units can no longer rescue units, unless a rescue staff is used. Unit State +0xC bits 5 and 6 (to do with rescuing) are no longer saved. Instead two more unit level bits are saved.
   
   - Base staff accuracy was increased from 30 to 50.
   
