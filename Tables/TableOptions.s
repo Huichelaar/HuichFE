@@ -121,6 +121,7 @@ CSV Class/Classes.csv
   TABLE ClassTableLABEL Class/Classes.nmm
   TABLE MovingMapSpriteTableLABEL Class/MovingSpriteTable.nmm -1
   TABLE Class_Level_Cap_TableLABEL Class/ClassLevelCapTable.nmm
+  TABLE ClassPromoLevelTableLABEL Class/ClassPromoLevel.nmm
   TABLE WalkingSoundsLABEL Class/WalkingSounds.nmm 
   TABLE MagClassTableLABEL Class/MagClass.nmm
   TABLE ModularEXPClassTableLABEL Class/ModularEXPClass.nmm

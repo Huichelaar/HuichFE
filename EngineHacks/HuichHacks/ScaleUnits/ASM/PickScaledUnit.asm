@@ -23,21 +23,26 @@ mov   r9, r2
 lsl   r3, #0x18
 lsr   r4, r3, #0x18
 
+@ Buffer first pointer to first UNIT command.
+ldr   r0, =FirstUNITCommand
+lsl   r0, #5
+lsr   r0, #5
+str   r6, [r0]
+
 @ Determine which UNIT command to load
 ldrb  r0, [r6, #0x3]
 bl    SCU_CalcLoadedUnitLevel       @ Calc absolute level.
-ldr   r1, =SCU_T1UnitMaxLv
-lsl   r1, #0x5
-lsr   r1, #0x5
-cmp   r0, r1
-ble   Return
-  add   r6, #0x14                   @ Unit is at least T2.
-  ldr   r1, =SCU_T2UnitMaxLv
-  lsl   r1, #0x5
-  lsr   r1, #0x5
-  cmp   r0, r1
-  ble   Return
-    add   r6, #0x14                 @ Unit is T3.
+ldr   r1, =ClassPromoLevelTableLABEL
+ldrb  r2, [r6, #0x1]
+ldrb  r2, [r1, r2]
+cmp   r2, r0
+blt   Return
+  add   r6, #0x14
+  ldrb  r2, [r6, #0x1]
+  ldrb  r2, [r1, r2]
+  cmp   r2, r0
+  blt   Return
+    add   r6, #0x14
   
 Return:
 ldr   r0, =0x800F721

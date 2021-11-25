@@ -1,5 +1,5 @@
 @ Definitions
-.include "C:/FE-CLib/reference/FE8U-20190316.s"
+.include "C:/FE-CLibNew/reference/FE8U.s"
 
 @ Functions
 .global FadePalette

@@ -34,6 +34,7 @@
 #include "Class/Classes.event"
 #include "Class/MovingSpriteTable.event"
 #include "Class/ClassLevelCapTable.event"
+#include "Class/ClassPromoLevel.event"
 #include "Class/WalkingSounds.event"
 #include "Class/MagClass.event"
 #include "Class/ModularEXPClass.event"

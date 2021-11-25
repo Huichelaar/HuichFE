@@ -116,8 +116,8 @@ UNIT 0x4A Mercenary_F Turner Level(4, Enemy, 0) [12,6] 0 0 0 0 [IronSword] Ignor
 UNIT 0x4A Mercenary_F Turner Level(4, Enemy, 0) [12,6] 0 0 0 0 [IronSword] IgnoreSimonAI
 UNIT 0x4A Mercenary_F Turner Level(4, Enemy, 0) [12,6] 0 0 0 0 [IronSword] IgnoreSimonAI
 UNIT Turner Mercenary Turner Level(5, Enemy, 1) [0,8] 0 0 0 0 [SteelSword] [DontAttackSimon, 3, 0, 0]
-UNIT Turner Mercenary Turner Level(5, Enemy, 1) [0,8] 0 0 0 0 [SteelSword] [DontAttackSimon, 3, 0, 0]
-UNIT Turner Mercenary Turner Level(5, Enemy, 1) [0,8] 0 0 0 0 [SteelSword] [DontAttackSimon, 3, 0, 0]
+UNIT Turner Hero Turner Level(5, Enemy, 1) [0,8] 0 0 0 0 [SteelSword] [DontAttackSimon, 3, 0, 0]
+UNIT Turner General Turner Level(5, Enemy, 1) [0,8] 0 0 0 0 [SteelSword] [DontAttackSimon, 3, 0, 0]
 UNIT
 
 CutsceneUnits:
