@@ -18,12 +18,6 @@ jumpToHack_r0(SCU_PickScaledUnit)
 ORG 0xFB84
 jumpToHack(SCU_UnitLoadHook)
 
-//TODO! AutolevelUnit & AutolevelRealistic!
-ORG 0x18160
-jumpToHack(SCU_AutolevelRealistic)
-//ORG 0x1812A
-
-
 POP
 
 
@@ -33,8 +27,6 @@ ALIGN 4; SCU_CalcPlayerLevel:           // Called by SCU_UnitLoadHook
 #include "CalcPlayerLevel.lyn.event"
 ALIGN 4; SCU_PickScaledUnit:
 #include "PickScaledUnit.lyn.event"
-ALIGN 4;
-#include "Autolevel.lyn.event"
 //}
 ALIGN 4; SCU_CalcLoadedUnitLevel:       // Called by SuspendDebuffs' NewInitializer.
 #include "CalcLoadedUnitLevel.lyn.event"
