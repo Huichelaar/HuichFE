@@ -23,6 +23,8 @@ GetUnitLevelSkills:
 
 	@ This is an improvement over the skill system before march 2019, where each cases were handled separately
 	@ As it makes it easier to hack in (or out) methods of defining level-up skills.
+  
+  @ Huichelaar edit: class level up skills will not be learned by unitIDs > 0x3F.
 
 	push {r3, r4-r7} @ save r3 for returning it later
 
@@ -114,6 +116,13 @@ check_class_skill:
 
 	cmp r4, #0
 	beq end_class_skill @ if no class skill list, then no class skill learned
+  
+  @ Huichelaar edit: class level up skills
+  @ will not be learned by units > 0x3F.
+  ldr   r0, [r7]        @ r0 = unit char.
+  ldrb  r0, [r0, #0x4]  @ r0 = unit char id.
+  cmp   r0, #0x3F
+  bgt end_class_skill   @ if no BWL/generic, then no class skill learned.
 
 lop_class_skill:
 	ldrb r3, [r4]
@@ -147,57 +156,7 @@ yes_class_skill:
 	
 	cmp r2,#0xFF
 	beq write_class_skill
-	
-	lsr r3, r3, #5 @first 3 digits as options
-
-	cmp r3, #0     @0, vanilla behavior
-	beq write_class_skill
-
-	ldrb r0, [r7, #0xB] @allegiance
-	lsr r0, #0x6 @ top two bits are used for allegiance (0x00 for player, 0x40 for NPC, 0x80 for enemy)
-	cmp r0, #0x0
-	bne enemy_check
-
-	cmp r3, #1     @1, player only
-	beq write_class_skill
-
-	b continue_class_skill
-
-@includes green units
-enemy_check:
-	cmp r3, #2     @2, enemy only
-	beq write_class_skill
-
-	cmp r3, #3     @3, normal & hard mode only
-	bne hard_mode_check
-
-	ldr r0, =ChapterData
-	mov r1, #0x42
-	ldrb r1, [r0, r1]
-
-	mov r2, #0x20 @ Set if not easy mode
-	tst r1, r2
-	bne write_class_skill
-
-	b continue_class_skill
-	
-hard_mode_check:
-	cmp r3, #4     @4, hard mode only
-	bne custom_check
-
-	ldr r0, =ChapterData
-	mov r1, #0x14
-	ldrb r1, [r0, r1]
-
-	mov r2, #0x40 @ not easy mode
-	tst r1, r2
-	bne write_class_skill
-
-	b continue_class_skill
-
-custom_check:
-	@ add custom checks for 5,6,7
-	b continue_class_skill
+...
 
 write_class_skill:
 	ldrb r3, [r4, #1] @ get skill id

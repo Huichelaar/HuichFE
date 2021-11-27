@@ -97,15 +97,15 @@ REDA3:
 REDA [10,4] 0 0x80 0 0
 
 Unit4:
-UNIT Demi Soldier_F 0 Level(4, NPC, 0) [9, 6] 0 0 0 0 [IronLance, Vulnerary] AttackInRangeAI
-UNIT Demi Soldier_F 0 Level(4, NPC, 0) [9, 6] 0 0 0 0 [IronLance, Vulnerary] AttackInRangeAI
-UNIT Demi Soldier_F 0 Level(4, NPC, 0) [9, 6] 0 0 0 0 [IronLance, Vulnerary] AttackInRangeAI
+UNIT Demi Mercenary 0 Level(4, NPC, 1) [9, 6] 0 0 0 0 [IronLance, Vulnerary] AttackInRangeAI
+UNIT Demi Hero 0 Level(4, NPC, 1) [9, 6] 0 0 0 0 [IronLance, Vulnerary] AttackInRangeAI
+UNIT Demi General 0 Level(4, NPC, 1) [9, 6] 0 0 0 0 [IronLance, Vulnerary] AttackInRangeAI
 UNIT
 
 EnemyUnits:
 UNIT 0x48 Mercenary Turner Level(5, Enemy, 1) [3,0] 0 0 0 0 [IronSword] [DontAttackSimon, 3, 0, 0]
-UNIT 0x48 Mercenary Turner Level(5, Enemy, 1) [3,0] 0 0 0 0 [IronSword] [DontAttackSimon, 3, 0, 0]
-UNIT 0x48 Mercenary Turner Level(5, Enemy, 1) [3,0] 0 0 0 0 [IronSword] [DontAttackSimon, 3, 0, 0]
+UNIT 0x48 Hero Turner Level(5, Enemy, 1) [3,0] 0 0 0 0 [IronSword] [DontAttackSimon, 3, 0, 0]
+UNIT 0x48 General Turner Level(5, Enemy, 1) [3,0] 0 0 0 0 [IronSword] [DontAttackSimon, 3, 0, 0]
 UNIT 0x48 Mercenary_F Turner Level(3, Enemy, 1) [3,5] 0 0 0 0 [IronSword] [DontAttackSimon, 3, 0, 0]
 UNIT 0x48 Mercenary_F Turner Level(3, Enemy, 1) [3,5] 0 0 0 0 [IronSword] [DontAttackSimon, 3, 0, 0]
 UNIT 0x48 Mercenary_F Turner Level(3, Enemy, 1) [3,5] 0 0 0 0 [IronSword] [DontAttackSimon, 3, 0, 0]

@@ -24,7 +24,7 @@ add   r0, r1
 ldr   r1, =FirstUNITCommand
 lsl   r1, #5
 lsr   r1, #5
-ldr   r1, [r0]
+ldr   r1, [r1]
 add   r1, #0x28
 ldrb  r1, [r1, #0x1]  @ T3 class.
 ldr   r2, =Class_Level_Cap_TableLABEL

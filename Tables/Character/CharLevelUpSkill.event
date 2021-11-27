@@ -2,4 +2,5 @@ ALIGN 4
 CharLevelUpSkillTableLABEL:
 FILL 256*4
 PUSH
+ORG CharLevelUpSkillTableLABEL + Turner*4 ; WORD (TurnerSkillList|IsPointer) 
 POP

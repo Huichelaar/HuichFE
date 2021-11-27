@@ -22,54 +22,43 @@ SCU_autoPromoteUnit:
 	@ Function supports interworking.
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
-	push	{r4, r5, r6, lr}
-	ldr	r4, [r0, #4]
-	movs	r6, r4
-	movs	r2, #13
-	adds	r6, r6, #9
-.L3:
-	ldrb	r1, [r0, r2]
-	ldrb	r3, [r6, r2]
-	ldrb	r5, [r4, r2]
-	adds	r3, r3, r1
-	adds	r1, r3, #0
-	lsls	r3, r3, #24
-	lsrs	r3, r3, #24
-	cmp	r3, r5
-	bls	.L2
-	adds	r1, r5, #0
+	push	{r4, r5, lr}
+	ldrb	r3, [r0, #18]
+	movs	r4, r0
+	strb	r3, [r0, #19]
+	movs	r3, r0
+	ldr	r2, [r0, #4]
+	adds	r3, r3, #19
+	adds	r2, r2, #34
+	adds	r4, r4, #25
 .L2:
-	strb	r1, [r0, r2]
+	ldrb	r1, [r3]
+	ldrb	r5, [r2]
+	adds	r1, r1, r5
+	strb	r1, [r3]
+	adds	r3, r3, #1
 	adds	r2, r2, #1
-	cmp	r2, #19
-	bne	.L3
-	ldrb	r3, [r0, #13]
-	strb	r3, [r0, #12]
-	ldr	r3, [r0, #4]
-	ldrb	r3, [r3, #4]
-	ldr	r2, .L6
-	lsls	r3, r3, #2
-	adds	r2, r2, r3
-	adds	r0, r0, #58
-	ldrb	r3, [r2, #3]
-	ldrb	r1, [r0]
-	adds	r3, r3, r1
-	ldrb	r1, [r2, #2]
-	adds	r2, r3, #0
-	lsls	r3, r3, #24
-	lsrs	r3, r3, #24
-	cmp	r3, r1
-	bls	.L4
-	adds	r2, r1, #0
-.L4:
-	strb	r2, [r0]
+	cmp	r3, r4
+	bne	.L2
 	@ sp needed
-	pop	{r4, r5, r6}
+	ldrb	r3, [r0, #19]
+	strb	r3, [r0, #18]
+	ldr	r3, [r0, #4]
+	ldrb	r2, [r3, #4]
+	ldr	r3, .L4
+	lsls	r2, r2, #2
+	adds	r0, r0, #58
+	adds	r3, r3, r2
+	ldrb	r3, [r3, #3]
+	ldrb	r2, [r0]
+	adds	r3, r3, r2
+	strb	r3, [r0]
+	pop	{r4, r5}
 	pop	{r0}
 	bx	r0
-.L7:
+.L5:
 	.align	2
-.L6:
+.L4:
 	.word	MagClassTableLABEL
 	.size	SCU_autoPromoteUnit, .-SCU_autoPromoteUnit
 	.align	1
@@ -87,35 +76,35 @@ SCU_promoteUnitIfNecessary:
 	movs	r5, r1
 	movs	r4, r0
 	movs	r6, #84
-.L10:
+.L8:
 	ldr	r3, [r5, #4]
-	ldr	r2, .L14
+	ldr	r2, .L12
 	ldrb	r3, [r3, #4]
 	ldrsb	r3, [r2, r3]
 	cmp	r3, #0
-	beq	.L8
+	beq	.L6
 	movs	r2, #8
 	ldrsb	r2, [r5, r2]
 	cmp	r2, r3
-	blt	.L8
+	blt	.L6
 	ldrb	r3, [r4, #21]
 	muls	r3, r6
-	ldr	r2, .L14+4
+	ldr	r2, .L12+4
 	adds	r3, r3, r2
 	movs	r0, r5
 	str	r3, [r5, #4]
 	adds	r4, r4, #20
 	bl	SCU_autoPromoteUnit
-	b	.L10
-.L8:
+	b	.L8
+.L6:
 	movs	r0, r4
 	@ sp needed
 	pop	{r4, r5, r6}
 	pop	{r1}
 	bx	r1
-.L15:
+.L13:
 	.align	2
-.L14:
+.L12:
 	.word	ClassPromoLevelTableLABEL
 	.word	ClassTableLABEL
 	.size	SCU_promoteUnitIfNecessary, .-SCU_promoteUnitIfNecessary
@@ -130,7 +119,7 @@ SCU_autolevelRealistic:
 	@ Function supports interworking.
 	@ args = 0, pretend = 0, frame = 128
 	@ frame_needed = 0, uses_anonymous_args = 0
-	ldr	r3, .L28
+	ldr	r3, .L26
 	lsls	r3, r3, #5
 	lsrs	r3, r3, #5
 	movs	r2, #110
@@ -149,76 +138,70 @@ SCU_autolevelRealistic:
 	lsls	r2, r2, #24
 	asrs	r5, r2, #24
 	cmp	r2, r3
-	beq	.L16
+	beq	.L14
 	strb	r7, [r4, #8]
 	cmp	r5, r3
-	ble	.L16
+	ble	.L14
 	ldrb	r1, [r0, #1]
-	ldr	r2, .L28+4
+	ldr	r2, .L26+4
 	ldrb	r6, [r2, r1]
 	cmp	r7, r6
-	blt	.L18
+	blt	.L16
 	ldrb	r1, [r0, #21]
 	ldrb	r2, [r2, r1]
 	adds	r3, r3, #2
 	cmp	r7, r2
-	bge	.L19
+	bge	.L17
 	subs	r3, r3, #1
-.L18:
+.L16:
 	movs	r2, #84
 	muls	r2, r1
-	ldr	r1, .L28+8
+	ldr	r1, .L26+8
 	adds	r2, r2, r1
 	str	r2, [r4, #4]
-.L19:
+.L17:
 	movs	r6, #20
 	movs	r7, #100
 	muls	r6, r3
 	adds	r6, r0, r6
-.L20:
+.L18:
 	movs	r1, r4
 	movs	r0, r6
 	bl	SCU_promoteUnitIfNecessary
 	movs	r1, r4
-	ldr	r3, .L28+12
+	ldr	r3, .L26+12
 	movs	r6, r0
 	mov	r0, sp
-	bl	.L30
-	movs	r2, #128
-	movs	r1, r0
-	ldr	r3, .L28+16
-	mov	r0, sp
-	bl	.L30
+	bl	.L28
 	mov	r3, sp
 	mov	r0, sp
 	strb	r7, [r3, #9]
-	ldr	r3, .L28+20
-	bl	.L30
+	ldr	r3, .L26+16
+	bl	.L28
 	subs	r5, r5, #1
-	ldr	r3, .L28+24
+	ldr	r3, .L26+20
 	mov	r1, sp
 	movs	r0, r4
-	bl	.L30
+	bl	.L28
 	lsls	r3, r5, #24
 	lsls	r5, r5, #24
 	lsrs	r3, r3, #24
 	asrs	r5, r5, #24
 	cmp	r3, #0
-	bne	.L20
-.L16:
+	bne	.L18
+.L14:
 	add	sp, sp, #132
 	@ sp needed
 	pop	{r4, r5, r6, r7}
 	pop	{r0}
 	bx	r0
-.L29:
+.L27:
 	.align	2
-.L28:
+.L26:
 	.word	FirstUNITCommand
 	.word	ClassPromoLevelTableLABEL
 	.word	ClassTableLABEL
 	.word	InitBattleUnit
-	.word	memcpy
 	.word	CheckBattleUnitLevelUp
 	.word	UpdateUnitFromBattle
 	.size	SCU_autolevelRealistic, .-SCU_autolevelRealistic
@@ -234,71 +217,71 @@ SCU_autolevel:
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
 	push	{r3, r4, r5, r6, r7, lr}
-	ldr	r3, .L37
+	ldr	r3, .L35
 	lsls	r3, r3, #5
 	lsrs	r3, r3, #5
 	ldr	r7, [r3]
 	movs	r3, #84
 	ldrb	r1, [r7, #1]
 	muls	r3, r1
-	ldr	r2, .L37+4
+	ldr	r2, .L35+4
 	adds	r3, r3, r2
 	str	r3, [r0, #4]
-	ldr	r2, .L37+8
+	ldr	r2, .L35+8
 	ldrb	r3, [r0, #8]
 	ldrb	r2, [r2, r1]
 	movs	r4, r0
 	adds	r5, r2, #0
 	cmp	r2, r3
-	bls	.L32
+	bls	.L30
 	adds	r5, r3, #0
-.L32:
+.L30:
 	lsls	r5, r5, #24
 	lsrs	r5, r5, #24
 	subs	r2, r5, #1
 	lsls	r2, r2, #24
-	ldr	r3, .L37+12
+	ldr	r3, .L35+12
 	movs	r0, r4
 	asrs	r2, r2, #24
-	bl	.L30
+	bl	.L28
 	movs	r3, #8
 	ldrsb	r3, [r4, r3]
 	cmp	r5, r3
-	beq	.L31
+	beq	.L29
 	movs	r3, #84
 	ldrb	r2, [r7, #21]
 	muls	r3, r2
-	ldr	r2, .L37+4
+	ldr	r2, .L35+4
 	adds	r3, r2, r3
 	str	r3, [r4, #4]
 	movs	r0, r4
 	bl	SCU_autoPromoteUnit
 	ldrb	r1, [r7, #21]
-	ldr	r2, .L37+8
+	ldr	r2, .L35+8
 	ldrb	r3, [r4, #8]
 	ldrb	r2, [r2, r1]
 	adds	r6, r2, #0
 	cmp	r2, r3
-	bls	.L35
+	bls	.L33
 	adds	r6, r3, #0
-.L35:
+.L33:
 	lsls	r6, r6, #24
 	lsrs	r6, r6, #24
 	subs	r2, r6, r5
 	lsls	r2, r2, #24
 	movs	r0, r4
-	ldr	r5, .L37+12
+	ldr	r5, .L35+12
 	asrs	r2, r2, #24
-	bl	.L39
+	bl	.L37
 	movs	r3, #8
 	ldrsb	r3, [r4, r3]
 	cmp	r6, r3
-	beq	.L31
+	beq	.L29
 	movs	r3, #84
 	adds	r7, r7, #40
 	ldrb	r2, [r7, #1]
 	muls	r3, r2
-	ldr	r2, .L37+4
+	ldr	r2, .L35+4
 	adds	r3, r2, r3
 	movs	r0, r4
 	str	r3, [r4, #4]
@@ -309,15 +292,15 @@ SCU_autolevel:
 	movs	r0, r4
 	ldrb	r1, [r7, #1]
 	asrs	r2, r2, #24
-	bl	.L39
-.L31:
+	bl	.L37
+.L29:
 	@ sp needed
 	pop	{r3, r4, r5, r6, r7}
 	pop	{r0}
 	bx	r0
-.L38:
+.L36:
 	.align	2
-.L37:
+.L35:
 	.word	FirstUNITCommand
 	.word	ClassTableLABEL
 	.word	ClassPromoLevelTableLABEL
@@ -339,9 +322,9 @@ SCU_min:
 	lsls	r1, r1, #24
 	lsrs	r1, r1, #24
 	cmp	r1, r0
-	bls	.L41
+	bls	.L39
 	adds	r3, r0, #0
-.L41:
+.L39:
 	lsls	r0, r3, #24
 	lsrs	r0, r0, #24
 	@ sp needed
@@ -350,7 +333,7 @@ SCU_min:
 	.ident	"GCC: (devkitARM release 55) 10.2.0"
 	.code 16
 	.align	1
-.L30:
+.L28:
 	bx	r3
-.L39:
+.L37:
 	bx	r5

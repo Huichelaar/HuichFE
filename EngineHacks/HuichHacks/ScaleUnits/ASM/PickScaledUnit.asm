@@ -35,12 +35,12 @@ bl    SCU_CalcLoadedUnitLevel       @ Calc absolute level.
 ldr   r1, =ClassPromoLevelTableLABEL
 ldrb  r2, [r6, #0x1]
 ldrb  r2, [r1, r2]
-cmp   r2, r0
+cmp   r0, r2
 blt   Return
   add   r6, #0x14
   ldrb  r2, [r6, #0x1]
   ldrb  r2, [r1, r2]
-  cmp   r2, r0
+  cmp   r0, r2
   blt   Return
     add   r6, #0x14
   

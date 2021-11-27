@@ -4,19 +4,27 @@
 
 PUSH
 
-// Increment 3 UNITS instead of 1.
-ORG 0xF664; BYTE 0x3C
-ORG 0xF696; BYTE 0xFD
-ORG 0xF6E6; BYTE 0x3C
-ORG 0xF702; BYTE 0xFD
+  // Increment 3 UNITS instead of 1.
+  ORG 0xF664; BYTE 0x3C
+  ORG 0xF696; BYTE 0xFD
+  ORG 0xF6E6; BYTE 0x3C
+  ORG 0xF702; BYTE 0xFD
 
-// Pick UNIT, based on absolute level.
-ORG 0xF714
-jumpToHack_r0(SCU_PickScaledUnit)
+  // Pick UNIT, based on absolute level.
+  ORG 0xF714
+  jumpToHack_r0(SCU_PickScaledUnit)
 
-// Calc & buffer player army level when LOAD.
-ORG 0xFB84
-jumpToHack(SCU_UnitLoadHook)
+  // Calc & buffer player army level when LOAD.
+  ORG 0xFB84
+  jumpToHack(SCU_UnitLoadHook)
+  
+  // Allow levels up to 127.
+  ORG 0x2BA0E
+  BYTE 0x80
+  
+  // Don't reset level to relative level.
+  ORG 0x17C82
+  SHORT 0x46C0 0x46C0 0x46C0
 
 POP
 

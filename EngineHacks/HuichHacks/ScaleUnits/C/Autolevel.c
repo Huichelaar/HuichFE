@@ -1,4 +1,3 @@
-#include <limits.h>
 #include "Autolevel.h"
 
 
@@ -69,7 +68,7 @@ void SCU_autolevelRealistic(Unit* unit) {
     unitDefinition = SCU_promoteUnitIfNecessary(unitDefinition, unit);
     
     // Copying vanilla.
-    battleUnit = *InitBattleUnit(&battleUnit, unit);
+    InitBattleUnit(&battleUnit, unit);
     battleUnit.unit.exp = 100;
     CheckBattleUnitLevelUp(&battleUnit);
     UpdateUnitFromBattle(unit, &battleUnit);
@@ -100,23 +99,14 @@ void SCU_autoPromoteUnit(Unit* unit) {
   u8* unitStats = (u8*)unit;
   
   // Increase HP, POW, SKL, SPD, DEF, RES.
-  u8 temp;
+  unitStats[0x13] = unitStats[0x12];              // Set current hp to max hp.
   for (u8 i = 0; i < 6; i++) {
-    temp = unitStats[13+i] + classStats[22+i];
-    if (temp > classStats[13+i])                  // If unit stat + promo bonus > max stat,
-      unitStats[13+i] = classStats[13+i];         // unit stat := max stat.
-    else                                          // Else
-      unitStats[13+i] = temp;                     // unit stat := unit stat + promo bonus.
+    unitStats[0x13+i] += classStats[0x22+i];      // unit stat := unit stat + promo bonus.
   }
-  unitStats[12] = unitStats[13];                  // Set max hp to current hp.
+  unitStats[0x12] = unitStats[0x13];              // Set max hp to current hp.
   
   // Increase MGC (separate due to Str/Mag split).
-  struct MagClass magClass = MagClassTableLABEL[unit->pClassData->number];
-  temp = unit->unk3A + magClass.promotionMag;
-  if (temp > (u8)magClass.maxMag)
-    unit->unk3A = (u8)magClass.maxMag;
-  else
-    unit->unk3A = temp;
+  unit->unk3A += MagClassTableLABEL[unit->pClassData->number].promotionMag;
 }
 
 // I needed one.

@@ -1,4 +1,28 @@
 
+// TODO Remove these four lists.
+MercenarySkillList:
+BYTE 10 WrathID
+BYTE 00 00
+ALIGN 4
+
+HeroSkillList:
+BYTE 30 KnightAspirantID
+BYTE 00 00
+ALIGN 4
+
+GeneralSkillList:
+BYTE 50 DesperationID
+BYTE 00 00
+ALIGN 4
+
+TurnerSkillList:
+BYTE 10 WrathID
+BYTE 30 KnightAspirantID
+BYTE 50 DesperationID
+BYTE 00 00
+ALIGN 4
+
+
 SupplierSkillList:
 BYTE 255 SupplyID
 BYTE 5 KnightAspirantID
@@ -33,15 +57,18 @@ BYTE 5 PaviseID
 BYTE 00 00
 ALIGN 4
 
+/*
 GeneralSkillList:
 BYTE 00 00
 ALIGN 4
+*/
 
 ThiefSkillList:
 BYTE 1 StealID
 BYTE 00 00
 ALIGN 4
 
+/*
 MercenarySkillList:
 BYTE 5 PushSklID
 BYTE 00 00
@@ -50,7 +77,7 @@ ALIGN 4
 HeroSkillList:
 BYTE 00 00
 ALIGN 4
-
+*/
 MyrmidonSkillList:
 BYTE 5 WrathID
 BYTE 00 00
