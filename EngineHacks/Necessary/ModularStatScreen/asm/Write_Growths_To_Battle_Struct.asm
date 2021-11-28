@@ -4,12 +4,13 @@
 @setting up the literal pool
 .equ Get_Hp_Growth, Class_Level_Cap_Table+4
 .equ Get_Str_Growth, Class_Level_Cap_Table+8
-.equ Get_Skl_Growth, Class_Level_Cap_Table+12
-.equ Get_Spd_Growth, Class_Level_Cap_Table+16
-.equ Get_Def_Growth, Class_Level_Cap_Table+20
-.equ Get_Res_Growth, Class_Level_Cap_Table+24
-.equ Get_Luk_Growth, Class_Level_Cap_Table+28
-.equ Growth_Options, Class_Level_Cap_Table+32
+.equ Get_Mag_Growth, Class_Level_Cap_Table+12
+.equ Get_Skl_Growth, Class_Level_Cap_Table+16
+.equ Get_Spd_Growth, Class_Level_Cap_Table+20
+.equ Get_Def_Growth, Class_Level_Cap_Table+24
+.equ Get_Res_Growth, Class_Level_Cap_Table+28
+.equ Get_Luk_Growth, Class_Level_Cap_Table+32
+.equ Growth_Options, Class_Level_Cap_Table+36
 
 @jumped here from 2BA28
 @r0=battle struct of person who's levelling up
@@ -102,6 +103,24 @@ cmp		r5,#0x0
 beq		SklGrowth
 b		CheckCaps
 
+@ I'm adding Magic growth into this function to remedy the 0 magic growth bug. -Snek
+MagGrowth:
+ldr		r0,Get_Mag_Growth
+mov		r14,r0
+mov		r0,r7
+.short	0xF800
+mov		r14,r6
+.short	0xF800
+mov		r1,r7
+add		r1,#0x7A
+strb	r0,[r1]
+add		r5,r0
+cmp		r4,#0x0
+beq		SklGrowth
+cmp		r5,#0x0
+beq		SklGrowth
+b		CheckCaps
+
 SklGrowth:
 ldr		r0,Get_Skl_Growth
 mov		r14,r0
@@ -182,28 +201,33 @@ add		r1,#0x79
 strb	r0,[r1]
 add		r5,r0
 cmp		r5,#0x0
-bne		CheckCaps
+bne		CheckCapsLadder
 cmp		r4,#0x0
-bne		CheckCaps
+bne		CheckCapsLadder
 mov		r4,#0x1
 b		HpGrowth
 
+CheckCapsLadder:
+b   CheckCaps
+
 @End of normal growths routine
+@ Huichelaar edit: Don't check promotion bit anymore. Level doesn't reset anymore.
+@   Also subtract 2 from level, to account for units not levelling from 0 to 1.
 FixedGrowths:
 ldrb	r6,[r7,#0x8]	@ unit's level
-sub		r6,#1			@subtract 1 from it (this is the number of previous level-ups)
-ldr		r0,[r7]			@ rom character data pointer
-ldr		r1,[r7,#0x4]	@ rom class data pointer
-ldr		r0,[r0,#0x28]	@ character abilities
-ldr		r1,[r1,#0x28]	@ class abilities
-orr		r0,r1			@ bitwise 'or', which puts all of this unit's abilities in r0
-mov		r1,#0x80
-lsl		r1,#1			@multiply by 2^1 = 0x100, which is 'promoted'
-tst		r0,r1
-beq		FixedHpGrowth
-add		r6,#19			@ add 2 levels if the unit is promoted (otherwise, without 100+ growths the first level-up will always be empty)
+sub		r6,#2			@subtract 2 from it (this is the number of previous level-ups (unit's don't level-up to lv.1!))
+@ldr		r0,[r7]			@ rom character data pointer
+@ldr		r1,[r7,#0x4]	@ rom class data pointer
+@ldr		r0,[r0,#0x28]	@ character abilities
+@ldr		r1,[r1,#0x28]	@ class abilities
+@orr		r0,r1			@ bitwise 'or', which puts all of this unit's abilities in r0
+@mov		r1,#0x80
+@lsl		r1,#1			@multiply by 2^1 = 0x100, which is 'promoted'
+@tst		r0,r1
+@beq		FixedHpGrowth
+@add		r6,#19			@ add 19 levels if the unit is promoted (otherwise, without 100+ growths the first level-up will always be empty)
 
-FixedHpGrowth:
+@FixedHpGrowth:
 ldr		r0,Get_Hp_Growth
 mov		r14,r0
 mov		r0,r7
@@ -229,6 +253,20 @@ add		r0,r4
 bl		DivideBy100
 mov		r0,r7
 add		r0,#0x74
+strb	r1,[r0]
+
+@Mag. - Snek
+ldr		r0,Get_Mag_Growth
+mov		r14,r0
+mov		r0,r7
+.short	0xF800
+mov		r4,r0
+mul		r0,r6
+bl		DivideBy100
+add		r0,r4
+bl		DivideBy100
+mov		r0,r7
+add		r0,#0x7A
 strb	r1,[r0]
 
 @Skl

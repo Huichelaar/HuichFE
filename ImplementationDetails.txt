@@ -21,6 +21,7 @@ USED FLAGS:
   - 0x86 for indicating whether Leona or Milo shows up (set in ch0).
   - 0x87 for indicating Manage Forts menu command is now available.
   - 0xB0 if set, casual mode enabled.
+  - 0xB1 if set, applies fixed growths. Set in Ch0.
   - Flags 0x122-0x12C are used for guide entries. Old entries use 0x12C for read and display. New entries use different flags for read. New entries use 0x12C for display if they're immediately relevant, otherwise different flags again.
 
 

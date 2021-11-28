@@ -43,6 +43,7 @@ ASMC 0x080CF461
   ENUF 0x129        // Material Uses
   ENUF 0x127        // Fortresses
 #endif
+ENUT FixedGrowthsFlag
 
 LOAD1 1 PlayerUnits
 ENUN

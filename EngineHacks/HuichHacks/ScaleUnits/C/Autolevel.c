@@ -5,34 +5,18 @@
 void SCU_autolevel(Unit* unit) {
   struct UnitDefinition* unitDefinition;
   unitDefinition = *(struct UnitDefinition**)((u32)&FirstUNITCommand << 5 >> 5);
-  u8 level = 1;
-  u8 levelCount;
+  u8 level = 1, levelCount, maxLv, classID;
   
-  // Tier 1
-  unit->pClassData = &ClassTableLABEL[unitDefinition->classIndex];    // Set class to match autolevels.
-  levelCount = SCU_min(ClassPromoLevelTableLABEL[unitDefinition->classIndex], unit->level) - level;
-  UnitAutolevelCore(unit, unitDefinition->classIndex, (s8)levelCount);
-  level += levelCount;
-  if (level == unit->level)
-    return;
-  
-  // Tier 2
-  unitDefinition += 1;
-  unit->pClassData = &ClassTableLABEL[unitDefinition->classIndex];    // Set class to match autolevels.
-  SCU_autoPromoteUnit(unit);                                          // Add promotion bonuses.
-  levelCount = SCU_min(ClassPromoLevelTableLABEL[unitDefinition->classIndex], unit->level) - level;
-  UnitAutolevelCore(unit, unitDefinition->classIndex, (s8)levelCount);
-  level += levelCount;
-  if (level == unit->level)
-    return;
-  
-  // Tier 3
-  unitDefinition += 1;
-  unit->pClassData = &ClassTableLABEL[unitDefinition->classIndex];    // Set class to match autolevels.
-  SCU_autoPromoteUnit(unit);                                          // Add promotion bonuses.
-  levelCount = unit->level - level;
-  UnitAutolevelCore(unit, unitDefinition->classIndex, (s8)levelCount);
-  return;
+  for (u8 i = 0; i < 3; i++) {
+    classID = unitDefinition->classIndex;
+    maxLv = ClassPromoLevelTableLABEL[classID] ? ClassPromoLevelTableLABEL[classID] : Class_Level_Cap_TableLABEL[classID];
+    levelCount = SCU_min(maxLv, unit->level) - level;
+    UnitAutolevelCore(unit, unitDefinition->classIndex, (s8)levelCount);
+    level += levelCount;
+    if (level == unit->level)
+      return;
+    unitDefinition += 1;
+  }
 }
 
 // For units <0x40 and those with boss-bit set in their class or char.
@@ -53,10 +37,12 @@ void SCU_autolevelRealistic(Unit* unit) {
   
   // Set class to match pre-autolevelled level.
   // No need to set T3 class; Unit will already be that class.
-  u8 tier;
+  u8 tier, maxLv, classID;
   for (tier = 0; tier < 2; tier++) {
-    if (unit->level < ClassPromoLevelTableLABEL[(unitDefinition+tier)->classIndex]) {
-      unit->pClassData = &ClassTableLABEL[(unitDefinition+tier)->classIndex];
+    classID = (unitDefinition+tier)->classIndex;
+    maxLv = ClassPromoLevelTableLABEL[classID] ? ClassPromoLevelTableLABEL[classID] : Class_Level_Cap_TableLABEL[classID];
+    if (unit->level < maxLv) {
+      unit->pClassData = &ClassTableLABEL[classID];
       break;
     }
   }
@@ -64,14 +50,14 @@ void SCU_autolevelRealistic(Unit* unit) {
   
   // Autolevel loop.
   while (lvDiff > 0) {
-    // Promote unit if they can.
-    unitDefinition = SCU_promoteUnitIfNecessary(unitDefinition, unit);
-    
     // Copying vanilla.
     InitBattleUnit(&battleUnit, unit);
     battleUnit.unit.exp = 100;
     CheckBattleUnitLevelUp(&battleUnit);
     UpdateUnitFromBattle(unit, &battleUnit);
+    
+    // Promote unit if they can.
+    unitDefinition = SCU_promoteUnitIfNecessary(unitDefinition, unit);
     
     lvDiff -= 1;
   }
@@ -80,7 +66,7 @@ void SCU_autolevelRealistic(Unit* unit) {
 // Check if unit can promote, and do so if they can.
 struct UnitDefinition* SCU_promoteUnitIfNecessary(struct UnitDefinition* unitDefinition, Unit* unit) {
   s8 promoLevel = ClassPromoLevelTableLABEL[unit->pClassData->number];
-  if (!promoLevel)                  // T3 classes don't promote. Indicated by having 0 as promo level.
+  if (!promoLevel)                  // Class doesn't promote. Indicated by having 0 as promo level.
     return unitDefinition;
   if (unit->level < promoLevel)     // Return if we can't promote yet.
     return unitDefinition;

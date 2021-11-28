@@ -14,6 +14,8 @@
 #define MiloFlag 0x86
 #define FortressAccessibleFlag 0x87
 #define SepiaFlag 0x88
+#define CasualModeFlag 0xB0
+#define FixedGrowthsFlag 0xB1
 
 // Classes
 #define Supplier 0x1
