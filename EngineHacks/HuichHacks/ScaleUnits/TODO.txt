@@ -1,0 +1,11 @@
+TODO
+  - Change how exp is granted (search for colorz fates exp in hacking goldmine).
+  - Promo items usability needs to reflect ClassPromoLevel table.
+  - Change testing values in class bonus growths table.
+    - Also set character growths for bosses. These are probably still 0.
+  - Change values in class promo level table.
+  - Make fixed growths not depend on flag, but just be on all the time.
+  
+Technically I should test some more.
+  - Negative relative levels, does 16 == -16, 31 == -1?
+  - Are missable lvl-up skills actually missable?

@@ -25,10 +25,10 @@
 
 PUSH
 
-ORG 0x18160
-jumpToHack(SCU_autolevelRealistic)
-ORG 0x18120
-jumpToHack(SCU_autolevel)
+  ORG 0x18160
+  jumpToHack(SCU_autolevelRealistic)
+  ORG 0x18120
+  jumpToHack(SCU_autolevel)
 
 POP
 

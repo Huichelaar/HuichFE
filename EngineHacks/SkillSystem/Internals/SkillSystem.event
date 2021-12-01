@@ -183,7 +183,7 @@ HookUnitLoading:
 	// POIN (Skill_Getter|1)
 	// POIN ChargeupTable
 
-// Huichelaar edit: Now goess through all classes
+// Huichelaar edit: Now goes through all classes
 // unit can be loaded as, due to ScaleUnits.
 ALIGN 4
 AutoloadSkills:
