@@ -6,6 +6,9 @@ void SCU_autolevel(Unit* unit) {
   struct UnitDefinition* unitDefinition;
   unitDefinition = *(struct UnitDefinition**)((u32)&FirstUNITCommand << 5 >> 5);
   u8 level = 1, levelCount, maxLv, classID;
+
+  if (Growth_OptionsLABEL & 1)
+    SetEventId((u16)(Growth_OptionsLABEL>>16));    // Ensure autolevel-ups are fixed.
   
   for (u8 i = 0; i < 3; i++) {
     classID = unitDefinition->classIndex;
@@ -14,9 +17,11 @@ void SCU_autolevel(Unit* unit) {
     UnitAutolevelCore(unit, unitDefinition->classIndex, (s8)levelCount);
     level += levelCount;
     if (level == unit->level)
-      return;
+      break;
     unitDefinition += 1;
   }
+  if (Growth_OptionsLABEL & 1)
+    UnsetEventId((u16)(Growth_OptionsLABEL>>16));  // Ensure regular level-ups are not fixed.
 }
 
 // For units <0x40 and those with boss-bit set in their class or char.
@@ -48,6 +53,9 @@ void SCU_autolevelRealistic(Unit* unit) {
   }
   unitDefinition += tier;
   
+  if (Growth_OptionsLABEL & 1)
+    SetEventId((u16)(Growth_OptionsLABEL>>16));    // Ensure autolevel-ups are fixed.
+  
   // Autolevel loop.
   while (lvDiff > 0) {
     // Copying vanilla.
@@ -61,6 +69,8 @@ void SCU_autolevelRealistic(Unit* unit) {
     
     lvDiff -= 1;
   }
+  if (Growth_OptionsLABEL & 1)
+    UnsetEventId((u16)(Growth_OptionsLABEL>>16));  // Ensure regular level-ups are not fixed.
 }
 
 // Check if unit can promote, and do so if they can.

@@ -20,62 +20,82 @@
 	.type	SCU_autolevel, %function
 SCU_autolevel:
 	@ Function supports interworking.
-	@ args = 0, pretend = 0, frame = 0
+	@ args = 0, pretend = 0, frame = 8
 	@ frame_needed = 0, uses_anonymous_args = 0
-	push	{r3, r4, r5, r6, r7, lr}
-	ldr	r3, .L7
+	push	{r0, r1, r2, r4, r5, r6, r7, lr}
+	ldr	r3, .L15
+	ldr	r7, .L15+4
+	movs	r6, r0
 	lsls	r3, r3, #5
+	ldr	r0, [r7]
 	lsrs	r3, r3, #5
 	ldr	r5, [r3]
-	movs	r7, r5
-	movs	r6, r0
+	lsls	r3, r0, #31
+	bpl	.L2
+	ldr	r3, .L15+8
+	lsrs	r0, r0, #16
+	bl	.L17
+.L2:
+	movs	r3, r5
 	movs	r2, #1
-	adds	r7, r7, #60
-.L5:
+	adds	r3, r3, #60
+	str	r3, [sp, #4]
+.L6:
 	ldrb	r1, [r5, #1]
-	ldr	r3, .L7+4
+	ldr	r3, .L15+12
 	ldrb	r3, [r3, r1]
 	cmp	r3, #0
-	bne	.L2
-	ldr	r3, .L7+8
+	bne	.L3
+	ldr	r3, .L15+16
 	ldrb	r3, [r3, r1]
-.L2:
+.L3:
 	ldrb	r0, [r6, #8]
 	adds	r4, r0, #0
 	cmp	r0, r3
-	bls	.L3
+	bls	.L4
 	adds	r4, r3, #0
-.L3:
+.L4:
 	lsls	r4, r4, #24
 	lsrs	r4, r4, #24
 	subs	r2, r4, r2
 	lsls	r2, r2, #24
-	ldr	r3, .L7+12
+	ldr	r3, .L15+20
 	movs	r0, r6
 	asrs	r2, r2, #24
-	bl	.L9
+	bl	.L17
 	movs	r3, #8
 	ldrsb	r3, [r6, r3]
 	cmp	r4, r3
-	beq	.L1
+	beq	.L5
+	ldr	r3, [sp, #4]
 	adds	r5, r5, #20
-	cmp	r5, r7
-	bne	.L6
+	cmp	r5, r3
+	bne	.L8
+.L5:
+	ldr	r0, [r7]
+	lsls	r3, r0, #31
+	bpl	.L1
+	ldr	r3, .L15+24
+	lsrs	r0, r0, #16
+	bl	.L17
 .L1:
 	@ sp needed
-	pop	{r3, r4, r5, r6, r7}
+	pop	{r0, r1, r2, r4, r5, r6, r7}
 	pop	{r0}
 	bx	r0
-.L6:
-	movs	r2, r4
-	b	.L5
 .L8:
+	movs	r2, r4
+	b	.L6
+.L16:
 	.align	2
-.L7:
+.L15:
 	.word	FirstUNITCommand
+	.word	Growth_OptionsLABEL
+	.word	SetEventId
 	.word	ClassPromoLevelTableLABEL
 	.word	Class_Level_Cap_TableLABEL
 	.word	UnitAutolevelCore
+	.word	UnsetEventId
 	.size	SCU_autolevel, .-SCU_autolevel
 	.align	1
 	.global	SCU_autoPromoteUnit
@@ -97,7 +117,7 @@ SCU_autoPromoteUnit:
 	adds	r3, r3, #19
 	adds	r2, r2, #34
 	adds	r4, r4, #25
-.L11:
+.L19:
 	ldrb	r1, [r3]
 	ldrb	r5, [r2]
 	adds	r1, r1, r5
@@ -105,13 +125,13 @@ SCU_autoPromoteUnit:
 	adds	r3, r3, #1
 	adds	r2, r2, #1
 	cmp	r3, r4
-	bne	.L11
+	bne	.L19
 	@ sp needed
 	ldrb	r3, [r0, #19]
 	strb	r3, [r0, #18]
 	ldr	r3, [r0, #4]
 	ldrb	r2, [r3, #4]
-	ldr	r3, .L13
+	ldr	r3, .L21
 	lsls	r2, r2, #2
 	adds	r0, r0, #58
 	adds	r3, r3, r2
@@ -122,9 +142,9 @@ SCU_autoPromoteUnit:
 	pop	{r4, r5}
 	pop	{r0}
 	bx	r0
-.L14:
+.L22:
 	.align	2
-.L13:
+.L21:
 	.word	MagClassTableLABEL
 	.size	SCU_autoPromoteUnit, .-SCU_autoPromoteUnit
 	.align	1
@@ -142,35 +162,35 @@ SCU_promoteUnitIfNecessary:
 	movs	r5, r1
 	movs	r4, r0
 	movs	r6, #84
-.L17:
+.L25:
 	ldr	r3, [r5, #4]
-	ldr	r2, .L21
+	ldr	r2, .L29
 	ldrb	r3, [r3, #4]
 	ldrsb	r3, [r2, r3]
 	cmp	r3, #0
-	beq	.L15
+	beq	.L23
 	movs	r2, #8
 	ldrsb	r2, [r5, r2]
 	cmp	r2, r3
-	blt	.L15
+	blt	.L23
 	ldrb	r3, [r4, #21]
 	muls	r3, r6
-	ldr	r2, .L21+4
+	ldr	r2, .L29+4
 	adds	r3, r3, r2
 	movs	r0, r5
 	str	r3, [r5, #4]
 	adds	r4, r4, #20
 	bl	SCU_autoPromoteUnit
-	b	.L17
-.L15:
+	b	.L25
+.L23:
 	movs	r0, r4
 	@ sp needed
 	pop	{r4, r5, r6}
 	pop	{r1}
 	bx	r1
-.L22:
+.L30:
 	.align	2
-.L21:
+.L29:
 	.word	ClassPromoLevelTableLABEL
 	.word	ClassTableLABEL
 	.size	SCU_promoteUnitIfNecessary, .-SCU_promoteUnitIfNecessary
@@ -185,75 +205,82 @@ SCU_autolevelRealistic:
 	@ Function supports interworking.
 	@ args = 0, pretend = 0, frame = 128
 	@ frame_needed = 0, uses_anonymous_args = 0
-	ldr	r3, .L37
+	ldr	r3, .L52
 	lsls	r3, r3, #5
 	lsrs	r3, r3, #5
 	push	{r4, r5, r6, r7, lr}
-	movs	r4, r0
-	ldr	r0, [r3]
+	ldr	r6, [r3]
 	movs	r3, #110
 	movs	r2, #0
 	sub	sp, sp, #132
 	add	r3, r3, sp
 	strb	r2, [r3]
 	movs	r2, #11
-	ldr	r3, [r4]
+	ldr	r3, [r0]
 	ldrsb	r2, [r3, r2]
-	ldrb	r3, [r4, #8]
+	ldrb	r3, [r0, #8]
 	subs	r3, r3, r2
 	lsls	r3, r3, #24
+	movs	r4, r0
 	asrs	r5, r3, #24
 	cmp	r3, #0
-	beq	.L23
-	strb	r2, [r4, #8]
+	beq	.L31
+	strb	r2, [r0, #8]
 	cmp	r5, #0
-	ble	.L23
-	ldrb	r3, [r0, #1]
-	ldr	r6, .L37+4
-	ldrb	r1, [r6, r3]
+	ble	.L31
+	ldrb	r3, [r6, #1]
+	ldr	r0, .L52+4
+	ldrb	r1, [r0, r3]
 	cmp	r1, #0
-	bne	.L25
-	ldr	r1, .L37+8
+	bne	.L33
+	ldr	r1, .L52+8
 	ldrb	r1, [r1, r3]
-.L25:
+.L33:
 	cmp	r2, r1
-	blt	.L31
-	ldrb	r3, [r0, #21]
-	ldrb	r6, [r6, r3]
-	cmp	r6, #0
-	bne	.L27
-	ldr	r1, .L37+8
-	ldrb	r6, [r1, r3]
-.L27:
-	movs	r1, #2
-	cmp	r2, r6
-	bge	.L28
-	subs	r1, r1, #1
-.L26:
+	blt	.L40
+	ldrb	r3, [r6, #21]
+	ldrb	r1, [r0, r3]
+	cmp	r1, #0
+	bne	.L35
+	ldr	r1, .L52+8
+	ldrb	r1, [r1, r3]
+.L35:
+	movs	r0, #2
+	cmp	r2, r1
+	bge	.L36
+	subs	r0, r0, #1
+.L34:
 	movs	r2, #84
 	muls	r3, r2
-	ldr	r2, .L37+12
+	ldr	r2, .L52+12
 	adds	r3, r3, r2
 	str	r3, [r4, #4]
-.L28:
-	movs	r6, #20
-	movs	r7, #100
-	muls	r6, r1
-	adds	r6, r0, r6
-.L29:
+.L36:
+	movs	r3, #20
+	muls	r0, r3
+	ldr	r7, .L52+16
+	adds	r6, r6, r0
+	ldr	r0, [r7]
+	lsls	r3, r0, #31
+	bpl	.L38
+	ldr	r3, .L52+20
+	lsrs	r0, r0, #16
+	bl	.L17
+.L38:
 	movs	r1, r4
 	mov	r0, sp
-	ldr	r3, .L37+16
-	bl	.L9
+	ldr	r3, .L52+24
+	bl	.L17
+	movs	r2, #100
 	mov	r3, sp
 	mov	r0, sp
-	strb	r7, [r3, #9]
-	ldr	r3, .L37+20
-	bl	.L9
-	ldr	r3, .L37+24
+	strb	r2, [r3, #9]
+	ldr	r3, .L52+28
+	bl	.L17
+	ldr	r3, .L52+32
 	mov	r1, sp
 	movs	r0, r4
-	bl	.L9
+	bl	.L17
 	movs	r0, r6
 	movs	r1, r4
 	bl	SCU_promoteUnitIfNecessary
@@ -264,26 +291,35 @@ SCU_autolevelRealistic:
 	lsrs	r3, r3, #24
 	asrs	r5, r5, #24
 	cmp	r3, #0
-	bne	.L29
-.L23:
+	bne	.L38
+	ldr	r0, [r7]
+	lsls	r3, r0, #31
+	bpl	.L31
+	ldr	r3, .L52+36
+	lsrs	r0, r0, #16
+	bl	.L17
+.L31:
 	add	sp, sp, #132
 	@ sp needed
 	pop	{r4, r5, r6, r7}
 	pop	{r0}
 	bx	r0
-.L31:
-	movs	r1, #0
-	b	.L26
-.L38:
+.L40:
+	movs	r0, #0
+	b	.L34
+.L53:
 	.align	2
-.L37:
+.L52:
 	.word	FirstUNITCommand
 	.word	ClassPromoLevelTableLABEL
 	.word	Class_Level_Cap_TableLABEL
 	.word	ClassTableLABEL
+	.word	Growth_OptionsLABEL
+	.word	SetEventId
 	.word	InitBattleUnit
 	.word	CheckBattleUnitLevelUp
 	.word	UpdateUnitFromBattle
+	.word	UnsetEventId
 	.size	SCU_autolevelRealistic, .-SCU_autolevelRealistic
 	.align	1
 	.global	SCU_min
@@ -301,9 +337,9 @@ SCU_min:
 	lsls	r1, r1, #24
 	lsrs	r1, r1, #24
 	cmp	r1, r0
-	bls	.L40
+	bls	.L55
 	adds	r3, r0, #0
-.L40:
+.L55:
 	lsls	r0, r3, #24
 	lsrs	r0, r0, #24
 	@ sp needed
@@ -312,5 +348,5 @@ SCU_min:
 	.ident	"GCC: (devkitARM release 55) 10.2.0"
 	.code 16
 	.align	1
-.L9:
+.L17:
 	bx	r3

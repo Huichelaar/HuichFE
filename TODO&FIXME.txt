@@ -72,6 +72,10 @@ Siege tome?
 
 Change how weapon ranks work. Allow units to achieve S even if not promoted. Allow multiple S-ranks?
 
+Test growths after you've added some more character growths.
+
+Remove female map sprites and relevant credits from Credits struct and CREDITS.md and map sprite Credits.txt
+
 If we need space:
   - Room for 0x2000 text entries. Can reduce this in repointedTextTable.event.
   - Some tables have entries they're not using, see Tables/TableOptions.s.

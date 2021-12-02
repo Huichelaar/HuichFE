@@ -15,6 +15,7 @@ extern struct UnitDefinition** FirstUNITCommand[3];
 extern struct ClassData ClassTableLABEL[];
 extern u8 ClassPromoLevelTableLABEL[];
 extern u8 Class_Level_Cap_TableLABEL[];
+extern u32 Growth_OptionsLABEL;
 
 void SCU_autolevel(Unit* unit);
 void SCU_autolevelRealistic(Unit* unit);

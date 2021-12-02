@@ -127,7 +127,6 @@ CSV Class/Classes.csv
   TABLE ModularEXPClassTableLABEL Class/ModularEXPClass.nmm
   TABLE ClassLevelUpSkillTableLABEL Class/ClassLevelUpSkill.nmm
   TABLE ClassSkillTableLABEL Class/ClassSkill.nmm
-  TABLE ClassBonusGrowthsTableLABEL Class/ClassBonusGrowths.nmm
   TABLE LanceAnimTableLABEL Class/LanceAnim.nmm
   TABLE AxeAnimTableLABEL Class/AxeAnim.nmm
   TABLE GambitIDTableLABEL Class/GambitIDs.nmm

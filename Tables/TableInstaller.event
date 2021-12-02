@@ -40,7 +40,6 @@
 #include "Class/ModularEXPClass.event"
 #include "Class/ClassLevelUpSkill.event"
 #include "Class/ClassSkill.event"
-#include "Class/ClassBonusGrowths.event"
 #include "Class/LanceAnim.event"
 #include "Class/AxeAnim.event"
 #include "Class/GambitIDs.event"

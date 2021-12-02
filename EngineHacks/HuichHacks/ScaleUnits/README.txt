@@ -1,4 +1,4 @@
-Allies, NPC, Enemies, everyone basically, has fixed growths.
+Everyone uses fixed growths when autolevelling. Regular level-ups will be RNG'd. Autolevel sets the fixed growths flag before autolevelling, and unsets it after autolevelling.
 
 During UNIT LOADing, We're using eight bytes at 0x3003F48 for storing some stuff we need.
 

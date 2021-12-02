@@ -15,13 +15,31 @@
 #define FortressAccessibleFlag 0x87
 #define SepiaFlag 0x88
 #define CasualModeFlag 0xB0
-#define FixedGrowthsFlag 0xB1
+#define FixedGrowthsFlag 0xB1   // Don't enable this in events. Autolevel enables and disables this when it's finished.
 
 // Classes
 #define Supplier 0x1
+#define Conjurer 0x2
+#define ConjurerT3 0x3
+#define DracoKnight 0x21
+#define DracoKnight_F 0x22
 #define Monk_F 0x80
 #define Soldier_F 0x81
 #define Fighter_F 0x82
+#define Pirate_F 0x83
+#define Thief_F 0x84
+#define PegasusKnight_F 0x85
+#define Sergeant 0x86
+#define Sergeant_F 0x87
+#define HarbingerT2 0x88
+#define HarbingerT2_F 0x89
+#define Warrior_F 0x8A
+#define Berserker_F 0x8B
+#define Rogue_F 0x8C
+#define FalcoKnight_F 0x8D
+#define Valkyrie_F 0x8E
+
+
 
 // Battle animations
 #define SupplierLanceAnim 0x1

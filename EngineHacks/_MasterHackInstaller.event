@@ -49,6 +49,9 @@ POP
 
 ////////////////////////////////FREE SPACE OUT OF BL RANGE
 
+  // Modular Stat Screen.
+  #include "Necessary/ModularStatScreen/ModularStatScreen.event"
+
   // Huichelaar's hacks
   #include "HuichHacks/HuichHacks.event"
 
@@ -111,9 +114,6 @@ POP
   
   // Proper Range Getters.
   #include "ExternalHacks/ProperRangeGetters/ProperRangeGetters/ProperRangeGetters.event"
-
-  // Modular Stat Screen.
-  #include "Necessary/ModularStatScreen/ModularStatScreen.event"
   
   // Strength/Magic Split.
 	#include "ExternalHacks/StrMagSplit/_MasterAsmInstaller.event"

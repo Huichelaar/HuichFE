@@ -67,7 +67,6 @@
 #define CharLevelUpSkillTable CharLevelUpSkillTableLABEL
 #define ClassLevelUpSkillTable ClassLevelUpSkillTableLABEL
 #define ClassSkillTable ClassSkillTableLABEL
-#define ClassBonusGrowthsTable ClassBonusGrowthsTableLABEL
 #define LanceAnimTable LanceAnimTableLABEL
 #define AxeAnimTable AxeAnimTableLABEL
 #define PersonalSkillTable PersonalSkillTableLABEL

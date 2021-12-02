@@ -212,10 +212,9 @@ b   CheckCaps
 
 @End of normal growths routine
 @ Huichelaar edit: Don't check promotion bit anymore. Level doesn't reset anymore.
-@   Also subtract 2 from level, to account for units not levelling from 0 to 1.
 FixedGrowths:
 ldrb	r6,[r7,#0x8]	@ unit's level
-sub		r6,#2			@subtract 2 from it (this is the number of previous level-ups (unit's don't level-up to lv.1!))
+sub		r6,#1			@subtract 1 from it. Units level up one extra time, to avoid first lv-up being empty.
 @ldr		r0,[r7]			@ rom character data pointer
 @ldr		r1,[r7,#0x4]	@ rom class data pointer
 @ldr		r0,[r0,#0x28]	@ character abilities

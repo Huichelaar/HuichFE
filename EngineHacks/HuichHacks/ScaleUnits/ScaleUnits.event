@@ -20,6 +20,11 @@
 // pertaining to the current to-be-loaded UNIT.
 #define FirstUNITCommand 0x3003F4C
 
+// C-generated lyn.event file doesn't play nice with EA definitions.
+ALIGN 4
+Growth_OptionsLABEL:
+WORD Growth_Options
+
 // C
 #include "C/Autolevel.lyn.event"
 
