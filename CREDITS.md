@@ -268,22 +268,14 @@ TODO. OSRS Orchestra hit was either recorded straight from the Sound Canvas VST 
 
 ## Map Sprites
 
-- Supplier by N426.
-- MercenaryF by Agro.
-- Priest by flasuban.
-- Cleric by flasuban.
-- MonkF by Teraspark.
-- -HatlessMageM by Pikmin1211. Unused atm.
-- ShamanF by Intelligent Systems.
-- SoldierF by Rexacuse, Peerless, Alusq, WarPath.
-- SoldierM by Rexacuse, Peerless, Alusq.
-- FighterF by Alusq.
-- FighterM by Alusq.
-- ArcherM by DerTheVaporeon.
-- ArcherF by DerTheVaporeon.
-- CavalierM by SALVAGED.
-- CavalierF by SALVAGED, Pikmin.
+- Supplier by N426
+- Soldier by Rexacuse, Peerless, Alusq
+- Cavalier by SALVAGED
+- Archer by DerTheVaporeon
+- Fighter by Alusq
 - WyvernKnight by IS, ArcaneEli, Blood, Yikes!
+- Priest by flasuban
+- -HatlessMageM by Pikmin1211
 
 ## Items
 

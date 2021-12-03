@@ -74,7 +74,7 @@ Change how weapon ranks work. Allow units to achieve S even if not promoted. All
 
 Test growths after you've added some more character growths.
 
-Remove female map sprites and relevant credits from Credits struct and CREDITS.md and map sprite Credits.txt
+Remove female map sprites credits' from Credits struct.
 
 If we need space:
   - Room for 0x2000 text entries. Can reduce this in repointedTextTable.event.

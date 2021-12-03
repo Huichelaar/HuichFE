@@ -38,6 +38,42 @@
 #define Rogue_F 0x8C
 #define FalcoKnight_F 0x8D
 #define Valkyrie_F 0x8E
+#define Marshall 0x8F
+#define Marshall_F 0x90
+#define GoldKnight 0x91
+#define GoldKnight_F 0x92
+#define Marksman 0x93
+#define Marksman_F 0x94
+#define BowKnight 0x95
+#define BowKnight_F 0x96
+#define Harbinger 0x97
+#define Harbinger_F 0x98
+#define HeroWarT3 0x99
+#define HeroWarT3_F 0x9A
+#define BerserkerT3 0x9B
+#define BerserkerT3_F 0x9C
+#define DreadFighter 0x9D
+#define DreadFighter_F 0x9E
+#define Executioner 0x9F
+#define Executioner_F 0xA0
+#define RogueT3 0xA1
+#define RogueT3_F 0xA2
+#define FalcoKnT3 0xA3
+#define FalcoKnT3_F 0xA4
+#define DracoLord 0xA5
+#define DracoLord_F 0xA6
+#define DarkDruid 0xA7
+#define DarkDruid_F 0xA8
+#define NecromancerT3 0xA9
+#define NecromancerT3_F 0xAA
+#define ValkyrieT3 0xAB
+#define ValkyrieT3_F 0xAC
+#define WarMonk 0xAD
+#define WarMonk_F 0xAE
+#define SageT3 0xAF
+#define SageT3_F 0xB0
+#define MageKnightT3 0xB1
+#define MageKnightT3_F 0xB2
 
 
 

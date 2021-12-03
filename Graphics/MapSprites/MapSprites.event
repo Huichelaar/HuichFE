@@ -1,90 +1,158 @@
-ALIGN 4
-SupplierSt:
-#incbin "[T1][MISC] Supplier (F) Lance Standing {N426}.dmp"
-ALIGN 4
-SupplierMv:
-#incbin "[T1][MISC] Supplier v2 (F) Lance Moving {N426}.dmp"
-ALIGN 4
-MercenaryFSt:
-#incbin "[T1][SWD] Mercenary (F) Sword Standing {Agro}.dmp"
-ALIGN 4
-MercenaryFMv:
-#incbin "[T1][SWD] Mercenary (F) Sword Moving {Agro}.dmp"
-ALIGN 4
-SoldierFSt:
-#incbin "[T1][LNC] Soldier (F) (Shield) Lance Standing {Rexacuse, Peerless, Alusq, WarPath}.dmp"
-ALIGN 4
-SoldierFMv:
-#incbin "[T1][LNC] Soldier (F) (Shield) Lance Moving {Rexacuse, Peerless, Alusq, WarPath}.dmp"
-ALIGN 4
-SoldierMSt:
-#incbin "[T1][LNC] Soldier (M) (Shield) Lance Standing {Rexacuse, Peerless, Alusq}.dmp"
-ALIGN 4
-SoldierMMv:
-#incbin "[T1][LNC] Soldier (M) (Shield) Lance Moving {Rexacuse, Peerless, Alusq}.dmp"
-ALIGN 4
-FighterFSt:
-#incbin "[T1][AXE] Fighter (F) Axe Standing {Alusq}.dmp"
-ALIGN 4
-FighterFMv:
-#incbin "[T1][AXE] Fighter (F) Axe Moving {Alusq}.dmp"
-ALIGN 4
-FighterMSt:
-#incbin "[T1][AXE] Fighter (M) (Revamped) Axe Standing {Alusq}.dmp"
-ALIGN 4
-FighterMMv:
-#incbin "[T1][AXE] Fighter (M) (Revamped) Axe Moving {Alusq}.dmp"
-ALIGN 4
-ArcherFSt:
-#incbin "[T1][BOW] Archer (F) (Improved) Standing {DerTheVaporeon}.dmp"
-ALIGN 4
-ArcherFMv:
-#incbin "[T1][BOW] Archer (F) (Improved) Moving {DerTheVaporeon}.dmp"
-ALIGN 4
-ArcherMSt:
-#incbin "[T1][BOW] Archer (M) (Improved) Standing {DerTheVaporeon}.dmp"
-ALIGN 4
-ArcherMMv:
-#incbin "[T1][BOW] Archer (M) (Improved) Moving {DerTheVaporeon}.dmp"
-ALIGN 4
-ClericSt:
-#incbin "[T1] Clergy (F) (Cleric Improved) Staff Standing {flasuban}.dmp"
-ALIGN 4
-ClericMv:
-#incbin "[T1] Clergy (F) (Cleric Improved) Staff Moving {flasuban}.dmp"
-ALIGN 4
-PriestSt:
-#incbin "[T1] Clergy (M) (Priest Improved) Staff Standing {flasuban}.dmp"
-ALIGN 4
-PriestMv:
-#incbin "[T1] Clergy (M) (Priest Improved) Staff Moving {flasuban}.dmp"
-ALIGN 4
-MonkFSt:
-#incbin "[T1] Monk (F) Standing {Teraspark}.dmp"
-ALIGN 4
-MonkFMv:
-#incbin "[T1] Monk (F) Moving {Teraspark}.dmp"
-ALIGN 4
-ShamanFSt:
-#incbin "[T1] Shaman (F) Standing {IS}.dmp"
-ALIGN 4
-ShamanFMv:
-#incbin "[T1] Shaman (F) Moving {IS}.dmp"
-ALIGN 4
-CavalierMSt:
-#incbin "Cavalier (M) Lance {SALVAGED}-stand.dmp"
-ALIGN 4
-CavalierMMv:
-#incbin "Cavalier (M) Lance {SALVAGED}-move.dmp"
-ALIGN 4
-CavalierFSt:
-#incbin "Cavalier (F) Lance {SALVAGED, Pikmin}-stand.dmp"
-ALIGN 4
-CavalierFMv:
-#incbin "Cavalier (F) Lance {SALVAGED, Pikmin}-move.dmp"
-ALIGN 4
-WyvKnightSt:
-#incbin "WyvKnightStanding.dmp"
-ALIGN 4
-WyvKnightMv:
-#incbin "WyvKnightMoving.dmp"
+ALIGN 4; SupplierSt:
+#incbin "SupplierSt.dmp"
+ALIGN 4; SupplierMv:
+#incbin "SupplierMv.dmp"
+ALIGN 4; SoldierSt:
+#incbin "SoldierSt.dmp"
+ALIGN 4; SoldierMv:
+#incbin "SoldierMv.dmp"
+ALIGN 4; CavalierSt:
+#incbin "CavalierSt.dmp"
+ALIGN 4; CavalierMv:
+#incbin "CavalierMv.dmp"
+ALIGN 4; ArcherSt:
+#incbin "ArcherSt.dmp"
+ALIGN 4; ArcherMv:
+#incbin "ArcherMv.dmp"
+ALIGN 4; FighterSt:
+#incbin "FighterSt.dmp"
+ALIGN 4; FighterMv:
+#incbin "FighterMv.dmp"
+ALIGN 4; WyvKnightSt:
+#incbin "WyvKnightSt.dmp"
+ALIGN 4; WyvKnightMv:
+#incbin "WyvKnightMv.dmp"
+ALIGN 4; PriestSt:
+#incbin "PriestSt.dmp"
+ALIGN 4; PriestMv:
+#incbin "PriestMv.dmp"
+
+ALIGN 4; ConjurerSt:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; ConjurerMv:
+#incbin "PlaceholderMv.dmp"
+ALIGN 4; SergeantSt:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; SergeantMv:
+#incbin "PlaceholderMv.dmp"
+ALIGN 4; HarbingerT2St:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; HarbingerT2Mv:
+#incbin "PlaceholderMv.dmp"
+ALIGN 4; DracoKnightSt:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; DracoKnightMv:
+#incbin "PlaceholderMv.dmp"
+ALIGN 4; SummonerSt:
+#incbin "PlaceholderSt.dmp"
+
+ALIGN 4; ConjurerT3St:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; ConjurerT3Mv:
+#incbin "PlaceholderMv.dmp"
+ALIGN 4; MarshallSt:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; MarshallMv:
+#incbin "PlaceholderMv.dmp"
+ALIGN 4; GoldKnightSt:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; GoldKnightMv:
+#incbin "PlaceholderMv.dmp"
+ALIGN 4; MarksmanSt:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; MarksmanMv:
+#incbin "PlaceholderMv.dmp"
+ALIGN 4; BowKnightSt:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; BowKnightMv:
+#incbin "PlaceholderMv.dmp"
+ALIGN 4; HarbingerSt:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; HarbingerMv:
+#incbin "PlaceholderMv.dmp"
+ALIGN 4; HeroWarT3St:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; HeroWarT3Mv:
+#incbin "PlaceholderMv.dmp"
+ALIGN 4; BerserkerT3St:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; BerserkerT3Mv:
+#incbin "PlaceholderMv.dmp"
+ALIGN 4; DreadFighterSt:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; DreadFighterMv:
+#incbin "PlaceholderMv.dmp"
+ALIGN 4; ExecutionerSt:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; ExecutionerMv:
+#incbin "PlaceholderMv.dmp"
+ALIGN 4; RogueT3St:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; RogueT3Mv:
+#incbin "PlaceholderMv.dmp"
+ALIGN 4; FalcoKnT3St:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; FalcoKnT3Mv:
+#incbin "PlaceholderMv.dmp"
+ALIGN 4; DracoLordSt:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; DracoLordMv:
+#incbin "PlaceholderMv.dmp"
+ALIGN 4; DarkDruidSt:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; DarkDruidMv:
+#incbin "PlaceholderMv.dmp"
+ALIGN 4; NecromancerT3St:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; NecromancerT3Mv:
+#incbin "PlaceholderMv.dmp"
+ALIGN 4; ValkyrieT3St:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; ValkyrieT3Mv:
+#incbin "PlaceholderMv.dmp"
+ALIGN 4; WarMonkSt:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; WarMonkMv:
+#incbin "PlaceholderMv.dmp"
+ALIGN 4; SageT3St:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; SageT3Mv:
+#incbin "PlaceholderMv.dmp"
+ALIGN 4; MageKnightT3St:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; MageKnightT3Mv:
+#incbin "PlaceholderMv.dmp"
+
+ALIGN 4; RevenantSt:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; EntombedSt:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; BowalkerSt:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; MogallSt:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; ArchMogallSt:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; MautheDoogSt:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; GwyllgiSt:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; BaelSt:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; ElderBaelSt:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; GargoyleSt:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; DeathgoyleSt:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; MaelduinSt:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; GorgonSt:
+#incbin "PlaceholderSt.dmp"
+
+/*
+ALIGN 4; St:
+#incbin "PlaceholderSt.dmp"
+ALIGN 4; Mv:
+#incbin "PlaceholderMv.dmp"
+*/
