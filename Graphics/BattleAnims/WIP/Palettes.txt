@@ -1,0 +1,40 @@
+Battle anim palettes
+
+Outline 1x
+A514
+
+Red Weapon 2x
+5921D414
+Red Weapon 4x
+9F4AFC315921D414
+Purple armour 4x
+7762B1494D35092D
+
+Skin & Trim 4x Light
+FF6B1F4B182A2E19
+Skin & Trim 4x Med1
+5D47BA429721F20C
+Skin & Trim 4x Med2
+DF3A182A2E198904
+Skin & Trim 4x Dark
+F53193253015CC08
+
+Skin & Trim 4x Blue
+D77732636E4A4825
+Underwear 3x Yellow
+962A8E15A708
+
+Skin & Trim 4x Yellow
+BE5F194B533A2A21
+Underwear 3x Cyan
+CF4E4B42251D
+
+Skin & Trim 4x Grey
+7B6F734E8C31E71C
+Underwear 3x Swamp
+3933731EAD0D
+
+Skin & Trim 4x Red
+5F6FBC5A36463021
+Underwear 3x Turqoise
+6F4EEB3D8831

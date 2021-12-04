@@ -18,7 +18,7 @@
 16,0,0,ConjurerSt|IsPointer
 17,0,1,SergeantSt|IsPointer
 18,0,1,0x81B8364
-19,0,1,0x81BB3B0
+19,0,1,GreatKnightSt|IsPointer
 20,0,1,0x81B8088
 21,0,0,0x81B9460
 22,0,1,0x81B96C8
@@ -57,7 +57,7 @@
 55,0,0,SageT3St|IsPointer
 56,0,0,MageKnightT3St|IsPointer
 57,0,0,0x81BCF54
-58,0,2,0x81BD444
+58,0,0,PhantomSt|IsPointer
 59,0,1,0x81BBF7C
 60,0,0,RevenantSt|IsPointer
 61,0,0,EntombedSt|IsPointer

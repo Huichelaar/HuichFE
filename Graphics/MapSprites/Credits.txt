@@ -1,4 +1,4 @@
-Map Sprite            Author
+Map Sprite            Authors
 
 Supplier              N426
 Soldier               Rexacuse, Peerless, Alusq
@@ -36,3 +36,18 @@ War Monk              Der, Author_Pendragon, TODO
 SageT3                TODO
 MageKnightT3          TODO
 
+Revenant              IS, Pikmin
+Entombed              IS, Pikmin
+BonewalkerBow         IS, Pikmin
+Mogall                IS, Huichelaar
+ArchMogall            IS, Huichelaar
+MautheDoog            IS, Pikmin
+Gwyllgi               IS, Pikmin
+Bael                  IS, Pikmin
+ElderBael             IS, Pikmin
+Gargoyle              IS, Pikmin
+Deathgoyle            IS, Pikmin
+Maelduin              IS, Pikmin
+Gorgon                IS, Huichelaar
+
+Phantom               IS, Pushwall

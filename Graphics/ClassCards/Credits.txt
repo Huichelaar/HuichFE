@@ -1,6 +1,10 @@
 Class Card        Author
 
 Supplier          N426
+SoldierF          IS, flasuban, Huichelaar
+
+
+
 Summoner          Orihara_Saki
 MercenaryF        L95
 Cleric            flasuban
@@ -9,11 +13,15 @@ MonkM             RobertFPY, Blademaster
 -HatlessMageM      RobertFPY
 MageF             Unknown
 ShamanF           Unknown
-SoldierF          IS, flasuban
+
 FighterF          Jj09, HyperGammaSpaces
 ArcherM           DerTheVaporeon
 ArcherF           DerTheVaporeon
 MyrmidonF         L95
 CavalierF         RobertFPY, Pikmin
 CavalierM         RobertFPY
-WyvernKnight      IS, MeatOfJustice, Pikmin, flasuban
+WyvKnight         IS, MeatOfJustice, Pikmin, flasuban, Huichelaar
+PirateF           HyperGammaSpaces
+ThiefF            L95
+
+Sergeant          Spud, Rasdel

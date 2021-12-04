@@ -1,0 +1,13 @@
+Autumnal:
+HSL+
+Disable green component.
+Hue: -50
+Sat: 15
+Lum: 0
+
+CreepyPurple:
+HSL+
+Disable red component.
+Hue: 120
+Sat: 15
+Lum: 0

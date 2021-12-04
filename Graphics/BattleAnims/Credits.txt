@@ -1,6 +1,15 @@
 Animation                 Author
 
 Supplier                  JonoTheRed, Huichelaar
+Soldier                   Flasuban, Nuramon, Jeorge Red
+Knight                    FPZero
+
+
+
+
+
+
+
 MercenaryM                SALVAGED
 MercenaryF                SALVAGED, JeyTheCount
 Cleric                    Flasuban, Eldritch Abomination
@@ -16,5 +25,5 @@ CavalierF                 Pikmin1211, Maiser6, SALVAGED
 MonkM                     Eldritch Abomination
 MonkF                     Eldritch Abomination
 WyvernKnight              St Jack
-Knight                    FPZero
+
 PegasusKnight             Flasuban

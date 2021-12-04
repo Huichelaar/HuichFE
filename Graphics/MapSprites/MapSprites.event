@@ -32,40 +32,44 @@ ALIGN 4; ConjurerSt:
 ALIGN 4; ConjurerMv:
 #incbin "PlaceholderMv.dmp"
 ALIGN 4; SergeantSt:
-#incbin "PlaceholderSt.dmp"
+#incbin "SergeantSt.dmp"
 ALIGN 4; SergeantMv:
-#incbin "PlaceholderMv.dmp"
+#incbin "SergeantMv.dmp"
+ALIGN 4; GreatKnightSt:
+#incbin "GreatKnightSt.dmp"
+ALIGN 4; GreatKnightMv:
+#incbin "GreatKnightMv.dmp"
 ALIGN 4; HarbingerT2St:
-#incbin "PlaceholderSt.dmp"
+#incbin "HarbingerT2St.dmp"
 ALIGN 4; HarbingerT2Mv:
-#incbin "PlaceholderMv.dmp"
+#incbin "HarbingerT2Mv.dmp"
 ALIGN 4; DracoKnightSt:
 #incbin "PlaceholderSt.dmp"
 ALIGN 4; DracoKnightMv:
 #incbin "PlaceholderMv.dmp"
 ALIGN 4; SummonerSt:
-#incbin "PlaceholderSt.dmp"
+#incbin "SummonerSt.dmp"
 
 ALIGN 4; ConjurerT3St:
 #incbin "PlaceholderSt.dmp"
 ALIGN 4; ConjurerT3Mv:
 #incbin "PlaceholderMv.dmp"
 ALIGN 4; MarshallSt:
-#incbin "PlaceholderSt.dmp"
+#incbin "MarshallSt.dmp"
 ALIGN 4; MarshallMv:
-#incbin "PlaceholderMv.dmp"
+#incbin "MarshallMv.dmp"
 ALIGN 4; GoldKnightSt:
-#incbin "PlaceholderSt.dmp"
+#incbin "GoldKnightSt.dmp"
 ALIGN 4; GoldKnightMv:
-#incbin "PlaceholderMv.dmp"
+#incbin "GoldKnightMv.dmp"
 ALIGN 4; MarksmanSt:
-#incbin "PlaceholderSt.dmp"
+#incbin "MarksmanSt.dmp"
 ALIGN 4; MarksmanMv:
-#incbin "PlaceholderMv.dmp"
+#incbin "MarksmanMv.dmp"
 ALIGN 4; BowKnightSt:
-#incbin "PlaceholderSt.dmp"
+#incbin "BowKnightSt.dmp"
 ALIGN 4; BowKnightMv:
-#incbin "PlaceholderMv.dmp"
+#incbin "BowKnightMv.dmp"
 ALIGN 4; HarbingerSt:
 #incbin "PlaceholderSt.dmp"
 ALIGN 4; HarbingerMv:
@@ -79,13 +83,13 @@ ALIGN 4; BerserkerT3St:
 ALIGN 4; BerserkerT3Mv:
 #incbin "PlaceholderMv.dmp"
 ALIGN 4; DreadFighterSt:
-#incbin "PlaceholderSt.dmp"
+#incbin "DreadFighterSt.dmp"
 ALIGN 4; DreadFighterMv:
-#incbin "PlaceholderMv.dmp"
+#incbin "DreadFighterMv.dmp"
 ALIGN 4; ExecutionerSt:
-#incbin "PlaceholderSt.dmp"
+#incbin "ExecutionerSt.dmp"
 ALIGN 4; ExecutionerMv:
-#incbin "PlaceholderMv.dmp"
+#incbin "ExecutionerMv.dmp"
 ALIGN 4; RogueT3St:
 #incbin "PlaceholderSt.dmp"
 ALIGN 4; RogueT3Mv:
@@ -99,13 +103,13 @@ ALIGN 4; DracoLordSt:
 ALIGN 4; DracoLordMv:
 #incbin "PlaceholderMv.dmp"
 ALIGN 4; DarkDruidSt:
-#incbin "PlaceholderSt.dmp"
+#incbin "DarkDruidSt.dmp"
 ALIGN 4; DarkDruidMv:
-#incbin "PlaceholderMv.dmp"
+#incbin "DarkDruidMv.dmp"
 ALIGN 4; NecromancerT3St:
-#incbin "PlaceholderSt.dmp"
+#incbin "NecromancerSt.dmp"
 ALIGN 4; NecromancerT3Mv:
-#incbin "PlaceholderMv.dmp"
+#incbin "NecromancerMv.dmp"
 ALIGN 4; ValkyrieT3St:
 #incbin "PlaceholderSt.dmp"
 ALIGN 4; ValkyrieT3Mv:
@@ -124,32 +128,34 @@ ALIGN 4; MageKnightT3Mv:
 #incbin "PlaceholderMv.dmp"
 
 ALIGN 4; RevenantSt:
-#incbin "PlaceholderSt.dmp"
+#incbin "RevenantSt.dmp"
 ALIGN 4; EntombedSt:
-#incbin "PlaceholderSt.dmp"
+#incbin "EntombedSt.dmp"
 ALIGN 4; BowalkerSt:
-#incbin "PlaceholderSt.dmp"
+#incbin "BowalkerSt.dmp"
 ALIGN 4; MogallSt:
-#incbin "PlaceholderSt.dmp"
+#incbin "MogallSt.dmp"
 ALIGN 4; ArchMogallSt:
-#incbin "PlaceholderSt.dmp"
+#incbin "ArchMogallSt.dmp"
 ALIGN 4; MautheDoogSt:
-#incbin "PlaceholderSt.dmp"
+#incbin "MautheDoogSt.dmp"
 ALIGN 4; GwyllgiSt:
-#incbin "PlaceholderSt.dmp"
+#incbin "GwyllgiSt.dmp"
 ALIGN 4; BaelSt:
-#incbin "PlaceholderSt.dmp"
+#incbin "BaelSt.dmp"
 ALIGN 4; ElderBaelSt:
-#incbin "PlaceholderSt.dmp"
+#incbin "ElderBaelSt.dmp"
 ALIGN 4; GargoyleSt:
-#incbin "PlaceholderSt.dmp"
+#incbin "GargoyleSt.dmp"
 ALIGN 4; DeathgoyleSt:
-#incbin "PlaceholderSt.dmp"
+#incbin "DeathgoyleSt.dmp"
 ALIGN 4; MaelduinSt:
-#incbin "PlaceholderSt.dmp"
+#incbin "MaelduinSt.dmp"
 ALIGN 4; GorgonSt:
-#incbin "PlaceholderSt.dmp"
+#incbin "GorgonSt.dmp"
 
+ALIGN 4; PhantomSt:
+#incbin "PhantomSt.dmp"
 /*
 ALIGN 4; St:
 #incbin "PlaceholderSt.dmp"

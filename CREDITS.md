@@ -267,15 +267,53 @@ TODO. OSRS Orchestra hit was either recorded straight from the Sound Canvas VST 
 - WyvernKnight by IS, MeatOfJustice, Pikmin, flasuban.
 
 ## Map Sprites
-
 - Supplier by N426
 - Soldier by Rexacuse, Peerless, Alusq
 - Cavalier by SALVAGED
 - Archer by DerTheVaporeon
 - Fighter by Alusq
-- WyvernKnight by IS, ArcaneEli, Blood, Yikes!
+- WyvernKnight by IS, ArcaneEli, Blood, Yikes!, Huichelaar
 - Priest by flasuban
 - -HatlessMageM by Pikmin1211
+- Conjurer by TODO
+- Sergeant by Spud
+- Great Knight by Pikmin, L95, Der
+- HarbingerT2 by Nuramon
+- DracoKnight by TODO
+- Summoner by IS
+- ConjurerT3 by TODO
+- Marshall by Elibean Nights, L95, Pikmin, Der, Huichelaar
+- Gold Knight by Pikmin, Der
+- Marksman by ArcherBias
+- BowKnight by Der, Pikmin
+- Harbinger by TODO
+- HeroWarT3 by TODO
+- BerserkerT3 by TODO
+- Dread Fighter by Nuramon
+- Executioner by IS, Lexou, Huichelaar
+- RogueT3 by TODO
+- FalcoKnT3 by TODO
+- DracoLord by TODO
+- Dark Druid by IS
+- Necromancer by Huichelaar
+- ValkyrieT3 by TODO
+- War Monk by Der, Author_Pendragon, TODO
+- SageT3 by TODO
+- MageKnightT3 by TODO
+- Revenant by IS, Pikmin
+- Entombed by IS, Pikmin
+- BonewalkerBow by IS, Pikmin
+- Mogall by IS, Huichelaar
+- ArchMogall by IS, Huichelaar
+- MautheDoog by IS, Pikmin
+- Gwyllgi by IS, Pikmin
+- Bael by IS, Pikmin
+- ElderBael by IS, Pikmin
+- Gargoyle by IS, Pikmin
+- Deathgoyle by IS, Pikmin
+- Maelduin by IS, Pikmin
+- Gorgon by IS, Huichelaar
+- Phantom by IS, Pushwall
 
 ## Items
 
