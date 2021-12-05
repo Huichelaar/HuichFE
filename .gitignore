@@ -18,3 +18,6 @@
 **/*.MkDeps
 Event Assembler
 Workplace
+
+# Other
+**/*__pycache__
