@@ -11,6 +11,7 @@
 #
 # Massive thanks to circleseverywhere for the amazing Animation Assembler.
 import os
+import PaletteDict as palDict
 import lzss
 from shutil import copyfile
 
@@ -23,59 +24,86 @@ def createPalette(dir):
   zeroPal = b'\x00'*32
   
   # Only consider directories containing a pal.dmp file.
-  inputPal = dir+"\\pal.dmp"
+  inputPal = dir+"\\pal.txt"
   outputPal = dir+"\\pal.event"
   if os.path.isfile(inputPal):
+    
     # Don't redo palette if it's not been modified
     if (not os.path.isfile(outputPal) or os.path.getmtime(inputPal) > os.path.getmtime(outputPal)):
-      input = open(inputPal, 'rb')
+      input = open(inputPal, 'r')
+      lines = input.readlines()
+      
+      # Don't create palette if not exactly 16 colours have been specified.
+      if len(lines) != 16:
+        input.close()
+        print(inputPal+" doesn't contain exactly 16 colours (17 lines)! No pal.event generated.\n")
+        return
+      
+      # Don't create palette if at least one colour isn't in dictionary.
+      for line in lines:
+        if line[:-1] not in palDict.dict[0]:
+          input.close()
+          print(inputPal+" Uses palette colour: "+line[:-1]+" not in PaletteDict! No pal.event generated.\n")
+          return
+          
+      # Build 12 palettes. 4 ghost, 4 human. Humans use two palettes.
       output = open(outputPal, 'w')
-      
-      # Ghost enemy palettes.
-      form = "G"
-      for i in range(4):
-        compPal = lzss.compress(zeroPal+input.read(32)+zeroPal+zeroPal)
+      for i in range(8):
+        pal = zeroPal
+        for line in lines:
+          pal += palDict.dict[i][line[:-1]]
+        if i > 3:   # Human.
+          form = "H"
+          for line in lines:
+            pal += palDict.dict[i+4][line[:-1]]
+        else:       # Ghost.
+          form = "G"
+          pal += zeroPal
+        pal += zeroPal
+        compPal = lzss.compress(pal)
         outputText = """ALIGN 4; Anim_{form}{version}_{classname}_pal:\n{compPal}\n\n"""
-        output.write(outputText.format(classname=dir, compPal=b_to_hex(compPal), form=form, version=i+1))
+        output.write(outputText.format(classname=dir, compPal=b_to_hex(compPal), form=form, version=(i&3)+1))
       
-      # Human enemy and neutral palettes.
-      form = "H"
-      for i in range(4):
-        compPal = lzss.compress(zeroPal+input.read(64)+zeroPal)
-        outputText = """ALIGN 4; Anim_{form}{version}_{classname}_pal:\n{compPal}\n\n"""
-        output.write(outputText.format(classname=dir, compPal=b_to_hex(compPal), form=form, version=i+1))
-        
       input.close()
       output.close()
+      
 
 def main():
+  output = open("BattleAnims.event", 'w')
 
   # Iterate over all class directories.
-  for dir in next(os.walk('.'))[1]:
+  for classID in next(os.walk('.'))[1]:
     cwd = os.getcwd()
-    subdirs = next(os.walk('.'+'\\'+dir))[1]
-    classdir = cwd+'\\'+dir
+    subdirs = next(os.walk('.'+'\\'+classID))[1]
+    classdir = cwd+'\\'+classID+'\\'
     
-    createPalette(classdir)
-    
+    createPalette(classID)
+
     # Create anim installers.
+    anim = False
     for subdir in subdirs:
       if subdir == "1. Sword" or subdir == "2. Lance" or subdir == "3. Axe" or subdir == "4. Handaxe" or subdir == "5. Bow" or subdir == "6. Magic" or subdir == "7. Staff" or subdir == "8. Unarmed":
-        battleAnimBinary = classdir+'\\'+subdir+'\\'+subdir[3:]+".bin"
-        battleAnimInstaller = classdir+'\\'+subdir[3:]+"Installer.event"
+        weapondir = classdir+subdir+'\\'
+        anim = True
+        weaponType = subdir[3:]
+        battleAnimBinary = weapondir+weaponType+".bin"
+        battleAnimInstaller = weapondir+weaponType+"Installer.event"
         if (not os.path.isfile(battleAnimInstaller) or os.path.getmtime(battleAnimBinary) > os.path.getmtime(battleAnimInstaller)):
-          copyfile(cwd+"\\AA.py", classdir+"\\"+subdir+"\\AA.py")
-          copyfile(cwd+"\\lzss.py", classdir+"\\"+subdir+"\\lzss.py")
-          
-          os.chdir(classdir+'\\'+subdir)
-          os.system("python \""+classdir+"\\"+subdir+"\\"+"AA.py\" "+"\""+battleAnimBinary+"\" "+dir)
+          copyfile(cwd+"\\AA.py", weapondir+"AA.py")
+          copyfile(cwd+"\\lzss.py", weapondir+"lzss.py")
+          os.chdir(weapondir)
+          os.system("python \""+weapondir+"AA.py\" "+"\""+battleAnimBinary+"\" "+classID)
           os.chdir(cwd)
+          os.remove(weapondir+"AA.py")
+          os.remove(weapondir+"lzss.py")
           
-          copyfile(classdir+"\\"+subdir+"\\"+subdir[3:]+"Installer.event", classdir+"\\"+subdir[3:]+"Installer.event")
-          
-          os.remove(classdir+"\\"+subdir+"\\AA.py")
-          os.remove(classdir+"\\"+subdir+"\\lzss.py")
-          os.remove(classdir+"\\"+subdir+"\\"+subdir[3:]+"Installer.event")
-          
+        
+        output.write("#include \""+classID+"/"+subdir+"/"+weaponType+"Installer.event\n")
+    if anim:
+      output.write("#include \""+classID+"/"+"pal.event\n\n")
+    anim = False
+  
+  output.close()
+  
 if __name__ == '__main__':
     main()
