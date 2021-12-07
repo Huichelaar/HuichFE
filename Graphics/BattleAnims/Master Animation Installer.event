@@ -33,7 +33,8 @@ POP
 #define SpecialAnim(Animation,Weapon) "BYTE Weapon 0x00 ; SHORT Animation"
 #define EndAnim "WORD 0x0"
 
-#include "Palettes/Palettes.event"
+//#include "BasicAnims/BattleAnims.event"
+#include "PersonalPalettes/Palettes.event"
 #include "Commands/Commands.event"
 #include "ThrownWeapons/ThrownWeapons.event"
 
