@@ -74,8 +74,7 @@
 #define SageT3_F 0xB0
 #define MageKnightT3 0xB1
 #define MageKnightT3_F 0xB2
-
-
+#define Brigand_F 0xB3
 
 // Battle animations
 #define SupplierLanceAnim 0x1

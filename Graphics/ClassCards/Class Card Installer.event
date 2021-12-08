@@ -1,53 +1,13 @@
 #define setCardEntry(cardEntry,cardLocation,cardPaletteLocation) "PUSH; ORG PortraitTable+cardEntry*0x1C; POIN 0 0 cardPaletteLocation 0 cardLocation 0; BYTE 0x1; POP"
 
-ALIGN 4; SupplierCCTiles:
+ALIGN 4; SupplierFCCTiles:
 #incbin "Supplier.dmp"
 ALIGN 4; SupplierCCPal:
 #incbin "Supplier_pal.dmp"
-ALIGN 4; MercenaryFCCTiles:
-#incbin "MercenaryF.dmp"
-ALIGN 4; MercenaryFCCPal:
-#incbin "MercenaryF_pal.dmp"
-ALIGN 4; FighterFCCTiles:
-#incbin "FighterF.dmp"
-ALIGN 4; FighterFCCPal:
-#incbin "FighterF_pal.dmp"
-ALIGN 4; ArcherFCCTiles:
-#incbin "ArcherF.dmp"
-ALIGN 4; ArcherFCCPal:
-#incbin "ArcherF_pal.dmp"
-ALIGN 4; ArcherMCCTiles:
-#incbin "ArcherM.dmp"
-ALIGN 4; ArcherMCCPal:
-#incbin "ArcherM_pal.dmp"
 ALIGN 4; SoldierFCCTiles:
 #incbin "SoldierF.dmp"
 ALIGN 4; SoldierFCCPal:
 #incbin "SoldierF_pal.dmp"
-ALIGN 4; ClericCCTiles:
-#incbin "Cleric.dmp"
-ALIGN 4; ClericCCPal:
-#incbin "Cleric_pal.dmp"
-ALIGN 4; MonkFCCTiles:
-#incbin "MonkF.dmp"
-ALIGN 4; MonkFCCPal:
-#incbin "MonkF_pal.dmp"
-ALIGN 4; MonkMCCTiles:
-#incbin "MonkM.dmp"
-ALIGN 4; MonkMCCPal:
-#incbin "MonkM_pal.dmp"
-ALIGN 4; ShamanFCCTiles:
-#incbin "ShamanF.dmp"
-ALIGN 4; ShamanFCCPal:
-#incbin "ShamanF_pal.dmp"
-ALIGN 4; MageFCCTiles:
-#incbin "MageF.dmp"
-ALIGN 4; MageFCCPal:
-#incbin "MageF_pal.dmp"
-ALIGN 4; MyrmidonFCCTiles:
-#incbin "MyrmidonF.dmp"
-ALIGN 4; MyrmidonFCCPal:
-#incbin "MyrmidonF_pal.dmp"
 ALIGN 4; CavalierFCCTiles:
 #incbin "CavalierF.dmp"
 ALIGN 4; CavalierFCCPal:
@@ -56,19 +16,59 @@ ALIGN 4; CavalierMCCTiles:
 #incbin "CavalierM.dmp"
 ALIGN 4; CavalierMCCPal:
 #incbin "CavalierM_pal.dmp"
-ALIGN 4; WyvKnightCCTiles:
-#incbin "WyvKnight.dmp"
-ALIGN 4; WyvKnightCCPal:
-#incbin "WyvKnight_pal.dmp"
-
+ALIGN 4; ArcherFCCTiles:
+#incbin "ArcherF.dmp"
+ALIGN 4; ArcherFCCPal:
+#incbin "ArcherF_pal.dmp"
+ALIGN 4; ArcherMCCTiles:
+#incbin "ArcherM.dmp"
+ALIGN 4; ArcherMCCPal:
+#incbin "ArcherM_pal.dmp"
+ALIGN 4; MercenaryFCCTiles:
+#incbin "MercenaryF.dmp"
+ALIGN 4; MercenaryFCCPal:
+#incbin "MercenaryF_pal.dmp"
+ALIGN 4; FighterFCCTiles:
+#incbin "FighterF.dmp"
+ALIGN 4; FighterFCCPal:
+#incbin "FighterF_pal.dmp"
 ALIGN 4; PirateFCCTiles:
 #incbin "PirateF.dmp"
 ALIGN 4; PirateFCCPal:
 #incbin "PirateF_pal.dmp"
+ALIGN 4; MyrmidonFCCTiles:
+#incbin "MyrmidonF.dmp"
+ALIGN 4; MyrmidonFCCPal:
+#incbin "MyrmidonF_pal.dmp"
 ALIGN 4; ThiefFCCTiles:
 #incbin "ThiefF.dmp"
 ALIGN 4; ThiefFCCPal:
 #incbin "ThiefF_pal.dmp"
+ALIGN 4; WyvKnightCCTiles:
+#incbin "WyvKnight.dmp"
+ALIGN 4; WyvKnightCCPal:
+#incbin "WyvKnight_pal.dmp"
+ALIGN 4; ShamanFCCTiles:
+#incbin "ShamanF.dmp"
+ALIGN 4; ShamanFCCPal:
+#incbin "ShamanF_pal.dmp"
+ALIGN 4; PriestFCCTiles:
+#incbin "PriestF.dmp"
+ALIGN 4; PriestFCCPal:
+#incbin "PriestF_pal.dmp"
+ALIGN 4; MonkMCCTiles:
+#incbin "MonkM.dmp"
+ALIGN 4; MonkMCCPal:
+#incbin "MonkM_pal.dmp"
+ALIGN 4; MonkFCCTiles:
+#incbin "MonkF.dmp"
+ALIGN 4; MonkFCCPal:
+#incbin "MonkF_pal.dmp"
+ALIGN 4; MageFCCTiles:
+#incbin "MageF.dmp"
+ALIGN 4; MageFCCPal:
+#incbin "MageF_pal.dmp"
+
 ALIGN 4; ConjurerCCTiles:
 #incbin "Placeholder.dmp"
 ALIGN 4; ConjurerCCPal:
@@ -77,68 +77,6 @@ ALIGN 4; SergeantCCTiles:
 #incbin "Sergeant.dmp"
 ALIGN 4; SergeantCCPal:
 #incbin "Sergeant_pal.dmp"
-ALIGN 4; CCTiles:
-#incbin ".dmp"
-ALIGN 4; CCPal:
-#incbin "_pal.dmp"
-ALIGN 4; CCTiles:
-#incbin ".dmp"
-ALIGN 4; CCPal:
-#incbin "_pal.dmp"
-ALIGN 4; CCTiles:
-#incbin ".dmp"
-ALIGN 4; CCPal:
-#incbin "_pal.dmp"
-ALIGN 4; CCTiles:
-#incbin ".dmp"
-ALIGN 4; CCPal:
-#incbin "_pal.dmp"
-ALIGN 4; CCTiles:
-#incbin ".dmp"
-ALIGN 4; CCPal:
-#incbin "_pal.dmp"
-ALIGN 4; CCTiles:
-#incbin ".dmp"
-ALIGN 4; CCPal:
-#incbin "_pal.dmp"
-ALIGN 4; CCTiles:
-#incbin ".dmp"
-ALIGN 4; CCPal:
-#incbin "_pal.dmp"
-ALIGN 4; CCTiles:
-#incbin ".dmp"
-ALIGN 4; CCPal:
-#incbin "_pal.dmp"
-ALIGN 4; CCTiles:
-#incbin ".dmp"
-ALIGN 4; CCPal:
-#incbin "_pal.dmp"
-ALIGN 4; CCTiles:
-#incbin ".dmp"
-ALIGN 4; CCPal:
-#incbin "_pal.dmp"
-ALIGN 4; CCTiles:
-#incbin ".dmp"
-ALIGN 4; CCPal:
-#incbin "_pal.dmp"
-ALIGN 4; CCTiles:
-#incbin ".dmp"
-ALIGN 4; CCPal:
-#incbin "_pal.dmp"
-ALIGN 4; CCTiles:
-#incbin ".dmp"
-ALIGN 4; CCPal:
-#incbin "_pal.dmp"
-ALIGN 4; CCTiles:
-#incbin ".dmp"
-ALIGN 4; CCPal:
-#incbin "_pal.dmp"
-ALIGN 4; CCTiles:
-#incbin ".dmp"
-ALIGN 4; CCPal:
-#incbin "_pal.dmp"
-
-
 
 /*
 ALIGN 4; CCTiles:
@@ -147,18 +85,19 @@ ALIGN 4; CCPal:
 #incbin "_pal.dmp"
 */
 
-setCardEntry(SupplierCC,SupplierCCTiles,SupplierCCPal)
+setCardEntry(SupplierFCC,SupplierFCCTiles,SupplierCCPal)
+setCardEntry(SoldierFCC,SoldierFCCTiles,SoldierFCCPal)
+setCardEntry(CavalierMCC,CavalierMCCTiles,CavalierMCCPal)
+setCardEntry(CavalierFCC,CavalierFCCTiles,CavalierFCCPal)
+setCardEntry(ArcherMCC,ArcherMCCTiles,ArcherMCCPal)
+setCardEntry(ArcherFCC,ArcherFCCTiles,ArcherFCCPal)
 setCardEntry(MercenaryFCC,MercenaryFCCTiles,MercenaryFCCPal)
 setCardEntry(FighterFCC,FighterFCCTiles,FighterFCCPal)
-setCardEntry(ArcherFCC,ArcherFCCTiles,ArcherFCCPal)
-setCardEntry(ArcherMCC,ArcherMCCTiles,ArcherMCCPal)
-setCardEntry(SoldierFCC,SoldierFCCTiles,SoldierFCCPal)
-setCardEntry(ClericCC,ClericCCTiles,ClericCCPal)
-setCardEntry(MonkFCC,MonkFCCTiles,MonkFCCPal)
-setCardEntry(MonkMCC,MonkMCCTiles,MonkMCCPal)
-setCardEntry(ShamanFCC,ShamanFCCTiles,ShamanFCCPal)
 setCardEntry(MyrmidonFCC,MyrmidonFCCTiles,MyrmidonFCCPal)
-setCardEntry(CavalierFCC,CavalierFCCTiles,CavalierFCCPal)
-setCardEntry(CavalierMCC,CavalierMCCTiles,CavalierMCCPal)
-setCardEntry(MageFCC,MageFCCTiles,MageFCCPal)
+setCardEntry(ThiefFCC,ThiefFCCTiles,ThiefFCCPal)
 setCardEntry(WyvKnightCC,WyvKnightCCTiles,WyvKnightCCPal)
+setCardEntry(ShamanFCC,ShamanFCCTiles,ShamanFCCPal)
+setCardEntry(PriestFCC,PriestFCCTiles,PriestFCCPal)
+setCardEntry(MonkMCC,MonkMCCTiles,MonkMCCPal)
+setCardEntry(MonkFCC,MonkFCCTiles,MonkFCCPal)
+setCardEntry(MageFCC,MageFCCTiles,MageFCCPal)

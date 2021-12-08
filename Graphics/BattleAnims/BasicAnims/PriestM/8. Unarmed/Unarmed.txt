@@ -1,5 +1,5 @@
 #######################################################
-#7E prim_ro1 Priest Item
+#
 #
 #When importing to FEditorAdv delete # and after each line.
 #######################################################
@@ -67,13 +67,11 @@ C0D                               #End of dodge animation. preceeded by 0x06
 1 p- Unarmed_000.png
 C01                               #NOP
 ~~~
-/// - Mode 10               #Standing motions
+/// - Mode 10               #standing motions?
 1 p- Unarmed_000.png
 C01                               #NOP
 ~~~
 /// - Mode 11               #Equiped with Ranged weapon
-1 p- Unarmed_000.png
-C01                               #NOP
 ~~~
 /// - Mode 12               #Attack Missed Animation
 C02                               #Start of dodge

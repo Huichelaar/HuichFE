@@ -161,6 +161,7 @@ POIN Anim_{labelname}_sectiondata
 POIN Anim_{labelname}_framedata
 POIN Anim_{labelname}_rtl Anim_{labelname}_ltr Anim_G4_{classname}_pal
 POP
+ALIGN 4
 
 //install data
 

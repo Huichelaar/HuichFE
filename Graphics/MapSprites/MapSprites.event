@@ -1,3 +1,12 @@
+PUSH
+
+// Change light rune palette to phantom palette
+ORG 0x59EEC0
+WORD 0x2CF853FA 0x7B1F519F 0x4D9C2CD9 0x2055733F
+WORD 0x6A7F411C 0x5B72773F 0x2CF87F77 0x14B27FFF
+
+POP
+
 ALIGN 4; SupplierSt:
 #incbin "SupplierSt.dmp"
 ALIGN 4; SupplierMv:

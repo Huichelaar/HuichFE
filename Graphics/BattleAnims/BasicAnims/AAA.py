@@ -64,13 +64,14 @@ def b_to_hex(data):
   return 'BYTE ' + ' '.join([hex(x) for x in data])
 
 # Create a pal.event file containing palettes for the battle anim in directory.
-def createPalette(dir):
+def createPalette(dir, output):
   zeroPal = b'\x00'*32
   
   # Only consider directories containing a pal.dmp file.
   inputPal = dir+"\\pal.txt"
   outputPal = dir+"\\pal.event"
   if os.path.isfile(inputPal):
+    output.write("#include \""+dir+"/"+"pal.event\"\n")
     
     # Don't redo palette if it's not been modified
     if (not os.path.isfile(outputPal) or os.path.getmtime(inputPal) > os.path.getmtime(outputPal)):
@@ -91,7 +92,7 @@ def createPalette(dir):
           return
           
       # Build 12 palettes. 4 ghost, 4 human. Humans use two palettes.
-      output = open(outputPal, 'w')
+      output2 = open(outputPal, 'w')
       for i in range(8):
         pal = zeroPal
         for line in lines:
@@ -106,10 +107,10 @@ def createPalette(dir):
         pal += zeroPal
         compPal = lzss.compress(pal)
         outputText = """ALIGN 4; Anim_{form}{version}_{classname}_pal:\n{compPal}\n\n"""
-        output.write(outputText.format(classname=dir, compPal=b_to_hex(compPal), form=form, version=(i&3)+1))
+        output2.write(outputText.format(classname=dir, compPal=b_to_hex(compPal), form=form, version=(i&3)+1))
       
       input.close()
-      output.close()
+      output2.close()
       
 def createAnim(classID, output):
   cwd = os.getcwd()
@@ -117,8 +118,8 @@ def createAnim(classID, output):
   classdir = cwd+'\\'+classID+'\\'
   
   # Create anim installers.
-  vanSet = {"sw", "la", "ax", "ha", "bo", "ma", "st", "un"}
-  vanDict = {"sw": "Sword", "la": "Lance", "ax": "Axe", "ha": "Handaxe", "bo": "Bow", "ma": "Magic", "st": "Staff", "un": "Unarmed"}
+  vanSet = {"sw", "la", "ax", "ha", "bo", "ma", "st", "un", "it"}
+  vanDict = {"sw": "Sword", "la": "Lance", "ax": "Axe", "ha": "Handaxe", "bo": "Bow", "ma": "Magic", "st": "Staff", "un": "Unarmed", "it": "Item"}
   dirSet = {"1. Sword", "2. Lance", "3. Axe", "4. Handaxe", "5. Bow", "6. Magic", "7. Staff", "8. Unarmed"}
   animDir = False
   anims = []
@@ -145,7 +146,7 @@ def createAnim(classID, output):
           os.chdir(cwd)
           os.remove(weapondir+"AA.py")
           os.remove(weapondir+"lzss.py")
-        output.write("#include \""+classID+"/"+subdir+"/"+weaponType+"Installer.event\n")
+        output.write("#include \""+classID+"/"+subdir+"/"+weaponType+"Installer.event\"\n")
   
   # Vanilla anims.
   elif os.path.isfile(classdir+"vanilla.txt"):
@@ -170,7 +171,6 @@ def createAnim(classID, output):
     return
   
   # Either non-vanilla or vanilla anims.
-  output.write("#include \""+classID+"/"+"pal.event\n")
   output.write("ALIGN 4; "+classID+"Anims:\n")
   for anim in anims:
     output.write(anim+"Anim("+classID+anim+"Anim)\n")
@@ -182,7 +182,7 @@ def main():
 
   # Iterate over all class directories.
   for classID in next(os.walk('.'))[1]:
-    createPalette(classID)
+    createPalette(classID, output)
     createAnim(classID, output)
   
   output.close()
