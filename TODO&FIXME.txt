@@ -79,6 +79,14 @@ Remove female map sprites credits' from Credits struct.
 If we need space:
   - Room for 0x2000 text entries. Can reduce this in repointedTextTable.event.
   - Some tables have entries they're not using, see Tables/TableOptions.s.
+  - Vanilla anims have a lot of duplicate data. Vanilla non-monster anim palettes are now unused.
+    - Anims for the same class use duplicate palettes. These are now unused entirely.
+    - F/M battle anim variants that are no different use duplicate data.
+    - Ranger no longer uses sword.
+    - Monster anims, whoo boy.
+      - T2s use the duplicate everything as their T1 counterparts (Exception: Gwyllgi), save for palette of course.
+      - Bonewalker & Bonewalker_Bow use duplicate unarmed anim, including palette. Analogous for Wight & Wight_Bow.
+      I already replaced monster pointers to duplicate data, so feel free to re-use that stuff. Remember that everything, including PALETTES (why IS, why?), is compressed data.
   
 
 CREDIT

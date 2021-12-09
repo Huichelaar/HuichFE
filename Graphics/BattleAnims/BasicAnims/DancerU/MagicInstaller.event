@@ -1,0 +1,42 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(DancerUMagicAnim) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8DA3534 0x8DA3148 0x8DA2DB8 0x8DA2A3C
+POIN Anim_H1_DancerU_pal
+
+AnimTableEntry(DancerUMagicAnim+1) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8DA3534 0x8DA3148 0x8DA2DB8 0x8DA2A3C
+POIN Anim_H2_DancerU_pal
+
+AnimTableEntry(DancerUMagicAnim+2) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8DA3534 0x8DA3148 0x8DA2DB8 0x8DA2A3C
+POIN Anim_H3_DancerU_pal
+
+AnimTableEntry(DancerUMagicAnim+3) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8DA3534 0x8DA3148 0x8DA2DB8 0x8DA2A3C
+POIN Anim_H4_DancerU_pal
+
+AnimTableEntry(DancerUMagicAnim+4) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8DA3534 0x8DA3148 0x8DA2DB8 0x8DA2A3C
+POIN Anim_G1_DancerU_pal
+
+AnimTableEntry(DancerUMagicAnim+5) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8DA3534 0x8DA3148 0x8DA2DB8 0x8DA2A3C
+POIN Anim_G2_DancerU_pal
+
+AnimTableEntry(DancerUMagicAnim+6) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8DA3534 0x8DA3148 0x8DA2DB8 0x8DA2A3C
+POIN Anim_G3_DancerU_pal
+
+AnimTableEntry(DancerUMagicAnim+7) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8DA3534 0x8DA3148 0x8DA2DB8 0x8DA2A3C
+POIN Anim_G4_DancerU_pal
+POP

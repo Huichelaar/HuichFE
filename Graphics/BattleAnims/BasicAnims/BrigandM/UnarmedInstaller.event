@@ -1,0 +1,42 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(BrigandMUnarmedAnim) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C50C84 0x8C50C30 0x8C50B6C 0x8C50AA0
+POIN Anim_H1_BrigandM_pal
+
+AnimTableEntry(BrigandMUnarmedAnim+1) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C50C84 0x8C50C30 0x8C50B6C 0x8C50AA0
+POIN Anim_H2_BrigandM_pal
+
+AnimTableEntry(BrigandMUnarmedAnim+2) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C50C84 0x8C50C30 0x8C50B6C 0x8C50AA0
+POIN Anim_H3_BrigandM_pal
+
+AnimTableEntry(BrigandMUnarmedAnim+3) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C50C84 0x8C50C30 0x8C50B6C 0x8C50AA0
+POIN Anim_H4_BrigandM_pal
+
+AnimTableEntry(BrigandMUnarmedAnim+4) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C50C84 0x8C50C30 0x8C50B6C 0x8C50AA0
+POIN Anim_G1_BrigandM_pal
+
+AnimTableEntry(BrigandMUnarmedAnim+5) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C50C84 0x8C50C30 0x8C50B6C 0x8C50AA0
+POIN Anim_G2_BrigandM_pal
+
+AnimTableEntry(BrigandMUnarmedAnim+6) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C50C84 0x8C50C30 0x8C50B6C 0x8C50AA0
+POIN Anim_G3_BrigandM_pal
+
+AnimTableEntry(BrigandMUnarmedAnim+7) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C50C84 0x8C50C30 0x8C50B6C 0x8C50AA0
+POIN Anim_G4_BrigandM_pal
+POP

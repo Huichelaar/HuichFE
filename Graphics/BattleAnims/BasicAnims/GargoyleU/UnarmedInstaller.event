@@ -1,0 +1,6 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(GargoyleUUnarmedAnim) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8E24EF0 0x8E24E2C 0x8E24C2C 0x8E24A30 0x8E232B4
+POP

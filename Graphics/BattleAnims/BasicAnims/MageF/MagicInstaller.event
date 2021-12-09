@@ -1,0 +1,42 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(MageFMagicAnim) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D507D0 0x8D50514 0x8D5027C 0x8D4FFD0
+POIN Anim_H1_MageF_pal
+
+AnimTableEntry(MageFMagicAnim+1) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D507D0 0x8D50514 0x8D5027C 0x8D4FFD0
+POIN Anim_H2_MageF_pal
+
+AnimTableEntry(MageFMagicAnim+2) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D507D0 0x8D50514 0x8D5027C 0x8D4FFD0
+POIN Anim_H3_MageF_pal
+
+AnimTableEntry(MageFMagicAnim+3) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D507D0 0x8D50514 0x8D5027C 0x8D4FFD0
+POIN Anim_H4_MageF_pal
+
+AnimTableEntry(MageFMagicAnim+4) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D507D0 0x8D50514 0x8D5027C 0x8D4FFD0
+POIN Anim_G1_MageF_pal
+
+AnimTableEntry(MageFMagicAnim+5) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D507D0 0x8D50514 0x8D5027C 0x8D4FFD0
+POIN Anim_G2_MageF_pal
+
+AnimTableEntry(MageFMagicAnim+6) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D507D0 0x8D50514 0x8D5027C 0x8D4FFD0
+POIN Anim_G3_MageF_pal
+
+AnimTableEntry(MageFMagicAnim+7) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D507D0 0x8D50514 0x8D5027C 0x8D4FFD0
+POIN Anim_G4_MageF_pal
+POP

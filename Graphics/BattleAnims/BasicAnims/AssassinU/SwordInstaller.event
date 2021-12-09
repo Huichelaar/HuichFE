@@ -1,0 +1,42 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(AssassinUSwordAnim) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D98108 0x8D97C1C 0x8D970D8 0x8D96598
+POIN Anim_H1_AssassinU_pal
+
+AnimTableEntry(AssassinUSwordAnim+1) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D98108 0x8D97C1C 0x8D970D8 0x8D96598
+POIN Anim_H2_AssassinU_pal
+
+AnimTableEntry(AssassinUSwordAnim+2) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D98108 0x8D97C1C 0x8D970D8 0x8D96598
+POIN Anim_H3_AssassinU_pal
+
+AnimTableEntry(AssassinUSwordAnim+3) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D98108 0x8D97C1C 0x8D970D8 0x8D96598
+POIN Anim_H4_AssassinU_pal
+
+AnimTableEntry(AssassinUSwordAnim+4) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D98108 0x8D97C1C 0x8D970D8 0x8D96598
+POIN Anim_G1_AssassinU_pal
+
+AnimTableEntry(AssassinUSwordAnim+5) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D98108 0x8D97C1C 0x8D970D8 0x8D96598
+POIN Anim_G2_AssassinU_pal
+
+AnimTableEntry(AssassinUSwordAnim+6) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D98108 0x8D97C1C 0x8D970D8 0x8D96598
+POIN Anim_G3_AssassinU_pal
+
+AnimTableEntry(AssassinUSwordAnim+7) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D98108 0x8D97C1C 0x8D970D8 0x8D96598
+POIN Anim_G4_AssassinU_pal
+POP

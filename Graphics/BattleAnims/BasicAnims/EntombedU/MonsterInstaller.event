@@ -1,0 +1,6 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(EntombedUMonsterAnim) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8DCC5A4 0x8DCC22C 0x8DCBD70 0x8DCB8B8 0x8DCC604
+POP

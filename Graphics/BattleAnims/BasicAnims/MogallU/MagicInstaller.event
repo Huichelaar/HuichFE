@@ -1,0 +1,6 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(MogallUMagicAnim) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8E11A98 0x8E11800 0x8E11470 0x8E110DC 0x8E110A4
+POP

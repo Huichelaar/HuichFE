@@ -1,0 +1,42 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(MyrmMSwordAnim) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C39904 0x8C39538 0x8C3896C 0x8C37D94
+POIN Anim_H1_MyrmM_pal
+
+AnimTableEntry(MyrmMSwordAnim+1) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C39904 0x8C39538 0x8C3896C 0x8C37D94
+POIN Anim_H2_MyrmM_pal
+
+AnimTableEntry(MyrmMSwordAnim+2) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C39904 0x8C39538 0x8C3896C 0x8C37D94
+POIN Anim_H3_MyrmM_pal
+
+AnimTableEntry(MyrmMSwordAnim+3) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C39904 0x8C39538 0x8C3896C 0x8C37D94
+POIN Anim_H4_MyrmM_pal
+
+AnimTableEntry(MyrmMSwordAnim+4) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C39904 0x8C39538 0x8C3896C 0x8C37D94
+POIN Anim_G1_MyrmM_pal
+
+AnimTableEntry(MyrmMSwordAnim+5) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C39904 0x8C39538 0x8C3896C 0x8C37D94
+POIN Anim_G2_MyrmM_pal
+
+AnimTableEntry(MyrmMSwordAnim+6) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C39904 0x8C39538 0x8C3896C 0x8C37D94
+POIN Anim_G3_MyrmM_pal
+
+AnimTableEntry(MyrmMSwordAnim+7) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C39904 0x8C39538 0x8C3896C 0x8C37D94
+POIN Anim_G4_MyrmM_pal
+POP

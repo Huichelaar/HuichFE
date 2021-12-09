@@ -49,6 +49,7 @@ POIN Anim_Unarmed_sectiondata
 POIN Anim_Unarmed_framedata
 POIN Anim_Unarmed_rtl Anim_Unarmed_ltr Anim_G4_WyvKnU_pal
 POP
+ALIGN 4
 
 //install data
 

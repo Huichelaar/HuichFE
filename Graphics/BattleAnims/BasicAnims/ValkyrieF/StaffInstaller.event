@@ -1,0 +1,42 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(ValkyrieFStaffAnim) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D8EC04 0x8D8EA98 0x8D8E81C 0x8D8E59C
+POIN Anim_H1_ValkyrieF_pal
+
+AnimTableEntry(ValkyrieFStaffAnim+1) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D8EC04 0x8D8EA98 0x8D8E81C 0x8D8E59C
+POIN Anim_H2_ValkyrieF_pal
+
+AnimTableEntry(ValkyrieFStaffAnim+2) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D8EC04 0x8D8EA98 0x8D8E81C 0x8D8E59C
+POIN Anim_H3_ValkyrieF_pal
+
+AnimTableEntry(ValkyrieFStaffAnim+3) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D8EC04 0x8D8EA98 0x8D8E81C 0x8D8E59C
+POIN Anim_H4_ValkyrieF_pal
+
+AnimTableEntry(ValkyrieFStaffAnim+4) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D8EC04 0x8D8EA98 0x8D8E81C 0x8D8E59C
+POIN Anim_G1_ValkyrieF_pal
+
+AnimTableEntry(ValkyrieFStaffAnim+5) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D8EC04 0x8D8EA98 0x8D8E81C 0x8D8E59C
+POIN Anim_G2_ValkyrieF_pal
+
+AnimTableEntry(ValkyrieFStaffAnim+6) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D8EC04 0x8D8EA98 0x8D8E81C 0x8D8E59C
+POIN Anim_G3_ValkyrieF_pal
+
+AnimTableEntry(ValkyrieFStaffAnim+7) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D8EC04 0x8D8EA98 0x8D8E81C 0x8D8E59C
+POIN Anim_G4_ValkyrieF_pal
+POP

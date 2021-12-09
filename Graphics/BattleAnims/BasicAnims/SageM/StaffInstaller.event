@@ -1,0 +1,42 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(SageMStaffAnim) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D55050 0x8D54F90 0x8D54E30 0x8D54CD0
+POIN Anim_H1_SageM_pal
+
+AnimTableEntry(SageMStaffAnim+1) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D55050 0x8D54F90 0x8D54E30 0x8D54CD0
+POIN Anim_H2_SageM_pal
+
+AnimTableEntry(SageMStaffAnim+2) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D55050 0x8D54F90 0x8D54E30 0x8D54CD0
+POIN Anim_H3_SageM_pal
+
+AnimTableEntry(SageMStaffAnim+3) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D55050 0x8D54F90 0x8D54E30 0x8D54CD0
+POIN Anim_H4_SageM_pal
+
+AnimTableEntry(SageMStaffAnim+4) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D55050 0x8D54F90 0x8D54E30 0x8D54CD0
+POIN Anim_G1_SageM_pal
+
+AnimTableEntry(SageMStaffAnim+5) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D55050 0x8D54F90 0x8D54E30 0x8D54CD0
+POIN Anim_G2_SageM_pal
+
+AnimTableEntry(SageMStaffAnim+6) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D55050 0x8D54F90 0x8D54E30 0x8D54CD0
+POIN Anim_G3_SageM_pal
+
+AnimTableEntry(SageMStaffAnim+7) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D55050 0x8D54F90 0x8D54E30 0x8D54CD0
+POIN Anim_G4_SageM_pal
+POP

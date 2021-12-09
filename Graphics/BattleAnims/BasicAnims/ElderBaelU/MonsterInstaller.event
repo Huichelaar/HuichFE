@@ -1,0 +1,6 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(ElderBaelUMonsterAnim) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8DE4EA8 0x8DE4C1C 0x8DE4794 0x8DE4310 0x8DE4F08
+POP

@@ -1,0 +1,42 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(RangerMUnarmedAnim) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C7D49C 0x8C7D40C 0x8C7D364 0x8C7D2C0
+POIN Anim_H1_RangerM_pal
+
+AnimTableEntry(RangerMUnarmedAnim+1) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C7D49C 0x8C7D40C 0x8C7D364 0x8C7D2C0
+POIN Anim_H2_RangerM_pal
+
+AnimTableEntry(RangerMUnarmedAnim+2) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C7D49C 0x8C7D40C 0x8C7D364 0x8C7D2C0
+POIN Anim_H3_RangerM_pal
+
+AnimTableEntry(RangerMUnarmedAnim+3) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C7D49C 0x8C7D40C 0x8C7D364 0x8C7D2C0
+POIN Anim_H4_RangerM_pal
+
+AnimTableEntry(RangerMUnarmedAnim+4) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C7D49C 0x8C7D40C 0x8C7D364 0x8C7D2C0
+POIN Anim_G1_RangerM_pal
+
+AnimTableEntry(RangerMUnarmedAnim+5) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C7D49C 0x8C7D40C 0x8C7D364 0x8C7D2C0
+POIN Anim_G2_RangerM_pal
+
+AnimTableEntry(RangerMUnarmedAnim+6) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C7D49C 0x8C7D40C 0x8C7D364 0x8C7D2C0
+POIN Anim_G3_RangerM_pal
+
+AnimTableEntry(RangerMUnarmedAnim+7) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C7D49C 0x8C7D40C 0x8C7D364 0x8C7D2C0
+POIN Anim_G4_RangerM_pal
+POP

@@ -41,7 +41,7 @@ ALIGN 4
 segmentTitleFontPal:
 #incbin "segmentTitleFontPal.dmp"
 
-
+#include "Structs/Structs.event"      // Moved here to be included after definitions in battleanim graphics.
 #include "Maps/Maps.event"
 #include "Tilesets/Tilesets.event"
 #include "Authors/Authors.event"

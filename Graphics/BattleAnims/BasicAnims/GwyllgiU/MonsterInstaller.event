@@ -1,0 +1,6 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(GwyllgiUMonsterAnim) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8DFC7CC 0x8DFC55C 0x8DFC020 0x8DFBAE0 0x8DFBAA8
+POP

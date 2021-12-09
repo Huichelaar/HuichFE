@@ -1,0 +1,6 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(WightBowUUnarmedAnim) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8DD6EC4 0x8DD6E10 0x8DD6D78 0x8DD6CE4 0x8DDA1E0
+POP

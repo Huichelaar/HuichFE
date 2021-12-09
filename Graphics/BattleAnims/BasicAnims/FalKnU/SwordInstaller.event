@@ -1,0 +1,42 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(FalKnUSwordAnim) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D46FDC 0x8D46B5C 0x8D45400 0x8D43C74
+POIN Anim_H1_FalKnU_pal
+
+AnimTableEntry(FalKnUSwordAnim+1) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D46FDC 0x8D46B5C 0x8D45400 0x8D43C74
+POIN Anim_H2_FalKnU_pal
+
+AnimTableEntry(FalKnUSwordAnim+2) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D46FDC 0x8D46B5C 0x8D45400 0x8D43C74
+POIN Anim_H3_FalKnU_pal
+
+AnimTableEntry(FalKnUSwordAnim+3) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D46FDC 0x8D46B5C 0x8D45400 0x8D43C74
+POIN Anim_H4_FalKnU_pal
+
+AnimTableEntry(FalKnUSwordAnim+4) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D46FDC 0x8D46B5C 0x8D45400 0x8D43C74
+POIN Anim_G1_FalKnU_pal
+
+AnimTableEntry(FalKnUSwordAnim+5) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D46FDC 0x8D46B5C 0x8D45400 0x8D43C74
+POIN Anim_G2_FalKnU_pal
+
+AnimTableEntry(FalKnUSwordAnim+6) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D46FDC 0x8D46B5C 0x8D45400 0x8D43C74
+POIN Anim_G3_FalKnU_pal
+
+AnimTableEntry(FalKnUSwordAnim+7) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D46FDC 0x8D46B5C 0x8D45400 0x8D43C74
+POIN Anim_G4_FalKnU_pal
+POP

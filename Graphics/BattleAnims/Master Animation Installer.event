@@ -16,7 +16,7 @@ PUSH
   
 POP
 
-#define AnimTableEntry(index) "ORG ClassAnimTable + (index * 0x20)"
+#define AnimTableEntry(index) "ORG ClassAnimTable + ((index) * 0x20)"
 
 #define SwordAnim(Animation) "BYTE 0x00 0x01 ; SHORT Animation"
 #define LanceAnim(Animation) "BYTE 0x01 0x01 ; SHORT Animation"
@@ -29,157 +29,11 @@ POP
 #define DarkAnim(Animation) "BYTE 0x07 0x01 ; SHORT Animation"
 #define MagicAnim(Animation) "BYTE 0x05 0x01 ; SHORT Animation ; BYTE 0x06 0x01 ; SHORT Animation ; BYTE 0x07 0x01 ; SHORT Animation ; BYTE 0x09 0x01 ; SHORT Animation"
 #define UnarmedAnim(Animation) "BYTE 0x09 0x01 ; SHORT Animation"
-#define MonsterAnim(Animation) "BYTE 0x0B 0x01 ; SHORT Animation"
+#define MonsterAnim(Animation) "BYTE 0x0B 0x01 ; SHORT Animation ; BYTE 0x09 0x01 ; SHORT Animation"
 #define SpecialAnim(Animation,Weapon) "BYTE Weapon 0x00 ; SHORT Animation"
 #define EndAnim "WORD 0x0"
 
-//#include "BasicAnims/BattleAnims.event"
+#include "BasicAnims/BattleAnims.event"
 #include "PersonalPalettes/Palettes.event"
 #include "Commands/Commands.event"
 #include "ThrownWeapons/ThrownWeapons.event"
-
-// Battle anim ID defines are in Tables/IDDefinitions.event.
-
-//////////////Installed animations go here:
-
-ALIGN 4
-SupplierAnims:
-LanceAnim(SupplierLanceAnim)
-StaffAnim(SupplierStaffAnim)
-UnarmedAnim(SupplierStaffAnim)
-EndAnim
-
-ALIGN 4
-MercenaryMAnims:
-SwordAnim(MercenaryMSwordAnim)
-UnarmedAnim(MercenaryMUnarmedAnim)
-EndAnim
-
-ALIGN 4
-MercenaryFAnims:
-SwordAnim(MercenaryFSwordAnim)
-UnarmedAnim(MercenaryFUnarmedAnim)
-EndAnim
-
-ALIGN 4
-ArcherFAnims:
-BowAnim(ArcherFBowAnim)
-UnarmedAnim(ArcherFUnarmedAnim)
-EndAnim
-
-ALIGN 4
-ArcherMAnims:
-BowAnim(ArcherMBowAnim)
-UnarmedAnim(ArcherMUnarmedAnim)
-EndAnim
-
-ALIGN 4
-ClericAnims:
-StaffAnim(ClericStaffAnim)
-UnarmedAnim(ClericUnarmedAnim)
-EndAnim
-
-ALIGN 4
-PriestAnims:
-StaffAnim(PriestStaffAnim)
-UnarmedAnim(PriestUnarmedAnim)
-EndAnim
-
-ALIGN 4
-FighterFAnims:
-AxeAnim(FighterFAxeAnim)
-HandaxeAnim(FighterFHandaxeAnim)
-UnarmedAnim(FighterFUnarmedAnim)
-EndAnim
-
-ALIGN 4
-MonkFAnims:
-MagicAnim(MonkFMagicAnim)
-EndAnim
-
-ALIGN 4
-MonkMAnims:
-MagicAnim(MonkMMagicAnim)
-EndAnim
-
-ALIGN 4
-SoldierFAnims:
-LanceAnim(SoldierFLanceAnim)
-UnarmedAnim(SoldierFUnarmedAnim)
-EndAnim
-
-ALIGN 4
-SoldierMAnims:
-LanceAnim(SoldierMLanceAnim)
-UnarmedAnim(SoldierMUnarmedAnim)
-EndAnim
-
-ALIGN 4
-CavalierMAnims:
-SwordAnim(CavalierMSwordAnim)
-LanceAnim(CavalierMLanceAnim)
-UnarmedAnim(CavalierMUnarmedAnim)
-EndAnim
-
-ALIGN 4
-CavalierFAnims:
-SwordAnim(CavalierFSwordAnim)
-LanceAnim(CavalierFLanceAnim)
-UnarmedAnim(CavalierFUnarmedAnim)
-EndAnim
-
-ALIGN 4
-WyvKnightAnims:
-AxeAnim(WyvKnightAxeAnim)
-HandaxeAnim(WyvKnightHandaxeAnim)
-UnarmedAnim(WyvKnightUnarmedAnim)
-EndAnim
-
-ALIGN 4
-KnightAnims:
-LanceAnim(KnightLanceAnim)
-UnarmedAnim(KnightUnarmedAnim)
-EndAnim
-
-ALIGN 4
-PegKnightAnims:
-LanceAnim(PegKnightLanceAnim)
-UnarmedAnim(PegKnightUnarmedAnim)
-EndAnim
-
-#include "AnimInstallers/Supplier Lance Installer.event"
-#include "AnimInstallers/Supplier Staff Installer.event"
-#include "AnimInstallers/MercenaryM Sword Installer.event"
-#include "AnimInstallers/MercenaryM Unarmed Installer.event"
-#include "AnimInstallers/MercenaryF Sword Installer.event"
-#include "AnimInstallers/MercenaryF Unarmed Installer.event"
-#include "AnimInstallers/ArcherF Bow Installer.event"
-#include "AnimInstallers/ArcherF Unarmed Installer.event"
-#include "AnimInstallers/ArcherM Bow Installer.event"
-#include "AnimInstallers/ArcherM Unarmed Installer.event"
-#include "AnimInstallers/Cleric Staff Installer.event"
-#include "AnimInstallers/Cleric Unarmed Installer.event"
-#include "AnimInstallers/Priest Staff Installer.event"
-#include "AnimInstallers/Priest Unarmed Installer.event"
-#include "AnimInstallers/FighterF Axe Installer.event"
-#include "AnimInstallers/FighterF Handaxe Installer.event"
-#include "AnimInstallers/FighterF Unarmed Installer.event"
-#include "AnimInstallers/MonkF Magic Installer.event"
-#include "AnimInstallers/MonkM Magic Installer.event"
-#include "AnimInstallers/SoldierF Lance Installer.event"
-#include "AnimInstallers/SoldierF Unarmed Installer.event"
-#include "AnimInstallers/SoldierM Lance Installer.event"
-#include "AnimInstallers/SoldierM Unarmed Installer.event"
-#include "AnimInstallers/CavalierM Sword Installer.event"
-#include "AnimInstallers/CavalierM Lance Installer.event"
-#include "AnimInstallers/CavalierM Unarmed Installer.event"
-#include "AnimInstallers/CavalierF Sword Installer.event"
-#include "AnimInstallers/CavalierF Lance Installer.event"
-#include "AnimInstallers/CavalierF Unarmed Installer.event"
-#include "AnimInstallers/WyvKnight Axe Installer.event"
-#include "AnimInstallers/WyvKnight Handaxe Installer.event"
-#include "AnimInstallers/WyvKnight Unarmed Installer.event"
-#include "AnimInstallers/Knight Lance Installer.event"
-#include "AnimInstallers/Knight Unarmed Installer.event"
-#include "AnimInstallers/PegKnight Lance Installer.event"
-#include "AnimInstallers/PegKnight Unarmed Installer.event"

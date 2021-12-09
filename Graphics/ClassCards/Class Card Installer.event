@@ -1,9 +1,9 @@
 #define setCardEntry(cardEntry,cardLocation,cardPaletteLocation) "PUSH; ORG PortraitTable+cardEntry*0x1C; POIN 0 0 cardPaletteLocation 0 cardLocation 0; BYTE 0x1; POP"
 
 ALIGN 4; SupplierFCCTiles:
-#incbin "Supplier.dmp"
+#incbin "SupplierF.dmp"
 ALIGN 4; SupplierCCPal:
-#incbin "Supplier_pal.dmp"
+#incbin "SupplierF_pal.dmp"
 ALIGN 4; SoldierFCCTiles:
 #incbin "SoldierF.dmp"
 ALIGN 4; SoldierFCCPal:

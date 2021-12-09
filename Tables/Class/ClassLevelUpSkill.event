@@ -116,6 +116,7 @@ ORG ClassLevelUpSkillTableLABEL + MageKnightT3_F*4 ; WORD (MageKnightSkillList|I
 ORG ClassLevelUpSkillTableLABEL + Dancer*4 ; WORD (DancerSkillList|IsPointer) 
 ORG ClassLevelUpSkillTableLABEL + GhostFighter*4 ; WORD (PhantomSkillList|IsPointer) 
 ORG ClassLevelUpSkillTableLABEL + Brigand*4 ; WORD (BrigandSkillList|IsPointer) 
+ORG ClassLevelUpSkillTableLABEL + Brigand_F*4 ; WORD (BrigandSkillList|IsPointer) 
 ORG ClassLevelUpSkillTableLABEL + Troubadour*4 ; WORD (TroubadourSkillList|IsPointer) 
 ORG ClassLevelUpSkillTableLABEL + WyvernRider*4 ; WORD (WyvernRiderSkillList|IsPointer) 
 ORG ClassLevelUpSkillTableLABEL + WyvernRider_F*4 ; WORD (WyvernRiderSkillList|IsPointer) 

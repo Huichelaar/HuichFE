@@ -1,0 +1,6 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(MaelduinUUnarmedAnim) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8E063E0 0x8E06384 0x8E062D8 0x8E06224 0x8E06440
+POP

@@ -1,0 +1,42 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(GreKnULanceAnim) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8CE59CC 0x8CE558C 0x8CE4880 0x8CE3B6C
+POIN Anim_H1_GreKnU_pal
+
+AnimTableEntry(GreKnULanceAnim+1) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8CE59CC 0x8CE558C 0x8CE4880 0x8CE3B6C
+POIN Anim_H2_GreKnU_pal
+
+AnimTableEntry(GreKnULanceAnim+2) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8CE59CC 0x8CE558C 0x8CE4880 0x8CE3B6C
+POIN Anim_H3_GreKnU_pal
+
+AnimTableEntry(GreKnULanceAnim+3) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8CE59CC 0x8CE558C 0x8CE4880 0x8CE3B6C
+POIN Anim_H4_GreKnU_pal
+
+AnimTableEntry(GreKnULanceAnim+4) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8CE59CC 0x8CE558C 0x8CE4880 0x8CE3B6C
+POIN Anim_G1_GreKnU_pal
+
+AnimTableEntry(GreKnULanceAnim+5) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8CE59CC 0x8CE558C 0x8CE4880 0x8CE3B6C
+POIN Anim_G2_GreKnU_pal
+
+AnimTableEntry(GreKnULanceAnim+6) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8CE59CC 0x8CE558C 0x8CE4880 0x8CE3B6C
+POIN Anim_G3_GreKnU_pal
+
+AnimTableEntry(GreKnULanceAnim+7) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8CE59CC 0x8CE558C 0x8CE4880 0x8CE3B6C
+POIN Anim_G4_GreKnU_pal
+POP

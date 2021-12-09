@@ -1,0 +1,6 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(CyclopsUHandaxeAnim) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8DF1BBC 0x8DF1A34 0x8DF1754 0x8DF1474 0x8DF03E4
+POP

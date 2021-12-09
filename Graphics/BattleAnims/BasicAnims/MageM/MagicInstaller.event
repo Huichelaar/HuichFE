@@ -1,0 +1,42 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(MageMMagicAnim) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D4DB2C 0x8D4D870 0x8D4D5D8 0x8D4D32C
+POIN Anim_H1_MageM_pal
+
+AnimTableEntry(MageMMagicAnim+1) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D4DB2C 0x8D4D870 0x8D4D5D8 0x8D4D32C
+POIN Anim_H2_MageM_pal
+
+AnimTableEntry(MageMMagicAnim+2) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D4DB2C 0x8D4D870 0x8D4D5D8 0x8D4D32C
+POIN Anim_H3_MageM_pal
+
+AnimTableEntry(MageMMagicAnim+3) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D4DB2C 0x8D4D870 0x8D4D5D8 0x8D4D32C
+POIN Anim_H4_MageM_pal
+
+AnimTableEntry(MageMMagicAnim+4) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D4DB2C 0x8D4D870 0x8D4D5D8 0x8D4D32C
+POIN Anim_G1_MageM_pal
+
+AnimTableEntry(MageMMagicAnim+5) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D4DB2C 0x8D4D870 0x8D4D5D8 0x8D4D32C
+POIN Anim_G2_MageM_pal
+
+AnimTableEntry(MageMMagicAnim+6) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D4DB2C 0x8D4D870 0x8D4D5D8 0x8D4D32C
+POIN Anim_G3_MageM_pal
+
+AnimTableEntry(MageMMagicAnim+7) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D4DB2C 0x8D4D870 0x8D4D5D8 0x8D4D32C
+POIN Anim_G4_MageM_pal
+POP

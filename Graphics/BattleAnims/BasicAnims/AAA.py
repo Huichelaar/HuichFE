@@ -59,19 +59,31 @@ POIN Anim_G4_{classID}_pal
 POP
 """
 
+# Useful for monsters. These don't need more palettes.
+outputText2 = """///////Animation Install.event///////
+PUSH
+AnimTableEntry({animName}) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x{pointers[0]} 0x{pointers[1]} 0x{pointers[2]} 0x{pointers[3]} 0x{pointers[4]}
+POP
+"""
+
+# Updated by createAnim
+animCount = 1
+
 def b_to_hex(data):
   '''Takes a bytes object and returns BYTE AA BB CC DD'''
   return 'BYTE ' + ' '.join([hex(x) for x in data])
 
 # Create a pal.event file containing palettes for the battle anim in directory.
-def createPalette(dir, output):
+def createPalette(classID, output):
   zeroPal = b'\x00'*32
   
   # Only consider directories containing a pal.dmp file.
-  inputPal = dir+"\\pal.txt"
-  outputPal = dir+"\\pal.event"
+  inputPal = classID+"\\pal.txt"
+  outputPal = classID+"\\pal.event"
   if os.path.isfile(inputPal):
-    output.write("#include \""+dir+"/"+"pal.event\"\n")
+    output.write("#include \""+classID+"/"+"pal.event\"\n")
     
     # Don't redo palette if it's not been modified
     if (not os.path.isfile(outputPal) or os.path.getmtime(inputPal) > os.path.getmtime(outputPal)):
@@ -97,29 +109,32 @@ def createPalette(dir, output):
         pal = zeroPal
         for line in lines:
           pal += palDict.dict[i][line[:-1]]
+          (palDict.dict[i][line[:-1]])
         if i > 3:   # Human.
           form = "H"
           for line in lines:
             pal += palDict.dict[i+4][line[:-1]]
+            print(palDict.dict[i][line[:-1]])
         else:       # Ghost.
           form = "G"
           pal += zeroPal
         pal += zeroPal
         compPal = lzss.compress(pal)
         outputText = """ALIGN 4; Anim_{form}{version}_{classname}_pal:\n{compPal}\n\n"""
-        output2.write(outputText.format(classname=dir, compPal=b_to_hex(compPal), form=form, version=(i&3)+1))
+        output2.write(outputText.format(classname=classID, compPal=b_to_hex(compPal), form=form, version=(i&3)+1))
       
       input.close()
       output2.close()
       
 def createAnim(classID, output):
+  global animCount
   cwd = os.getcwd()
   subdirs = next(os.walk('.'+'\\'+classID))[1]
   classdir = cwd+'\\'+classID+'\\'
   
   # Create anim installers.
-  vanSet = {"sw", "la", "ax", "ha", "bo", "ma", "st", "un", "it"}
-  vanDict = {"sw": "Sword", "la": "Lance", "ax": "Axe", "ha": "Handaxe", "bo": "Bow", "ma": "Magic", "st": "Staff", "un": "Unarmed", "it": "Item"}
+  vanSet = {"sw", "la", "ax", "ha", "bo", "ma", "st", "un", "mo"}
+  vanDict = {"sw": "Sword", "la": "Lance", "ax": "Axe", "ha": "Handaxe", "bo": "Bow", "ma": "Magic", "st": "Staff", "un": "Unarmed", "mo": "Monster"}
   dirSet = {"1. Sword", "2. Lance", "3. Axe", "4. Handaxe", "5. Bow", "6. Magic", "7. Staff", "8. Unarmed"}
   animDir = False
   anims = []
@@ -132,6 +147,11 @@ def createAnim(classID, output):
   if animDir:
     for subdir in subdirs:
       if subdir in dirSet:
+        inputPal = classID+"\\pal.txt"
+        if os.path.isfile(inputPal):
+          animStep = 8
+        else:
+          animStep = 1
         weapondir = classdir+subdir+'\\'
         animDir = True
         weaponType = subdir[3:]
@@ -146,6 +166,8 @@ def createAnim(classID, output):
           os.chdir(cwd)
           os.remove(weapondir+"AA.py")
           os.remove(weapondir+"lzss.py")
+        output.write("#define "+classID+weaponType+"Anim "+str(animCount)+"\n")
+        animCount += animStep
         output.write("#include \""+classID+"/"+subdir+"/"+weaponType+"Installer.event\"\n")
   
   # Vanilla anims.
@@ -153,17 +175,29 @@ def createAnim(classID, output):
     inputFile = classdir+"vanilla.txt"
     input = open(inputFile, 'r')
     lines = input.readlines()
-    for i in range(0, len(lines), 5):
+    if os.path.isfile(classID+"\\pal.txt"):
+      # Use custom palettes.
+      pointerCount = 5
+      outText = outputText
+      animStep = 8
+    else:
+      # Monster class, use vanilla palette.
+      pointerCount = 6
+      outText = outputText2
+      animStep = 1
+    for i in range(0, len(lines), pointerCount):
       weaponType = vanDict[lines[i][:-1]]
       anims.append(weaponType)
       animName = classID+weaponType+"Anim"
-      pointers = [lines[i+j+1][:-1] for j in range(4)]
+      pointers = [lines[i+j+1][:-1] for j in range(pointerCount-1)]
       installerFile = classdir+weaponType+"Installer.event"
       if lines[i][:-1] in vanSet:
         if not os.path.isfile(installerFile) or os.path.getmtime(inputFile) > os.path.getmtime(installerFile):
           output2 = open(installerFile, 'w')
-          output2.write(outputText.format(animName=animName,classID=classID,pointers=pointers))
+          output2.write(outText.format(animName=animName,classID=classID,pointers=pointers))
           output2.close()
+        output.write("#define "+classID+weaponType+"Anim "+str(animCount)+"\n")
+        animCount += animStep
         output.write("#include \""+classID+"/"+weaponType+"Installer.event\"\n")
   
   # No non-vanilla nor vanilla anims.

@@ -1,3 +1,5 @@
+// Battle animation IDs can be found in Graphics\BattleAnims\BasicAnims\BattleAnims.event
+//
 // We need some bits in RAM.
 //  1: Don't change DISPCNT when fading.
 //  2: Don't buffer minimugs.
@@ -76,60 +78,6 @@
 #define MageKnightT3_F 0xB2
 #define Brigand_F 0xB3
 
-// Battle animations
-#define SupplierLanceAnim 0x1
-#define SupplierStaffAnim 0x2
-#define MercenaryMSwordAnim 0x3
-#define MercenaryMUnarmedAnim 0x4
-#define MercenaryFSwordAnim 0x5
-#define MercenaryFUnarmedAnim 0x6
-#define ArcherFBowAnim 0x7
-#define ArcherFUnarmedAnim 0x8
-#define ArcherMBowAnim 0x9
-#define ArcherMUnarmedAnim 0xA
-#define ClericStaffAnim 0xB
-#define ClericUnarmedAnim 0xC
-#define PriestStaffAnim 0xD
-#define PriestUnarmedAnim 0xE
-#define FighterFAxeAnim 0xF
-#define FighterFHandaxeAnim 0x10
-#define MyrmidonMSwordAnim 0x11
-#define MyrmidonMUnarmedAnim 0x12
-#define MyrmidonFSwordAnim 0x13
-#define MyrmidonFUnarmedAnim 0x14
-#define SwordmasterMSwordAnim 0x15
-#define SwordmasterMUnarmedAnim 0x16
-#define SwordmasterFSwordAnim 0x17
-#define SwordmasterFUnarmedAnim 0x18
-#define FighterMAxeAnim 0x19
-#define FighterMHandaxeAnim 0x1A
-#define FighterMUnarmedAnim 0x1B
-#define FighterFUnarmedAnim 0x1C
-#define MonkFMagicAnim 0x1D
-#define MonkMMagicAnim 0x1E
-#define SoldierFLanceAnim 0x1F
-#define SoldierFUnarmedAnim 0x20
-#define SoldierMLanceAnim 0x21
-#define SoldierMUnarmedAnim 0x22
-#define CavalierMSwordAnim 0x23
-#define CavalierMLanceAnim 0x24
-#define CavalierMUnarmedAnim 0x25
-#define CavalierFSwordAnim 0x26
-#define CavalierFLanceAnim 0x27
-#define CavalierFUnarmedAnim 0x28
-#define WyvKnightAxeAnim 0x29
-#define WyvKnightHandaxeAnim 0x2A
-#define WyvKnightUnarmedAnim 0x2B
-#define KnightLanceAnim 0x2C
-#define KnightUnarmedAnim 0x2D
-
-#define PegKnightLanceAnim 0x66
-#define PegKnightUnarmedAnim 0x67
-#define MageMMagicAnim 0x6B
-#define MageFMagicAnim 0x6C
-#define ShamanMMagicAnim 0x75
-#define ShamanFMagicAnim 0x76
-
 // Characters
 #define Vivian 0x1
 #define Simon 0x2
@@ -173,13 +121,13 @@
 #define ClericPortrait 0xf
 
 // Class Cards
-#define SupplierCC 0xad
+#define SupplierFCC 0xad
 #define MercenaryFCC 0xae
 #define FighterFCC 0xaf
 #define ArcherFCC 0xb0
 #define ArcherMCC 0xb1
 #define SoldierFCC 0xb2
-#define ClericCC 0xb3
+#define PriestFCC 0xb3
 #define MonkFCC 0xb4
 #define MonkMCC 0xb5
 #define ShamanFCC 0xb6
@@ -188,6 +136,7 @@
 #define CavalierMCC 0xb9
 #define MageFCC 0xba
 #define WyvKnightCC 0xbb
+#define ThiefFCC 0xbc
 
 // Items
 #define LegSwordD 0xbc

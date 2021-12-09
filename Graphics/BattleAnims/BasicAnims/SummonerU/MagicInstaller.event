@@ -1,0 +1,42 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(SummonerUMagicAnim) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D7B3EC 0x8D7B070 0x8D7AC80 0x8D7A884
+POIN Anim_H1_SummonerU_pal
+
+AnimTableEntry(SummonerUMagicAnim+1) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D7B3EC 0x8D7B070 0x8D7AC80 0x8D7A884
+POIN Anim_H2_SummonerU_pal
+
+AnimTableEntry(SummonerUMagicAnim+2) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D7B3EC 0x8D7B070 0x8D7AC80 0x8D7A884
+POIN Anim_H3_SummonerU_pal
+
+AnimTableEntry(SummonerUMagicAnim+3) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D7B3EC 0x8D7B070 0x8D7AC80 0x8D7A884
+POIN Anim_H4_SummonerU_pal
+
+AnimTableEntry(SummonerUMagicAnim+4) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D7B3EC 0x8D7B070 0x8D7AC80 0x8D7A884
+POIN Anim_G1_SummonerU_pal
+
+AnimTableEntry(SummonerUMagicAnim+5) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D7B3EC 0x8D7B070 0x8D7AC80 0x8D7A884
+POIN Anim_G2_SummonerU_pal
+
+AnimTableEntry(SummonerUMagicAnim+6) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D7B3EC 0x8D7B070 0x8D7AC80 0x8D7A884
+POIN Anim_G3_SummonerU_pal
+
+AnimTableEntry(SummonerUMagicAnim+7) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8D7B3EC 0x8D7B070 0x8D7AC80 0x8D7A884
+POIN Anim_G4_SummonerU_pal
+POP

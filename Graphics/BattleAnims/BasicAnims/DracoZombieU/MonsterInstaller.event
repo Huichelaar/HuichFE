@@ -1,0 +1,6 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(DracoZombieUMonsterAnim) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8E27B60 0x8E279F8 0x8E27844 0x8E2769C 0x8E27664
+POP

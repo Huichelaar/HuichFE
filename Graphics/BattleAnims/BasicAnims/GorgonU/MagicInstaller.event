@@ -1,0 +1,6 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(GorgonUMagicAnim) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8E18EEC 0x8E18A5C 0x8E183A0 0x8E17CE8 0x8E17CB0
+POP

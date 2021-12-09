@@ -1,0 +1,42 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(BerserkerMHandaxeAnim) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C6937C 0x8C69270 0x8C69040 0x8C68E14
+POIN Anim_H1_BerserkerM_pal
+
+AnimTableEntry(BerserkerMHandaxeAnim+1) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C6937C 0x8C69270 0x8C69040 0x8C68E14
+POIN Anim_H2_BerserkerM_pal
+
+AnimTableEntry(BerserkerMHandaxeAnim+2) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C6937C 0x8C69270 0x8C69040 0x8C68E14
+POIN Anim_H3_BerserkerM_pal
+
+AnimTableEntry(BerserkerMHandaxeAnim+3) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C6937C 0x8C69270 0x8C69040 0x8C68E14
+POIN Anim_H4_BerserkerM_pal
+
+AnimTableEntry(BerserkerMHandaxeAnim+4) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C6937C 0x8C69270 0x8C69040 0x8C68E14
+POIN Anim_G1_BerserkerM_pal
+
+AnimTableEntry(BerserkerMHandaxeAnim+5) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C6937C 0x8C69270 0x8C69040 0x8C68E14
+POIN Anim_G2_BerserkerM_pal
+
+AnimTableEntry(BerserkerMHandaxeAnim+6) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C6937C 0x8C69270 0x8C69040 0x8C68E14
+POIN Anim_G3_BerserkerM_pal
+
+AnimTableEntry(BerserkerMHandaxeAnim+7) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8C6937C 0x8C69270 0x8C69040 0x8C68E14
+POIN Anim_G4_BerserkerM_pal
+POP

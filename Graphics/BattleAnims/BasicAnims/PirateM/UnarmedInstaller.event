@@ -1,0 +1,42 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(PirateMUnarmedAnim) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8DBAFE0 0x8DBAF5C 0x8DBAEAC 0x8DBADFC
+POIN Anim_H1_PirateM_pal
+
+AnimTableEntry(PirateMUnarmedAnim+1) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8DBAFE0 0x8DBAF5C 0x8DBAEAC 0x8DBADFC
+POIN Anim_H2_PirateM_pal
+
+AnimTableEntry(PirateMUnarmedAnim+2) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8DBAFE0 0x8DBAF5C 0x8DBAEAC 0x8DBADFC
+POIN Anim_H3_PirateM_pal
+
+AnimTableEntry(PirateMUnarmedAnim+3) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8DBAFE0 0x8DBAF5C 0x8DBAEAC 0x8DBADFC
+POIN Anim_H4_PirateM_pal
+
+AnimTableEntry(PirateMUnarmedAnim+4) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8DBAFE0 0x8DBAF5C 0x8DBAEAC 0x8DBADFC
+POIN Anim_G1_PirateM_pal
+
+AnimTableEntry(PirateMUnarmedAnim+5) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8DBAFE0 0x8DBAF5C 0x8DBAEAC 0x8DBADFC
+POIN Anim_G2_PirateM_pal
+
+AnimTableEntry(PirateMUnarmedAnim+6) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8DBAFE0 0x8DBAF5C 0x8DBAEAC 0x8DBADFC
+POIN Anim_G3_PirateM_pal
+
+AnimTableEntry(PirateMUnarmedAnim+7) // Animation slot.
+WORD 0 0 0 //empty name field, who cares.
+WORD 0x8DBAFE0 0x8DBAF5C 0x8DBAEAC 0x8DBADFC
+POIN Anim_G4_PirateM_pal
+POP
