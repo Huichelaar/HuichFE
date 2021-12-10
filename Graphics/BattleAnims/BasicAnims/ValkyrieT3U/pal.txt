@@ -1,7 +1,7 @@
 trans
 white
-wep2_1
-wep2_2
+underw3_1
+underw3_1
 skin4_1
 skin4_2
 skin4_3

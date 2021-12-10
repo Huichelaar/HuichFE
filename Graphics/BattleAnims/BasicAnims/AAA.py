@@ -15,6 +15,21 @@ import PaletteDict as palDict
 import lzss
 from shutil import copyfile
 
+# Classes Milo could be.
+miloSet = {
+  "ShamanM", "DruidM", "DarkDruidM", "SummonerU", "NecromancerU",
+  "PriestM", "ValkyrieM", "ValkyrieT3U", "BishopM", "WarMonkM",
+  "MonkM", "SageM", "SageT3M", "MageM", "MageKnM", "MageKnT3U"
+}
+
+# Classes Leona could be.
+leonaSet = {
+  "SoldierU", "SergeantU", "MarshallU", "GeneralU", "KnightU",
+  "GreKnU", "GolKnU", "ArcherF", "SniperF", "MarksmanF",
+  "RangerF", "BowKnF", "MercF", "HarbingerT2F", "HarbingerU",
+  "HeroF", "HeroWarT3F", "FighterF", "WarriorF"
+}
+
 outputText = """///////Animation Install.event///////
 PUSH
 AnimTableEntry({animName}) // Animation slot.
@@ -86,7 +101,7 @@ def createPalette(classID, output):
     output.write("#include \""+classID+"/"+"pal.event\"\n")
     
     # Don't redo palette if it's not been modified
-    if (not os.path.isfile(outputPal) or os.path.getmtime(inputPal) > os.path.getmtime(outputPal)):
+    if (True):#not os.path.isfile(outputPal) or os.path.getmtime(inputPal) > os.path.getmtime(outputPal)):
       input = open(inputPal, 'r')
       lines = input.readlines()
       
@@ -103,21 +118,32 @@ def createPalette(classID, output):
           print(inputPal+" Uses palette colour: "+line[:-1]+" not in PaletteDict! No pal.event generated.\n")
           return
           
-      # Build 12 palettes. 4 ghost, 4 human. Humans use two palettes.
+      # Build palettes. Ghosts use four palettes. Humans use four palettes for enemy faction,
+      # four palettes for neutral faction, and another palette for ally faction if class can be accessed
+      # by Milo or Leona. These two don't use personal palettes because they can spawn as different classes.
       output2 = open(outputPal, 'w')
       for i in range(8):
         pal = zeroPal
-        for line in lines:
-          pal += palDict.dict[i][line[:-1]]
-          (palDict.dict[i][line[:-1]])
-        if i > 3:   # Human.
+        if i < 4:               # Ghost.
+          form = "G"
+          for line in lines:
+            pal += palDict.dict[i][line[:-1]]
+          pal += zeroPal
+        elif i == 4:            # Milo or Leona.
+          if classID in miloSet:
+            pal = b''
+            for line in lines:
+              pal += palDict.dict[12][line[:-1]]        # Ally.
+          elif classID in leonaSet:
+            pal = b''
+            for line in lines:
+              pal += palDict.dict[13][line[:-1]]        # Ally.
+        if i > 3:               # Human.
           form = "H"
           for line in lines:
-            pal += palDict.dict[i+4][line[:-1]]
-            print(palDict.dict[i][line[:-1]])
-        else:       # Ghost.
-          form = "G"
-          pal += zeroPal
+            pal += palDict.dict[i][line[:-1]]           # Enemy.
+          for line in lines:
+            pal += palDict.dict[i+4][line[:-1]]         # Neutral
         pal += zeroPal
         compPal = lzss.compress(pal)
         outputText = """ALIGN 4; Anim_{form}{version}_{classname}_pal:\n{compPal}\n\n"""
