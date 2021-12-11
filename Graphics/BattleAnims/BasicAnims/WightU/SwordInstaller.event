@@ -1,6 +1,7 @@
 ///////Animation Install.event///////
 PUSH
 AnimTableEntry(WightUSwordAnim) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("WightUSw")
+WORD 0
 WORD 0x8DD1F90 0x8DD1C90 0x8DD17A8 0x8DD12C8 0x8DDA1E0
 POP

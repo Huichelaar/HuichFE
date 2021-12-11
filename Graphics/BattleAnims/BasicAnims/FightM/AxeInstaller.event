@@ -1,0 +1,50 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(FightMAxeAnim) // Animation slot.
+String("FightMAx")
+WORD 0
+WORD 0x8C50284 0x8C4FFE8 0x8C4F680 0x8C4ED14
+POIN Anim_H1_FightM_pal
+
+AnimTableEntry(FightMAxeAnim+1) // Animation slot.
+String("FightMAx")
+WORD 0
+WORD 0x8C50284 0x8C4FFE8 0x8C4F680 0x8C4ED14
+POIN Anim_H2_FightM_pal
+
+AnimTableEntry(FightMAxeAnim+2) // Animation slot.
+String("FightMAx")
+WORD 0
+WORD 0x8C50284 0x8C4FFE8 0x8C4F680 0x8C4ED14
+POIN Anim_H3_FightM_pal
+
+AnimTableEntry(FightMAxeAnim+3) // Animation slot.
+String("FightMAx")
+WORD 0
+WORD 0x8C50284 0x8C4FFE8 0x8C4F680 0x8C4ED14
+POIN Anim_H4_FightM_pal
+
+AnimTableEntry(FightMAxeAnim+4) // Animation slot.
+String("FightMAx")
+WORD 0
+WORD 0x8C50284 0x8C4FFE8 0x8C4F680 0x8C4ED14
+POIN Anim_G1_FightM_pal
+
+AnimTableEntry(FightMAxeAnim+5) // Animation slot.
+String("FightMAx")
+WORD 0
+WORD 0x8C50284 0x8C4FFE8 0x8C4F680 0x8C4ED14
+POIN Anim_G2_FightM_pal
+
+AnimTableEntry(FightMAxeAnim+6) // Animation slot.
+String("FightMAx")
+WORD 0
+WORD 0x8C50284 0x8C4FFE8 0x8C4F680 0x8C4ED14
+POIN Anim_G3_FightM_pal
+
+AnimTableEntry(FightMAxeAnim+7) // Animation slot.
+String("FightMAx")
+WORD 0
+WORD 0x8C50284 0x8C4FFE8 0x8C4F680 0x8C4ED14
+POIN Anim_G4_FightM_pal
+POP

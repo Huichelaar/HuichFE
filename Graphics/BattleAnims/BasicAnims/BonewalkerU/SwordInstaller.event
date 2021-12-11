@@ -1,6 +1,0 @@
-///////Animation Install.event///////
-PUSH
-AnimTableEntry(BonewalkerUSwordAnim) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
-WORD 0x8DD1F90 0x8DD1C90 0x8DD17A8 0x8DD12C8 0x8DD1290
-POP

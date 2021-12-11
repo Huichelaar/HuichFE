@@ -1,42 +1,50 @@
 ///////Animation Install.event///////
 PUSH
 AnimTableEntry(MagKnFMagicAnim) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("MagKnFMa")
+WORD 0
 WORD 0x8D65D18 0x8D658A4 0x8D64AB0 0x8D63CC8
 POIN Anim_H1_MagKnF_pal
 
 AnimTableEntry(MagKnFMagicAnim+1) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("MagKnFMa")
+WORD 0
 WORD 0x8D65D18 0x8D658A4 0x8D64AB0 0x8D63CC8
 POIN Anim_H2_MagKnF_pal
 
 AnimTableEntry(MagKnFMagicAnim+2) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("MagKnFMa")
+WORD 0
 WORD 0x8D65D18 0x8D658A4 0x8D64AB0 0x8D63CC8
 POIN Anim_H3_MagKnF_pal
 
 AnimTableEntry(MagKnFMagicAnim+3) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("MagKnFMa")
+WORD 0
 WORD 0x8D65D18 0x8D658A4 0x8D64AB0 0x8D63CC8
 POIN Anim_H4_MagKnF_pal
 
 AnimTableEntry(MagKnFMagicAnim+4) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("MagKnFMa")
+WORD 0
 WORD 0x8D65D18 0x8D658A4 0x8D64AB0 0x8D63CC8
 POIN Anim_G1_MagKnF_pal
 
 AnimTableEntry(MagKnFMagicAnim+5) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("MagKnFMa")
+WORD 0
 WORD 0x8D65D18 0x8D658A4 0x8D64AB0 0x8D63CC8
 POIN Anim_G2_MagKnF_pal
 
 AnimTableEntry(MagKnFMagicAnim+6) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("MagKnFMa")
+WORD 0
 WORD 0x8D65D18 0x8D658A4 0x8D64AB0 0x8D63CC8
 POIN Anim_G3_MagKnF_pal
 
 AnimTableEntry(MagKnFMagicAnim+7) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("MagKnFMa")
+WORD 0
 WORD 0x8D65D18 0x8D658A4 0x8D64AB0 0x8D63CC8
 POIN Anim_G4_MagKnF_pal
 POP

@@ -1,0 +1,50 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(SwoMaMSwordAnim) // Animation slot.
+String("SwoMaMSw")
+WORD 0
+WORD 0x8C44C78 0x8C447D8 0x8C43BDC 0x8C42FD0
+POIN Anim_H1_SwoMaM_pal
+
+AnimTableEntry(SwoMaMSwordAnim+1) // Animation slot.
+String("SwoMaMSw")
+WORD 0
+WORD 0x8C44C78 0x8C447D8 0x8C43BDC 0x8C42FD0
+POIN Anim_H2_SwoMaM_pal
+
+AnimTableEntry(SwoMaMSwordAnim+2) // Animation slot.
+String("SwoMaMSw")
+WORD 0
+WORD 0x8C44C78 0x8C447D8 0x8C43BDC 0x8C42FD0
+POIN Anim_H3_SwoMaM_pal
+
+AnimTableEntry(SwoMaMSwordAnim+3) // Animation slot.
+String("SwoMaMSw")
+WORD 0
+WORD 0x8C44C78 0x8C447D8 0x8C43BDC 0x8C42FD0
+POIN Anim_H4_SwoMaM_pal
+
+AnimTableEntry(SwoMaMSwordAnim+4) // Animation slot.
+String("SwoMaMSw")
+WORD 0
+WORD 0x8C44C78 0x8C447D8 0x8C43BDC 0x8C42FD0
+POIN Anim_G1_SwoMaM_pal
+
+AnimTableEntry(SwoMaMSwordAnim+5) // Animation slot.
+String("SwoMaMSw")
+WORD 0
+WORD 0x8C44C78 0x8C447D8 0x8C43BDC 0x8C42FD0
+POIN Anim_G2_SwoMaM_pal
+
+AnimTableEntry(SwoMaMSwordAnim+6) // Animation slot.
+String("SwoMaMSw")
+WORD 0
+WORD 0x8C44C78 0x8C447D8 0x8C43BDC 0x8C42FD0
+POIN Anim_G3_SwoMaM_pal
+
+AnimTableEntry(SwoMaMSwordAnim+7) // Animation slot.
+String("SwoMaMSw")
+WORD 0
+WORD 0x8C44C78 0x8C447D8 0x8C43BDC 0x8C42FD0
+POIN Anim_G4_SwoMaM_pal
+POP

@@ -1,42 +1,50 @@
 ///////Animation Install.event///////
 PUSH
 AnimTableEntry(DruidMMagicAnim) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("DruidMMa")
+WORD 0
 WORD 0x8D73300 0x8D7305C 0x8D72B48 0x8D7262C
 POIN Anim_H1_DruidM_pal
 
 AnimTableEntry(DruidMMagicAnim+1) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("DruidMMa")
+WORD 0
 WORD 0x8D73300 0x8D7305C 0x8D72B48 0x8D7262C
 POIN Anim_H2_DruidM_pal
 
 AnimTableEntry(DruidMMagicAnim+2) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("DruidMMa")
+WORD 0
 WORD 0x8D73300 0x8D7305C 0x8D72B48 0x8D7262C
 POIN Anim_H3_DruidM_pal
 
 AnimTableEntry(DruidMMagicAnim+3) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("DruidMMa")
+WORD 0
 WORD 0x8D73300 0x8D7305C 0x8D72B48 0x8D7262C
 POIN Anim_H4_DruidM_pal
 
 AnimTableEntry(DruidMMagicAnim+4) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("DruidMMa")
+WORD 0
 WORD 0x8D73300 0x8D7305C 0x8D72B48 0x8D7262C
 POIN Anim_G1_DruidM_pal
 
 AnimTableEntry(DruidMMagicAnim+5) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("DruidMMa")
+WORD 0
 WORD 0x8D73300 0x8D7305C 0x8D72B48 0x8D7262C
 POIN Anim_G2_DruidM_pal
 
 AnimTableEntry(DruidMMagicAnim+6) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("DruidMMa")
+WORD 0
 WORD 0x8D73300 0x8D7305C 0x8D72B48 0x8D7262C
 POIN Anim_G3_DruidM_pal
 
 AnimTableEntry(DruidMMagicAnim+7) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("DruidMMa")
+WORD 0
 WORD 0x8D73300 0x8D7305C 0x8D72B48 0x8D7262C
 POIN Anim_G4_DruidM_pal
 POP

@@ -1,6 +1,0 @@
-///////Animation Install.event///////
-PUSH
-AnimTableEntry(MauthedoogUMonsterAnim) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
-WORD 0x8DF5958 0x8DF5748 0x8DF53E4 0x8DF5080 0x8DF5048
-POP

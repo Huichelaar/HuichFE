@@ -1,0 +1,7 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(CycloUAxeAnim) // Animation slot.
+String("CycloUAx")
+WORD 0
+WORD 0x8DF13DC 0x8DF11A8 0x8DF0AE0 0x8DF041C 0x8DF03E4
+POP

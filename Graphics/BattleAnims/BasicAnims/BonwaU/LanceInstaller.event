@@ -1,0 +1,7 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(BonwaULanceAnim) // Animation slot.
+String("BonwaULa")
+WORD 0
+WORD 0x8DD6C4C 0x8DD6974 0x8DD636C 0x8DD5D6C 0x8DD1290
+POP

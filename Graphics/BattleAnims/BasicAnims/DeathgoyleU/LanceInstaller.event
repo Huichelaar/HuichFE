@@ -1,6 +1,0 @@
-///////Animation Install.event///////
-PUSH
-AnimTableEntry(DeathgoyleULanceAnim) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
-WORD 0x8E2499C 0x8E24620 0x8E23C84 0x8E232E8 0x8E24F50
-POP

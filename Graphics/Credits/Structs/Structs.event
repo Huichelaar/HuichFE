@@ -103,21 +103,21 @@ CRE_ReelStruct_Entry(0, 0, 0, 0)        // Terminator.
 
 
 // CRE_SpriteClassStruct
-CRE_SpriteClassStruct(spriteClassArcher, Archer, 1, -1, ArcherMBowAnim, 200, 60, Archer_F, 0, 0x3, ArcherFBowAnim, 200, 60)
-CRE_SpriteClassStruct(spriteClassCavalier, Cavalier, 0, 0x4, CavalierMSwordAnim, 200, 60, Cavalier_F, 3, -1, CavalierFLanceAnim, 200, 60)
-CRE_SpriteClassStruct(spriteClassFighter, Fighter, 1, -1, FighterMAxeAnim, 200, 60, Fighter_F, 0, -1, FighterFAxeAnim, 200, 60)
-CRE_SpriteClassStruct(spriteClassKnight, Knight, 0, 0x9, KnightULanceAnim, 200, 60, Knight, 0, 0x9, KnightULanceAnim, 200, 60)
+CRE_SpriteClassStruct(spriteClassArcher, Archer, 1, -1, ArchMBowAnim, 200, 60, Archer_F, 0, 0x3, ArchFBowAnim, 200, 60)
+CRE_SpriteClassStruct(spriteClassCavalier, Cavalier, 0, 0x4, CavalMSwordAnim, 200, 60, Cavalier_F, 3, -1, CavalFLanceAnim, 200, 60)
+CRE_SpriteClassStruct(spriteClassFighter, Fighter, 1, -1, FightMAxeAnim, 200, 60, Fighter_F, 0, -1, FightFAxeAnim, 200, 60)
+CRE_SpriteClassStruct(spriteClassKnight, Knight, 0, 0x9, KnighULanceAnim, 200, 60, Knight, 0, 0x9, KnighULanceAnim, 200, 60)
 CRE_SpriteClassStruct(spriteClassMage, Mage, 0, -1, MageMMagicAnim, 200, 60, Mage_F, 2, -1, MageFMagicAnim, 200, 60)
 CRE_SpriteClassStruct(spriteClassMercenary, Mercenary, 0, 0x2, MercMSwordAnim, 200, 60, Mercenary_F, 0, -1, MercFSwordAnim, 200, 60)
 CRE_SpriteClassStruct(spriteClassMonk, Monk, 0, -1, MonkMMagicAnim, 200, 60, Monk_F, 1, -1, MonkFMagicAnim, 200, 60)
 CRE_SpriteClassStruct(spriteClassMyrmidon, Myrmidon, 3, -1, MyrmMSwordAnim, 200, 60, Myrmidon_F, 0, 0x5, MyrmFSwordAnim, 200, 60)
 CRE_SpriteClassStruct(spriteClassPegKnight, PegasusKnight, 1, -1, PegKnULanceAnim, 200, 60, PegasusKnight, 1, -1, PegKnULanceAnim, 200, 60)
-CRE_SpriteClassStruct(spriteClassPriestCleric, Priest, 0, -1, PriestMStaffAnim, 200, 60, Cleric, 0, 0x7, PriestFStaffAnim, 200, 60)
-CRE_SpriteClassStruct(spriteClassShaman, Shaman, 0, 0x0, ShamanMMagicAnim, 200, 60, Shaman_F, 0, 0x6, ShamanFMagicAnim, 200, 60)
-CRE_SpriteClassStruct(spriteClassSoldier, Soldier, 3, -1, SoldierULanceAnim, 200, 60, Soldier_F, 0, 0x1, SoldierULanceAnim, 200, 60)
-CRE_SpriteClassStruct(spriteClassSupplier, Supplier, 0, -1, SupplierFLanceAnim, 200, 60, Supplier, 0, -1, SupplierFLanceAnim, 200, 60)
+CRE_SpriteClassStruct(spriteClassPriestCleric, Priest, 0, -1, PriesMStaffAnim, 200, 60, Cleric, 0, 0x7, PriesFStaffAnim, 200, 60)
+CRE_SpriteClassStruct(spriteClassShaman, Shaman, 0, 0x0, ShamaMMagicAnim, 200, 60, Shaman_F, 0, 0x6, ShamaFMagicAnim, 200, 60)
+CRE_SpriteClassStruct(spriteClassSoldier, Soldier, 3, -1, SoldiULanceAnim, 200, 60, Soldier_F, 0, 0x1, SoldiULanceAnim, 200, 60)
+CRE_SpriteClassStruct(spriteClassSupplier, Supplier, 0, -1, SupplFLanceAnim, 200, 60, Supplier, 0, -1, SupplFLanceAnim, 200, 60)
 CRE_SpriteClassStruct(spriteClassWyvKnight, WyvernKnight, 0, 0x8, WyvKnUAxeAnim, 165, 60, WyvernKnight, 0, 0x8, WyvKnUAxeAnim, 165, 60)
-//CRE_SpriteClassStruct(spriteClassMarshall, Monk_F, 0, -1, MarshallAxeAnim, 184, 61, Monk_F, 1, -1, MarshallAxeAnim, 184, 61)
+//CRE_SpriteClassStruct(spriteClassMarshall, Monk_F, 0, -1, MarshAxeAnim, 184, 61, Monk_F, 1, -1, MarshAxeAnim, 184, 61)
 
 
 // portraitID[]

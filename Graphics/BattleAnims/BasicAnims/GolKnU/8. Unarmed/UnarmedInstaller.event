@@ -2,49 +2,57 @@
 {
 PUSH
 AnimTableEntry(GolKnUUnarmedAnim) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("GolKnUUn")
+WORD 0
 POIN Anim_Unarmed_sectiondata
 POIN Anim_Unarmed_framedata
 POIN Anim_Unarmed_rtl Anim_Unarmed_ltr Anim_H1_GolKnU_pal
 
 AnimTableEntry(GolKnUUnarmedAnim+1) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("GolKnUUn")
+WORD 0
 POIN Anim_Unarmed_sectiondata
 POIN Anim_Unarmed_framedata
 POIN Anim_Unarmed_rtl Anim_Unarmed_ltr Anim_H2_GolKnU_pal
 
 AnimTableEntry(GolKnUUnarmedAnim+2) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("GolKnUUn")
+WORD 0
 POIN Anim_Unarmed_sectiondata
 POIN Anim_Unarmed_framedata
 POIN Anim_Unarmed_rtl Anim_Unarmed_ltr Anim_H3_GolKnU_pal
 
 AnimTableEntry(GolKnUUnarmedAnim+3) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("GolKnUUn")
+WORD 0
 POIN Anim_Unarmed_sectiondata
 POIN Anim_Unarmed_framedata
 POIN Anim_Unarmed_rtl Anim_Unarmed_ltr Anim_H4_GolKnU_pal
 
 AnimTableEntry(GolKnUUnarmedAnim+4) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("GolKnUUn")
+WORD 0
 POIN Anim_Unarmed_sectiondata
 POIN Anim_Unarmed_framedata
 POIN Anim_Unarmed_rtl Anim_Unarmed_ltr Anim_G1_GolKnU_pal
 
 AnimTableEntry(GolKnUUnarmedAnim+5) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("GolKnUUn")
+WORD 0
 POIN Anim_Unarmed_sectiondata
 POIN Anim_Unarmed_framedata
 POIN Anim_Unarmed_rtl Anim_Unarmed_ltr Anim_G2_GolKnU_pal
 
 AnimTableEntry(GolKnUUnarmedAnim+6) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("GolKnUUn")
+WORD 0
 POIN Anim_Unarmed_sectiondata
 POIN Anim_Unarmed_framedata
 POIN Anim_Unarmed_rtl Anim_Unarmed_ltr Anim_G3_GolKnU_pal
 
 AnimTableEntry(GolKnUUnarmedAnim+7) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("GolKnUUn")
+WORD 0
 POIN Anim_Unarmed_sectiondata
 POIN Anim_Unarmed_framedata
 POIN Anim_Unarmed_rtl Anim_Unarmed_ltr Anim_G4_GolKnU_pal

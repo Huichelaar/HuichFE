@@ -1,0 +1,16 @@
+trans
+white
+wep2_1
+wep2_2
+trim4_1
+trim4_2
+trim4_3
+trim4_4
+underw3_1
+underw3_2
+underw3_3
+armour4_1
+armour4_2
+armour4_3
+armour4_4
+outline

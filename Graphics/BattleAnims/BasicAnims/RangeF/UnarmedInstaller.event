@@ -1,0 +1,50 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(RangeFUnarmedAnim) // Animation slot.
+String("RangeFUn")
+WORD 0
+WORD 0x8C86004 0x8C85F74 0x8C85ECC 0x8C85E28
+POIN Anim_H1_RangeF_pal
+
+AnimTableEntry(RangeFUnarmedAnim+1) // Animation slot.
+String("RangeFUn")
+WORD 0
+WORD 0x8C86004 0x8C85F74 0x8C85ECC 0x8C85E28
+POIN Anim_H2_RangeF_pal
+
+AnimTableEntry(RangeFUnarmedAnim+2) // Animation slot.
+String("RangeFUn")
+WORD 0
+WORD 0x8C86004 0x8C85F74 0x8C85ECC 0x8C85E28
+POIN Anim_H3_RangeF_pal
+
+AnimTableEntry(RangeFUnarmedAnim+3) // Animation slot.
+String("RangeFUn")
+WORD 0
+WORD 0x8C86004 0x8C85F74 0x8C85ECC 0x8C85E28
+POIN Anim_H4_RangeF_pal
+
+AnimTableEntry(RangeFUnarmedAnim+4) // Animation slot.
+String("RangeFUn")
+WORD 0
+WORD 0x8C86004 0x8C85F74 0x8C85ECC 0x8C85E28
+POIN Anim_G1_RangeF_pal
+
+AnimTableEntry(RangeFUnarmedAnim+5) // Animation slot.
+String("RangeFUn")
+WORD 0
+WORD 0x8C86004 0x8C85F74 0x8C85ECC 0x8C85E28
+POIN Anim_G2_RangeF_pal
+
+AnimTableEntry(RangeFUnarmedAnim+6) // Animation slot.
+String("RangeFUn")
+WORD 0
+WORD 0x8C86004 0x8C85F74 0x8C85ECC 0x8C85E28
+POIN Anim_G3_RangeF_pal
+
+AnimTableEntry(RangeFUnarmedAnim+7) // Animation slot.
+String("RangeFUn")
+WORD 0
+WORD 0x8C86004 0x8C85F74 0x8C85ECC 0x8C85E28
+POIN Anim_G4_RangeF_pal
+POP

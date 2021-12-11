@@ -1,6 +1,0 @@
-///////Animation Install.event///////
-PUSH
-AnimTableEntry(CyclopsUAxeAnim) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
-WORD 0x8DF13DC 0x8DF11A8 0x8DF0AE0 0x8DF041C 0x8DF03E4
-POP

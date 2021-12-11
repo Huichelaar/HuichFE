@@ -108,55 +108,64 @@ def main():
     (dirname,filename) = os.path.split(inputfile)
     filename = os.path.splitext(filename)[0] #ensure no file extension
     animname = classname + filename + "Anim"
+    animstring = (classname[:6]+filename[:2]).ljust(8, chr(0))
     labelname = filename.replace(' ','_')
     outputname = filename + "Installer.event"
     outputText = """///////Animation Install.event///////
 {{
 PUSH
 AnimTableEntry({animname}) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("{animstring}")
+WORD 0
 POIN Anim_{labelname}_sectiondata
 POIN Anim_{labelname}_framedata
 POIN Anim_{labelname}_rtl Anim_{labelname}_ltr Anim_H1_{classname}_pal
 
 AnimTableEntry({animname}+1) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("{animstring}")
+WORD 0
 POIN Anim_{labelname}_sectiondata
 POIN Anim_{labelname}_framedata
 POIN Anim_{labelname}_rtl Anim_{labelname}_ltr Anim_H2_{classname}_pal
 
 AnimTableEntry({animname}+2) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("{animstring}")
+WORD 0
 POIN Anim_{labelname}_sectiondata
 POIN Anim_{labelname}_framedata
 POIN Anim_{labelname}_rtl Anim_{labelname}_ltr Anim_H3_{classname}_pal
 
 AnimTableEntry({animname}+3) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("{animstring}")
+WORD 0
 POIN Anim_{labelname}_sectiondata
 POIN Anim_{labelname}_framedata
 POIN Anim_{labelname}_rtl Anim_{labelname}_ltr Anim_H4_{classname}_pal
 
 AnimTableEntry({animname}+4) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("{animstring}")
+WORD 0
 POIN Anim_{labelname}_sectiondata
 POIN Anim_{labelname}_framedata
 POIN Anim_{labelname}_rtl Anim_{labelname}_ltr Anim_G1_{classname}_pal
 
 AnimTableEntry({animname}+5) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("{animstring}")
+WORD 0
 POIN Anim_{labelname}_sectiondata
 POIN Anim_{labelname}_framedata
 POIN Anim_{labelname}_rtl Anim_{labelname}_ltr Anim_G2_{classname}_pal
 
 AnimTableEntry({animname}+6) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("{animstring}")
+WORD 0
 POIN Anim_{labelname}_sectiondata
 POIN Anim_{labelname}_framedata
 POIN Anim_{labelname}_rtl Anim_{labelname}_ltr Anim_G3_{classname}_pal
 
 AnimTableEntry({animname}+7) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("{animstring}")
+WORD 0
 POIN Anim_{labelname}_sectiondata
 POIN Anim_{labelname}_framedata
 POIN Anim_{labelname}_rtl Anim_{labelname}_ltr Anim_G4_{classname}_pal
@@ -182,7 +191,7 @@ Anim_{labelname}_ltr:
 }}
 """
     with open(outputname,'w') as o:
-      o.write(outputText.format(animname=animname,classname=classname,filename=filename,labelname=labelname,framedata=process(filename),rtl=b_to_hex(rtl),ltr=b_to_hex(ltr),graphicsdata=getSheets(sheetpaths),sectionData=b_to_hex(sectionData)))
+      o.write(outputText.format(animname=animname,animstring=animstring,classname=classname,filename=filename,labelname=labelname,framedata=process(filename),rtl=b_to_hex(rtl),ltr=b_to_hex(ltr),graphicsdata=getSheets(sheetpaths),sectionData=b_to_hex(sectionData)))
     print("success")
   else:
     print("Incorrect arguments, expected 2 arguments (file path) (class label)")

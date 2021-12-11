@@ -2,53 +2,62 @@
 {
 PUSH
 AnimTableEntry(WyvKnUHandaxeAnim) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("WyvKnUHa")
+WORD 0
 POIN Anim_Handaxe_sectiondata
 POIN Anim_Handaxe_framedata
 POIN Anim_Handaxe_rtl Anim_Handaxe_ltr Anim_H1_WyvKnU_pal
 
 AnimTableEntry(WyvKnUHandaxeAnim+1) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("WyvKnUHa")
+WORD 0
 POIN Anim_Handaxe_sectiondata
 POIN Anim_Handaxe_framedata
 POIN Anim_Handaxe_rtl Anim_Handaxe_ltr Anim_H2_WyvKnU_pal
 
 AnimTableEntry(WyvKnUHandaxeAnim+2) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("WyvKnUHa")
+WORD 0
 POIN Anim_Handaxe_sectiondata
 POIN Anim_Handaxe_framedata
 POIN Anim_Handaxe_rtl Anim_Handaxe_ltr Anim_H3_WyvKnU_pal
 
 AnimTableEntry(WyvKnUHandaxeAnim+3) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("WyvKnUHa")
+WORD 0
 POIN Anim_Handaxe_sectiondata
 POIN Anim_Handaxe_framedata
 POIN Anim_Handaxe_rtl Anim_Handaxe_ltr Anim_H4_WyvKnU_pal
 
 AnimTableEntry(WyvKnUHandaxeAnim+4) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("WyvKnUHa")
+WORD 0
 POIN Anim_Handaxe_sectiondata
 POIN Anim_Handaxe_framedata
 POIN Anim_Handaxe_rtl Anim_Handaxe_ltr Anim_G1_WyvKnU_pal
 
 AnimTableEntry(WyvKnUHandaxeAnim+5) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("WyvKnUHa")
+WORD 0
 POIN Anim_Handaxe_sectiondata
 POIN Anim_Handaxe_framedata
 POIN Anim_Handaxe_rtl Anim_Handaxe_ltr Anim_G2_WyvKnU_pal
 
 AnimTableEntry(WyvKnUHandaxeAnim+6) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("WyvKnUHa")
+WORD 0
 POIN Anim_Handaxe_sectiondata
 POIN Anim_Handaxe_framedata
 POIN Anim_Handaxe_rtl Anim_Handaxe_ltr Anim_G3_WyvKnU_pal
 
 AnimTableEntry(WyvKnUHandaxeAnim+7) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("WyvKnUHa")
+WORD 0
 POIN Anim_Handaxe_sectiondata
 POIN Anim_Handaxe_framedata
 POIN Anim_Handaxe_rtl Anim_Handaxe_ltr Anim_G4_WyvKnU_pal
 POP
+ALIGN 4
 
 //install data
 

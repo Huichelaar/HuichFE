@@ -1,0 +1,50 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(GenerUAxeAnim) // Animation slot.
+String("GenerUAx")
+WORD 0
+WORD 0x8CC5220 0x8CC4D70 0x8CC45E8 0x8CC3E60
+POIN Anim_H1_GenerU_pal
+
+AnimTableEntry(GenerUAxeAnim+1) // Animation slot.
+String("GenerUAx")
+WORD 0
+WORD 0x8CC5220 0x8CC4D70 0x8CC45E8 0x8CC3E60
+POIN Anim_H2_GenerU_pal
+
+AnimTableEntry(GenerUAxeAnim+2) // Animation slot.
+String("GenerUAx")
+WORD 0
+WORD 0x8CC5220 0x8CC4D70 0x8CC45E8 0x8CC3E60
+POIN Anim_H3_GenerU_pal
+
+AnimTableEntry(GenerUAxeAnim+3) // Animation slot.
+String("GenerUAx")
+WORD 0
+WORD 0x8CC5220 0x8CC4D70 0x8CC45E8 0x8CC3E60
+POIN Anim_H4_GenerU_pal
+
+AnimTableEntry(GenerUAxeAnim+4) // Animation slot.
+String("GenerUAx")
+WORD 0
+WORD 0x8CC5220 0x8CC4D70 0x8CC45E8 0x8CC3E60
+POIN Anim_G1_GenerU_pal
+
+AnimTableEntry(GenerUAxeAnim+5) // Animation slot.
+String("GenerUAx")
+WORD 0
+WORD 0x8CC5220 0x8CC4D70 0x8CC45E8 0x8CC3E60
+POIN Anim_G2_GenerU_pal
+
+AnimTableEntry(GenerUAxeAnim+6) // Animation slot.
+String("GenerUAx")
+WORD 0
+WORD 0x8CC5220 0x8CC4D70 0x8CC45E8 0x8CC3E60
+POIN Anim_G3_GenerU_pal
+
+AnimTableEntry(GenerUAxeAnim+7) // Animation slot.
+String("GenerUAx")
+WORD 0
+WORD 0x8CC5220 0x8CC4D70 0x8CC45E8 0x8CC3E60
+POIN Anim_G4_GenerU_pal
+POP

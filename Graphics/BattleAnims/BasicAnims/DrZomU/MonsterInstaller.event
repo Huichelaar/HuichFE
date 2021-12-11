@@ -1,0 +1,7 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(DrZomUMonsterAnim) // Animation slot.
+String("DrZomUMo")
+WORD 0
+WORD 0x8E27B60 0x8E279F8 0x8E27844 0x8E2769C 0x8E27664
+POP

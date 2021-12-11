@@ -1,0 +1,16 @@
+trans
+white
+wep2_1
+wep2_2
+skin2_1
+skin2_2
+hair2_1
+hair2_2
+underw3_1
+underw3_2
+underw3_3
+armour4_1
+armour4_2
+armour4_3
+armour4_4
+outline

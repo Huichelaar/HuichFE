@@ -1,0 +1,7 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(TarvoUUnarmedAnim) // Animation slot.
+String("TarvoUUn")
+WORD 0
+WORD 0x8E063E0 0x8E06384 0x8E062D8 0x8E06224 0x8E01BD4
+POP

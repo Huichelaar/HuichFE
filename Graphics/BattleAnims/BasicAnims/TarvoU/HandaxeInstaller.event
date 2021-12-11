@@ -1,0 +1,7 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(TarvoUHandaxeAnim) // Animation slot.
+String("TarvoUHa")
+WORD 0
+WORD 0x8E0618C 0x8E06020 0x8E05E2C 0x8E05C38 0x8E01BD4
+POP

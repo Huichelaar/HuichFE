@@ -17,58 +17,66 @@ from shutil import copyfile
 
 # Classes Milo could be.
 miloSet = {
-  "ShamanM", "DruidM", "DarkDruidM", "SummonerU", "NecromancerU",
-  "PriestM", "ValkyrieM", "ValkyrieT3U", "BishopM", "WarMonkM",
-  "MonkM", "SageM", "SageT3M", "MageM", "MageKnM", "MageKnT3U"
+  "ShamaM", "DruidM", "DaDruU", "SummoU", "NecroU",
+  "PriesM", "ValkyM", "ValT3U", "BishoM", "WarMoM",
+  "MonkM", "SageM", "SagT3M", "MageM", "MagKnM", "MKnT3U"
 }
 
 # Classes Leona could be.
 leonaSet = {
-  "SoldierU", "SergeantU", "MarshallU", "GeneralU", "KnightU",
-  "GreKnU", "GolKnU", "ArcherF", "SniperF", "MarksmanF",
-  "RangerF", "BowKnF", "MercF", "HarbingerT2F", "HarbingerU",
-  "HeroF", "HeroWarT3F", "FighterF", "WarriorF"
+  "SoldiU", "SergeU", "MarshU", "GenerU",
+  "ArchF", "SnipeF", "MarksF", "RangeF",
+  "BowKnU", "MercF", "HarT2F", "HarbiU",
+  "HeroF", "HeWT3F", "FightF", "WarriF"
 }
 
 outputText = """///////Animation Install.event///////
 PUSH
 AnimTableEntry({animName}) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("{animString}")
+WORD 0
 WORD 0x{pointers[0]} 0x{pointers[1]} 0x{pointers[2]} 0x{pointers[3]}
 POIN Anim_H1_{classID}_pal
 
 AnimTableEntry({animName}+1) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("{animString}")
+WORD 0
 WORD 0x{pointers[0]} 0x{pointers[1]} 0x{pointers[2]} 0x{pointers[3]}
 POIN Anim_H2_{classID}_pal
 
 AnimTableEntry({animName}+2) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("{animString}")
+WORD 0
 WORD 0x{pointers[0]} 0x{pointers[1]} 0x{pointers[2]} 0x{pointers[3]}
 POIN Anim_H3_{classID}_pal
 
 AnimTableEntry({animName}+3) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("{animString}")
+WORD 0
 WORD 0x{pointers[0]} 0x{pointers[1]} 0x{pointers[2]} 0x{pointers[3]}
 POIN Anim_H4_{classID}_pal
 
 AnimTableEntry({animName}+4) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("{animString}")
+WORD 0
 WORD 0x{pointers[0]} 0x{pointers[1]} 0x{pointers[2]} 0x{pointers[3]}
 POIN Anim_G1_{classID}_pal
 
 AnimTableEntry({animName}+5) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("{animString}")
+WORD 0
 WORD 0x{pointers[0]} 0x{pointers[1]} 0x{pointers[2]} 0x{pointers[3]}
 POIN Anim_G2_{classID}_pal
 
 AnimTableEntry({animName}+6) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("{animString}")
+WORD 0
 WORD 0x{pointers[0]} 0x{pointers[1]} 0x{pointers[2]} 0x{pointers[3]}
 POIN Anim_G3_{classID}_pal
 
 AnimTableEntry({animName}+7) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("{animString}")
+WORD 0
 WORD 0x{pointers[0]} 0x{pointers[1]} 0x{pointers[2]} 0x{pointers[3]}
 POIN Anim_G4_{classID}_pal
 POP
@@ -78,7 +86,8 @@ POP
 outputText2 = """///////Animation Install.event///////
 PUSH
 AnimTableEntry({animName}) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("{animString}")
+WORD 0
 WORD 0x{pointers[0]} 0x{pointers[1]} 0x{pointers[2]} 0x{pointers[3]} 0x{pointers[4]}
 POP
 """
@@ -215,12 +224,13 @@ def createAnim(classID, output):
       weaponType = vanDict[lines[i][:-1]]
       anims.append(weaponType)
       animName = classID+weaponType+"Anim"
+      animString = (classID[:6]+weaponType[:2]).ljust(8, chr(0))
       pointers = [lines[i+j+1][:-1] for j in range(pointerCount-1)]
       installerFile = classdir+weaponType+"Installer.event"
       if lines[i][:-1] in vanSet:
         if not os.path.isfile(installerFile) or os.path.getmtime(inputFile) > os.path.getmtime(installerFile):
           output2 = open(installerFile, 'w')
-          output2.write(outText.format(animName=animName,classID=classID,pointers=pointers))
+          output2.write(outText.format(animName=animName,animString=animString,classID=classID,pointers=pointers))
           output2.close()
         output.write("#define "+classID+weaponType+"Anim "+str(animCount)+"\n")
         animCount += animStep

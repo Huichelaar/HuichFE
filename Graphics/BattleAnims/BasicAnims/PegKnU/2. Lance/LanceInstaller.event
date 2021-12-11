@@ -2,53 +2,62 @@
 {
 PUSH
 AnimTableEntry(PegKnULanceAnim) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("PegKnULa")
+WORD 0
 POIN Anim_Lance_sectiondata
 POIN Anim_Lance_framedata
 POIN Anim_Lance_rtl Anim_Lance_ltr Anim_H1_PegKnU_pal
 
 AnimTableEntry(PegKnULanceAnim+1) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("PegKnULa")
+WORD 0
 POIN Anim_Lance_sectiondata
 POIN Anim_Lance_framedata
 POIN Anim_Lance_rtl Anim_Lance_ltr Anim_H2_PegKnU_pal
 
 AnimTableEntry(PegKnULanceAnim+2) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("PegKnULa")
+WORD 0
 POIN Anim_Lance_sectiondata
 POIN Anim_Lance_framedata
 POIN Anim_Lance_rtl Anim_Lance_ltr Anim_H3_PegKnU_pal
 
 AnimTableEntry(PegKnULanceAnim+3) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("PegKnULa")
+WORD 0
 POIN Anim_Lance_sectiondata
 POIN Anim_Lance_framedata
 POIN Anim_Lance_rtl Anim_Lance_ltr Anim_H4_PegKnU_pal
 
 AnimTableEntry(PegKnULanceAnim+4) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("PegKnULa")
+WORD 0
 POIN Anim_Lance_sectiondata
 POIN Anim_Lance_framedata
 POIN Anim_Lance_rtl Anim_Lance_ltr Anim_G1_PegKnU_pal
 
 AnimTableEntry(PegKnULanceAnim+5) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("PegKnULa")
+WORD 0
 POIN Anim_Lance_sectiondata
 POIN Anim_Lance_framedata
 POIN Anim_Lance_rtl Anim_Lance_ltr Anim_G2_PegKnU_pal
 
 AnimTableEntry(PegKnULanceAnim+6) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("PegKnULa")
+WORD 0
 POIN Anim_Lance_sectiondata
 POIN Anim_Lance_framedata
 POIN Anim_Lance_rtl Anim_Lance_ltr Anim_G3_PegKnU_pal
 
 AnimTableEntry(PegKnULanceAnim+7) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("PegKnULa")
+WORD 0
 POIN Anim_Lance_sectiondata
 POIN Anim_Lance_framedata
 POIN Anim_Lance_rtl Anim_Lance_ltr Anim_G4_PegKnU_pal
 POP
+ALIGN 4
 
 //install data
 

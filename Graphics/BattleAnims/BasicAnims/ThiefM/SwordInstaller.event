@@ -1,42 +1,50 @@
 ///////Animation Install.event///////
 PUSH
 AnimTableEntry(ThiefMSwordAnim) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("ThiefMSw")
+WORD 0
 WORD 0x8D92470 0x8D921A8 0x8D91D40 0x8D918CC
 POIN Anim_H1_ThiefM_pal
 
 AnimTableEntry(ThiefMSwordAnim+1) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("ThiefMSw")
+WORD 0
 WORD 0x8D92470 0x8D921A8 0x8D91D40 0x8D918CC
 POIN Anim_H2_ThiefM_pal
 
 AnimTableEntry(ThiefMSwordAnim+2) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("ThiefMSw")
+WORD 0
 WORD 0x8D92470 0x8D921A8 0x8D91D40 0x8D918CC
 POIN Anim_H3_ThiefM_pal
 
 AnimTableEntry(ThiefMSwordAnim+3) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("ThiefMSw")
+WORD 0
 WORD 0x8D92470 0x8D921A8 0x8D91D40 0x8D918CC
 POIN Anim_H4_ThiefM_pal
 
 AnimTableEntry(ThiefMSwordAnim+4) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("ThiefMSw")
+WORD 0
 WORD 0x8D92470 0x8D921A8 0x8D91D40 0x8D918CC
 POIN Anim_G1_ThiefM_pal
 
 AnimTableEntry(ThiefMSwordAnim+5) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("ThiefMSw")
+WORD 0
 WORD 0x8D92470 0x8D921A8 0x8D91D40 0x8D918CC
 POIN Anim_G2_ThiefM_pal
 
 AnimTableEntry(ThiefMSwordAnim+6) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("ThiefMSw")
+WORD 0
 WORD 0x8D92470 0x8D921A8 0x8D91D40 0x8D918CC
 POIN Anim_G3_ThiefM_pal
 
 AnimTableEntry(ThiefMSwordAnim+7) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("ThiefMSw")
+WORD 0
 WORD 0x8D92470 0x8D921A8 0x8D91D40 0x8D918CC
 POIN Anim_G4_ThiefM_pal
 POP

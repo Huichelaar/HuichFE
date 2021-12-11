@@ -1,0 +1,50 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(FightMUnarmedAnim) // Animation slot.
+String("FightMUn")
+WORD 0
+WORD 0x8C50C84 0x8C50C30 0x8C50B6C 0x8C50AA0
+POIN Anim_H1_FightM_pal
+
+AnimTableEntry(FightMUnarmedAnim+1) // Animation slot.
+String("FightMUn")
+WORD 0
+WORD 0x8C50C84 0x8C50C30 0x8C50B6C 0x8C50AA0
+POIN Anim_H2_FightM_pal
+
+AnimTableEntry(FightMUnarmedAnim+2) // Animation slot.
+String("FightMUn")
+WORD 0
+WORD 0x8C50C84 0x8C50C30 0x8C50B6C 0x8C50AA0
+POIN Anim_H3_FightM_pal
+
+AnimTableEntry(FightMUnarmedAnim+3) // Animation slot.
+String("FightMUn")
+WORD 0
+WORD 0x8C50C84 0x8C50C30 0x8C50B6C 0x8C50AA0
+POIN Anim_H4_FightM_pal
+
+AnimTableEntry(FightMUnarmedAnim+4) // Animation slot.
+String("FightMUn")
+WORD 0
+WORD 0x8C50C84 0x8C50C30 0x8C50B6C 0x8C50AA0
+POIN Anim_G1_FightM_pal
+
+AnimTableEntry(FightMUnarmedAnim+5) // Animation slot.
+String("FightMUn")
+WORD 0
+WORD 0x8C50C84 0x8C50C30 0x8C50B6C 0x8C50AA0
+POIN Anim_G2_FightM_pal
+
+AnimTableEntry(FightMUnarmedAnim+6) // Animation slot.
+String("FightMUn")
+WORD 0
+WORD 0x8C50C84 0x8C50C30 0x8C50B6C 0x8C50AA0
+POIN Anim_G3_FightM_pal
+
+AnimTableEntry(FightMUnarmedAnim+7) // Animation slot.
+String("FightMUn")
+WORD 0
+WORD 0x8C50C84 0x8C50C30 0x8C50B6C 0x8C50AA0
+POIN Anim_G4_FightM_pal
+POP

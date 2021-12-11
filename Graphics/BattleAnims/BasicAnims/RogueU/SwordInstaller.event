@@ -1,42 +1,50 @@
 ///////Animation Install.event///////
 PUSH
 AnimTableEntry(RogueUSwordAnim) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("RogueUSw")
+WORD 0
 WORD 0x8D9DCCC 0x8D9D918 0x8D9D524 0x8D9D128
 POIN Anim_H1_RogueU_pal
 
 AnimTableEntry(RogueUSwordAnim+1) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("RogueUSw")
+WORD 0
 WORD 0x8D9DCCC 0x8D9D918 0x8D9D524 0x8D9D128
 POIN Anim_H2_RogueU_pal
 
 AnimTableEntry(RogueUSwordAnim+2) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("RogueUSw")
+WORD 0
 WORD 0x8D9DCCC 0x8D9D918 0x8D9D524 0x8D9D128
 POIN Anim_H3_RogueU_pal
 
 AnimTableEntry(RogueUSwordAnim+3) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("RogueUSw")
+WORD 0
 WORD 0x8D9DCCC 0x8D9D918 0x8D9D524 0x8D9D128
 POIN Anim_H4_RogueU_pal
 
 AnimTableEntry(RogueUSwordAnim+4) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("RogueUSw")
+WORD 0
 WORD 0x8D9DCCC 0x8D9D918 0x8D9D524 0x8D9D128
 POIN Anim_G1_RogueU_pal
 
 AnimTableEntry(RogueUSwordAnim+5) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("RogueUSw")
+WORD 0
 WORD 0x8D9DCCC 0x8D9D918 0x8D9D524 0x8D9D128
 POIN Anim_G2_RogueU_pal
 
 AnimTableEntry(RogueUSwordAnim+6) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("RogueUSw")
+WORD 0
 WORD 0x8D9DCCC 0x8D9D918 0x8D9D524 0x8D9D128
 POIN Anim_G3_RogueU_pal
 
 AnimTableEntry(RogueUSwordAnim+7) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("RogueUSw")
+WORD 0
 WORD 0x8D9DCCC 0x8D9D918 0x8D9D524 0x8D9D128
 POIN Anim_G4_RogueU_pal
 POP

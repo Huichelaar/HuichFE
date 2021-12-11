@@ -1,0 +1,7 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(EBaelUMonsterAnim) // Animation slot.
+String("EBaelUMo")
+WORD 0
+WORD 0x8DE4EA8 0x8DE4C1C 0x8DE4794 0x8DE4310 0x8DE4F08
+POP

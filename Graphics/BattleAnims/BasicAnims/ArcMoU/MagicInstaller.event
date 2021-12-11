@@ -1,0 +1,7 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(ArcMoUMagicAnim) // Animation slot.
+String("ArcMoUMa")
+WORD 0
+WORD 0x8E11A98 0x8E11800 0x8E11470 0x8E110DC 0x8E11AF8
+POP

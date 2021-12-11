@@ -1,0 +1,50 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(ValkyFMagicAnim) // Animation slot.
+String("ValkyFMa")
+WORD 0
+WORD 0x8D8E4D0 0x8D8E230 0x8D8DD30 0x8D8D834
+POIN Anim_H1_ValkyF_pal
+
+AnimTableEntry(ValkyFMagicAnim+1) // Animation slot.
+String("ValkyFMa")
+WORD 0
+WORD 0x8D8E4D0 0x8D8E230 0x8D8DD30 0x8D8D834
+POIN Anim_H2_ValkyF_pal
+
+AnimTableEntry(ValkyFMagicAnim+2) // Animation slot.
+String("ValkyFMa")
+WORD 0
+WORD 0x8D8E4D0 0x8D8E230 0x8D8DD30 0x8D8D834
+POIN Anim_H3_ValkyF_pal
+
+AnimTableEntry(ValkyFMagicAnim+3) // Animation slot.
+String("ValkyFMa")
+WORD 0
+WORD 0x8D8E4D0 0x8D8E230 0x8D8DD30 0x8D8D834
+POIN Anim_H4_ValkyF_pal
+
+AnimTableEntry(ValkyFMagicAnim+4) // Animation slot.
+String("ValkyFMa")
+WORD 0
+WORD 0x8D8E4D0 0x8D8E230 0x8D8DD30 0x8D8D834
+POIN Anim_G1_ValkyF_pal
+
+AnimTableEntry(ValkyFMagicAnim+5) // Animation slot.
+String("ValkyFMa")
+WORD 0
+WORD 0x8D8E4D0 0x8D8E230 0x8D8DD30 0x8D8D834
+POIN Anim_G2_ValkyF_pal
+
+AnimTableEntry(ValkyFMagicAnim+6) // Animation slot.
+String("ValkyFMa")
+WORD 0
+WORD 0x8D8E4D0 0x8D8E230 0x8D8DD30 0x8D8D834
+POIN Anim_G3_ValkyF_pal
+
+AnimTableEntry(ValkyFMagicAnim+7) // Animation slot.
+String("ValkyFMa")
+WORD 0
+WORD 0x8D8E4D0 0x8D8E230 0x8D8DD30 0x8D8D834
+POIN Anim_G4_ValkyF_pal
+POP

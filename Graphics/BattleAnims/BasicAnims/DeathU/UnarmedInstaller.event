@@ -1,0 +1,7 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(DeathUUnarmedAnim) // Animation slot.
+String("DeathUUn")
+WORD 0
+WORD 0x8E24EF0 0x8E24E2C 0x8E24C2C 0x8E24A30 0x8E24F50
+POP

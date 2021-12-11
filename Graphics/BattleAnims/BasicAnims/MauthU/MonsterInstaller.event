@@ -1,0 +1,7 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(MauthUMonsterAnim) // Animation slot.
+String("MauthUMo")
+WORD 0
+WORD 0x8DF5958 0x8DF5748 0x8DF53E4 0x8DF5080 0x8DF5048
+POP

@@ -1,0 +1,50 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(ShamaMMagicAnim) // Animation slot.
+String("ShamaMMa")
+WORD 0
+WORD 0x8D6AF20 0x8D6A9D8 0x8D6A0D8 0x8D697E0
+POIN Anim_H1_ShamaM_pal
+
+AnimTableEntry(ShamaMMagicAnim+1) // Animation slot.
+String("ShamaMMa")
+WORD 0
+WORD 0x8D6AF20 0x8D6A9D8 0x8D6A0D8 0x8D697E0
+POIN Anim_H2_ShamaM_pal
+
+AnimTableEntry(ShamaMMagicAnim+2) // Animation slot.
+String("ShamaMMa")
+WORD 0
+WORD 0x8D6AF20 0x8D6A9D8 0x8D6A0D8 0x8D697E0
+POIN Anim_H3_ShamaM_pal
+
+AnimTableEntry(ShamaMMagicAnim+3) // Animation slot.
+String("ShamaMMa")
+WORD 0
+WORD 0x8D6AF20 0x8D6A9D8 0x8D6A0D8 0x8D697E0
+POIN Anim_H4_ShamaM_pal
+
+AnimTableEntry(ShamaMMagicAnim+4) // Animation slot.
+String("ShamaMMa")
+WORD 0
+WORD 0x8D6AF20 0x8D6A9D8 0x8D6A0D8 0x8D697E0
+POIN Anim_G1_ShamaM_pal
+
+AnimTableEntry(ShamaMMagicAnim+5) // Animation slot.
+String("ShamaMMa")
+WORD 0
+WORD 0x8D6AF20 0x8D6A9D8 0x8D6A0D8 0x8D697E0
+POIN Anim_G2_ShamaM_pal
+
+AnimTableEntry(ShamaMMagicAnim+6) // Animation slot.
+String("ShamaMMa")
+WORD 0
+WORD 0x8D6AF20 0x8D6A9D8 0x8D6A0D8 0x8D697E0
+POIN Anim_G3_ShamaM_pal
+
+AnimTableEntry(ShamaMMagicAnim+7) // Animation slot.
+String("ShamaMMa")
+WORD 0
+WORD 0x8D6AF20 0x8D6A9D8 0x8D6A0D8 0x8D697E0
+POIN Anim_G4_ShamaM_pal
+POP

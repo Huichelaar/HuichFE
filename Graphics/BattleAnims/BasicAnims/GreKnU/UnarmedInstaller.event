@@ -1,42 +1,50 @@
 ///////Animation Install.event///////
 PUSH
 AnimTableEntry(GreKnUUnarmedAnim) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("GreKnUUn")
+WORD 0
 WORD 0x8CF55D0 0x8CF553C 0x8CF5474 0x8CF53AC
 POIN Anim_H1_GreKnU_pal
 
 AnimTableEntry(GreKnUUnarmedAnim+1) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("GreKnUUn")
+WORD 0
 WORD 0x8CF55D0 0x8CF553C 0x8CF5474 0x8CF53AC
 POIN Anim_H2_GreKnU_pal
 
 AnimTableEntry(GreKnUUnarmedAnim+2) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("GreKnUUn")
+WORD 0
 WORD 0x8CF55D0 0x8CF553C 0x8CF5474 0x8CF53AC
 POIN Anim_H3_GreKnU_pal
 
 AnimTableEntry(GreKnUUnarmedAnim+3) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("GreKnUUn")
+WORD 0
 WORD 0x8CF55D0 0x8CF553C 0x8CF5474 0x8CF53AC
 POIN Anim_H4_GreKnU_pal
 
 AnimTableEntry(GreKnUUnarmedAnim+4) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("GreKnUUn")
+WORD 0
 WORD 0x8CF55D0 0x8CF553C 0x8CF5474 0x8CF53AC
 POIN Anim_G1_GreKnU_pal
 
 AnimTableEntry(GreKnUUnarmedAnim+5) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("GreKnUUn")
+WORD 0
 WORD 0x8CF55D0 0x8CF553C 0x8CF5474 0x8CF53AC
 POIN Anim_G2_GreKnU_pal
 
 AnimTableEntry(GreKnUUnarmedAnim+6) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("GreKnUUn")
+WORD 0
 WORD 0x8CF55D0 0x8CF553C 0x8CF5474 0x8CF53AC
 POIN Anim_G3_GreKnU_pal
 
 AnimTableEntry(GreKnUUnarmedAnim+7) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
+String("GreKnUUn")
+WORD 0
 WORD 0x8CF55D0 0x8CF553C 0x8CF5474 0x8CF53AC
 POIN Anim_G4_GreKnU_pal
 POP

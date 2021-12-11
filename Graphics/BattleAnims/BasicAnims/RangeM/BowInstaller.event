@@ -1,0 +1,50 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(RangeMBowAnim) // Animation slot.
+String("RangeMBo")
+WORD 0
+WORD 0x8C7D1F0 0x8C7CE7C 0x8C7C2A0 0x8C7B6C0
+POIN Anim_H1_RangeM_pal
+
+AnimTableEntry(RangeMBowAnim+1) // Animation slot.
+String("RangeMBo")
+WORD 0
+WORD 0x8C7D1F0 0x8C7CE7C 0x8C7C2A0 0x8C7B6C0
+POIN Anim_H2_RangeM_pal
+
+AnimTableEntry(RangeMBowAnim+2) // Animation slot.
+String("RangeMBo")
+WORD 0
+WORD 0x8C7D1F0 0x8C7CE7C 0x8C7C2A0 0x8C7B6C0
+POIN Anim_H3_RangeM_pal
+
+AnimTableEntry(RangeMBowAnim+3) // Animation slot.
+String("RangeMBo")
+WORD 0
+WORD 0x8C7D1F0 0x8C7CE7C 0x8C7C2A0 0x8C7B6C0
+POIN Anim_H4_RangeM_pal
+
+AnimTableEntry(RangeMBowAnim+4) // Animation slot.
+String("RangeMBo")
+WORD 0
+WORD 0x8C7D1F0 0x8C7CE7C 0x8C7C2A0 0x8C7B6C0
+POIN Anim_G1_RangeM_pal
+
+AnimTableEntry(RangeMBowAnim+5) // Animation slot.
+String("RangeMBo")
+WORD 0
+WORD 0x8C7D1F0 0x8C7CE7C 0x8C7C2A0 0x8C7B6C0
+POIN Anim_G2_RangeM_pal
+
+AnimTableEntry(RangeMBowAnim+6) // Animation slot.
+String("RangeMBo")
+WORD 0
+WORD 0x8C7D1F0 0x8C7CE7C 0x8C7C2A0 0x8C7B6C0
+POIN Anim_G3_RangeM_pal
+
+AnimTableEntry(RangeMBowAnim+7) // Animation slot.
+String("RangeMBo")
+WORD 0
+WORD 0x8C7D1F0 0x8C7CE7C 0x8C7C2A0 0x8C7B6C0
+POIN Anim_G4_RangeM_pal
+POP

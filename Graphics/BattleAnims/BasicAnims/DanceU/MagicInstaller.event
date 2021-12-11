@@ -1,0 +1,50 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(DanceUMagicAnim) // Animation slot.
+String("DanceUMa")
+WORD 0
+WORD 0x8DA3534 0x8DA3148 0x8DA2DB8 0x8DA2A3C
+POIN Anim_H1_DanceU_pal
+
+AnimTableEntry(DanceUMagicAnim+1) // Animation slot.
+String("DanceUMa")
+WORD 0
+WORD 0x8DA3534 0x8DA3148 0x8DA2DB8 0x8DA2A3C
+POIN Anim_H2_DanceU_pal
+
+AnimTableEntry(DanceUMagicAnim+2) // Animation slot.
+String("DanceUMa")
+WORD 0
+WORD 0x8DA3534 0x8DA3148 0x8DA2DB8 0x8DA2A3C
+POIN Anim_H3_DanceU_pal
+
+AnimTableEntry(DanceUMagicAnim+3) // Animation slot.
+String("DanceUMa")
+WORD 0
+WORD 0x8DA3534 0x8DA3148 0x8DA2DB8 0x8DA2A3C
+POIN Anim_H4_DanceU_pal
+
+AnimTableEntry(DanceUMagicAnim+4) // Animation slot.
+String("DanceUMa")
+WORD 0
+WORD 0x8DA3534 0x8DA3148 0x8DA2DB8 0x8DA2A3C
+POIN Anim_G1_DanceU_pal
+
+AnimTableEntry(DanceUMagicAnim+5) // Animation slot.
+String("DanceUMa")
+WORD 0
+WORD 0x8DA3534 0x8DA3148 0x8DA2DB8 0x8DA2A3C
+POIN Anim_G2_DanceU_pal
+
+AnimTableEntry(DanceUMagicAnim+6) // Animation slot.
+String("DanceUMa")
+WORD 0
+WORD 0x8DA3534 0x8DA3148 0x8DA2DB8 0x8DA2A3C
+POIN Anim_G3_DanceU_pal
+
+AnimTableEntry(DanceUMagicAnim+7) // Animation slot.
+String("DanceUMa")
+WORD 0
+WORD 0x8DA3534 0x8DA3148 0x8DA2DB8 0x8DA2A3C
+POIN Anim_G4_DanceU_pal
+POP

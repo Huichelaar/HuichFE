@@ -1,0 +1,50 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(SummoUMagicAnim) // Animation slot.
+String("SummoUMa")
+WORD 0
+WORD 0x8D7B3EC 0x8D7B070 0x8D7AC80 0x8D7A884
+POIN Anim_H1_SummoU_pal
+
+AnimTableEntry(SummoUMagicAnim+1) // Animation slot.
+String("SummoUMa")
+WORD 0
+WORD 0x8D7B3EC 0x8D7B070 0x8D7AC80 0x8D7A884
+POIN Anim_H2_SummoU_pal
+
+AnimTableEntry(SummoUMagicAnim+2) // Animation slot.
+String("SummoUMa")
+WORD 0
+WORD 0x8D7B3EC 0x8D7B070 0x8D7AC80 0x8D7A884
+POIN Anim_H3_SummoU_pal
+
+AnimTableEntry(SummoUMagicAnim+3) // Animation slot.
+String("SummoUMa")
+WORD 0
+WORD 0x8D7B3EC 0x8D7B070 0x8D7AC80 0x8D7A884
+POIN Anim_H4_SummoU_pal
+
+AnimTableEntry(SummoUMagicAnim+4) // Animation slot.
+String("SummoUMa")
+WORD 0
+WORD 0x8D7B3EC 0x8D7B070 0x8D7AC80 0x8D7A884
+POIN Anim_G1_SummoU_pal
+
+AnimTableEntry(SummoUMagicAnim+5) // Animation slot.
+String("SummoUMa")
+WORD 0
+WORD 0x8D7B3EC 0x8D7B070 0x8D7AC80 0x8D7A884
+POIN Anim_G2_SummoU_pal
+
+AnimTableEntry(SummoUMagicAnim+6) // Animation slot.
+String("SummoUMa")
+WORD 0
+WORD 0x8D7B3EC 0x8D7B070 0x8D7AC80 0x8D7A884
+POIN Anim_G3_SummoU_pal
+
+AnimTableEntry(SummoUMagicAnim+7) // Animation slot.
+String("SummoUMa")
+WORD 0
+WORD 0x8D7B3EC 0x8D7B070 0x8D7AC80 0x8D7A884
+POIN Anim_G4_SummoU_pal
+POP

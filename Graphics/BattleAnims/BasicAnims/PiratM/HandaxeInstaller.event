@@ -1,0 +1,50 @@
+///////Animation Install.event///////
+PUSH
+AnimTableEntry(PiratMHandaxeAnim) // Animation slot.
+String("PiratMHa")
+WORD 0
+WORD 0x8DBAD48 0x8DBAC48 0x8DBA9C0 0x8DBA738
+POIN Anim_H1_PiratM_pal
+
+AnimTableEntry(PiratMHandaxeAnim+1) // Animation slot.
+String("PiratMHa")
+WORD 0
+WORD 0x8DBAD48 0x8DBAC48 0x8DBA9C0 0x8DBA738
+POIN Anim_H2_PiratM_pal
+
+AnimTableEntry(PiratMHandaxeAnim+2) // Animation slot.
+String("PiratMHa")
+WORD 0
+WORD 0x8DBAD48 0x8DBAC48 0x8DBA9C0 0x8DBA738
+POIN Anim_H3_PiratM_pal
+
+AnimTableEntry(PiratMHandaxeAnim+3) // Animation slot.
+String("PiratMHa")
+WORD 0
+WORD 0x8DBAD48 0x8DBAC48 0x8DBA9C0 0x8DBA738
+POIN Anim_H4_PiratM_pal
+
+AnimTableEntry(PiratMHandaxeAnim+4) // Animation slot.
+String("PiratMHa")
+WORD 0
+WORD 0x8DBAD48 0x8DBAC48 0x8DBA9C0 0x8DBA738
+POIN Anim_G1_PiratM_pal
+
+AnimTableEntry(PiratMHandaxeAnim+5) // Animation slot.
+String("PiratMHa")
+WORD 0
+WORD 0x8DBAD48 0x8DBAC48 0x8DBA9C0 0x8DBA738
+POIN Anim_G2_PiratM_pal
+
+AnimTableEntry(PiratMHandaxeAnim+6) // Animation slot.
+String("PiratMHa")
+WORD 0
+WORD 0x8DBAD48 0x8DBAC48 0x8DBA9C0 0x8DBA738
+POIN Anim_G3_PiratM_pal
+
+AnimTableEntry(PiratMHandaxeAnim+7) // Animation slot.
+String("PiratMHa")
+WORD 0
+WORD 0x8DBAD48 0x8DBAC48 0x8DBA9C0 0x8DBA738
+POIN Anim_G4_PiratM_pal
+POP

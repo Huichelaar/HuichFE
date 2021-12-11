@@ -1,6 +1,0 @@
-///////Animation Install.event///////
-PUSH
-AnimTableEntry(BowalkerUUnarmedAnim) // Animation slot.
-WORD 0 0 0 //empty name field, who cares.
-WORD 0x8DD6EC4 0x8DD6E10 0x8DD6D78 0x8DD6CE4 0x8DD1290
-POP
