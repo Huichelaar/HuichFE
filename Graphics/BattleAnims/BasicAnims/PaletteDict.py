@@ -2,10 +2,10 @@
 
 sharedDict = {
   "trans": b'\x55\x53',
-  "white": b'\xFF\x7F',
   "outline": b'\xA5\x14'
 }
 ghostSharedDict = {
+  "white": b'\x7F\x6F',
   "wep2_1": b'\x9F\x4A',
   "wep2_2": b'\x59\x21',
   "wep3_1": b'\x9F\x4A',
@@ -24,14 +24,15 @@ ghostSharedDict = {
   "armour3_3": b'\x09\x2D',
 }
 humanSharedDict = {
+  "white": b'\xFF\x7F',
   "wep2_1": b'\xF8\x6E',
   "wep2_2": b'\xED\x51',
   "wep3_1": b'\x7B\x77',
-  "wep3_2": b'\xF8\x6E',
+  "wep3_2": b'\xB6\x66',
   "wep3_3": b'\xED\x51',
   "wep4_1": b'\xFF\x7F',
   "wep4_2": b'\x7B\x77',
-  "wep4_3": b'\xF8\x6E',
+  "wep4_3": b'\xB6\x66',
   "wep4_4": b'\xED\x51',
 }
 enemySharedDict = {
@@ -310,6 +311,7 @@ neutralDict4 = {**neutralDict4, **humanDict4.copy()}
 neutralDict4 = {**neutralDict4, **neutralSharedDict.copy()}
 
 miloDict = {
+  "white": b'\xFF\x7F',
   "skin4_1": b'\xFF\x6B',
   "skin4_2": b'\x1F\x4B',
   "skin4_3": b'\x18\x2A',
@@ -346,6 +348,7 @@ miloDict = {
 miloDict = {**miloDict, **sharedDict.copy()}
 
 leonaDict = {
+  "white": b'\xFF\x7F',
   "skin2_1": b'\xFF\x6B',
   "skin2_2": b'\x1F\x4B',
   "skin3_1": b'\xFF\x6B',

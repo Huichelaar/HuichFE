@@ -28,9 +28,9 @@ EndAnim
 
 #include "AssasU/pal.event"
 #define AssasUSwordAnim 34
-#include "AssasU/SwordInstaller.event"
+#include "AssasU/1. Sword/SwordInstaller.event"
 #define AssasUUnarmedAnim 42
-#include "AssasU/UnarmedInstaller.event"
+#include "AssasU/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; AssasUAnims:
 SwordAnim(AssasUSwordAnim)
 UnarmedAnim(AssasUUnarmedAnim)
@@ -51,11 +51,11 @@ EndAnim
 
 #include "BersM/pal.event"
 #define BersMAxeAnim 59
-#include "BersM/AxeInstaller.event"
+#include "BersM/3. Axe/AxeInstaller.event"
 #define BersMHandaxeAnim 67
-#include "BersM/HandaxeInstaller.event"
+#include "BersM/4. Handaxe/HandaxeInstaller.event"
 #define BersMUnarmedAnim 75
-#include "BersM/UnarmedInstaller.event"
+#include "BersM/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; BersMAnims:
 AxeAnim(BersMAxeAnim)
 HandaxeAnim(BersMHandaxeAnim)
