@@ -2,10 +2,10 @@
 
 sharedDict = {
   "trans": b'\x55\x53',
+  "white": b'\xFF\x7F',
   "outline": b'\xA5\x14'
 }
 ghostSharedDict = {
-  "white": b'\x7F\x6F',
   "wep2_1": b'\x9F\x4A',
   "wep2_2": b'\x59\x21',
   "wep3_1": b'\x9F\x4A',
@@ -24,7 +24,6 @@ ghostSharedDict = {
   "armour3_3": b'\x09\x2D',
 }
 humanSharedDict = {
-  "white": b'\xFF\x7F',
   "wep2_1": b'\xF8\x6E',
   "wep2_2": b'\xED\x51',
   "wep3_1": b'\x7B\x77',
@@ -36,22 +35,22 @@ humanSharedDict = {
   "wep4_4": b'\xED\x51',
 }
 enemySharedDict = {
+  "armour3_1": b'\x3A\x18',
+  "armour3_2": b'\x53\x14',
+  "armour3_3": b'\x6B\x14',
   "armour4_1": b'\x9F\x42',
   "armour4_2": b'\x7B\x21',
   "armour4_3": b'\xB1\x14',
-  "armour4_4": b'\x4A\x10',
-  "armour3_1": b'\x3A\x18',
-  "armour3_2": b'\x53\x14',
-  "armour3_3": b'\x6B\x14'
+  "armour4_4": b'\x4A\x10'
 }
 neutralSharedDict = {
+  "armour3_1": b'\x68\x27',
+  "armour3_2": b'\x44\x16',
+  "armour3_3": b'\x83\x11',
   "armour4_1": b'\xB5\x4F',
   "armour4_2": b'\xCB\x2E',
   "armour4_3": b'\xE7\x21',
-  "armour4_4": b'\x25\x19',
-  "armour3_1": b'\x68\x27',
-  "armour3_2": b'\xA7\x22',
-  "armour3_3": b'\x07\x22'
+  "armour4_4": b'\x25\x19'
 }
 
 humanDict1 = {
@@ -76,8 +75,10 @@ humanDict1 = {
   "underw3_1": b'\x96\x2A',
   "underw3_2": b'\x8E\x15',
   "underw3_3": b'\xA7\x08',
-  "highlight2_1": b'\x7B\x6F',
-  "highlight2_2": b'\x31\x6A'
+  "underw4_1": b'\x9C\x67',
+  "underw4_2": b'\x18\x53',
+  "underw4_3": b'\x52\x3A',
+  "underw4_4": b'\x8C\x21'
 }
 humanDict1 = {**humanDict1, **sharedDict.copy()}
 humanDict1 = {**humanDict1, **humanSharedDict.copy()}
@@ -104,8 +105,10 @@ humanDict2 = {
   "underw3_1": b'\xCF\x4E',
   "underw3_2": b'\x4B\x42',
   "underw3_3": b'\x25\x1D',
-  "highlight2_1": b'\xBB\x6C',
-  "highlight2_2": b'\xB1\x68'
+  "underw4_1": b'\x99\x73',
+  "underw4_2": b'\x14\x63',
+  "underw4_3": b'\x4E\x4A',
+  "underw4_4": b'\x88\x31'
 }
 humanDict2 = {**humanDict2, **sharedDict.copy()}
 humanDict2 = {**humanDict2, **humanSharedDict.copy()}
@@ -132,27 +135,29 @@ humanDict3 = {
   "underw3_1": b'\xF4\x59',
   "underw3_2": b'\x4E\x41',
   "underw3_3": b'\xC7\x24',
-  "highlight2_1": b'\x70\x6F',
-  "highlight2_2": b'\x2B\x6A'
+  "underw4_1": b'\x3F\x67',
+  "underw4_2": b'\x9B\x52',
+  "underw4_3": b'\x95\x31',
+  "underw4_4": b'\xEC\x1C'
 }
 humanDict3 = {**humanDict3, **sharedDict.copy()}
 humanDict3 = {**humanDict3, **humanSharedDict.copy()}
 
 humanDict4 = {
-  "hair2_1": b'\x2B\x6F',
-  "hair2_2": b'\xC0\x55',
-  "hair3_1": b'\xEC\x7F',
-  "hair3_2": b'\xE0\x7E',
-  "hair3_3": b'\x80\x4D',
+  "hair2_1": b'\xDC\x71',
+  "hair2_2": b'\xAE\x58',
+  "hair3_1": b'\x3F\x7E',
+  "hair3_2": b'\xB7\x7C',
+  "hair3_3": b'\xAE\x58',
   "skin2_1": b'\xF5\x31',
   "skin2_2": b'\x30\x15',
   "skin3_1": b'\xF5\x31',
   "skin3_2": b'\x93\x25',
   "skin3_3": b'\xCC\x08',
-  "skin4_1": b'\xF5\x31',
-  "skin4_2": b'\x93\x25',
-  "skin4_3": b'\x30\x15',
-  "skin4_4": b'\xCC\x08',
+  "skin4_1": b'\xF6\x31',
+  "skin4_2": b'\x72\x21',
+  "skin4_3": b'\x0F\x11',
+  "skin4_4": b'\x8A\x00',
   "trim4_1": b'\x5F\x6F',
   "trim4_2": b'\xBC\x5A',
   "trim4_3": b'\x36\x46',
@@ -160,8 +165,10 @@ humanDict4 = {
   "underw3_1": b'\x39\x67',
   "underw3_2": b'\x94\x52',
   "underw3_3": b'\x6B\x2D',
-  "highlight2_1": b'\x7B\x1B',
-  "highlight2_2": b'\x3A\x16'
+  "underw4_1": b'\x9C\x73',
+  "underw4_2": b'\x18\x63',
+  "underw4_3": b'\x52\x4A',
+  "underw4_4": b'\x8C\x31'
 }
 humanDict4 = {**humanDict4, **sharedDict.copy()}
 humanDict4 = {**humanDict4, **humanSharedDict.copy()}
@@ -188,8 +195,15 @@ ghostDict1 = {
   "underw3_1": b'\x56\x29',
   "underw3_2": b'\xAE\x14',
   "underw3_3": b'\x47\x08',
+  "underw4_1": b'\x9C\x67',
+  "underw4_2": b'\x18\x53',
+  "underw4_3": b'\x52\x3A',
+  "underw4_4": b'\x8C\x21',
   "highlight2_1": b'\x7B\x6F',
-  "highlight2_2": b'\x31\x6A'
+  "highlight2_2": b'\xEF\x3D',
+  "highlight3_1": b'\xFF\x7F',
+  "highlight3_2": b'\x94\x52',
+  "highlight3_3": b'\xCE\x39'
 }
 ghostDict1 = {**ghostDict1, **sharedDict.copy()}
 ghostDict1 = {**ghostDict1, **ghostSharedDict.copy()}
@@ -216,8 +230,15 @@ ghostDict2 = {
   "underw3_1": b'\xCF\x4E',
   "underw3_2": b'\x4B\x42',
   "underw3_3": b'\x25\x1D',
-  "highlight2_1": b'\xBB\x6C',
-  "highlight2_2": b'\xB1\x68'
+  "underw4_1": b'\x99\x73',
+  "underw4_2": b'\x14\x63',
+  "underw4_3": b'\x4E\x4A',
+  "underw4_4": b'\x88\x31',
+  "highlight2_1": b'\x2B\x6F',
+  "highlight2_2": b'\xC0\x55',
+  "highlight3_1": b'\xEC\x7F',
+  "highlight3_2": b'\xE0\x7E',
+  "highlight3_3": b'\x80\x4D'
 }
 ghostDict2 = {**ghostDict2, **sharedDict.copy()}
 ghostDict2 = {**ghostDict2, **ghostSharedDict.copy()}
@@ -244,8 +265,15 @@ ghostDict3 = {
   "underw3_1": b'\x96\x2A',
   "underw3_2": b'\x8E\x15',
   "underw3_3": b'\xA7\x08',
-  "highlight2_1": b'\x70\x6F',
-  "highlight2_2": b'\x2B\x6A'
+  "underw4_1": b'\x3F\x67',
+  "underw4_2": b'\x9B\x52',
+  "underw4_3": b'\x95\x31',
+  "underw4_4": b'\xEC\x1C',
+  "highlight2_1": b'\x7B\x1B',
+  "highlight2_2": b'\x3A\x16',
+  "highlight3_1": b'\xFF\x33',
+  "highlight3_2": b'\x9E\x02',
+  "highlight3_3": b'\x93\x01'
 }
 ghostDict3 = {**ghostDict3, **sharedDict.copy()}
 ghostDict3 = {**ghostDict3, **ghostSharedDict.copy()}
@@ -272,46 +300,100 @@ ghostDict4 = {
   "underw3_1": b'\x6F\x4E',
   "underw3_2": b'\xA9\x35',
   "underw3_3": b'\x04\x21',
-  "highlight2_1": b'\x7B\x1B',
-  "highlight2_2": b'\x3A\x16'
+  "underw4_1": b'\x9C\x73',
+  "underw4_2": b'\x18\x63',
+  "underw4_3": b'\x52\x4A',
+  "underw4_4": b'\x8C\x31',
+  "highlight2_1": b'\x71\x47',
+  "highlight2_2": b'\x49\x26',
+  "highlight3_1": b'\xB3\x4F',
+  "highlight3_2": b'\x0B\x2F',
+  "highlight3_3": b'\x07\x1E'
 }
 ghostDict4 = {**ghostDict4, **sharedDict.copy()}
 ghostDict4 = {**ghostDict4, **ghostSharedDict.copy()}
 
-enemyDict1 = {}
+enemyDict1 = {
+  "highlight2_1": b'\x7B\x1B',
+  "highlight2_2": b'\x3A\x16',
+  "highlight3_1": b'\xFF\x33',
+  "highlight3_2": b'\x9E\x02',
+  "highlight3_3": b'\x93\x01'
+}
 enemyDict1 = {**enemyDict1, **humanDict1.copy()}
 enemyDict1 = {**enemyDict1, **enemySharedDict.copy()}
 
-enemyDict2 = {}
+enemyDict2 = {
+  "highlight2_1": b'\x2B\x6F',
+  "highlight2_2": b'\xC0\x55',
+  "highlight3_1": b'\xEC\x7F',
+  "highlight3_2": b'\xE0\x7E',
+  "highlight3_3": b'\x80\x4D'
+}
 enemyDict2 = {**enemyDict2, **humanDict2.copy()}
 enemyDict2 = {**enemyDict2, **enemySharedDict.copy()}
 
-enemyDict3 = {}
+enemyDict3 = {
+  "highlight2_1": b'\x7B\x1B',
+  "highlight2_2": b'\x3A\x16',
+  "highlight3_1": b'\xFF\x33',
+  "highlight3_2": b'\x9E\x02',
+  "highlight3_3": b'\x93\x01'
+}
 enemyDict3 = {**enemyDict3, **humanDict3.copy()}
 enemyDict3 = {**enemyDict3, **enemySharedDict.copy()}
 
-enemyDict4 = {}
+enemyDict4 = {
+  "highlight2_1": b'\x2B\x6F',
+  "highlight2_2": b'\xC0\x55',
+  "highlight3_1": b'\xEC\x7F',
+  "highlight3_2": b'\xE0\x7E',
+  "highlight3_3": b'\x80\x4D'
+}
 enemyDict4 = {**enemyDict4, **humanDict4.copy()}
 enemyDict4 = {**enemyDict4, **enemySharedDict.copy()}
 
-neutralDict1 = {}
+neutralDict1 = {
+  "highlight2_1": b'\x5F\x29',
+  "highlight2_2": b'\x55\x08',
+  "highlight3_1": b'\x9F\x31',
+  "highlight3_2": b'\x9A\x10',
+  "highlight3_3": b'\x53\x08'
+}
 neutralDict1 = {**neutralDict1, **humanDict1.copy()}
 neutralDict1 = {**neutralDict1, **neutralSharedDict.copy()}
 
-neutralDict2 = {}
+neutralDict2 = {
+  "highlight2_1": b'\x7B\x1B',
+  "highlight2_2": b'\x3A\x16',
+  "highlight3_1": b'\xFF\x33',
+  "highlight3_2": b'\x9E\x02',
+  "highlight3_3": b'\x93\x01'
+}
 neutralDict2 = {**neutralDict2, **humanDict2.copy()}
 neutralDict2 = {**neutralDict2, **neutralSharedDict.copy()}
 
-neutralDict3 = {}
+neutralDict3 = {
+  "highlight2_1": b'\x5F\x29',
+  "highlight2_2": b'\x55\x08',
+  "highlight3_1": b'\x9F\x31',
+  "highlight3_2": b'\x9A\x10',
+  "highlight3_3": b'\x53\x08'
+}
 neutralDict3 = {**neutralDict3, **humanDict3.copy()}
 neutralDict3 = {**neutralDict3, **neutralSharedDict.copy()}
 
-neutralDict4 = {}
+neutralDict4 = {
+  "highlight2_1": b'\x7B\x1B',
+  "highlight2_2": b'\x3A\x16',
+  "highlight3_1": b'\xFF\x33',
+  "highlight3_2": b'\x9E\x02',
+  "highlight3_3": b'\x93\x01'
+}
 neutralDict4 = {**neutralDict4, **humanDict4.copy()}
 neutralDict4 = {**neutralDict4, **neutralSharedDict.copy()}
 
 miloDict = {
-  "white": b'\xFF\x7F',
   "skin4_1": b'\xFF\x6B',
   "skin4_2": b'\x1F\x4B',
   "skin4_3": b'\x18\x2A',
@@ -348,7 +430,6 @@ miloDict = {
 miloDict = {**miloDict, **sharedDict.copy()}
 
 leonaDict = {
-  "white": b'\xFF\x7F',
   "skin2_1": b'\xFF\x6B',
   "skin2_2": b'\x1F\x4B',
   "skin3_1": b'\xFF\x6B',

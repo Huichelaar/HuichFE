@@ -24,6 +24,7 @@ EndAnim
 #include "ArcMoU/MagicInstaller.event"
 ALIGN 4; ArcMoUAnims:
 MagicAnim(ArcMoUMagicAnim)
+UnarmedAnim(ArcMoUMagicAnim)
 EndAnim
 
 #include "AssasU/pal.event"
@@ -43,18 +44,24 @@ MonsterAnim(BaelUMonsterAnim)
 EndAnim
 
 #include "BersF/pal.event"
-#define BersFUnarmedAnim 51
+#define BersFAxeAnim 51
+#include "BersF/3. Axe/AxeInstaller.event"
+#define BersFHandaxeAnim 59
+#include "BersF/4. Handaxe/HandaxeInstaller.event"
+#define BersFUnarmedAnim 67
 #include "BersF/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; BersFAnims:
+AxeAnim(BersFAxeAnim)
+HandaxeAnim(BersFHandaxeAnim)
 UnarmedAnim(BersFUnarmedAnim)
 EndAnim
 
 #include "BersM/pal.event"
-#define BersMAxeAnim 59
+#define BersMAxeAnim 75
 #include "BersM/3. Axe/AxeInstaller.event"
-#define BersMHandaxeAnim 67
+#define BersMHandaxeAnim 83
 #include "BersM/4. Handaxe/HandaxeInstaller.event"
-#define BersMUnarmedAnim 75
+#define BersMUnarmedAnim 91
 #include "BersM/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; BersMAnims:
 AxeAnim(BersMAxeAnim)
@@ -63,38 +70,44 @@ UnarmedAnim(BersMUnarmedAnim)
 EndAnim
 
 #include "BerT3F/pal.event"
-#define BerT3FUnarmedAnim 83
+#define BerT3FUnarmedAnim 99
 #include "BerT3F/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; BerT3FAnims:
 UnarmedAnim(BerT3FUnarmedAnim)
 EndAnim
 
 #include "BerT3M/pal.event"
-#define BerT3MUnarmedAnim 91
+#define BerT3MUnarmedAnim 107
 #include "BerT3M/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; BerT3MAnims:
 UnarmedAnim(BerT3MUnarmedAnim)
 EndAnim
 
 #include "BishoF/pal.event"
-#define BishoFUnarmedAnim 99
+#define BishoFMagicAnim 115
+#include "BishoF/6. Magic/MagicInstaller.event"
+#define BishoFStaffAnim 123
+#include "BishoF/7. Staff/StaffInstaller.event"
+#define BishoFUnarmedAnim 131
 #include "BishoF/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; BishoFAnims:
+MagicAnim(BishoFMagicAnim)
+StaffAnim(BishoFStaffAnim)
 UnarmedAnim(BishoFUnarmedAnim)
 EndAnim
 
 #include "BishoM/pal.event"
-#define BishoMUnarmedAnim 107
+#define BishoMUnarmedAnim 139
 #include "BishoM/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; BishoMAnims:
 UnarmedAnim(BishoMUnarmedAnim)
 EndAnim
 
-#define BonwaUSwordAnim 115
+#define BonwaUSwordAnim 147
 #include "BonwaU/SwordInstaller.event"
-#define BonwaUUnarmedAnim 116
+#define BonwaUUnarmedAnim 148
 #include "BonwaU/UnarmedInstaller.event"
-#define BonwaULanceAnim 117
+#define BonwaULanceAnim 149
 #include "BonwaU/LanceInstaller.event"
 ALIGN 4; BonwaUAnims:
 SwordAnim(BonwaUSwordAnim)
@@ -102,9 +115,9 @@ UnarmedAnim(BonwaUUnarmedAnim)
 LanceAnim(BonwaULanceAnim)
 EndAnim
 
-#define BowalUBowAnim 118
+#define BowalUBowAnim 150
 #include "BowalU/BowInstaller.event"
-#define BowalUUnarmedAnim 119
+#define BowalUUnarmedAnim 151
 #include "BowalU/UnarmedInstaller.event"
 ALIGN 4; BowalUAnims:
 BowAnim(BowalUBowAnim)
@@ -112,18 +125,18 @@ UnarmedAnim(BowalUUnarmedAnim)
 EndAnim
 
 #include "BowKnU/pal.event"
-#define BowKnUUnarmedAnim 120
+#define BowKnUUnarmedAnim 152
 #include "BowKnU/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; BowKnUAnims:
 UnarmedAnim(BowKnUUnarmedAnim)
 EndAnim
 
 #include "BrigF/pal.event"
-#define BrigFAxeAnim 128
+#define BrigFAxeAnim 160
 #include "BrigF/3. Axe/AxeInstaller.event"
-#define BrigFHandaxeAnim 136
+#define BrigFHandaxeAnim 168
 #include "BrigF/4. Handaxe/HandaxeInstaller.event"
-#define BrigFUnarmedAnim 144
+#define BrigFUnarmedAnim 176
 #include "BrigF/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; BrigFAnims:
 AxeAnim(BrigFAxeAnim)
@@ -132,11 +145,11 @@ UnarmedAnim(BrigFUnarmedAnim)
 EndAnim
 
 #include "BrigM/pal.event"
-#define BrigMAxeAnim 152
+#define BrigMAxeAnim 184
 #include "BrigM/AxeInstaller.event"
-#define BrigMHandaxeAnim 160
+#define BrigMHandaxeAnim 192
 #include "BrigM/HandaxeInstaller.event"
-#define BrigMUnarmedAnim 168
+#define BrigMUnarmedAnim 200
 #include "BrigM/UnarmedInstaller.event"
 ALIGN 4; BrigMAnims:
 AxeAnim(BrigMAxeAnim)
@@ -145,11 +158,11 @@ UnarmedAnim(BrigMUnarmedAnim)
 EndAnim
 
 #include "CavalF/pal.event"
-#define CavalFSwordAnim 176
+#define CavalFSwordAnim 208
 #include "CavalF/1. Sword/SwordInstaller.event"
-#define CavalFLanceAnim 184
+#define CavalFLanceAnim 216
 #include "CavalF/2. Lance/LanceInstaller.event"
-#define CavalFUnarmedAnim 192
+#define CavalFUnarmedAnim 224
 #include "CavalF/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; CavalFAnims:
 SwordAnim(CavalFSwordAnim)
@@ -158,11 +171,11 @@ UnarmedAnim(CavalFUnarmedAnim)
 EndAnim
 
 #include "CavalM/pal.event"
-#define CavalMSwordAnim 200
+#define CavalMSwordAnim 232
 #include "CavalM/1. Sword/SwordInstaller.event"
-#define CavalMLanceAnim 208
+#define CavalMLanceAnim 240
 #include "CavalM/2. Lance/LanceInstaller.event"
-#define CavalMUnarmedAnim 216
+#define CavalMUnarmedAnim 248
 #include "CavalM/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; CavalMAnims:
 SwordAnim(CavalMSwordAnim)
@@ -171,24 +184,24 @@ UnarmedAnim(CavalMUnarmedAnim)
 EndAnim
 
 #include "ConjuF/pal.event"
-#define ConjuFUnarmedAnim 224
+#define ConjuFUnarmedAnim 256
 #include "ConjuF/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; ConjuFAnims:
 UnarmedAnim(ConjuFUnarmedAnim)
 EndAnim
 
 #include "ConT3F/pal.event"
-#define ConT3FUnarmedAnim 232
+#define ConT3FUnarmedAnim 264
 #include "ConT3F/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; ConT3FAnims:
 UnarmedAnim(ConT3FUnarmedAnim)
 EndAnim
 
-#define CycloUAxeAnim 240
+#define CycloUAxeAnim 272
 #include "CycloU/AxeInstaller.event"
-#define CycloUUnarmedAnim 241
+#define CycloUUnarmedAnim 273
 #include "CycloU/UnarmedInstaller.event"
-#define CycloUHandaxeAnim 242
+#define CycloUHandaxeAnim 274
 #include "CycloU/HandaxeInstaller.event"
 ALIGN 4; CycloUAnims:
 AxeAnim(CycloUAxeAnim)
@@ -197,22 +210,23 @@ HandaxeAnim(CycloUHandaxeAnim)
 EndAnim
 
 #include "DaDruU/pal.event"
-#define DaDruUUnarmedAnim 243
+#define DaDruUUnarmedAnim 275
 #include "DaDruU/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; DaDruUAnims:
 UnarmedAnim(DaDruUUnarmedAnim)
 EndAnim
 
 #include "DanceU/pal.event"
-#define DanceUMagicAnim 251
+#define DanceUMagicAnim 283
 #include "DanceU/MagicInstaller.event"
 ALIGN 4; DanceUAnims:
 MagicAnim(DanceUMagicAnim)
+UnarmedAnim(DanceUMagicAnim)
 EndAnim
 
-#define DeathULanceAnim 259
+#define DeathULanceAnim 291
 #include "DeathU/LanceInstaller.event"
-#define DeathUUnarmedAnim 260
+#define DeathUUnarmedAnim 292
 #include "DeathU/UnarmedInstaller.event"
 ALIGN 4; DeathUAnims:
 LanceAnim(DeathULanceAnim)
@@ -220,84 +234,86 @@ UnarmedAnim(DeathUUnarmedAnim)
 EndAnim
 
 #include "DraKnU/pal.event"
-#define DraKnUUnarmedAnim 261
+#define DraKnUUnarmedAnim 293
 #include "DraKnU/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; DraKnUAnims:
 UnarmedAnim(DraKnUUnarmedAnim)
 EndAnim
 
 #include "DraLoU/pal.event"
-#define DraLoUUnarmedAnim 269
+#define DraLoUUnarmedAnim 301
 #include "DraLoU/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; DraLoUAnims:
 UnarmedAnim(DraLoUUnarmedAnim)
 EndAnim
 
 #include "DreFiF/pal.event"
-#define DreFiFUnarmedAnim 277
+#define DreFiFUnarmedAnim 309
 #include "DreFiF/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; DreFiFAnims:
 UnarmedAnim(DreFiFUnarmedAnim)
 EndAnim
 
 #include "DreFiM/pal.event"
-#define DreFiMUnarmedAnim 285
+#define DreFiMUnarmedAnim 317
 #include "DreFiM/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; DreFiMAnims:
 UnarmedAnim(DreFiMUnarmedAnim)
 EndAnim
 
 #include "DruidF/pal.event"
-#define DruidFMagicAnim 293
+#define DruidFMagicAnim 325
 #include "DruidF/MagicInstaller.event"
-#define DruidFStaffAnim 301
+#define DruidFStaffAnim 333
 #include "DruidF/StaffInstaller.event"
 ALIGN 4; DruidFAnims:
 MagicAnim(DruidFMagicAnim)
 StaffAnim(DruidFStaffAnim)
+UnarmedAnim(DruidFMagicAnim)
 EndAnim
 
 #include "DruidM/pal.event"
-#define DruidMMagicAnim 309
+#define DruidMMagicAnim 341
 #include "DruidM/MagicInstaller.event"
-#define DruidMStaffAnim 317
+#define DruidMStaffAnim 349
 #include "DruidM/StaffInstaller.event"
 ALIGN 4; DruidMAnims:
 MagicAnim(DruidMMagicAnim)
 StaffAnim(DruidMStaffAnim)
+UnarmedAnim(DruidMMagicAnim)
 EndAnim
 
-#define DrZomUMonsterAnim 325
+#define DrZomUMonsterAnim 357
 #include "DrZomU/MonsterInstaller.event"
 ALIGN 4; DrZomUAnims:
 MonsterAnim(DrZomUMonsterAnim)
 EndAnim
 
-#define EBaelUMonsterAnim 326
+#define EBaelUMonsterAnim 358
 #include "EBaelU/MonsterInstaller.event"
 ALIGN 4; EBaelUAnims:
 MonsterAnim(EBaelUMonsterAnim)
 EndAnim
 
-#define EntomUMonsterAnim 327
+#define EntomUMonsterAnim 359
 #include "EntomU/MonsterInstaller.event"
 ALIGN 4; EntomUAnims:
 MonsterAnim(EntomUMonsterAnim)
 EndAnim
 
 #include "ExecuU/pal.event"
-#define ExecuUUnarmedAnim 328
+#define ExecuUUnarmedAnim 360
 #include "ExecuU/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; ExecuUAnims:
 UnarmedAnim(ExecuUUnarmedAnim)
 EndAnim
 
 #include "FalKnU/pal.event"
-#define FalKnUSwordAnim 336
+#define FalKnUSwordAnim 368
 #include "FalKnU/SwordInstaller.event"
-#define FalKnULanceAnim 344
+#define FalKnULanceAnim 376
 #include "FalKnU/LanceInstaller.event"
-#define FalKnUUnarmedAnim 352
+#define FalKnUUnarmedAnim 384
 #include "FalKnU/UnarmedInstaller.event"
 ALIGN 4; FalKnUAnims:
 SwordAnim(FalKnUSwordAnim)
@@ -306,18 +322,18 @@ UnarmedAnim(FalKnUUnarmedAnim)
 EndAnim
 
 #include "FalT3U/pal.event"
-#define FalT3UUnarmedAnim 360
+#define FalT3UUnarmedAnim 392
 #include "FalT3U/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; FalT3UAnims:
 UnarmedAnim(FalT3UUnarmedAnim)
 EndAnim
 
 #include "FightF/pal.event"
-#define FightFAxeAnim 368
+#define FightFAxeAnim 400
 #include "FightF/3. Axe/AxeInstaller.event"
-#define FightFHandaxeAnim 376
+#define FightFHandaxeAnim 408
 #include "FightF/4. Handaxe/HandaxeInstaller.event"
-#define FightFUnarmedAnim 384
+#define FightFUnarmedAnim 416
 #include "FightF/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; FightFAnims:
 AxeAnim(FightFAxeAnim)
@@ -326,11 +342,11 @@ UnarmedAnim(FightFUnarmedAnim)
 EndAnim
 
 #include "FightM/pal.event"
-#define FightMAxeAnim 392
+#define FightMAxeAnim 424
 #include "FightM/AxeInstaller.event"
-#define FightMHandaxeAnim 400
+#define FightMHandaxeAnim 432
 #include "FightM/HandaxeInstaller.event"
-#define FightMUnarmedAnim 408
+#define FightMUnarmedAnim 440
 #include "FightM/UnarmedInstaller.event"
 ALIGN 4; FightMAnims:
 AxeAnim(FightMAxeAnim)
@@ -338,9 +354,9 @@ HandaxeAnim(FightMHandaxeAnim)
 UnarmedAnim(FightMUnarmedAnim)
 EndAnim
 
-#define GargoULanceAnim 416
+#define GargoULanceAnim 448
 #include "GargoU/LanceInstaller.event"
-#define GargoUUnarmedAnim 417
+#define GargoUUnarmedAnim 449
 #include "GargoU/UnarmedInstaller.event"
 ALIGN 4; GargoUAnims:
 LanceAnim(GargoULanceAnim)
@@ -348,15 +364,15 @@ UnarmedAnim(GargoUUnarmedAnim)
 EndAnim
 
 #include "GenerU/pal.event"
-#define GenerUSwordAnim 418
+#define GenerUSwordAnim 450
 #include "GenerU/SwordInstaller.event"
-#define GenerULanceAnim 426
+#define GenerULanceAnim 458
 #include "GenerU/LanceInstaller.event"
-#define GenerUAxeAnim 434
+#define GenerUAxeAnim 466
 #include "GenerU/AxeInstaller.event"
-#define GenerUHandaxeAnim 442
+#define GenerUHandaxeAnim 474
 #include "GenerU/HandaxeInstaller.event"
-#define GenerUUnarmedAnim 450
+#define GenerUUnarmedAnim 482
 #include "GenerU/UnarmedInstaller.event"
 ALIGN 4; GenerUAnims:
 SwordAnim(GenerUSwordAnim)
@@ -367,28 +383,29 @@ UnarmedAnim(GenerUUnarmedAnim)
 EndAnim
 
 #include "GolKnU/pal.event"
-#define GolKnUUnarmedAnim 458
+#define GolKnUUnarmedAnim 490
 #include "GolKnU/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; GolKnUAnims:
 UnarmedAnim(GolKnUUnarmedAnim)
 EndAnim
 
-#define GorgoUMagicAnim 466
+#define GorgoUMagicAnim 498
 #include "GorgoU/MagicInstaller.event"
 ALIGN 4; GorgoUAnims:
 MagicAnim(GorgoUMagicAnim)
+UnarmedAnim(GorgoUMagicAnim)
 EndAnim
 
 #include "GreKnU/pal.event"
-#define GreKnUSwordAnim 467
+#define GreKnUSwordAnim 499
 #include "GreKnU/SwordInstaller.event"
-#define GreKnULanceAnim 475
+#define GreKnULanceAnim 507
 #include "GreKnU/LanceInstaller.event"
-#define GreKnUAxeAnim 483
+#define GreKnUAxeAnim 515
 #include "GreKnU/AxeInstaller.event"
-#define GreKnUHandaxeAnim 491
+#define GreKnUHandaxeAnim 523
 #include "GreKnU/HandaxeInstaller.event"
-#define GreKnUUnarmedAnim 499
+#define GreKnUUnarmedAnim 531
 #include "GreKnU/UnarmedInstaller.event"
 ALIGN 4; GreKnUAnims:
 SwordAnim(GreKnUSwordAnim)
@@ -398,76 +415,76 @@ HandaxeAnim(GreKnUHandaxeAnim)
 UnarmedAnim(GreKnUUnarmedAnim)
 EndAnim
 
-#define GwyllUMonsterAnim 507
+#define GwyllUMonsterAnim 539
 #include "GwyllU/MonsterInstaller.event"
 ALIGN 4; GwyllUAnims:
 MonsterAnim(GwyllUMonsterAnim)
 EndAnim
 
 #include "HarbiU/pal.event"
-#define HarbiUUnarmedAnim 508
+#define HarbiUUnarmedAnim 540
 #include "HarbiU/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; HarbiUAnims:
 UnarmedAnim(HarbiUUnarmedAnim)
 EndAnim
 
 #include "HarT2F/pal.event"
-#define HarT2FUnarmedAnim 516
+#define HarT2FUnarmedAnim 548
 #include "HarT2F/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; HarT2FAnims:
 UnarmedAnim(HarT2FUnarmedAnim)
 EndAnim
 
 #include "HarT2M/pal.event"
-#define HarT2MUnarmedAnim 524
+#define HarT2MUnarmedAnim 556
 #include "HarT2M/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; HarT2MAnims:
 UnarmedAnim(HarT2MUnarmedAnim)
 EndAnim
 
 #include "HeroF/pal.event"
-#define HeroFUnarmedAnim 532
+#define HeroFUnarmedAnim 564
 #include "HeroF/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; HeroFAnims:
 UnarmedAnim(HeroFUnarmedAnim)
 EndAnim
 
 #include "HeroM/pal.event"
-#define HeroMUnarmedAnim 540
+#define HeroMUnarmedAnim 572
 #include "HeroM/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; HeroMAnims:
 UnarmedAnim(HeroMUnarmedAnim)
 EndAnim
 
 #include "HeWT3F/pal.event"
-#define HeWT3FUnarmedAnim 548
+#define HeWT3FUnarmedAnim 580
 #include "HeWT3F/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; HeWT3FAnims:
 UnarmedAnim(HeWT3FUnarmedAnim)
 EndAnim
 
 #include "HeWT3M/pal.event"
-#define HeWT3MUnarmedAnim 556
+#define HeWT3MUnarmedAnim 588
 #include "HeWT3M/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; HeWT3MAnims:
 UnarmedAnim(HeWT3MUnarmedAnim)
 EndAnim
 
 #include "KnighU/pal.event"
-#define KnighULanceAnim 564
+#define KnighULanceAnim 596
 #include "KnighU/2. Lance/LanceInstaller.event"
-#define KnighUUnarmedAnim 572
+#define KnighUUnarmedAnim 604
 #include "KnighU/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; KnighUAnims:
 LanceAnim(KnighULanceAnim)
 UnarmedAnim(KnighUUnarmedAnim)
 EndAnim
 
-#define MaeldUAxeAnim 580
+#define MaeldUAxeAnim 612
 #include "MaeldU/AxeInstaller.event"
-#define MaeldUUnarmedAnim 581
+#define MaeldUUnarmedAnim 613
 #include "MaeldU/UnarmedInstaller.event"
-#define MaeldUHandaxeAnim 582
+#define MaeldUHandaxeAnim 614
 #include "MaeldU/HandaxeInstaller.event"
 ALIGN 4; MaeldUAnims:
 AxeAnim(MaeldUAxeAnim)
@@ -476,70 +493,74 @@ HandaxeAnim(MaeldUHandaxeAnim)
 EndAnim
 
 #include "MageF/pal.event"
-#define MageFMagicAnim 583
+#define MageFMagicAnim 615
 #include "MageF/MagicInstaller.event"
 ALIGN 4; MageFAnims:
 MagicAnim(MageFMagicAnim)
+UnarmedAnim(MageFMagicAnim)
 EndAnim
 
 #include "MageM/pal.event"
-#define MageMMagicAnim 591
+#define MageMMagicAnim 623
 #include "MageM/MagicInstaller.event"
 ALIGN 4; MageMAnims:
 MagicAnim(MageMMagicAnim)
+UnarmedAnim(MageMMagicAnim)
 EndAnim
 
 #include "MagKnF/pal.event"
-#define MagKnFStaffAnim 599
+#define MagKnFStaffAnim 631
 #include "MagKnF/StaffInstaller.event"
-#define MagKnFMagicAnim 607
+#define MagKnFMagicAnim 639
 #include "MagKnF/MagicInstaller.event"
 ALIGN 4; MagKnFAnims:
 StaffAnim(MagKnFStaffAnim)
 MagicAnim(MagKnFMagicAnim)
+UnarmedAnim(MagKnFMagicAnim)
 EndAnim
 
 #include "MagKnM/pal.event"
-#define MagKnMStaffAnim 615
+#define MagKnMStaffAnim 647
 #include "MagKnM/StaffInstaller.event"
-#define MagKnMMagicAnim 623
+#define MagKnMMagicAnim 655
 #include "MagKnM/MagicInstaller.event"
 ALIGN 4; MagKnMAnims:
 StaffAnim(MagKnMStaffAnim)
 MagicAnim(MagKnMMagicAnim)
+UnarmedAnim(MagKnMMagicAnim)
 EndAnim
 
 #include "MarksF/pal.event"
-#define MarksFUnarmedAnim 631
+#define MarksFUnarmedAnim 663
 #include "MarksF/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; MarksFAnims:
 UnarmedAnim(MarksFUnarmedAnim)
 EndAnim
 
 #include "MarksM/pal.event"
-#define MarksMUnarmedAnim 639
+#define MarksMUnarmedAnim 671
 #include "MarksM/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; MarksMAnims:
 UnarmedAnim(MarksMUnarmedAnim)
 EndAnim
 
 #include "MarshU/pal.event"
-#define MarshUUnarmedAnim 647
+#define MarshUUnarmedAnim 679
 #include "MarshU/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; MarshUAnims:
 UnarmedAnim(MarshUUnarmedAnim)
 EndAnim
 
-#define MauthUMonsterAnim 655
+#define MauthUMonsterAnim 687
 #include "MauthU/MonsterInstaller.event"
 ALIGN 4; MauthUAnims:
 MonsterAnim(MauthUMonsterAnim)
 EndAnim
 
 #include "MercF/pal.event"
-#define MercFSwordAnim 656
+#define MercFSwordAnim 688
 #include "MercF/1. Sword/SwordInstaller.event"
-#define MercFUnarmedAnim 664
+#define MercFUnarmedAnim 696
 #include "MercF/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; MercFAnims:
 SwordAnim(MercFSwordAnim)
@@ -547,13 +568,13 @@ UnarmedAnim(MercFUnarmedAnim)
 EndAnim
 
 #include "MercM/pal.event"
-#define MercMSwordAnim 672
+#define MercMSwordAnim 704
 #include "MercM/1. Sword/SwordInstaller.event"
-#define MercMAxeAnim 680
+#define MercMAxeAnim 712
 #include "MercM/3. Axe/AxeInstaller.event"
-#define MercMHandaxeAnim 688
+#define MercMHandaxeAnim 720
 #include "MercM/4. Handaxe/HandaxeInstaller.event"
-#define MercMUnarmedAnim 696
+#define MercMUnarmedAnim 728
 #include "MercM/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; MercMAnims:
 SwordAnim(MercMSwordAnim)
@@ -563,36 +584,39 @@ UnarmedAnim(MercMUnarmedAnim)
 EndAnim
 
 #include "MKnT3U/pal.event"
-#define MKnT3UUnarmedAnim 704
+#define MKnT3UUnarmedAnim 736
 #include "MKnT3U/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; MKnT3UAnims:
 UnarmedAnim(MKnT3UUnarmedAnim)
 EndAnim
 
-#define MogalUMagicAnim 712
+#define MogalUMagicAnim 744
 #include "MogalU/MagicInstaller.event"
 ALIGN 4; MogalUAnims:
 MagicAnim(MogalUMagicAnim)
+UnarmedAnim(MogalUMagicAnim)
 EndAnim
 
 #include "MonkF/pal.event"
-#define MonkFMagicAnim 713
+#define MonkFMagicAnim 745
 #include "MonkF/6. Magic/MagicInstaller.event"
 ALIGN 4; MonkFAnims:
 MagicAnim(MonkFMagicAnim)
+UnarmedAnim(MonkFMagicAnim)
 EndAnim
 
 #include "MonkM/pal.event"
-#define MonkMMagicAnim 721
+#define MonkMMagicAnim 753
 #include "MonkM/6. Magic/MagicInstaller.event"
 ALIGN 4; MonkMAnims:
 MagicAnim(MonkMMagicAnim)
+UnarmedAnim(MonkMMagicAnim)
 EndAnim
 
 #include "MyrmF/pal.event"
-#define MyrmFSwordAnim 729
+#define MyrmFSwordAnim 761
 #include "MyrmF/SwordInstaller.event"
-#define MyrmFUnarmedAnim 737
+#define MyrmFUnarmedAnim 769
 #include "MyrmF/UnarmedInstaller.event"
 ALIGN 4; MyrmFAnims:
 SwordAnim(MyrmFSwordAnim)
@@ -600,9 +624,9 @@ UnarmedAnim(MyrmFUnarmedAnim)
 EndAnim
 
 #include "MyrmM/pal.event"
-#define MyrmMSwordAnim 745
+#define MyrmMSwordAnim 777
 #include "MyrmM/SwordInstaller.event"
-#define MyrmMUnarmedAnim 753
+#define MyrmMUnarmedAnim 785
 #include "MyrmM/UnarmedInstaller.event"
 ALIGN 4; MyrmMAnims:
 SwordAnim(MyrmMSwordAnim)
@@ -610,30 +634,30 @@ UnarmedAnim(MyrmMUnarmedAnim)
 EndAnim
 
 #include "NecroU/pal.event"
-#define NecroUUnarmedAnim 761
+#define NecroUUnarmedAnim 793
 #include "NecroU/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; NecroUAnims:
 UnarmedAnim(NecroUUnarmedAnim)
 EndAnim
 
 #include "PaladF/pal.event"
-#define PaladFUnarmedAnim 769
+#define PaladFUnarmedAnim 801
 #include "PaladF/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; PaladFAnims:
 UnarmedAnim(PaladFUnarmedAnim)
 EndAnim
 
 #include "PaladM/pal.event"
-#define PaladMUnarmedAnim 777
+#define PaladMUnarmedAnim 809
 #include "PaladM/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; PaladMAnims:
 UnarmedAnim(PaladMUnarmedAnim)
 EndAnim
 
 #include "PegKnU/pal.event"
-#define PegKnULanceAnim 785
+#define PegKnULanceAnim 817
 #include "PegKnU/2. Lance/LanceInstaller.event"
-#define PegKnUUnarmedAnim 793
+#define PegKnUUnarmedAnim 825
 #include "PegKnU/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; PegKnUAnims:
 LanceAnim(PegKnULanceAnim)
@@ -641,11 +665,11 @@ UnarmedAnim(PegKnUUnarmedAnim)
 EndAnim
 
 #include "PhantU/pal.event"
-#define PhantUAxeAnim 801
+#define PhantUAxeAnim 833
 #include "PhantU/3. Axe/AxeInstaller.event"
-#define PhantUHandaxeAnim 809
+#define PhantUHandaxeAnim 841
 #include "PhantU/4. Handaxe/HandaxeInstaller.event"
-#define PhantUUnarmedAnim 817
+#define PhantUUnarmedAnim 849
 #include "PhantU/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; PhantUAnims:
 AxeAnim(PhantUAxeAnim)
@@ -654,11 +678,11 @@ UnarmedAnim(PhantUUnarmedAnim)
 EndAnim
 
 #include "PiratF/pal.event"
-#define PiratFAxeAnim 825
+#define PiratFAxeAnim 857
 #include "PiratF/3. Axe/AxeInstaller.event"
-#define PiratFHandaxeAnim 833
+#define PiratFHandaxeAnim 865
 #include "PiratF/4. Handaxe/HandaxeInstaller.event"
-#define PiratFUnarmedAnim 841
+#define PiratFUnarmedAnim 873
 #include "PiratF/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; PiratFAnims:
 AxeAnim(PiratFAxeAnim)
@@ -667,11 +691,11 @@ UnarmedAnim(PiratFUnarmedAnim)
 EndAnim
 
 #include "PiratM/pal.event"
-#define PiratMAxeAnim 849
+#define PiratMAxeAnim 881
 #include "PiratM/AxeInstaller.event"
-#define PiratMHandaxeAnim 857
+#define PiratMHandaxeAnim 889
 #include "PiratM/HandaxeInstaller.event"
-#define PiratMUnarmedAnim 865
+#define PiratMUnarmedAnim 897
 #include "PiratM/UnarmedInstaller.event"
 ALIGN 4; PiratMAnims:
 AxeAnim(PiratMAxeAnim)
@@ -680,9 +704,9 @@ UnarmedAnim(PiratMUnarmedAnim)
 EndAnim
 
 #include "PriesF/pal.event"
-#define PriesFStaffAnim 873
+#define PriesFStaffAnim 905
 #include "PriesF/7. Staff/StaffInstaller.event"
-#define PriesFUnarmedAnim 881
+#define PriesFUnarmedAnim 913
 #include "PriesF/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; PriesFAnims:
 StaffAnim(PriesFStaffAnim)
@@ -690,9 +714,9 @@ UnarmedAnim(PriesFUnarmedAnim)
 EndAnim
 
 #include "PriesM/pal.event"
-#define PriesMStaffAnim 889
+#define PriesMStaffAnim 921
 #include "PriesM/7. Staff/StaffInstaller.event"
-#define PriesMUnarmedAnim 897
+#define PriesMUnarmedAnim 929
 #include "PriesM/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; PriesMAnims:
 StaffAnim(PriesMStaffAnim)
@@ -700,9 +724,9 @@ UnarmedAnim(PriesMUnarmedAnim)
 EndAnim
 
 #include "RangeF/pal.event"
-#define RangeFBowAnim 905
+#define RangeFBowAnim 937
 #include "RangeF/BowInstaller.event"
-#define RangeFUnarmedAnim 913
+#define RangeFUnarmedAnim 945
 #include "RangeF/UnarmedInstaller.event"
 ALIGN 4; RangeFAnims:
 BowAnim(RangeFBowAnim)
@@ -710,39 +734,39 @@ UnarmedAnim(RangeFUnarmedAnim)
 EndAnim
 
 #include "RangeM/pal.event"
-#define RangeMBowAnim 921
+#define RangeMBowAnim 953
 #include "RangeM/BowInstaller.event"
-#define RangeMUnarmedAnim 929
+#define RangeMUnarmedAnim 961
 #include "RangeM/UnarmedInstaller.event"
 ALIGN 4; RangeMAnims:
 BowAnim(RangeMBowAnim)
 UnarmedAnim(RangeMUnarmedAnim)
 EndAnim
 
-#define RevenUMonsterAnim 937
+#define RevenUMonsterAnim 969
 #include "RevenU/MonsterInstaller.event"
 ALIGN 4; RevenUAnims:
 MonsterAnim(RevenUMonsterAnim)
 EndAnim
 
 #include "RogT3F/pal.event"
-#define RogT3FUnarmedAnim 938
+#define RogT3FUnarmedAnim 970
 #include "RogT3F/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; RogT3FAnims:
 UnarmedAnim(RogT3FUnarmedAnim)
 EndAnim
 
 #include "RogT3M/pal.event"
-#define RogT3MUnarmedAnim 946
+#define RogT3MUnarmedAnim 978
 #include "RogT3M/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; RogT3MAnims:
 UnarmedAnim(RogT3MUnarmedAnim)
 EndAnim
 
 #include "RogueU/pal.event"
-#define RogueUSwordAnim 954
+#define RogueUSwordAnim 986
 #include "RogueU/SwordInstaller.event"
-#define RogueUUnarmedAnim 962
+#define RogueUUnarmedAnim 994
 #include "RogueU/UnarmedInstaller.event"
 ALIGN 4; RogueUAnims:
 SwordAnim(RogueUSwordAnim)
@@ -750,78 +774,82 @@ UnarmedAnim(RogueUUnarmedAnim)
 EndAnim
 
 #include "SageF/pal.event"
-#define SageFMagicAnim 970
+#define SageFMagicAnim 1002
 #include "SageF/MagicInstaller.event"
-#define SageFStaffAnim 978
+#define SageFStaffAnim 1010
 #include "SageF/StaffInstaller.event"
 ALIGN 4; SageFAnims:
 MagicAnim(SageFMagicAnim)
 StaffAnim(SageFStaffAnim)
+UnarmedAnim(SageFMagicAnim)
 EndAnim
 
 #include "SageM/pal.event"
-#define SageMMagicAnim 986
+#define SageMMagicAnim 1018
 #include "SageM/MagicInstaller.event"
-#define SageMStaffAnim 994
+#define SageMStaffAnim 1026
 #include "SageM/StaffInstaller.event"
 ALIGN 4; SageMAnims:
 MagicAnim(SageMMagicAnim)
 StaffAnim(SageMStaffAnim)
+UnarmedAnim(SageMMagicAnim)
 EndAnim
 
 #include "SagT3F/pal.event"
-#define SagT3FUnarmedAnim 1002
+#define SagT3FUnarmedAnim 1034
 #include "SagT3F/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; SagT3FAnims:
 UnarmedAnim(SagT3FUnarmedAnim)
 EndAnim
 
 #include "SagT3M/pal.event"
-#define SagT3MUnarmedAnim 1010
+#define SagT3MUnarmedAnim 1042
 #include "SagT3M/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; SagT3MAnims:
 UnarmedAnim(SagT3MUnarmedAnim)
 EndAnim
 
 #include "SergeU/pal.event"
-#define SergeUUnarmedAnim 1018
+#define SergeUUnarmedAnim 1050
 #include "SergeU/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; SergeUAnims:
 UnarmedAnim(SergeUUnarmedAnim)
 EndAnim
 
 #include "ShamaF/pal.event"
-#define ShamaFMagicAnim 1026
+#define ShamaFMagicAnim 1058
 #include "ShamaF/MagicInstaller.event"
 ALIGN 4; ShamaFAnims:
 MagicAnim(ShamaFMagicAnim)
+UnarmedAnim(ShamaFMagicAnim)
 EndAnim
 
 #include "ShamaM/pal.event"
-#define ShamaMMagicAnim 1034
+#define ShamaMMagicAnim 1066
 #include "ShamaM/MagicInstaller.event"
 ALIGN 4; ShamaMAnims:
 MagicAnim(ShamaMMagicAnim)
+UnarmedAnim(ShamaMMagicAnim)
 EndAnim
 
 #include "SnipeF/pal.event"
-#define SnipeFUnarmedAnim 1042
+#define SnipeFUnarmedAnim 1074
 #include "SnipeF/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; SnipeFAnims:
 UnarmedAnim(SnipeFUnarmedAnim)
 EndAnim
 
 #include "SnipeM/pal.event"
-#define SnipeMUnarmedAnim 1050
+#define SnipeMUnarmedAnim 1082
 #include "SnipeM/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; SnipeMAnims:
 UnarmedAnim(SnipeMUnarmedAnim)
 EndAnim
 
 #include "SoldiU/pal.event"
-#define SoldiULanceAnim 1058
+#define SoldiULanceAnim 1090
 #include "SoldiU/2. Lance/LanceInstaller.event"
-#define SoldiUUnarmedAnim 1066
+#define SoldiUUnarmedAnim 1098
 #include "SoldiU/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; SoldiUAnims:
 LanceAnim(SoldiULanceAnim)
@@ -829,18 +857,19 @@ UnarmedAnim(SoldiUUnarmedAnim)
 EndAnim
 
 #include "SummoU/pal.event"
-#define SummoUMagicAnim 1074
+#define SummoUMagicAnim 1106
 #include "SummoU/MagicInstaller.event"
-#define SummoUStaffAnim 1082
+#define SummoUStaffAnim 1114
 #include "SummoU/StaffInstaller.event"
 ALIGN 4; SummoUAnims:
 MagicAnim(SummoUMagicAnim)
 StaffAnim(SummoUStaffAnim)
+UnarmedAnim(SummoUMagicAnim)
 EndAnim
 
-#define SupplFLanceAnim 1090
+#define SupplFLanceAnim 1122
 #include "SupplF/2. Lance/LanceInstaller.event"
-#define SupplFUnarmedAnim 1091
+#define SupplFUnarmedAnim 1123
 #include "SupplF/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; SupplFAnims:
 LanceAnim(SupplFLanceAnim)
@@ -848,9 +877,9 @@ UnarmedAnim(SupplFUnarmedAnim)
 EndAnim
 
 #include "SwoMaF/pal.event"
-#define SwoMaFSwordAnim 1092
+#define SwoMaFSwordAnim 1124
 #include "SwoMaF/SwordInstaller.event"
-#define SwoMaFUnarmedAnim 1100
+#define SwoMaFUnarmedAnim 1132
 #include "SwoMaF/UnarmedInstaller.event"
 ALIGN 4; SwoMaFAnims:
 SwordAnim(SwoMaFSwordAnim)
@@ -858,20 +887,20 @@ UnarmedAnim(SwoMaFUnarmedAnim)
 EndAnim
 
 #include "SwoMaM/pal.event"
-#define SwoMaMSwordAnim 1108
+#define SwoMaMSwordAnim 1140
 #include "SwoMaM/SwordInstaller.event"
-#define SwoMaMUnarmedAnim 1116
+#define SwoMaMUnarmedAnim 1148
 #include "SwoMaM/UnarmedInstaller.event"
 ALIGN 4; SwoMaMAnims:
 SwordAnim(SwoMaMSwordAnim)
 UnarmedAnim(SwoMaMUnarmedAnim)
 EndAnim
 
-#define TarvoUAxeAnim 1124
+#define TarvoUAxeAnim 1156
 #include "TarvoU/AxeInstaller.event"
-#define TarvoUUnarmedAnim 1125
+#define TarvoUUnarmedAnim 1157
 #include "TarvoU/UnarmedInstaller.event"
-#define TarvoUHandaxeAnim 1126
+#define TarvoUHandaxeAnim 1158
 #include "TarvoU/HandaxeInstaller.event"
 ALIGN 4; TarvoUAnims:
 AxeAnim(TarvoUAxeAnim)
@@ -880,9 +909,9 @@ HandaxeAnim(TarvoUHandaxeAnim)
 EndAnim
 
 #include "ThiefF/pal.event"
-#define ThiefFSwordAnim 1127
+#define ThiefFSwordAnim 1159
 #include "ThiefF/1. Sword/SwordInstaller.event"
-#define ThiefFUnarmedAnim 1135
+#define ThiefFUnarmedAnim 1167
 #include "ThiefF/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; ThiefFAnims:
 SwordAnim(ThiefFSwordAnim)
@@ -890,9 +919,9 @@ UnarmedAnim(ThiefFUnarmedAnim)
 EndAnim
 
 #include "ThiefM/pal.event"
-#define ThiefMSwordAnim 1143
+#define ThiefMSwordAnim 1175
 #include "ThiefM/SwordInstaller.event"
-#define ThiefMUnarmedAnim 1151
+#define ThiefMUnarmedAnim 1183
 #include "ThiefM/UnarmedInstaller.event"
 ALIGN 4; ThiefMAnims:
 SwordAnim(ThiefMSwordAnim)
@@ -900,74 +929,76 @@ UnarmedAnim(ThiefMUnarmedAnim)
 EndAnim
 
 #include "ValkyF/pal.event"
-#define ValkyFStaffAnim 1159
+#define ValkyFStaffAnim 1191
 #include "ValkyF/StaffInstaller.event"
-#define ValkyFMagicAnim 1167
+#define ValkyFMagicAnim 1199
 #include "ValkyF/MagicInstaller.event"
 ALIGN 4; ValkyFAnims:
 StaffAnim(ValkyFStaffAnim)
 MagicAnim(ValkyFMagicAnim)
+UnarmedAnim(ValkyFMagicAnim)
 EndAnim
 
 #include "ValkyM/pal.event"
-#define ValkyMMagicAnim 1175
+#define ValkyMMagicAnim 1207
 #include "ValkyM/6. Magic/MagicInstaller.event"
-#define ValkyMStaffAnim 1183
+#define ValkyMStaffAnim 1215
 #include "ValkyM/7. Staff/StaffInstaller.event"
 ALIGN 4; ValkyMAnims:
 MagicAnim(ValkyMMagicAnim)
 StaffAnim(ValkyMStaffAnim)
+UnarmedAnim(ValkyMMagicAnim)
 EndAnim
 
 #include "ValT3U/pal.event"
-#define ValT3UUnarmedAnim 1191
+#define ValT3UUnarmedAnim 1223
 #include "ValT3U/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; ValT3UAnims:
 UnarmedAnim(ValT3UUnarmedAnim)
 EndAnim
 
 #include "WarMoF/pal.event"
-#define WarMoFUnarmedAnim 1199
+#define WarMoFUnarmedAnim 1231
 #include "WarMoF/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; WarMoFAnims:
 UnarmedAnim(WarMoFUnarmedAnim)
 EndAnim
 
 #include "WarMoM/pal.event"
-#define WarMoMUnarmedAnim 1207
+#define WarMoMUnarmedAnim 1239
 #include "WarMoM/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; WarMoMAnims:
 UnarmedAnim(WarMoMUnarmedAnim)
 EndAnim
 
 #include "WarriF/pal.event"
-#define WarriFUnarmedAnim 1215
+#define WarriFUnarmedAnim 1247
 #include "WarriF/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; WarriFAnims:
 UnarmedAnim(WarriFUnarmedAnim)
 EndAnim
 
 #include "WarriM/pal.event"
-#define WarriMUnarmedAnim 1223
+#define WarriMUnarmedAnim 1255
 #include "WarriM/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; WarriMAnims:
 UnarmedAnim(WarriMUnarmedAnim)
 EndAnim
 
-#define WiBowUBowAnim 1231
+#define WiBowUBowAnim 1263
 #include "WiBowU/BowInstaller.event"
-#define WiBowUUnarmedAnim 1232
+#define WiBowUUnarmedAnim 1264
 #include "WiBowU/UnarmedInstaller.event"
 ALIGN 4; WiBowUAnims:
 BowAnim(WiBowUBowAnim)
 UnarmedAnim(WiBowUUnarmedAnim)
 EndAnim
 
-#define WightUSwordAnim 1233
+#define WightUSwordAnim 1265
 #include "WightU/SwordInstaller.event"
-#define WightUUnarmedAnim 1234
+#define WightUUnarmedAnim 1266
 #include "WightU/UnarmedInstaller.event"
-#define WightULanceAnim 1235
+#define WightULanceAnim 1267
 #include "WightU/LanceInstaller.event"
 ALIGN 4; WightUAnims:
 SwordAnim(WightUSwordAnim)
@@ -976,11 +1007,11 @@ LanceAnim(WightULanceAnim)
 EndAnim
 
 #include "WyvKnU/pal.event"
-#define WyvKnUAxeAnim 1236
+#define WyvKnUAxeAnim 1268
 #include "WyvKnU/3. Axe/AxeInstaller.event"
-#define WyvKnUHandaxeAnim 1244
+#define WyvKnUHandaxeAnim 1276
 #include "WyvKnU/4. Handaxe/HandaxeInstaller.event"
-#define WyvKnUUnarmedAnim 1252
+#define WyvKnUUnarmedAnim 1284
 #include "WyvKnU/8. Unarmed/UnarmedInstaller.event"
 ALIGN 4; WyvKnUAnims:
 AxeAnim(WyvKnUAxeAnim)

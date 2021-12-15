@@ -244,6 +244,8 @@ def createAnim(classID, output):
   output.write("ALIGN 4; "+classID+"Anims:\n")
   for anim in anims:
     output.write(anim+"Anim("+classID+anim+"Anim)\n")
+  if "Unarmed" not in anims and "Monster" not in anims:
+    output.write("UnarmedAnim("+classID+"MagicAnim)\n")
   output.write("EndAnim\n\n")
   
 def main():

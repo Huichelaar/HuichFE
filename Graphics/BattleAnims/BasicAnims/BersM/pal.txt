@@ -4,9 +4,9 @@ skin4_1
 skin4_2
 skin4_3
 skin4_4
-trim4_1
-trim4_2
-trim4_3
+highlight3_1
+highlight3_2
+highlight3_3
 wep3_1
 wep3_2
 wep3_3

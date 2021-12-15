@@ -1,0 +1,18 @@
+Made by eCut.
+
+Scripted by Skitty.
+
+This is Huichelaar's edit of Natsumi, AKA Serif's edit.
+
+Changes made include:
+  - Colour 7 is now unused.
+  - Boots, horns and clothing-trim are repaletted to match weapon/left arm.
+  - Axe shaft is repaletted to match faction colours.
+  - Axe animation changes:
+    - A slightly slower return.
+    - No weapon-coloured dust clouds during crit.
+    - One frame (Axe_009.png) had white pixels in the face. These are now skin-coloured.
+    - Some stray pixels in the third frame were removed.
+    - An added weapon-blur when the axe comes down.
+    - Redid the torso in the frames where the axe is either avoided by or lodged in the enemy
+    - Added breast-jiggle during the return-bounce.
