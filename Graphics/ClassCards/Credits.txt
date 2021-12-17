@@ -1,27 +1,24 @@
 Class Card        Author
 
-Supplier          N426
-SoldierF          IS, flasuban, Huichelaar
-
-
-
-Summoner          Orihara_Saki
-MercenaryF        L95
-Cleric            flasuban
-MonkF             RobertFPY
-MonkM             RobertFPY, Blademaster
--HatlessMageM      RobertFPY
-MageF             Unknown
-ShamanF           Unknown
-
-FighterF          Jj09, HyperGammaSpaces
-ArcherM           DerTheVaporeon
 ArcherF           DerTheVaporeon
-MyrmidonF         L95
+ArcherM           DerTheVaporeon
+AssassinU         Scraiza, Sword of HaE
+BerserkerF        Der
 CavalierF         RobertFPY, Pikmin
 CavalierM         RobertFPY
-WyvKnight         IS, MeatOfJustice, Pikmin, flasuban, Huichelaar
+FighterF          Jj09, HyperGammaSpaces
+MageF             Unknown
+MercenaryF        L95
+MonkF             RobertFPY
+MonkM             RobertFPY, Blademaster
+MyrmidonF         L95
 PirateF           HyperGammaSpaces
-ThiefF            L95
-
+PriestF           flasuban
 Sergeant          Spud, Rasdel
+ShamanF           Unknown
+SoldierF          flasuban
+SoldierM          flasuban
+Summoner          Orihara_Saki
+SupplierF         N426
+ThiefF            L95
+WyvKnight         IS, MeatOfJustice, Pikmin, flasuban, Huichelaar
