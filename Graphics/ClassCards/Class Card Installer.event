@@ -16,17 +16,21 @@ ALIGN 4; BerserkerFCCTiles:
 #incbin "BerserkerF.dmp"
 ALIGN 4; BerserkerFCCPal:
 #incbin "BerserkerF_pal.dmp"
-ALIGN 4; BerserkT3FCCTiles:
+ALIGN 4; BerserkerT3FCCTiles:
 #incbin "Placeholder.dmp"
-ALIGN 4; BerserkT3FCCPal:
+ALIGN 4; BerserkerT3FCCPal:
 #incbin "Placeholder_pal.dmp"
-ALIGN 4; BerserkT3MCCTiles:
+ALIGN 4; BerserkerT3MCCTiles:
 #incbin "Placeholder.dmp"
-ALIGN 4; BerserkT3MCCPal:
+ALIGN 4; BerserkerT3MCCPal:
 #incbin "Placeholder_pal.dmp"
 ALIGN 4; BishopFCCTiles:
 #incbin "Placeholder.dmp"
 ALIGN 4; BishopFCCPal:
+#incbin "Placeholder_pal.dmp"
+ALIGN 4; BowKnightUCCTiles:
+#incbin "Placeholder.dmp"
+ALIGN 4; BowKnightUCCPal:
 #incbin "Placeholder_pal.dmp"
 ALIGN 4; BrigandFCCTiles:
 #incbin "Placeholder.dmp"
@@ -40,13 +44,13 @@ ALIGN 4; CavalierMCCTiles:
 #incbin "CavalierM.dmp"
 ALIGN 4; CavalierMCCPal:
 #incbin "CavalierM_pal.dmp"
-ALIGN 4; ConjurerCCTiles:
+ALIGN 4; ConjurerFCCTiles:
 #incbin "Placeholder.dmp"
-ALIGN 4; ConjurerCCPal:
+ALIGN 4; ConjurerFCCPal:
 #incbin "Placeholder_pal.dmp"
-ALIGN 4; ConjurerT3CCTiles:
+ALIGN 4; ConjurerT3FCCTiles:
 #incbin "Placeholder.dmp"
-ALIGN 4; ConjurerT3CCPal:
+ALIGN 4; ConjurerT3FCCPal:
 #incbin "Placeholder_pal.dmp"
 ALIGN 4; DarkDruidUCCTiles:
 #incbin "Placeholder.dmp"
@@ -82,7 +86,7 @@ ALIGN 4; ExecutionerUCCPal:
 #incbin "Placeholder_pal.dmp"
 ALIGN 4; FalcoKnightT3UCCTiles:
 #incbin "Placeholder.dmp"
-ALIGN 4; FalcoKnightT3CCPal:
+ALIGN 4; FalcoKnightT3UCCPal:
 #incbin "Placeholder_pal.dmp"
 ALIGN 4; FighterFCCTiles:
 #incbin "FighterF.dmp"
@@ -92,25 +96,29 @@ ALIGN 4; GoldKnightUCCTiles:
 #incbin "Placeholder.dmp"
 ALIGN 4; GoldKnightUCCPal:
 #incbin "Placeholder_pal.dmp"
-ALIGN 4; HarbingerCCTiles:
+ALIGN 4; HarbingerUCCTiles:
 #incbin "Placeholder.dmp"
-ALIGN 4; HarbingerCCPal:
+ALIGN 4; HarbingerUCCPal:
 #incbin "Placeholder_pal.dmp"
 ALIGN 4; HarbingerT2FCCTiles:
 #incbin "Placeholder.dmp"
-ALIGN 4; HarbingerT2CCPal:
+ALIGN 4; HarbingerT2FCCPal:
 #incbin "Placeholder_pal.dmp"
 ALIGN 4; HarbingerT2MCCTiles:
 #incbin "Placeholder.dmp"
 ALIGN 4; HarbingerT2MCCPal:
 #incbin "Placeholder_pal.dmp"
-ALIGN 4; HeroWarT3FCCTiles:
+ALIGN 4; HeroFCCTiles:
 #incbin "Placeholder.dmp"
-ALIGN 4; HeroWarT3FCCPal:
+ALIGN 4; HeroFCCPal:
 #incbin "Placeholder_pal.dmp"
-ALIGN 4; HeroWarT3MCCTiles:
+ALIGN 4; HeroWarriorT3FCCTiles:
 #incbin "Placeholder.dmp"
-ALIGN 4; HeroWarT3MCCPal:
+ALIGN 4; HeroWarriorT3FCCPal:
+#incbin "Placeholder_pal.dmp"
+ALIGN 4; HeroWarriorT3MCCTiles:
+#incbin "Placeholder.dmp"
+ALIGN 4; HeroWarriorT3MCCPal:
 #incbin "Placeholder_pal.dmp"
 ALIGN 4; MageFCCTiles:
 #incbin "MageF.dmp"
@@ -156,6 +164,14 @@ ALIGN 4; NecromancerUCCTiles:
 #incbin "Placeholder.dmp"
 ALIGN 4; NecromancerUCCPal:
 #incbin "Placeholder_pal.dmp"
+ALIGN 4; PaladinFCCTiles:
+#incbin "Placeholder.dmp"
+ALIGN 4; PaladinFCCPal:
+#incbin "Placeholder_pal.dmp"
+ALIGN 4; PaladinMCCTiles:
+#incbin "Placeholder.dmp"
+ALIGN 4; PaladinMCCPal:
+#incbin "Placeholder_pal.dmp"
 ALIGN 4; PirateFCCTiles:
 #incbin "PirateF.dmp"
 ALIGN 4; PirateFCCPal:
@@ -171,6 +187,10 @@ ALIGN 4; RogueT3FCCPal:
 ALIGN 4; RogueT3MCCTiles:
 #incbin "Placeholder.dmp"
 ALIGN 4; RogueT3MCCPal:
+#incbin "Placeholder_pal.dmp"
+ALIGN 4; SageFCCTiles:
+#incbin "Placeholder.dmp"
+ALIGN 4; SageFCCPal:
 #incbin "Placeholder_pal.dmp"
 ALIGN 4; SageT3FCCTiles:
 #incbin "Placeholder.dmp"
@@ -188,6 +208,14 @@ ALIGN 4; ShamanFCCTiles:
 #incbin "ShamanF.dmp"
 ALIGN 4; ShamanFCCPal:
 #incbin "ShamanF_pal.dmp"
+ALIGN 4; SniperFCCTiles:
+#incbin "Placeholder.dmp"
+ALIGN 4; SniperFCCPal:
+#incbin "Placeholder_pal.dmp"
+ALIGN 4; SniperMCCTiles:
+#incbin "Placeholder.dmp"
+ALIGN 4; SniperMCCPal:
+#incbin "Placeholder_pal.dmp"
 ALIGN 4; SoldierFCCTiles:
 #incbin "SoldierF.dmp"
 ALIGN 4; SoldierFCCPal:
@@ -204,6 +232,10 @@ ALIGN 4; SupplierFCCTiles:
 #incbin "SupplierF.dmp"
 ALIGN 4; SupplierCCPal:
 #incbin "SupplierF_pal.dmp"
+ALIGN 4; SwordmasterFCCPal:
+#incbin "Placeholder_pal.dmp"
+ALIGN 4; SwordmasterFCCTiles:
+#incbin "Placeholder.dmp"
 ALIGN 4; ThiefFCCTiles:
 #incbin "ThiefF.dmp"
 ALIGN 4; ThiefFCCPal:
@@ -228,10 +260,10 @@ ALIGN 4; WarriorFCCTiles:
 #incbin "Placeholder.dmp"
 ALIGN 4; WarriorFCCPal:
 #incbin "Placeholder_pal.dmp"
-ALIGN 4; WyvKnightUCCTiles:
-#incbin "WyvKnightU.dmp"
-ALIGN 4; WyvKnightUCCPal:
-#incbin "WyvKnightU_pal.dmp"
+ALIGN 4; WyvernKnightUCCTiles:
+#incbin "WyvernKnightU.dmp"
+ALIGN 4; WyvernKnightUCCPal:
+#incbin "WyvernKnightU_pal.dmp"
 
 /*
 ALIGN 4; CCTiles:
@@ -240,8 +272,8 @@ ALIGN 4; CCPal:
 #incbin "_pal.dmp"
 */
 
-setCardEntry(ArchFCC, ArchFCCTiles, ArchFCCPal)
-setCardEntry(ArchMCC, ArchMCCTiles, ArchMCCPal)
+setCardEntry(ArcherFCC, ArcherFCCTiles, ArcherFCCPal)
+setCardEntry(ArcherMCC, ArcherMCCTiles, ArcherMCCPal)
 setCardEntry(ArchMogallUCC, 0x8114D8, 0x8114B8)
 setCardEntry(AssassinUCC, AssassinUCCTiles, AssassinUCCPal)
 setCardEntry(BaelUCC, 0x815194, 0x815174)
@@ -252,7 +284,7 @@ setCardEntry(BerserkerT3MCC, BerserkerT3MCCTiles, BerserkerT3MCCPal)
 setCardEntry(BishopFCC, BishopFCCTiles, BishopFCCPal)
 setCardEntry(BishopMCC, 0x82518C, 0x82516C)
 setCardEntry(BonewalkerUCC, 0x81611C, 0x8160FC)
-setCardEntry(Bonewalker_BowUCC, 0x81611C, 0x8160FC)
+setCardEntry(Bonewalker_bowUCC, 0x81611C, 0x8160FC)
 setCardEntry(BowKnightUCC, BowKnightUCCTiles, BowKnightUCCPal)
 setCardEntry(BrigandFCC, BrigandFCCTiles, BrigandFCCPal)
 setCardEntry(BrigandMCC, 0x81D570, 0x81D550)
@@ -286,7 +318,7 @@ setCardEntry(GreatKnightUCC, 0x8183D0, 0x8183B0)
 setCardEntry(GwyllgiUCC, 0x81322C, 0x81320C)
 setCardEntry(HarbingerUCC, HarbingerUCCTiles, HarbingerUCCPal)
 setCardEntry(HarbingerT2MCC, HarbingerT2MCCTiles, HarbingerT2MCCPal)
-setCardEntry(HarbingerT2FCC, HarbingerT2FCC, HarbingerT2FCC)
+setCardEntry(HarbingerT2FCC, HarbingerT2FCCTiles, HarbingerT2FCCPal)
 setCardEntry(HeroFCC, HeroFCCTiles, HeroFCCPal)
 setCardEntry(HeroMCC, 0x81AA0C, 0x81A9EC)
 setCardEntry(HeroWarriorT3FCC, HeroWarriorT3FCCTiles, HeroWarriorT3FCCPal)
@@ -301,7 +333,7 @@ setCardEntry(MageKnightT3UCC, MageKnightT3UCCTiles, MageKnightT3UCCPal)
 setCardEntry(MarksmanFCC, MarksmanFCCTiles, MarksmanFCCPal)
 setCardEntry(MarksmanMCC, MarksmanMCCTiles, MarksmanMCCPal)
 setCardEntry(MarshallUCC, MarshallUCCTiles, MarshallUCCPal)
-setCardEntry(MauthedoogCC, 0x81399C, 0x81397C)
+setCardEntry(MauthedoogUCC, 0x81399C, 0x81397C)
 setCardEntry(MercenaryFCC,MercenaryFCCTiles,MercenaryFCCPal)
 setCardEntry(MercenaryMCC, 0x81B03C, 0x81B01C)
 setCardEntry(MogallUCC, 0x811BB8, 0x811B98)
@@ -309,20 +341,45 @@ setCardEntry(MonkMCC, MonkMCCTiles, MonkMCCPal)
 setCardEntry(MonkFCC, MonkFCCTiles, MonkFCCPal)
 setCardEntry(MyrmidonFCC, MyrmidonFCCTiles, MyrmidonFCCPal)
 setCardEntry(MyrmidonMCC, 0x828EF8, 0x828ED8)
-
-
-
-
-setCardEntry(CC, Tiles, Pal)
-setCardEntry(CC, 0x, 0x)
-
-
-
-
-setCardEntry(SupplierFCC,SupplierFCCTiles,SupplierCCPal)
-setCardEntry(SoldierFCC,SoldierFCCTiles,SoldierFCCPal)
-setCardEntry(ThiefFCC,ThiefFCCTiles,ThiefFCCPal)
-setCardEntry(WyvKnightCC,WyvKnightCCTiles,WyvKnightCCPal)
-setCardEntry(ShamanFCC,ShamanFCCTiles,ShamanFCCPal)
-setCardEntry(PriestFCC,PriestFCCTiles,PriestFCCPal)
-setCardEntry(MageFCC,MageFCCTiles,MageFCCPal)
+setCardEntry(NecromancerUCC, NecromancerUCCTiles, NecromancerUCCPal)
+setCardEntry(PaladinFCC, PaladinFCCTiles, PaladinFCCPal)
+setCardEntry(PaladinMCC, PaladinMCCTiles, PaladinMCCPal)
+setCardEntry(PegasusKnightUCC, 0x81FCBC, 0x81FC9C)
+setCardEntry(PhantomUCC, 0x817458, 0x817438)
+setCardEntry(PirateFCC, PirateFCCTiles, PirateFCCPal)
+setCardEntry(PirateMCC, 0x81CD28, 0x81CD08)
+setCardEntry(PriestFCC, PriestFCCTiles, PriestFCCPal)
+setCardEntry(PriestMCC, 0x825838, 0x825818)
+setCardEntry(RangerUCC, 0x817C14, 0x817BF4)
+setCardEntry(RevenantUCC, 0x816E08, 0x816DE8)
+setCardEntry(RogueT3FCC, RogueT3FCCTiles, RogueT3FCCPal)
+setCardEntry(RogueT3MCC, RogueT3MCCTiles, RogueT3MCCPal)
+setCardEntry(RogueUCC, 0x819444, 0x819424)
+setCardEntry(SageFCC, SageFCCTiles, SageFCCPal)
+setCardEntry(SageMCC, 0x8243F8, 0x8243D8)
+setCardEntry(SageT3FCC, SageT3FCCTiles, SageT3FCCPal)
+setCardEntry(SageT3MCC, SageT3MCCTiles, SageT3MCCPal)
+setCardEntry(SergeantUCC, SergeantUCCTiles, SergeantUCCPal)
+setCardEntry(ShamanFCC, ShamanFCCTiles, ShamanFCCPal)
+setCardEntry(ShamanMCC, 0x823D64, 0x823D44)
+setCardEntry(SniperFCC, SniperFCCTiles, SniperFCCPal)
+setCardEntry(SniperMCC, 0x825E44, 0x825E24)
+setCardEntry(SoldierFCC, SoldierFCCTiles, SoldierFCCPal)
+setCardEntry(SoldierMCC, SoldierMCCTiles, SoldierMCCPal)
+setCardEntry(SummonerUCC, SummonerUCCTiles, SummonerUCCPal)
+setCardEntry(SupplierFCC, SupplierFCCTiles, SupplierCCPal)
+setCardEntry(SwordmasterFCC, SwordmasterFCCTiles, SwordmasterFCCPal)
+setCardEntry(SwordmasterMCC, 0x828980, 0x828960)
+setCardEntry(TarvosUCC, 0x812A48, 0x812A28)
+setCardEntry(ThiefFCC, ThiefFCCTiles, ThiefFCCPal)
+setCardEntry(ThiefMCC, 0x81BF90, 0x81BF70)
+setCardEntry(ValkyrieFCC, 0x8214D4, 0x8214B4)
+setCardEntry(ValkyrieMCC, ValkyrieMCCTiles, ValkyrieMCCPal)
+setCardEntry(ValkyrieT3UCC, ValkyrieT3UCCTiles, ValkyrieT3UCCPal)
+setCardEntry(WarMonkFCC, WarMonkFCCTiles, WarMonkFCCPal)
+setCardEntry(WarMonkMCC, WarMonkMCCTiles, WarMonkMCCPal)
+setCardEntry(WarriorFCC, WarriorFCCTiles, WarriorFCCPal)
+setCardEntry(WarriorMCC, 0x8827A18, 0x8279F8)
+setCardEntry(WightUCC, 0x815A74, 0x815A54)
+setCardEntry(Wight_bowUCC, 0x815A74, 0x815A54)
+setCardEntry(WyvernKnightUCC, WyvernKnightUCCTiles, WyvernKnightUCCPal)

@@ -33,6 +33,7 @@
 #include "Character/RetreatsList.event"
 #include "Class/Classes.event"
 #include "Class/MovingSpriteTable.event"
+#include "Class/LuckCap.event"
 #include "Class/ClassLevelCapTable.event"
 #include "Class/ClassPromoLevel.event"
 #include "Class/WalkingSounds.event"

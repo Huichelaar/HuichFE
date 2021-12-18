@@ -76,6 +76,8 @@ Test growths after you've added some more character growths.
 
 Remove female map sprites credits' from Credits struct.
 
+Implement Luck cap per class, Unless you decide to go with overall cap for all stats Ig. Class luck cap table already exists (not referenced in project yet though). There's an FEBuilder patch for reference.
+
 If we need space:
   - Room for 0x2000 text entries. Can reduce this in repointedTextTable.event.
   - Some tables have entries they're not using, see Tables/TableOptions.s.

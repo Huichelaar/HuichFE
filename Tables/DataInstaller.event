@@ -32,6 +32,7 @@
 #define BattlePaletteTable BattlePaletteTableLABEL
 #define PaletteAssociationTable PaletteAssociationTableLABEL
 #define PaletteAssociation2Table PaletteAssociation2TableLABEL
+#define LuckCapTable LuckCapTableLABEL
 #define Class_Level_Cap_Table Class_Level_Cap_TableLABEL
 #define ClassPromoLevelTable ClassPromoLevelTableLABEL
 #define ClassTable ClassTableLABEL

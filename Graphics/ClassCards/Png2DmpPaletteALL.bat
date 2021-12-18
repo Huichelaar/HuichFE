@@ -9,7 +9,7 @@ set FILE_MATCH=*.png
 
 for %%F in (%FILE_MATCH%) do (
     SET SHOULD_COMPILE=0
-    set DUMP_FILE="%%~dF%%~pF%%~nF%.dmp"
+    set DUMP_FILE="%%~dF%%~pF%%~nF%_pal.dmp"
     if exist !DUMP_FILE! (
 	For /F "Delims=" %%I In ('dir /b /OD "!DUMP_FILE!" %%F ^| more +1') Do Set NEWER=%%I
 	if !NEWER! == %%~nxF (

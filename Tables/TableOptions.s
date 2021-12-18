@@ -120,6 +120,7 @@ CSV Character/RetreatsList.csv
 CSV Class/Classes.csv
   TABLE ClassTableLABEL Class/Classes.nmm
   TABLE MovingMapSpriteTableLABEL Class/MovingSpriteTable.nmm -1
+  TABLE LuckCapTableLABEL Class/LuckCap.nmm
   TABLE Class_Level_Cap_TableLABEL Class/ClassLevelCapTable.nmm
   TABLE ClassPromoLevelTableLABEL Class/ClassPromoLevel.nmm
   TABLE WalkingSoundsLABEL Class/WalkingSounds.nmm 
