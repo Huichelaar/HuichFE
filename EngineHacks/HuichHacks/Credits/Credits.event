@@ -42,8 +42,10 @@
     
     // Always enable Link Arena,
     // which is now Credits.
+    // ATM disables credits. FIXME, re-enable.
     ORG 0xAB90E
-    SHORT 0x46C0 0x46C0 0x46C0 0x46C0 0x46C0
+    SHORT 0xE007
+    //SHORT 0x46C0 0x46C0 0x46C0 0x46C0 0x46C0
 
     // Create our proc instead of link arena proc.
     ORG 0x5919B4

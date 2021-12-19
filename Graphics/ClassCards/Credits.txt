@@ -13,12 +13,12 @@ MonkF             RobertFPY
 MonkM             RobertFPY, Blademaster
 MyrmidonF         L95
 PirateF           HyperGammaSpaces
-PriestF           flasuban
-Sergeant          Spud, Rasdel
+PriestF           flasuban, HyperGammaSpaces
+SergeantU         Spud, Rasdel
 ShamanF           Unknown
 SoldierF          flasuban
 SoldierM          flasuban
-Summoner          Orihara_Saki
+SummonerU         Orihara_Saki
 SupplierF         N426
 ThiefF            L95
-WyvKnight         IS, MeatOfJustice, Pikmin, flasuban, Huichelaar
+WyvernKnightU     IS, MeatOfJustice, Pikmin, flasuban, Huichelaar

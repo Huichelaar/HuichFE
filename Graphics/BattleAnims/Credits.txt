@@ -1,28 +1,27 @@
 Animation                 Author
 
-Supplier                  JonoTheRed, Huichelaar
-Soldier                   Flasuban, Nuramon, Jeorge Red
-Knight                    FPZero
-
-
-
-
-
-
-
-MercenaryM                SALVAGED
-MercenaryF                SALVAGED, JeyTheCount
-Cleric                    Flasuban, Eldritch Abomination
-Priest                    Flasuban, Eldritch Abomination
-SoldierM                  Alusq
-SoldierF                  Alusq, Maiser6, JeyTheCount
-FighterF                  Black Mage
-ArcherM                   Flasuban, DerTheVaporeon
-ArcherF                   Flasuban, DerTheVaporeon
-CavalierM                 SALVAGED
+ArcherF                   IS, DerTheVaporeon
+ArcherM                   IS, DerTheVaporeon
+AssassinU                 IS, Huichelaar
+BerserkerF                eCut, Skitty, Serif, Huichelaar
+BerserkerM                BwdYeti, Shadowofchaos, Red, Huichelaar
+BishopF                   Eldritch Abomination, Mikey Seregon, Huichelaar
+BrigandF                  eCut, Skitty
 CavalierF                 Pikmin1211, Maiser6, SALVAGED
+CavalierM                 SALVAGED
+FighterF                  Black Mage
+Knight                    FPZero
+MercenaryF                SALVAGED, JeyTheCount
+MercenaryM                SALVAGED
 MonkM                     Eldritch Abomination
 MonkF                     Eldritch Abomination
-WyvernKnight              St Jack
-
 PegasusKnight             Flasuban
+Phantom                   TheBlindArcher, Arch, Skitty, Temp
+PirateF                   Nuramon, MarioKirby, Wan
+PriestF                   Flasuban, Eldritch Abomination
+PriestM                   Eldritch Abomination
+SoldierU                  Flasuban, Nuramon, Huichelaar
+Supplier                  JonoTheRed, Huichelaar
+ThiefF                    Pikmin1211, Maiser6, Skitty, GabrielKnight
+ValkyrieM                 DerTheVaporeon, Isaac, Pikmin1211
+WyvernKnightU             St Jack

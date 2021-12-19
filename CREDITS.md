@@ -212,22 +212,31 @@ TODO. OSRS Orchestra hit was either recorded straight from the Sound Canvas VST 
 
 ## Battle animations
 
-- Supplier by JonoTheRed, Huichelaar.
-- MercenaryM by SALVAGED.
-- MercenaryF by SALVAGED, JeyTheCount.
-- Cleric by Flasuban, Eldritch Abomination.
-- Priest by Flasuban, Eldritch Abomination.
-- HatlessMageM by GabrielKnight. Not in use atm.
-- SoldierM by Alusq.
-- SoldierF by Alusq, Maiser6, JeyTheCount.
-- FighterF by Black Mage.
-- ArcherM by Flasuban, DerTheVaporeon.
-- ArcherF by Flasuban, DerTheVaporeon.
-- CavalierM by SALVAGED.
+- ArcherF by IS, DerTheVaporeon.
+- ArcherM by IS, DerTheVaporeon.
+- AssassinU by IS, Huichelaar.
+- BerserkerF by eCut, Skitty, Serif, Huichelaar.
+- BerserkerM by BwdYeti, Shadowofchaos, Red, Huichelaar.
+- BishopF by Eldritch Abomination, Mikey Seregon, Huichelaar.
+- BrigandF by eCut, Skitty.
 - CavalierF by Pikmin1211, Maiser6, SALVAGED.
-- WyvernKnight by St Jack.
+- CavalierM by SALVAGED.
+- FighterF by Black Mage.
 - Knight by FPZero.
+- MercenaryF by SALVAGED, JeyTheCount.
+- MercenaryM by SALVAGED.
+- MonkM by Eldritch Abomination.
+- MonkF by Eldritch Abomination.
 - PegasusKnight by Flasuban.
+- Phantom by TheBlindArcher, Arch, Skitty, Temp.
+- PirateF by Nuramon, MarioKirby, Wan.
+- PriestF by Flasuban, Eldritch Abomination.
+- PriestM by Eldritch Abomination.
+- SoldierU by Flasuban, Nuramon, Huichelaar.
+- Supplier by JonoTheRed, Huichelaar.
+- ThiefF by Pikmin1211, Maiser6, Skitty, GabrielKnight.
+- ValkyrieM by DerTheVaporeon, Isaac, Pikmin1211.
+- WyvernKnightU by St Jack.
 
 ## Portraits
 
@@ -248,72 +257,64 @@ TODO. OSRS Orchestra hit was either recorded straight from the Sound Canvas VST 
 
 ## Class Cards
 
-- Supplier by N426.
-- Summoner by Orihara_Saki.
-- MercenaryF by L95.
-- Cleric by flasuban.
-- MonkF by RobertFPY.
-- MonkM by RobertFPY, Blademaster.
-- -HatlessMageM by RobertFPY. Unused atm.
-- MageF by Unknown.
-- ShamanF by Unknown.
-- SoldierF by Intelligent Systems, flasuban.
-- FighterF by Jj09, HyperGammaSpaces.
-- ArcherM by DerTheVaporeon.
 - ArcherF by DerTheVaporeon.
-- MyrmidonF by L95.
+- ArcherM by DerTheVaporeon.
+- AssassinU by Scraiza, Sword of HaE.
+- BerserkerF by Der.
 - CavalierF by RobertFPY, Pikmin.
 - CavalierM by RobertFPY.
-- WyvernKnight by IS, MeatOfJustice, Pikmin, flasuban.
+- FighterF by Jj09, HyperGammaSpaces.
+- MageF by Unknown.
+- MercenaryF by L95.
+- MonkF by RobertFPY.
+- MonkM by RobertFPY, Blademaster.
+- MyrmidonF by L95.
+- PirateF by HyperGammaSpaces.
+- PriestF by flasuban, HyperGammaSpaces.
+- SergeantU by Spud, Rasdel.
+- ShamanF by Unknown.
+- SoldierF by flasuban.
+- SoldierM by flasuban.
+- SummonerU by Orihara_Saki.
+- SupplierF by N426.
+- ThiefF by L95.
+- WyvernKnightU by IS, MeatOfJustice, Pikmin, flasuban, Huichelaar.
 
 ## Map Sprites
-- Supplier by N426
-- Soldier by Rexacuse, Peerless, Alusq
-- Cavalier by SALVAGED
-- Archer by DerTheVaporeon
-- Fighter by Alusq
-- WyvernKnight by IS, ArcaneEli, Blood, Yikes!, Huichelaar
-- Priest by flasuban
-- -HatlessMageM by Pikmin1211
-- Conjurer by TODO
-- Sergeant by Spud
-- Great Knight by Pikmin, L95, Der
-- HarbingerT2 by Nuramon
-- DracoKnight by TODO
-- Summoner by IS
-- ConjurerT3 by TODO
-- Marshall by Elibean Nights, L95, Pikmin, Der, Huichelaar
-- Gold Knight by Pikmin, Der
-- Marksman by ArcherBias
-- BowKnight by Der, Pikmin
-- Harbinger by TODO
-- HeroWarT3 by TODO
-- BerserkerT3 by TODO
-- Dread Fighter by Nuramon
-- Executioner by IS, Lexou, Huichelaar
-- RogueT3 by TODO
-- FalcoKnT3 by TODO
-- DracoLord by TODO
-- Dark Druid by IS
-- Necromancer by Huichelaar
-- ValkyrieT3 by TODO
-- War Monk by Der, Author_Pendragon, TODO
-- SageT3 by TODO
-- MageKnightT3 by TODO
-- Revenant by IS, Pikmin
-- Entombed by IS, Pikmin
-- BonewalkerBow by IS, Pikmin
-- Mogall by IS, Huichelaar
-- ArchMogall by IS, Huichelaar
-- MautheDoog by IS, Pikmin
-- Gwyllgi by IS, Pikmin
-- Bael by IS, Pikmin
-- ElderBael by IS, Pikmin
-- Gargoyle by IS, Pikmin
-- Deathgoyle by IS, Pikmin
-- Maelduin by IS, Pikmin
-- Gorgon by IS, Huichelaar
-- Phantom by IS, Pushwall
+
+- Archer by DerTheVaporeon.
+- ArchMogall by IS, Huichelaar.
+- Bael by IS, Pikmin.
+- Bowalker by IS, Pikmin.
+- BowKnight by Der, Pikmin.
+- Cavalier by SALVAGED.
+- DarkDruid by IS.
+- Deathgoyle by IS, Pikmin.
+- DreadFighter by Nuramon.
+- ElderBael by IS, Pikmin.
+- Entombed by IS, Pikmin.
+- Executioner by IS, Lexou, Huichelaar.
+- Fighter by Alusq.
+- Gargoyle by IS, Pikmin.
+- GoldKnight by Pikmin, Der.
+- Gorgon by IS, Huichelaar.
+- GreatKnight by Pikmin, L95, Der.
+- Gwyllgi by IS, Pikmin.
+- HarbingerT2 by Nuramon.
+- Maelduin by IS, Pikmin.
+- Marksman by ArcherBias.
+- Marshall by Elibean Nights, L95, Pikmin, Der, Huichelaar.
+- MautheDoog by IS, Pikmin.
+- Mogall by IS, Huichelaar.
+- Necromancer by Huichelaar.
+- Phantom by IS, Pushwall.
+- Priest by flasuban.
+- Revenant by IS, Pikmin.
+- Sergeant by Spud.
+- Soldier by Rexacuse, Peerless, Alusq.
+- Summoner by IS.
+- Supplier by N426.
+- WyvernKnight by IS, ArcaneEli, Blood, Yikes!, Huichelaar.
 
 ## Items
 

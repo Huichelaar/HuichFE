@@ -74,7 +74,7 @@ Change how weapon ranks work. Allow units to achieve S even if not promoted. All
 
 Test growths after you've added some more character growths.
 
-Remove female map sprites credits' from Credits struct.
+Redo in-game credits. Disabled atm. Re-enable in-game credits once you're happy with it.
 
 Implement Luck cap per class, Unless you decide to go with overall cap for all stats Ig. Class luck cap table already exists (not referenced in project yet though). There's an FEBuilder patch for reference.
 

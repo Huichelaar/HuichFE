@@ -1,53 +1,35 @@
 Map Sprite            Authors
 
-Supplier              N426
-Soldier               Rexacuse, Peerless, Alusq
-Cavalier              SALVAGED
 Archer                DerTheVaporeon
-Fighter               Alusq
-WyvernKnight          IS, ArcaneEli, Blood, Yikes!, Huichelaar
-Priest                flasuban
--HatlessMageM          Pikmin1211
-
-Conjurer              TODO
-Sergeant              Spud
-Great Knight          Pikmin, L95, Der
-HarbingerT2           Nuramon
-DracoKnight           TODO
-Summoner              IS
-
-ConjurerT3            TODO
-Marshall              Elibean Nights, L95, Pikmin, Der, Huichelaar
-Gold Knight           Pikmin, Der
-Marksman              ArcherBias
-BowKnight             Der, Pikmin
-Harbinger             TODO
-HeroWarT3             TODO
-BerserkerT3           TODO
-Dread Fighter         Nuramon
-Executioner           IS, Lexou, Huichelaar
-RogueT3               TODO
-FalcoKnT3             TODO
-DracoLord             TODO
-Dark Druid            IS
-Necromancer           Huichelaar
-ValkyrieT3            TODO
-War Monk              Der, Author_Pendragon, TODO
-SageT3                TODO
-MageKnightT3          TODO
-
-Revenant              IS, Pikmin
-Entombed              IS, Pikmin
-BonewalkerBow         IS, Pikmin
-Mogall                IS, Huichelaar
 ArchMogall            IS, Huichelaar
-MautheDoog            IS, Pikmin
-Gwyllgi               IS, Pikmin
 Bael                  IS, Pikmin
-ElderBael             IS, Pikmin
-Gargoyle              IS, Pikmin
+Bowalker              IS, Pikmin
+BowKnight             Der, Pikmin
+Cavalier              SALVAGED
+DarkDruid             IS
 Deathgoyle            IS, Pikmin
-Maelduin              IS, Pikmin
+DreadFighter          Nuramon
+ElderBael             IS, Pikmin
+Entombed              IS, Pikmin
+Executioner           IS, Lexou, Huichelaar
+Fighter               Alusq
+Gargoyle              IS, Pikmin
+GoldKnight            Pikmin, Der
 Gorgon                IS, Huichelaar
-
+GreatKnight           Pikmin, L95, Der
+Gwyllgi               IS, Pikmin
+HarbingerT2           Nuramon
+Maelduin              IS, Pikmin
+Marksman              ArcherBias
+Marshall              Elibean Nights, L95, Pikmin, Der, Huichelaar
+MautheDoog            IS, Pikmin
+Mogall                IS, Huichelaar
+Necromancer           Huichelaar
 Phantom               IS, Pushwall
+Priest                flasuban
+Revenant              IS, Pikmin
+Sergeant              Spud
+Soldier               Rexacuse, Peerless, Alusq
+Summoner              IS
+Supplier              N426
+WyvernKnight          IS, ArcaneEli, Blood, Yikes!, Huichelaar
