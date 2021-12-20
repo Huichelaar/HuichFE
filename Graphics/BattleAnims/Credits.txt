@@ -6,6 +6,7 @@ AssassinU                 IS, Huichelaar
 BerserkerF                eCut, Skitty, Serif, Huichelaar
 BerserkerM                BwdYeti, Shadowofchaos, Red, Huichelaar
 BishopF                   Eldritch Abomination, Mikey Seregon, Huichelaar
+BishopM                   Eldritch Abomination, Mikey Seregon, Huichelaar
 BrigandF                  eCut, Skitty
 CavalierF                 Pikmin1211, Maiser6, SALVAGED
 CavalierM                 SALVAGED

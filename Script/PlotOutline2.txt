@@ -1,5 +1,5 @@
 THE SETUP
-The world consists of three islands, Arzil, Beria & Coramo, previously each governed by a different kingdom. However, some evil force (human? dragon? ethereal?) came in and took over each island. Bad guy uses phantoms as their soldiers. And has installed 6 (2 per island) macguffins, catalysts, which the hero needs to destroy. Hero is part of a group of rebels that tries to liberate the islands from the bad guy.
+The world consists of three islands, Arzil, Beria & Coramo, previously each governed by a different kingdom. However, some evil force (human? dragon? ethereal?) came in and took over each island. Bad guy, Desalo, uses phantoms as their soldiers. And has installed 6 (2 per island) macguffins, catalysts, which the hero needs to destroy. Hero is part of a group of rebels that tries to liberate the islands from the bad guy.
 
 
 THE MACGUFFINS
@@ -11,25 +11,23 @@ Stages that hold a Macguffin will re-spawn human enemies as phantoms as a gimmic
 ACT ONE
   THE CREW
   - Vivian. Supplier. The protagonist. Low in rank at the start of the story.
-  - Thief. Second character introduced. Loose fingers, stole a treasure (lights out puzzle) from the ship's hull, gave it to Vivian to complete during the prologue.
+  - Gino. Thief. Second character introduced. Loose fingers, stole a treasure (lights out puzzle) from the ship's hull, gave it to Vivian to complete during the prologue.
+  - Osian. Knight. Older, (Stout?), doesn't josh alot.
   - Vincent. Wyvern Knight. Scout.
   - Demi. Sergeant (Lv30 so gambit?). Leader of the group and commander of the rebels. Will die just before the end of the first act. Promotes Vivian to commander right before death, as she is impressed by her tactics.
   - Milo/Leona. Class varies. Respects Demi, doesn't like Vivian.
   - Simon. Shaman. Vivian's mentor.
   
   PROLOGUE
-  Rebels have their HQ on a small isle at the centre of the three main islands. They have some way to prevent the bad guy from sending troops to this isle to wipe them out. Need to figure out an excuse:
-  - Their location can't be unknown because they'll be betrayed later on, and the person betraying them would know where their HQ is.
-  - Maybe phantoms can't cross the sea? We can't have a final battle on the isle in that case though.
-  - 
-
+  Rebels have their HQ on a small isle at the centre of the three main islands. Phantoms can't cross oceans. Bad guy doesn't send troops to this isle. Need to figure out an excuse. Bad guy will somehow send phantoms for the final act. Need to figure out how.
+  
   The hero starts out as a porter (supplier) as part of a mission to destroy a catalyst on Arzil. Story starts with hero & co. on a ship from rebel HQ to Til forest where the catalyst would reside. Unbeknownst to our heroes, the ship's captain is working for the bad guy (maybe their family has been taken hostage?) and is leading them to an ambush in Ese Neve instead.
 
   CH1 ESE NEVE
   Once arrived. The boat is left unusable, and the crew is encircled by the enemy. With no way back, Demi decides to split the group into three. Til forest is southwest from their current location. A scouting squad will take the shortest route southwest, whereas she will lead a squad to go south then west. Vivian is in the group going west then south. Smaller groups may have an easier time slipping by the enemy. Should one group be taken out, two more still exist. The original plan was to confront an army larger than what they brought, so splitting up shouldn't be very different. Squads:
-    - Scout squad. Consists of Vincent (leader) & thief, TODO more units!
+    - Scout squad. Consists of Vincent (leader) & Gino, TODO more units!
     - Demi's squad. Consists of Demi, Linda & Carmen and some other units who'll be dead.
-    - Simon's squad. Consists of Vivian, Simon (leader), Milo/Leona, some knight?
+    - Simon's squad. Consists of Vivian, Simon (leader), Milo/Leona, Osian.
   
   Prologue features Simon's squad beating up some remnants of the first enemy force, after the group has taken down the others before splitting up.
   

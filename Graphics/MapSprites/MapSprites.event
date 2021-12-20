@@ -27,10 +27,10 @@ ALIGN 4; FighterSt:
 #incbin "FighterSt.dmp"
 ALIGN 4; FighterMv:
 #incbin "FighterMv.dmp"
-ALIGN 4; WyvKnightSt:
-#incbin "WyvKnightSt.dmp"
-ALIGN 4; WyvKnightMv:
-#incbin "WyvKnightMv.dmp"
+ALIGN 4; WyvernKnightSt:
+#incbin "WyvernKnightSt.dmp"
+ALIGN 4; WyvernKnightMv:
+#incbin "WyvernKnightMv.dmp"
 ALIGN 4; PriestSt:
 #incbin "PriestSt.dmp"
 ALIGN 4; PriestMv:

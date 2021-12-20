@@ -1,0 +1,105 @@
+V & T in frame.
+
+T
+What's with the ghoulish face?
+V
+Motion... Sick...ness. Urp!
+V RUNS PAST T AND OUT OF FRAME. T MOVES LEFT.
+T
+Yeee-ikes. You sure you're not a phantom in disguise?
+V
+I might... not get along well with the ocean, but... oh gods!
+V RUNS OUT OF FRAME AGAIN.
+T
+Not making a strong case there.
+V
+I'm crossing the ocean still. Cut me some slack; Have you even seen a phantom talk before?
+T
+No, but I have never seen a human do so whilst vomiting either.
+V
+I wouldn't miss an opportunity to prove you wrong.
+T
+It's that dedication that worries me sometimes, you know?
+V
+Oh ir's nothing like... that... Urp!
+V RUNS OUT OF FRAME AGAIN.
+T
+[smile]Uh-huh...
+So, hey, I got some good news and even better news for you.
+V
+The bar *is* low right now... shoot.
+T
+You sound reluctant to hear it.
+V
+[closeeyes]*ahem*
+Dear sir Johnny 'Gino' Solis, would you be so kind to indulge... me in...[eyesopen] FOR PETE'S!
+V RUNS OUT OF FRAME AGAIN.
+T
+Why yes, how could I refuse such an honest request?
+The good news is that we'll arrive in just three more days.
+V
+That's neither good, nor news!
+Now I dread to hear what the even better news is supposed to be.
+T
+The even better news is... THIS!
+T BUMPS INTO V. V SHAKES. T RUNS BACK.
+V
+What... did you just shove into my hands?
+T
+I think it's one of those things you're good at.
+V
+Vomiting?
+T
+It's a puzzle.
+V
+Did you take this from the hull?
+T
+Nooooo? Just enjoy the present, Vivian.
+V
+My conscience would keep distracting me.
+T
+Just don't let anyone see you have it. I've prepared my alibi; handing it to the captain will only draw suspicion onto you. Toodles!
+T RUNS OUT OF FRAME. V MOVES A LITTLE TO THE LEFT.
+V
+You absolute... I should've figured the even better news... I guess I'll just take a peek then.
+PUZZLE STARTS
+
+[thought]Is this... a weapon? Looks valuable. I'll just mix it with the others and say it's Gino's.
+
+OSIAN ENTERS FROM RIGHT
+O
+Feeling any better, Vivian?
+V
+Oh! Hey Osian. Surprised me there. When'd you get here?
+O
+Just now. Did you get it out of your system?
+V
+Right! Err... well, breakfast and lunch yeah. Still waiting for dinner.
+O
+I was referring to your anxiety.
+V
+That one's probably going to stay inside.
+O
+I get it's a large responsibility, but shape up. You'll be furthest from the enemy.
+V
+I know that, but that's only relative to you all. You're all going to face Desalo directly.
+O
+And we joined this expedition knowing that full well. Why did you join?
+V
+I'm from Arzil. When Desalo took over... When I left, I abandoned my friends and family. From everything I've heard, Desalo punishes anyone even remotely related to their enemies. I owe it to my family to do something to make things right.
+O
+That's honourable, but then you'll have to first beat your current foe.
+V
+Pardon?
+O
+You can't do anything for those you left behind, if you can't suppress your anxiety.
+V
+Yes, yes. Easier said than done, but yes.
+O
+Some extra sleep could help. You should call it an early night.
+V
+[smile]Who knows, maybe I'll get to keep dinner.
+O
+Rest well, Vivian.
+V
+Good night, Osian.

@@ -218,6 +218,7 @@ TODO. OSRS Orchestra hit was either recorded straight from the Sound Canvas VST 
 - BerserkerF by eCut, Skitty, Serif, Huichelaar.
 - BerserkerM by BwdYeti, Shadowofchaos, Red, Huichelaar.
 - BishopF by Eldritch Abomination, Mikey Seregon, Huichelaar.
+- BishopM by Eldritch Abomination, Mikey Seregon, Huichelaar.
 - BrigandF by eCut, Skitty.
 - CavalierF by Pikmin1211, Maiser6, SALVAGED.
 - CavalierM by SALVAGED.

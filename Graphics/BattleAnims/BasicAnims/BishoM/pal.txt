@@ -1,11 +1,11 @@
 trans
 white
-underw3_1
-underw3_1
-skin4_1
-skin4_2
-skin4_3
-skin4_4
+skin3_1
+skin3_2
+skin3_3
+hair2_1
+hair2_2
+white
 underw3_1
 underw3_2
 underw3_3
