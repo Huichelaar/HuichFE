@@ -8,12 +8,12 @@ V RUNS PAST T AND OUT OF FRAME. T MOVES LEFT.
 T
 Yeee-ikes. You sure you're not a phantom in disguise?
 V
-I might... not get along well with the ocean, but... oh gods!
+I might... not get along well with the sea, but... oh gods!
 V RUNS OUT OF FRAME AGAIN.
 T
 Not making a strong case there.
 V
-I'm crossing the ocean still. Cut me some slack; Have you even seen a phantom talk before?
+I'm crossing the sea still. Cut me some slack; Have you even seen a phantom talk before?
 T
 No, but I have never seen a human do so whilst vomiting either.
 V
@@ -100,6 +100,6 @@ Some extra sleep could help. You should call it an early night.
 V
 [smile]Who knows, maybe I'll get to keep dinner.
 O
-Rest well, Vivian.
+[closeeyes]Rest well, Vivian.
 V
 Good night, Osian.
