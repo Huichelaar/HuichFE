@@ -3,7 +3,7 @@ Stuff that isn't mentioned here is stuff that comes with the FE8U ROM, stuff I m
 # SkillSystem
 
 The buildfile I started with is the [SkillSystem's](https://github.com/FireEmblemUniverse/SkillSystem_FE8).
-SkillSystem credits from 12/01/2021 (day/month/year).
+SkillSystem credits from 7/04/2021 (day/month/year).
 Note: This list is incomplete and insufficiently organized.
 
 ## Skill contributors
@@ -23,6 +23,7 @@ Note: This list is incomplete and insufficiently organized.
 - Kirb
 - Sme
 - Ganzap
+- Mikey Seregon
 
 ## Other
 

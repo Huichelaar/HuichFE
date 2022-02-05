@@ -1,7 +1,7 @@
 #ifndef HAX_CONFIG
 #define HAX_CONFIG
 
-// This file holds configuration switches for all hacks shipped with the skill system
+// This file holds configuration switches for all hacks shipped with the skill system.
 
 
 // =========================
@@ -53,6 +53,9 @@
     
     Existing toggles are generally still there because atm I'm unsure whether I wish to keep them or not.
 */
+
+// If true, dropped items will retain their durability.
+#define DROPPED_ITEM_DURABILITY False
 
 //If uncommented, will enable Dragon Veins.
 #define DRAGON_VEINS
@@ -154,7 +157,7 @@
 //If HEROES_MOVEMENT_SKILL_REQUIRED is not defined, this setting will control whether or not skills can still be used.
 #define ALSO_USE_MOVEMENT_SKILL_CHECK True
 
-//If true, get 1/4 prices with both bargain and silver card simultaneously.
+//If true, get 1/4 prices with both Bargain and Silver Card simultaneously.
 #define DOES_BARGAIN_STACK False
 
 //If true, will use the vanilla check in addition to the skill check.

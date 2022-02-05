@@ -1,73 +1,3 @@
-THE NEXT MORNING
-VINCENT MAPSPRITE RUNS TOWARDS DEMI AND ML MAPSPRITE.
-
-V
-Commander, land ho!
-D
-What!? That doesn't make sense. We shouldn't arrive for another two days.
-V
-I couldn't make out any forest nearby. I don't think we are approaching Til.
-D
-Not good. ML, wake the others. Vincent, you and I will be paying the captain a visit.
-ML
-Yes, ma'am.
-V
-Roger.
-
-SCENE SWITCH
-
-ML
-*knock* WAKE UP. Action Stations!
-Viv
-Wh-What's going on?
-ML
-We're off course. Gather at the deck.
-ML DISAPPEARS
-Viv
-Wait, what does that mean? How did we get off course?
-
-FADE TO MAP, FOLLOW VIVIAN TO DECK WHERE OTHER MAPSPRITES ARE PRESENT.
-
-Viv
-Osian, what's happening, why is everyone gathered here?
-O
-Not sure, ML told me we're off course and sent me here. He/She's never been one to elaborate.
-GINO MOVES INTO VIEW
-T
-Osian, sir, uhm... I've got some bad news.
-O
-Let's hear it.
-Viv
-Oh no...
-T
-Well, I happened to be near the hull, you know, for...
-O
-Don't care about your excuses, get to the point.
-T
-There's explosives in the hull of the ship.
-Viv
-What!?
-T
-I disabled all I could find, but we should disembark ASAP.
-O
-I'll inform Demi. You two... just stay put.
-Viv
-Sir, we need to abandon ship!
-O
-And swim to Til? We won't reach land for another two days. You're panicking.
-T
-Umm actually, you should look behind you, sir.
-O
-...
-Viv
-No, sir, he's not pulling your leg. You have to see this.
-O
-...
-OSIAN TURNS AROUND
-O
-...Land?
-
-
 DEMI AND VINCENT MAPSPRITES APPEAR
 D
 Everyone! We're about to land at Ese Neve. The captain is missing and the ship's course has been locked in. We're also missing a safety boat. We've likely been betrayed by the captain.
@@ -76,40 +6,13 @@ Ma'am! There are explosives on board!
 Vin
 We have *definitely* been betrayed.
 THUD NOISE. EARTHQUAKE EFFECT. SHIP HAS LANDED
+Viv
+What was that?
 D
-...
-Alright. Everyone disembark! Be prepared; We are likely walking into an ambush.
+We've landed. Everyone disembark! Be prepared; We are likely walking into an ambush.
 DEMI DISAPPEARS OUT OF FRAME
 Vin
 *Definitely* walking into an ambush.
-
-SCENE SWITCHES TO CH1 MAP. CAPTAIN AND CH1 BOSS TALK
-
-Turner
-What happened? I didn't hear any bang.
-Captain
-The explosives might have been disabled.
-T
-How'd that happen?
-C
-Someone must have found them.
-T
-You weren't guarding them?
-C
-I was lucky to even find a moment where I could escape undetected. What was I supposed to do, guard the explosives until they detonate? That'd be suicide!
-T
-You were supposed to detonate the explosives. They didn't detonate.
-C
-I led them to Ese Neve. This is why there was a back-up plan, right?
-T
-[closeeyes]... You're not supposed to rely on the fact there's a back-up plan. [openeyes] That's what made your execution ham-fisted. [pause] You'll be given a second chance.
-C
-No! Please, I-
-
-TURNER KILLS MAPSPRITE CAPTAIN
-
-T
-Alright people. Let this be a lesson to any of you who were thinking of slacking. There is no back-up plan. Fail here, and you'll be sent to wherever the captain went.
 
 SCENE SWITCHES TO SEPARATE MAP WITH OUR HEROES
 
@@ -124,7 +27,7 @@ You bet your bippy.
 Vin
 Then I guess you got them all, considering the ship is whole. Or was the captain just smuggling explosives?
 D
-I doubt that. They took a safety boat. I think the plan had always been to get us all killed in an explosion.
+I doubt that. They left in a safety boat. I think the plan had always been to get us all killed in an explosion.
 Vin
 If all the explosives have been taken care of, shouldn't we sail back home?
 T
@@ -134,38 +37,144 @@ Not to mention,
 we don't have anyone else with any knowledge of sailing this ship.
 D
 Here's what we're going to do. We will stick to our original plan and head to Til forest. Instead of arriving there by boat, we will traverse the final stretch by foot. As we're likely walking into an ambush, we'll split into three groups.
-T
+Vin
 How will we defend ourselves if we reduce our numbers like that?
 D
-We won't. The point is that smaller groups will have an easier time slipping past the enemy. Furthermore, if one group gets found and routed, the others can still make it. Here's the groups: Gino and Vincent, you two will take the most direct path to Til, southwest.
-T
-That's the most guarded path!
-D
-Hence why you're group is the smallest. This is also the second time you've interrupted me, Gino. Vincent will lead.
+We won't. We will avoid confrontation as much as possible. Smaller groups will have an easier time slipping past the enemy. Furthermore, if one group gets found and routed, the others can still make it. Gino and Vincent, you two will take the most direct path to Til, southwest.
 Vin
-We'll be fine, Gino. We can just fly over enemies and terrain alike. None will touch us.
+That's likely the most guarded path!
+D
+Hence why your group is the smallest. This is also the second time you've interrupted me, Vincent. Gino will lead.
 T
-You're underestimating the reach of a bow.
+We'll be fine, Vin. You can just fly over enemies and terrain alike. None will touch us.
+Vin
+That's not quite how it works.
 D
-Listen, I get you're worried, and you have every right to be. However, now is not the time to argue. On to group two. Linda, Carmen, you'll be joining me. We're going to head south, then west.
-L
-Understood.
-D
-Everyone else is in group three. Simon, you will lead this group. You'll go west, then south.
+Now is not the time to argue. On to group two. Simon will be in charge of this group. Vivian, ML, Carmen, Isabel, You're all in this group. You'll head west, then south.
 S
 Yes'm.
 D
-We will meet up X days from now in Til forest. If you get there early, hide and wait until the other groups arrive. Once the deadline arrives, we will strike with everyone who has made it. Disperse!
+Everyone else is in group three, which I'll lead. We will head south, then west. X days from now, we will meet up in Til forest. Then, we will strike with all of us who made it through. Questions? Alright. Form groups and disperse!
 
+SCENE SWITCH TO CH1 MAP
 
+Isabel
+Heads up, we're being surrounded.
+Viv
+We've been found then?
+I
+Not necessarily, but we will inevitably run into some enemies now.
+S
+Alright, we'll prepare for battle then. Vivian, unpack.
+Viv
+Oh gods...
+ML
+Hey, where's my weapon?
+Viv
+Yeah, sorry I seem to somehow have... misplaced your weapon.
+ML
+You can't be serious.
+Viv
+I've got this one though.
+ML
+Whose is this?
+Viv
+I got it from the sh- I mean, Gino gave it to me.
+ML
+And you didn't give it back when we split?
+Viv
+He gave it to me, but I've got a spare, so please.
+S
+What's taking so long?
+ML
+She misplaced my weapon.
+Viv
+We sorted it out though, didn't we?
+ML
+[eyesclose]...Can't believe he picked you.
+ML MOVES OUT OF FRAME
+Viv
+Guess not...
+S
+Vivian.
+Viv
+Yeah, Simon?
+S
+You'll be handing out orders for this fight.
+Viv
+Wha- You... You were serious about that?
+S
+I've already informed the others. I know you can do it. Good luck!
+Viv
+*Oh* gods...
 
+BACKGROUND FADES OUT, MAP FADES IN, ENEMIES APPEAR, CURSOR HOVERS OVER VIVIAN.
 
+Viv
+Alright, considering how they've moved so far... Their leader is probably the one furthest back. We defeat... we kill that one, and we should be able to scurry past the grunts.
 
+CURSOR TO ENEMY BOSS
 
+Turner
+Rubbish! These can't be their main troops. Figures I'd be stuck with leftovers. Alright everyone, let loose! Won't be any trouble with these numbers.
 
+CHAPTER STARTS
 
+BOSS QUOTE
 
+Turner
+[smile]Welcome ashore! Should've stayed on your little island. Let me show you how things are run on the continent now.
 
+BOSS DEATH QUOTE
 
+Turner
+No... It wasn't supposed... to go like this...
 
+HOUSE CIV TEXT
+Heavens to Betsy, what's this uproar?[AN]
+I'm sorry, but I can't give shelter.[N]
+All I can give you is this.[AN]
+This weapon is a family heirloom,[N]
+but I've got little use for it.[AN]
+Supposedly it makes its wielder[N]
+[Red]less conspicuous[Red]...[AN]
+Can't say my...[.5] experience agrees.[N]
+Perhaps, it needs some [Red]touchups[Red]?[AN]
+[X]
 
+OUTRO TEXT
+
+Simon
+That seems to have been their leader.
+Vivian
+Yeah, it's always the talkative ones.
+S
+You holding up alright?
+Viv
+To an extent. I knew what I was in for when I joined.
+ML
+Can we get moving now?
+Viv
+Oh yes, of course.
+ML
+Simon?
+S
+Yes, onwards. We'll move to Tryza. That should be west enough. After that we'll move south as Demi instructed.
+ML
+Understood.
+ML FADES OUT OF FRAME
+Viv
+...right.
+S
+Vivian, you've got some friends in Tryza, right?
+Viv
+Assuming they're... still around. I haven't managed to contact them. They used to live right outside the village.
+S
+Perfect. We'll try to take shelter there.
+Viv
+Simon, I don't know if they'll appreciate that.
+S
+We'll try at least.
+SIMON FADES OUT OF FRAME
+Viv
+[eyesclose]Right...

@@ -1,0 +1,556 @@
+CAPTAIN AND CH3 BOSS TALK
+
+Alvin
+What happened? I didn't hear any bang.
+Captain
+The explosives might have been disabled.
+A
+How'd that happen?
+C
+Someone must have found them.
+A
+You weren't guarding them?
+C
+I was lucky to even find a moment where I could escape undetected. What was I supposed to do, guard the explosives until they detonate? That'd be suicide!
+A
+You were supposed to detonate the explosives. They didn't detonate.
+C
+I led them to Ese Neve. This is why there was a back-up plan, right?
+A
+[closeeyes]... You're not supposed to rely on the fact there's a back-up plan. [openeyes] That's what made your execution ham-fisted. [pause] You'll be given a second chance.
+C
+No! Please, I-
+
+ALVIN KILLS MAPSPRITE CAPTAIN
+
+A
+Alright people. Let this be a lesson to any of you who were thinking of slacking. There is no back-up plan. Fail here, and you'll be sent to wherever the captain went.
+
+SCENE SWITCH TO VIV & CO KNOCKING ON THERESA'S DOOR
+
+Viv
+Uhm...
+S
+They're your friends, right? Knock.
+Viv
+Right, right...
+*KNOCK SFX*
+Offscreen
+Who's there?
+Viv
+Theresa!? It's me, Vivian!
+Offscreen
+Wait... What!?
+*DOOR OPEN SFX*, THERESA APPEARS
+T
+Deary me, it really is! Where have you been?
+S
+Excuse me, but could we enter?
+T
+Oh yes, of course!
+
+SCENE SWITCH
+
+T
+So Viv, where have you been all this time?
+Viv
+Uhm... So I joined the resistance.
+T
+You... You did?
+S
+I'm going to have to speed this along. We're a resistance platoon. We're moving through Arzil now as part of an excursion to destroy a catalyst. Our pursuers are still around. We came here mostly to take shelter.
+V
+I'm sorry Theresa, the original plan didn't involve any of this.
+T
+[smile]It's fine, I'm glad you're still alive!
+V
+[nosmile]Theresa, my parents, are they ok?
+T
+I was hoping you knew. They disappeared at the same time as you.
+V
+I couldn't reach them before I left. If they've disappeared, then they've probably been killed by Desalo.
+T
+Any who oppose Desalo are
+to be publically executed.
+Your parents were not.
+S
+It might not serve the narrative he's weaving. Resistance is to be futile. Vivian's parents weren't with the resistance. If they were punished, it could draw attention to the fact that their daughter joined the resistance, yet wasn't punished.
+T
+Bit paranoid, but then paranoia describes Desalo well.
+I if alive, otherwise ML
+I
+I've been keeping a lookout. More and more people have been gathering.
+S
+Is this place usually busy?
+T
+No, we're on the outskirts of Tryza. Most business is further north from here.
+I
+They appear to be approaching the house.
+S
+Must be the enemy then. No shelter for us, I guess. Sorry, lady, we've attracted undeserved attention to your house.
+T
+It's fine! You've done nothing wrong.
+S
+Thanks for the support. Everyone, we're moving out. We'll head south, once we break through the enemy formation. Vivian, you lead again.
+V
+Y-Yes, sir!
+
+SCENE SWITCHES TO OUTSIDE
+
+I if alive, otherwise ML.
+We're quite surrounded.
+C if alive.
+Good. That means it'll be easier to break through any specific part of their formation.
+S if C alive
+That's not quite how it works, but I like your optimism.
+S if C not alive.
+We will be just fine.
+
+THERESA EXITS THE HOUSE
+
+Viv
+Theresa! What are you doing!? You should head back inside and lock the door.
+T
+Vivian, Herbert...
+Herbert is still doing[N]
+groceries in town.[AN]
+He could return any minute.[AN]
+What if these people attack[N]
+him and he gets hurt?[AN]
+[ML]
+R-right[TMM]...[TMM][.4] In any case,[N]
+we need to move.[AN]
+Let's try to stick[N]
+together and find him.[AN]
+[FR][BoxHeight][0x1]
+Yes. I've brought my bow![AN]
+[CloseSpeech]
+[FR][BoxHeight][0x2]
+He'll be fine. He'll be fine.[AN]
+[HalfCloseEyes][TMM]...[TMM][.6][AN]
+Gods, if anything were[N]
+to happen to him[TMM]...[TMM][AN]
+[ML][BoxHeight][0x1]
+Theresa, we need to move![AN]
+[FR]
+[OpenEyes]Y-yes! Right away![AN]
+
+CAMERA MOVES TO AIDEN BOSS.
+
+Aiden
+Alright everyone. They're surrounded.
+You know the drill, leave none alive.
+If [red]even one escapes[red], it's our heads.
+[CloseSpeech]
+[L][BoxType][0x1][BoxHeight][0x1]
+Hey. You.[AN]
+[FFR][LoadSoldierF]
+[MoveR][FFR]
+[R]
+Ma'am.[AN]
+[L][BoxHeight][0x2]
+Take some people and watch the[N]
+the [Red]village entrance, up north[Red].[AN]
+We don't want more people[N]
+getting involved in this.[AN]
+[R][BoxHeight][0x1]
+Yes ma'am![AN]
+[X]
+
+SOLDIER MOVES NORTH AND SPAWNS SOME OTHER ENEMIES.
+
+T
+They're at the stairway.
+That's the route Herbert
+takes to the store!
+ML
+That's north. We're
+supposed to go south.
+T
+Vivian!
+Viv
+Yes, I'm thinking up
+a strategy, ok?
+I'll find a way
+to get Herbert.
+I promise.
+ML
+Don't factor in going north.
+We can't linger.
+S
+ML, Vivian is the strategist.
+Leave the plan to her.
+
+FIGHT STARTS
+CHAPTER GOAL IS TO ESCAPE VIA SOUTHEASTERN SQUARE, JUST SOUTH OF KNIGHT
+JUST ONE PERSON HAS TO ESCAPE THERE.
+THERE'S A TURN LIMIT, FINISH WITHIN TURN LIMIT.
+OPTIONAL GOALS: RECRUIT HERBERT, DEFEAT BOSS FOR THEIR DROPPABLE WEP.
+
+
+HERBERT APPEARS
+H
+[L][LoadHerbert]
+So.[.4] Many.[.4] People![AN]
+They're armed?[AN]
+Organized too.[AN]
+Their formation[TMM]...[TMM][.5][N]
+They're sellswords.[AN]
+What are they doing here?[AN]
+[X]
+
+VIVIAN RECRUITS HERBERT
+[ML][LoadHerbert]
+[MR][LoadVivian][BoxHeight][0x1]
+Herbert![AN]
+[ML][BoxHeight][0x2]
+Vivian. Why am[N]
+I not surprised?[AN]
+You have anything to do[N]
+with these sellswords?[AN]
+[MR][BoxHeight][0x1]
+Err... They're after us.[AN]
+[ML][TextSpeed][0xF]
+[CloseEyes]...[.5][OpenEyes] Where's Theresa?[AN]
+[MR]
+Looking for you.[AN]
+[ML]
+She should've remained inside.[N]
+These people are ferocious.[AN]
+Why are they after you, again?[AN]
+[MR]
+We're actually resistance.[AN]
+[ML][CloseEyes]
+Of course you are.[AN]
+[OpenEyes]
+Vivian, If anything[N]
+happens to Theresa[TMM]...[TMM][AN]
+[MR]
+I know. She's not part of this[N]
+conflict. I won't let her die.[AN]
+[ML]
+No[.5], you made her part[N]
+of this conflict.[AN]
+Desalo's not going to be[N]
+merciful to anyone involved.[AN]
+[MR][BoxHeight][0x1]
+I'm... I'm sorry.[AN]
+[ML][BoxHeight][0x2]
+It's too late at this point.[AN]
+Let's just get rid of these[N]
+sellswords.[AN]
+[MR][BoxHeight][0x1]
+Sorry, and thanks, Herbert.[AN]
+
+
+THERESA RECRUITS HERBERT
+[ML][LoadHerbert]
+[MR][LoadTheresa][BoxHeight][0x1]
+Herbert![AN]
+[ML][BoxHeight][0x1]
+Theresa! Are you ok?[AN]
+[MR][BoxHeight][0x2]
+Somehow hanging in there,[N]
+what about you?[AN]
+[ML][BoxHeight][0x1]
+Managing.[AN]
+[CloseSpeech]
+[ML][BoxHeight][0x2]
+What in the bloody hell[N]
+is going on here?[AN]
+[MR]
+It's Vivian, She's still alive.
+These people are here to kill her.
+She's part of the resistance.
+[ML]
+Hold up, one thing at a time.
+Vivian's... she's still...[.6][CloseEyes]
+Go figure.
+[MR]
+Oh,[.4] no need to hide
+your disappointment.
+We're going to help
+her out. 
+[ML]
+No, we should leave!
+[MR]
+Herbert, this is our
+chance to fight back!
+Never has there been
+a better opportunity!
+[ML]
+Did Vivian talk you into this?
+Yes, it's our best chance.
+No, it's not a good chance.
+[MR]
+She didn't and too bad;
+I'm taking it regardless.
+[ML]
+...
+[MR]
+Not leaving yet?
+[ML][CloseEyes]
+...join.
+[MR]
+What was that? You have
+to speak up, Herbert.
+[ML][OpenEyes]
+I said I'll join you.
+[MR]
+Glad to have you onboard!
+
+THERESA PORTRAIT MOVES OFFSCREEN
+
+[ML]
+You're lucky I'm in love
+with you or else...
+[FFR]
+Did you say something again?
+[ML]
+Nothing dear!
+
+
+VIVIAN TALKS TO HERBERT AFTER THERESA RECRUITED HIM
+H
+YOU!
+Viv
+Hey Herbert! Err... long time no...
+Wait why are you charging at me?
+Oh gods!
+
+VIVIAN MOVES OFFSCREEN
+HERBERT MOVES RIGHT.
+
+H
+Don't you run!
+This is all your fault.
+Stand and collect your
+just desserts!
+
+
+THERESA TALKS TO HERBERT AFTER VIVIAN RECRUITED HIM
+[ML][LoadHerbert]
+[MR][LoadTheresa][BoxHeight][0x1]
+Herbert![AN]
+[ML][BoxHeight][0x1]
+Theresa! Are you ok?[AN]
+[MR][BoxHeight][0x2]
+Somehow hanging in there,[N]
+what about you?[AN]
+[ML][BoxHeight][0x1]
+Managing.[AN]
+[CloseSpeech]
+We should leave[.5],
+right now.
+[MR]
+Herbert, this is our
+chance to fight back!
+Never has there been
+a better opportunity!
+[ML]
+Did Vivian talk you into this?
+Yes, it's our best chance.
+No, it's not a good chance.
+[MR]
+She didn't and too bad;
+I'm taking it regardless.
+[ML]
+...
+[MR]
+Not leaving yet?
+[ML][CloseEyes]
+...join.
+[MR]
+What was that? You have
+to speak up, Herbert.
+[ML][OpenEyes]
+I said I'll join you.
+[MR]
+Glad to have you onboard!
+
+THERESA PORTRAIT MOVES OFFSCREEN
+
+[ML]
+You're lucky I'm in love
+with you or else...
+[FFR]
+Did you say something again?
+[ML]
+Nothing dear!
+
+
+[FL][LoadHerbert]
+[L][LoadTheresa]
+[MR][LoadVivian]
+[MR][ToggleSmile]
+Theresa, Herbert, I'm so glad[N]
+you're both doing well.[AN][ToggleSmile]
+[FL][BoxHeight][0x1]
+Describe ``well''.[AN]
+[L][BoxHeight][0x2]
+Herbert, We only made it out of[N]
+there due to her instructions![AN]
+[FL]
+I'd argue we did [Font][0x3]despite[Font][0x1][N]
+her instructions.[AN]
+Regardless, what exactly
+are you doing here?
+[MR]
+We're here to destroy a catalyst.
+We assume it's at Til forest.
+We're heading there now.
+If we hurry we can still meet
+up with our allies.
+[FL]
+You have fun with that then.
+It's been- GAH
+
+THERESA PORTRAIT TREMBLES.
+
+T
+What he meant to say was:
+
+DEEPEN THERESA VOICE.
+
+[CloseEyes]
+Best we step on it then.[N]
+We're coming with.[AN][OpenEyes]
+[MR][ToggleSmile][BoxHeight][0x2]
+Thank you! That means[N]
+a lot to me.[AN][ToggleSmile]
+[X]
+
+
+
+[ML][LoadHerbert]
+[MR][LoadVivian]
+[MR]
+Herbert[TMM]...[TMM] I'm so sorry[N]
+about Theresa.[AN]
+[ML]
+You should have left us be.[AN]
+Wherever you go, trouble[N]
+is sure to follow.[AN]
+[MR][BoxHeight][0x1]
+Herbert, I never intended-[AN]
+[ML][BoxHeight][0x2]
+Spare me the excuses.[AN]
+there's always a[N]
+different culprit.[AN]
+Yet, every time the[N]
+common factor is you.[AN]
+Farewell, Vivian.[AN]
+[X]
+
+
+[ML][LoadTheresa][HalfCloseEyes]
+[MR][LoadVivian]
+[ML]
+Vivian[TMM]...[TMM][.6] You promised[TMM]...[TMM][AN]
+[OpenEyes]You said you knew of a[N]
+way to get Herbert![AN]
+[MR]
+I'm sorry, I[TMM]...[TMM][N]
+I don't have any excuses.[AN]
+[ML]
+Wouldn't need them anyway.[N]
+[HalfCloseEyes]Just[TMM]...[TMM][.6] Herbert.[AN]
+[CloseSpeech][.5]
+[ML][OpenEyes][BoxHeight][0x1]
+You're leaving, right?[AN]
+[MR]
+You could come with us.[AN]
+[ML][HalfCloseEyes][BoxHeight][0x2]
+No, I'm not in that state[N]
+of mind, right now.[AN]
+Goodbye, Vivian.[AN]
+[X]
+
+
+SOMEONE IN THE PARTY ESCAPED. CHAPTER ENDS
+
+Aiden
+We let one slip by.
+Alright everyone, retreat.
+We got bigger issues now.
+
+SWITCH MAPS
+
+C if alive, otherwise Viv
+Why'd they suddenly retreat?
+S
+I'm not sure, but I'm not
+taking any chances;
+We'll move further south.
+
+HERBERT THERESA VIVIAN TALK HAPPENS NOW
+
+SWITCH MAPS
+
+I if alive, otherwise S
+This should be far enough.
+S
+Alright, then we'll set
+up camp here.
+
+SCENE HAPPENS IF H & T ARE ALIVE
+
+H
+Pardon, Vivian told me you're
+in charge of this platoon?
+S
+Yes, I don't believe we've met.
+I'm Simon. I'm glad to finally
+meet you, Herbert.
+H
+Pleasure's all mine.
+S
+Thanks again for helping us out.
+Send my regards to Theresa as well.
+H
+Will do.
+S
+Could I ask you something?
+H
+Go ahead.
+S
+Unlike our enemy, we were unprepared.
+We were betrayed and crashed quite
+a distance from our goal.
+Despite our small platoons, we
+were still found.
+H
+True. None of those statements
+were questions though.
+S
+Having established that
+Desalo's got us outwitted,
+how come his troops retreated?
+H
+How much do you know about Desalo?
+S
+We have not managed to keep an eye
+out consistently from our base.
+H
+In the few years he's reigned so far,
+Desalo's not been without his quirks.
+One of them is his love for absolutes.
+Another his tendency toward
+draconian punishments.
+You fought sellswords. They can't
+refuse an assignment by Desalo,
+but they're not exactly loyal.
+I imagine they failed their job
+as soon as even one of you escaped.
+All that awaits now is punishment.
+Knowing this, they abandoned the job.
+S
+So much for that. I would've expected
+more from someone like Desalo.
+H
+He's still got cards left. You know
+about his second army, right?
+S
+Do go on.
+
+SCENE FADES OUT

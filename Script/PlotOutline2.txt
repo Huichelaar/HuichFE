@@ -26,8 +26,8 @@ ACT ONE
   CH1 ESE NEVE
   Once arrived. The boat is left unusable, and the crew is encircled by the enemy. With no way back, Demi decides to split the group into three. Til forest is southwest from their current location. A scouting squad will take the shortest route southwest, whereas she will lead a squad to go south then west. Vivian is in the group going west then south. Smaller groups may have an easier time slipping by the enemy. Should one group be taken out, two more still exist. The original plan was to confront an army larger than what they brought, so splitting up shouldn't be very different. Squads:
     - Scout squad. Consists of Vincent (leader) & Gino, TODO more units!
-    - Demi's squad. Consists of Demi, Linda & Carmen and some other units who'll be dead.
-    - Simon's squad. Consists of Vivian, Simon (leader), Milo/Leona, Osian.
+    - Demi's squad. Consists of Demi, Linda & Osian and some other units who'll be dead.
+    - Simon's squad. Consists of Vivian, Simon (leader), Milo/Leona, Carmen, Isabel.
   
   Ch1 features Simon's squad beating up some remnants of the first enemy force, after the group has taken down the others before splitting up.
   
@@ -35,7 +35,7 @@ ACT ONE
   Vivian's group tries to take shelter at a childhood friend of Vivian's, Theresa and her partner, Herbert. Enemies surround them regardless. Theresa & Herbert join. The squad defeats the enemy.
   
   CH3 IVYLANDS
-  Scout squad and Demi's squad have met up already and are moving towards Til. Vincent, Carmen & Linda hang back to see if Simon's squad will still arrive. Which they do in this chapter. They join up, but have to fight more foes. Some phantoms are mixed in the enemies. As good a time as any to introduce them. Beat the enemies, move to the next chapter.
+  Scout squad and Demi's squad have met up already and are moving towards Til. Vincent, Osian & Linda hang back to see if Simon's squad will still arrive. Which they do in this chapter. They join up, but have to fight more foes. Some phantoms are mixed in the enemies. As good a time as any to introduce them. Beat the enemies, move to the next chapter.
   
   CH4 TIL FOREST
   Everyone joins up. Demi is lv30, so she starts off somewhere alone I guess. Make sure to load enemies before Demi joins as her level is far higher than everyone else's. First catalyst-chapter, human enemies will re-spawn as phantom enemies, near the catalyst. Goal is to seize the catalyst tile.
