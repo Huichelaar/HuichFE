@@ -78,6 +78,8 @@ Redo in-game credits. Disabled atm. Re-enable in-game credits once you're happy 
 
 Implement Luck cap per class, Unless you decide to go with overall cap for all stats Ig. Class luck cap table already exists (not referenced in project yet though). There's an FEBuilder patch for reference.
 
+Hard-coded cape flow stuff (command 47) depends on magic-cast anims being in specific anim slots. Try to un-hardcode this, or adapt it to the new slots. 0x80595FC is the thing that gets executed on command 47.
+
 If we need space:
   - Room for 0x2000 text entries. Can reduce this in repointedTextTable.event.
   - Some tables have entries they're not using, see Tables/TableOptions.s.

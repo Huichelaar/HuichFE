@@ -7,6 +7,8 @@ If a person dies while in (some) range of a catalyst, they'll respawn as a phant
 
 Stages that hold a Macguffin will re-spawn human enemies as phantoms as a gimmick.
 
+NARRATOR
+Vivian will narrate world map events. We could use some kind of HBlank routine to randomly increase which scanlines will use a sepia palette to indicate a flashback is starting.
 
 ACT ONE
   THE CREW

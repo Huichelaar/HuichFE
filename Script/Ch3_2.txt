@@ -1,2 +1,271 @@
-SIMON PLATOON ARRIVES AT THE IVYLANDS.
+IF T NOT ALIVE. THIS CAN'T BE REACHED ANYMORE. DELETE AFTER COMMITTING ONCE.
+S
+Vivian, when you were talking to your friend, she mentioned Port Cryfin.
+V
+Theresa, yeah.
+S
+I'm sorry for what happened back there, but-
+V
+I broke my promise. I couldn't protect them.
+S
+These things happen. And they'll continue to happen.
+V
+They wouldn't happen had I not gotten them involved.
+S
+That was my call, remember?
+V
+And I answered it.
+S
+Yet it was my call. My responsibility.
+V
+That's easy for you to claim. You didn't know them!
+S
+What's wrong with easy? Things are only going to get harder from here. Let me carry this responsibility as the leader. It's one of the few perks you get for following orders.
+V
+But-
+S
+My call, my responsibility. Shifting gears. Vivian, Port Cryfin.
+V
+Y-Yes, my hometown.
+S
+I wasn't aware it was closed off? Was it when you left?
+V
+It was.
+S
+Why didn't you tell us?
+V
+At first, I didn't want to think back on what happened there. Later on it became harder and harder to call it back.
+S
+Could you tell me still? Any bit of info can help.
+V
+Alright...
 
+
+T IF ALIVE
+So Viv, while we're moving, won't you tell me what happened back in Cryfin? How did you end up escaping and joining the resistance?
+Viv
+Yes. Well...
+
+FLASHBACK. VIVIAN AS NARRATOR
+
+It all started two years ago. Port Cryfin was suddenly overrun by foreign soldiers. Their leader introduced himself as Osman the Fair, despite his scarred visage. He promptly murdered the village elder and claimed the village was now under his supervision. I was startled and confused. Village elders are appointed by the king of Arzil. Killing one is treason. Is this man overconfident or suicidal? I soon learnt he was neither.
+
+Osman continued to 'manage' our village, without any interference by the king. He implemented a system he named "democratic culling". Every month, a villager, sacrifice really, was selected to be hung in the village square. Their body would remain for a week, before being taken down. Worst of all, *we*, the villagers, were supposed to choose the sacrifice. We'd have to write down two names, and drop our vote in a ballot box. The first name, would be the sacrifice's, whereas the second would be the voter's. Naturally, no one would vote and betray one of their own. However, Osman would then pick the sacrifice. He would always pick alphabetically from the group of people who did not vote. Thus, even our inaction could be seen as a choice to doom one of ours.
+
+Unsurprisingly, those higher on the alphabet were quick to change their mind and vote. That lead to a chain reaction where people lower on the alphabet would start voting. Not long after, everyone in the village would vote. We had decided to vote for the eldest person in the village, every month. Some would willingly go, knowing they had doomed others before them. Others would try to run, knowing this would doom someone else in their stead. Everyone would be guilty, either way.
+
+Despite his cruel tyranny, Osman himself was as scary as a baby bunny compared to his soldiers. Escape was impossible; They kept watch everywhere and everywhen. Osman's bellowing snoring starkly juxtaposed his guards' seeming insomnia. Not to mention their silence. Never had I heard a single one of these people utter a word. Never did they react to any of our attempts at communication. Osman's soldiers were like a guided natural disaster in human guise. Nothing *we* could reason with, yet lead to us by *someone*.
+
+One day I figured out a blind spot; A pier with a rowboat that no-one was watching. I informed my dad and we made our escape. Tried to, at least. Turns out it wasn't unguarded at all. Just as we started rowing I heard a loud wail followed by a splash. When I turned around my father wasn't there anymore. All I could see was the ghastly visage of whoever killed him. Yet, she didn't look back at me. After a brief moment of confusion, I decided to keep rowing.
+
+FLASHBACK OVER, SEPIA DEACTIVATE.
+
+Viv
+I spent days rowing, not sure if I was being pursued, but no-one ever came for me. Then one day my boat was discovered by a patrolling ship.
+T
+The resistance?
+Viv
+Yeah. Commander Demi, our leader, took me in. I decided to fight. The least I could do after abandoning my father.
+T
+You couldn't help it though.
+You couldn't fish him out of the water
+in front of his murderer's face.
+H
+Speaking of...
+
+HERBERT MOVES INTO FRAME
+
+Viv
+Yipes! When did you-
+H
+A while back. Anywho,
+the soldier that killed your dad,
+she just let you go, then?
+Viv
+Maybe? These soldiers were unemotional killing machines. Yet... this wail, it was high-pitched. I don't think my dad made it. She seemed really upset at her... actions. That would be the first time I had seen one... grieve?
+T
+Herbert, those soldiers sound
+like phantoms, right?
+H
+Save for the part where
+Vivian was let go,
+her description matches
+them perfectly.
+Viv
+Phantoms? as in ghosts?
+H
+That's what we've been calling them.
+They look a lot like us, but with
+more... unnatural features.
+T
+They also don't talk, and follow their
+leader's instructions to a tee.
+Viv
+But why the ethereal moniker?
+H
+There's been a theory that these are
+reincarnated spirits of dead people.
+Neighbours and friends have mentioned
+recognizing their late friends and
+family among the phantoms.
+Viv
+How could such a thing be?
+
+S MOVES INTO FRAME IF I NOT ALIVE.
+
+  S
+  Vivian, you're up. Enemy force.
+  They seem to be fighting our
+  allies from the other squads.
+  Viv
+  Now? I've got so much
+  else to digest here.
+  S
+  Did Herbert already tell
+  you about the phantoms?
+  That speeds things up.
+  Let's go.
+  Viv
+  *groan*
+
+  CUT TO VINCENT, OSIAN & LINDA
+
+FADE OUT TO S AND I IF I STILL ALIVE.
+
+  I
+  Sir, there are people up ahead.
+  Most likely our enemies.
+  They appear to be engaged in battle.
+  S
+  Can we go around? Wait...
+  Who are they fighting?
+  I
+  I can't tell from this distance.
+  S
+  They could be our allies from the
+  other squads. We'll move in.
+  Relay the info to everyone.
+  I
+  Yes, sir!
+
+  CUT TO VINCENT, OSIAN & LINDA
+
+Vin
+Osian, did you see that?
+That one didn't even twitch
+when I stabbed his eye!
+O
+Not the time to fish
+for compliments, Vincent!
+L
+He's not. That guy really *was*
+unaffected by that wound.
+He's also not the only one;
+Some of the others we've fought
+seem completely fearless.
+I don't know what they're on,
+but we need to be careful.
+
+PLAYER PHASE STARTS
+
+
+WHEN A PHANTOM FIRST ENTERS COMBAT. FLAG SET
+Viv (thinking bubble)
+Was that... a phantom? They're just
+like the ones I saw at Cryfin.
+Like a combination of unflinching
+brutality and supernatural strength!
+I might want to adjust my approach.
+
+
+SIMON RECRUITS LINDA
+S
+Linda.
+L
+Oh, Simon, sir! You're here!
+S
+Yes. We should be on schedule.
+What about the others?
+...
+
+SIMON RECRUITS VINCENT
+S
+Vincent.
+Vin
+Simon.
+S
+Situation report.
+...
+
+SIMON RECRUITS OSIAN
+S
+Osian. Good to see you.
+O
+Right back at you. You all made it here in one piece?
+S
+Not quite; We've run into some issues along the way. What about your end?
+...
+
+SECOND PART OF RECRUITMENT
+VinLO
+Both of our squads met up already. We decided to leave a few people back to join up with your squad.
+S
+Seems we were last to arrive after all. What about the people we're fighting?
+VinLO
+More of Desalo's hired troops, presumably. We were actually guarding the southern gate, but were pushed back.
+S
+How'd that happen?
+VinLO
+It's a long story involving a pee break, a scream and...
+S
+Yeah I can figure out the rest. Why were you guarding this gate?
+VinLO
+We've been informed it leads to a passageway to Til forest. Those of us who didn't stay behind are following it now.
+S
+Then it's best we seize it at once.
+
+
+RECRUIT ONE, AND THE OTHERS JOIN. ONLY SIMON CAN RECRUIT. CHAPTER GOAL CHANGES TO SEIZE AFTER RECRUITMENT. ONLY SIMON CAN SEIZE.
+
+
+BOSS BATTLE QUOTE VS SIMON
+B
+Halt. Can't let you pass.
+S
+We really need to get in there.
+B
+Got my orders. No passage.
+S
+Sure we can't persuade you? Your friends were willing to let us get this far.
+B
+No need for violence. Just turn around.
+S
+Back at'cha.
+B
+That'd be my head. Turn around.
+S
+That'd be *our* heads.
+B
+Then yours it will be.
+
+
+BOSS DQ
+B
+...Guess it had to be my head after all.
+
+
+CHAPTER END TEXT
+
+S
+That's one gate seized. The enemy is in retreat. Let's move, everyone.
+
+SCENE SWITCH
+
+S
+Vivian, on the battlefield. Did you see them?
+Viv
+The phantoms?
+S
+Yeah. How do you assess them?
+Viv
+They're just like what Herbert and Theresa described. And also, how I remember them; Ruthless killing machines. What's more, they outclass the humans they are allied to, in terms of brute strength. Honestly, if we have to fight more of these... Well I just hope we won't have to.

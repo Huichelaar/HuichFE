@@ -41,6 +41,8 @@
 		New_Use(UnlockStaff_RangeSetup)
 	ORG $28ADC	//Barrier
 		New_Use(BarrierStaff_RangeSetup)
+	ORG $28BD8	//Dancer Rings
+		New_Use(DancerRing_RangeSetup)
 	
 	//TARGET
 	ORG $28F98	//Heal/Mend/Recover Staff
@@ -79,7 +81,10 @@
 		POIN Unlock_Jump|1
 		WORD 0x87A	//target select help text
 	//ORG $28FEC	//Barrier Staff
-	
+	ORG $29048	//Dancer Rings
+		SHORT 0x1C28 0x1C21
+		BL(DancerRingTargetSelect)
+		B($29062)
 	//killing off some of the now useless routines and using the space for jumps
 	ORG $2606C
 	Barrier_Jump:
@@ -99,11 +104,22 @@
 		SHORT 0xBC01 0x4700 0x0
 		POIN WarpStaff_RangeSetup|1
 	Hammerne_Jump:
-		SHORT 0xB500 0x1C22 0x4902
+		SHORT 0xB500 0x1C21 0x4902
 		BL($D18C4)
 		SHORT 0xBC01 0x4700 0x0
 		POIN HammerneStaff_RangeSetup|1
-	
+	DancerRingTargetSelect:
+		SHORT 0xB500 0x1C0B
+		SHORT 0x4902 0x4A03
+		BL($295A8)
+		SHORT 0xBC01 0x4700
+		POIN DancerRingJump|1
+		WORD 0x87F //target select help text
+	DancerRingJump:
+		SHORT 0xB500 0x1C22 0x4902
+		BL($D18C4)
+		SHORT 0xBC01 0x4700 0x0
+		POIN DancerRing_RangeSetup|1
 	/*
 	//Shouldn't have to touch these
 	#define New_Use(item) "ORG Usability_Table+4*(item-0x4B); POIN 0x28A8C"
@@ -160,20 +176,20 @@
 	
 	//Fix my ballista issues the lazy way (instead of not passing in bool via r12, just make range function not use r12)
   // Huichelaar edit: we're hooking in this routine in Danger Radius
-    ORG $1AAC6
-    SHORT 0xB082
-    /* Danger Radius inserts these.
-    ORG $1AB12
-    SHORT 0x9001
-    ORG $1AB16
-    SHORT 0x9901
-    */
-    ORG $1AB56
-    SHORT 0x9201
-    ORG $1AB6E
-    SHORT 0x9A01
-    ORG $1ABA6
-    SHORT 0xB002
+	ORG $1AAC6
+	SHORT 0xB082
+  /* Danger Radius inserts these.
+  ORG $1AB12
+  SHORT 0x9001
+  ORG $1AB16
+  SHORT 0x9901
+  */
+	ORG $1AB56
+	SHORT 0x9201
+	ORG $1AB6E
+	SHORT 0x9A01
+	ORG $1ABA6
+	SHORT 0xB002
 	
 	ORG $1CC0A //When first selecting a unit, for weapons
 	BL(All_Weapons_All_Squares)
@@ -388,10 +404,12 @@ POP
 	BL(Unlock_Range)
 	SHORT 0xBC01 0x4700	
 	*/
-  Target_Routine_For_Fortify: //push r14; ldrb r1,[r4,#0x12]; lsl r1,r1,#0x1; add r1,#0x1E; add r1,r1,r0; ldrh r2,[r1]; bl somewhere; pop r0; bx r0 (r4+0x12 has inventory slot, r0 has char data)
-  SHORT 0xB500 0x7CA1 0x0049 0x311E 0x1809 0x880A
-  BL(HealStaff_RangeSetup)
-  SHORT 0xBC01 0x4700
+	#ifndef GAIDEN_MAGIC // Gaiden magic needs this sometimes not to refer to gActionData+0x12.
+		Target_Routine_For_Fortify: //push r14; ldrb r1,[r4,#0x12]; lsl r1,r1,#0x1; add r1,#0x1E; add r1,r1,r0; ldrh r2,[r1]; bl somewhere; pop r0; bx r0 (r4+0x12 has inventory slot, r0 has char data)
+		SHORT 0xB500 0x7CA1 0x0049 0x311E 0x1809 0x880A
+		BL(HealStaff_RangeSetup)
+		SHORT 0xBC01 0x4700
+	#endif // GAIDEN_MAGIC
 	/*
 	ALIGN 4
 	Non_Unlock_Range:
@@ -435,9 +453,11 @@ POP
 		rfItemRangeSetup(0x25795,Item_TTRange)
 	BarrierStaff_RangeSetup:
 		rfItemRangeSetup(0x2601D,Item_TURange)
+	DancerRing_RangeSetup:
+		rfItemRangeSetup(0x265B5,Item_TURange)
 	/*
 	Range_Write:
-	#incbin "Range Write.dmp"
+	#incbin "RangeWrite.dmp"
 	POIN Item_Table
 	
 	ALIGN 4

@@ -45,7 +45,7 @@
     MESSAGE Used free space ends at currentOffset
     
 #else
-    ERROR You are not assembling FE8 events!
+    ERROR "You are not assembling FE8 events!"
 #endif
 
 // CRC Correction

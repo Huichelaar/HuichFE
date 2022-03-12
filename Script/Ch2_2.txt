@@ -24,7 +24,7 @@ No! Please, I-
 ALVIN KILLS MAPSPRITE CAPTAIN
 
 A
-Alright people. Let this be a lesson to any of you who were thinking of slacking. There is no back-up plan. Fail here, and you'll be sent to wherever the captain went.
+Alright people. Let this be a lesson to any of you who were thinking of slacking. There is no back-up plan. Fail here, and you'll be joining captain.
 
 SCENE SWITCH TO VIV & CO KNOCKING ON THERESA'S DOOR
 
@@ -43,7 +43,7 @@ Offscreen
 Wait... What!?
 *DOOR OPEN SFX*, THERESA APPEARS
 T
-Deary me, it really is! Where have you been?
+Deary me, it really is! How are you here?
 S
 Excuse me, but could we enter?
 T
@@ -52,7 +52,7 @@ Oh yes, of course!
 SCENE SWITCH
 
 T
-So Viv, where have you been all this time?
+So Viv, how'd you get here?
 Viv
 Uhm... So I joined the resistance.
 T
@@ -64,22 +64,13 @@ I'm sorry Theresa, the original plan didn't involve any of this.
 T
 [smile]It's fine, I'm glad you're still alive!
 V
-[nosmile]Theresa, my parents, are they ok?
+[nosmile]Theresa, my dad, do you know if he's ok?
 T
-I was hoping you knew. They disappeared at the same time as you.
+Port Cryfin is still cordoned off. Hardly any information gets through. I haven't heard anything about either of you. Vivian, you were there when they invaded, right? What happened?
 V
-I couldn't reach them before I left. If they've disappeared, then they've probably been killed by Desalo.
-T
-Any who oppose Desalo are
-to be publically executed.
-Your parents were not.
-S
-It might not serve the narrative he's weaving. Resistance is to be futile. Vivian's parents weren't with the resistance. If they were punished, it could draw attention to the fact that their daughter joined the resistance, yet wasn't punished.
-T
-Bit paranoid, but then paranoia describes Desalo well.
-I if alive, otherwise ML
-I
-I've been keeping a lookout. More and more people have been gathering.
+Oh it was a horrible experience. It's a long story but-
+I if alive, otherwise ML, moves into frame.
+Too long, I'm sure. I've been keeping a lookout. More and more people have been gathering.
 S
 Is this place usually busy?
 T
@@ -175,17 +166,24 @@ I'll find a way
 to get Herbert.
 I promise.
 ML
-Don't factor in going north.
 We can't linger.
+V
+Simon, none of us have been in
+Arzil the past two years.
+If we rescue Herbert, he could
+provide us with valuable intel.
+T
+My lips are sealed until you get him!
+ML
+You would jeopardise-
 S
-ML, Vivian is the strategist.
-Leave the plan to her.
+Alright. Do as you do best, Vivian.
 
 FIGHT STARTS
 CHAPTER GOAL IS TO ESCAPE VIA SOUTHEASTERN SQUARE, JUST SOUTH OF KNIGHT
-JUST ONE PERSON HAS TO ESCAPE THERE.
-THERE'S A TURN LIMIT, FINISH WITHIN TURN LIMIT.
-OPTIONAL GOALS: RECRUIT HERBERT, DEFEAT BOSS FOR THEIR DROPPABLE WEP.
+JUST ONE PERSON HAS TO ESCAPE THERE. ALSO NEED TO RECRUIT HERBERT.
+THERE'S A TURN LIMIT, FINISH WITHIN TURN LIMIT. DON'T LET HERBERT OR THERESA DIE.
+OPTIONAL GOALS: DEFEAT BOSS FOR THEIR DROPPABLE WEP.
 
 
 HERBERT APPEARS
@@ -420,51 +418,12 @@ Thank you! That means[N]
 a lot to me.[AN][ToggleSmile]
 [X]
 
+SOMEONE IN THE PARTY TRIES TO ESCAPE
+BUT HERBERT WASN'T RECRUITED YET
 
-
-[ML][LoadHerbert]
-[MR][LoadVivian]
-[MR]
-Herbert[TMM]...[TMM] I'm so sorry[N]
-about Theresa.[AN]
-[ML]
-You should have left us be.[AN]
-Wherever you go, trouble[N]
-is sure to follow.[AN]
-[MR][BoxHeight][0x1]
-Herbert, I never intended-[AN]
-[ML][BoxHeight][0x2]
-Spare me the excuses.[AN]
-there's always a[N]
-different culprit.[AN]
-Yet, every time the[N]
-common factor is you.[AN]
-Farewell, Vivian.[AN]
-[X]
-
-
-[ML][LoadTheresa][HalfCloseEyes]
-[MR][LoadVivian]
-[ML]
-Vivian[TMM]...[TMM][.6] You promised[TMM]...[TMM][AN]
-[OpenEyes]You said you knew of a[N]
-way to get Herbert![AN]
-[MR]
-I'm sorry, I[TMM]...[TMM][N]
-I don't have any excuses.[AN]
-[ML]
-Wouldn't need them anyway.[N]
-[HalfCloseEyes]Just[TMM]...[TMM][.6] Herbert.[AN]
-[CloseSpeech][.5]
-[ML][OpenEyes][BoxHeight][0x1]
-You're leaving, right?[AN]
-[MR]
-You could come with us.[AN]
-[ML][HalfCloseEyes][BoxHeight][0x2]
-No, I'm not in that state[N]
-of mind, right now.[AN]
-Goodbye, Vivian.[AN]
-[X]
+T
+You're not going to abandon
+Herbert, are you?
 
 
 SOMEONE IN THE PARTY ESCAPED. CHAPTER ENDS
@@ -493,7 +452,6 @@ S
 Alright, then we'll set
 up camp here.
 
-SCENE HAPPENS IF H & T ARE ALIVE
 
 H
 Pardon, Vivian told me you're
@@ -535,8 +493,8 @@ H
 In the few years he's reigned so far,
 Desalo's not been without his quirks.
 One of them is his love for absolutes.
-Another his tendency toward
-draconian punishments.
+Another his tendency to execute
+draconian punishment.
 You fought sellswords. They can't
 refuse an assignment by Desalo,
 but they're not exactly loyal.
@@ -549,7 +507,7 @@ So much for that. I would've expected
 more from someone like Desalo.
 H
 He's still got cards left. You know
-about his second army, right?
+about his more loyal followers, right?
 S
 Do go on.
 

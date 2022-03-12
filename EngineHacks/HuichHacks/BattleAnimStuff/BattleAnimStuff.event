@@ -4,6 +4,9 @@
 #include "CustomThrownWeapon/CustomThrownWeapon.event"
 
 {
+// Display damage/heal values on top of sprites.
+#include "AnimNumbers/AnimNumbers.event"
+
 // Changes to battle animation backgrounds.
 #include "Backgrounds/Backgrounds.event"
 

@@ -47,8 +47,8 @@ PUSH
   SHORT $22d0
   
 //Allow Visit from any tile
-  ORG $23072
-  SHORT $e00d
+  // ORG $23072
+  // SHORT $e00d
 
 //Break HP Cap for Players/NPCs (credit Solum)
   // ORG $181ee

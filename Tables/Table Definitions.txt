@@ -68,6 +68,7 @@
 #define IsBoss 0x80
 
 //Ability 3 definitions:
+#define UnlockLock1 0x01
 #define SwordmasterUnlock 0x02
 #define UseMonsterWeapons 0x04
 #ifdef _FE7_
